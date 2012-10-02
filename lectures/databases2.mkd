@@ -4,6 +4,9 @@ Databases Week 2 - Joins, Nested Queries, and Database Structure
 Monday - Joins
 --------------
 
+### Intro
+Slides on Joins
+
 ###Basic Example
 * Join main table to species table
 * Show species and scientific name side by side
