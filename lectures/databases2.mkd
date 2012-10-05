@@ -33,3 +33,9 @@ Database Structure slides
 
 Friday - Nested queries
 -----------------------
+Demonstrate by doing a query to get the number of trapping periods in each year.
+
+* First GROUP BY yr and COUNT period
+* Then GROUP BY yr and period
+* Save that query
+* Nest it to count the unique periods
