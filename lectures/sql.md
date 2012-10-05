@@ -35,3 +35,7 @@ Friday
 ### Missing data
 
 ### Nesting queries
+
+    SELECT yr, COUNT(period)
+    FROM (SELECT yr, period FROM PortalMammals_main GROUP BY yr, period)
+    GROUP BY yr;
