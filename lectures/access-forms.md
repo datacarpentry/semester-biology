@@ -68,6 +68,11 @@ We can also simple give users a list of options to select from.
 6. Click **Yes**
 7. Now the user just selects one of the options that you have given them
 
+### Example
+
+* List box for alpha codes
+* The combo box for alpha codes
+
 This is only the beginning
 --------------------------
 
