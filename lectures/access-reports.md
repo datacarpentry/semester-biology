@@ -18,7 +18,7 @@ Creating a Basic Report
 4. On the **Create** tab in the **Reports** section click the **Report** button
 
 ### Example
-Counts in each year for a chosen species on the controls
+Counts in each year for a chosen species
 
 This is great, but if we want to do this for each species we'd have to edit the query to change the criteria.
 
