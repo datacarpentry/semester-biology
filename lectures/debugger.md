@@ -1,6 +1,13 @@
 Debugging with a Debugger
 =========================
 
+Why
+---
+* Like a print statement but better
+* Doesn't accidentally get left in the code
+* Contains a complete snapshot of the status of the program
+* Let's you walk through the code dynamically
+
 Break points
 ------------
 1. Insert breakpoint
@@ -8,13 +15,6 @@ Break points
 3. Program runs until breakpoint and stops (before executing the line of code)
 4. Stack Data gives the current values for all variables (Local vs. Global)
 5. Pressing Debug again continues to the next breakpoint
-
-Why
----
-* Like a print statement but better
-* Doesn't accidentally get left in the code
-* Contains a complete snapshot of the status of the program
-* Let's you walk through the code dynamically
 
 Stepping
 --------
@@ -57,11 +57,10 @@ Example - Pleistocene Overkill
         mean_mass = np.mean(masses)
         return masses
 
-    all_data = np.genfromtxt('MOMv3.3.txt', delimiter='\t',
+    all_data = np.genfromtxt('MOMv3.3.txt', delimiter='\t', dtype=None,
                               names=['continent', 'status', 'order', 'family',
                                      'genus', 'species', 'log10mass', 'mass', 'ref'])
 
-    all_data = all_data[all_data['mass'] != -999.0]
     continents = all_data['continent']
     status = all_data['status']
     masses = all_data['mass']
