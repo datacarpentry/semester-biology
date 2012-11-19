@@ -28,32 +28,52 @@ Conditional breakpoints (Pro and other debuggers)
 * Only stop the program if certain conditions are met
 * Right click the breakpoint and add condition
 
-Example
--------
+Example - Pleistocene Overkill
+------------------------------
 
-    """Exponential growth debugging example"""
+### Mistakes
+* Looping over all continents instead of unique
+* Missing underscores in results.append()
+* Missing dtype=None in import
+
+### Process
+1. Run, get error
+2. Run debugger, highlights line with error, show Stack Data
+3. Fix missing underscores
+4. Restart
+5. Lots of nan's, likely a problem with the data so look at it
+6. Fix missing dtype=None and rerun
+7. That fixed one of our problems, but now too many lines, not easy to see, so
+8. Set a break point at start of loop
+9. Demo step in/over/out
+10. Use unique not actual
+
+### Code
+
+import numpy as np
+
+def mean_mass(masses):
+    """Return the mean of a list of masses"""
+    mean_mass = np.mean(masses)
+    return masses
+
+all_data = np.genfromtxt('MOMv3.3.txt', delimiter='\t',
+                          names=['continent', 'status', 'order', 'family',
+                                 'genus', 'species', 'log10mass', 'mass', 'ref'])
+
+all_data = all_data[all_data['mass'] != -999.0]
+continents = all_data['continent']
+status = all_data['status']
+masses = all_data['mass']
+
+results = []
+for continent in continents:
+    extinct_masses = masses[(status=='extinct') & (continents==continent)]
+    extant_masses = masses[(status=='extant') & (continents==continent)]
+    avg_extinct_mass = np.mean(extinct_masses)
+    avg_extant_mass = np.mean(extant_masses)
+    diff = avg_extant_mass - avg_extinct_mass
+    results.append([continent, avg_extantmass, avg_extinctmass, diff])
     
-    def get_pop_size_at_t(init_pop_size, reprod_rate, time_of_sample):
-	n = init_pop_size
-	for t in range(1, time_of_sample + 1):
-	    n_tplus1 = n + reprod_rate * n
-	    n = n_tplus1
-	return n_tplus1
-    
-    def doubling_time_exponential_growth(reprod_rate, init_pop_size):
-	n = init_pop_size
-	t = 0
-	while n < 2 * init_pop_size:
-	    n = n + reprod_rate * n
-	    t += 1
-	return t
-    
-    #Problem 2
-    print get_pop_size_at_t(10, 0.152, 10)
-    print get_pop_size_at_t(10, 0.152, 50)
-    print get_pop_size_at_t(10, 0.152, 100)
-    
-    #Problem 3
-    print doubling_time_exponential_growth(0.0001, 1000)
-    print doubling_time_exponential_growth(0.005, 1000)
-    print doubling_time_exponential_growth(0.21, 1000)
+for line in results:
+    print line
