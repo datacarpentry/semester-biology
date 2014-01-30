@@ -42,7 +42,7 @@ website and the [Software Carpentry](http://software-carpentry.org/) material on
 [Databases](http://software-carpentry.org/4_0/databases/).
 
 
-### Course Goals
+### Course Objectives
 
 By the end of the you should be able to create databases and add data to them
 (either yours or someone elses), retrieve the form of that data that you need
@@ -78,13 +78,13 @@ list. Students are required to be aware of emails sent to this list.
 Grading for this course will revolve around a combination of assignments (70%),
 a final exam (30%).
 
-There will be \~3 database assignments. Assignments are due Monday night by
-11:59 pm Mountain Time. Assignments should be submitted via email to
-[ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject line:
-Database Assignment X, where X is the number of the assignment. One problem from
-each assignment (selected at my discretion after the assignments have been
-submitted) will receive a thorough code review and a detailed grade. Other
-problems will be graded as follows:
+There will be 3 equally weighted database assignments. Assignments are due
+Monday night by 11:59 pm Mountain Time. Assignments should be submitted via
+email to [ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject
+line: Database Assignment X, where X is the number of the assignment. One
+problem from each assignment (selected at my discretion after the assignments
+have been submitted) will receive a thorough code review and a detailed
+grade. Other problems will be graded as follows:
 
 - Produces the correct answer using the requested approach: 100%
 - Generally uses the right approach, but a minor mistake results in an incorrect

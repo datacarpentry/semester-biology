@@ -41,7 +41,7 @@ You should have taken either Programming for Biologists or Database Management
 for Biologists.
 
 
-### Course Goals
+### Course Objectives
 
 In this course you will learn how to conduct computational research projects
 like those used in biological research. You will do this primarily by conducting
@@ -52,6 +52,9 @@ working on a larger project you will learn more about the challenges of
 conducting research using computers and will further develop your computational
 background in an area that you wish to specialize in. You will also learn tools
 and approaches for managing research level computing problems.
+
+1. Learn standard approaches and tools for computational research projects
+2. Apply these tools to address real research questions in biology
 
 
 ### Website

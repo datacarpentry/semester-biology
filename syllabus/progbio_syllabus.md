@@ -1,4 +1,5 @@
-Programming for Biologists Syllabus -----------------------------------
+Programming for Biologists Syllabus
+-----------------------------------
 
 BIOL 4040/6040, 2 Credits, Fall 2014
 
@@ -40,7 +41,7 @@ to set up appointments less than 24 hours in advance.*
 Campbell, Gries, Montojo, and Wilson. Published in 2009 by Pragmatic Bookshelf.
 
 
-### Course Goals
+### Course Objectives
 
 In this course you will learn all of the fundamental aspects of computer
 programming that are necessary for conducting biological research. By the end of
@@ -77,13 +78,13 @@ list. Students are required to be aware of emails sent to this list.
 Grading for this course will revolve around a combination of assignments (70%),
 a final exam (30%).
 
-There will be \~6 programming assignments. Assignments are due Monday night by
-11:59 pm Mountain Time. Assignments should be submitted via email to
-[ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject line:
-Programming Assignment X, where X is the number of the assignment. One problem
-from each assignment (selected at my discretion after the assignments have been
-submitted) will receive a thorough code review and a detailed grade. Other
-problems will be graded as follows:
+There will be \~6 equally weighted programming assignments. Assignments are due
+Monday night by 11:59 pm Mountain Time. Assignments should be submitted via
+email to [ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject
+line: Programming Assignment X, where X is the number of the assignment. One
+problem from each assignment (selected at my discretion after the assignments
+have been submitted) will receive a thorough code review and a detailed
+grade. Other problems will be graded as follows:
 
 - Produces the correct answer using the requested approach: 100%
 - Generally uses the right approach, but a minor mistake results in an incorrect
