@@ -4,10 +4,20 @@ Programming Style (in Python)
 Basics
 ------
 * Readability is important
+
+* E.g.,
+
+    My name is Ethan. I am 36 years old.
+
+    MYnameIS          ETHAN................... I_AM_36 years
+                 OLD
+
 * Using the same style as others is important ([PEP 8](http://www.python.org/dev/peps/pep-0008/))
+* ``import this``
 
 Whitespace
 ----------
+* Indentation what the brain reconizes, use it regardless of language (and braces)
 * 4 space indents
 * Spaces after commas and around operators (almost always)
 
