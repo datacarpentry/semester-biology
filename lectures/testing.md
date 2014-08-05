@@ -130,5 +130,9 @@ and return the next value, until there is no value to return. So,
 ``test_add_badvalues()`` ends up being run once for every trip through the for
 loop, which is why it doesn't stop at the first error.
 
+Source: http://stackoverflow.com/a/231855/133513
 
-http://stackoverflow.com/a/231855/133513
+Integration/regression testing
+------------------------------
+Calls higher level functionality and checks the results.
+E.g., tax_resolve tests
