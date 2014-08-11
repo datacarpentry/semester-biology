@@ -12,7 +12,7 @@ title: Advanced Programming and Database Management for Biologists
 Instructor: [Dr. Ethan White](http://whitelab.weecology.org)
 (ethan.white@usu.edu)
 
-Course Content: Computers are becoming increasingly essential to the study of
+Computers are becoming increasingly essential to the study of
 all aspects of biology and an increasingly large number of biologists spend a
 substantial portion of their time writing computer programs to analyze data and
 simulate the outcomes of biological models.  However, most biologists have

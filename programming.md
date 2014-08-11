@@ -11,7 +11,7 @@ title: Intro to Programming for Biologists
 Instructor: [Dr. Ethan White](whitelab.weecology.org)
 (ethan.white@usu.edu)
 
-Course Content: Computers are increasingly essential to the study of all aspects
+Computers are increasingly essential to the study of all aspects
 of biology. Basic computer programming is now required for everything from
 accessing and managing data, to statistical analysis, to simulation and
 numerical modeling. This course will provide an introduction to programming
