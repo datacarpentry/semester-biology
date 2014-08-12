@@ -1,7 +1,9 @@
-Database Management for Biologists Syllabus
--------------------------------------------
+---
+layout: page
+title: Database Management for Biologists Syllabus
+---
 
-BIOL 4041/6041, 1 Credit, Fall 2014
+BIOL 5322/6322, 1 Credit, Fall 2014
 
 ### Professor
 
@@ -39,7 +41,7 @@ to set up appointments less than 24 hours in advance.*
 
 There is no textbook for this class. We will use online materials at the course
 website and the [Software Carpentry](http://software-carpentry.org/) material on
-[Databases](http://software-carpentry.org/4_0/databases/).
+[Databases](http://software-carpentry.org/v4/access/index.html).
 
 
 ### Course Objectives
@@ -79,19 +81,19 @@ Grading for this course will revolve around a combination of assignments (70%),
 a final exam (30%).
 
 There will be 3 equally weighted database assignments. Assignments are due
-Monday night by 11:59 pm Mountain Time. Assignments should be submitted via
+Sunday night by 11:59 pm Mountain Time. Assignments should be submitted via
 email to [ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject
 line: Database Assignment X, where X is the number of the assignment. One
 problem from each assignment (selected at my discretion after the assignments
 have been submitted) will receive a thorough code review and a detailed
 grade. Other problems will be graded as follows:
 
-- Produces the correct answer using the requested approach: 100%
-- Generally uses the right approach, but a minor mistake results in an incorrect
+* Produces the correct answer using the requested approach: 100%
+* Generally uses the right approach, but a minor mistake results in an incorrect
     answer: 90%
-- Attempts to solve the problem and makes some progress using the core concept:
+* Attempts to solve the problem and makes some progress using the core concept:
     50%
-- Answer demonstrates a lack of understanding of the core concept: 0%
+* Answer demonstrates a lack of understanding of the core concept: 0%
 
 Late assignments will be docked 20% and will not be accepted after Tuesday night
 at 11:59 pm Mountain Time except in cases of genuine emergencies that can be
@@ -123,21 +125,19 @@ Final grades will be assigned based on the following scale:
 
 ### Student’s Responsibilities
 
-Students are expected to read assigned readings and view additional assigned
-material prior to the class for which they are scheduled, attend class,
-participate in class, complete assignments, take exams, and ask for help early
-if they are having trouble.
+Students are expected to read/view assigned material prior to the class for
+which they are scheduled, attend class, participate in class, complete
+assignments, take the exam, and ask for help early if they are having trouble.
 
 
 ### Instructor’s Responsibilities
 
-I expect myself to review the assigned readings and view additional assigned
-material prior to the class for which they are scheduled, prepare and deliver
-high quality introductions to the material, prepare exercises and assignments
-that are relevant to research in biology, prepare exams that are fair and
-representative of the material covered in class, and provide comments on
-assignments and projects intended to help students develop their abilities to
-work with computers and data.
+I expect myself to review the assigned material prior to the class for which
+they are scheduled, prepare and deliver high quality introductions to the
+material, prepare exercises and assignments that are relevant to research in
+biology, prepare exams that are fair and representative of the material covered
+in class, and provide comments on assignments and projects intended to help
+students develop their abilities to work with computers and data.
 
 
 ### Academic Honesty
@@ -176,7 +176,7 @@ another student to help.
 
 ### Fairness
 
-I will do my absolute best to make this a fair class. The exams will be based
+I will do my absolute best to make this a fair class. The exam will be based
 entirely on material that has either been worked on in class or included in
 assignments. If you are having problems in the class, or just not doing as well
 as you would like, I strongly encourage you to approach me as soon as possible
