@@ -1,5 +1,7 @@
-Schedule for Programming For Biologists
----------------------------------------
+---
+layout: page
+title: Schedule for Programming For Biologists
+---
 
 ### Week 1
 
