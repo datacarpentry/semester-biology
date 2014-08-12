@@ -3,10 +3,10 @@ layout: page
 title: Intro to Programming for Biologists
 ---
 
-**[Syllabus](syllabus-intro)**   |  
-**[Schedule](schedule-intro)**   |  
-**[Assignments](assignments-intro)**   |  
-**[Lectures](lectures-intro)**
+**[Syllabus](/syllabus/programming-syllabus)**   |  
+**[Schedule](/syllabus/programming-schedule)**   |  
+**[Assignments](/exercises/programming-exercises)**   |  
+**[Material](/material/programming-material)**
 
 Instructor: [Dr. Ethan White](whitelab.weecology.org)
 (ethan.white@usu.edu)

@@ -3,10 +3,10 @@ layout: page
 title: Intro to Databases for Biologists
 ---
 
-**[Syllabus](syllabus-intro)**   |  
-**[Schedule](schedule-intro)**   |  
-**[Assignments](assignments-intro)**   |  
-**[Lectures](lectures-intro)**
+**[Syllabus](/syllabus/databases-syllabus)**   |  
+**[Schedule](/syllabus/databases-schedule)**   |  
+**[Assignments](/exercises/databases-exercises)**   |  
+**[Material](/material/databases-material)**
 
 Instructor: [Dr. Ethan White](whitelab.weecology.org)
 (ethan.white@usu.edu)

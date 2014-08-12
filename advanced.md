@@ -3,10 +3,10 @@ layout: page
 title: Advanced Programming and Database Management for Biologists
 ---
 
-**[Syllabus](http://www.programmingforbiologists.org/syllabus-advanced)**   |  
-**[Schedule](schedule-advanced)**   |  
-**[Assignments](assignments-advanced)**   |  
-**[Lectures](lectures-adv)**   |  
+**[Syllabus](/syllabus/advanced-syllabus)**   |  
+**[Schedule](/syllabus/advanced-schedule)**   |  
+**[Assignments](/exercises/advanced-exercises)**   |  
+**[Material](/material/advanced-material)**   |  
 
 
 Instructor: [Dr. Ethan White](http://whitelab.weecology.org)
