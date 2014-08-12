@@ -1,7 +1,9 @@
-Programming for Biologists Syllabus
------------------------------------
+---
+layout: page
+title: Programming for Biologists Syllabus
+---
 
-BIOL 4040/6040, 2 Credits, Fall 2014
+BIOL 5321/6321, 2 Credits, Fall 2014
 
 ### Professor
 
@@ -37,8 +39,12 @@ to set up appointments less than 24 hours in advance.*
 
 ### Text Books
 
-“Practical Programming: An Introduction to Computer Science Using Python” by
-Campbell, Gries, Montojo, and Wilson. Published in 2009 by Pragmatic Bookshelf.
+There is no required text book for this class. If you would like a good book to
+supplement the online materials I recommend:
+
+[“Practical Programming: An Introduction to Computer Science Using Python”](http://pragprog.com/book/gwpy/practical-programming)
+by Campbell, Gries, Montojo, and Wilson. Published in 2009 by Pragmatic
+Bookshelf.
 
 
 ### Course Objectives
@@ -46,9 +52,9 @@ Campbell, Gries, Montojo, and Wilson. Published in 2009 by Pragmatic Bookshelf.
 In this course you will learn all of the fundamental aspects of computer
 programming that are necessary for conducting biological research. By the end of
 the course you will be able to use these tools to import data into Python,
-perform analysis on that data, and export the results be they graphs, text
-files, or something else. By learning how to get the computer to do your work
-for you, you will be able to do more science faster.
+perform analysis on that data, and export the results as graphs, text files, or
+whatever else you might need. By learning how to get the computer to do your
+work for you, you will be able to do more science faster.
 
 1. Write simple computer programs in Python
 2. Automate data analysis
@@ -78,20 +84,20 @@ list. Students are required to be aware of emails sent to this list.
 Grading for this course will revolve around a combination of assignments (70%),
 a final exam (30%).
 
-There will be \~6 equally weighted programming assignments. Assignments are due
-Monday night by 11:59 pm Mountain Time. Assignments should be submitted via
+There will be 7 equally weighted programming assignments. Assignments are due
+Sunday night by 11:59 pm Mountain Time. Assignments should be submitted via
 email to [ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject
 line: Programming Assignment X, where X is the number of the assignment. One
 problem from each assignment (selected at my discretion after the assignments
 have been submitted) will receive a thorough code review and a detailed
 grade. Other problems will be graded as follows:
 
-- Produces the correct answer using the requested approach: 100%
-- Generally uses the right approach, but a minor mistake results in an incorrect
+* Produces the correct answer using the requested approach: 100%
+* Generally uses the right approach, but a minor mistake results in an incorrect
     answer: 90%
-- Attempts to solve the problem and makes some progress using the core concept:
+* Attempts to solve the problem and makes some progress using the core concept:
     50%
-- Answer demonstrates a lack of understanding of the core concept: 0%
+* Answer demonstrates a lack of understanding of the core concept: 0%
 
 Late assignments will be docked 20% and will not be accepted after Tuesday night
 at 11:59 pm Mountain Time except in cases of genuine emergencies that can be
@@ -123,21 +129,19 @@ Final grades will be assigned based on the following scale:
 
 ### Student’s Responsibilities
 
-Students are expected to read assigned readings and view additional assigned
-material prior to the class for which they are scheduled, attend class,
-participate in class, complete assignments, take exams, and ask for help early
-if they are having trouble.
+Students are expected to read/view assigned material prior to the class for
+which they are scheduled, attend class, participate in class, complete
+assignments, take the exam, and ask for help early if they are having trouble.
 
 
 ### Instructor’s Responsibilities
 
-I expect myself to review the assigned readings and view additional assigned
-material prior to the class for which they are scheduled, prepare and deliver
-high quality introductions to the material, prepare exercises and assignments
-that are relevant to research in biology, prepare exams that are fair and
-representative of the material covered in class, and provide comments on
-assignments and projects intended to help students develop their abilities to
-work with computers and data.
+I expect myself to review the assigned material prior to the class for which
+they are scheduled, prepare and deliver high quality introductions to the
+material, prepare exercises and assignments that are relevant to research in
+biology, prepare exams that are fair and representative of the material covered
+in class, and provide comments on assignments intended to help students develop
+their abilities to work with computers and data.
 
 
 ### Academic Honesty
@@ -176,7 +180,7 @@ another student to help.
 
 ### Fairness
 
-I will do my absolute best to make this a fair class. The exams will be based
+I will do my absolute best to make this a fair class. The exam will be based
 entirely on material that has either been worked on in class or included in
 assignments. If you are having problems in the class, or just not doing as well
 as you would like, I strongly encourage you to approach me as soon as possible
