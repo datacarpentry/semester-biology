@@ -1,11 +1,7 @@
---- layout: post title: 2. Basic Python 2 [problem] created: 1314641245
-categories: - !binary |- MQ== - !binary |- YWR2 - !binary |- MQ== -
-!binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |- MQ== -
-!binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |- MQ== -
-!binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |- MQ== -
-!binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |- MQ== -
-!binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |- MQ== -
-!binary |- YWR2 ---
+---
+layout: default
+title: Basic Python 2
+---
 
 Dr. Granger is interested in studying the relationship between the
 length of house-elves' ears and aspects of their DNA. This research is
