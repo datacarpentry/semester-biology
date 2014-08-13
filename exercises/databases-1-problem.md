@@ -1,7 +1,7 @@
---- layout: post title: Databases 1 [problem] created: 1316308929
-categories: - !binary |- Mw== - !binary |- aW50cm8= - !binary |- Mw== -
-!binary |- aW50cm8= - !binary |- Mw== - !binary |- aW50cm8= - !binary |-
-Mw== - !binary |- aW50cm8= - !binary |- Mw== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases 1
+---
 
 #### 
 
