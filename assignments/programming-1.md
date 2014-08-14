@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Programming Assignment 1
-exercises: ['Basic Python 1', 'Basic Python 2']
+exercises: ['Expressions and Variables 1', 'Expressions and Variables 2', 'Expressions and Variables 3', 'Expressions and Variables 4', 'Using Functions 1', 'Expressions and Variables 5']
 ---
 
 {% include assignment.html %}
