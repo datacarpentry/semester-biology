@@ -1,5 +1,7 @@
---- layout: post title: 6. Lists 6 [problem] created: 1347993579
-categories: - !binary |- NA== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Lists 6
+---
 
 One of your collaborators has posted [a comma-delimited text
 file](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/shrub_dimensions.txt)
@@ -12,14 +14,16 @@ you decide to write a program to automate the process.
 The following function will download the text from the web and return it
 as a list of lists:
 
-    def get_file_from_web(url):
-        """Download CSV data from web"""
-        webpage = urllib.urlopen(url)
-        datareader = csv.reader(webpage)
-        data = []
-        for row in datareader:
-            data.append(row)
-        return data
+```
+def get_file_from_web(url):
+    """Download CSV data from web"""
+    webpage = urllib.urlopen(url)
+    datareader = csv.reader(webpage)
+    data = []
+    for row in datareader:
+        data.append(row)
+    return data
+```
 
 It requires the use of the urllib and csv modules, so you will need to
 import those modules before using the function.

@@ -1,7 +1,7 @@
---- layout: post title: 5. Lists 5 [problem] created: 1317410038
-categories: - !binary |- NQ== - !binary |- aW50cm8= - !binary |- NQ== -
-!binary |- aW50cm8= - !binary |- NQ== - !binary |- aW50cm8= - !binary |-
-NA== - !binary |- aW50cm8= - !binary |- NA== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Lists 5
+---
 
 Use slices from the following list of lists that contains information
 about characters in Harry Potter to answer the questions below. Each
@@ -9,22 +9,24 @@ sublist contains the last name, first name (if the character has two
 names) and occupation of a single character. Paste the list into your
 code to get started.
 
-harry\_potter\_characters = [['Potter', 'Harry', 'Student'], ['Dobby',
+```
+harry_potter_characters = [['Potter', 'Harry', 'Student'], ['Dobby',
 'House Elf'], ['Granger', 'Hermione', 'Student'], ['Hagrid', 'Rubeus',
 'Keeper of Keys and Grounds']]
+```
 
 Print the following lines with the the appropriate answers inserted into
 the blanks by taking slices from the list:
 
-1.  Harry \_\_\_\_\_\_\_\_\_\_\_\_\_\_ is a \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+1.  Harry ______________ is a ______________
     at Hogwarts.
 2.  The Keeper of Keys and Grounds at Hogarts is
-    \_\_\_\_\_\_\_\_\_\_\_\_\_\_   \_\_\_\_\_\_\_\_\_\_\_\_\_\_ who is
+    ______________   ______________ who is
     typically refered to only by his last name.
 3.  The entire entry in the table for Hagrid is
-    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+    _________________________________________________.
     [i.e., print out the sublist for Hagrid]
-4.  Dobby is a \_\_\_\_\_\_\_\_\_\_\_\_\_\_.
-5.  \_\_\_\_\_\_\_\_\_\_\_\_\_\_ Granger has a time-turner, which would
+4.  Dobby is a ______________.
+5.  ______________ Granger has a time-turner, which would
     be really useful for completing this homework.
 

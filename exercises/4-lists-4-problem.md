@@ -1,14 +1,15 @@
---- layout: post title: 4. Lists 4 [problem] created: 1347986514
-categories: - !binary |- NA== - !binary |- aW50cm8= - !binary |- NA== -
-!binary |- aW50cm8= - !binary |- NA== - !binary |- aW50cm8= - !binary |-
-NA== - !binary |- aW50cm8= - !binary |- NA== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Lists 4
+---
 
 Write a program that uses a for loop to produce a list of the GC
 contents of the following sequences (copy this list into your code):
 
-    sequences = ['GCTTACCCAA', 'gctaatta', 'CCTCTAGCGC', 'TAAATTTTGT', 'TGTGATACTG', 'AACAGAGCATCTCTTGTGACCAGTT',
-                 'TAGGCTGCCTGTGGCAGGTTGTTGCATTCTCTTAGAACCGCCCTGAACTC', 'ATCCACAGACATCTCGTGTAAGGGG',
-                 'CCCTCTTTCCAATTGACAGGATCAG', 'taggattgacctagaaa']
+```
+sequences = ['GCTTACCCAA', 'gctaatta', 'CCTCTAGCGC', 'TAAATTTTGT', 'TGTGATACTG',
+             'AACAGAGCATCTCTTGTGACCAGTT', 'TAGGCTGCCTGTGGCAGGTTGTTGCATTCTCTTAGAACCGCCCTGAACTC', 'ATCCACAGACATCTCGTGTAAGGGG',
+             'CCCTCTTTCCAATTGACAGGATCAG', 'taggattgacctagaaa']
 
 Print the list to the screen. Remember, the GC content is just the
 number of G's plus the number of C's divided by the total number of

@@ -1,11 +1,9 @@
---- layout: post title: 2. Lists 2 [problem] created: 1315587134
-categories: - !binary |- Mg== - !binary |- aW50cm8= - !binary |- Mg== -
-!binary |- aW50cm8= - !binary |- Mg== - !binary |- aW50cm8= - !binary |-
-aW50cm8= - !binary |- aW50cm8= - !binary |- aW50cm8= - !binary |- NA== -
-!binary |- aW50cm8= ---
+---
+layout: page
+title: Lists 2
+---
 
-This is a follow up to the [Lists 1
-problem](http://www.programmingforbiologists.org/lists-1-problem).
+This is a follow up to the [Lists 1 problem](/exercises/lists-1).
 
 While conducting the above analyses you realize that a couple of counts
 are really high (if you actually noticed this; nice job!), so you go
