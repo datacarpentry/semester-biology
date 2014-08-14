@@ -1,10 +1,7 @@
---- layout: post title: 4. Strings 3 [problem] created: 1346773350
-categories: - !binary |- Mg== - !binary |- aW50cm8= - !binary |- Mg== -
-!binary |- aW50cm8= - !binary |- Mg== - !binary |- aW50cm8= - !binary |-
-Mg== - !binary |- aW50cm8= - !binary |- Mg== - !binary |- aW50cm8= -
-!binary |- Mg== - !binary |- aW50cm8= - !binary |- Mg== - !binary |-
-aW50cm8= - !binary |- Mg== - !binary |- aW50cm8= - !binary |- Mg== -
-!binary |- aW50cm8= - !binary |- Mg== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Strings 3
+---
 
 The length of an organism is typically strongly correlated with its body
 mass. This is useful because it allows us to estimate the mass of an
@@ -13,14 +10,14 @@ takes the form Mass (kg) = a\* Length(m)\^b, where the parameters a and
 b vary among groups. Write a script that prompts the user for the
 following pieces of information:
 
--   Genus name
--   Species name
--   The length of the species
+1. Genus name
+2. Species name
+3. The length of the species
 
 and then estimates the mass of the organism using the equation above.
 The script should print out the result using formatted printing as:
 
-    Genus species is length meters long and weighs approximately mass kg.
+*Genus* *species* is *length* meters long and weighs approximately *mass* kg.
 
 where the words in ***italics*** are replaced with the appropriate
 values. As is standard practice the first letter (and only the first
