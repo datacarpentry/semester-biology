@@ -1,23 +1,21 @@
---- layout: post title: 3. Lists 3 [problem] created: 1317402056
-categories: - !binary |- NQ== - !binary |- aW50cm8= - !binary |- NQ== -
-!binary |- aW50cm8= - !binary |- NQ== - !binary |- aW50cm8= - !binary |-
-NQ== - !binary |- aW50cm8= - !binary |- NA== - !binary |- aW50cm8= -
-!binary |- NA== - !binary |- aW50cm8= - !binary |- NA== - !binary |-
-aW50cm8= - !binary |- NA== - !binary |- aW50cm8= - !binary |- NA== -
-!binary |- aW50cm8= ---
+---
+layout: page
+title: Lists 3
+---
 
-This is a follow up to the  [Lists
-1](http://www.programmingforbiologists.org/lists-1-problem) and [Lists
-2](http://www.programmingforbiologists.org/lists-2-problem) problems.
+This is a follow up to the [Lists 1](/exercises/lists-1) and [Lists
+2](/exercises/lists-2) problems.
 
 When last we left you, our intrepid hero, you had created the following
 updated list of bird abundances across sites:
 
-    number_of_birds = [28, 32, 1, 0, 10, 22, 30, 19, 145, 27, 36, 25, 9, 38, 21, 12,
-                       122, 87, 36, 3, 0, 5, 55, 62, 98, 32, 90, 33, 14, 39, 56,
-                       81, 29, 38, 1, 0, 143, 37, 98, 77, 92, 83, 34, 98, 40, 45,
-                       51, 17, 22, 37, 48, 38, 91, 73, 54, 46, 102, 273, 60, 10, 11,
-                       27, 24, 16, 9, 23, 39, 102, 0, 14, 3, 9, 93, 64]
+```
+number_of_birds = [28, 32, 1, 0, 10, 22, 30, 19, 145, 27, 36, 25, 9, 38, 21, 12,
+                   122, 87, 36, 3, 0, 5, 55, 62, 98, 32, 90, 33, 14, 39, 56,
+                   81, 29, 38, 1, 0, 143, 37, 98, 77, 92, 83, 34, 98, 40, 45,
+                   51, 17, 22, 37, 48, 38, 91, 73, 54, 46, 102, 273, 60, 10, 11,
+                   27, 24, 16, 9, 23, 39, 102, 0, 14, 3, 9, 93, 64]
+```
 
 For your research on bird counts you need to not only know what many
 birds are at a single site, but also how many birds occur on groups of
@@ -36,13 +34,15 @@ probably better to have a function that does it for you rather than
 doing the slicing yourself each time. Cut and paste the following
 function into your code:
 
-    def n_site_count(bird_counts, start_site, number_of_sites):
-        """Count the total number of birds at a given number of sites starting
-        at a given start site."""
-        start_site = start_site - 1 #convert start site to Python index
-        sub_sites = bird_counts[start_site:start_site + number_of_sites]
-        number_of_birds = sum(sub_sites)
-        return number_of_birds
+```
+def n_site_count(bird_counts, start_site, number_of_sites):
+    """Count the total number of birds at a given number of sites starting
+    at a given start site."""
+    start_site = start_site - 1 #convert start site to Python index
+    sub_sites = bird_counts[start_site:start_site + number_of_sites]
+    number_of_birds = sum(sub_sites)
+    return number_of_birds
+```
 
 Use the function to calculate and return the total count of all birds
 for the n sites starting at the start site. For example, if there are 5
@@ -61,5 +61,3 @@ answer the following questions.
 ​6. Think about what the funtion should do if asked for the total number
 of birds for 10 sites starting at site 70 (Note: there are only 74
 sites). Print out a sentence that explains what it actually does.
-
- 
