@@ -1,26 +1,21 @@
---- layout: post title: 1. Expressions and Variables 1 (problem)
-created: 1314391040 categories: - !binary |- MQ== - !binary |- aW50cm8=
-- !binary |- MQ== - !binary |- aW50cm8= - !binary |- MQ== - !binary |-
-aW50cm8= - !binary |- MQ== - !binary |- aW50cm8= - !binary |- MQ== -
-!binary |- aW50cm8= - !binary |- MQ== - !binary |- aW50cm8= - !binary |-
-MQ== - !binary |- aW50cm8= - !binary |- MQ== - !binary |- aW50cm8= -
-!binary |- MQ== - !binary |- aW50cm8= - !binary |- MQ== - !binary |-
-aW50cm8= - !binary |- MQ== - !binary |- aW50cm8= - !binary |- MQ== -
-!binary |- aW50cm8= ---
+---
+layout: page
+title: Expressions and Variables 1
+---
 
 Think about what value each of the following expressions will return?
 Check your answers using the Python shell by typing each expression into
 the shell and pressing enter.
 
-​a. 2 - 10\
-b. 3 \* 5\
-c. 8 / 2\
-d. 9 / 2\
-e. 9.0 / 2\
-f. 5 – 3 \* 2\
-g. (5 – 3) \* 2\
-h. 4 \*\* 2\
-i. 8 / 2 \*\* 2
+1. 2 - 10
+2. 3 \* 5
+3. 8 / 2
+4. 9 / 2
+5. 9.0 / 2
+6. 5 – 3 \* 2
+7. (5 – 3) \* 2
+8. 4 \*\* 2
+9. 8 / 2 \*\* 2
 
 Did any of the results surprise you? If so, then you've probably run
 into a common point of confusion in Python 2 - [Integer
