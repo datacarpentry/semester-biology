@@ -1,7 +1,7 @@
---- layout: post title: 4. Expressions and Variables 4 (problem)
-created: 1314758212 categories: - !binary |- MQ== - !binary |- aW50cm8=
-- !binary |- MQ== - !binary |- aW50cm8= - !binary |- MQ== - !binary |-
-aW50cm8= - !binary |- MQ== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Expressions and Variables 4
+---
 
 Using a single variable convert a temperature of 42 degrees Fahrenheit
 to Celsius. To do this you'll need to:

@@ -1,7 +1,7 @@
---- layout: post title: 2. Expressions and Variables 2 (problem)
-created: 1314474538 categories: - !binary |- aW50cm8= - !binary |- MQ==
-- !binary |- MQ== - !binary |- aW50cm8= - !binary |- MQ== - !binary |-
-aW50cm8= - !binary |- MQ== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Expressions and Variables 2
+---
 
 Create a variable to store a body mass in pounds and assign it a value
 of 3 (about the right size for a Desert Cottontail Rabbit – Sylvilagus

@@ -1,5 +1,5 @@
 ---
-layout: exercise
+layout: page
 title: Lists 1
 ---
 

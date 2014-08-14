@@ -1,6 +1,7 @@
---- layout: post title: 6. Expressions and Variables 5 (problem)
-created: 1346179384 categories: - !binary |- MQ== - !binary |- aW50cm8=
-- !binary |- MQ== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Expressions and Variables 5
+---
 
 The following code calculates the total net primary productivity (NPP)
 per day for two sites based on the grams of carbon produced per square
