@@ -1,7 +1,7 @@
---- layout: post title: 11. SQL - Updating records created: 1318186816
-categories: - !binary |- NA== - !binary |- YWR2 - !binary |- NA== -
-!binary |- YWR2 - !binary |- NA== - !binary |- YWR2 - !binary |- NA== -
-!binary |- YWR2 - !binary |- NA== - !binary |- YWR2 ---
+---
+layout: page
+title: SQL - Updating records
+---
 
 Add the following note to the FieldNotes table in the Portal database
 for the date 10/1/2013:

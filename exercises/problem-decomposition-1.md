@@ -1,8 +1,6 @@
---- layout: post title: 1. Problem Decomposition [problem] created:
-1320086588 categories: - !binary |- OA== - !binary |- aW50cm8= - !binary
-|- OA== - !binary |- aW50cm8= - !binary |- OA== - !binary |- aW50cm8= -
-!binary |- OA== - !binary |- aW50cm8= - !binary |- OA== - !binary |-
-aW50cm8= - !binary |- OA== - !binary |- aW50cm8= - !binary |- aW50cm8=
+---
+layout: page
+title: Problem Decomposition
 ---
 
 One of you lab mates (you may remember them from the For Loops 2
@@ -13,9 +11,9 @@ Logistic growth is a lot like exponential growth except that it slows
 down as the population grows large and eventually asymptotes at a
 carrying capacity. The basic recursive equation is:
 
-N~t+1~ = N~t~ + r \* N~t~ \* ((K – N~t~) / K)
+`N(t+1)~ = N(t) + r * N(t) * ((K – N(t)) / K)`
 
-N~t~ is the abundance at a given time step, r is the reproductive rate,
+N(t) is the abundance at a given time step, r is the reproductive rate,
 and K is the carrying capacity (you can learn a bit more about logistic
 population growth
 [here](http://en.wikipedia.org/wiki/Logistic_function#In_ecology:_modeling_population_growth)).

@@ -1,8 +1,7 @@
---- layout: post title: ! ' 9. SQL - Creating Tables [problem]' created:
-1318186207 categories: - !binary |- NA== - !binary |- YWR2 - !binary |-
-NA== - !binary |- YWR2 - !binary |- NA== - !binary |- YWR2 - !binary |-
-NA== - !binary |- YWR2 - !binary |- NA== - !binary |- YWR2 - !binary |-
-NA== - !binary |- YWR2 ---
+---
+layout: page
+title: SQL - Creating Tables
+---
 
 Start a new Python file that you will use to answer the rest of the
 questions for this assignment.

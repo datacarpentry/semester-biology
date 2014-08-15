@@ -1,7 +1,7 @@
---- layout: post title: 3. Object Oriented Programming 3 created:
-1319471964 categories: - !binary |- Ng== - !binary |- YWR2 - !binary |-
-Ng== - !binary |- YWR2 - !binary |- Ng== - !binary |- YWR2 - !binary |-
-Ng== - !binary |- YWR2 ---
+---
+layout: page
+title: Object Oriented Programming 3
+---
 
 We know that platypuses can lay up to three eggs each season. Starting
 with the most basic assumption that each number of eggs is equally

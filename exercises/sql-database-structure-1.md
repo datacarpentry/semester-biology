@@ -1,7 +1,7 @@
---- layout: post title: 12. SQL - Database Structure 1 [problem]
-created: 1318187891 categories: - !binary |- NA== - !binary |- YWR2 -
-!binary |- NA== - !binary |- YWR2 - !binary |- NA== - !binary |- YWR2 -
-!binary |- YWR2 ---
+---
+layout: page
+title: SQL - Database Structure 1
+---
 
 *Before starting this problem make sure that you have a backup of your
 database or that it has recently been committed to version control so
@@ -15,8 +15,8 @@ The Plots table in our version of the Portal database violates one of
 the major rules of database structure (the whole gosh dang table is
 redundant for Pete's sake!). Figure out a better design using one table
 to link each plot number to a single experiemental code (save this as
-**PlotsSingleCode**) and a second table that includes various versions
-of each type of code (save this as **Experiments**). Create these tables
+`PlotsSingleCode`) and a second table that includes various versions
+of each type of code (save this as `Experiments`). Create these tables
 and add the appropriate data to them using Python to extract the
 necessary information from the old table and insert it into the new
 tables..

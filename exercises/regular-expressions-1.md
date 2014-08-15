@@ -1,6 +1,7 @@
---- layout: post title: 6. Regular Expressions 1 [problem] created:
-1320672413 categories: - !binary |- Ng== - !binary |- YWR2 - !binary |-
-Ng== - !binary |- YWR2 - !binary |- Ng== - !binary |- YWR2 ---
+---
+layout: page
+title: Regular Expressions 1
+---
 
 There are many diverse sources of biological data in the modern world,
 but not all of them are nicely cultivated into well structured data. For

@@ -1,9 +1,9 @@
---- layout: post title: 3. Refactor (with Regression test) created:
-1350659974 categories: - !binary |- NQ== - !binary |- YWR2 - !binary |-
-NQ== - !binary |- YWR2 ---
+---
+layout: page
+title: Refactor with regression test
+---
 
-This is a follow up to the [Tests 1
-problem](http://www.programmingforbiologists.org/2-tests-1-problem).
+This is a follow up to the [Tests 1 problem](exercises/tests-1).
 
 Now that you've got the code working it's time to deal with the fact
 that it's not really well structured (I mean, has this guy not heard of
@@ -26,4 +26,6 @@ outside of functions at the bottom of the script. So,
 The following command will save you a lot of time messing around with
 converting your list to a numpy structured array
 
-    results = np.array(results, dtype={'names': ['ID', 'SizeClass', 'GCcontent'], 'formats': ['a10', 'a10', 'f4']})
+```
+results = np.array(results, dtype={'names': ['ID', 'SizeClass', 'GCcontent'], 'formats': ['a10', 'a10', 'f4']})
+```

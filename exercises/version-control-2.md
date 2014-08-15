@@ -1,17 +1,18 @@
---- layout: post title: 2. Version Control 2 [problem] created:
-1315797048 categories: - !binary |- Mg== - !binary |- YWR2 - !binary |-
-Mg== - !binary |- YWR2 ---
+---
+layout: page
+title: Version Control 2
+---
 
 Growth of biological populations are often modeled using logistic
 growth, which posits that some limit will eventually stop a population
 from increasing in size. The simplest form of this type of growth is
 logistic growth and takes the following form:
 
-**N\_tplus1 = N\_t + r\*N\_t\*((K-N\_t)/K)**
+`N_tplus1 = N_t + r*N_t*((K-N_t)/K)`
 
-where **N\_t** is the abundance at time **t**, **N\_tplus1** is the
-abundance at time **t+1**, **r** is the maximum per capita reproductive
-rate, and **K** is the carrying capacity. The **(K-N\_t)/K** term
+where `N_t` is the abundance at time `t`, `N_tplus1` is the
+abundance at time `t+1`, `r` is the maximum per capita reproductive
+rate, and `K` is the carrying capacity. The `(K-N_t)/K` term
 captures the impact of the members of a species on each other - the more
 individuals of the species there are, the lower each individuals net
 reproductive rate.

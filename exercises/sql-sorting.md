@@ -1,6 +1,7 @@
---- layout: post title: ! ' 3. SQL - Sorting [problem]' created:
-1317581761 categories: - !binary |- NA== - !binary |- YWR2 - !binary |-
-NA== - !binary |- YWR2 - !binary |- NA== - !binary |- YWR2 ---
+---
+layout: page
+title: SQL - Sorting
+---
 
 The graduate students that work at the Portal site are hanging out late
 one evening drinking... soda pop... and they decide it would be an
@@ -23,4 +24,4 @@ just had to be there) are:
     sorting next by hind foot length and finally by the year of capture.
 
 You may find the SQL command LIMIT to be helpful. Save the final query
-as **100 Largest Individuals**.
+as `100 Largest Individuals`.

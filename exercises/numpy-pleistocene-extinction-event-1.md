@@ -1,6 +1,7 @@
---- layout: post title: 1. Numpy - Pleistocene Extinction Event 1
-[problem] created: 1350679101 categories: - !binary |- OA== - !binary |-
-aW50cm8= - !binary |- OA== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Numpy - Pleistocene Extinction Event 1
+---
 
 There were a relatively large number of [extinctions of mammalian
 species roughly 10,000 years
@@ -51,4 +52,3 @@ around with made up datasets and do some serious analysis.
 -   Print out the results in the following sentence: "The average mass
     of extant species is X and the average mass of extinct species is
     Y." with the appropriate values filled in for X and Y.
-

@@ -1,7 +1,7 @@
---- layout: post title: 2. Numpy - Pleistocene Extinction Event 2
-[problem] created: 1350680117 categories: - !binary |- OA== - !binary |-
-aW50cm8= - !binary |- OA== - !binary |- aW50cm8= - !binary |- OA== -
-!binary |- aW50cm8= - !binary |- OA== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Numpy - Pleistocene Extinction Event 2
+---
 
 Looking at the average mass of extinct and extant species overall is
 useful, but there are lots of different processes that could cause
@@ -16,12 +16,14 @@ the average mass of the extinct species on that continent, and the forth
 entry is the difference between the average extant and average extinct
 masses. Use you handy export\_to\_csv() function:
 
-    def export_to_csv(data, filename):
-        """Export list of lists to comma delimited text file"""
-        outputfile = open(filename, 'wb')
-        datawriter = csv.writer(outputfile)
-        datawriter.writerows(data)
-        outputfile.close()
+```
+def export_to_csv(data, filename):
+    """Export list of lists to comma delimited text file"""
+    outputfile = open(filename, 'wb')
+    datawriter = csv.writer(outputfile)
+    datawriter.writerows(data)
+    outputfile.close()
+```
 
 Call the file continent\_mass\_differences.csv. If you notice anything
 strange think about what's going on and present the final data in the
