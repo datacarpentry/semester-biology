@@ -5,7 +5,7 @@ title: Intro to Programming for Biologists
 
 **[Syllabus](/syllabus/programming-syllabus)**   |  
 **[Schedule](/syllabus/programming-schedule)**   |  
-**[Assignments](/exercises/programming-exercises)**   |  
+**[Assignments](/assignments)**   |  
 **[Material](/material/programming-material)**
 
 Instructor: [Dr. Ethan White](whitelab.weecology.org)

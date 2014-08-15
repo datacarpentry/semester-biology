@@ -5,7 +5,7 @@ title: Intro to Databases for Biologists
 
 **[Syllabus](/syllabus/databases-syllabus)**   |  
 **[Schedule](/syllabus/databases-schedule)**   |  
-**[Assignments](/exercises/databases-exercises)**   |  
+**[Assignments](/assignments)**   |  
 **[Material](/material/databases-material)**
 
 Instructor: [Dr. Ethan White](whitelab.weecology.org)

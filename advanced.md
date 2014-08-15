@@ -5,7 +5,7 @@ title: Advanced Programming and Database Management for Biologists
 
 **[Syllabus](/syllabus/advanced-syllabus)**   |  
 **[Schedule](/syllabus/advanced-schedule)**   |  
-**[Assignments](/exercises/advanced-exercises)**   |  
+**[Assignments](/assignments)**   |  
 **[Material](/material/advanced-material)**   |  
 
 
