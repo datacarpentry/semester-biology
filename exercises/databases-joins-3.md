@@ -1,5 +1,7 @@
---- layout: post title: 3. Databases - Joins 3 [problem] created:
-1318098886 categories: - !binary |- Ng== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases - Joins 3
+---
 
 We want to do an analysis comparing the size of individuals on the
 control plots to the Long-term Krat Exclosures. Write a query that

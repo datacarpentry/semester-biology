@@ -1,9 +1,9 @@
---- layout: post title: 7. Graphing 1 [problem] created: 1316187909
-categories: - !binary |- Mg== - !binary |- YWR2 - !binary |- Mg== -
-!binary |- YWR2 - !binary |- Mg== - !binary |- YWR2 - !binary |- YWR2 -
-!binary |- Mg== - !binary |- YWR2 ---
+---
+layout: page
+title: Graphing 1
+---
 
-This is a follow up to the [Numpy 2 problem](numpy-2-problem).
+This is a follow up to the [Numpy 2 problem](/exercises/numpy-2).
 
 Comparing the average masses of extant and extinct species was a good
 start, but we really need to look at the full distributions of masses of

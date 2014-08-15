@@ -1,7 +1,7 @@
---- layout: post title: 3. Databases - Forms 3 [problem] created:
-1320635518 categories: - !binary |- OQ== - !binary |- aW50cm8= - !binary
-|- OQ== - !binary |- aW50cm8= - !binary |- OQ== - !binary |- aW50cm8= -
-!binary |- MTA= - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases - Forms 3
+---
 
 This is a follow up to the [Forms 2
 problem](http://www.programmingforbiologists.org/2-databases-forms-2-problem).

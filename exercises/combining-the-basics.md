@@ -1,5 +1,7 @@
---- layout: post title: 4. Combining the basics [problem] created:
-1349708788 categories: - !binary |- Nw== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Combining the basics
+---
 
 Dr. Granger is interested in studying the relationship between the
 length of house-elves' ears and aspects of their DNA. This research is
@@ -23,7 +25,7 @@ Write a Python script that:
 1.  Imports the data into a list of lists
 2.  Loops over the rows in the dataset
 3.  For each row in the dataset checks to see if the ear length is large
-    (\>10 cm) or small (\<=10 cm) and determines the GC-content of the
+    (>10 cm) or small (<=10 cm) and determines the GC-content of the
     DNA sequence (i.e., the percentage of bases that are either G or C)
 4.  Stores this information as table in a nested list (where each row is
     a list within the outer list) where the first column has the ID for
@@ -31,17 +33,26 @@ Write a Python script that:
     string 'small' depending on the size of the individuals ears, and
     the third column contains the GC content of the DNA sequence.
 5.  Exports this table to a CSV (comma delimited text) file titled
-    grangers\_analysis\_yourname.csv.
+    `grangers_analysis_yourname.csv`.
 
 This code should use functions to break the code up into manageable
 pieces. To help you get started here are two functions, one for
 importing the data from the web, and one for exporting it to a csv file.
 
-    def get_file_from_web(url):
-        """Imports a comma delimited text file from the web into a list of lists"""
-        webpage = urllib.urlopen(url)
-        datareader = csv.reader(webpage)
-        data = []
-        for row in datareader:
-            data.append(row)
-        return datadef export_to_csv(data, filename):    """Export list of lists to comma delimited text file"""    outputfile = open(filename, 'wb')    datawriter = csv.writer(outputfile)    datawriter.writerows(data)    outputfile.close() 
+```
+def get_file_from_web(url):
+    """Imports a comma delimited text file from the web into a list of lists"""
+    webpage = urllib.urlopen(url)
+    datareader = csv.reader(webpage)
+    data = []
+    for row in datareader:
+        data.append(row)
+    return data
+
+def export_to_csv(data, filename):
+    """Export list of lists to comma delimited text file"""
+	outputfile = open(filename, 'wb')
+	datawriter = csv.writer(outputfile)
+	datawriter.writerows(data)
+	outputfile.close()
+```

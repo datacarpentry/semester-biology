@@ -1,11 +1,7 @@
---- layout: post title: 4. Higher Order Functions 2 [problem] created:
-1315369377 categories: - !binary |- MQ== - !binary |- YWR2 - !binary |-
-MQ== - !binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |-
-MQ== - !binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |-
-MQ== - !binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |-
-MQ== - !binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |-
-MQ== - !binary |- YWR2 - !binary |- MQ== - !binary |- YWR2 - !binary |-
-MQ== - !binary |- YWR2 ---
+---
+layout: page
+title: Higher Order Functions 2
+---
 
 The species-area relationship characterizes the relationship between the
 the number of species observed at a site and the area being sampled.
@@ -42,10 +38,12 @@ richness. Each sublist contains the parameters for one model in the
 order given above. All models contain b~0~ and b~1~, but only the
 Power-quadratic and Lomolino models contain the third paramter b~2~.
 
-sar\_parameters = [[20.81, 0.1896], [1.35, 0.1524, 0.0081], [14.36,
+```
+sar_parameters = [[20.81, 0.1896], [1.35, 0.1524, 0.0081], [14.36,
 21.16], [85.91, 42.57], [1082.45, 1.59, 390000000]]
 
 areas = [1, 5.2, 10.95, 152.3, 597.6, 820, 989.8, 1232.5, 15061]
+```
 
 These can be cut and paste into your code. Alternatively, if you're
 looking for a more realistic challenge you can import the related csv
@@ -71,4 +69,3 @@ problem you may find
 use of asterisks](http://www.technovelty.org/code/python/asterisk.html)
 handy.
 
-****

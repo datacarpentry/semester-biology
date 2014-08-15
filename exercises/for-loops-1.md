@@ -1,7 +1,7 @@
---- layout: post title: 1. For Loops 1 [problem] created: 1318860516
-categories: - !binary |- Nw== - !binary |- aW50cm8= - !binary |- Nw== -
-!binary |- aW50cm8= - !binary |- Nw== - !binary |- aW50cm8= - !binary |-
-Nw== - !binary |- aW50cm8= ---
+---
+layout: page
+title: For Loops 1
+---
 
 [Microsatellite's](http://en.wikipedia.org/wiki/Microsatellite_%28genetics%29)
 are short sequences of DNA (2-6 bases) that are repeated sequencially in

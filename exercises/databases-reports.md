@@ -1,6 +1,6 @@
---- layout: post title: 4. Databases - Reports [problem] created:
-1320637616 categories: - !binary |- OQ== - !binary |- aW50cm8= - !binary
-|- OQ== - !binary |- aW50cm8= - !binary |- MTA= - !binary |- aW50cm8=
+---
+layout: page
+title: Databases - Reports
 ---
 
 Create a report that asks the user what year they want the report for

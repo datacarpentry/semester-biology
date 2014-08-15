@@ -1,7 +1,7 @@
---- layout: post title: 2. Databases - Forms 2 [problem] created:
-1320634953 categories: - !binary |- OQ== - !binary |- aW50cm8= - !binary
-|- OQ== - !binary |- aW50cm8= - !binary |- OQ== - !binary |- aW50cm8= -
-!binary |- MTA= - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases - Forms 2
+---
 
 Create a basic data entry form for the Portal Main table. Since the
 recordID field will automatically add a new number, don't include it in

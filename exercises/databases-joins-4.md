@@ -1,5 +1,7 @@
---- layout: post title: 4. Databases - Joins 4 [problem] created:
-1318098926 categories: - !binary |- Ng== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases - Joins 4
+---
 
 Write a query that displays the total number of individuals sampled on
 each plot type (use the full plot type description). Save this query as

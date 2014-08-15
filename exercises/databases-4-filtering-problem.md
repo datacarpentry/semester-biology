@@ -1,6 +1,6 @@
---- layout: post title: Databases 4 - Filtering [problem] created:
-1316311778 categories: - !binary |- Mw== - !binary |- aW50cm8= - !binary
-|- Mw== - !binary |- aW50cm8= - !binary |- Mw== - !binary |- aW50cm8=
+---
+layout: page
+title: Databases 4 - Filtering
 ---
 
 A population biologist (Dr. Undómiel) who studies the population

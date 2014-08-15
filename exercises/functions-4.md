@@ -1,8 +1,9 @@
---- layout: post title: 3. Functions 4 [problem] created: 1314392863
-categories: - !binary |- Mg== - !binary |- aW50cm8= - !binary |- MQ== -
-!binary |- aW50cm8= - !binary |- NQ== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Functions 4
+---
 
-This is a follow up to the [Functions 3 problem](2-functions-3-problem).
+This is a follow up to the [Functions 3 problem](/exercises/functions-3).
 
 Measuring things using the metric system is great for us scientists, but
 when you call your grandmother this weekend (you do call your
@@ -19,4 +20,4 @@ function along with your dinosaur mass function to estimate the weight,
 in pounds, of a 12 m long Stegosaurus (12 m is about as big as they come
 and we want grandma's story to to be as wild as possible). In
 *Stegosauria*, a has been estimated as 10.95 and b has been estimated as
-2.64  ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
+2.64 ([Seebacher 2001](http://www.jstor.org/stable/4524171)).

@@ -1,6 +1,7 @@
---- layout: post title: 7. Databases - Nested Queries 1 [problem]
-created: 1318101329 categories: - !binary |- Ng== - !binary |- aW50cm8=
-- !binary |- Ng== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases - Nested Queries 1
+---
 
 Using the Portal database write a query that returns the average number
 of individuals per plot sampled each year on each of the different plot

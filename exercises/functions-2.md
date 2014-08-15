@@ -1,9 +1,7 @@
---- layout: post title: 1. Functions 2 [problem] created: 1314392447
-categories: - !binary |- Mg== - !binary |- aW50cm8= - !binary |- MQ== -
-!binary |- aW50cm8= - !binary |- MQ== - !binary |- YWR2 - !binary |-
-aW50cm8= - !binary |- MQ== - !binary |- YWR2 - !binary |- aW50cm8= -
-!binary |- NQ== - !binary |- aW50cm8= - !binary |- NQ== - !binary |-
-aW50cm8= ---
+---
+layout: page
+title: Functions 2
+---
 
 Write a function that converts pounds to grams (there are 453.592 in one
 pound). Use that function and a built in function to print out how many

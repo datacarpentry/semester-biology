@@ -1,6 +1,7 @@
---- layout: post title: 2. Databases - Joins 2 [problem] created:
-1318098829 categories: - !binary |- Ng== - !binary |- aW50cm8= - !binary
-|- Ng== - !binary |- aW50cm8= ---
+---
+layout: page
+title: 2. Databases - Joins 2
+---
 
 You are curious about what other kinds of animals get caught in the
 Sherman traps used to census the rodents. Write a query that the returns

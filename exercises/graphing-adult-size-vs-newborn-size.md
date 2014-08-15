@@ -1,7 +1,7 @@
---- layout: post title: 1. Graphing (adult size vs. newborn size)
-[problem] created: 1351394127 categories: - !binary |- OQ== - !binary |-
-aW50cm8= - !binary |- OQ== - !binary |- aW50cm8= - !binary |- OQ== -
-!binary |- aW50cm8= ---
+---
+layout: page
+title: Graphing - adult size vs. newborn size
+---
 
 It makes sense that larger organisms have larger offspring, but what the
 exact mathematical form of this relationship shoudl be is unclear. Let's

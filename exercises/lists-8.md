@@ -1,7 +1,7 @@
---- layout: post title: 3. Lists 5 [problem] created: 1317403445
-categories: - !binary |- NQ== - !binary |- aW50cm8= - !binary |- NQ== -
-!binary |- aW50cm8= - !binary |- NQ== - !binary |- aW50cm8= - !binary |-
-aW50cm8= ---
+---
+layout: page
+title: Lists 8
+---
 
 Write a function that returns the complement of an arbitrary DNA strand
 passed as a string. The complement of a DNA strand is that strand with
@@ -11,12 +11,7 @@ this function in combation with a for loop to determine the complement
 of the following strands of DNA (included in a list that can be pasted
 into your code) and print the complements to the screen.
 
+```
 sequences = ['GCCATTCTGC', 'GCTTACCCAA', 'CCTCTAGCGC', 'TAAATTTTGT',
-'TGTGATACTG', 'AACAGAGCATCTCTTGTGACCAGTT',
-
-             'TAGGCTGCCTGTGGCAGGTTGTTGCATTCTCTTAGAACCGCCCTGAACTC',
-'ATCCACAGACATCTCGTGTAAGGGG',
-
-             'CCCTCTTTCCAATTGACAGGATCAG']
-
- 
+'TGTGATACTG', 'AACAGAGCATCTCTTGTGACCAGTT', 'TAGGCTGCCTGTGGCAGGTTGTTGCATTCTCTTAGAACCGCCCTGAACTC', 'ATCCACAGACATCTCGTGTAAGGGG', 'CCCTCTTTCCAATTGACAGGATCAG']
+```

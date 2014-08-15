@@ -1,6 +1,7 @@
---- layout: post title: 1. Debugging [problem] created: 1318869774
-categories: - !binary |- NQ== - !binary |- YWR2 - !binary |- NQ== -
-!binary |- YWR2 ---
+---
+layout: page
+title: Debugging
+---
 
 This is a follow up to the [Basic Python 1
 problem](http://www.programmingforbiologists.org/basic-python-1-problem).

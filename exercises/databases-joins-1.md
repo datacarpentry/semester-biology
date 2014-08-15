@@ -1,6 +1,6 @@
---- layout: post title: 1. Databases - Joins 1 [problem] created:
-1318098477 categories: - !binary |- Ng== - !binary |- aW50cm8= - !binary
-|- Ng== - !binary |- aW50cm8= - !binary |- Ng== - !binary |- aW50cm8=
+---
+layout: page
+title: Databases - Joins 1
 ---
 
 Start a new database and name it assignment\_6\_firstnamelastname. You

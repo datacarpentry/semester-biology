@@ -1,8 +1,7 @@
---- layout: post title: 2. Functions 3 (problem) created: 1314392632
-categories: - !binary |- Mg== - !binary |- aW50cm8= - !binary |- Mg== -
-!binary |- aW50cm8= - !binary |- MQ== - !binary |- aW50cm8= - !binary |-
-Mi4= - !binary |- aW50cm8= - !binary |- NQ== - !binary |- aW50cm8= -
-!binary |- NQ== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Functions 3
+---
 
 As we learned earlier in the semester, the length of an organism is
 typically strongly correlated with it's body mass. This is useful
@@ -17,7 +16,7 @@ parameters. This will make it easier to reuse later.
 This allometric approach is regularly used to estimate the mass of
 dinosaurs since we cannot weigh something that is only preserved as
 bones. In *Theropoda*, a has been estimated as 0.73 and b has been
-estimated as 3.63  ([Seebacher
+estimated as 3.63 ([Seebacher
 2001](http://www.jstor.org/stable/4524171)). Use these parameters and
 your function to print out the mass of a Spinosaurus that is 16 m long
 based on it's reassembled skeleton. Spinosaurus is a predator that is

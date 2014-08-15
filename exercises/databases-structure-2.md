@@ -1,6 +1,7 @@
---- layout: post title: 6. Databases - Structure 2 [problem] created:
-1318100115 categories: - !binary |- Ng== - !binary |- aW50cm8= - !binary
-|- Ng== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases - Structure 2
+---
 
 The Species table in the Portal database has a structural problem in
 that the **oldcode** column often contains multiple pieces of

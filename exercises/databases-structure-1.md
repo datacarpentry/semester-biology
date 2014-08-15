@@ -1,6 +1,6 @@
---- layout: post title: 5. Databases - Structure 1 [problem] created:
-1318099559 categories: - !binary |- Ng== - !binary |- aW50cm8= - !binary
-|- Ng== - !binary |- aW50cm8= - !binary |- Ng== - !binary |- aW50cm8=
+---
+layout: page
+title: Databases - Structure 1
 ---
 
 The Plots table in our version of the Portal database violates one of

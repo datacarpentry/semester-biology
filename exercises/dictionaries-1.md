@@ -1,7 +1,7 @@
---- layout: post title: 9. Dictionaries 1 [problem] created: 1316556177
-categories: - !binary |- Mg== - !binary |- YWR2 - !binary |- Mg== -
-!binary |- YWR2 - !binary |- Mg== - !binary |- YWR2 - !binary |- YWR2 -
-!binary |- Mg== - !binary |- YWR2 ---
+---
+layout: page
+title: Dictionaries 1
+---
 
 Some measures of similarity, like the Jaccard index in the [Sets 1
 problem](sets-1-problem), are based only on the presence/absence of
