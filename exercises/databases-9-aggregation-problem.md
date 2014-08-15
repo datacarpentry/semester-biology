@@ -1,5 +1,7 @@
---- layout: post title: Databases 9 - Aggregation [problem] created:
-1316571372 categories: - !binary |- Mw== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases 9 - Aggregation
+---
 
 Write a query that returns the number of individuals of each species
 captured in each year and the total biomass of those individuals (the

@@ -1,5 +1,7 @@
---- layout: post title: Databases 7 - Grouping [problem] created:
-1316570909 categories: - !binary |- Mw== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases 7 - Grouping
+---
 
 Write a query that returns a list of dates on which individuals of the
 species *Dipodomys spectabilis* (indicated by the DS species code) were

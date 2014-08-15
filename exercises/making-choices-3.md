@@ -1,0 +1,22 @@
+---
+layout: page
+title: Making Choices 3
+---
+
+Write a function, `dna_or_rna(sequence)`, that determines if a sequence
+of base pairs is DNA, RNA, or if it is not possible to tell given the
+sequence provided. This function should work with both upper and lower
+case letters. Since all the function will know about the material is the
+sequence the only way to tell the difference between DNA and RNA is that
+RNA has the base Uracil (U) instead of the base Thymine (T). Have the
+function return one of three outputs: 'DNA', 'RNA', or 'UNKNOWN'. Use
+the function and a for loop to print the type of the sequences in the
+following list.
+
+```
+sequences = ['ttgaatgccttacaactgatcattacacaggcggcatgaagcaaaaatatactgtgaaccaatgcaggcg',
+             'gauuauuccccacaaagggagugggauuaggagcugcaucauuuacaagagcagaauguuucaaaugcau',
+             'gaaagcaagaaaaggcaggcgaggaagggaagaagggggggaaacc',
+             'guuuccuacaguauuugaugagaaugagaguuuacuccuggaagauaauauuagaauguuuacaacugcaccugaucagguggauaaggaagaugaagacu',
+             'GAUAAGGAAGAUGAAGACUUUCAGGAAUCUAAUAAAAUGCACUCCAUGAAUGGAUUCAUGUAUGGGAAUCAGCCGGGUC']
+```

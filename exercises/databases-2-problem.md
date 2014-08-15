@@ -1,7 +1,7 @@
---- layout: post title: Databases 2 [problem] created: 1316310314
-categories: - !binary |- Mw== - !binary |- aW50cm8= - !binary |- Mw== -
-!binary |- aW50cm8= - !binary |- Mw== - !binary |- aW50cm8= - !binary |-
-Mw== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases 2
+---
 
 #### Import Data in MS Access
 
@@ -20,41 +20,41 @@ published as a Data Paper on Ecological Archives
 which is generally a great place to look for ecology data.
 
 b.Create a new database by selecting a file name and location and
-clicking **Create**
+clicking `Create`
 
-​c. Click on the **External Data** tab in Access
+​c. Click on the `External Data` tab in Access
 
-​d. Select **Text File** since this is a text file, you'll notice that
+​d. Select `Text File` since this is a text file, you'll notice that
 you can also import from Excel and from other Access databases
 
-​e. Click on **Browse** and navigate to where you saved the data file
+​e. Click on `Browse` and navigate to where you saved the data file
 and select it
 
-​f. Make sure that **Import the source data into a new table in the
-current database** is selected and click **OK**
+​f. Make sure that `Import the source data into a new table in the
+current database` is selected and click `OK`
 
-​g. Since the data are comma delimited, click **Next**
+​g. Since the data are comma delimited, click `Next`
 
-​h. Make sure the **Comma** is selected as the delimiter, check the
-**First Row Contains Field Names** option, and click **Next**
+​h. Make sure the `Comma` is selected as the delimiter, check the
+`First Row Contains Field Names` option, and click `Next`
 
 ​i. Check to make sure that the types for each field are reasonable.
 Access only checks this first few rows of data to determine these types,
 so if type of data in a column changes further down this can can cause
-import errors. If it was me I'd take are careful look **hft** and
-**wgt** (which are weights and hindfoot lenths and should therefore be
-numbers) and at **Tag**, either by opening the file in Excel or by
+import errors. If it was me I'd take are careful look `hft` and
+`wgt` (which are weights and hindfoot lenths and should therefore be
+numbers) and at `Tag`, either by opening the file in Excel or by
 checking the portion of the table from the [Databases 1
 problem](databases-1-problem) to see what might be an issue. When you're
-finished click **Next**
+finished click `Next`
 
-​j. Select **Choose my own primary key**, choose **recordID**, and click
-**Next**
+​j. Select `Choose my own primary key`, choose `recordID`, and click
+`Next`
 
-​k. Name the table that you are importing in to **Portal Main** and
-click **Finish**
+​k. Name the table that you are importing in to `Portal Main` and
+click `Finish`
 
-**Save this file and bring it with you next time.**You will be turning
+**Save this file and bring it with you next time.** You will be turning
 it in as part of this assignment. You should be able to still email this
 to yourself, but it's starting to get pretty large so in the future you
 will may either need to bring a USB key or use USU's Big File Transfer

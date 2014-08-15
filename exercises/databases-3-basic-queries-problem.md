@@ -1,6 +1,6 @@
---- layout: post title: Databases 3 - Basic Queries [problem] created:
-1316311376 categories: - !binary |- Mw== - !binary |- aW50cm8= - !binary
-|- Mw== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Databases 3 - Basic Queries
 
 *For this and many of the following problems you will create queries
 that retrieve the relevant information from the Portal small mammal
