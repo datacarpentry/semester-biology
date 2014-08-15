@@ -1,11 +1,10 @@
---- layout: post title: 6. Numpy 4 [problem] (optional for extra credit)
-created: 1317497059 categories: - !binary |- NQ== - !binary |- aW50cm8=
-- !binary |- NQ== - !binary |- aW50cm8= - !binary |- NQ== - !binary |-
-aW50cm8= - !binary |- NQ== - !binary |- aW50cm8= - !binary |- NQ== -
-!binary |- aW50cm8= - !binary |- aW50cm8= ---
+---
+layout: page
+title: Numpy 4
+---
 
 Download the file
-[sequence\_data\_complete.txt](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/sequence_data_complete.txt)
+[sequence_data_complete.txt](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/sequence_data_complete.txt)
 from the website. This file consists of three columns separate by
 commas: 1) A sequence ID (like the primary keys we've using in our
 database work); 2) The length of the sequence; and 3) The sequence
@@ -13,8 +12,8 @@ itself as a string. Import the file into a Numpy array (using
 genfromtxt). Use a for loop to print the following statement for each
 row of the datafile:
 
-The complement of Sequence ID **sequence\_id** is **complement**. This
-sequence is **sequence\_length** bases long.
+The complement of Sequence ID **sequence_id** is **complement**. This
+sequence is **sequence_length** bases long.
 
 Use the complement function you wrote for the [Lists 5
 problem](http://www.programmingforbiologists.org/3-lists-5-problem) to

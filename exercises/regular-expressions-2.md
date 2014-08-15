@@ -1,10 +1,9 @@
---- layout: post title: 7. Regular Expressions 2 [problem] created:
-1320844970 categories: - !binary |- Ng== - !binary |- YWR2 - !binary |-
-Ng== - !binary |- YWR2 - !binary |- Ng== - !binary |- YWR2 - !binary |-
-Ng== - !binary |- YWR2 ---
+---
+layout: page
+title: Regular Expressions 2
+---
 
-This is a follow up to the [Regular Expressions 1
-problem](http://www.programmingforbiologists.org/6-regular-expressions-1-problem).
+This is a follow up to the [Regular Expressions 1 problem](exercises/regular-expressions-1).
 
 Once you figured out how to extract the latin binomials from a Wikipedia
 page that, to be generous, wasn't exactly the most consistently formated
@@ -23,6 +22,6 @@ When you're done with this assignment, commit the raw data file and the
 Python code to your repository. There's no need to commit the database
 because your code will create it when executed.
 
-\*Note: It is not uncommon for this type of programming euphoria driven
+*Note: It is not uncommon for this type of programming euphoria driven
 confidence and excitement to be brutally shattered by the very next
-thing you try... so...
+thing you try... so...*

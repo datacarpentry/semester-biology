@@ -1,10 +1,7 @@
---- layout: post title: 3. Numpy 3 [problem] created: 1315973048
-categories: - !binary |- Mg== - !binary |- YWR2 - !binary |- aW50cm8= -
-!binary |- Mg== - !binary |- YWR2 - !binary |- aW50cm8= - !binary |-
-Mg== - !binary |- YWR2 - !binary |- aW50cm8= - !binary |- Mg== - !binary
-|- YWR2 - !binary |- aW50cm8= - !binary |- YWR2 - !binary |- aW50cm8= -
-!binary |- OA== - !binary |- aW50cm8= - !binary |- OA== - !binary |-
-aW50cm8= ---
+---
+layout: page
+title: Numpy 3
+---
 
 Understanding the total amount of biomass (the total mass of all
 individuals) in forests is important for understanding the global carbon
@@ -40,4 +37,3 @@ in a 96 hectare area of the Western Ghats in India.
 5.  Use the two functions you've written to estimate the total biomass
     (i.e., the sum of the masses) of trees in this dataset and print the
     result to the screen.
-

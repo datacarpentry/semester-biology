@@ -1,10 +1,9 @@
---- layout: post title: 6. Numpy 2 [problem] created: 1315972127
-categories: - !binary |- Mg== - !binary |- YWR2 - !binary |- Mg== -
-!binary |- YWR2 - !binary |- Mg== - !binary |- YWR2 - !binary |- Mg== -
-!binary |- YWR2 - !binary |- YWR2 - !binary |- YWR2 - !binary |- Mg== -
-!binary |- YWR2 ---
+---
+layout: page
+title: Numpy 2
+---
 
-This is a follow up to the [Numpy 1 problem](5-numpy-1-problem).
+This is a follow up to the [Numpy 1 problem](/exercises/numpy-1).
 
 Looking at the average mass of extinct and extant species overall is
 useful, but there are lots of different processes that could cause

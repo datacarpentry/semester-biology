@@ -1,10 +1,9 @@
---- layout: post title: Shell 3 - Finding Things [problem] created:
-1317175202 categories: - !binary |- Mw== - !binary |- YWR2 - !binary |-
-Mw== - !binary |- YWR2 - !binary |- Mw== - !binary |- YWR2 - !binary |-
-Mw== - !binary |- YWR2 - !binary |- Mw== - !binary |- YWR2 ---
+---
+layout: page
+title: Shell 3 - Finding Things
+---
 
-This is a follow question to [Shell 2 - Pipes and Filters
-[problem]](shell-2-pipes-and-filters-problem).
+This is a follow question to [Shell 2 - Pipes and Filters](shell-2-pipes-and-filters).
 
 Your team quickly realizes that since it's going to have lots of data
 files it will be better to store them in their own directories to keep

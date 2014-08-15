@@ -1,6 +1,7 @@
---- layout: post title: 1. Version Control 1 [problem] created:
-1315788591 categories: - !binary |- Mg== - !binary |- YWR2 - !binary |-
-Mg== - !binary |- YWR2 - !binary |- Mg== - !binary |- YWR2 ---
+---
+layout: page
+title: Version Control 1
+---
 
 1.  Checkout your repository from Beanstalk
 2.  Create a directory called hw1 (or something similar)

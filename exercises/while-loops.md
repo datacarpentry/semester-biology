@@ -1,9 +1,9 @@
---- layout: post title: 3. While loops [problem] created: 1318863456
-categories: - !binary |- Nw== - !binary |- aW50cm8= - !binary |- Nw== -
-!binary |- aW50cm8= ---
+---
+layout: page
+title: While loops
+---
 
-This is a follow up to the [For Loops 2
-problem](http://www.programmingforbiologists.org/2-loops-2-problem).
+This is a follow up to the [For Loops 2 problem](/exercises/loops-2).
 
 In addition to wanting to be able to calculate the predicted abundance
 at a given point in time for an exponentially growing species, your lab

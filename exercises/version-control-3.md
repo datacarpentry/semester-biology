@@ -1,8 +1,9 @@
---- layout: post title: 3. Version Control 3 [problem] created:
-1315798644 categories: - !binary |- Mg== - !binary |- YWR2 - !binary |-
-Mg== - !binary |- YWR2 ---
+---
+layout: page
+title: Version Control 3
+---
 
-You're working late and you sit down to edit logistic\_growth.py. You
+You're working late and you sit down to edit `logistic_growth.py`. You
 open the file in your editor, reach for your cup of coffee, knock it
 over onto your computer and in all of the excitement somehow delete the
 contents of the file and save it (go ahead, open it, delete the

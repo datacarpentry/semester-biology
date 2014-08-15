@@ -1,10 +1,10 @@
---- layout: post title: 2. Statistics (adult size vs. newborn size)
-[problem] created: 1351395121 categories: - !binary |- OQ== - !binary |-
-aW50cm8= - !binary |- OQ== - !binary |- aW50cm8= - !binary |- OQ== -
-!binary |- aW50cm8= - !binary |- OQ== - !binary |- aW50cm8= ---
+---
+layout: page
+title: Statistics adult size vs. newborn size
+---
 
 This is a follow up to the [Graphing - Adult Size vs. Newborn Size
-problem](1-graphing-adult-size-vs-newborn-size-problem).
+problem](/exercises/graphing-adult-size-vs-newborn-size).
 
 We've graphed the relationship between adult size and new born size in
 mammals and now it's time to analyze the relationship statistically.

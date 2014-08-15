@@ -1,10 +1,7 @@
---- layout: post title: 5. Numpy 1 [problem] created: 1315971658
-categories: - !binary |- Mg== - !binary |- YWR2 - !binary |- aW50cm8= -
-!binary |- Mg== - !binary |- YWR2 - !binary |- aW50cm8= - !binary |-
-Mg== - !binary |- YWR2 - !binary |- aW50cm8= - !binary |- Mg== - !binary
-|- YWR2 - !binary |- aW50cm8= - !binary |- YWR2 - !binary |- aW50cm8= -
-!binary |- Mg== - !binary |- YWR2 - !binary |- YWR2 - !binary |- Mg== -
-!binary |- YWR2 ---
+---
+layout: page
+title: Numpy 1
+---
 
 There were a relatively large number of extinctions of mammalian species
 roughly 10,000 years ago. To help understand why these extinctions
@@ -48,4 +45,3 @@ and do some serious analysis.
     independent data points.
 -   Does it look like there's a difference in size between the species
     that went extinct and those that didn't?
-
