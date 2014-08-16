@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Database Management for Biologists Syllabus
+title: Databases for Biologists Syllabus
 ---
 
 BIOL 5322/6322, 1 Credit, Fall 2014
