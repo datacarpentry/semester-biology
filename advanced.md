@@ -6,7 +6,7 @@ title: Advanced Computing for Biologists
 **[Syllabus](/syllabus/advanced-syllabus)**   |  
 **[Schedule](/syllabus/advanced-schedule)**   |  
 **[Assignments](/assignments)**   |  
-**[Material](/material/advanced-material)**   |  
+**[Material](/material/advanced-material)**
 
 
 Instructor: [Dr. Ethan White](http://whitelab.weecology.org)
