@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Advanced Programming and Database Management for Biologists
+title: Advanced Computing for Biologists
 ---
 
 **[Syllabus](/syllabus/advanced-syllabus)**   |  

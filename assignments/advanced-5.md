@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Adv. Programming/Databases Assignment 5
+title: Advanced Computing Assignment 5
 exercises: []
 ---
 

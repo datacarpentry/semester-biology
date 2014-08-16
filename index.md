@@ -9,7 +9,7 @@ taught during Fall 2014.
 * [Introduction to Programming for Biologists](/programming)
 * [Introduction to Database Management for Biologists](/databases)
 * [Computational Biology Research Project]()
-* [Advanced Programming and Database Management for Biologists](/advanced)
+* [Advanced Computing for Biologists](/advanced)
 
 The goal of these courses is to teach biologists how to use computers more
 effectively to make their research easier. We avoid a lot of the theory that is
