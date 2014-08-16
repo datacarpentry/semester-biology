@@ -1,5 +1,5 @@
 ---
-layout: age
+layout: page
 title: Inheritance
 ---
 
