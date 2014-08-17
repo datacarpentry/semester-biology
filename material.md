@@ -1,0 +1,93 @@
+---
+layout: page
+title: Material
+---
+
+Most of the material here is presented as
+[IPython notebooks](http://nbviewer.ipython.org/urls/raw.github.com/ethanwhite/progbio/master/ipynbs/ipython-notebook.ipynb).
+The main links will take you to a nicely formatted text version of the notebook
+displayed in the browser. You can also download the actual notebook to interact
+with it on your computer by changing the code and seeing what happens.
+
+### Introductory Programming Material
+
+-   [Expressions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/expressions.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/expressions.ipynb))
+-   [Types](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/types.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/types.ipynb))
+-   [Integer
+    Division](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/integer-division.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/integer-division.ipynb))
+-   [Variables and
+    Assignment](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/variables-assignment.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/variables-assignment.ipynb))
+-   [Using
+    Functions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/functions-using.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/functions-using.ipynb))
+-   [Writing
+    Functions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/functions-writing.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/functions-writing.ipynb))
+-   [Strings](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/strings.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/strings.ipynb))
+-   [Lists: loops, methods, and nested
+    lists](sites/programmingforbiologists.org/files/lists_loops_methods_nesting.pdf)
+-   [For
+    loops](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/for-loops.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/for-loops.ipynb))
+-   [While
+    loops](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/while-loops.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/while-loops.ipynb))
+-   [Common points of confusion in Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/common-confusions.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/common-confusions.ipynb))
+-   [Numpy](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/numpy.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/numpy.ipynb))
+-   [Graphing](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/matplotlib.ipynb))
+-   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
+-   Python & R:
+    [Slides](https://github.com/ethanwhite/progbio/raw/master/lectures/R_and_python.pdf),
+    [notebook](http://nbviewer.ipython.org/url/raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb)
+    ([raw notebook](https://raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb))
+-   [Debugging](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/basic_debugging.pdf)
+
+### Introductory Databases Material
+
+-   [Introduction to Databases](sites/programmingforbiologists.org/files/intro_to_databases.pdf)
+-   [Database Structure](sites/programmingforbiologists.org/files/databases_structure.pdf)
+-   [Forms in MS Access](https://github.com/ethanwhite/progbio/blob/master/lectures/access-forms.md)
+-   [Reports in MS Access](https://github.com/ethanwhite/progbio/blob/master/lectures/access-reports.md)
+-   [SQL for Access Users](https://github.com/ethanwhite/progbio/blob/master/lectures/sql_for_access_users.md)
+-   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
+
+### Advanced Material
+
+-   [Importing delimited text files](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/import.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/import.ipynb))
+-   [Exporting data from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/export.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/export.ipynb))
+-   [Writing Functions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/functions-writing.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/functions-writing.ipynb))
+-   [Numpy](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/numpy.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/numpy.ipynb))
+-   [Graphing in Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/matplotlib.ipynb))
+-   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
+-   [Database Structure](sites/programmingforbiologists.org/files/databases_structure.pdf)
+-   [Debugger](https://github.com/ethanwhite/progbio/blob/master/lectures/debugger.md)
+-   [Testing](https://github.com/ethanwhite/progbio/blob/master/lectures/testing.md)
+-   [List comprehensions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/list-comprehensions.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/list-comprehensions.ipynb))
+-   [Style](https://github.com/ethanwhite/progbio/blob/master/lectures/style.md)
+-   Python & R:
+    [Slides](https://github.com/ethanwhite/progbio/raw/master/lectures/R_and_python.pdf),
+    [notebook](http://nbviewer.ipython.org/url/raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb)
+    ([raw notebook](https://raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb))
+-   [Program Design](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/design.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/design.ipynb))
+-   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
+-   [Web data](https://github.com/ethanwhite/progbio/blob/master/lectures/web_data.md)
+
