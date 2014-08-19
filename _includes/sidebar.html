@@ -10,14 +10,12 @@
     </div>
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-
-      <a class="sidebar-nav-item" href="/programming">Programming</a>      
-      <a class="sidebar-nav-item" href="/databases">Databases</a>
-      <a class="sidebar-nav-item" href="/advanced">Advanced Computing</a>
-      <a class="sidebar-nav-item" href="/exercises">Exercises</a>
-      <a class="sidebar-nav-item" href="/assignments">Assignments</a>
+      <a class="sidebar-nav-item{% if page.url == '/programming/' %} active{% endif %}" href="/programming">Programming</a>
+      <a class="sidebar-nav-item{% if page.url == '/databases/' %} active{% endif %}" href="/databases">Databases</a>
+      <a class="sidebar-nav-item{% if page.url == '/advanced/' %} active{% endif %}" href="/advanced">Advanced Computing</a>
+      <a class="sidebar-nav-item{% if page.url == '/exercises/' %} active{% endif %}" href="/exercises">Exercises</a>
+      <a class="sidebar-nav-item{% if page.url == '/assignments/' %} active{% endif %}" href="/assignments">Assignments</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-
     </nav>
 
     <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/public/cc-by-80x15.png" /></a></p>
