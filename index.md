@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /courses/
 ---
 
 This is the website for Ethan White's programming and database management

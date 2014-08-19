@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Material
+redirect_from:
+  - /lectures-and-notes/
+  - /lectures-intro/
+  - /lectures-adv/
 ---
 
 Most of the material here is presented as

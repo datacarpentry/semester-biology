@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Exercises/Assignments
+redirect_from:
+  -  /assignments-intro/
+  -  /assignments-advanced/
 ---
 
 ### Intro to Programming Exercises

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Intro to Programming for Biologists
+redirect_from: /introduction-programming-and-database-management-biologists/
 ---
 
 **[Syllabus](/syllabus/programming-syllabus)**   |  

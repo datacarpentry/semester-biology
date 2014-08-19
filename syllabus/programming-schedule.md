@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Schedule for Programming For Biologists
+redirect_from: /schedule-intro/
 ---
 
 ### Week 1: Expressions, Types, Variables, Errors, Functions

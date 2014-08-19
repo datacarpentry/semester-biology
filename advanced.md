@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Advanced Computing for Biologists
+redirect_from: /advanced-programming-and-database-management-biologists/
 ---
 
 **[Syllabus](/syllabus/advanced-syllabus)**   |  

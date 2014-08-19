@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Syllabus - Advanced Programming and Database Management for Biologists
+redirect_from: /syllabus-advanced/
 ---
 
 #### BIOL 4750/6750, 3 Credits, Syllabus and Schedule, Fall 2012
