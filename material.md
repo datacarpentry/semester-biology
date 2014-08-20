@@ -59,9 +59,9 @@ with it on your computer by changing the code and seeing what happens.
 
 -   [Introduction to Databases](/lectures/intro_to_databases.pdf)
 -   [Database Structure](/lectures/databases_structure.pdf)
--   [Forms in MS Access](/lectures/access-forms.md)
--   [Reports in MS Access](/lectures/access-reports.md)
--   [SQL for Access Users](/lectures/sql_for_access_users.md)
+-   [Forms in MS Access](/lectures/access-forms)
+-   [Reports in MS Access](/lectures/access-reports)
+-   [SQL for Access Users](/lectures/sql-for-access-users)
 -   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
 
@@ -80,11 +80,11 @@ with it on your computer by changing the code and seeing what happens.
 -   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
 -   [Database Structure](/lectures/databases_structure.pdf)
--   [Debugger](/lectures/debugger.md)
--   [Testing](/lectures/testing.md)
+-   [Debugger](/lectures/debugger)
+-   [Testing](/lectures/testing)
 -   [List comprehensions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/list-comprehensions.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/list-comprehensions.ipynb))
--   [Style](/lectures/style.md)
+-   [Style](/lectures/style)
 -   Python & R:
     [Slides](/lectures/R_and_python.pdf),
     [notebook](http://nbviewer.ipython.org/url/raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb)
@@ -93,5 +93,5 @@ with it on your computer by changing the code and seeing what happens.
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/design.ipynb))
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
--   [Web data](/lectures/web_data.md)
+-   [Web data](/lectures/web_data)
 
