@@ -1,5 +1,7 @@
-Getting Data From The Web
-=========================
+---
+layout: page
+title: Getting Data From The Web
+---
 
 Data on the web is increasingly available in ways that go beyond downloading csv files.
 

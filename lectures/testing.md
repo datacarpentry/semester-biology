@@ -1,5 +1,7 @@
-Testing
-=======
+---
+layout: page
+title: Testing
+---
 
 What is testing?
 ----------------
