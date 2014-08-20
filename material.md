@@ -93,5 +93,5 @@ with it on your computer by changing the code and seeing what happens.
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/design.ipynb))
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
--   [Web data](/lectures/web_data)
+-   [Web data](/lectures/web-data)
 
