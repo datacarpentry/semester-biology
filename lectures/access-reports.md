@@ -1,5 +1,7 @@
-Reports in Access
-=================
+---
+layout: page
+title: Reports in Access
+---
 
 In the same way that Forms are simple controllable ways to enter data in tables,
 **Reports** are simple controllable ways to present the results of queries.

@@ -1,5 +1,7 @@
-Forms in Access
-===============
+---
+layout: page
+title: Forms in Access
+---
 
 Forms allow us to manage how data is entered.
 They allow us to simplify data entry by:
