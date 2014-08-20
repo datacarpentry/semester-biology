@@ -1,5 +1,7 @@
-Debugging with a Debugger
-=========================
+---
+layout: page
+title: Debugging with a Debugger
+---
 
 Why
 ---
