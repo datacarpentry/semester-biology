@@ -1,5 +1,7 @@
-SQL for Access Users
-====================
+---
+layout: page
+title: SQL for Access Users
+---
 
 Side by Side Demonstrations
 ---------------------------
