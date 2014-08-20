@@ -1,4 +1,6 @@
---- layout: post title: Style Guide created: 1282591163 categories: []
+---
+layout: page
+title: Style Guide
 ---
 
 We are, I hope, exiting an era in biological programming where the
