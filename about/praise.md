@@ -1,5 +1,8 @@
---- layout: post title: Praise for Programming for Biologists created:
-1323456332 categories: [] ---
+---
+layout: page
+title: Praise for Programming for Biologists
+redirect_from: /praise/
+---
 
 > [I] didn’t know anything about programming before and I’m very happy
 > with this class and amazed that I could write something that works.

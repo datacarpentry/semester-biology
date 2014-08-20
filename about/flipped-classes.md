@@ -1,5 +1,10 @@
---- layout: post title: Flipped Classes created: 1345826829 categories:
-[] --- I used a flipped, learner-centered, approach to teaching both of
+---
+layout: page
+title: Flipped Classes
+redirect_from: /flipped-classes/
+---
+
+I used a flipped, learner-centered, approach to teaching both of
 these classes, because I think that learning to program has very little
 to do with me talking and a lot to do with students working on
 computers. Flipped classes work well for all kinds of content, but I

@@ -1,4 +1,8 @@
---- layout: post title: Audience created: 1327688119 categories: [] ---
+---
+layout: page
+title: Audience
+redirect_from: /audience/
+---
 
 The long-term goal of this site is to help two large groups of people:
 1) Students in a classroom at a college or university; and 2) Free-range

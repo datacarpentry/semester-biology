@@ -1,5 +1,8 @@
---- layout: post title: Why should you take this class? created:
-1308715176 categories: [] ---
+---
+layout: page
+title: Why should you take this class?
+redirect_from: /why-should-you-take-class/
+---
 
 Because [biology students really need to know how to
 program](http://www.wired.com/wiredscience/2009/03/why-biology-students-should-learn-how-to-program/).
@@ -13,4 +16,4 @@ Because [xkcd](http://xkcd.com/) says so:
 [![xkcd
 cartoon](http://imgs.xkcd.com/comics/11th_grade.png)](http://xkcd.com/519/)
 
-And because [students really like it](praise).
+And because [students really like it](/about/praise).

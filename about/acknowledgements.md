@@ -1,5 +1,8 @@
---- layout: post title: Acknowledgements created: 1282797280 categories:
-[] ---
+---
+layout: page
+title: Acknowledgements
+redirect_from: /acknowledgements/
+---
 
 #### National Science Foundation
 
