@@ -1,5 +1,7 @@
-Programming Style (in Python)
-=============================
+---
+layout: page
+title: Programming Style (in Python)
+---
 
 Basics
 ------
