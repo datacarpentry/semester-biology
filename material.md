@@ -30,7 +30,7 @@ with it on your computer by changing the code and seeing what happens.
 -   [Strings](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/strings.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/strings.ipynb))
 -   [Lists: loops, methods, and nested
-    lists](sites/programmingforbiologists.org/files/lists_loops_methods_nesting.pdf)
+    lists](/lectures/lists_loops_methods_nesting.pdf)
 -   [For
     loops](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/for-loops.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/for-loops.ipynb))
@@ -46,18 +46,18 @@ with it on your computer by changing the code and seeing what happens.
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
 -   Python & R:
-    [Slides](https://github.com/ethanwhite/progbio/raw/master/lectures/R_and_python.pdf),
+    [Slides](/lectures/R_and_python.pdf),
     [notebook](http://nbviewer.ipython.org/url/raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb)
     ([raw notebook](https://raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb))
--   [Debugging](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/basic_debugging.pdf)
+-   [Debugging](/lectures/basic_debugging.pdf)
 
 ### Introductory Databases Material
 
--   [Introduction to Databases](sites/programmingforbiologists.org/files/intro_to_databases.pdf)
--   [Database Structure](sites/programmingforbiologists.org/files/databases_structure.pdf)
--   [Forms in MS Access](https://github.com/ethanwhite/progbio/blob/master/lectures/access-forms.md)
--   [Reports in MS Access](https://github.com/ethanwhite/progbio/blob/master/lectures/access-reports.md)
--   [SQL for Access Users](https://github.com/ethanwhite/progbio/blob/master/lectures/sql_for_access_users.md)
+-   [Introduction to Databases](/lectures/intro_to_databases.pdf)
+-   [Database Structure](/lectures/databases_structure.pdf)
+-   [Forms in MS Access](/lectures/access-forms.md)
+-   [Reports in MS Access](/lectures/access-reports.md)
+-   [SQL for Access Users](/lectures/sql_for_access_users.md)
 -   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
 
@@ -75,19 +75,19 @@ with it on your computer by changing the code and seeing what happens.
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/matplotlib.ipynb))
 -   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
--   [Database Structure](sites/programmingforbiologists.org/files/databases_structure.pdf)
--   [Debugger](https://github.com/ethanwhite/progbio/blob/master/lectures/debugger.md)
--   [Testing](https://github.com/ethanwhite/progbio/blob/master/lectures/testing.md)
+-   [Database Structure](/lectures/databases_structure.pdf)
+-   [Debugger](/lectures/debugger.md)
+-   [Testing](/lectures/testing.md)
 -   [List comprehensions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/list-comprehensions.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/list-comprehensions.ipynb))
--   [Style](https://github.com/ethanwhite/progbio/blob/master/lectures/style.md)
+-   [Style](/lectures/style.md)
 -   Python & R:
-    [Slides](https://github.com/ethanwhite/progbio/raw/master/lectures/R_and_python.pdf),
+    [Slides](/lectures/R_and_python.pdf),
     [notebook](http://nbviewer.ipython.org/url/raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb)
     ([raw notebook](https://raw.github.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb))
 -   [Program Design](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/design.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/design.ipynb))
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
--   [Web data](https://github.com/ethanwhite/progbio/blob/master/lectures/web_data.md)
+-   [Web data](/lectures/web_data.md)
 
