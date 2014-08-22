@@ -6,9 +6,12 @@ redirect_from: /schedule-advanced/
 
 ### Week 1 The Shell and Servers
 
-* [Shell](http://software-carpentry.org/v5/novice/shell/index.htm) Lessons 1-4 (M), 5-7(W)
-* [Secure Shell](https://github.com/swcarpentry/bc/blob/master/intermediate/shell/02-ssh.md) (F)
-* [Job Control](https://github.com/swcarpentry/bc/blob/master/intermediate/shell/04-job.md) (F)
+* [Introducing the Shell](http://software-carpentry.org/v5/novice/shell/00-intro.html)
+* [Files and Directories](http://software-carpentry.org/v5/novice/shell/01-filedir.html)
+* [Creating Things](http://software-carpentry.org/v5/novice/shell/02-create.html)
+* [Pipes and Filters](http://software-carpentry.org/v5/novice/shell/03-pipefilter.html)
+* [Loops](http://software-carpentry.org/v5/novice/shell/04-loop.html)
+* [Shell Scripts](http://software-carpentry.org/v5/novice/shell/05-script.html)
 
 ### Week 2: Version Control
 
@@ -60,7 +63,14 @@ look at:
 * [Programming with Databases](http://software-carpentry.org/v5/novice/sql/09-prog.html)
 * [Creating and Modifying Data](https://github.com/swcarpentry/bc/blob/master/novice/sql/08-create.md)
 
-### Week 8: Defensive Programming and Debugging
+### Week 8: More Version Control & Working with Servers
+
+* [Version Control: Branching]()
+* [Version Control: GitHub Flow]()
+* [Secure Shell](https://github.com/swcarpentry/bc/blob/master/intermediate/shell/02-ssh.md)
+* [Job Control](https://github.com/swcarpentry/bc/blob/master/intermediate/shell/04-job.md)
+
+### Week 9: Defensive Programming and Debugging
 
 * [Debugger](http://software-carpentry.org/v4/python/debugger.html)
 * [Why you need to test](http://ivory.idyll.org/blog/automated-testing-and-research-software.html)
