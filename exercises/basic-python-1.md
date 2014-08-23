@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: exercise
 title: Basic Python 1
 ---
 

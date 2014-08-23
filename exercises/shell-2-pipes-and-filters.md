@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Shell 2 - Pipes and Filters
 ---
 

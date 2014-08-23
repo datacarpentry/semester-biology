@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Statistics adult size vs. newborn size
 ---
 

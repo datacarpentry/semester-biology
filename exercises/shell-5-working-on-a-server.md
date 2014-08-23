@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Shell 5 - Working on a Server
 ---
 

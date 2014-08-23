@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Numpy - Pleistocene Extinction Event 2
 ---
 

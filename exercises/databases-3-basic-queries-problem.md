@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Databases 3 - Basic Queries
 
 *For this and many of the following problems you will create queries
