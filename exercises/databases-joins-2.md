@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: 2. Databases - Joins 2
 ---
 

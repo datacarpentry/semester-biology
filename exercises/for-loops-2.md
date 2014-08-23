@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: For Loops 2
 ---
 

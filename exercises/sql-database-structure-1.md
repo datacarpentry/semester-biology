@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: SQL - Database Structure 1
 ---
 

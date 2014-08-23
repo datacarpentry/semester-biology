@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: SQL - Distinct
 ---
 

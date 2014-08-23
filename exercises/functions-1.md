@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Using Functions 1
 ---
 

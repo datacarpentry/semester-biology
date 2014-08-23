@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Expressions and Variables 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Shell 4 - Making Executable Programs
 ---
 
