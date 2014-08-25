@@ -3,14 +3,14 @@ layout: page
 title: Intro to Databases for Biologists
 ---
 
-**[Syllabus](/syllabus/databases-syllabus)**   |  
-**[Schedule](/syllabus/databases-schedule)**   |  
-**[Assignments](/assignments)**   |  
-**[Material](/material/databases-material)**   |  
-**[Setup](/computer-setup)**
-
 Instructor: [Dr. Ethan White](whitelab.weecology.org)
 (ethan.white@usu.edu)
+
+* [Syllabus](/syllabus/databases-syllabus)
+* [Schedule](/syllabus/databases-schedule)
+* [Assignments](/assignments)
+* [Material](/material/databases-material)
+* [Setup](/computer-setup)
 
 Computers are increasingly essential to the study of all aspects of
 biology. Familiarity with database is required for storing, managing, and
