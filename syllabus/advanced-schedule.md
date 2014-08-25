@@ -4,7 +4,7 @@ title: Schedule - Advanced Programming & Database Management for Biologists
 redirect_from: /schedule-advanced/
 ---
 
-### Week 1 The Shell and Servers
+### Week 1 The Shell
 
 * [Introducing the Shell](http://software-carpentry.org/v5/novice/shell/00-intro.html)
 * [Files and Directories](http://software-carpentry.org/v5/novice/shell/01-filedir.html)
