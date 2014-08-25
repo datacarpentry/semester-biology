@@ -7,7 +7,8 @@ redirect_from: /introduction-programming-and-database-management-biologists/
 **[Syllabus](/syllabus/programming-syllabus)**   |  
 **[Schedule](/syllabus/programming-schedule)**   |  
 **[Assignments](/assignments)**   |  
-**[Material](/material/programming-material)**
+**[Material](/material/programming-material)**   |
+**[Setup](/computer-setup)**
 
 Instructor: [Dr. Ethan White](whitelab.weecology.org)
 (ethan.white@usu.edu)
