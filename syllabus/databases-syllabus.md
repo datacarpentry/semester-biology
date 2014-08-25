@@ -120,7 +120,7 @@ Final grades will be assigned based on the following scale:
 - **C- 70-72**
 - **D+ 67-69**
 - **D 60-66**
-- **F \<60**
+- **F <60**
 
 
 ### Student’s Responsibilities

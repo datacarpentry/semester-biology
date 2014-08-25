@@ -49,7 +49,7 @@ Biologists](http://www.sinauer.com/detail.php?id=3914).
 For students looking for an good introduction to basic Python, I
 recommend. [“Practical Programming: An Introduction to Computer Science Using Python”](http://pragprog.com/book/gwpy/practical-programming)
 by Campbell, Gries, Montojo, and Wilson. Published in 2009 by Pragmatic
-Bookshelf. eBook copies are available for only \$22.
+Bookshelf. eBook copies are available for only $22.
 
 
 #### Course Goals
@@ -129,7 +129,7 @@ Final grades will be assigned based on the following scale:
 -   **C- 70-72**
 -   **D+ 67-69**
 -   **D 60-66**
--   **F \<60**
+-   **F <60**
 
 
 #### Student’s Responsibilities
