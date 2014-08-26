@@ -3,7 +3,7 @@ layout: exercise
 title: Modules 1
 ---
 
-Use the `sqrt()` and `log()` functions from the math module, along with the
+Use the `sqrt()` and `log()` functions from the `math` module, along with the
 built-in `round()` function to print the answers to the following questions to
 the screen.
 
