@@ -22,7 +22,7 @@ information we could do something like:
 
 ```
 sort data_drycanyon_2013.txt -k 3 -n > sorted_counts.txt
-head -1 sorted_counts.txt > most_common_species.txt
+head -1 sorted_counts.txt > least_common_species.txt
 ```
 
 Now we want to get the most common species at the site. You can do this using
