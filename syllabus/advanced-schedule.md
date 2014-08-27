@@ -13,6 +13,8 @@ redirect_from: /schedule-advanced/
 * [Loops](http://software-carpentry.org/v5/novice/shell/04-loop.html)
 * [Shell Scripts](http://software-carpentry.org/v5/novice/shell/05-script.html)
 
+[Assignment 1](/assignments/stuff-1/)
+
 ### Week 2: Version Control
 
 * [Introduction](http://software-carpentry.org/v5/novice/git/00-intro.html)
