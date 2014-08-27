@@ -27,7 +27,7 @@ redirect_from:
 
 ### Advanced Programming & Databases Exercises
 
-* [Assignment 1](advanced-1)
+* [Assignment 1](stuff-1)
 * [Assignment 2](advanced-2)
 * [Assignment 3](advanced-3)
 * [Assignment 4](advanced-4)
