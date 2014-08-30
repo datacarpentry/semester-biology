@@ -16,7 +16,7 @@ title: Schedule for Programming For Biologists
 
 #### Reading:
 
-* Strings[]()
+* [Strings](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/strings.ipynb)
 
 [Assignment 2](/assignments/programming-2)
 
@@ -55,7 +55,7 @@ Additional Material:
 #### Reading:
 
 * [Data manipulation]()
-* [Graphs](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/raw/master/ipynbs/matplotlib.ipynb)
+* [Graphs](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
 
 [Assignment 6](/assignments/programming-6)
 
@@ -63,7 +63,7 @@ Additional Material:
 
 #### Reading:
 
-* [Statistics](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/raw/master/ipynbs/statistics.ipynb)
+* [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
 
 [Assignment 7](/assignments/programming-7)
 
