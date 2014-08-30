@@ -18,7 +18,7 @@ redirect_from: /schedule-intro/
 
 #### Reading:
 
-* Strings[]()
+* [Strings](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/strings.ipynb)
 
 [Assignment 2](/assignments/programming-2)
 
