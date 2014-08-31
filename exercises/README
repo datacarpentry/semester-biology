@@ -1,0 +1,14 @@
+The names of all exercise files should start with a capitical letter.
+
+This is a temporary solution to an issue with how Jekyll processes pages.
+
+Jekyll currently processes pages in alphabetical order. This results
+in cases where, when the name of an exercise included in an assignment
+comes after the name of the assignment alphabetically, the
+assignment page is processed before the exercise and the list in the
+exercise is not properly converted to a list.
+
+By naming all of the exercises to start with captical letters, and
+therefore come before the names of the assignments (which are all lower
+case) alphabetically.
+
