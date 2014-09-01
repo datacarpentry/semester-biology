@@ -1,11 +1,9 @@
 ---
 layout: exercise
-title: String Methods 1
+title: Strings 2
 ---
 
-Use string methods to print the following. Leave a blank line between
-each answer. Start with the string provided and then use a method to
-perform the task described.
+Use functions from the `string` module to print the following strings.
 
 1. `species` in all capital letters
 2. `gcagtctgaggattccaccttctacctgggagagaggacatactatatcgcagcagtggaggtggaatgg`
@@ -20,4 +18,3 @@ perform the task described.
     `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg` [Hint: this
     doesn`t use a method, but the general function for determining the
     length of things len()]
-

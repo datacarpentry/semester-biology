@@ -1,0 +1,26 @@
+---
+layout: exercise
+title: Strings 4
+---
+
+Use string methods to print the following strings. Remember that methods work by
+adding the function to the end of the object name using a `.`, like
+
+```
+mystring = 'Hello World'
+print mystring.lower()
+```
+
+1. `species` in all capital letters
+2. `gcagtctgaggattccaccttctacctgggagagaggacatactatatcgcagcagtggaggtggaatgg`
+    with all of the occurences of `a` replaced with `A`
+3.  "    Thank goodness it's Friday" without the leading white space
+    (i.e., without the spaces before `Thank`)
+4.  The number of a's in
+    `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg`. You'll need a
+    method that is not described in your book to do this easily. Look it
+    up by typing help(str). [Hint: it starts with a `c`]
+5.  Print the length of this dna sequence
+    `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg` [Hint: this
+    doesn`t use a method, but the general function for determining the
+    length of things len()]
