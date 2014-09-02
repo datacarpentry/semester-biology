@@ -11,8 +11,9 @@ parameter values that are being used in `rich_pred.py`. Go to the line that
 defines `sar_parameters` and change it to
 
 ```
-sar_parameters = [[22.7, 0.3], [1.2, 0.163, 0.009], [14.36, 21.16],
-                  [85.91, 42.57], [1082.45, 1.59, 390000000]]
+sar_parameters = [[22.7, 0.3], [1.2, 0.163, 0.009],
+                  [14.36, 21.16], [85.91, 42.57],
+				  [1082.45, 1.59, 390000000]]
 ```
 
 Now, follow these instructions carefully:
