@@ -5,7 +5,8 @@ title: Version Control 6
 
 *Version control exercises 6-9 assume that you have an instructor adding and
  modifying files in your repository. The files are available in the
- [`data`](https://github.com/ethanwhite/progbio/tree/master/data) directory of
+ [`data`](https://github.com/ethanwhite/progbio/tree/master/data) and
+ [`code`](https://github.com/ethanwhite/progbio/tree/master/code) directories of
  the course repository.*
 
 You're working on a large project trying to predict diversity hotspots. Another
