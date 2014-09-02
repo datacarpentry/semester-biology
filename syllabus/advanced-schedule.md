@@ -21,7 +21,6 @@ redirect_from: /schedule-advanced/
 * [A Better Kind of Backup](http://software-carpentry.org/v5/novice/git/01-backup.html)
 * [Collaborating](http://software-carpentry.org/v5/novice/git/02-collab.html)
 * [Conflicts](http://software-carpentry.org/v5/novice/git/03-conflict.html)
-* [Branching]()
 
 ### Week 3: Programming Basics in Python
 
