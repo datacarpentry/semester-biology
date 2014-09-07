@@ -27,7 +27,7 @@ redirect_from: /schedule-advanced/
 ### Week 3: Programming Basics in Python
 
 * [Introduction](http://nbviewer.ipython.org/github/swcarpentry/bc/blob/master/intermediate/python/01-intro-python.ipynb)
-* [Modularization & Documentation](nbviewer.ipython.org/urls/raw.github.com/swcarpentry/bc/master/intermediate/python/02-modularization-documentation.ipynb)
+* [Modularization & Documentation](http://nbviewer.ipython.org/urls/raw.github.com/swcarpentry/bc/master/intermediate/python/02-modularization-documentation.ipynb)
 
 The above is a fairly rapid overview. If you'd like a little more detail take a
 look at:
