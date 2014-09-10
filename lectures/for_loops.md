@@ -1,44 +1,47 @@
-For Loops
-=========
-Using Range
------------
-Print the even numbers from 1 to 10
+# For Loops
 
-    numbers = range(1, 11)
-    for number in numbers:
-        if number % 2 == 0:
-            print number
+## Basic for loops
 
-Simpler
--------
-    for number in range(1, 11):
-        if number % 2 == 0:
-            print number
+* Let us do the same thing for a number of different values
 
-####Or
-    for number in range(2, 11, 2):
-        print number
+```
+for item in list_of_items:
+    commands
+```
 
-Using Range to Loop Over Values in a List
------------------------------------------
-In many languages we can use for value in values so we use the indexes to loop over values in a list
+```
+pets = ['spot', 'gigantor', 'fluffy']
+for pet in pets:
+    print "%s is the name of a class pet" % pet
+```
 
-    sequences = ['atg', 'gtc', 'atta']
-    for i in range(len(sequences)):
-        print sequences[i]
+## Lists
 
-And we can use this in Python to loop over two lists simultaneously
+* lists hold multiple values of any type
+* have methods to let us manipulate them
+  * e.g., insert, append
+* these methods return None, different from string methods
 
-    seqID = [27, 63, 42]
-    sequences = ['atg', 'gtc', 'atta']
-    for i in range(len(sequences)):
-        print seqID[i], sequences[i]
+## Using loops with append
 
-Enumerate
----------
-Alternatively we can use enumerate
+* a common thing to do with a loop is to do some calculations and store the
+  resulting value
+* the simplest way to do this is using a list and `.append()`
 
-    seqID = [27, 63, 42]
-    sequences = ['atg', 'gtc', 'atta']
-    for i, sequence in enumerate(sequences):
-        print seqID[i], sequence
+```
+results = []
+for name in pets:
+    capitalized_name = name.upper()
+	results.append(capitalized_name)
+print results
+```
+
+* a common mistake is to forget that list methods work "in-place"
+
+```
+results = []
+for name in pets:
+    capitalized_name = name.upper()
+	results = results.append(capitalized_name)
+print results
+```
