@@ -13,6 +13,6 @@ process.
 
 Download the data, use `np.loadtxt()` to import it into Python, and then use a
 for loop to calculate the volumes and return a list the volumes. There should be
-one value in the list for each ShrubID. Once you have created this list, use
-another for loop to print out each combination of ShrubID and volume on it's own
-line in a string like 'The volume of shrub a1 is 22.5.'
+one value in the list for each shrub. Once you have created this list, use
+another for loop to print out each volume on it's own line in a string like 'The
+volume the shrub is 22.5.'
