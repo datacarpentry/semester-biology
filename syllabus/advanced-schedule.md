@@ -28,6 +28,7 @@ redirect_from: /schedule-advanced/
 
 * [Introduction](http://nbviewer.ipython.org/github/swcarpentry/bc/blob/master/intermediate/python/01-intro-python.ipynb)
 * [Modularization & Documentation](http://nbviewer.ipython.org/urls/raw.github.com/swcarpentry/bc/master/intermediate/python/02-modularization-documentation.ipynb)
+* [First Class Functions](http://software-carpentry.org/v4/python/funcobj.html)
 
 The above is a fairly rapid overview. If you'd like a little more detail take a
 look at:
