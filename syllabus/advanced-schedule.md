@@ -42,8 +42,9 @@ look at:
 
 ### Week 4: Scientific Programming in Python
 
-* [Numpy](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/raw/master/ipynbs/numpy.ipynb)
-* [Matplotlib](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/raw/master/ipynbs/matplotlib.ipynb)
+* [Numpy](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/numpy.ipynb)
+* [Pandas](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/pandas.ipynb)
+* [Matplotlib](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
 
 [Assignment 4](/assignments/advanced-4/)
 
@@ -71,7 +72,7 @@ look at:
 
 ### Week 7 Databases using SQL - Interfacing w/Python, Creating and Modifying, Database structure
 
-* [Python + SQLite](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/raw/master/ipynbs/python-databases.ipynb)
+* [Python + SQLite](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
 * [Programming with Databases](http://software-carpentry.org/v5/novice/sql/09-prog.html)
 * [Creating and Modifying Data](https://github.com/swcarpentry/bc/blob/master/novice/sql/08-create.md)
 
