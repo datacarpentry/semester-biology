@@ -47,8 +47,7 @@ Additional Material:
 
 #### Reading:
 
-* [Pandas - working with data they way your brain wants]() #convert current
-  Numpy notebook
+* [Pandas - working with data they way your brain wants](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/pandas.ipynb)
   
 [Assignment 5](/assignments/programming-5)
 
