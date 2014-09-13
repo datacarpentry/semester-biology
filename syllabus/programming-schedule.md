@@ -36,8 +36,7 @@ title: Schedule for Programming For Biologists
 * [SWC Novice Python: Making Choices](http://software-carpentry.org/v5/novice/python/04-cond.html)
 
 Additional Material: 
-[Refactoring](http://www.youtube.com/watch?v=8WYnozJnJFI&feature=youtu.be) and
-[Problem decomposition](http://programmingforbiologists.org/problem-decomposition-steps)
+[Problem decomposition](http://programmingforbiologists.org/material/problem-decomposition)
 
 [Assignment 4](/assignments/programming-4)
 
