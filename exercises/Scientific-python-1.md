@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Numpy 1
+title: Scientific Python 1
 ---
 
 There were a relatively large number of extinctions of mammalian species

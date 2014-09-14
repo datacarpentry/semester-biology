@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Numpy - Pleistocene Extinction Event 2
+title: Scientific Python 6
 ---
 
 Looking at the average mass of extinct and extant species overall is

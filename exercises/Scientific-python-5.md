@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Numpy - Pleistocene Extinction Event 1
+title: Scientific Python 5
 ---
 
 There were a relatively large number of [extinctions of mammalian
