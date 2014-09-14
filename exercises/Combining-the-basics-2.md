@@ -51,3 +51,7 @@ def export_to_csv(data, filename):
 	datawriter.writerows(data)
 	outputfile.close()
 ```
+
+*Optional: If you'd like to test your skills a little more, try: 1. Adding a
+ header row to you output file; and 2. Determining the average carbon in a shrub
+ for each of the different experiments and printing those values to the screen.*
