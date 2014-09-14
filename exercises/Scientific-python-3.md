@@ -12,7 +12,7 @@ willing to clear cut a forest for science), but fortunately we can
 estimate the mass of a tree based on its diameter.
 
 There are lots of equations for estimating the mass of a tree from its
-diameter, but one good option is the equation M = 0.124*D^2.53, where M
+diameter, but one good option is the equation M = 0.124*D^(2.53), where M
 is measured in kg of dry (above-ground) biomass and D is in cm d.b.h.
 (Brown 1997). We're going to estimate the total tree biomass for trees
 in a 96 hectare area of the Western Ghats in India.

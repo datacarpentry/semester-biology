@@ -24,14 +24,14 @@ and do some serious analysis.
     by the word 'historical' in the 'status' column).
 -   Import the data into Python. If you've looked at a lot of data
     you'll realize that this dataset is tab delimited. The special
-    character to indicate tab in Python is “\\t”
+    character to indicate tab in Python is `\t`
 -   To start let's explore the data a little
     -   Find out how many species are in this massive dataset and print
         the result to the screen
-        -   If the value you see is over 5000 (which is more than the
-            total number of mammal species) remember that species can
-            occur more than once in the dataset. You might want to look
-            at a function in numpy called unique.
+    -   If the value you see is over 5000 (which is more than the possible number
+        of mammal species since this data doesn't include bats) remember that
+        species can occur more than once in the dataset. You might want to look
+        at a function in numpy called unique.
     -   Find out how many of the species are extinct and how many are
         extant, print the result to the screen
     -   Find out how many genera are present in the dataset
