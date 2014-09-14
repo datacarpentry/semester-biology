@@ -3,7 +3,7 @@ layout: exercise
 title: Scientific Python 2
 ---
 
-This is a follow up to the [Numpy 1 problem](/exercises/numpy-1).
+This is a follow up to the [Scientific Python 1](/exercises/Scientific-python-1).
 
 Looking at the average mass of extinct and extant species overall is
 useful, but there are lots of different processes that could cause

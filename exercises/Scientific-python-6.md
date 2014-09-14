@@ -3,6 +3,8 @@ layout: exercise
 title: Scientific Python 6
 ---
 
+This is a follow up to [Scientific Python 5](/exercies/Scientific-python-5)
+
 Looking at the average mass of extinct and extant species overall is
 useful, but there are lots of different processes that could cause
 size-biased extinctions so it's not as informative as we might like.
