@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Numpy 4
+title: Scientific Python 4
 ---
 
 Download the file

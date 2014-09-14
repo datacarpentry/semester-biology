@@ -1,7 +1,9 @@
 ---
 layout: exercise
-title: Numpy - Pleistocene Extinction Event 2
+title: Scientific Python 2
 ---
+
+This is a follow up to the [Scientific Python 1](/exercises/Scientific-python-1).
 
 Looking at the average mass of extinct and extant species overall is
 useful, but there are lots of different processes that could cause
@@ -14,17 +16,6 @@ first entry on each line is the continent, the second entry is the
 average mass of the extant species on that continent, the third entry is
 the average mass of the extinct species on that continent, and the forth
 entry is the difference between the average extant and average extinct
-masses. Use you handy export\_to\_csv() function:
-
-```
-def export_to_csv(data, filename):
-    """Export list of lists to comma delimited text file"""
-    outputfile = open(filename, 'wb')
-    datawriter = csv.writer(outputfile)
-    datawriter.writerows(data)
-    outputfile.close()
-```
-
-Call the file continent\_mass\_differences.csv. If you notice anything
-strange think about what's going on and present the final data in the
-way that makes the most sense to you.
+masses. Call the file continent\_mass\_differences.csv. If you notice
+anything strange think about what's going on and present the final data
+in the way that makes the most sense to you.
