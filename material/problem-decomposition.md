@@ -23,6 +23,7 @@ before you code**.
     2. Write the code/query.
     3. Test it... on it's own.
     4. Fix any problems.
+5. One way to do this is to identify functions.
 
 ## Make a simpler version first
 
