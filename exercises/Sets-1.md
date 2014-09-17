@@ -19,9 +19,9 @@ popular approaches is the [Jaccard
 index](http://en.wikipedia.org/wiki/Jaccard_index). The Jaccard index is
 calculated simply as the number of species that are shared by the two
 sites divided by the total number of species that occur at both sites
-combined. To be precise, J = C / (S(A) + S(B) - C), where J is the
-Jaccard index, C is the number of species shared by the two sites, and
-S(A) and S(B) are the number of species at Site A and Site B
+combined. To be precise, `J = C / (S(A) + S(B) - C)`, where `J` is the
+Jaccard index, `C` is the number of species shared by the two sites, and
+`S(A)` and `S(B)` are the number of species at Site A and Site B
 respectively. Another way of saying this (and one that is quite useful
 for this assignment) is that the Jaccard index is equal to the size of
 the intersection of the two species lists divided by the size of the
@@ -54,9 +54,9 @@ readable, and most computationally efficient ways to solve this problem.
 
 #### Problem decomposition
 
-When tackling a broad problem like this** it is always important to
+When tackling a broad problem like this it is always important to
 think about how you are going to [decompose the
-problem](problem-decomposition-steps) into manageable pieces. Take a few
+problem](/material/problem-decomposition) into manageable pieces. Take a few
 minutes to think about how you would approach this problem before
 following the steps outlined below. Sketch them out in a text file, or
 by writing out just the final commands you will use (i.e., none of the
