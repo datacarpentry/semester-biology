@@ -23,6 +23,26 @@ before you code**.
     2. Write the code/query.
     3. Test it... on it's own.
     4. Fix any problems.
+5. One way to do this is to identify functions.
+
+### Example
+
+Calculate the volume of a bunch of shrubs.
+
+Data
+
+```
+length,width,height
+1, 2, 3
+2, 4, 3
+```
+
+1. Calculate the volume of a shrub
+   a. Function
+2. Run this calculation on all shrubs
+   a. Loop
+
+Write either first.
 
 ## Make a simpler version first
 
