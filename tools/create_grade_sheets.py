@@ -1,12 +1,8 @@
 #!/usr/bin/python
-names = ['Timothy Beach', 'Leland Bennion', 'Lette Benson', 'Shanna Chugg',
-         'Kenneth Kehoe', 'Kari Norman', 'Mehmet Ozturk', 'Alexandre Rego',
-         'Brian Rozick', 'Eric Sodja', 'Bethany Unger', 'Zachary Valois',
-         'Darrel Woodruff', 'Ryan Berry', 'Ryan Choi', 'Matthew Del Grosso',
-         'Rebekah Downard', 'Camilo Fagua', 'Erica Hansen', 'Jay Hemmis',
-         'Sajeena Horvath', 'Martha Jensen', 'Sara Kelly', 'Eric Lamalfa',
-         'Jarod Raithel', 'Kristina Riemer', 'Rebecca Rossi', 'Rebecca Tobin',
-         'Alison Webb']
+
+import numpy as np
+
+names = np.loadtxt("student_names.csv", delimiter=',', dtype=str)
 
 def create_grade_file(template_filename, name):
     lastname = name.split()[-1].lower()
