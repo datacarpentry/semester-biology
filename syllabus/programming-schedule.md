@@ -42,7 +42,7 @@ Additional Material:
 
 [Assignment 4](/assignments/programming-4)
 
-### Week 5: Working with tabular data, Style
+### Week 5: Working with tabular data, Debugging, Style
 
 #### Reading:
 
