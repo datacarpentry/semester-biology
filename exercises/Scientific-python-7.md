@@ -29,6 +29,8 @@ placed a data file on the web for you to
 6. Select the height data for all of the plants with heights greater than 5 and
    print out the result.
 7. The following code calculates the average height of a plant at each site:
-   `data['height'].groupby('site').mean()`. Modify the code to calculate the average
-   height of a plant in each experiment type.
+    * `data_means = data.groupby('site').mean()`
+    * `data_means['height']`
+
+   Modify the code to calculate the average height of a plant in each experiment type.
 8. Calculate the maximum height of a plant in each site and print it out.
