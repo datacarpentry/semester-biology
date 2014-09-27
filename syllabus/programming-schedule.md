@@ -50,11 +50,10 @@ Additional Material:
   
 [Assignment 5](/assignments/programming-5)
 
-### Week 6: Data manipulation, Graphing, Program Design
+### Week 6: Graphing, Style, Program Design
 
 #### Reading:
 
-* [Data manipulation]()
 * [Graphs](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
 
 [Assignment 6](/assignments/programming-6)
