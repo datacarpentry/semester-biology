@@ -1,7 +1,7 @@
---- layout: post title: 10. SQL - Adding new records created: 1318186504
-categories: - !binary |- NA== - !binary |- YWR2 - !binary |- NA== -
-!binary |- YWR2 - !binary |- NA== - !binary |- YWR2 - !binary |- NA== -
-!binary |- YWR2 ---
+---
+layout: exercise
+title: SQL - Adding Records
+---
 
 Add the following note to the FieldNotes table in the Portal database
 for the date 04/01/1963:
