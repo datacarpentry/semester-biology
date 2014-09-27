@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: SQL - Updating records
+title: SQL - Updating Records
 ---
 
 Add the following note to the FieldNotes table in the Portal database
