@@ -39,3 +39,8 @@ the relationship between mass and metabolic rate.
 
 *and it will give us all of the tables from the web page, stored in a list. Pick
  the first table out of the list and you'll be ready to get to work*
+
+*NOTE: If you are using Enthought Canopy you will need a full Canopy
+ license. Academics can get this for free at
+ [https://store.enthought.com/#canopy-academic](https://store.enthought.com/#canopy-academic). Then
+ use the package manager to add `lxml`.*
