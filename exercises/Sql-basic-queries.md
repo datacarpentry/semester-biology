@@ -5,8 +5,13 @@ title: SQL - Basic Queries
 
 For this and many of the following problems you will create queries
 that retrieve the relevant information from the Portal small mammal
-survey database. It has already been imported into SQLite
-([download](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/portal_mammals.sqlite)).
+survey database. You can create the SQLite version of this database using the
+[EcoData Retriever](http://ecodataretriever.org/) by first [installing the
+software](http://ecodataretriever.org/download.html) and then running:
+
+`retriever install sqlite PortalMammals`
+
+from the command line. Or you can download an already assembled [copy of the database](data/portal_mammals.sqlite).
 
 
 You will need to know some details regarding what is in this database
