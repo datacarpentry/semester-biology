@@ -11,7 +11,7 @@ software](http://ecodataretriever.org/download.html) and then running:
 
 `retriever install sqlite PortalMammals`
 
-from the command line. Or you can download an already assembled [copy of the database](data/portal_mammals.sqlite).
+from the command line. Or you can download an already assembled [copy of the database](/data/portal_mammals.sqlite).
 
 
 You will need to know some details regarding what is in this database
