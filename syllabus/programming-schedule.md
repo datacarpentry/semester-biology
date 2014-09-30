@@ -58,12 +58,8 @@ Additional Material:
 
 [Assignment 6](/assignments/programming-6)
 
-### Week 7: Statistics
+### Week 7: Statistics, Review, Final
 
 #### Reading:
 
 * [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
-
-[Assignment 7](/assignments/programming-7)
-
-### Week 8: Putting it all together, Review, Final
