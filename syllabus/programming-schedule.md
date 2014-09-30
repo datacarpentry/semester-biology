@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Schedule for Programming For Biologists
+redirect_from: /schedule-intro/
 ---
 
 ### Week 1: Expressions, Types, Variables, Errors, Functions
@@ -8,7 +9,8 @@ title: Schedule for Programming For Biologists
 #### Reading:
 
 * [SWC Novice Python: Analyzing Patient Data](http://software-carpentry.org/v5/novice/python/01-numpy.html)
-* [Errors]()
+    * [Associated data](https://raw.githubusercontent.com/swcarpentry/bc/master/novice/python/inflammation-01.csv) if you want to experiment with it (not required)
+* [Errors](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/errors.ipynb)
 
 [Assignment 1](/assignments/programming-1)
 
@@ -56,12 +58,8 @@ Additional Material:
 
 [Assignment 6](/assignments/programming-6)
 
-### Week 7: Statistics
+### Week 7: Statistics, Review, Final
 
 #### Reading:
 
 * [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
-
-[Assignment 7](/assignments/programming-7)
-
-### Week 8: Putting it all together, Review, Final
