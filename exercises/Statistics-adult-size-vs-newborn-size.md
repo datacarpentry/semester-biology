@@ -15,7 +15,6 @@ mammals and now it's time to analyze the relationship statistically.
 3.  Make a graph that shows both the data points and the regression line through
     those points. Label the axes
 
-
 *Optional: If you want, plot a histogram of the residuals of the regression to
 make sure that they are roughly normally distributed (you can do this with just
 a single line of code)*
