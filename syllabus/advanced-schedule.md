@@ -80,7 +80,7 @@ look at:
 
 ### Week 8: More Version Control & Working with Servers
 
-* [Version Control: Branching](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
+* [Version Control: Branching](https://www.atlassian.com/git/tutorials/using-branches)
 * [Version Control: GitHub Flow](https://guides.github.com/introduction/flow/index.html)
 * [Secure Shell](https://github.com/swcarpentry/bc/blob/master/intermediate/shell/02-ssh.md)
 * [Job Control](https://github.com/swcarpentry/bc/blob/master/intermediate/shell/04-job.md)
