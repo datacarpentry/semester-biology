@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Databases 2
+title: Databases 2 - Importing
 ---
 
 #### Import Data in MS Access
@@ -43,7 +43,7 @@ Access only checks this first few rows of data to determine these types,
 so if type of data in a column changes further down this can can cause
 import errors. If it was me I'd take are careful look `hft` and
 `wgt` (which are weights and hindfoot lenths and should therefore be
-numbers) and at `Tag`, either by opening the file in Excel or by
+numbers) and at `tag`, either by opening the file in Excel or by
 checking the portion of the table from the [Databases 1
 problem](databases-1-problem) to see what might be an issue. When you're
 finished click `Next`
@@ -51,11 +51,5 @@ finished click `Next`
 ​j. Select `Choose my own primary key`, choose `recordID`, and click
 `Next`
 
-​k. Name the table that you are importing in to `Portal Main` and
+​k. Name the table that you are importing into `Surveys` and
 click `Finish`
-
-**Save this file and bring it with you next time.** You will be turning
-it in as part of this assignment. You should be able to still email this
-to yourself, but it's starting to get pretty large so in the future you
-will may either need to bring a USB key or use USU's Big File Transfer
-system (https://bft.usu.edu/)

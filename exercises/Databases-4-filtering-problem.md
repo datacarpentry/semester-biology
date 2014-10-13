@@ -15,7 +15,7 @@ the size of the individuals. Obviously she doesn't need the species
 codes because you're only providing her with the data for one species,
 and besides since she isn't actually looking at the database itself the
 two character abbreviation would probably be confusing. Save this query
-as **Spectabilis Population Data**.
+as `Spectabilis Population Data`.
 
 Scroll through the results of your query. Do you notice anything that
 might be an issue for the scientist to whom you are providing this data?
@@ -28,7 +28,7 @@ that you create two additional queries so that she can decided what to
 do about this issue later. She would like you to add a query to the same
 data as above, but only for cases where the sex is known to be male, and
 an additional query with the same data, but only where the sex is known
-to be female. Save these as **Spectabilis Population Data Males** and
-**Spectabilis Population Data Females**.
+to be female. Save these as `Spectabilis Population Data Males` and
+`Spectabilis Population Data Females`.
 
 \*Short for elven-mail
