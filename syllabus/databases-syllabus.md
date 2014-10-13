@@ -67,26 +67,16 @@ Changes to the schedule will be posted to this site so please try to check it
 periodically for updates.
 
 
-### Course Management Email List
-
-In order to provide timely updates and helpful material to students, and to
-request feedback from students during the semester, I maintain a course email
-list. On the first day of class you will provide your preferred email for this
-list. Students are required to be aware of emails sent to this list.
-
-
 ### Grading
 
-Grading for this course will revolve around a combination of assignments (70%),
-a final exam (30%).
-
-There will be 3 equally weighted database assignments. Assignments are due
-Sunday night by 11:59 pm Mountain Time. Assignments should be submitted via
-email to [ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject
-line: Database Assignment X, where X is the number of the assignment. One
-problem from each assignment (selected at my discretion after the assignments
-have been submitted) will receive a thorough code review and a detailed
-grade. Other problems will be graded as follows:
+Grading for this course will be based on 3 equally weighted
+assignments. Assignments are due Sunday night by 11:59 pm Mountain
+Time. Assignments should be submitted via email to
+[ethan.white@usu.edu](mailto:ethan.white@usu.edu) with the subject line:
+Database Assignment X, where X is the number of the assignment. One problem from
+each assignment (selected at my discretion after the assignments have been
+submitted) will receive a thorough review and a detailed grade. Other problems
+will be graded as follows:
 
 * Produces the correct answer using the requested approach: 100%
 * Generally uses the right approach, but a minor mistake results in an incorrect
