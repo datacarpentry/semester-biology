@@ -6,7 +6,7 @@ title: Databases - Joins 1
 In a new database import the main table from the Portal database (remember that
 wgt and hfl need to have their types changes to integer). Now download and
 import the [Plots table](/data/PortalMammals_plots.csv) and the
-[Species table](/data/PortalMammals_species.txt) (if you don't remember how to
+[Species table](/data/PortalMammals_species.csv) (if you don't remember how to
 import tables see the details in the
 [Databases 2 exercise](/exercises/Databases-2-problem). We will use this
 database for all of the exercises on joins, database structure, and nested
