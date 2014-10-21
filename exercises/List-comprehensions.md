@@ -11,7 +11,7 @@ conveniently as a Python list:
 [Platypus("perry", [3,2,4,1,2]),
 Platypus("quacker", [100,1,3,1,2]),
 Platypus("fishface", [0,1,3,1,2,1]),
-Platypus("duckhead", [3,-1,3,6,3]),
+Platypus("duckhead", [3,1,3,6,3]),
 Platypus("waddles", [3,1,2,0,8,3]),
 Platypus("professor quackington", [2,1,4,5,7]),
 Platypus("bartholomew beavertail", [0,1,3,1,0,0,2]),
@@ -27,6 +27,4 @@ you reason that it's unlikely that a platypus would lay more than an
 average of 3 eggs per breeding season.
 
 Write a list comprehension that returns the names of individuals that
-laid more than 3 eggs per breeding season, on average. See if you can
-spot any other obvious errors, and work those into the list
-comprehension as well.
+laid more than 3 eggs per breeding season, on average.
