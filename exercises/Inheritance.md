@@ -16,11 +16,11 @@ two numbers, the number of hatched and the number of unhatched eggs.
 Override `total_fecundity` so that it incorporates both lists.
 
 ```
->> perry = BetterPlatypus("perry", [3, 2, 4, 1, 2], [0,1,0,0,1])
->> perry.total\_fecundity()
+>>> perry = BetterPlatypus("perry", [3, 2, 4, 1, 2], [0,1,0,0,1])
+>>> perry.total\_fecundity()
 14
->> perry.lay_eggs(2, 1)
->> perry.total_fecundity()
+>>> perry.lay_eggs(2, 1)
+>>> perry.total_fecundity()
 17
 ```
 

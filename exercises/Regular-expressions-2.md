@@ -3,12 +3,12 @@ layout: exercise
 title: Regular Expressions 2
 ---
 
-This is a follow up to the [Regular Expressions 1 problem](exercises/regular-expressions-1).
+This is a follow up to the [Regular Expressions 1 problem](/exercises/Regular-expressions-1).
 
 Once you figured out how to extract the latin binomials from a Wikipedia
 page that, to be generous, wasn't exactly the most consistently formated
 thing you'd ever seen before, you realize that your Python Kung Fu has
-gotten pretty strong over the last few months\*. So, you decide to push
+gotten pretty strong over the last few months*. So, you decide to push
 yourself a little harder and see how far you can get with this Wikipedia
 rodent list in another hour or two. Instead of getting just the latin
 binomial for each species you decide to also get the family so that each
