@@ -34,3 +34,4 @@ redirect_from:
 * [Assignment 5](advanced-5)
 * [Assignment 6](advanced-6)
 * [Assignment 7](advanced-7)
+* [Assignment 8](advanced-8)
