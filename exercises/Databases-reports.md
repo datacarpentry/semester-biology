@@ -22,3 +22,4 @@ Some specifics:
     unfamiliar with the database, so make sure to change the defaults if
     they are unclear.
 
+Save this report as `Monthly Trapping Report`.
