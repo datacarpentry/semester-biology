@@ -33,8 +33,8 @@ title: Schedule for Databases For Biologists
 
 #### Material:
 
-* [Forms](https://github.com/ethanwhite/progbio/blob/master/lectures/access-forms.md)
-* [Reports](https://github.com/ethanwhite/progbio/blob/master/lectures/access-reports.md)
+* [Forms](/lectures/access-forms)
+* [Reports](/lectures/access-reports)
 * [Databases using SQL](http://software-carpentry.org/v4/databases/index.html)
 
 [Assignment 3](/assignments/databases-3)
