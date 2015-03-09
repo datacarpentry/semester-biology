@@ -3,7 +3,7 @@ layout: exercise
 title: Regular Expressions 2
 ---
 
-This is a follow up to the [Regular Expressions 1 problem](/exercises/Regular-expressions-1).
+This is a follow up to the [Regular Expressions 1 problem]({{ site.baseurl }}/exercises/Regular-expressions-1).
 
 Once you figured out how to extract the latin binomials from a Wikipedia
 page that, to be generous, wasn't exactly the most consistently formated

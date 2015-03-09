@@ -4,7 +4,7 @@ title: Debugging
 ---
 
 This is a follow up to the [Basic Python 1
-problem](/exercises/Basic-python-2).
+problem]({{ site.baseurl }}/exercises/Basic-python-2).
 
 While you were out of town doing field work over the summer Dr. Granger hired
 another student, Gregory Goyle, to help her modify your code so that it did
@@ -33,5 +33,5 @@ running so that you can actually run the tests.
 
 Make a new branch for this problem and commit each fix individually.
 
-The code [can be downloaded](/code/buggy_granger_analysis_code.py), but your
+The code [can be downloaded]({{ site.baseurl }}/code/buggy_granger_analysis_code.py), but your
 instructor may have already put it in your repository.

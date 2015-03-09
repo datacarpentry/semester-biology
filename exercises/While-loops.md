@@ -3,7 +3,7 @@ layout: exercise
 title: While loops
 ---
 
-This is a follow up to the [For Loops 2 problem](/exercises/loops-2).
+This is a follow up to the [For Loops 2 problem]({{ site.baseurl }}/exercises/loops-2).
 
 In addition to wanting to be able to calculate the predicted abundance
 at a given point in time for an exponentially growing species, your lab

@@ -3,7 +3,7 @@ layout: exercise
 title: Functions 5
 ---
 
-This is a follow up to the [Functions 4 problem](/exercises/functions-4).
+This is a follow up to the [Functions 4 problem]({{ site.baseurl }}/exercises/functions-4).
 
 Now that you've impressed Grandma, it's time to do some serious science.
 Take the following list of Stegosaur lengths

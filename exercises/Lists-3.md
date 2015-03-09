@@ -3,8 +3,8 @@ layout: exercise
 title: Lists 3
 ---
 
-This is a follow up to the [Lists 1](/exercises/lists-1) and [Lists
-2](/exercises/lists-2) problems.
+This is a follow up to the [Lists 1]({{ site.baseurl }}/exercises/lists-1) and [Lists
+2]({{ site.baseurl }}/exercises/lists-2) problems.
 
 When last we left you, our intrepid hero, you had created the following
 updated list of bird abundances across sites:

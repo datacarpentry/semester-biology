@@ -3,7 +3,7 @@ layout: exercise
 title: Statistics - Shrub Carbon
 ---
 
-This is a follow up to the [Scientific Python 7](/exercises/Scientific-python-7)
+This is a follow up to the [Scientific Python 7]({{ site.baseurl }}/exercises/Scientific-python-7)
 exercise.
 
 Dr. Granger is interested in studying the factors controlling the size and
@@ -15,7 +15,7 @@ analysis of these data to include in a grant proposal and she would like you to
 conduct the analysis for her (she might be a world renowned expert in carbon
 storage in plants, but she sure doesn't know much about computers). She has
 placed a data file on the web for you to
-[download](/data/shrub_volume_experiment.csv). She wants you to run an ANOVA to
+[download]({{ site.baseurl }}/data/shrub_volume_experiment.csv). She wants you to run an ANOVA to
 determine if the different experimental treatments lead to differences in shrub
 carbon.
 

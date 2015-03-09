@@ -3,7 +3,7 @@ layout: exercise
 title: Scientific Python 7
 ---
 
-*This problem is related to [Combining Basics 2](/exercises/Combining-basics-2),
+*This problem is related to [Combining Basics 2]({{ site.baseurl }}/exercises/Combining-basics-2),
 but using the Pandas library.*
 
 Dr. Granger is interested in studying the factors controlling the size and
@@ -15,7 +15,7 @@ analysis of these data to include in a grant proposal and she would like you to
 conduct the analysis for her (she might be a world renowned expert in carbon
 storage in plants, but she sure doesn't know much about computers). She has
 placed a data file on the web for you to
-[download](/data/shrub_volume_experiment.csv).
+[download]({{ site.baseurl }}/data/shrub_volume_experiment.csv).
 
 1. Import the data using Pandas and print out the first few rows of the data
    using the `.head()` method.

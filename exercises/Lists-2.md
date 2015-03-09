@@ -3,7 +3,7 @@ layout: exercise
 title: Lists 2
 ---
 
-This is a follow up to the [Lists 1 problem](/exercises/lists-1).
+This is a follow up to the [Lists 1 problem]({{ site.baseurl }}/exercises/lists-1).
 
 While conducting the above analyses you realize that a couple of counts
 are really high (if you actually noticed this; nice job!), so you go

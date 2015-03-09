@@ -48,7 +48,7 @@ areas = [1, 5.2, 10.95, 152.3, 597.6, 820, 989.8, 1232.5, 15061]
 
 These can be cut and paste into your code. Alternatively, if you're looking for
 a more realistic challenge you can import the related csv files for
-[the parameters](/data/sar_model_data.csv) and [the areas](/data/sar_areas.csv)
+[the parameters]({{ site.baseurl }}/data/sar_model_data.csv) and [the areas]({{ site.baseurl }}/data/sar_areas.csv)
 directly from the web. Dealing with extracting the data you need from a standard
 csv import will be a little challenging, but you'll learn a lot (and you can
 always solve the main problem first and then go back and solve the import step

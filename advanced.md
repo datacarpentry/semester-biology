@@ -7,11 +7,11 @@ redirect_from: /advanced-programming-and-database-management-biologists/
 Instructor: [Dr. Ethan White](http://whitelab.weecology.org)
 (ethan.white@usu.edu)
 
-* [Syllabus](/syllabus/advanced-syllabus)
-* [Schedule](/syllabus/advanced-schedule)
-* [Assignments](/assignments)
-* [Material](/material/advanced-material)
-* [Setup](/computer-setup)
+* [Syllabus]({{ site.baseurl }}/syllabus/advanced-syllabus)
+* [Schedule]({{ site.baseurl }}/syllabus/advanced-schedule)
+* [Assignments]({{ site.baseurl }}/assignments)
+* [Material]({{ site.baseurl }}/material/advanced-material)
+* [Setup]({{ site.baseurl }}/computer-setup)
 
 Computers are becoming increasingly essential to the study of
 all aspects of biology and an increasingly large number of biologists spend a

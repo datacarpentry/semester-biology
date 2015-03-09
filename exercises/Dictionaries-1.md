@@ -4,7 +4,7 @@ title: Dictionaries 1
 ---
 
 Some measures of similarity, like the Jaccard index in the
-[Sets 1](/exercises/Sets-1), are based only on the presence/absence of
+[Sets 1]({{ site.baseurl }}/exercises/Sets-1), are based only on the presence/absence of
 species. Another major class of similarity measures also includes information on
 their relative abundance in the community. One of these measures is the
 [Euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance) (actually

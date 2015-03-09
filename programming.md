@@ -7,11 +7,11 @@ redirect_from: /introduction-programming-and-database-management-biologists/
 Instructor: [Dr. Ethan White](whitelab.weecology.org)
 (ethan.white@usu.edu)
 
-* [Syllabus](/syllabus/programming-syllabus)
-* [Schedule](/syllabus/programming-schedule)
-* [Assignments](/assignments)
-* [Material](/material/programming-material)
-* [Setup](/computer-setup)
+* [Syllabus]({{ site.baseurl }}/syllabus/programming-syllabus)
+* [Schedule]({{ site.baseurl }}/syllabus/programming-schedule)
+* [Assignments]({{ site.baseurl }}/assignments)
+* [Material]({{ site.baseurl }}/material/programming-material)
+* [Setup]({{ site.baseurl }}/computer-setup)
 
 Computers are increasingly essential to the study of all aspects
 of biology. Basic computer programming is now required for everything from

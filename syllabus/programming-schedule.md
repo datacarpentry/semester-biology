@@ -12,7 +12,7 @@ redirect_from: /schedule-intro/
     * [Associated data](https://raw.githubusercontent.com/swcarpentry/bc/master/novice/python/inflammation-01.csv) if you want to experiment with it (not required)
 * [Errors](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/errors.ipynb)
 
-[Assignment 1](/assignments/programming-1)
+[Assignment 1]({{ site.baseurl }}/assignments/programming-1)
 
 ### Week 2: Strings, Methods
 
@@ -20,7 +20,7 @@ redirect_from: /schedule-intro/
 
 * [Strings](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/strings.ipynb)
 
-[Assignment 2](/assignments/programming-2)
+[Assignment 2]({{ site.baseurl }}/assignments/programming-2)
 
 ### Week 3: Functions, for loops, lists
 
@@ -29,7 +29,7 @@ redirect_from: /schedule-intro/
 * [SWC Novice Python: Creating Functions](http://software-carpentry.org/v5/novice/python/02-func.html) (M)
 * [SWC Novice Python: Analyzing Multiple Data Sets](http://software-carpentry.org/v5/novice/python/03-loop.html) (W)
 
-[Assignment 3](/assignments/programming-3)
+[Assignment 3]({{ site.baseurl }}/assignments/programming-3)
 
 ### Week 4: Making choices, Problem decomposition
 
@@ -40,7 +40,7 @@ redirect_from: /schedule-intro/
 Additional Material: 
 [Problem decomposition](http://programmingforbiologists.org/material/problem-decomposition)
 
-[Assignment 4](/assignments/programming-4)
+[Assignment 4]({{ site.baseurl }}/assignments/programming-4)
 
 ### Week 5: Working with tabular data, Debugging, Style
 
@@ -48,7 +48,7 @@ Additional Material:
 
 * [Pandas - working with data they way your brain wants](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/pandas.ipynb)
   
-[Assignment 5](/assignments/programming-5)
+[Assignment 5]({{ site.baseurl }}/assignments/programming-5)
 
 ### Week 6: Graphing, Style, Program Design
 
@@ -56,7 +56,7 @@ Additional Material:
 
 * [Graphs](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
 
-[Assignment 6](/assignments/programming-6)
+[Assignment 6]({{ site.baseurl }}/assignments/programming-6)
 
 ### Week 7: Statistics
 
@@ -64,4 +64,4 @@ Additional Material:
 
 * [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
 
-[Assignment 7](/assignments/programming-7)
+[Assignment 7]({{ site.baseurl }}/assignments/programming-7)

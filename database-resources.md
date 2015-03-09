@@ -22,7 +22,7 @@ SQLite](http://software-carpentry.org/4_0/databases/) - Excellent video
 lecture series from Software Carpentry
 
 [Setting up an ODBC connection to a database (in
-Windows)](/lectures/setting-up-an-odbc-connection-in-windows)
+Windows)]({{ site.baseurl }}/lectures/setting-up-an-odbc-connection-in-windows)
 
 [SQL Joins](http://www.w3schools.com/sql/sql_join.asp) - good basic
 information on joins from w3schools.

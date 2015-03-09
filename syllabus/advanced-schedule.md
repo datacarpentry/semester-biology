@@ -13,7 +13,7 @@ redirect_from: /schedule-advanced/
 * [Loops](http://software-carpentry.org/v5/novice/shell/04-loop.html)
 * [Shell Scripts](http://software-carpentry.org/v5/novice/shell/05-script.html)
 
-[Assignment 1](/assignments/stuff-1/)
+[Assignment 1]({{ site.baseurl }}/assignments/stuff-1/)
 
 ### Week 2: Version Control
 
@@ -22,7 +22,7 @@ redirect_from: /schedule-advanced/
 * [Collaborating](http://software-carpentry.org/v5/novice/git/02-collab.html)
 * [Conflicts](http://software-carpentry.org/v5/novice/git/03-conflict.html)
 
-[Assignment 2](/assignments/advanced-2/)
+[Assignment 2]({{ site.baseurl }}/assignments/advanced-2/)
 
 ### Week 3: Programming Basics in Python
 
@@ -38,7 +38,7 @@ look at:
 * [Intro to Python: Analyzing Multiple Data Sets](http://software-carpentry.org/v5/novice/python/03-loop.html)
 * [Intro to Python: Making Choices](http://software-carpentry.org/v5/novice/python/04-cond.html)
 
-[Assignment 3](/assignments/advanced-3/)
+[Assignment 3]({{ site.baseurl }}/assignments/advanced-3/)
 
 ### Week 4: Scientific Programming in Python
 
@@ -46,7 +46,7 @@ look at:
 * [Pandas](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/pandas.ipynb)
 * [Matplotlib](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
 
-[Assignment 4](/assignments/advanced-4/)
+[Assignment 4]({{ site.baseurl }}/assignments/advanced-4/)
 
 ### Week 5: Data Structures
 
@@ -56,7 +56,7 @@ look at:
 * [Dictionaries](http://software-carpentry.org/v4/setdict/dict.html)
 * [Aliasing](http://software-carpentry.org/v4/python/alias.html)
 
-[Assignment 5](/assignments/advanced-5/)
+[Assignment 5]({{ site.baseurl }}/assignments/advanced-5/)
 
 ### Week 6 Databases using SQL - Queries
 
@@ -68,7 +68,7 @@ look at:
 * [Aggregation](http://software-carpentry.org/v5/novice/sql/06-agg.html)
 * [Combining Data](http://software-carpentry.org/v5/novice/sql/07-join.html)
 
-[Assignment 6](/assignments/advanced-6/)
+[Assignment 6]({{ site.baseurl }}/assignments/advanced-6/)
 
 ### Week 7 Databases using SQL - Interfacing w/Python, Creating and Modifying, Database structure
 
@@ -76,7 +76,7 @@ look at:
 * [Programming with Databases](http://software-carpentry.org/v5/novice/sql/09-prog.html)
 * [Creating and Modifying Data](https://github.com/swcarpentry/bc/blob/master/novice/sql/08-create.md)
 
-[Assignment 6](/assignments/advanced-6/)
+[Assignment 6]({{ site.baseurl }}/assignments/advanced-6/)
 
 ### Week 8: More Version Control & Working with Servers
 
@@ -91,7 +91,7 @@ look at:
 * [Why you need to test](http://ivory.idyll.org/blog/automated-testing-and-research-software.html)
 * [Testing](https://github.com/swcarpentry/bc/blob/master/intermediate/python/03-qa.md) (including Exception Handling)
 
-[Assignment 7](/assignments/advanced-7/)
+[Assignment 7]({{ site.baseurl }}/assignments/advanced-7/)
 
 ### Week 10: Oriented Programming
 
@@ -100,7 +100,7 @@ look at:
 * [Classes & Objects: Interfaces](http://software-carpentry.org/v4/oop/interface.html)
 * [Classes & Objects: Inheritance](http://software-carpentry.org/v4/oop/inherit.html)
 
-[Assignment 8](/assignments/advanced-8/)
+[Assignment 8]({{ site.baseurl }}/assignments/advanced-8/)
 
 ### Week 11: Program Design & Regular Expressions
 
@@ -111,7 +111,7 @@ look at:
 * [Regular Expressions: More Tools](http://software-carpentry.org/v4/regexp/module.html)
 * [Code Like Pythonista](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html) (W)
 
-[Assignment 8](/assignments/advanced-8/)
+[Assignment 8]({{ site.baseurl }}/assignments/advanced-8/)
 
 ### Weeks 12: Project
 

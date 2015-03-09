@@ -16,4 +16,4 @@ Because [xkcd](http://xkcd.com/) says so:
 [![xkcd
 cartoon](http://imgs.xkcd.com/comics/11th_grade.png)](http://xkcd.com/519/)
 
-And because [students really like it](/about/praise).
+And because [students really like it]({{ site.baseurl }}/about/praise).

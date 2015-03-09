@@ -3,7 +3,7 @@ layout: exercise
 title: Databases - Forms 3
 ---
 
-This is a follow up to the [Forms 2 exercise](/exercises/Databases-forms-2)
+This is a follow up to the [Forms 2 exercise]({{ site.baseurl }}/exercises/Databases-forms-2)
 
 Modify your basic data entry form to prevent bad data values from being entered
 into your database. You can do this using the Data tab on the Property Sheet in

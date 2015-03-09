@@ -4,7 +4,7 @@ title: Loops 3
 ---
 
 One of your collaborators has posted
-[a comma-delimited text file](/data/shrub_dimensions.csv) online for you to
+[a comma-delimited text file]({{ site.baseurl }}/data/shrub_dimensions.csv) online for you to
 analyze. The file contains dimensions of a series of shrubs (Length, Width,
 Height) and they need you to determine the associated volumes. You could do this
 using a spreadsheet, but the project that you are working on is going to be

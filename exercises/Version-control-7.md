@@ -4,7 +4,7 @@ title: Version Control 7
 ---
 
 This is a follow up question to
-[Version Control 6](/exercises/Version-control-6).
+[Version Control 6]({{ site.baseurl }}/exercises/Version-control-6).
 
 Your job is to take all of these files, run them through the python code and
 produce a single list of the areas and associated richness predictions from all

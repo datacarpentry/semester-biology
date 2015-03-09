@@ -18,7 +18,7 @@ title: Schedule for Databases For Biologists
 * [Aggregation](http://software-carpentry.org/v4/access/aggregation.html)
 * [Nulls](http://software-carpentry.org/v4/access/null.html)
 
-[Assignment 1](/assignments/databases-1)
+[Assignment 1]({{ site.baseurl }}/assignments/databases-1)
 
 ### Week 3: Joins, Database Structure, Nested Queries
 
@@ -27,14 +27,14 @@ title: Schedule for Databases For Biologists
 * [Joins](http://software-carpentry.org/v4/access/join.html)
 * [Nested Queries](http://software-carpentry.org/v4/access/nested.html)
 
-[Assignment 2](/assignments/databases-2)
+[Assignment 2]({{ site.baseurl }}/assignments/databases-2)
 
 ### Week 4: Controlling Input and Output: Forms, QA/QC, Reports + SQL
 
 #### Material:
 
-* [Forms](/lectures/access-forms)
-* [Reports](/lectures/access-reports)
+* [Forms]({{ site.baseurl }}/lectures/access-forms)
+* [Reports]({{ site.baseurl }}/lectures/access-reports)
 * [Databases using SQL](http://software-carpentry.org/v4/databases/index.html)
 
-[Assignment 3](/assignments/databases-3)
+[Assignment 3]({{ site.baseurl }}/assignments/databases-3)

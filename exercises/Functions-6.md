@@ -3,10 +3,10 @@ layout: exercise
 title: Functions 6
 ---
 
-This is a follow up to [Strings 6](/exercises/Strings-6/).
+This is a follow up to [Strings 6]({{ site.baseurl }}/exercises/Strings-6/).
 
 A colleague has produced a file with one DNA sequence on each line. Download
-[the file](/data/dna_sequences_1.txt) and load it into Python using
+[the file]({{ site.baseurl }}/data/dna_sequences_1.txt) and load it into Python using
 `numpy.loadtxt()`. You will need to use the optional argument `dtype=str` to
 tell `loadtxt()` that the data is composed of strings.
 

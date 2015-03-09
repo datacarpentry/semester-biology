@@ -3,7 +3,7 @@ layout: exercise
 title: Shell 4 - Making Executable Programs
 ---
 
-This is a follow up on the [Shell 3 - Finding Things problem](/exercises/shell-3-finding-things).
+This is a follow up on the [Shell 3 - Finding Things problem]({{ site.baseurl }}/exercises/shell-3-finding-things).
 
 Instead of having to call our Python program and our Bash script by
 using the commands python and bash, it would be nice if we could just

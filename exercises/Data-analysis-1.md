@@ -7,7 +7,7 @@ We are interested in understanding the monthly variation in precipitation in
 Gainesville, FL. We'll use some data from the
 [NOAA National Climatic Data Center](http://www.ncdc.noaa.gov/).
 
-Start by downloading [the data](/data/gainesville_precip.csv) and saving it in
+Start by downloading [the data]({{ site.baseurl }}/data/gainesville_precip.csv) and saving it in
 the same directory as your homework script. Each row of this data file is a year
 (from 1961-2013) and each column is a month (January-December).
 

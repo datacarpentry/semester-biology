@@ -4,7 +4,7 @@ title: Lists 6
 ---
 
 This is a follow up to the
-[Making Choices 3 problem](/exercises/making-choices-3).
+[Making Choices 3 problem]({{ site.baseurl }}/exercises/making-choices-3).
 
 Write a function `dna_or_rna_multivalue(list_of_sequences)` that
 takes a list of dna sequences as input, determines whether each sequence
@@ -14,7 +14,7 @@ is DNA, RNA, or UNKNOWN, and then returns a list of those values (i.e.,
 I would recommend:
 
 1.  Starting by copying your function from the [Making Choices 3
-    problem](/exercises/making-choices-3)
+    problem]({{ site.baseurl }}/exercises/making-choices-3)
     into your current code [you may end up needing to modify the
     function to handle the unfortunate error that somehow crept into the
     list of sequences below]

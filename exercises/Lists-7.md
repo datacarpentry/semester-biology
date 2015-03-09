@@ -3,7 +3,7 @@ layout: exercise
 title: Lists 7
 ---
 
-This is a follow up on the [Strings 2 problem](/exercises/strings-2).  Copy the
+This is a follow up on the [Strings 2 problem]({{ site.baseurl }}/exercises/strings-2).  Copy the
 function that you used in the previous problem into your code for the current
 assignment.
 

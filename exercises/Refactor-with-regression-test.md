@@ -3,7 +3,7 @@ layout: exercise
 title: Refactor with regression test
 ---
 
-This is a follow up to the [Tests 1 problem](/exercises/Tests-1).
+This is a follow up to the [Tests 1 problem]({{ site.baseurl }}/exercises/Tests-1).
 
 Now that you've got the code working it's time to deal with the fact that it's
 not really well structured (I mean, has this guy not heard of NumPy or Pandas or

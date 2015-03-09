@@ -3,7 +3,7 @@ layout: exercise
 title: Tests 1
 ---
 
-This is a follow up to the [Debugging 1 problem](/exercises/Debugging).
+This is a follow up to the [Debugging 1 problem]({{ site.baseurl }}/exercises/Debugging).
 
 Write tests for your `granger_analysis_code` for the following cases and
 save it in a file called `test_granger_analysis_code.py` (remember that

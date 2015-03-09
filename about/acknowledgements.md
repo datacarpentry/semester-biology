@@ -8,7 +8,7 @@ redirect_from: /acknowledgements/
 
 The [National Science Foundation](http://nsf.gov) is supporting the
 development of both the university courses and this site through
-grant [0953694](/awardsearch/showAward.do?AwardNumber=0953694 "Use this link to retrieve the award").
+grant [0953694]({{ site.baseurl }}/awardsearch/showAward.do?AwardNumber=0953694 "Use this link to retrieve the award").
 
 #### Department of Biology at Utah State University
 
