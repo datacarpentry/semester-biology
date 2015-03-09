@@ -12,11 +12,13 @@ from the command line.
 
 This file contains metadata about the project. The simplest ``setup.py`` file possible is:
 
-    from distutils.core import setup
+    from setuptools import setup, find_packages
 
-    setup(name='mymodule',
-        version='0.1',
-        py_modules=['mymodule'])
+    setup(
+	      name='mymodule',
+          version='0.1',
+          py_modules = ['ultimate_answer']
+		  )
 
 ### Example
 
@@ -26,14 +28,19 @@ Create a simple .py file called ``ultimate_answer.py`` that prints:
 
     print "The answer to life the universe and everything is 42"
 
-If we try to import this module from anywhere other than it's directory, Python can't find it.
-But if we add a ``setup.py`` file and use it to install the package, then it can be used from anywhere.
+* If we try to import this module from anywhere other than it's directory,
+  Python can't find it.
+* But if we add a ``setup.py`` file and use it to install the package, then it
+  can be used from anywhere.
 
-    from distutils.core import setup
+```
+from setuptools import setup, find_packages
 
-    setup(name='ultimate_answer',
-        version='0.1',
-        py_modules=['ultimate_answer'])
+setup(
+      name='ultimate_answer',
+      version='0.1',
+      py_modules = ['ultimate_answer']
+	  )
 
 Now run
 
@@ -44,16 +51,14 @@ Setuptools
 ----------
 
 This works great for simple modules, but real modules have dependencies,
-and their modules have dependencies, and we'd have to install them all one at a time.
-To make this easier we can use ``setuptools``.
+and their modules have dependencies, and we'd have to install them all one at a
+time. Instead, we can automate this using our `setup.py` file.
 
-Python keeps an online repository of packages and running ``easy_install`` or ``pip``
-will search the repository for the package you want and install it automatically
-while handling any dependencies.
+Python keeps an online repository of packages and running ``easy_install`` or
+``pip`` will search the repository for the package you want and install it
+automatically while handling any dependencies.
 
-To write ``setup.py`` files for setuptools (in the most basic case) we simple replace the import with
-
-    from setuptools import setup
+**NEEDS EXAMPLE**
 
 Command line programs
 ---------------------
@@ -72,7 +77,7 @@ And setup.py:
 
     setup(name='ultimate_answer',
         version='0.1',
-        py_modules=['ultimate_answer'],
+        py_modules = ['ultimate_answer'],
         entry_points={'console_scripts': ['ult_ans = ultimate_answer:main']})
 
 
