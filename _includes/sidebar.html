@@ -9,14 +9,14 @@
       <p class="lead">{{ site.description }}</p>
     </div>
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
       <a class="sidebar-nav-item">-------</a>
-      <a class="sidebar-nav-item{% if page.url == '/programming/' %} active{% endif %}" href="/programming">Programming</a>
-      <a class="sidebar-nav-item{% if page.url == '/databases/' %} active{% endif %}" href="/databases">Databases</a>
-      <a class="sidebar-nav-item{% if page.url == '/advanced/' %} active{% endif %}" href="/advanced">Advanced Computing</a>
+      <a class="sidebar-nav-item{% if page.url == '/programming/' %} active{% endif %}" href="{{ site.baseurl }}/programming">Programming</a>
+      <a class="sidebar-nav-item{% if page.url == '/databases/' %} active{% endif %}" href="{{ site.baseurl }}/databases">Databases</a>
+      <a class="sidebar-nav-item{% if page.url == '/advanced/' %} active{% endif %}" href="{{ site.baseurl }}/advanced">Advanced Computing</a>
       <a class="sidebar-nav-item">-------</a>
-      <a class="sidebar-nav-item{% if page.url == '/exercises/' %} active{% endif %}" href="/exercises">Exercises</a>
-      <a class="sidebar-nav-item{% if page.url == '/assignments/' %} active{% endif %}" href="/assignments">Assignments</a>
+      <a class="sidebar-nav-item{% if page.url == '/exercises/' %} active{% endif %}" href="{{ site.baseurl }}/exercises">Exercises</a>
+      <a class="sidebar-nav-item{% if page.url == '/assignments/' %} active{% endif %}" href="{{ site.baseurl }}/assignments">Assignments</a>
       <a class="sidebar-nav-item">-------</a>
       <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="/about">About</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">Fork My Course (GitHub)</a>
