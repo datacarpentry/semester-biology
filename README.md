@@ -42,7 +42,7 @@ introduction on how to do this](https://help.github.com/articles/using-jekyll-wi
 
 If you have Jekyll properly installed, you can then run
 
-`jekyll serve`
+`jekyll serve --baseurl ''`
 
 from the command line and navigate to http://localhost:4000/ in your browser to
 preview the current state of the website.
