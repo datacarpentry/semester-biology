@@ -10,7 +10,7 @@ title:            Programming for Biologists
 tagline:          'A Jekyll theme'
 description:      'Teaching biologists the tools they need to use computers to do cool science'
 url:              http://www.progbio.org
-baseurl:          /
+baseurl:          /datacarp-semester-biology
 
 author:
   name:           'Ethan White'
