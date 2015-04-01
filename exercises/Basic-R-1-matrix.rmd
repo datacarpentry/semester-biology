@@ -11,7 +11,7 @@ following questions by printing them to the screen.
 
 ```{r}
     data <- matrix(c('A1', 28, 'A2', 32, 'A3', 1, 'A4', 0, 'A5', 10, 'A6', 22, 'A7', 30, 'A8', 19,
-  		      'B1', 145, 'B2', 27, 'B3', 36, 'B4', 25, 'B5', 9, 'B6', 38, 'B7', 21, 'B8', 12,
+    	      'B1', 145, 'B2', 27, 'B3', 36, 'B4', 25, 'B5', 9, 'B6', 38, 'B7', 21, 'B8', 12,
 			      'C1', 122, 'C2', 87, 'C3', 36, 'C4', 3, 'D1', 0, 'D2', 5, 'D3', 55, 'D4', 62,
 			      'D5', 98, 'D6', 32), ncol = 2, nrow = 26, byrow=T)
 
@@ -24,9 +24,9 @@ following questions by printing them to the screen.
     counts <- c(28, 32, 1, 0, 10, 22, 30, 19, 145, 27, 36, 25, 9, 
                 38, 21, 12, 122, 87, 36, 3, 0, 5, 55, 62, 98, 32)
 
-    data <- matrix(ncol = 2, nrow = length(sites))
-    data[,1] <- sites
-    data[,2] <- counts
+    #data <- data.frame(ncol = 2, nrow = length(sites))
+    #data[,1] <- sites
+    #data[,2] <- counts
 
 ```
 
@@ -48,7 +48,7 @@ following questions by printing them to the screen.
 4.  What is the total number of birds counted across all sites?
 ```{r echo=FALSE}
   paste('A total of ', sum(as.numeric(data[,2])), ' birds were counted across all sites.')
-  # as.numeric is not needed if you use the `counts` vector. 
+  # as.numeric is not needed if you use the `counts` vector or data as a data frame. 
   # Matrixes are coerced to a single data type, in this case to 'character'.
 ```
 
