@@ -38,5 +38,5 @@ Write an R script that:
     delimited text) file titled `grangers_analysis.csv`.
 
 
-Built-in functions for R (i.e., read.csv(), matrix(), data.frame()) should be sufficient for this exercise. Throughout the assignment feel free to use whatever data structures you
-prefer, but be consistent. Ask your instructor if you have questions about the best choices.
+Throughout the assignment feel free to use whatever data structures you
+prefer, but be consistent. Use functions to break the code up into manageable pieces. Ask your instructor if you have questions about the best choices.
