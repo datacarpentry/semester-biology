@@ -5,10 +5,8 @@ language: R
 ---
 
 The number of birds banded at a series of sampling sites has been counted by
-your field crew and entered into the following list. The first item in each
-sublist is an alphanumeric code for the site and the second value is the number
-of birds banded. Cut and paste the list into your assignment and then answer the
-following questions by printing them to the screen.
+your field crew. The data are organized in two vectors. The first vector contains the alphanumeric code for each site and the second vector contains the number
+of birds banded per site. Cut and paste the vectors into your assignment and then answer the following questions by printing them to the screen.
 
     sites <- c("A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", 
                      "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", 
