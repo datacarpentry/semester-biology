@@ -1,0 +1,16 @@
+> output_table
+    ID earsize GC_content
+1  17A   small       0.41
+2  24P   small       0.39
+3  09Q   large       0.57
+4  65Y   small       0.40
+5  19N   small       0.36
+6  92K   large       0.62
+7  33W   small       0.52
+8  98C   large       0.63
+9  75G   small       0.47
+10 88Q   large       0.52
+
+[1] 0.585
+
+[1] 0.425
