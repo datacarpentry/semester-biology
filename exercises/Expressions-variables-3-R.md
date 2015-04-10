@@ -14,7 +14,3 @@ to Celsius. To do this you'll need to:
 4.  And then multiple the current value by 5 and assign that value back
     to the same variable
 5.  Print the temperature in degrees Celsius
-
-
-Now do the same thing again, but this time using combined operators, and
-a starting temperature of 98.6 degrees.
