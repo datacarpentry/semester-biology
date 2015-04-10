@@ -13,11 +13,11 @@ information about. E.g.,`help(round)`.
 1. The absolute value of -15.5
 2. 3.8 rounded to the nearest integer using standard rounding
 3. 4.483847 rounded to one decimal place
-4. Convert 3.8 to an integer format using int(), assign the value to a
+4. Convert 3.8 to an integer format using as.integer(), assign the value to a
 variable, and print out it's value
-5. Convert the answer to the previous question to a string and assign it
+5. Convert the answer to the previous question to a character and assign it
 back to the same variable name, print out the value
-6. Convert the answer to the previous question to a float and assign it
+6. Convert the answer to the previous question to a numeric and assign it
 back to the same variable name, print out the value
 7. Take the square of the answer to the previous question, assign it the
 same variable name, print out the value
