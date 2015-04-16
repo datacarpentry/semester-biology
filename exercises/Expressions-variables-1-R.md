@@ -10,13 +10,11 @@ the console on the line marked `>` and pressing enter.
 
 1. 2 - 10
 2. 3 \* 5
-3. 8 / 2
-4. 9 / 2
-5. 9.0 / 2
-6. 5 - 3 \* 2
-7. (5 - 3) \* 2
-8. 4 \*\* 2
-9. 8 / 2 \*\* 2
+3. 9 / 2
+4. 5 - 3 \* 2
+5. (5 - 3) \* 2
+6. 4 \*\* 2
+7. 8 / 2 \*\* 2
 
 Did any of the results surprise you? If so, then might have run in to some order of operations confusion. The order of operators in R are listed [Here](http://stat.ethz.ch/R-manual/R-patched/library/base/html/Syntax.html).
 
