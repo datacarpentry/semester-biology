@@ -1,33 +1,22 @@
 ---
 layout: exercise
-title: Expressions and Variables 3
+title: Expressions and Variables 2
 language: R
 ---
 
-Calculate a total biomass in grams for 3 [White-throated Woodrats -
-*Neotoma albigula*] (https://en.wikipedia.org/wiki/White-throated_woodrat) and then convert it to kilograms. The total biomass
-is simply the sum of the biomass of all individuals, but in this case we
-only know that the average size of a single individual is 250 grams.
+Here is a small program that converts a mass in kilograms to a mass in grams and
+then prints out the resulting value.
 
-a. Add a new section to your R script starting with a comment.
-b. Create a variable `grams` and assign it the mass of a single
-*Neotoma albigula*.
-c. Create a variable `number` and assign it the number of individuals.
-d. Create a variable `biomass` and assign it a value by multiplying
-the two variables together.
-e. Convert the value of `biomass` into kilograms (there are 1000
-grams in a kilogram so divide by 1000) and assign this value to a new
-variable.
-f. Print the final answer to the screen.
+```
+mass_kg = 2.62
+mass_g = mass_kg * 1000
+print(mass_g)
+```
 
-Are the variable names `grams`, `number`, and `biomass` the best
-choice? If we came back to the code for this assignment in two weeks
-(without the assignment itself in hand) would we be able to remember
-what these variables were referring to and therefore what was going on
-in the code? The variable name `biomass` is also kind of long. If we
-had to type it several times it would be faster just to type `b`. We
-could also use really descriptive alternatives like
-`individual_mass_in_grams`. Or we would compromise and abbreviate
-this or leave out some of the words to make it shorter (e.g.,
-`indiv_mass_g`). Think about this and then rename the variables in
-your program in whatever you think is most useful.
+Modify this code to create a variable that stores a body mass in pounds and
+assign it a value of 3.5 (about the right size for a
+[Desert Cottontail Rabbit – *Sylvilagus audubonii*](https://en.wikipedia.org/wiki/Desert_Cottontail)). Convert
+this value to kilograms (we are serious scientists after all). There are
+approximately 2.2046 lbs in a kilogram, so divide the variable storing the
+weight in pounds by 2.2046 and store this value in a new variable for storing
+mass in kilograms. Print the value of the new variable to the screen.

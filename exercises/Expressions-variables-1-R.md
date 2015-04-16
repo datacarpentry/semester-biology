@@ -1,22 +1,36 @@
 ---
 layout: exercise
-title: Expressions and Variables 2
+title: Expressions and Variables 1
 language: R
 ---
 
-Here is a small program that converts a mass in kilograms to a mass in grams and
-then prints out the resulting value.
+Think about what value each of the following expressions will return?
+Check your answers using the Python interpreter by typing each expression into
+the interpreter and pressing enter.
 
-```
-mass_kg = 2.62
-mass_g = mass_kg * 1000
-print(mass_g)
-```
+1. 2 - 10
+2. 3 \* 5
+3. 8 / 2
+4. 9 / 2
+5. 9.0 / 2
+6. 5 - 3 \* 2
+7. (5 - 3) \* 2
+8. 4 \*\* 2
+9. 8 / 2 \*\* 2
 
-Modify this code to create a variable that stores a body mass in pounds and
-assign it a value of 3.5 (about the right size for a
-[Desert Cottontail Rabbit – *Sylvilagus audubonii*](https://en.wikipedia.org/wiki/Desert_Cottontail)). Convert
-this value to kilograms (we are serious scientists after all). There are
-approximately 2.2046 lbs in a kilogram, so divide the variable storing the
-weight in pounds by 2.2046 and store this value in a new variable for storing
-mass in kilograms. Print the value of the new variable to the screen.
+Did any of the results surprise you? If so, then you've probably run
+into a common point of confusion in Python 2 - [Integer
+Division](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/integer-division.ipynb).
+
+Now turn this set of expressions into a program that you can save by
+using the editor. For each expression add one line to the editor as part
+of a print statement to display the answer to the screen.
+
+To tell someone reading the code what this section of the code is about,
+add a comment line that says 'Problem 1' before the code that answers
+the problem. Comments in Python are added by adding the `#` sign.
+Anything after a `#` sign on the same line is ignored when the program is
+run. So, the start of your program should look something like:
+
+    # Problem 1
+    print(2-10)
