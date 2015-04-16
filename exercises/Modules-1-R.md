@@ -4,9 +4,7 @@ title: Modules 1
 language: R
 ---
 
-Use the `sqrt()` and `log()` functions from the `math` module, along with the
-built-in `round()` function to print the answers to the following questions to
-the screen.
+Use the `sqrt()`, `log()`, and `round()` built-in functions to print the answers to the following questions to the screen.
 
 1.  How long is one side of a square plant census quadrat that has an
     area of 10 m^2, rounded to two decimal places?
