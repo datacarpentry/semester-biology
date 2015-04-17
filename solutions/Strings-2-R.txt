@@ -1,0 +1,9 @@
+[1] "SPECIES"
+
+[1] "Thank goodness it's Friday"
+
+[1] "gcAgtctgAggAttccAccttctAcctgggAgAgAggAcAtActAtAtcgcAgcAgtggAggtggAAtgg"
+ 
+[1] 50
+ 
+[1] 16
