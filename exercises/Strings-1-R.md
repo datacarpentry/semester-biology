@@ -5,7 +5,7 @@ language: R
 ---
 
 Write a series of print statements that returns the following (include a
-blank line between each answer):
+blank line between each answer; ?cat):
 
 1. Post hoc ergo propter hoc
 2. What's up with scientists using all of this snooty latin?
