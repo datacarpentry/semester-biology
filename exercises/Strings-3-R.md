@@ -25,7 +25,7 @@ values. As is standard practice the first letter (and only the first
 letter) of the Genus name should be capitalized, and the species name
 should appear in all lower case letters when input.
 
-This allometric approach is regularly used to estimate the mass of
+An allometric approach is regularly used to estimate the mass of
 dinosaurs since we cannot typically weigh something that is only
 preserved as bones. I'll be testing your script using the length of a
 [Spinosaurus](http://en.wikipedia.org/wiki/Spinosaurus) (*Spinosaurus
