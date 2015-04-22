@@ -12,19 +12,18 @@ takes the form `Mass (kg) = a * Length(m)^b`, where the parameters `a` and
 following pieces of information:
 
 1. Genus name
-2. Species name
-3. The length of the species
+2. species name
+3. the length of the species
 
 and then estimates the mass of the organism using the equation above.
-The script should print out the result using formatted printing as:
+The script should paste the result as:
 
 *Genus* *species* is *length* meters long and weighs approximately *mass* kg.
 
 where the words in ***italics*** are replaced with the appropriate
 values. As is standard practice the first letter (and only the first
 letter) of the Genus name should be capitalized, and the species name
-should appear in all lower case letters (regardless of what the user
-inputs)
+should appear in all lower case letters when input.
 
 This allometric approach is regularly used to estimate the mass of
 dinosaurs since we cannot typically weigh something that is only
