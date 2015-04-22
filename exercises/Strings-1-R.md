@@ -4,14 +4,13 @@ title: Strings 1
 language: R
 ---
 
-Write a series of print statements that returns the following (include a
-blank line between each answer; ?cat):
+1. Print the following: Post hoc ergo propter hoc
 
-1. Post hoc ergo propter hoc
-2. What's up with scientists using all of this snooty latin?
-3. `atgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgc`. Do this by collapsing a vector (?paste) of 'atgc's established in the following code:
-```
-text <- vector(length=15)
-text[] = 'atgc'
-```
-4. Darwin's "On the origin of species" is a seminal work in biology.
+2. Print the following with no quotes: 
+What's up with scientists using all of this snooty latin?
+
+3. Print the following with no quotes and an extra blank line (?cat):
+Darwin's "On the origin of species" is a seminal work in biology.
+
+4. Set x = 3, then paste in the appropriate location of the statement:
+Then shalt thou count to x, no more, no less.
