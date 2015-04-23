@@ -13,8 +13,8 @@ Use the character functions from the package [`stringr`] (http://cran.r-project.
     (i.e., without the spaces before `Thank`)
 3.  `gcagtctgaggattccaccttctacctgggagagaggacatactatatcgcagcagtggaggtggaatgg`
     with all of the occurences of `a` replaced with `A`
-4.  The number of `a`s in `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg`.
-5.  Print the length of this dna sequence `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg`
+4.  Print the length of this dna sequence `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg`
+5.  The number of `a`s in `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg`.
 6.  Print the first 20 positions of this dna sequence `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg`
 7.  Print the last 10 positions of this dna sequence `gccgatgtacatggaatatacttttcaggaaacacatatctgtggagagg`
 
