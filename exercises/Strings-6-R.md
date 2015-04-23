@@ -1,14 +1,13 @@
 ---
 layout: exercise
 title: Strings 6
+language: R
 ---
 
 A colleague has produced a file with one DNA sequence on each line. Download
-[the file]({{ site.baseurl }}/data/dna_sequences_1.txt) and load it into Python using
-`numpy.loadtxt()`. You will need to use the optional argument `dtype=str` to
-tell `loadtxt()` that the data is composed of strings.
+[the file]({{ site.baseurl }}/data/dna_sequences_1.txt) and load it into R using `read.csv()`. The file has no header and is separated by white space (`’’`).
 
 Calculate the GC content of each sequence. The GC content is the percentage of
-bases that are either G or C (as a percentage of total base pairs). Print the
-result for each sequence as "The GC content of the sequence is XX.XX%" where
-XX.XX is the actual GC content. Do this using a "formatted strings".
+bases that are either G or C (as a percentage of total base pairs). 
+Store results in a two-column matrix where the first column is the sequence
+number and the second column is the GC content in %.
