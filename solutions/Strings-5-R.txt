@@ -1,7 +1,4 @@
 [1] 1367
-
 [1] 8
-
 [1] 78
-
-[1] "The GC content of this sequence is 41.26%"
+The GC content of this sequence is 41.26%
