@@ -1,9 +1,0 @@
-[1] "SPECIES"
-
-[1] "gcAgtctgAggAttccAccttctAcctgggAgAgAggAcAtActAtAtcgcAgcAgtggAggtggAAtgg"
-
-[1] 50
- 
-[1] "gccgatgtacatggaatata"
- 
-[1] "ctgtggagagg"

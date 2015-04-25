@@ -1,0 +1,4 @@
+What is the Genus name? spinosaurus
+What is the species name? aegyptiacus
+What is the length of the species in meters? 16
+[1] "Spinosaurus aegyptiacus is 16 meters long and weighs approximately 17151 kg."
