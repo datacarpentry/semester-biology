@@ -54,4 +54,7 @@ and function information. `?function`
 ###or just run a general engine search (i.e., [r split character string](https://duckduckgo.com/?q=r+split+character+string&t=ffsb&ia=qa)).
 The hardest part here is finding the right keywords to use.
 
+#Style Guides
+[Hadley Wickham] (http://r-pkgs.had.co.nz/style.html)
+[Google] (https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#spacing)
 
