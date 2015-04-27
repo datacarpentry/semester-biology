@@ -9,5 +9,4 @@ A colleague has produced a file with one DNA sequence on each line. Download
 
 Calculate the GC content of each sequence. The GC content is the percentage of
 bases that are either G or C (as a percentage of total base pairs). 
-Store results in a two-column matrix where the first column is the sequence
-number and the second column is the GC content in %.
+Print each GC content in order to the screen (in %). 
