@@ -4,7 +4,7 @@ title: Functions 5
 language: R
 ---
 
-This is a follow up to the [Functions 4 problem]({{ site.baseurl }}/exercises/functions-4).
+This is a follow up to the [Functions 4 problem]({{ site.baseurl }}/exercises/Functions-4-R).
 
 Now that you've impressed Grandma, it's time to do some serious science.
 Take the following vector of Stegosaur lengths
