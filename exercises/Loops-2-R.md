@@ -16,5 +16,5 @@ lots of these files so you decide to write a program to automate the process.
 Download the data, using `read.csv(…, head = FALSE)` to import it into R, 
 and then calculate the volumes (l\*w\*h) in a new vector using vector algebra. 
 There should be one value in the vector for each shrub. Once you 
-have created this vector, use another for loop to print out each volume in order 
+have created this vector, use a `for` loop to print out each volume in order 
 on its own line.
