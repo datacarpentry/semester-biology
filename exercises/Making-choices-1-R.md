@@ -27,9 +27,9 @@ or False:
 5.  `dna1` is the same as `dna2`
 6.  `dna1` is not the same as `dna2`
 7.  The number of occurrences of the base t is the same in `dna1` and `dna2`
-8.  `x` times `w` is between 13.2 and 13.5
-9.  `species2` comes before `species1` alphabetically
-10. `w` is greater than `x`, and `y` is greater than `z`
+8. `w` is greater than `x`, and `y` is greater than `z`
+9.  `x` times `w` is between 13.2 and 13.5
+10.  `species2` comes before `species1` alphabetically
 11. `dna1` is longer than 5 bases, or `z` is less than `w` * `x`, or both
 12. The combined length of the two dna sequences is greater than or equal to 30
 13. (`w` + `x` + `y`) divided by the logarithm (base 10) of 100 is equal to 7.15
