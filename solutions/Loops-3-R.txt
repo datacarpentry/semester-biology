@@ -1,0 +1,20 @@
+ShrubID volume
+1      a1  27.46
+  ShrubID volume
+2      a2  35.11
+  ShrubID volume
+3      b1   8.91
+  ShrubID volume
+4      b2  20.25
+  ShrubID volume
+5      c1  38.44
+  ShrubID volume
+6      c2     21
+  ShrubID volume
+7      d1  15.39
+  ShrubID volume
+8      d2   1.26
+  ShrubID volume
+9      e1   52.5
+   ShrubID volume
+10      e2  25.06
