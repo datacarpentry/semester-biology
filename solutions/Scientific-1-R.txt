@@ -1,0 +1,9 @@
+[1] 4889
+[1] 242
+[1] 1252
+         genus  species combined_mass
+1 Balaenoptera musculus       1.9e+08
+      genus species combined_mass
+1 Pseudomys     spp           1.7
+[1] 639888.8
+[1] 132272.9
