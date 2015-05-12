@@ -1,0 +1,45 @@
+---
+layout: exercise
+title: Combining Basics
+language: R
+---
+
+Dr. Granger is interested in studying the factors controlling the size and
+carbon storage of shrubs. This research is part of a larger area of research
+trying to understand carbon storage by plants. She has conducted a small
+preliminary experiment looking at the effect of three different treatments on
+shrub volume at four different locations. She wants to conduct a preliminary
+analysis of these data to include in a grant proposal and she would like you to
+conduct the analysis for her (she might be a world renowned expert in carbon
+storage in plants, but she sure doesn't know much about computers). She has
+placed a data file on the web for you to
+[download]({{ site.baseurl }}/data/shrub_volume_experiment.csv).
+
+You might be able to do this analysis by hand in Excel, but Dr. Granger seems to
+always get funded meaning that you'll be doing this again soon with a much
+larger dataset. So, you decide to write a script so that it will be easy to do
+the analysis again.
+
+Write an R script that:
+
+- Imports the data using `read.csv()`. It has a header row so you'll need to
+    ignore it by providing the optional argument `head = TRUE`.
+- Uses a `for` loop to check each row in the dataset to see `if` the plant is 
+   tall (height > 5), medium (2 <= height < 5), or short (height < 2) and builds 
+   a list of the results. 
+- Uses `dplyr` to determine the total amount of carbon in the shrub and 
+   `transmute()` rows in the dataset to produce the results table. The total
+   amount of carbon is equal to `1.8 + 2 * log(volume)` where `volume` is the 
+   volume (length \* width \* height) of the shrub.  
+- Stores this information as table in a data.frame with each of these row
+    holding the results for one shrub. The first column should have the
+    experiment number. The second column should have the string 'tall', 'medium'  
+    or 'short' depending on the height of the shrub. And, the third column 
+    should have the shrub carbon. Be sure to use descriptive column names.
+- Exports this table to a CSV (comma delimited text) file titled
+   `shrubs_experiment_results.csv`.
+- Uses functions to break the code up into manageable pieces.
+
+*Optional: If you'd like to test your skills a little more, try determining 
+the average carbon in a shrub for each of the different experiments and 
+printing those values to the screen.*
