@@ -49,6 +49,7 @@ and function information. `?function`
 [statmethods.net](http://www.statmethods.net/)
 [R-tutor.com](http://www.r-tutor.com/)
 [R-bloggers.com](http://www.r-bloggers.com/)
+[Programiz] (http://www.programiz.com/r-programming)
 [Stackoverflow.com](http://stackoverflow.com/)
 
 ###or just run a general engine search (i.e., [r split character string](https://duckduckgo.com/?q=r+split+character+string&t=ffsb&ia=qa)).
