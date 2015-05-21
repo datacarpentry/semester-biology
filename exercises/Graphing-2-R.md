@@ -29,18 +29,3 @@ Now make two plots with appropriate axis labels:
 
 Think about what the shape of these graphs tells you about the form of
 the relationship between mass and metabolic rate.
-
-*Optional: If you like to make this a little more challenging (and see something
-really cool), try getting the raw data and selecting just the Artiodactyla data
-yourself. Unfortunately the raw data is trapped in a table that's just part of
-the [article webpage](http://onlinelibrary.wiley.com/doi/10.1111/j.0269-8463.2004.00856.x/full). Fortunately, package XML will automatically read 
-the tables out of a webpage for us using its `readHTMLTable(url)` function. So, 
-you can just run*
-
-```
-library("XML")
-`tables <- readHTMLTable("http://onlinelibrary.wiley.com/doi/10.1111/j.0269-8463.2004.00856.x/full")`
-```
-
-*and it will give us all of the tables from the web page, stored in a list. Pick
-the first table out of the list, reformat the columns you need to graph, and you'll be ready to get to work*
