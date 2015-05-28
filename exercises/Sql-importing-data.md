@@ -42,3 +42,16 @@ Portal_rodent_metadata.htm).
 ​i. Select `recordID` as the `Primary Key` and click `OK`.
 
 j. Click `OK` when it asks if you are sure you want to import the data.
+
+
+### There are a few alternate methods to the previous step-wise approach.
+
+You can create the SQLite version of this database using the
+[EcoData Retriever](http://ecodataretriever.org/) by first [installing the
+software](http://ecodataretriever.org/download.html) and then running:
+
+`retriever install sqlite PortalMammals`
+
+from the command line. Or you can download an already assembled [copy of the database]({{ site.baseurl }}/data/portal_mammals.sqlite).
+
+We encourage you to familiarize yourself with multiple methods to be prepared for the various ways data can be available to you for future projects.
