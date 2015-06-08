@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: Using Functions 1
+title: Functions 1
+language: Python
 ---
 
 Use the built-in functions `abs()`, `round()`, `pow()`, `int()`, `float()`, and
