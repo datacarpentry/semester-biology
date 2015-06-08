@@ -1,12 +1,14 @@
 ---
 layout: exercise
 title: Expressions and Variables 5
+language: Python
 ---
 
 The following code calculates the total net primary productivity (NPP)
 per day for two sites based on the grams of carbon produced per square
 meter per day, and the total area of the sites, and prints them out.
 
+```
     site1_g_carbon_m2_day = 5
     site2_g_carbon_m2_day = 2.3
     site1_area_m2 = 200
@@ -15,6 +17,7 @@ meter per day, and the total area of the sites, and prints them out.
     site2_npp_day = site2_g_carbon_m2_day * site2_area_m2
     print(site1_npp_day)
     print(site2_npp_day)
+```
 
 Modify the code to produce the following items and print them out in
 order:
