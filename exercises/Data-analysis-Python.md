@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: Data Analysis 1
+title: Data Analysis
+language: Python
 ---
 
 We are interested in understanding the monthly variation in precipitation in
