@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 2
+language: R
 ---
 
 Use functions from the `string` module or from base Python to print the
