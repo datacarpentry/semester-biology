@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Expressions and Variables 2
+language: Python
 ---
 
 Here is a small program that converts a mass in kilograms to a mass in grams and
