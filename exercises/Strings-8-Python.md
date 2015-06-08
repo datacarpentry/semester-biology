@@ -1,7 +1,8 @@
---- layout: post title: Strings 2 [problem] created: 1316976469
-categories: - !binary |- NA== - !binary |- aW50cm8= - !binary |- NA== -
-!binary |- aW50cm8= - !binary |- NA== - !binary |- aW50cm8= - !binary |-
-NA== - !binary |- aW50cm8= - !binary |- aW50cm8= ---
+--- 
+layout: exercise 
+title: Strings 8
+language: Python
+---
 
 Write a function that prints:
 
