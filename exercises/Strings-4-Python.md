@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 4
+language: Python
 ---
 
 Use string methods to print the following strings. Remember that methods work by
