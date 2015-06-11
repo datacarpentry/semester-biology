@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Lists 1
+language: R
 ---
 
 The number of birds banded at a series of sampling sites has been counted by
