@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Making Choices 5
+language: Python
 ---
 
 The following function is intended to check if two geographic points are close
