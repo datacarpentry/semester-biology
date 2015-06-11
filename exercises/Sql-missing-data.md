@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: SQL - Missing Data
+title: Missing Data
+language: SQL
 ---
 
 Write a query that returns the year, month, day, species, and mass for
