@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Functions 3
+language: Python
 ---
 
 The length of an organism is typically strongly correlated with it's body
