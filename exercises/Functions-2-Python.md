@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Functions 2
+language: Python
 ---
 
 Write a function that converts pounds to grams (there are 453.592 grams in one
