@@ -1,0 +1,5 @@
+Problem 4 outputs shrub_experiment_results.csv
+Unknown Experiment
+The average shrub carbon for Experiment 1 is 7.93778539226
+The average shrub carbon for Experiment 2 is 7.99360457513
+The average shrub carbon for Experiment 3 is 7.27793492176
