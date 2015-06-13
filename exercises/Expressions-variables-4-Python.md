@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Expressions and Variables 4
+language: Python
 ---
 
 Using a single variable convert a temperature of 42 degrees Fahrenheit

@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Expressions and Variables 1
+language: Python
 ---
 
 Think about what value each of the following expressions will return?

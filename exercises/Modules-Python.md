@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Modules 1
+language: Python
 ---
 
 Use the `sqrt()` and `log()` functions from the `math` module, along with the
