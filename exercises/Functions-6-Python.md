@@ -1,9 +1,10 @@
 ---
 layout: exercise
 title: Functions 6
+language: Python
 ---
 
-This is a follow up to [Strings 6]({{ site.baseurl }}/exercises/Strings-6/).
+This is a follow up to [Strings 6]({{ site.baseurl }}/exercises/Strings-6-Python/).
 
 A colleague has produced a file with one DNA sequence on each line. Download
 [the file]({{ site.baseurl }}/data/dna_sequences_1.txt) and load it into Python using

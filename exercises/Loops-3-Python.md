@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Loops 3
+language: Python
 ---
 
 One of your collaborators has posted

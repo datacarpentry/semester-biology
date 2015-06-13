@@ -1,9 +1,10 @@
 ---
 layout: exercise
 title: Loops 1
+language: Python
 ---
 
-This is a follow up to [Functions 6]({{ site.baseurl }}/exercises/Functions-6/).
+This is a follow up to [Functions 6]({{ site.baseurl }}/exercises/Functions-6-Python/).
 
 A colleague has produced a file with one DNA sequence on each line. So far
 you've been manually extracting each DNA sequence and calculating it's GC

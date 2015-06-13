@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Functions 5
+language: Python
 ---
 
 This is a follow up to the [Functions 4 problem]({{ site.baseurl }}/exercises/functions-4).
