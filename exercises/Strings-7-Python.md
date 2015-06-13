@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 7
+language: Python
 ---
 
 You have a data file with a single "taxonomy" column in it. This column contains

@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 1
+language: Python
 ---
 
 Write a series of print statements that returns the following (include a

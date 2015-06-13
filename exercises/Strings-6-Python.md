@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 6
+language: Python
 ---
 
 A colleague has produced a file with one DNA sequence on each line. Download
