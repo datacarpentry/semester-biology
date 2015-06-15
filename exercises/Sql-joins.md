@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: SQL - Joins
+title: Joins 1
+language: SQL
 ---
 
 The Plots table in the Portal database can be joined to the main table

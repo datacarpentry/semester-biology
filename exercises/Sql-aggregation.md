@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: SQL - Aggregation
+title: Aggregation 2
+language: SQL
 ---
 
 Write a query that returns the number of individuals of each species

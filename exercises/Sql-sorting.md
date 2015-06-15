@@ -1,12 +1,13 @@
 ---
 layout: exercise
-title: SQL - Sorting
+title: Sorting
+language: SQL
 ---
 
 The graduate students that work at the Portal site are hanging out late
 one evening drinking... soda pop... and they decide it would be an
 epically awesome idea to put together a list of the 100 largest rodents
-ever sampled at the site. Since you're the resident "computer genius"
+ever sampled at the site. Since you're the resident *computer genius*
 they text you, and since you're up late working and this sounds like a
 lot more fun that than homework you're working on (which isn't really
 saying much, if you know what I'm saying) you decide you'll make the
