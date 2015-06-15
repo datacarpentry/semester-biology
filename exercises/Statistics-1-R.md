@@ -4,7 +4,7 @@ title: Statistics 1
 language: R
 ---
 
-This is a follow up to the [Graphing - 1]({{ site.baseurl }}/exercises/graphing-1-R).
+This is a follow up to the [Graphing 1]({{ site.baseurl }}/exercises/graphing-1-R).
 
 We've graphed the relationship between adult size and new born size in
 mammals and now it's time to analyze the relationship statistically.
