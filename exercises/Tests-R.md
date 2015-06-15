@@ -7,8 +7,8 @@ language: R
 This is a follow up to the [Debugging problem]({{ site.baseurl }}/exercises/Debugging-R).
 
 Write tests for your 'Debugging' code for the following cases and save it in a 
-file called `Tests-R.R`. Make any corrections/improvements that to the 
-'Debugging' code so that all of your tests pass.
+file called `Tests-R.R`. Make corrections/improvements to the 'Debugging' code 
+so that all of your tests pass.
 
 #### gc_content()
 
