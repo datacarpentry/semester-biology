@@ -19,9 +19,7 @@ placed a data file on the web for you to
 
 You want to get familiar with the data so…
 
-1. Import the shrub dimensions data using `read.csv()`. It has a header row so 
-you'll need to tell R there are column names by providing the optional argument 
-`head = TRUE`.
+1. Import the shrub dimensions data using `read.csv()`. 
 2. Check the column names in the data using the function `names()`
 3. Print out the first few rows of the data using the function `head()`.
 4. Select the data from the length column and print it out.
