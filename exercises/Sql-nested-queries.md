@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: SQL - Nested Queries
+title: Nested Queries
+language: SQL
 ---
 
 Using the Portal dataset write a query that returns the average number

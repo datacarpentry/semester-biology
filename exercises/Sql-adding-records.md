@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: SQL - Adding Records
+title: Adding Records
+language: SQL
 ---
 
 Add the following note to the FieldNotes table in the Portal database
