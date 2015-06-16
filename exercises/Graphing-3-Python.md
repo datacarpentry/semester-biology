@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: Graphing - adult size vs. newborn size
+title: Graphing 3
+language: Python
 ---
 
 It makes sense that larger organisms have larger offspring, but what the
