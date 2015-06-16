@@ -1,10 +1,11 @@
 ---
 layout: exercise
-title: Statistics - Size Biased Extinction
+title: Statistics 3
+language: Python
 ---
 
-This is a follow up to the [Scientific Python 1]({{ site.baseurl }}/exercises/Scientific-python-1)
-and [Graphing 1]({{ site.baseurl }}/exercises/Graphing-1) problems.
+This is a follow up to the [Scientific 1]({{ site.baseurl }}/exercises/Scientific-1-Python)
+and [Graphing 1]({{ site.baseurl }}/exercises/Graphing-1-Python) problems.
 
 We have previously compared the average masses of extant and extinct species on
 different continents to try to understand whether size has an influence on
