@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Making Choices 1
+language: Python
 ---
 
 Create the following variables:
