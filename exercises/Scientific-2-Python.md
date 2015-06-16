@@ -1,10 +1,11 @@
 ---
 layout: exercise
-title: Scientific Python 2
+title: Scientific 2
+language: Python
 ---
 
 This is a follow up to the
-[Scientific Python 1]({{ site.baseurl }}/exercises/Scientific-python-1).
+[Scientific 1]({{ site.baseurl }}/exercises/Scientific-1-Python).
 
 Looking at the average mass of extinct and extant species overall is useful, but
 there are lots of different processes that could cause size-biased extinctions
