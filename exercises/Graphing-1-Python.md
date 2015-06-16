@@ -1,9 +1,10 @@
 ---
 layout: exercise
 title: Graphing 1
+language: Python
 ---
 
-This is a follow up to [Scientific Python 2]({{ site.baseurl }}/exercises/Scientific-python-2).
+This is a follow up to [Scientific 2]({{ site.baseurl }}/exercises/Scientific-2-Python).
 
 We have previously compared the average masses of extant and extinct species on
 different continents to try to understand whether size has an influence on
