@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: Scientific Python 1
+title: Scientific 1
+language: Python
 ---
 
 There were a relatively large number of extinctions of mammalian species
@@ -43,6 +44,5 @@ To start let's explore the data a little and then start looking at the major que
    should help you here. It is available as both a numpy function and a Pandas
    DataFrame method. Don't worry about species that occur more than once.  We'll
    consider the values on different continents to represent independent data
-   points. Print out the results in the following sentence: "The average mass of
-   extant species is X and the average mass of extinct species is Y." with the
-   appropriate values filled in for X and Y.
+   points. Print out the the average mass of extant species and the average mass    
+   of extinct species.
