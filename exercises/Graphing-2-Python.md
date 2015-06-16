@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Graphing 2
+language: Python
 ---
 
 The relationship between the body size of an organism and its metabolic
