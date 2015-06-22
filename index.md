@@ -3,16 +3,15 @@ layout: default
 redirect_from: /courses/
 ---
 
-This is the website for Ethan White's programming and database management
-courses designed for biologists. At the moment there are four courses being
-taught during Fall 2014.
+This website hosts introductory material used by Ethan White's programming and database management courses and self-guided students anywhere. The online course offers instruction in basic programming for Python, R, and SQL. The materials were originally designed for biologists, but can be useful for any scientist working with computers. If you are interested in adapting this material for your own course, take a look at the [source code](https://github.com/ethanwhite/datacarp-semester-biology/blob/gh-pages/README.md). Thanks for visiting!
 
-* [Introduction to Programming for Biologists]({{ site.baseurl }}/programming)
-* [Introduction to Database Management for Biologists]({{ site.baseurl }}/databases)
-* [Computational Biology Research Project]()
-* [Advanced Computing for Biologists]({{ site.baseurl }}/advanced)
+* [Syllabus]({{ site.baseurl }}/syllabus/programming-syllabus)
+* [Schedule]({{ site.baseurl }}/syllabus/programming-schedule)
+* [Assignments]({{ site.baseurl }}/assignments)
+* [Material]({{ site.baseurl }}/material/programming-material)
+* [Setup]({{ site.baseurl }}/computer-setup)
 
-The goal of these courses is to teach biologists how to use computers more
+The goal of this courses is to teach biologists how to use computers more
 effectively to make their research easier. We avoid a lot of the theory that is
 taught in introductory computer science classes in favor of covering more of the
 practical side of programming that is necessary for conducting research. In
