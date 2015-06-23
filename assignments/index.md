@@ -2,36 +2,38 @@
 layout: page
 title: Exercises/Assignments
 redirect_from:
-  -  /assignments-intro/
-  -  /assignments-advanced/
+  -  /assignments-Python/
+  -  /assignments-R/
+  -  /assignments-Sql/
 ---
 
-### Intro to Programming Exercises
+### Python Exercises
 
-* [Assignment 1](programming-1)
-* [Assignment 2](programming-2)
-* [Assignment 3](programming-3)
-* [Assignment 4](programming-4)
-* [Assignment 5](programming-5)
-* [Assignment 6](programming-6)
-* [Assignment 7](programming-7)
-
-
-### Intro to Databases Exercises
-
-* [Assignment 1](databases-1)
-* [Assignment 2](databases-2)
-* [Assignment 3](databases-3)
-* [Assignment 4](databases-4)
+* [Assignment 1](Python-1)
+* [Assignment 2](Python-2)
+* [Assignment 3](Python-3)
+* [Assignment 4](Python-4)
+* [Assignment 5](Python-5)
+* [Assignment 6](Python-6)
+* [Assignment 7](Python-7)
+* [Assignment 8](Python-8)
+* [Assignment 9](Python-9)
 
 
-### Advanced Programming & Databases Exercises
+### R Exercises
 
-* [Assignment 1](advanced-1)
-* [Assignment 2](advanced-2)
-* [Assignment 3](advanced-3)
-* [Assignment 4](advanced-4)
-* [Assignment 5](advanced-5)
-* [Assignment 6](advanced-6)
-* [Assignment 7](advanced-7)
-* [Assignment 8](advanced-8)
+* [Assignment 1](R-1)
+* [Assignment 2](R-2)
+* [Assignment 3](R-3)
+* [Assignment 4](R-4)
+* [Assignment 5](R-5)
+* [Assignment 6](R-6)
+* [Assignment 7](R-7)
+* [Assignment 8](R-8)
+* [Assignment 9](R-9)
+
+
+### SQL Exercises
+
+* [Assignment 1](Sql-1)
+* [Assignment 2](Sql-2)
