@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercises/Assignments
+title: Assignments
 ---
 
 ### Python
