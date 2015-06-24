@@ -1,13 +1,9 @@
 ---
 layout: page
 title: Exercises/Assignments
-redirect_from:
-  -  /assignments-Python/
-  -  /assignments-R/
-  -  /assignments-Sql/
 ---
 
-### Python Exercises
+### Python
 
 * [Assignment 1](Python-1)
 * [Assignment 2](Python-2)
@@ -20,7 +16,7 @@ redirect_from:
 * [Assignment 9](Python-9)
 
 
-### R Exercises
+### R
 
 * [Assignment 1](R-1)
 * [Assignment 2](R-2)
@@ -33,7 +29,7 @@ redirect_from:
 * [Assignment 9](R-9)
 
 
-### SQL Exercises
+### SQL
 
 * [Assignment 1](Sql-1)
 * [Assignment 2](Sql-2)
