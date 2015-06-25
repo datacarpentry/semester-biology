@@ -23,9 +23,8 @@ including:
 5.  It is used by many scientific programmers and taught in many research
     science departments. This makes collaborating with experts
     on large or complex projects much easier.
-6.  [Data Carpentry](http://datacarpentry.org), a truly
-    excellent resource for learning scientific programming, is available
-    in R. This makes it easier for students to learn more
+6.  [Data Carpentry](http://datacarpentry.org) 'lecture' materials are available
+    in R, which provides a resource for students to learn more
     advanced topics on their own and allows me to avoid duplicating
-    effort by using Data Carpentry lectures and by contributing
-    material that I have developed back to Data Carpentry.
+    effort.  I also contribute material that I have developed back to Data 
+    Carpentry.
