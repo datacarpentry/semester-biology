@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Why should you take this class?
-redirect_from: /why-should-you-take-class/
 ---
 
 Because [biology students really need to know how to

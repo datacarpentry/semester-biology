@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Audience
-redirect_from: /audience/
 ---
 
 The long-term goal of this site is to help two large groups of people:
@@ -16,7 +15,7 @@ already have some programming background.
 
 To encourage folks to use this material all of general material on this
 site is licensed under the Creative Commons Attribution License and all
-programs are licensed under the MIT License.
+programs are licensed under the MIT License. Be sure to [let us know what you think](https://github.com/ethanwhite/datacarp-semester-biology/issues) so we can be sure to get you the best experience.
 
 Examples of folks who we are trying to help:
 

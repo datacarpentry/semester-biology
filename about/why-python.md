@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Why Python?
-redirect_from: /why-python/
 ---
 
 I chose to use Python for these courses for a handful of reasons

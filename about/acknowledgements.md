@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Acknowledgements
-redirect_from: /acknowledgements/
 ---
 
 #### National Science Foundation
@@ -21,6 +20,10 @@ supported the development of the university courses through time off
 from other teaching endeavors and facilitating access to appropriate
 classroom facilities (which is [harder to obtain than you might
 think](http://jabberwocky.weecology.org/2011/06/27/why-computer-labs-should-never-be-controlled-by-individual-collegesdepartments/)).
+
+#### Data Carpentry
+
+[Data Carpentry](http://datacarpentry.org/) is a web and workshop based organization that is designed to teach basic computing concepts, skills, and tools for working with scientific data. The resources provided on this site are being developed in association with Data Carpentry.
 
 #### Software Carpentry
 
