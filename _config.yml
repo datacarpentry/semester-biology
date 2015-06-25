@@ -17,7 +17,7 @@ author:
   url:            https://twitter.com/ethanwhite
 
 github:
-  repo:           https://github.com/ethanwhite/progbio
+  repo:           https://github.com/ethanwhite/datacarp-semester-biology
 
 gems:
   - jekyll-redirect-from
