@@ -8,7 +8,7 @@ This website hosts introductory material used by Ethan White's programming and d
 * [Syllabus]({{ site.baseurl }}/syllabus/programming-syllabus)
 * [Schedule]({{ site.baseurl }}/syllabus/programming-schedule)
 * [Assignments]({{ site.baseurl }}/assignments)
-* [Material]({{ site.baseurl }}/material/programming-material)
+* [Material]({{ site.baseurl }}/material/material)
 * [Setup]({{ site.baseurl }}/computer-setup)
 
 The goal of this courses is to teach biologists how to use computers more
