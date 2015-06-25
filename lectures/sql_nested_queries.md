@@ -1,12 +1,12 @@
 ---
-layout: lecture
+layout: page
 title: SQL Nested Queries
 ---
 
 Basically anything in SQL can be replaced with a query. This includes tables,
 conditions, and even values.
 
-# Tables
+### Tables
 
 What is the mass of the average species at the site? So, we want to first
 determine the average mass of the individual in each species, and then take the
@@ -31,7 +31,7 @@ FROM (SELECT species, AVG(wgt) as spavgmass
       GROUP BY species);
 ```
 
-# Values
+### Values
 
 What is the relative abundance of the different species at the site?
 Let's start by just counting how many individuals there are
@@ -61,7 +61,7 @@ GROUP BY species
 ORDER BY COUNT(*) * 100.0 / (SELECT COUNT(*) FROM Main) DESC;
 ```
 
-# Conditions
+### Conditions
 
 ```
 SELECT yr, mo, dy, species
