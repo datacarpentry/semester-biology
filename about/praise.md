@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Praise for Programming for Biologists
-redirect_from: /praise/
 ---
 
 > [I] didn't know anything about programming before and I’'m very happy

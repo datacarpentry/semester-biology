@@ -8,4 +8,5 @@ title: About
 * [The flipped classroom]({{ site.baseurl }}/about/flipped-classes)
 * [Praise for the class]({{ site.baseurl }}/about/praise)
 * [Why Python]({{ site.baseurl }}/about/why-python)
+* [Why R]({{ site.baseurl }}/about/why-r)
 * [Why this class]({{ site.baseurl }}/about/why-should-you-take-this-class)
