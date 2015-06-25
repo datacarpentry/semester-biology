@@ -4,11 +4,8 @@ title: Material
 ---
 <a href="#Python">Python</a> | <a href="#R">R</a> | <a href="#SQL">SQL</a>
 
-Most of the material here is presented as
-[IPython notebooks](http://nbviewer.ipython.org/urls/raw.github.com/ethanwhite/progbio/master/ipynbs/ipython-notebook.ipynb).
-The main links will take you to a nicely formatted text version of the notebook
-displayed in the browser. You can also download the actual notebook to interact
-with it on your computer by changing the code and seeing what happens.
+### General Programing Resources
+- [Problem Decomposition]({{ site.baseurl }}/material/problem-decomposition)
 
 ### Python <a name="Python"></a>
 *Most of the material here is presented as
@@ -77,14 +74,14 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Data Carpentry R for Ecology](http://datacarpentry.github.io/R-ecology/)
 
 ### SQL [UNDER CONSTRUCTION] <a name="SQL"></a>
-*We're just in the process of adding R material to the course. Please, bear with us while we compile and develop the resourc es*
+*We're just in the process of adding R material to the course. Please, bear with us while we compile and develop the resources*
 
 -   [Introduction to Databases]({{ site.baseurl }}/lectures/intro_to_databases.pdf)
 -   [Database Structure]({{ site.baseurl }}/lectures/databases_structure.pdf)
 -   [Creating Tables]({{ site.baseurl }}/lectures/sql-creating-tables)
 -   [Updating Tables]({{ site.baseurl }}/lectures/sql-updating-tables)
 -   [Joins]({{ site.baseurl }}/lectures/sql_joins)
--   [Nested Queriies]({{ site.baseurl }}/lectures/sql_nested_queries)
+-   [Nested Queries]({{ site.baseurl }}/lectures/sql_nested_queries)
 -   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
 
