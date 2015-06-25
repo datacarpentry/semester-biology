@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Why Python?
+title: Why R?
 ---
 
 I chose to add an R version of this course for a handful of reasons
@@ -29,8 +29,3 @@ including:
     advanced topics on their own and allows me to avoid duplicating
     effort by using Data Carpentry lectures and by contributing
     material that I have developed back to Data Carpentry.
-
-Or maybe I chose it because of this great [XKCD](http://xkcd.com/)
-comic. Who knows?
-
-![](http://imgs.xkcd.com/comics/python.png)
