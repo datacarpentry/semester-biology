@@ -1,9 +1,9 @@
 ---
-layout: lecture
+layout: page
 title: SQL Joins
 ---
 
-# Basic join
+### Basic join
 
 ```
 SELECT yr, mo, dy, scientificname
@@ -11,7 +11,7 @@ FROM Main
 JOIN Species ON species = new_code;
 ```
 
-# Multi-table join
+### Multi-table join
 
 ```
 SELECT yr, mo, dy, scientificname
@@ -20,7 +20,7 @@ JOIN Species ON species = new_code
 JOIN Plots on plot = PlotID;
 ```
 
-# Multi-table join with abbreviations
+### Multi-table join with abbreviations
 
 ```
 SELECT m.yr, m.mo, m.dy, s.scientificname
@@ -29,7 +29,7 @@ JOIN Species s ON m.species = s.new_code
 JOIN Plots p on m.plot = p.PlotID;
 ```
 
-# No ON clause
+### No ON clause
 
 ```
 SELECT species, scientificname
@@ -37,7 +37,7 @@ FROM Main
 JOIN Species;
 ```
 
-# Just like using WHERE:
+### Just like using WHERE:
 
 ```
 SELECT species, scientificname
