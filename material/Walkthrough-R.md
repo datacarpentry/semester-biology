@@ -6,7 +6,7 @@ language: R
 
 ### Basic Workflow
 
-The R environment is broken up into two main windows, the console and the script. The console window is the place where R is waiting for you to tell it what to do, and where it will show the results of a command. `>` mark that R is ready to take a comand. `+` means the command is not complete, like you are missing a `)` or `}`. You can type commands directly into the console, but they will be forgotten when you close the session.The script is a simple text (.R) file that stores your code. The point of a well constructed script is not just to "do stuff" but to do it in a way that maintains a complete record of your work so anyone can easily and exactly replicate your workflow and results.
+The R environment is broken up into two main windows, the console and the script. The console window is the place where R is waiting for you to tell it what to do, and where it will show the results of a command. `>` mark that R is ready to take a command. `+` means the command is not complete, like you are missing a `)` or `}`. You can type commands directly into the console, but they will be forgotten when you close the session.The script is a simple text (.R) file that stores your code. The point of a well constructed script is not just to "do stuff" but to do it in a way that maintains a complete record of your work so anyone can easily and exactly replicate your workflow and results.
 
 ### Basic Operation
 
@@ -86,7 +86,7 @@ In R, the last executed line of a function is automatically returned, otherwise 
 
 `increment_me(4)`, will return 5
 
-`intrement_me(4, 6)`, will return 10
+`increment_me(4, 6)`, will return 10
 
 - Call a function by using `function_name(function_arguments)`
 
