@@ -3,32 +3,18 @@ layout: page
 title: Computer Setup
 ---
 
-### Programming
+### Python
 
-Download and install [Enthought Canopy Express](https://store.enthought.com/downloads/).
-
-### Databases
-
-Install Microsoft Access. You can typically get this free or for a minimal fee
-(~$10) through your department.
-
-If you are using a Mac you can run Access from inside Parallels.
-
-### Advanced
-
-#### All operating systems
 Download and install the
-[Anaconda Scientific Python Distribution](http://continuum.io/downloads)
+[Anaconda Scientific Python Distribution](http://continuum.io/downloads).
+I recommend you use a special editor like the [Wing Intelligent Development Environment - 101](http://wingware.com/downloads/wingide-101).
 
-#### Windows
 
-* Download and install [Git for Windows](http://msysgit.github.io/)
-* Download and install the [Software Carpentry Windows Installer](http://files.software-carpentry.org/SWCarpentryInstaller.exe)
+### R
 
-#### Mac (OS X)
+Download and install the [R base system](http://cran.rstudio.com/). I recommend you use the [R studio](http://www.rstudio.com/products/rstudio/download/) to work with the base system.
 
-* Install Git for Mac by downloading and running
-[the installer](http://git-scm.com/downloads). For older versions of OS X
-(10.5-10.7) use the most recent available installer
-[available here](https://code.google.com/p/git-osx-installer/downloads/list). Use
-the Leopard installer for 10.5 and the Snow Leopard installer for 10.6-10.7.
+
+### SQL
+
+Download and install [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/). Add the [SQLite Manager](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/).
