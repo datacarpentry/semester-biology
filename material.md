@@ -69,7 +69,7 @@ with it on your computer by changing the code and seeing what happens.*
 ### R [UNDER CONSTRUCTION] <a name="R"></a>
 *We're just in the process of adding R material to the course. Please, bear with us and check out these great existing resources*
 
--   [A Walk Through R]({{ site.baseurl }}/material/R-cheat)
+-   [A Walk Through R]({{ site.baseurl }}/material/Walkthrough-R)
 -   [Software Carpentry R Reference](http://swcarpentry.github.io/r-novice-inflammation/reference.html) 
 -   [Data Carpentry R for Ecology](http://datacarpentry.github.io/R-ecology/)
 
