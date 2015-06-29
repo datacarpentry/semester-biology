@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = log10(newborn.g.) ~ log10(mass.g.), data = mammal_histories)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.61535 -0.18339  0.04104  0.21687  0.91622 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    -1.139431   0.027118  -42.02   <2e-16 ***
+log10(mass.g.)  0.949620   0.007812  121.57   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3155 on 814 degrees of freedom
+  (624 observations deleted due to missingness)
+Multiple R-squared:  0.9478,	Adjusted R-squared:  0.9477 
+F-statistic: 1.478e+04 on 1 and 814 DF,  p-value: < 2.2e-16
