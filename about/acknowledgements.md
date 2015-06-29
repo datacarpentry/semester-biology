@@ -9,18 +9,6 @@ The [National Science Foundation](http://nsf.gov) is supporting the
 development of both the university courses and this site through
 grant [0953694]({{ site.baseurl }}/awardsearch/showAward.do?AwardNumber=0953694 "Use this link to retrieve the award").
 
-#### Department of Biology at Utah State University
-
-USU's [Department of Biology](http://www.biology.usu.edu) and in
-particular [Dept. Head Butch
-Brodie](http://www.biology.usu.edu/htm/our-people/faculty/memberID=3059)
-and former [Dept. Head Daryll
-Dewald](http://facultystaff.wsu.edu/adminphotos/?faculty/67) have
-supported the development of the university courses through time off
-from other teaching endeavors and facilitating access to appropriate
-classroom facilities (which is [harder to obtain than you might
-think](http://jabberwocky.weecology.org/2011/06/27/why-computer-labs-should-never-be-controlled-by-individual-collegesdepartments/)).
-
 #### Data Carpentry
 
 [Data Carpentry](http://datacarpentry.org/) is a web and workshop based organization that is designed to teach basic computing concepts, skills, and tools for working with scientific data. The resources provided on this site are being developed in association with Data Carpentry.
