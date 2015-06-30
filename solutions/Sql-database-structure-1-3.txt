@@ -1,0 +1,1 @@
+[(u'Control', 8), (u'Spectab exclosure', 2), (u'Short-term Krat Exclosure', 4), (u'Long-term Krat Exclosure', 4), (u'Rodent Exclosure', 6)]
