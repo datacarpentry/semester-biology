@@ -4,8 +4,8 @@ layout: default
 
 This website hosts introductory material used by Ethan White's programming and database management courses and self-guided students anywhere. The online course offers instruction in basic programming for Python, R, and SQL. The materials were originally designed for biologists, but can be useful for any scientist working with computers. If you are interested in adapting this material for your own course, take a look at the [source code](https://github.com/ethanwhite/datacarp-semester-biology/blob/gh-pages/README.md). Thanks for visiting!
 
-* [Syllabus]({{ site.baseurl }}/syllabus/programming-syllabus)
-* [Schedule]({{ site.baseurl }}/syllabus/programming-schedule)
+* [Syllabus]({{ site.baseurl }}/syllabus/syllabus)
+* [Schedule]({{ site.baseurl }}/syllabus/schedule)
 * [Assignments]({{ site.baseurl }}/assignments)
 * [Material]({{ site.baseurl }}/material)
 * [Setup]({{ site.baseurl }}/computer-setup)
