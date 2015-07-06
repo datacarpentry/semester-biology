@@ -15,6 +15,6 @@ you paste it into R you'll see what it looks like):
 2. How many occurences of 'gagg' occur in the sequence?
 3. What is the starting position of the first occurrence of 'atta'?
 4. What is the GC content of the sequence? The GC content is the percentage of
-   bases that are either G or C (as a percentage of total base pairs). Paste the
-   result as "The GC content of this sequence is XX.XX%" where XX.XX is the
-   actual GC content.
+bases that are either G or C (as a percentage of total base pairs). Paste the
+result as "The GC content of this sequence is XX.XX%" where XX.XX is the actual 
+GC content.
