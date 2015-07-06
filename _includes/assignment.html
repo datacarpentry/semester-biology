@@ -2,7 +2,15 @@
 {% for exercise in page.exercises %}
   {% for otherpage in site.pages %}
     {% if exercise == otherpage.title and page.language == otherpage.language %}
-      <li>{{ otherpage.content }}</li>
+      <li>
+        {{ otherpage.content }}
+        {% capture output_file %}{{ otherpage.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+        {% for solution in site.static_files %}
+          {% if solution.path contains output_file %}
+            <font size="-1">[<a href="{{ solution.path }}">click here for output</a>]</font>
+          {% endif %}
+        {% endfor %}
+      </br></br></li>
     {% endif %}
   {% endfor %}
 {% endfor %}
