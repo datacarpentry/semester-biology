@@ -1,15 +1,18 @@
 ---
 layout: exercise
 title: Strings 4
+subtitle: Strings, Math, and Dinosaurs!
 language: R
 ---
 
 The length of an organism is typically strongly correlated with its body
 mass. This is useful because it allows us to estimate the mass of an
 organism even if we only know its length. This relationship generally
-takes the form `Mass (kg) = a * Length(m)<sup>b</sup>`, where the parameters `a` and
-`b` vary among groups. Write a script that prompts the user for the
-following pieces of information:
+takes the form
+ 
+`Mass (kg) = a * Length(m)<sup>b</sup>`
+ 
+where the parameters `a` and `b` vary among groups. Write a script that prompts the user for the following pieces of information:
 
 1. Genus name
 2. species name

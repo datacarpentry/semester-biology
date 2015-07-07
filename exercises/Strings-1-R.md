@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 1
+subtitle: Print Strings
 language: R
 ---
 
