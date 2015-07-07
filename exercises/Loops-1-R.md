@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Loops 1
+subtitle: Improve your code!
 language: R
 ---
 

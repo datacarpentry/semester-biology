@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Functions 6
+subtitle: Strings from Data with Functions
 language: R
 ---
 
@@ -17,4 +18,4 @@ the result for each sequence. Before we knew about functions we had to take each
 dna sequence one at a time and then rewrite or copy-paste the same code to 
 analyze each one. Isn't this better?
 
-NB: You may have noticed that [Functions 5]({{ site.baseurl }}/exercises/Functions-5/) prints the results differently. `read.csv()` imports the data as a `data.frame()`, unlike the numeric vector in the previous exercise.
+*You may have noticed that [Functions 5]({{ site.baseurl }}/exercises/Functions-5-R/) prints the results differently. `read.csv()` imports the data as a `data.frame()`, unlike the numeric vector in the previous exercise.*
