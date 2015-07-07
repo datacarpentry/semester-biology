@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Expressions and Variables 5
+subtitle: Modify the Code!
 language: R
 ---
 

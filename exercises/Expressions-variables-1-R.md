@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Expressions and Variables 1
+subtitle: Basic Expressions
 language: R
 ---
 
@@ -16,7 +17,7 @@ the console on the line marked `>` and pressing enter.
 6. 4 \*\* 2
 7. 8 / 2 \*\* 2
 
-Did any of the results surprise you? If so, then might have run in to some order of operations confusion. The order of operators in R are listed [Here](http://stat.ethz.ch/R-manual/R-patched/library/base/html/Syntax.html).
+Did any of the results surprise you? If so, then might have run in to some order of operations confusion. The order of operators in R are listed [HERE](http://stat.ethz.ch/R-manual/R-patched/library/base/html/Syntax.html).
 
 Now turn this set of expressions into a program that you can save by
 using an R script. For each expression add one line to the script as part
