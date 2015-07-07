@@ -8,7 +8,15 @@ title: Exercises
 <ul>
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'Python' %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    <li>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+    {% for solution in site.static_files %}
+      {% if solution.path contains output_file %}
+        [<a href="{{ solution.path }}">output</a>]
+      {% endif %}
+    {% endfor %}
+    </li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -17,7 +25,15 @@ title: Exercises
 <ul>
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'R' %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    <li>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+    {% for solution in site.static_files %}
+      {% if solution.path contains output_file %}
+        [<a href="{{ solution.path }}">output</a>]
+      {% endif %}
+    {% endfor %}
+    </li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -26,7 +42,15 @@ title: Exercises
 <ul>
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'SQL' %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    <li>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+    {% for solution in site.static_files %}
+      {% if solution.path contains output_file %}
+        [<a href="{{ solution.path }}">click here for output</a>]
+      {% endif %}
+    {% endfor %}
+    </li>
   {% endif %}
 {% endfor %}
 </ul>
