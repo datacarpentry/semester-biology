@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Combining Basics
+subtitle: Shrub Volume Pt 3
 language: R
 ---
 
@@ -22,22 +23,21 @@ the analysis again.
 
 Write an R script that:
 
-- Imports the data using `read.csv()`. It has a header row so you'll need to
-    ignore it by providing the optional argument `head = TRUE`.
-- Uses a `for` loop to check each row in the dataset to see `if` the plant is 
-   tall (height > 5), medium (2 <= height < 5), or short (height < 2) and builds 
-   a list of the results. 
+- Imports the data using `read.csv()`.
+- Uses a `for` loop to check each row in the dataset and groups by height: 
+  `'tall'` `if (height > 5)`, `'medium'` `if (2 <= height < 5)`, 
+  or `'short'` `if (height < 2)`, and builds a list of the results.
 - Uses `dplyr` to determine the total amount of carbon in the shrub and 
-   `transmute()` rows in the dataset to produce the results table. The total
-   amount of carbon is equal to `1.8 + 2 * log(volume)` where `volume` is the 
-   volume (length \* width \* height) of the shrub.  
+`transmute()` rows in the dataset to produce the results table. The total
+amount of carbon is equal to `1.8 + 2 * log(volume)` where `volume` is the 
+volume (`length * width * height`) of the shrub.  
 - Stores this information as table in a data.frame with each of these row
-    holding the results for one shrub. The first column should have the
-    experiment number. The second column should have the string 'tall', 'medium'  
-    or 'short' depending on the height of the shrub. And, the third column 
-    should have the shrub carbon. Be sure to use descriptive column names.
+holding the results for one shrub. The first column should have the
+experiment number. The second column should have the string `'tall'`, 
+`'medium'` or `'short'` depending on the height of the shrub. And, the third 
+column should have the shrub carbon. Be sure to use descriptive column names.
 - Exports this table to a CSV (comma delimited text) file titled
-   `shrubs_experiment_results.csv`.
+`shrubs_experiment_results.csv`.
 - Uses functions to break the code up into manageable pieces.
 
 *Optional: If you'd like to test your skills a little more, try determining 
