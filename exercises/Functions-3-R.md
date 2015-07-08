@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Functions 3
+subtitle: Use and Modify!
 language: R
 ---
 
