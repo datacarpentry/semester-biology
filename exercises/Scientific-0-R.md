@@ -1,10 +1,11 @@
 ---
 layout: exercise
 title: Scientific 0
+subtitle: Shrub Volume Pt 2.99
 language: R
 ---
 
-*This problem preceeds [Combining Basics]({{ site.baseurl }}/exercises/Combining—the-basics-R)*
+This problem preceeds [Combining Basics]({{ site.baseurl }}/exercises/Combining—the-basics-R)
 
 Dr. Granger is interested in studying the factors controlling the size and
 carbon storage of shrubs. This research is part of a larger area of research
@@ -24,18 +25,17 @@ You want to get familiar with the data so…
 3. Print out the first few rows of the data using the function `head()`.
 4. Select the data from the length column and print it out.
 
-##Use `dplyr` to complete the remaining tasks.
-
+   Use `dplyr` to complete the remaining tasks.
 5. Select the data from the site and experiment columns and print it out.
 6. Filter the height data for all of the plants with heights greater than 5 and
    print out the result.
  
-This code calculates the average height of a plant at each site:
-```
-by_site <- group_by(shrub_dims, site)
-avg_height <- summarize(by_site, avg_height = mean(height))
-```
+   This code calculates the average height of a plant at each site:
 
+   ```
+   by_site <- group_by(shrub_dims, site)
+   avg_height <- summarize(by_site, avg_height = mean(height))
+   ```
 7. Modify the code to calculate and print the average height of a plant in each 
 experiment.
 8. Determine the maximum height of a plant in each site and print it out.

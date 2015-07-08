@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Scientific 2
+subtitle: Mammal Body Size Pt 2
 language: R
 ---
 
@@ -12,8 +13,7 @@ there are lots of different processes that could cause size-biased extinctions
 so it's not as informative as we might like.  However, if we see the exact same
 pattern on each of the different continents that might really tell us
 something. Repeat the analysis in
-[Scientific 1]({{ site.baseurl }}/exercises/Scientific-1-R), but this time compare the
-mean masses within each of the different continents.
+[Scientific 1]({{ site.baseurl }}/exercises/Scientific-1-R), but this time compare the mean masses within each of the different continents.
 
 Using the `dplyr` and `tidyr` libraries, group the data by continent and status. 
 Summarize the average mass for each group. Spread the groups by status and select the statuses extant and extinct. Calculate the difference in average 
