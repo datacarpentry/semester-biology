@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Making Choices 2
+subtitle: Modify the Code!
 language: R
 ---
 
@@ -26,8 +27,8 @@ near <- function(lat1, long1, lat2, long2){
 ```
 
 1. Point 1: latitude = 29.65, longitude = -82.33. Point 2: latitude = 41.74,
-   longitude = -111.83.
+longitude = -111.83.
 2. Point 1: latitude = 29.65, longitude = -82.33. Point 2: latitude = 30.5,
-   longitude = -82.8.
+longitude = -82.8.
 3. Point 1: latitude = 48.86, longitude = 2.35. Point 2: latitude = 41.89,
-   longitude = 2.5.
+longitude = 2.5.
