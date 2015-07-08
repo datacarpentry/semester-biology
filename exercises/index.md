@@ -13,7 +13,7 @@ title: Exercises
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        [<a href="{{ solution.path }}">output</a>]
+        [<a href="{{ solution.path | prepend: site.baseurl}}">output</a>]
       {% endif %}
     {% endfor %}
     </li>
@@ -30,7 +30,7 @@ title: Exercises
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        [<a href="{{ solution.path }}">output</a>]
+        [<a href="{{ solution.path | prepend: site.baseurl}}">output</a>]
       {% endif %}
     {% endfor %}
     </li>
@@ -47,7 +47,7 @@ title: Exercises
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        [<a href="{{ solution.path }}">click here for output</a>]
+        [<a href="{{ solution.path | prepend: site.baseurl}}">click here for output</a>]
       {% endif %}
     {% endfor %}
     </li>
