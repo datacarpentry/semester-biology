@@ -1,16 +1,17 @@
 ---
 layout: exercise
 title: Statistics 1
+subtitle: Adult Size vs. Newborn Size Pt 2
 language: R
 ---
 
-This is a follow up to the [Graphing 1]({{ site.baseurl }}/exercises/graphing-1-R).
+This is a follow up to [Graphing 1]({{ site.baseurl }}/exercises/Graphing-1-R).
 
 We've graphed the relationship between adult size and new born size in
 mammals and now it's time to analyze the relationship statistically.
 
-1.  Do a regression where x is log10(adult mass) and y is log10(newborn mass)
-2.  Print the summary statistics for this regression
+1.  Do a regression where x is log10(adult mass) and y is log10(newborn mass).
+2.  Print the summary statistics for this regression.
 3.  Make a graph that shows both the data points and the regression line through
     those points. Label the axes.
 
