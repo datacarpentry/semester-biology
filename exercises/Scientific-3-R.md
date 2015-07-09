@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Scientific 3
+subtitle: CHALLENGE with Tree Biomass
 language: R
 ---
 
@@ -8,11 +9,11 @@ Understanding the total amount of biomass (the total mass of all individuals) in
 forests is important for understanding the global carbon budget and how the 
 earth will respond to increases in carbon dioxide emissions. Measuring the mass 
 of entire trees is difficult, and it's pretty much impossible to weigh an entire 
-forest (even if we were willing to clear cut a forest for science), but 
+forest *even if we were willing to clear cut a forest for science*, but 
 fortunately we can estimate the mass of a tree based on its diameter.
 
 There are lots of equations for estimating the mass of a tree from its diameter, 
-but one good option is the equation M = 0.124*D<sup>2.53</sup>, where M is measured in 
+but one good option is the equation M = 0.124 * D<sup>2.53</sup>, where M is measured in 
 kg of dry (above-ground) biomass and D is in cm d.b.h. (Brown 1997). We're going 
 to estimate the total tree biomass for trees in a 96 hectare area of the Western 
 Ghats in India.
