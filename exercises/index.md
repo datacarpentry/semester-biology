@@ -27,10 +27,11 @@ title: Exercises
   {% if page.layout == 'exercise' and page.language == 'R' %}
     <li>
     <a href="{{ page.url }}">{{ page.title }}</a>
+    {{ page.subtitle | prepend: "<-- " | append: " -->" }}
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        [<a href="{{ solution.path | prepend: site.baseurl}}">output</a>]
+        <a href="{{ solution.path | prepend: site.baseurl}}">output</a>
       {% endif %}
     {% endfor %}
     </li>
@@ -47,7 +48,7 @@ title: Exercises
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        [<a href="{{ solution.path | prepend: site.baseurl}}">click here for output</a>]
+        [<a href="{{ solution.path | prepend: site.baseurl}}">output</a>]
       {% endif %}
     {% endfor %}
     </li>
