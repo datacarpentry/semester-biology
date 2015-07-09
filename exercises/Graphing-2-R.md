@@ -1,31 +1,29 @@
 ---
 layout: exercise
 title: Graphing 2
+subtitle: Adult Size vs. Newborn Size
 language: R
 ---
 
-The relationship between the body size of an organism and its metabolic
-rate is one of the most well studied and still most controversial areas
-of organismal physiology. We want to graph this relationship in the
-[Artiodactyla](http://en.wikipedia.org/wiki/Even-toed_ungulate) using a
-subset of data from a large compilation of body size data (Savage et al.
-2004). You can copy and paste these two vectors into your program:
+It makes sense that larger organisms have larger offspring, but what the
+mathematical form of this relationship should be is unclear. Let's
+look at the problem empirically for mammals.
 
-```
-body_mass = c(32000, 37800, 347000, 4200, 196500, 100000, 4290, 32000,
-65000, 69125, 9600, 133300, 150000, 407000, 115000, 67000, 325000,
-21500, 58588, 65320, 85000, 135000, 20500, 1613, 1618)
+Download some
+[mammal life history data](http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt) from the web. 
+You can do this either directly in the program using `read.csv()` or download 
+the file to your computer using your browser and import it from there.
 
-metabolic_rate = c(49.984, 51.981, 306.770, 10.075, 230.073, 148.949,
-11.966, 46.414, 123.287, 106.663, 20.619, 180.150, 200.830,
-224.779, 148.940, 112.430, 286.847, 46.347, 142.863, 106.670,
-119.660, 104.150, 33.165, 4.900, 4.865)
-```
+When you import the data there are some extra blank lines at
+the end of this file. Get rid of them by using the optional `read.csv()`
+argument `nrows = 1440` to select the valid 1440 rows.
 
-Now make two plots with appropriate axis labels:
+Missing data in this file is specified by `-999` and `-999.00`. Tell R that
+these are null values using the optional `read.csv()` argument,
+`na.strings = c("-999", "-999.00")`. This will stop them from being plotted.
 
-1.  A graph of body mass vs. metabolic rate
-2.  A graph of log(body mass) vs. log(metabolic rate)
-
-Think about what the shape of these graphs tells you about the form of
-the relationship between mass and metabolic rate.
+1. Graph adult mass vs. newborn mass. Label the axes.
+2. Graph the log (base 10) of adult mass vs. the log (base 10) of
+   newborn mass. Label the axes.
+3. For data where `order` is `"Rodentia"`, graph the log (base 10) of adult mass
+   vs. the log (base 10) of newborn mass. Label the axes.

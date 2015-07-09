@@ -1,27 +1,32 @@
 ---
 layout: exercise
 title: Graphing 1
+subtitle: Body Mass vs. Metabolic Rate
 language: R
 ---
 
-This is a follow up to [Scientific 2]({{ site.baseurl }}/exercises/Scientific-2-R).
+The relationship between the body size of an organism and its metabolic
+rate is one of the most well studied and still most controversial areas
+of organismal physiology. We want to graph this relationship in the
+[Artiodactyla](http://en.wikipedia.org/wiki/Even-toed_ungulate) using a
+subset of data from a large compilation of body size data (Savage et al.
+2004). You can copy and paste these two vectors into your program:
 
-We have previously compared the average masses of extant and extinct species on
-different continents to try to understand whether size has an influence on
-extinction in mammals. Looking at the averages was a good start, but we really
-need to look at the full distributions of masses of the two groups to get the
-best picture of whether or not there was a major size bias in extinctions during
-the late Pleistocene. Make a graph for each continent that you think is worth 
-visualizing. Each plot should `facet` two histograms that use
-the same bins to display the number of extinct and extant species. Use the
-log(mass) rather than the mass itself so that you can see the form of the
-distributions more clearly. Label the axes appropriately.
+```
+body_mass = c(32000, 37800, 347000, 4200, 196500, 100000, 4290, 
+32000, 65000, 69125, 9600, 133300, 150000, 407000, 115000, 67000, 
+325000, 21500, 58588, 65320, 85000, 135000, 20500, 1613, 1618)
 
-There is a lot of work to do in this problem so make sure to break it down in to
-manageable pieces. Some logical chunks include:
+metabolic_rate = c(49.984, 51.981, 306.770, 10.075, 230.073, 
+148.949, 11.966, 46.414, 123.287, 106.663, 20.619, 180.150, 
+200.830, 224.779, 148.940, 112.430, 286.847, 46.347, 142.863, 
+106.670, 119.660, 104.150, 33.165, 4.900, 4.865)
+```
 
-* Make a single graph with the histograms for extinct and extant species.
-* Downloading/importing the data
-* Breaking the data up into separate continents
-* Breaking the data up into extinct and extant species
-* Looping over the data to print one plot for each continent
+Now make two plots with appropriate axis labels:
+
+1.  A graph of body mass vs. metabolic rate
+2.  A graph of log(body mass) vs. log(metabolic rate)
+
+Think about what the shape of these graphs tells you about the form of
+the relationship between mass and metabolic rate.
