@@ -1,11 +1,12 @@
 ---
 layout: exercise
 title: Statistics 3
+subtitle: Mammal Body Size Pt 3
 language: R
 ---
 
-This is a follow up to the [Scientific 2]({{ site.baseurl }}/exercises/Scientific-2-R)
-and [Graphing 1]({{ site.baseurl }}/exercises/Graphing-1-R) problems.
+This is a follow up to [Scientific 2]({{ site.baseurl }}/exercises/Scientific-2-R)
+and [Graphing 1]({{ site.baseurl }}/exercises/Graphing-1-R).
 
 We have previously compared the average masses of extant and extinct species on
 different continents to try to understand whether size has an influence on
@@ -16,7 +17,7 @@ statistics yet to actually test if the average sizes are different.
 Perform a two-sample t-test to compare the average sizes of the extinct and 
 extant species in each continent.
 
-Save the results as a .csv file named `"size_comparison_results.csv"`, where the
+Save the results as a CSV file named `"size_comparison_results.csv"`, where the
 first column is the name of the continent, the second column is the average mass
 for the extant species, the third column is the average mass for the extinct
 species, and the fourth column is the p-value for whether or not they are
