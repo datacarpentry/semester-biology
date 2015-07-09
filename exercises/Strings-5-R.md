@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 5
+subtitle: Long Strings
 language: R
 ---
 
