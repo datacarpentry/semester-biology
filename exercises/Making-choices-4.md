@@ -18,7 +18,7 @@ would look like:
 ```
 energy_in_cals = 200
 
-energy_in_joules = convert_energy_units(energy_in_cals, 'CAL', 'J')
+energy_in_joules = convert_energy_units(energy_in_cals, "CAL", "J")
 ```
 
 Make this function more efficient by using 'else if' (`elif`) statements.

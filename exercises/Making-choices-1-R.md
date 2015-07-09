@@ -12,10 +12,10 @@ w = 10.2
 x = 1.3
 y = 2.8
 z = 17.5
-dna1 = 'attattaggaccaca'
-dna2 = 'attattaggaacaca'
-species1 = 'diplodocus'
-species2 = 'tyrannosaurus'
+dna1 = "attattaggaccaca"
+dna2 = "attattaggaacaca"
+species1 = "diplodocus"
+species2 = "tyrannosaurus"
 ```
 
 Use them to print whether or not the following statements are 

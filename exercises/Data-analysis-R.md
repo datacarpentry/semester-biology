@@ -24,8 +24,8 @@ Rearrange the following program so that it:
 ```
 monthly_mean_ppt[i] = mean(ppt_data[,i])
 }
-plot(monthly_mean_ppt, type='l', xlab = 'month') 
+plot(monthly_mean_ppt, type = "l", xlab = "month") 
 monthly_mean_ppt <- vector(length=12)
-ppt_data <- read.csv('gainesville_precip.csv', header = FALSE, sep = ',') 
+ppt_data <- read.csv('gainesville_precip.csv', header = FALSE) 
 for (i in 1:12){
 ```
