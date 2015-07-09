@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Higher Order Functions
+subtitle: Species Area Relationship
 language: R
 ---
 
@@ -18,27 +19,25 @@ statistically. Instead we are going to take a consensus approach where we
 estimate the species richness using all possible models and then use the average 
 prediction as our best estimate.
 
-We are going to deal with 5 models today (which is already kind of a lot), but 
-according to some authors there are as many as 20 reasonable models for the 
+We are going to deal with five models today (which is already kind of a lot), but according to some authors there are as many as 20 reasonable models for the 
 species-area relationship, so we'll want to make our code easily extensible. The 
 five models we will work with are those defined by Dengler and Oldeland (2010).
 
-- Power: S = b0 * A<sup>b1</sup>
-- Power-quadratic: S = 10<sup>(b0 + b1 * log(A) + b2 * log(A)<sup>2</sup>)</sup>
-- Logarithmic: S = b0 + b1 * log(A)
-- Michaelis-Menten: S = b0 * A / (b1 + A)
-- Lomolino: S = b0 / (1 + b1<sup>log(b2/A)</sup>)
+- Power: S = b<sub>0</sub> * A<sup>b<sub>1</sub></sup>
+- Power-quadratic: S = 10<sup>(b<sub>0</sub> + b<sub>1</sub> * log(A) + b<sub>2</sub> * log(A)<sup>2</sup>)</sup>
+- Logarithmic: S = b<sub>0</sub> + b<sub>1</sub> * log(A)
+- Michaelis-Menten: S = b<sub>0</sub> * A / (b<sub>1</sub> + A)
+- Lomolino: S = b<sub>0</sub> / (1 + b<sub>1</sub><sup>log(b<sub>2</sub>/A)</sup>)
 
 All logarithms are base 10. The parameters for each model are available below, 
 along with the areas at which we wish to predict species richness. Each sublist 
 contains the parameters for one model in the order given above. All models 
-contain b0 and b1, but only the Power-quadratic and Lomolino models contain the 
-third parameter b2.
+contain b<sub>0</sub> and b<sub>1</sub>, but only the Power-quadratic and Lomolino models contain the 
+third parameter b<sub>2</sub>.
 
 ```
 sar_parameters <- list(c(20.81, 0.1896), c(1.35, 0.1524, 0.0081),
-                       c(14.36, 21.16), c(85.91, 42.57),
-	               c(1082.45, 1.59, 390000000))
+c(14.36, 21.16), c(85.91, 42.57), c(1082.45, 1.59, 390000000))
 
 areas <- c(1, 5.2, 10.95, 152.3, 597.6, 820, 989.8, 1232.5, 15061)
 ```
@@ -46,13 +45,13 @@ areas <- c(1, 5.2, 10.95, 152.3, 597.6, 820, 989.8, 1232.5, 15061)
 These can be cut and paste into your code. Alternatively, if you're looking for
 a more realistic challenge you can import the related csv files for
 [the parameters]({{ site.baseurl }}/data/sar_model_data.csv) and [the areas]({{ site.baseurl }}/data/sar_areas.csv) directly from the web. 
-Dealing with extracting the data you need from a standard .csv import will be a 
+Dealing with extracting the data you need from a standard CSV import will be a 
 little challenging, but you'll learn a lot (and you can always solve the main 
 problem first and then go back and solve the import step later; which might well 
 be what an experienced programmer would do in this situation).
 
 Write a script that calculates the richness predicted by each model for each
-area, and exports the results to a .csv file with the first column containing 
+area, and exports the results to a CSV file with the first column containing 
 the area for the prediction and the second column containing the mean predicted
 richness for that area. To make this easily extensible you will want to write a
 function that defines each of the different species-area models (5 functions
