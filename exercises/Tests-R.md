@@ -1,23 +1,22 @@
 ---
 layout: exercise
 title: Tests
+subtitle: Fix the Code Some More!!
 language: R
 ---
 
-This is a follow up to the [Debugging problem]({{ site.baseurl }}/exercises/Debugging-R).
+This is a follow up to [Debugging]({{ site.baseurl }}/exercises/Debugging-R).
 
 Write tests for your 'Debugging' code for the following cases and save it in a 
 file called `Tests-R.R`. Make corrections/improvements to the 'Debugging' code 
 so that all of your tests pass.
 
-#### gc_content()
+`test_that("get_gc_content() works",`
 
-1.  Sequence represented by upper case string
-2.  Sequence represented by lower case string
-3.  Sequence represented by mixed case string
-4.  Sequence represented by multiline string
-
-#### get_size_class()
+1.  on a sequence represented by upper case string.
+2.  on a sequence represented by lower case string.
+3.  on a sequence represented by mixed case string.
+4.  on a sequence represented by multiline string.
 
 In an email accompanying your "updated" code, Dr. Granger indicated that
 the specifications for the earlength size classes were:
@@ -27,9 +26,9 @@ the specifications for the earlength size classes were:
 3.  medium: 8 <= earlength < 10
 4.  small: earlength < 8
 
-Write tests to check:
+`test_that("get_size_class() works",`
 
-1.  That each case is working when the numbers are in the range
-2.  The edgecases of 8, 10, and 15
-3.  The function fails if non-numerical values are input as an argument
-    (e.g., a string from a header row that didn't get removed)
+1.  for each case when the numbers are in the range.
+2.  for the edgecases of 8, 10, and 15.
+3.  but the function fails if non-numerical values are input as an argument
+    (e.g., a string from a header row that didn't get removed).

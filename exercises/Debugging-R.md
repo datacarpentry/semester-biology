@@ -1,11 +1,11 @@
 ---
 layout: exercise
 title: Debugging
+subtitle: Fix the Code!
 language: R
 ---
 
-This is a follow up to the [Basic 2
-problem]({{ site.baseurl }}/exercises/Basic-2-R).
+This is a follow up to [Basic 2]({{ site.baseurl }}/exercises/Basic-2-R).
 
 While you were out of town doing field work over the summer Dr. Granger hired
 another student, Gregory Goyle, to help her modify your code so that it did
