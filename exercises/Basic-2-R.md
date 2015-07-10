@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Basic 2
+subtitle: REVIEW with House-elves
 language: R
 ---
 
@@ -25,12 +26,12 @@ Write an R script that:
 
 1.  Imports the data into a data structure of your choice
 2.  Loops over the rows in the dataset
-3.  For each row in the dataset checks to see if the ear length is large
-    (>10 cm) or small (<=10 cm) and determines the GC-content of the
+3.  For each row in the dataset checks to see `if` the ear length is `"large"`
+    (>10 cm) or `"small"` (<=10 cm) and determines the GC-content of the
     DNA sequence (i.e., the percentage of bases that are either G or C)
 4.  Stores this information in a table where the first column has the ID
-    for the individual, the second column contains the string 'large' or
-    the string 'small' depending on the size of the individuals ears,
+    for the individual, the second column contains the string `"large"` or
+    the string `"small"` depending on the size of the individuals ears,
     and the third column contains the GC content of the DNA sequence.
 5.  Prints the average GC-content for both large-eared elves and
     small-eared elves to the screen.
@@ -38,5 +39,5 @@ Write an R script that:
     delimited text) file titled `grangers_analysis.csv`.
 
 
-Throughout the assignment feel free to use whatever data structures you
-prefer, but be consistent. Use functions to break the code up into manageable pieces. Ask your instructor if you have questions about the best choices.
+*Throughout the assignment feel free to use whatever data structures you
+prefer, but be consistent. Use functions to break the code up into manageable pieces. Ask your instructor if you have questions about the best choices.*
