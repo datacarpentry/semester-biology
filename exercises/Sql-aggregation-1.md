@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Aggregation 1
+subtitle: COUNT
 language: SQL
 ---
 
