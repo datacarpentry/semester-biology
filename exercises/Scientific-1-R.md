@@ -21,18 +21,18 @@ the [metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
 understand the structure of the data. One key thing to remember is that species
 can occur on more than one continent, and if they do then they will occur more
 than once in this dataset. Also let's ignore species that went extinct in the
-very recent past (designated by the word 'historical' in the 'status' column).
+very recent past (designated by the word `"historical"` in the `"status"` column).
 
 Import the data into R. If you've looked at a lot of data you'll realize
-that this dataset is tab delimited. Use the argument `sep = “\t”` in 
+that this dataset is tab delimited. Use the argument `sep = "\t"` in 
 `read.csv()` to properly format the data. There is no header row, so use `head = FALSE`.
 
 Add column names to help identify columns.
  
 ```
-colnames(mammal_sizes) <- c('continent', 'status', 'order', 
-'family', 'genus', 'species', 'log_mass', 'combined_mass', 
-'reference')
+colnames(mammal_sizes) <- c("continent", "status", "order", 
+"family", "genus", "species", "log_mass", "combined_mass", 
+"reference")
 ```
 
 To start let's explore the data a little and then start looking at the major question.
