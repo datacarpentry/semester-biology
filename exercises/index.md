@@ -9,7 +9,7 @@ title: Exercises
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'Python' %}
     <li>
-    <a href="{{ page.url }}">{{ page.title }}</a>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
@@ -26,7 +26,7 @@ title: Exercises
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'R' %}
     <li>
-    <a href="{{ page.url }}">{{ page.title }}</a>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
     {{ page.subtitle | prepend: "<-- " | append: " -->" }}
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
@@ -44,7 +44,7 @@ title: Exercises
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'SQL' %}
     <li>
-    <a href="{{ page.url }}">{{ page.title }}</a>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
