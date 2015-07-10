@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Filtering
+subtitle: WHERE
 language: SQL
 ---
 
@@ -20,7 +21,7 @@ as a view with the name `Spectabilis Population Data`.
 
 Scroll through the results of your query. Do you notice anything that
 might be an issue for the scientist to whom you are providing this data?
-[you should] Think about what you should do in this situation...
+*You should!* Think about what you should do in this situation...
 
 You decide that to avoid invoking her wrath, you'll send her a short
 e-mail* requesting clarification regarding what she would like you to

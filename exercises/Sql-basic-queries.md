@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Basic Queries
+subtitle: SELECT
 language: SQL
 ---
 
@@ -12,7 +13,7 @@ questions. For example, you may need to know what species is associated with the
 two character species ID or you may need to know the units for the individual's weight. This type of information associated with data is called metadata and the 
 metadata for this dataset is available online at [Ecological Archives](http://esapubs.org/archive/ecol/E090/118/metadata.htm).
 
-1.  Write a query that displays all of the records for all of the fields
+1.  Write a query that displays all of the records for all of the fields (`*`)
     in the main table. Save it as a view named `All Survey Data`.
 2.  We want to generate data for an analysis of body size differences
     between males and females of each species. We have decided that we
