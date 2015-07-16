@@ -15,7 +15,7 @@ The R environment is broken up into two main windows, the console and the script
    - `=` can also be used, but should be avoided EXCEPT in functions
 - R counts from 1, unlike many other programming languages (e.g., Python)
 - `length(thing)` returns the number of elements contained in the variable
-  `collection`. `dim(thing)` returns length in multiple dimensions.
+  `thing`. `dim(thing)` returns length in multiple dimensions.
 - `c(value1, value2, value3)` creates a vector
 - `container[i]` selects the i'th element from the vector `container`
 - `container[[i]]` selects the i'th object from the object `container`
