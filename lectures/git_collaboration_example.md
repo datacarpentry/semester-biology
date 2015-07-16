@@ -1,5 +1,5 @@
 ---
-layout: lecture
+layout: page
 title: Git collaboration example
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: lecture
+layout: page
 title: Graphing in Python
 ---
 
