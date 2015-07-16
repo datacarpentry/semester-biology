@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Data Analysis
+subtitle: Code Shuffle
 language: Python
 ---
 
@@ -14,10 +15,10 @@ the same directory as your homework script. Each row of this data file is a year
 
 Rearrange the following program so that it:
 
-a. Imports the necessary modules
-b. Imports the data
-c. Calculates the average precipitation in each month across years
-d. Plots the monthly averages as simply line plot
+- Imports the necessary modules
+- Imports the data
+- Calculates the average precipitation in each month across years
+- Plots the monthly averages as simply line plot
 
 ```
 plt.plot(monthly_mean_ppt)
