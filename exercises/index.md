@@ -10,10 +10,11 @@ title: Exercises
   {% if page.layout == 'exercise' and page.language == 'Python' %}
     <li>
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {{ page.subtitle | prepend: "<-- " | append: " -->" }}
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        [<a href="{{ solution.path | prepend: site.baseurl}}">output</a>]
+        <a href="{{ solution.path | prepend: site.baseurl}}">output</a>
       {% endif %}
     {% endfor %}
     </li>
@@ -45,10 +46,11 @@ title: Exercises
   {% if page.layout == 'exercise' and page.language == 'SQL' %}
     <li>
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {{ page.subtitle | prepend: "<-- " | append: " -->" }}
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        [<a href="{{ solution.path | prepend: site.baseurl}}">output</a>]
+        <a href="{{ solution.path | prepend: site.baseurl}}">output</a>
       {% endif %}
     {% endfor %}
     </li>
