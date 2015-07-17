@@ -17,8 +17,9 @@ species1 = 'diplodocus'
 species2 = 'tyrannosaurus'
 ```
 
-and use them to print whether or not the following statements are True
-or False:
+Use them to print whether or not the following statements are 
+
+`True` or `False`:
 
 1.  `w` is greater than 10
 2.  `w` + `x` is less than 15
@@ -33,8 +34,7 @@ or False:
 10. `w` is greater than `x`, and `y` is greater than `z`
 11. `dna1` is longer than 5 bases, or `z` is less than `w` * `x`,
     or both
-12. The combined length of the two dna sequences is greater than or
-    equal to 30
+12. The combined length of `dna1` and `dna2` is greater than or equal to 30
 13. (`w` + `x` + `y`) divided by the logarithm (base 10) of 100 is
     equal to 7.15
 14. The GC content (which is always a percentage) of `dna1` is not the
