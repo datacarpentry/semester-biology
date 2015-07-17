@@ -1,10 +1,11 @@
 ---
 layout: exercise
 title: Scientific 0
+subtitle: Shrub Volume Pt 3 with Pandas
 language: Python
 ---
 
-*This problem is related to [Combining the Basics 2]({{ site.baseurl }}/exercises/Combining—the-basics-2-Python),
+*This problem is related to [Combining Basics]({{ site.baseurl }}/exercises/Combining—the-basics-2-Python),
 but using the Pandas library.*
 
 Dr. Granger is interested in studying the factors controlling the size and
@@ -25,13 +26,15 @@ placed a data file on the web for you to
 4. Multiple the length, width, and height columns together to get a volume
    column and print it out.
 5. Calculate the shrub carbon for all of the shrubs using the equation
-   `1.8 + 2 * log(volume)` where `volume` is the volume of the shrub. 
+       `1.8 + 2 * log(volume)` where `volume` is the volume of the shrub. 
    You'll need to use the `numpy` version of the `log()` function. 
 6. Select the height data for all of the plants with heights greater than 5 and
    print out the result.
 7. The following code calculates the average height of a plant at each site:
-    * `data_means = data.groupby('site').mean()`
-    * `data_means['height']`
 
+   ```
+   data_means = data.groupby('site').mean()
+   data_means['height']
+   ```
    Modify the code to calculate the average height of a plant in each experiment type.
 8. Calculate the maximum height of a plant in each site and print it out.

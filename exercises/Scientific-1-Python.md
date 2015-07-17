@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Scientific 1
+subtitle: Mammal Body Size Pt 1
 language: Python
 ---
 
@@ -38,7 +39,7 @@ To start let's explore the data a little and then start looking at the major que
    extant components and then count the number of species*.
 3. Find out how many families are present in the dataset.
 4. Now print the genus name, the species name, and the mass of the largest and
-   smallest species (note, it is not possible for a mammal to have negative mass
+   smallest species (*note, it is not possible for a mammal to have negative mass*)
 5. Now let's get to work. Calculate the average (i.e., mean) mass of an extinct
    species and the average mass of an extant species. The function `mean()`
    should help you here. It is available as both a numpy function and a Pandas
