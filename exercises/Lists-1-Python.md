@@ -1,7 +1,8 @@
 ---
 layout: exercise
 title: Lists 1
-language: R
+subtitle: Lists
+language: Python
 ---
 
 The number of birds banded at a series of sampling sites has been counted by
@@ -20,10 +21,10 @@ number_of_birds = [28, 32, 1, 0, 10, 22, 30, 19, 145, 27, 36,
 				   102, 273, 600, 10, 11]
 ```
 
-1.  How many sites are there? Hint: the function `len()` works on lists as
-    well as strings.
-2.  How many birds were counted at site 42? Remember, the number of the
-    site and the number of its position may not be exactly the same.
+1.  How many sites are there? *Hint: the function `len()` works on lists as
+    well as strings.*
+2.  How many birds were counted at site 42? *Remember, the number of the
+    site and the number of its position may not be exactly the same.*
 3.  How many birds were counted at the last site? Have the computer
     choose the last site automatically in some way, not by manually
     entering its position.
