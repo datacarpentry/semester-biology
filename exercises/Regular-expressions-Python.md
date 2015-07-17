@@ -1,6 +1,8 @@
 ---
 layout: exercise
-title: Regular Expressions 1
+title: Regular Expressions
+subtitle: List the Rodents!
+language: Python
 ---
 
 There are many diverse sources of biological data in the modern world,
@@ -15,11 +17,11 @@ be a bit of a nightmare. Fortunately it's a Wikipedia article and
 Wikipedia has a nice feature to let us see the source code (or wiki
 markup) that is used to build the HTML. This is same as what we would
 see if we clicked on the Edit tab of the article, but accessible in a
-simple text file. This can be done useing the general url:
+simple text file. This can be done using the general url:
 
-http://en.wikipedia.org/w/index.php?title=PAGETITLE&action=raw
+`http://en.wikipedia.org/w/index.php?title=PAGETITLE&action=raw`
 
-where PAGETITLE is replaced with the actual title of the page.
+where `PAGETITLE` is replaced with the actual title of the page.
 
 Download the wiki markup and write a short script using regular
 expressions that extracts the list of all latin binomials from the page.
