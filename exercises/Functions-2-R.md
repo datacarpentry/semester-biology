@@ -5,8 +5,8 @@ subtitle: Writing Functions
 language: R
 ---
 
-Write a function that converts pounds to grams (there are 453.592 grams in one
-pound). Use that function and a built in function to print out how many grams
+Write a function that converts pounds to grams (*there are 453.592 grams in one
+pound*). Use that function and a built in function to print out how many grams
 there are in 3.75 pounds, rounded to the nearest gram. 
 
 *Don't do any printing or rounding inside your function. You want each function 
