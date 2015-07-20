@@ -16,11 +16,11 @@ download the file to your computer using your browser and import it from there.
 
 Import the data into a Pandas data frame. There are some extra blank lines at
 the end of this file, so get rid of them by using the optional `read_csv()`
-argument, `skip_footer = 7`.
+argument, `skip_footer=7`.
 
 Missing data in this file is specified by -999 and -999.00. Tell Pandas that
 these are null values using the optional `read_csv()` argument,
-`na_values = ['-999', '-999.00']`. This will stop them from being plotted.
+`na_values=['-999', '-999.00']`. This will stop them from being plotted.
 
 1. Graph adult mass vs. newborn mass. Label the axes.
 2. Graph the log (base 10) of adult mass vs. the log (base 10) of
