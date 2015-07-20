@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Graphing 1
-subtitle: Mammal Bidy Size Pt 3
+subtitle: Mammal Body Size Pt 3
 language: Python
 ---
 
