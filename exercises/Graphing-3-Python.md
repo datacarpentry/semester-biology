@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Graphing 3
+subtitle: Adult Size vs. Newborn Size
 language: Python
 ---
 
@@ -10,7 +11,7 @@ look at the problem empirically for mammals.
 
 Download some
 [mammal life history data](http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
-from the web. You can do this either directly in the program using urllib or
+from the web. You can do this either directly in the program using `urllib` or
 download the file to your computer using your browser and import it from there.
 
 Import the data into a Pandas data frame. There are some extra blank lines at
@@ -19,7 +20,7 @@ argument, `skip_footer=7`.
 
 Missing data in this file is specified by -999 and -999.00. Tell Pandas that
 these are null values using the optional `read_csv()` argument,
-`na_values=['-999', '-999.00']. This will stop them from being plotted.
+`na_values=['-999', '-999.00']`. This will stop them from being plotted.
 
 1. Graph adult mass vs. newborn mass. Label the axes.
 2. Graph the log (base 10) of adult mass vs. the log (base 10) of

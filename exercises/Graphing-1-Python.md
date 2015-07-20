@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Graphing 1
+subtitle: Mammal Body Size Pt 3
 language: Python
 ---
 
