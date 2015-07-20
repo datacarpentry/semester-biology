@@ -1,6 +1,7 @@
 ---
 layout: exercise
-title: Combining Basics 2
+title: Combining Basics
+subtitle: Shrub Volume Pt. 2
 language: Python
 ---
 
@@ -22,25 +23,26 @@ the analysis again.
 
 Write a Python script that:
 
-1. Imports the data using `numpy`. It has a header row so you'll need to tell
+- Imports the data using `numpy`. It has a header row so you'll need to tell
    `numpy.loadtxt()` to ignore it by providing the optional argument
    `skiprows=1`.
-2. Loops over the rows in the dataset
-3. For each row in the dataset checks to see if the plant is tall (height > 5),
-   medium (2 <= height < 5), or short (height < 2), and determines the total
-   amount of carbon in the shrub. The total amount of carbon is equal to `1.8 +
-   2 * log(volume)` where `volume` is the volume of the shrub (i.e., its length
-   times its width times its height).
-4. Stores this information as table in a nested list (i.e., a list that contains
+- Loops over the rows in the dataset
+- Uses a `for` loop to check each row in the dataset, groups by height as 
+`'tall'` `if (height > 5)`, `'medium'` `if (2 <= height < 5)`, or `'short'` `if (height < 2)`, 
+and determines the total amount of carbon in the shrub. 
+
+   The total amount of carbon is equal to 
+   `1.8 + 2 * log(volume)` where `volume` is the volume of the shrub (`length * width * height`).
+- Stores this information as table in a nested list (i.e., a list that contains
    a bunch of lists, with each of these sub-lists holding the results for one
    shrub) where the first column has the experiment number, the second column
-   contains the string 'tall', 'medium' or 'short' depending on the height of
+   contains the string `'tall'`, `'medium'` or `'short'` depending on the height of
    the shrub, and the third column contains the shrub carbon.
-5. Exports this table to a CSV (comma delimited text) file titled
+- Exports this table to a CSV (comma delimited text) file titled
    `shrubs_experiment_results.csv`.
+- Use functions to break the code up into manageable pieces. 
 
-This code should use functions to break the code up into manageable pieces. To
-help you get started here is a function for exporting the results to a csv
+To help you get started here is a function for exporting the results to a CSV
 file. To use it you'll need to copy and paste it into your code. It uses the
 `csv` module so you'll need to remember to import it.
 
