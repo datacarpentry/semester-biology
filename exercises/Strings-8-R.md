@@ -1,7 +1,7 @@
---- 
+---
 layout: exercise 
 title: Strings 8
-subtitle: Fast Forward! Functions and `if` statements
+subtitle: Fast Forward to Functions and `if` statements
 language: R
 ---
 
