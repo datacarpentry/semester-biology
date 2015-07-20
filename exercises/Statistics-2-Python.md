@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Statistics 2
+subtitle: Shrub Volume Pt 3
 language: Python
 ---
 
@@ -22,10 +23,10 @@ carbon.
 1. Import the data using Pandas and print out the first few rows of the data
    using the `.head()` method.
 2. Write a function to calculate the shrub carbon using a column of lengths, a
-   column of widths and a column of heights, using the equation `1.8 + 2 *
-   log(volume)` where `volume` is the volume of the shrub. You'll need to use
-   the `numpy` version of the `log()` function. Call the function to get a
-   column of shrub carbons and then print out that column.
+   column of widths and a column of heights, using the equation                             
+     `1.8 + 2 * log(volume)` where `volume` is the volume of the shrub. You'll 
+   need to use the `numpy` version of the `log()` function. Call the function to  
+   get a column of shrub carbons and then print out that column.
 3. Use this function to get a column of carbons for all of the shrubs in the
    table and append that column to your existing dataframe using a command like
    `data['carbon'] = get_shrub_carbons(lengths, widths, heights)`. Print out the

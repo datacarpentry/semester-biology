@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Statistics 1
+subtitle: Adult Size vs. Newborn Size Pt 2
 language: Python
 ---
 

@@ -1,12 +1,12 @@
 ---
 layout: exercise
 title: Statistics 3
-subtitle: Mammal Body Size Pt 3
+subtitle: Mammal Body Size Pt 4
 language: R
 ---
 
 This is a follow up to [Scientific 2]({{ site.baseurl }}/exercises/Scientific-2-R)
-and [Graphing 1]({{ site.baseurl }}/exercises/Graphing-1-R).
+and [Graphing 3]({{ site.baseurl }}/exercises/Graphing-3-R).
 
 We have previously compared the average masses of extant and extinct species on
 different continents to try to understand whether size has an influence on
