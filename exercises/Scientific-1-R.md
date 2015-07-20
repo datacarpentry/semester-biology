@@ -37,7 +37,7 @@ colnames(mammal_sizes) <- c("continent", "status", "order",
 
 To start let's explore the data a little and then start looking at the major question.
 
-1. The following code will determine how many genera (plural of genus) are
+1. The following code will determine how many genera (*plural of genus*) are
    in the dataset:
    ```
    dim(distinct(select(mammal_sizes, genus)))[1]

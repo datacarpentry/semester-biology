@@ -19,7 +19,7 @@ Using the `dplyr` and `tidyr` libraries, group the data by continent and status.
 Summarize the average mass for each group. Spread the groups by status and select the statuses extant and extinct. Calculate the difference in average 
 masses between extant and extinct groups. 
 
-Export your results to a csv file where the first entry on each line is the 
+Export your results to a CSV file where the first entry on each line is the 
 continent, the second entry is the average mass of the extant species on that 
 continent, the third entry is the average mass of the extinct species on that 
 continent, and the forth entry is the difference between the average extant and 
