@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Scientific 2
-subtitle: Mammal Bosy Size Pt 2
+subtitle: Mammal Body Size Pt 2
 language: Python
 ---
 
@@ -13,7 +13,7 @@ there are lots of different processes that could cause size-biased extinctions
 so it's not as informative as we might like.  However, if we see the exact same
 pattern on each of the different continents that might really tell us
 something. Repeat the analysis in
-[Scientific Python 1]({{ site.baseurl }}/exercises/Scientific-python-1), but this time compare the
+[Scientific 1]({{ site.baseurl }}/exercises/Scientific-1-Python), but this time compare the
 mean masses within each of the different continents. Export your results to a
 CSV file where the first entry on each line is the continent, the second entry
 is the average mass of the extant species on that continent, the third entry is
