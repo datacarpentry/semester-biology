@@ -1,7 +1,7 @@
-—-—
+---
 layout: exercise
 title: Modules
-subtitle: Modules
+subtitle: stringr
 language: R
 ---
 
