@@ -10,14 +10,14 @@ title:            Data Carpentry -for- Biologists
 tagline:          'A Jekyll theme'
 description:      'Teaching biologists the tools they need to use computers to do cool science'
 url:              http://www.progbio.org
-baseurl:          /datacarp-semester-biology
+baseurl:          /semester-biology
 
 author:
   name:           'Ethan White'
   url:            https://twitter.com/ethanwhite
 
 github:
-  repo:           https://github.com/ethanwhite/datacarp-semester-biology
+  repo:           https://github.com/datacarpentry/semester-biology
 
 gems:
   - jekyll-redirect-from
