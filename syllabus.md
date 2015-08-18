@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Programming for Biologists Syllabus
-redirect_from: /syllabus-intro/
 ---
 
 BIOL 5321/6321, 2 Credits, Fall 2014
