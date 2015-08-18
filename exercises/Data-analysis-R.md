@@ -22,10 +22,7 @@ Rearrange the following program so that it:
 
 
 ```
-monthly_mean_ppt[i] = mean(ppt_data[,i])
-}
-plot(monthly_mean_ppt, type = "l", xlab = "month") 
-monthly_mean_ppt <- vector(length=12)
-ppt_data <- read.csv('gainesville_precip.csv', header = FALSE) 
-for (i in 1:12){
+plot(monthly_mean_ppt, type = "l", xlab = "Month", ylab = "Mean Precipitation")
+monthly_mean_ppt <- colMeans(ppt_data)
+ppt_data <- read.csv('gainesville_precip.csv', header = FALSE)
 ```
