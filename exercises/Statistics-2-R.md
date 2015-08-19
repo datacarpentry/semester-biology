@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Statistics 2
-subtitle: Shrub Volume Pt 4
+subtitle: Shrub Volume Pt 5
 language: R
 ---
 
@@ -12,6 +12,5 @@ treatments lead to differences in shrub carbon.
 
 1. Import the data and your results table that you exported in 'Combining 
    Basics'.
-2. Do an ANOVA to determine if the experiment has an influence on the shrub
-   carbon and print out the results in a standard ANOVA table using
-   `aov()`.
+2. Do an ANOVA, using `aov()`, to determine if the experiment has an influence  
+   on the shrub carbon and print out the results in a standard ANOVA table. 
