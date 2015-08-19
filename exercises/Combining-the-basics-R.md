@@ -1,20 +1,13 @@
 ---
 layout: exercise
 title: Combining Basics
-subtitle: Shrub Volume Pt 3
+subtitle: Shrub Volume Pt 4
 language: R
 ---
 
-Dr. Granger is interested in studying the factors controlling the size and
-carbon storage of shrubs. This research is part of a larger area of research
-trying to understand carbon storage by plants. She has conducted a small
-preliminary experiment looking at the effect of three different treatments on
-shrub volume at four different locations. She wants to conduct a preliminary
-analysis of these data to include in a grant proposal and she would like you to
-conduct the analysis for her (she might be a world renowned expert in carbon
-storage in plants, but she sure doesn't know much about computers). She has
-placed a data file on the web for you to
-[download]({{ site.baseurl }}/data/shrub_volume_experiment.csv).
+This is a follow-up to [Scientific 0]({{ site.baseurl }}/exercises/Scientific-0-R).
+
+Now that you're familiar with the data, Dr. Granger wants you to conduct a preliminary analysis of these data to include in a grant proposal (*she might be a world renowned expert in carbon storage in plants, but she sure doesn't know much about computers*). If you missed it, the [data file]({{ site.baseurl }}/data/shrub_volume_experiment.csv) is still on the web.
 
 You might be able to do this analysis by hand in Excel, but Dr. Granger seems to
 always get funded meaning that you'll be doing this again soon with a much
@@ -31,7 +24,7 @@ Write an R script that:
 `transmute()` rows in the dataset to produce the results table. The total
 amount of carbon is equal to `1.8 + 2 * log(volume)` where `volume` is the 
 volume (`length * width * height`) of the shrub.  
-- Stores this information as table in a data.frame with each of these row
+- Stores this information as table in a `data.frame` with each of these row
 holding the results for one shrub. The first column should have the
 experiment number. The second column should have the string `"tall"`, 
 `"medium"` or `"short"` depending on the height of the shrub. And, the third 
