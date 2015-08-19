@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Vectors
+title: Vectors 1
 subtitle: Vectors
 language: R
 ---
