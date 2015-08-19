@@ -5,7 +5,7 @@ subtitle: Shrub Volume Pt 2
 language: R
 ---
 
-This is a follow up to [Loops 2]({{ site.baseurl }}/exercises/Loops-2-R)
+This is a follow up to [Vectors 2]({{ site.baseurl }}/exercises/Vectors-2-R)
 
 One of your collaborators has posted [a comma-delimited text
 file]({{ site.baseurl }}/data/shrub_dimensions_labeled.csv)
