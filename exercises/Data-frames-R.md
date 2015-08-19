@@ -16,6 +16,5 @@ project that you are working on is going to be generating lots of these files so
 you decide to write a program to automate the process.
 
 Download the data (note that it has a header this time), use `read.csv()` to
-import it into R, and then calculate the volumes in a data.frame where the first 
-column contains the ShrubIDs and the second column contains the volume. Use a 
-`for` loop to print out each combination of ShrubID and volume.
+import it into R, and then calculate the volumes in a `data.frame` where the first 
+column contains the ShrubIDs and the second column contains the volume. Print out the ShrubID and volume `data.frame`.
