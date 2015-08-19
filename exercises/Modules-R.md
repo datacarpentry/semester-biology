@@ -1,16 +1,18 @@
 ---
 layout: exercise
 title: Modules
-subtitle: stringr
+subtitle: dplyr
 language: R
 ---
 
-Install and familiarize yourself with the `stringr` package. The `library()` step(s) should always be located at the very top of a script.
+Install and familiarize yourself with the `dplyr` package. The `library()` step(s) should always be located at the very top of a script.
 
 ```
-install.packages(‘stringr’)
+install.packages("dplyr")
 
-library(‘stringr’)
+library("dplyr")
 
-help(package = stringr)
+help(package = dplyr)
 ```
+
+This [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) is a great reference for *data manipulation verbs* to keep in mind.
