@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Loops 2
+title: Vectors 2
 subtitle: Shrub Volume Pt 1
 language: R
 ---
@@ -15,6 +15,4 @@ spreadsheet, but the project that you are working on is going to be generating
 lots of these files so you decide to write a program to automate the process.
 
 Download the data, using `read.csv(…, head = FALSE)` to import it into R, 
-and then calculate the volumes (`l * w * h`) in a new vector using vector algebra.There should be one value in the vector for each shrub. Once you 
-have created this vector, use a `for` loop to print out each volume in order 
-on its own line.
+and then calculate the volumes (`l * w * h`) in a new vector using vector algebra. There should be one value in the vector for each shrub. Print out the vector of volumes.
