@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Assignment 6
+title: Python Assignment 6
 language: Python
 exercises: ['Graphing 2', 'Graphing 3', 'Graphing 1']
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Assignment 8
+title: Python Assignment 8
 language: Python
 exercises: ['Higher Order Functions', 'Regular Expressions', 'Debugging', 'Tests']
 ---
