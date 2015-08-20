@@ -18,10 +18,11 @@ other words, the purpose of these courses is to teach you how to drive the car,
 not prepare you to be a mechanic.
 
 The development of these courses, and this site, have been supported by an
-[NSF CAREER award](http://nsf.gov/awardsearch/showAward?AWD_ID=0953694) and a grant from the [Gordon and Betty Moore Foundation](http://datacarpentry.github.io/blog/moore/), both intended
-to support the development of resources that improve data management and exploration in science. Along with the funding support, these course actively integrate
-with [Data Carpentry](http://datacarpentry.org) and [Software Carpentry](http://software-carpentry.org). It is also my hope that
-developing these courses in an open and collaborative manner will make it
-possible to team up with other like minded biologists and programmers to tackle
-the challenge of training biologists to more effectively use available
-computational resources. 
+[NSF CAREER award](http://nsf.gov/awardsearch/showAward?AWD_ID=0953694) and by 
+the Gordon and Betty Moore Foundation's Data-Driven Discovery Initiative through 
+grants [GBMF4563](https://www.moore.org/grants/list/GBMF4855) and [GBMF4855](https://www.moore.org/grants/list/GBMF4855). The funding sources broadly 
+support the development of resources that improve data management and 
+exploration in science. Along with the funding support, these course actively integrate with [Data Carpentry](http://datacarpentry.org) and [Software Carpentry](http://software-carpentry.org). 
+It is also my hope that developing these courses in an open and collaborative manner will make it possible to team up with other like minded biologists and 
+programmers to tackle the challenge of training biologists to more effectively 
+use available computational resources. 
