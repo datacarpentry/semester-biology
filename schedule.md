@@ -3,64 +3,138 @@ layout: page
 title: Schedule for Programming For Biologists
 ---
 
-### Week 1: Expressions, Types, Variables, Errors, Functions
+### Week 1: Introduction, Creating Databases, Adding Data
+
+#### Material:
+
+* [Introduction](http://software-carpentry.org/v4/databases/intro.html)
+
+### Week 2: Selecting, Filtering, Sorting, and Aggregating Data
+
+#### Material:
+* [Selecting](http://software-carpentry.org/v4/access/select.html)
+* [Filtering](http://software-carpentry.org/v4/access/filter.html)
+* [Sorting](http://software-carpentry.org/v4/access/sort.html)
+* [Aggregation](http://software-carpentry.org/v4/access/aggregation.html)
+* [Nulls](http://software-carpentry.org/v4/access/null.html)
+
+[Assignment 1](/assignments/sql-1)
+
+### Week 3: Tidy Data, Joins, Nested Queries
+
+#### Material:
+
+* [Tidy Data, Sections 1-3](http://vita.had.co.nz/papers/tidy-data.pdf)
+* [Joins](http://software-carpentry.org/v4/access/join.html)
+* [Nested Queries](http://software-carpentry.org/v4/access/nested.html)
+
+[Assignment 2](/assignments/sql-2)
+
+### Week 4: Introduction to R and RStudio
+
+#### Topics
+
+* R & RStudio
+* Expressions & Variables
+* Types
+* Errors
+* Vectors
 
 #### Reading:
 
-* [SWC Novice Python: Analyzing Patient Data](http://software-carpentry.org/v5/novice/python/01-numpy.html)
-    * [Associated data](https://raw.githubusercontent.com/swcarpentry/bc/master/novice/python/inflammation-01.csv) if you want to experiment with it (not required)
-* [Errors](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/errors.ipynb)
+* [Getting Started](http://datacarpentry.github.io/R-ecology/00-before-we-start.html)
+* [Introduction to R](http://datacarpentry.github.io/R-ecology/01-intro-to-R.html)
 
-[Assignment 1]({{ site.baseurl }}/assignments/programming-1)
+[Assignment 3](/assignments/r-1)
 
-### Week 2: Strings, Methods
+### Week 5: Working with Data
 
-#### Reading:
+#### Topics
 
-* [Strings](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/strings.ipynb)
+* Matrices & data frames
+* Importing data
+* Basic subsetting
+* Readable code
+  * Functions
 
-[Assignment 2]({{ site.baseurl }}/assignments/programming-2)
+#### Reading
 
-### Week 3: Functions, for loops, lists
+* [Starting with data](http://datacarpentry.github.io/R-ecology/02-starting-with-data.html)
+* [Introduction to data frames](http://datacarpentry.github.io/R-ecology/03-data-frames.html)
+* [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R.html)
+<!--TODO: Add reading on subsetting data frames -->
 
-#### Reading:
+[Assignment 4](/assignments/r-2)
 
-* [SWC Novice Python: Creating Functions](http://software-carpentry.org/v5/novice/python/02-func.html) (M)
-* [SWC Novice Python: Analyzing Multiple Data Sets](http://software-carpentry.org/v5/novice/python/03-loop.html) (W)
+### Week 6: Working with Tabular Data & Problem decomposition
 
-[Assignment 3]({{ site.baseurl }}/assignments/programming-3)
+#### Topics
 
-### Week 4: Making choices, Problem decomposition
-
-#### Reading:
-
-* [SWC Novice Python: Making Choices](http://software-carpentry.org/v5/novice/python/04-cond.html)
-
-Additional Material: 
-[Problem decomposition](http://programmingforbiologists.org/material/problem-decomposition)
-
-[Assignment 4]({{ site.baseurl }}/assignments/programming-4)
-
-### Week 5: Working with tabular data, Debugging, Style
+* dplyr
+* Problem decomposition
 
 #### Reading:
 
-* [Pandas - working with data they way your brain wants](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/pandas.ipynb)
-  
-[Assignment 5]({{ site.baseurl }}/assignments/programming-5)
+* [Aggregating and analyzing data with `dplyr`](http://datacarpentry.github.io/R-ecology/04-dplyr.html)
+* *optional* [Introduction to `dplyr` vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 
-### Week 6: Graphing, Style, Program Design
+[Assignment 5](/assignments/r-3)
 
-#### Reading:
+### Week 7: Graphs & Statistics
 
-* [Graphs](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb)
+### Reading
 
-[Assignment 6]({{ site.baseurl }}/assignments/programming-6)
+* [Graphics with ggplot2 using qplot](http://statmethods.net/advgraphs/ggplot2.html)
+* [t-tests](http://statmethods.net/stats/ttest.html)
+* [ANOVA](http://statmethods.net/stats/anova.html)
+* [Regression](http://statmethods.net/stats/regression.html)
 
-### Week 7: Statistics
+[Assignment 6](/assignments/r-4)
 
-#### Reading:
+### Week 8: Loops
 
-* [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
+### Reading
 
-[Assignment 7]({{ site.baseurl }}/assignments/programming-7)
+* [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R.html)
+
+[Assignment 7](/assignments/r-5)
+
+### Week 9: Conditionals
+
+### Reading
+
+* [Software Carpentry lesson on making choices](http://swcarpentry.github.io/r-novice-inflammation/04-cond.html)
+
+[Assignment 8](/assignments/r-6)
+
+### Week 10: Combining R and SQL databases
+
+### Reading
+
+* [SQL databases and R](http://datacarpentry.github.io/R-ecology/05-r-and-sql)
+
+[Assignment 9](/assignments/r-7)
+
+### Week 11: Version Control
+
+### Reading
+
+* [Git basics in RStudio](http://nicercode.github.io/git/rstudio.html)
+
+[Assignment 10](/assignments/git-1)
+
+### Week 12: Putting it all together
+
+#### Topics
+
+* Style
+* Program design
+* Debugging
+
+#### Reading
+
+* [Hadley Wickham's R style guide](http://r-pkgs.had.co.nz/style.html)
+
+[Assignment 11](/assignments/capstone)
+
+### Weeks 13-16: Projects
