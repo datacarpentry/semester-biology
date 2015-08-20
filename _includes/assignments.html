@@ -1,0 +1,11 @@
+<ol>
+{% for assignment in page.assignments %}
+  {% for otherpage in site.pages %}
+    {% if assignment == otherpage.title %}
+      <li>
+        <a href="{{ otherpage.url | prepend: site.baseurl }}">{{ otherpage.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+{% endfor %}	
+</ol>
