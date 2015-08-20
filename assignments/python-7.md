@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Assignment 7
+title: Python Assignment 7
 language: Python
 exercises: ['Statistics 1', 'Statistics 2', 'Statistics 3']
 ---
