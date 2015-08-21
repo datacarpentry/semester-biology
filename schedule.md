@@ -55,13 +55,11 @@ title: Schedule for Programming For Biologists
 * Importing data
 * Basic subsetting
 * Readable code
-  * Functions
 
 #### Reading
 
 * [Starting with data](http://datacarpentry.github.io/R-ecology/02-starting-with-data.html)
 * [Introduction to data frames](http://datacarpentry.github.io/R-ecology/03-data-frames.html)
-* [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R.html)
 <!--TODO: Add reading on subsetting data frames -->
 
 [Assignment 4](/assignments/r-2)
@@ -91,15 +89,26 @@ title: Schedule for Programming For Biologists
 
 [Assignment 6](/assignments/r-4)
 
-### Week 8: Loops
+### Week 8: Programming Fundamentals 1
+
+#### Topics
+
+* Functions
+* Loops
 
 ### Reading
 
+* [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R.html)
 * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R.html)
 
 [Assignment 7](/assignments/r-5)
 
-### Week 9: Conditionals
+### Week 9: Programming Fundamentals 2
+
+#### Topics
+
+* Conditionals
+* Debugging
 
 ### Reading
 
@@ -129,7 +138,6 @@ title: Schedule for Programming For Biologists
 
 * Style
 * Program design
-* Debugging
 
 #### Reading
 
