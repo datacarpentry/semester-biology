@@ -1,9 +1,0 @@
----
-layout: page
-title: R Assignment 3
-subtitle: Working with Tables
-language: R
-exercises: ['Modules', 'Scientific 0', 'Statistics 2']
----
-
-{% include assignment.html %}
