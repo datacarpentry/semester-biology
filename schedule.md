@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Schedule for Programming For Biologists
+title: Schedule for Data Carpentry for Biologists
 ---
 
 ### Week 1: Introduction, Creating Databases, Adding Data
