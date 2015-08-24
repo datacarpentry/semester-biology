@@ -7,11 +7,23 @@ title: Schedule for Programming For Biologists
 
 #### Material:
 
-* [Introduction](http://software-carpentry.org/v4/databases/intro.html)
+* [Video Introduction](http://software-carpentry.org/v4/databases/intro.html)
+*[Introduction](https://github.com/datacarpentry/sql-ecology/blob/gh-pages/00-sql-introduction.m)
 
 ### Week 2: Selecting, Filtering, Sorting, and Aggregating Data
 
 #### Material:
+
+The reading and videos cover the same material. You can either choose one or
+have a look at both.
+
+Reading:
+
+* [Basic Queries](http://datacarpentry.github.io/sql-ecology/01-sql-basic-queries.html)
+* [Aggregation](http://datacarpentry.github.io/sql-ecology/02-sql-aggregation.html)
+
+Videos:
+
 * [Selecting](http://software-carpentry.org/v4/access/select.html)
 * [Filtering](http://software-carpentry.org/v4/access/filter.html)
 * [Sorting](http://software-carpentry.org/v4/access/sort.html)
@@ -25,7 +37,8 @@ title: Schedule for Programming For Biologists
 #### Material:
 
 * [Tidy Data, Sections 1-3](http://vita.had.co.nz/papers/tidy-data.pdf)
-* [Joins](http://software-carpentry.org/v4/access/join.html)
+* [Joins](http://software-carpentry.org/v4/access/join.html) [Video]
+* [Joins](http://datacarpentry.github.io/sql-ecology/03-sql-joins-aliases.html) [Reading]
 * [Nested Queries](http://software-carpentry.org/v4/access/nested.html)
 
 [Assignment 2](/assignments/sql-2)
