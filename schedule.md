@@ -8,7 +8,7 @@ title: Schedule for Programming For Biologists
 #### Material:
 
 * [Video Introduction](http://software-carpentry.org/v4/databases/intro.html)
-*[Introduction](https://github.com/datacarpentry/sql-ecology/blob/gh-pages/00-sql-introduction.m)
+* [Introduction](https://github.com/datacarpentry/sql-ecology/blob/gh-pages/00-sql-introduction.m)
 
 ### Week 2: Selecting, Filtering, Sorting, and Aggregating Data
 
@@ -30,7 +30,7 @@ Videos:
 * [Aggregation](http://software-carpentry.org/v4/access/aggregation.html)
 * [Nulls](http://software-carpentry.org/v4/access/null.html)
 
-[Assignment 1](/assignments/sql-1)
+[Assignment 1]({{ site.baseurl }}/assignments/sql-1)
 
 ### Week 3: Tidy Data, Joins, Nested Queries
 
@@ -41,7 +41,7 @@ Videos:
 * [Joins](http://datacarpentry.github.io/sql-ecology/03-sql-joins-aliases.html) [Reading]
 * [Nested Queries](http://software-carpentry.org/v4/access/nested.html)
 
-[Assignment 2](/assignments/sql-2)
+[Assignment 2]({{ site.baseurl }}/assignments/sql-2)
 
 ### Week 4: Introduction to R and RStudio
 
@@ -58,7 +58,7 @@ Videos:
 * [Getting Started](http://datacarpentry.github.io/R-ecology/00-before-we-start.html)
 * [Introduction to R](http://datacarpentry.github.io/R-ecology/01-intro-to-R.html)
 
-[Assignment 3](/assignments/r-1)
+[Assignment 3]({{ site.baseurl }}/assignments/r-1)
 
 ### Week 5: Working with Data
 
@@ -75,7 +75,7 @@ Videos:
 * [Introduction to data frames](http://datacarpentry.github.io/R-ecology/03-data-frames.html)
 <!--TODO: Add reading on subsetting data frames -->
 
-[Assignment 4](/assignments/r-2)
+[Assignment 4]({{ site.baseurl }}/assignments/r-2)
 
 ### Week 6: Working with Tabular Data & Problem decomposition
 
@@ -89,7 +89,7 @@ Videos:
 * [Aggregating and analyzing data with `dplyr`](http://datacarpentry.github.io/R-ecology/04-dplyr.html)
 * *optional* [Introduction to `dplyr` vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 
-[Assignment 5](/assignments/r-3)
+[Assignment 5]({{ site.baseurl }}/assignments/r-3)
 
 ### Week 7: Graphs & Statistics
 
@@ -100,7 +100,7 @@ Videos:
 * [ANOVA](http://statmethods.net/stats/anova.html)
 * [Regression](http://statmethods.net/stats/regression.html)
 
-[Assignment 6](/assignments/r-4)
+[Assignment 6]({{ site.baseurl }}/assignments/r-4)
 
 ### Week 8: Programming Fundamentals 1
 
@@ -114,7 +114,7 @@ Videos:
 * [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R.html)
 * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R.html)
 
-[Assignment 7](/assignments/r-5)
+[Assignment 7]({{ site.baseurl }}/assignments/r-5)
 
 ### Week 9: Programming Fundamentals 2
 
@@ -127,7 +127,7 @@ Videos:
 
 * [Software Carpentry lesson on making choices](http://swcarpentry.github.io/r-novice-inflammation/04-cond.html)
 
-[Assignment 8](/assignments/r-6)
+[Assignment 8]({{ site.baseurl }}/assignments/r-6)
 
 ### Week 10: Combining R and SQL databases
 
@@ -135,7 +135,7 @@ Videos:
 
 * [SQL databases and R](http://datacarpentry.github.io/R-ecology/05-r-and-sql)
 
-[Assignment 9](/assignments/r-7)
+[Assignment 9]({{ site.baseurl }}/assignments/r-7)
 
 ### Week 11: Version Control
 
@@ -143,7 +143,7 @@ Videos:
 
 * [Git basics in RStudio](http://nicercode.github.io/git/rstudio.html)
 
-[Assignment 10](/assignments/git-1)
+[Assignment 10]({{ site.baseurl }}/assignments/git-1)
 
 ### Week 12: Putting it all together
 
@@ -156,6 +156,6 @@ Videos:
 
 * [Hadley Wickham's R style guide](http://r-pkgs.had.co.nz/style.html)
 
-[Assignment 11](/assignments/capstone)
+[Assignment 11]({{ site.baseurl }}/assignments/capstone)
 
 ### Weeks 13-16: Projects
