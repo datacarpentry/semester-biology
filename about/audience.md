@@ -33,21 +33,6 @@ poorly structured spreadsheets that her lab uses is awful), and doing
 all of the analysis that she needs to conduct for her dissertation seems
 like it would be a lot easier if it could be automated.
 
-**Jason:** A graduate student or postdoc with a self-taught programming
-background. A lot of his research involves programming and he advises
-all of his lab mates on computer related things, but he'd like to know
-more about how to do things well. Besides, having an opportunity to
-interact with other folks who really value computers is really
-appealing.
-
-**Lisa:** A graduate student or postdoc who took a couple of computer
-science classes in college. She has done some object oriented
-programming and published a couple of programs that people use, but
-she's starting to realize that compared to real professionals she has no
-idea what she's doing. She doesn't use tools like version control,
-automated testing, and debuggers. She realizes that now is the time to
-learn these skills before she is too busy as a new faculty member.
-
 **Paul:** A faculty member with little computer background who realizes
 that computing has become so central to his area of research that he
 needs to at least have a rough idea of how his students are work the
