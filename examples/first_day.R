@@ -2,7 +2,6 @@
 
 library(ggplot2)
 library(dplyr)
-library(broom)
 
 url = "http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
 data = read.csv(url, sep = "\t")
