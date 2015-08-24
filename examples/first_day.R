@@ -10,8 +10,8 @@ qplot(x = mass.g., y = litter.size, data = data, log = "xy")
 
 data_by_family <- group_by(data, family)
 n_by_family <- summarize(data_by_family, n_species = length(species))
-high_n_families <- filter(n_by_family, n_species > 40)
+high_n_families <- filter(n_by_family, n_species > 25)
 plot_data <- semi_join(data_by_family, high_n_families)
 
-qplot(x = mass.g., y = litter.size, data = plot_data, log = "xy", facets = family ~ .,
-      geom = c("point", "smooth"), method = "lm")
+qplot(x = mass.g., y = litter.size, data = plot_data, log = "xy",
+      geom = c("point", "smooth"), method = "lm") + facet_wrap(~ family, ncol = 3)
