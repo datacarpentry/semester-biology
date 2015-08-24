@@ -1,19 +1,19 @@
 ---
 layout: exercise 
 title: Strings 8
-subtitle: Fast Forward to Functions and `if` statements
+subtitle: Functions and `if` statements
 language: R
 ---
 
 Write a function that concatenates and prints:
 
-The ultimate answer to the ultimate question of life, the universe, and
-everything is: XXX.
+```The ultimate answer to the ultimate question of life, the universe, and
+everything is: XXX.```
 
 Where XXX is either a string or a number that is passed to the function
 as a parameter. Use this function to print out the answer if the input parameter 
-is 42, but **don't actually do the printing from inside the function**(think
-about why printing from outside the function might generally be more useful).
+is 42, but **don't actually do the printing from inside the function** (*think
+about why printing from outside the function might generally be more useful*).
 
 *If you don't understand why this question is fun/funny you can Google
 it or, better yet, actually read Hitchhiker's Guide to the Galaxy, which
