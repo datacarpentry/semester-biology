@@ -21,7 +21,7 @@ Phone: 352-294-2081
 
 **Note: class is in different locations depending on the day of the week**
 
-Tuesdays, 116 Matherly, 11:45-12:35, 
+Tuesdays, 1142 McCarty A, 11:45-12:35
 Fridays, 219 Newins-Ziegler Hall, 11:45-1:40
 
 
