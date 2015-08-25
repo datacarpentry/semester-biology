@@ -72,7 +72,8 @@ and what the file name is. So if you created a new exercise in the `exercises`
 folder called `my_awesome_exercise.md` it would be located at:
 
 Locally: `http://localhost:4000/exercises/my_awesome_exercise`
-After pushing to GitHub: `https://yourusername.github.io/datacarp-semester-biology/exercises/my_awesome_exercise`
+
+After pushing to GitHub: `https://yourusername.github.io/semester-biology/exercises/my_awesome_exercise`
 
 
 ## Acknowledgements
