@@ -9,6 +9,7 @@ title: Data Carpentry for Biologists Schedule
 
 * [Video Introduction](http://software-carpentry.org/v4/databases/intro.html)
 * [Introduction](https://github.com/datacarpentry/sql-ecology/blob/gh-pages/00-sql-introduction.m)
+* [Quality Assurance & Control](http://ethanwhite.github.io/spreadsheet-ecology-lesson/04-quality-control.html)
 
 ### Week 2: Selecting, Filtering, Sorting, and Aggregating Data
 
