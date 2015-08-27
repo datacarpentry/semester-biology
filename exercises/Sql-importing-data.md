@@ -12,7 +12,7 @@ This example will walk you through how to get data that already exists
 into SQLite.
 
 1. Download the main table for the full [Portal LTREB mammal survey
-database](http://esapubs.org/archive/ecol/E090/118/Portal_rodents_19772002.csv) from Ecological Archives. *It's kind of large so it might take a few seconds*. This database is published as a Data Paper on [Ecological Archives](http://esapubs.org/archive/default.htm), which is generally a great place to look for ecology data.
+database](http://files.figshare.com/1919744/surveys.csv) from Ecological Archives. *It's kind of large so it might take a few seconds*. This database is published as a Data Paper on [Ecological Archives](http://esapubs.org/archive/default.htm), which is generally a great place to look for ecology data.
 2. Create a new database by clicking on `New Database` in the `Database` drop down menu. Select a file name, like `portal_mammals.sqlite`, and location.
 ​
 3. Click on the `Import` icon.
@@ -29,21 +29,10 @@ select `First row contains column names`.
 8. Identify the type for each field, using the `Data Type` drop-down menus. If
 it is not obvious if the data type is an `INTEGER` or `VARCHAR` for each
 variable, check the [metadata](http://esapubs.org/archive/ecol/E090/118/
-Portal_rodent_metadata.htm).
-​
+Portal_rodent_metadata.htm). **Important: if you specify the wrong data type it
+can cause some data to not be imported and/or prevent you from doing some kinds
+of data manipulations.** ​
 9. Select `recordID` as the `Primary Key` and click `OK`.
 10. Click `OK` when it asks if you are sure you want to import the data.
-
-
-There are a few alternate methods to the previous step-wise approach.
-
-- You can create the SQLite version of this database using the
-[EcoData Retriever](http://ecodataretriever.org/) by first [installing the
-software](http://ecodataretriever.org/download.html) and then running:    
-```
-retriever install sqlite PortalMammals
-``` 
-from the command line. 
-- Or you can download an already assembled [copy of the database]({{ site.baseurl }}/data/portal_mammals.sqlite).
-
-*We encourage you to familiarize yourself with multiple methods to be prepared for the various ways data can be available to you for future projects.*
+11. Now import the [plots](http://files.figshare.com/1919738/plots.csv), and
+    [species](http://files.figshare.com/1919741/species.csv) tables.
