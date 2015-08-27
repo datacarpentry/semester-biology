@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Grouping
-subtitle: Grouping Review
+subtitle: GROUP BY
 language: SQL
 ---
 
