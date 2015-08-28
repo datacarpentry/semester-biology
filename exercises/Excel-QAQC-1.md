@@ -17,9 +17,9 @@ from getting entered:
 2. Site should be one of the following `A1`, `A2`, `B1`, `B2`.
 3. Species should be one of the following `Dipodomys spectabilis`, `Dipodomys
    ordii`, `Dipodomys merriami`.
-4. Mass should be a decimal greater than zero but less than 500 since mass is
-   measured in grams in this study and nothing bigger than half a kilogram will
-   possibly fit into your
+4. Mass should be a decimal greater than or equal to zero but less than or equal
+   to 500 since mass is measured in grams in this study and nothing bigger than
+   half a kilogram will possibly fit into your
    [Sherman traps](https://en.wikipedia.org/wiki/Sherman_trap). Change the error
    message on this validation criteria to explain why data is invalid and what
    the valid values are.
