@@ -1,11 +1,31 @@
 # Introduction to databases
 
-## Database management systems
+**If you haven't already install Firefox**
+
+**Walk through installing SQLite Manager add-on**
+
+## Why use a database management system
 
 * Designed for storing, managing, and retrieving information
+* Lots of existing data is stored in them
+* Fast for large amounts of data
+* Out of memory processing for really large data
+* Improve quality control of data entry (type constraints and use of forms in
+  Access, Filemaker, etc.)
+* Can handle a spatially explicit queries (GIS)
+* The concepts of relational database querying are core to understanding how to
+  do similar things using programming languages such as R or Python.
+
+## Database management systems
+
 * We will be working with Relational Databases
-    * We will use Microsoft Access
-    * But there are lots of alternatives
+* We will use SQLite
+    * Simple, almost no work to set up, single file
+	* But there are lots of alternatives
+	* Access - commonly used, GUI
+	* PostgreSQL - fast/powerful, lots of users
+
+**Open SQLite w/Portal DB**
 
 ## Key features of database management systems
 
@@ -16,6 +36,8 @@
 
 ## Relational databases
 
+**Demo in SQLite**
+
 * Data is stored in tables
     * One table per type of data
 	* Tables can be linked together to combine information
@@ -23,32 +45,6 @@
     * A single observation or data point
 * Each column contains a single attribute
     * A single type of information
-
-### Example
-
-![Basic table structure](databases_basic_table_structure.png)
-
-## Multiple tables
-
-* It is often not efficient to include all information of interest in a single
-table.
-
-![Table with redundant information](databases_redundant_table.png)
-
-* To solve these problems we store data in multiple tables
-* And connect the data in different tables using Joins or Relationships (hence
-  "relational" database)
-* Each table contains a single data type
-
-![Restructuring a redundant table into two](databases_redundant_table_restructure.png)
-
-## Alternative structures
-
-Cross-tablulated data
-
-![Cross-tabulated data table](databases_crosstab_table.png)
-
-![Cross-tab table restructure](databases_crosstab_restructured.png)
 
 ## Types
 
