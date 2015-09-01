@@ -13,9 +13,9 @@ data that she needs. She wants only the data for her species of
 interest, when each individual was trapped, and what sex it was. She
 doesn't care about where it was trapped within the site because she is
 going to analyze the entire site as a whole and she doesn't care about
-the size of the individuals. Obviously she doesn't need the species
+the size of the individuals. She doesn't need the species
 codes because you're only providing her with the data for one species,
-and besides since she isn't actually looking at the database itself the
+and since she isn't looking at the database itself the
 two character abbreviation would probably be confusing. Save this query
 as a view with the name `Spectabilis Population Data`.
 
