@@ -11,8 +11,8 @@ available data, especially if it's more than a few dozen lines long.
 This example will walk you through how to get data that already exists
 into SQLite.
 
-1. Download the main table for the full [Portal LTREB mammal survey
-database](http://files.figshare.com/1919744/surveys.csv) from Ecological Archives. *It's kind of large so it might take a few seconds*. This database is published as a Data Paper on [Ecological Archives](http://esapubs.org/archive/default.htm), which is generally a great place to look for ecology data.
+1. Download the main table for the [Portal LTREB mammal survey
+database](http://files.figshare.com/1919744/surveys.csv). *It's kind of large so it might take a few seconds*. This database is published as a Data Paper on [Ecological Archives](http://esapubs.org/archive/default.htm), which is generally a great place to look for ecology data.
 2. Create a new database by clicking on `New Database` in the `Database` drop down menu. Select a file name, like `portal_mammals.sqlite`, and location.
 ​
 3. Click on the `Import` icon.
@@ -28,8 +28,7 @@ select `First row contains column names`.
 7. Name the table that you are importing into `Surveys`.
 8. Identify the type for each field, using the `Data Type` drop-down menus. If
 it is not obvious if the data type is an `INTEGER` or `VARCHAR` for each
-variable, check the [metadata](http://esapubs.org/archive/ecol/E090/118/
-Portal_rodent_metadata.htm). **Important: if you specify the wrong data type it
+variable, check the [metadata](http://esapubs.org/archive/ecol/E090/118/metadata.htm). **Important: if you specify the wrong data type it
 can cause some data to not be imported and/or prevent you from doing some kinds
 of data manipulations.** ​
 9. Select `recordID` as the `Primary Key` and click `OK`.
