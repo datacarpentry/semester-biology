@@ -12,6 +12,6 @@ for the date `10`/`1`/`2015`:
 landscape isn't exactly green, but there is a decent amount of plant
 activity and there should be enough food for the rodents to the winter"`
 
-Commit this change to the database. As soon as you've committed it you realized
-that this was the update for October 2014, not October 2015. Update the record
-so that it contains the appropriate value.
+As soon as you've added it you realized that this was the update for October 
+2014, not October 2015. Update the record so that it contains the appropriate 
+value.
