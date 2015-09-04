@@ -1,0 +1,56 @@
+"record_id","new_code","oldcode","scientificname","taxa","commonname","unknown","rodent","shrubland_affiliated"
+35550,"AB","BS, BT","Amphispiza bilineata","Bird","black-throated sparrow",0,0,0
+35551,"AH","AH","Ammospermophilus harrisi","Rodent-not censused","",0,0,0
+35552,"AS","AS, GS","Ammodramus savannarum","Bird","",0,0,0
+35553,"BA","BA","Baiomys taylori","Rodent","Baiomys taylori",0,1,1
+35554,"CB","CW","Campylorhynchus brunneicapillus","Bird","cactus wren",0,0,0
+35555,"CM","LB","Calamospiza melanocorys","Bird","lark bunting",0,0,0
+35556,"CQ","SQ","Callipepla squamata","Bird","scaled quail",0,0,0
+35557,"CS","CS","Crotalus scutalatus","Reptile","snake",0,0,0
+35558,"CT","CT","Cnemidophorus tigris","Reptile","lizard",0,0,0
+35559,"CU","CU","Cnemidophorus uniparens","Reptile","lizard",0,0,0
+35560,"CV","CV","Crotalus viridis","Reptile","rattle snake",0,0,0
+35561,"DM","DM","Dipodomys merriami","Rodent","",0,1,0
+35562,"DO","DO, D0","Dipodomys ordii","Rodent","",0,1,0
+35563,"DS","DS","Dipodomys spectabilis","Rodent","",0,1,0
+35564,"DX","D, D?, DU, DZ, UD","Dipodomys sp.","Rodent","Dipo spp.",1,1,0
+35565,"EO","","Eumeces obsoletus","Reptile","great plains skink",0,0,0
+35566,"GS","GS","Gambelia silus","Reptile","lizard",0,0,0
+35567,"NA","NA","Neotoma albigula","Rodent","",0,1,0
+35568,"NX","N","Neotoma sp.","Rodent","Neotoma sp? or ?",1,1,0
+35569,"OL","OL","Onychomys leucogaster","Rodent","",0,1,0
+35570,"OT","OT","Onychomys torridus","Rodent","",0,1,0
+35571,"OX","O, OZ","Onychomys sp.","Rodent","Onychomys spp.",1,1,0
+35572,"PB","PB","Chaetodipus baileyi","Rodent","Chaetodipus baileyi",0,1,1
+35573,"PC","GT, US","Pipilo chlorurus","Bird","green towhee",0,0,0
+35574,"PE","PE","Peromyscus eremicus","Rodent","",0,1,1
+35575,"PF","PF","Perognathus flavus","Rodent","",0,1,1
+35576,"PG","VS","Pooecetes gramineus","Bird","versper sparrow",0,0,0
+35577,"PH","PH","Perognathus hispidus","Rodent","Chaetodipus hispidus",0,1,1
+35578,"PI","CI, PI","Chaetodipus intermedius","Rodent","Chaetodipus intermedius",0,1,1
+35579,"PL","PL","Peromyscus leucopus","Rodent","",0,1,1
+35580,"PM","PM","Peromyscus maniculatus","Rodent","",0,1,1
+35581,"PP","PP, CP","Chaetodipus penicillatus","Rodent","Chaetodipus penicillatus",0,1,1
+35582,"PU","BR, TB","Pipilo fuscus","Bird","brown towhee",0,0,0
+35583,"PX","PX, UP","Chaetodipus sp.","Rodent","Perognathus sp.",1,1,1
+35584,"RF","RF","Reithrodontomys fulvescens","Rodent","",0,1,1
+35585,"RM","RM","Reithrodontomys megalotis","Rodent","",0,1,1
+35586,"RO","","Reithrodontomys montanus","Rodent","",0,1,1
+35587,"RX","RE, RX","Reithrodontomys sp.","Rodent","",1,1,1
+35588,"SA","SA","Sylvilagus audubonii","Rabbit","",0,0,0
+35589,"SB","BS","Spizella breweri","Bird","brewer sparrow",0,0,0
+35590,"SC","SC","Sceloporus clarki","Reptile","",0,0,0
+35591,"SF","SF","Sigmodon fulviventer","Rodent","",0,1,0
+35592,"SH","SH","Sigmodon hispidus","Rodent","",0,1,0
+35593,"SO","SO, S0","Sigmodon ochrognathus","Rodent","",0,1,0
+35594,"SS","SS","Spermophilus spilosoma","Rodent-not censused","",0,0,0
+35595,"ST","ST","Spermophilus tereticaudus","Rodent-not censused","",0,0,0
+35596,"SU","SU","Sceloporus undulatus","Reptile","",0,0,0
+35597,"SX","","Sigmodon sp.","Rodent","cotton rat",1,1,0
+35598,"UL","UL, LI, LS","Lizard sp.","Reptile","unidentified lizard",1,0,0
+35599,"UP","T, TO","Pipilo sp.","Bird","towhee",1,0,0
+35600,"UR","P, QQ, UR","Rodent sp.","Rodent","unidentified rodent",1,1,0
+35601,"US","","Sparrow sp.","Bird","unidentified sparrow",1,0,0
+35602,"XX","XX","Zero Trapping Success","","",1,0,0
+35603,"ZL","WC","Zonotrichia leucophrys","Bird","white crowned sparrow",0,0,0
+35604,"ZM","MD, M","Zenaida macroura","Bird","morning dove",0,0,0

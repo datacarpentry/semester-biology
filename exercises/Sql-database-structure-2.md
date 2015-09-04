@@ -1,16 +1,15 @@
 ---
 layout: exercise
 title: Database Structure 2
-subtitle: Improve the Database Structure Pt 2
+subtitle: Separate Data from Overfilled Cells
 language: SQL
 ---
 
-*Before starting this problem make sure that you have a backup of your database 
-(or that it has recently been committed to version control) so that you can 
-revert the changes if necessary. In fact, when developing the code it's probably 
-best to work on a copy of the database that is specifically just for 
-development. Once it's working then apply it to your actual database. Always, 
-always, backup your databases before messing with them in this manner. 
+The original Portal `Species` table is also messy. [Download it](({{ site.baseurl }}/data/Portal_species_original.csv)
+and import it into the `portal_mammals_original.sqlite` database. Again,
+ 
+**Before starting this problem make sure that you have a backup of your database** In general, when developing a database it's probably 
+best to work on a copy that is specifically just for development. Once it's working then apply it to your actual database. *Always, always, backup your databases before messing with them in this manner. 
 **Seriously.***
 
 The `Species` table in the Portal database has a structural problem in that the
