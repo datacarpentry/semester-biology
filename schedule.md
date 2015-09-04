@@ -44,7 +44,7 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 * [Joins](http://datacarpentry.github.io/sql-ecology/03-sql-joins-aliases.html) [Reading]
 * [Nested Queries](http://software-carpentry.org/v4/databases/nested.html)
   [Video]
-* [Nested Queries]({{ site.baseurl }}/lectures/sql_nested_queries/)
+* [Nested Queries]({{ site.baseurl }}/lectures/sql_nested_queries/) [Reading]
 
 **[Assignment 2]({{ site.baseurl }}/assignments/sql-2)**
 
