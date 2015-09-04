@@ -25,11 +25,11 @@ Reading:
 
 Videos:
 
-* [Selecting](http://software-carpentry.org/v4/access/select.html)
-* [Filtering](http://software-carpentry.org/v4/access/filter.html)
-* [Sorting](http://software-carpentry.org/v4/access/sort.html)
-* [Aggregation](http://software-carpentry.org/v4/access/aggregation.html)
-* [Nulls](http://software-carpentry.org/v4/access/null.html)
+* [Selecting](http://software-carpentry.org/v4/databases/select.html)
+* [Filtering](http://software-carpentry.org/v4/databases/filter.html)
+* [Sorting](http://software-carpentry.org/v4/databases/sort.html)
+* [Aggregation](http://software-carpentry.org/v4/databases/aggregation.html)
+* [Nulls](http://software-carpentry.org/v4/databases/null.html)
 
 **[Assignment 1]({{ site.baseurl }}/assignments/sql-1)**
 
@@ -37,10 +37,14 @@ Videos:
 
 #### Material:
 
+For Joins and Nested Queries  you can watch the video or do the reading, you don't need both.
+
 * [Tidy Data, Sections 1-3](http://vita.had.co.nz/papers/tidy-data.pdf)
-* [Joins](http://software-carpentry.org/v4/access/join.html) [Video]
+* [Joins](http://software-carpentry.org/v4/databases/join.html) [Video]
 * [Joins](http://datacarpentry.github.io/sql-ecology/03-sql-joins-aliases.html) [Reading]
-* [Nested Queries](http://software-carpentry.org/v4/access/nested.html)
+* [Nested Queries](http://software-carpentry.org/v4/databases/nested.html)
+  [Video]
+* [Nested Queries]({{ site.baseurl }}/lectures/sql_nested_queries/)
 
 **[Assignment 2]({{ site.baseurl }}/assignments/sql-2)**
 
