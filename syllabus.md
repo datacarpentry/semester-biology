@@ -27,7 +27,9 @@ Fridays, 219 Newins-Ziegler Hall, 11:45-1:40
 
 ### Office Hours
 
-Times: TBD or by appointment.
+Times: Thursdays 1-2 pm, or by appointment.
+
+Location: Room 1 in Building 150 (just north of Newins-Zeigler)
 
 *Note: my schedule gets very busy during the semester so please try to schedule
 appointments as far in advance as possible. In general it will be very difficult
