@@ -1,4 +1,4 @@
-# Data Carpentry for Biologists (semester long course)
+# Data Carpentry for Biologists (semester)
 
 This is forkable set of teaching materials for teaching biologists how to work
 with data through programming, database management and computing more generally.
@@ -12,6 +12,12 @@ reading and viewing videos before coming to class and then spending the bulk of
 class time working on exercises with the teacher answering questions and demoing
 the concepts.
 
+**Under active development:** This repository is currently (Fall 2015) being
+  used by @ethanwhite to teach a version of this course at the University of
+  Florida. At the conclusion of that course some materials that are specific to
+  a given course (e.g., the syllabus) will be generalized to templates instead
+  of being specific to the current course. Contributions to all other aspects of
+  the course/site are possible and encouraged.
 
 ## Where is everything
 
