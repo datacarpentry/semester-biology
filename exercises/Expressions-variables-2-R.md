@@ -9,8 +9,8 @@ Here is a small program that converts a mass in kilograms to a mass in grams and
 then prints out the resulting value.
 
 ```
-mass_kg = 2.62
-mass_g = mass_kg * 1000
+mass_kg <- 2.62
+mass_g <- mass_kg * 1000
 print(mass_g)
 ```
 

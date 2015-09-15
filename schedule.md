@@ -64,7 +64,7 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 * [Getting Started](http://datacarpentry.github.io/R-ecology/00-before-we-start.html)
 * [Introduction to R](http://datacarpentry.github.io/R-ecology/01-intro-to-R.html)
 
-**Assignment 3**
+**[Assignment 3]({{ site.baseurl }}/assignments/r-1)**
 
 ### Week 5: Working with Data
 
