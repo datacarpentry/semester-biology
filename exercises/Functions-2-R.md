@@ -22,7 +22,7 @@ length in meters for a particular set of parameter values, those for *Theropoda*
 
 ```
 get_mass_from_length_theropoda <- function(length){
-  mass = 0.73 * length ** 3.63
+  mass <- 0.73 * length ** 3.63
   return (mass)
 }
 ```
