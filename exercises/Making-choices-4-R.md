@@ -17,8 +17,8 @@ Kilocalorie is 4186.8 Joules. An example of a call to this function would look
 like:
 
 ```
-energy_in_cal = 200
-energy_in_j = convert_energy_units(energy_in_cal, "CAL", "J")
+energy_in_cal <- 200
+energy_in_j <- convert_energy_units(energy_in_cal, "CAL", "J")
 ```
 
 Make this function more efficient by linking `if else` statements. If either the 
