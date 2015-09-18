@@ -16,9 +16,11 @@ Choose your `100 Largest Individuals` view and export it to .CSV using the
 `Export Wizard` should give us what we need, so click `OK` and save the file as 
 `100-Largest-Individuals.csv` in your working directory.
 
-Using your R console:
-- Import the `100-Largest-Individuals.csv` file. 
-- Use the `unique()` function to determine how many species and years are 
-represented in the 100 largest individuals sampled.
-- Use the `min()` and `max()` functions to check how much smaller (*in percent*) 
-the 100th largest individual is than the largest.  
+Import the `100-Largest-Individuals.csv` file and complete the following tasks:
+
+1. Use the `unique()` function to determine how many species are represented in 
+the 100 largest individuals sampled.
+2. Use the `unique()` function to determine how many years are represented in 
+the 100 largest individuals sampled.
+3. Use the `min()` and `max()` functions to check how much smaller (*as a 
+percent*) the 100th largest individual is than the largest.
