@@ -5,7 +5,7 @@ language: SQL
 exercises: ['QAQC 1', 'Importing Data', 'Creating Tables', 'Adding Records', 'Updating Records', 'Basic Queries', 'Filtering', 'Sorting', 'Distinct', 'Missing Data', 'Grouping', 'Aggregation 1', 'Aggregation 2']
 ---
 
-***- Learning Objectives***
+####Learning Objectives
 
 > Following this assignment students should be able to:
 
@@ -14,6 +14,6 @@ exercises: ['QAQC 1', 'Importing Data', 'Creating Tables', 'Adding Records', 'Up
 > - understand the basic query structure of SQL
 > - execute SQL commands in SQLite to select, sort, group, and aggregate data
 
-***- Exercises***
+####Exercises
 
 {% include assignment.html %}
