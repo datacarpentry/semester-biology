@@ -139,7 +139,7 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 
 ### Reading
 
-* [SQL databases and R](http://datacarpentry.github.io/R-ecology/05-r-and-sql)
+* [SQL databases and R](http://www.datacarpentry.org/R-ecology/06-r-and-sql.html)
 
 **Assignment 9**
 
