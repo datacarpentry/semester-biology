@@ -18,7 +18,7 @@ you want information about. E.g.,`help(round)`.
    decimal places in this case if you don't want to, because `round` will
    default to using 0 if the second argument is not provided. Look at
    `help(round)` or `?round` to see how this is indicated.
-4. Take the square root of 2.6, assign the value to a variable. Then round the
+4. Assign the value of the square root of 2.6 to a variable. Then round the
    variable you've created to 2 decimal places and assign it to another
    variable. Print out the rounded value.
 5. Do the same thing as in problem 4, but instead of creating the intermediate
