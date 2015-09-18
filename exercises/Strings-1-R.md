@@ -13,5 +13,5 @@ What's up with scientists using all of this snooty latin?
 3. Print the following with no quotes and an extra blank line (?cat):
 Darwin's "On the origin of species" is a seminal work in biology.
 
-4. Set x = 3, then paste in the appropriate location of the statement:
+4. Assign x <- 3, then paste in the appropriate location of the statement:
 Then shalt thou count to x, no more, no less.

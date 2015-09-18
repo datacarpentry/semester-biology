@@ -18,9 +18,9 @@ if the following pairs of points are near or not and print out the answers.
 near <- function(lat1, long1, lat2, long2){
     # Check if two geographic points are near each other 
     if ((abs(lat1 - lat2) < 1) & (_________){
-        near = TRUE
+        near <- TRUE
     } else {
-        near = _________
+        near <- _________
     }
     return(near)
 }

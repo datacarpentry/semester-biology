@@ -10,7 +10,7 @@ growth, which posits that some limit will eventually stop a population
 from increasing in size. The simplest form of this type of growth is
 logistic growth and takes the following form:
 
-`N_tplus1 = N_t + r * N_t * ((K - N_t) / K)`
+`N_tplus1 <- N_t + r * N_t * ((K - N_t) / K)`
 
 where `N_t` is the abundance at time `t`, `N_tplus1` is the
 abundance at time `t+1`, `r` is the maximum per capita reproductive
