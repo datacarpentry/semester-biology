@@ -13,8 +13,8 @@ Connect to your `portal_mammals.sqlite` database using the SQLite Manager.
 Choose your `100 Largest Individuals` view and export it to .CSV using the 
 `Export Wizard`. You may need to initiate the `Export Wizard` by choosing 
 `Export View` from the `View` dropdown menu. The defaults provided in the 
-`Export Wizard` should give us what we need, so click `OK` and save the file as 
-`100-Largest-Individuals.csv` in your working directory.
+`Export Wizard` should give you what you need, so click `OK` and save the file 
+as `100-Largest-Individuals.csv` in your working directory.
 
 Import the `100-Largest-Individuals.csv` file and complete the following tasks:
 
