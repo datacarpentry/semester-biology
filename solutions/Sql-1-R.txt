@@ -1,0 +1,8 @@
+  AVG(hindfoot_length) AVG(weight)
+1             49.94887    120.1305
+
+  AVG(hindfoot_length) AVG(weight)
+1             50.30194     122.291
+
+  AVG(hindfoot_length) AVG(weight)
+1             49.58317    117.7495
