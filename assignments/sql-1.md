@@ -10,7 +10,7 @@ exercises: ['QAQC 1', 'Importing Data', 'Creating Tables', 'Adding Records', 'Up
 > Following this assignment students should be able to:
 
 > - implement quality control for data entry in spreadsheets
-> - import existing data and create new data in a database
+> - import and create data in an SQL database
 > - understand the basic query structure of SQL
 > - execute SQL commands to select, sort, group, and aggregate data
 
