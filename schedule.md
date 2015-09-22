@@ -83,9 +83,8 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 * [Vector Reference](http://www.r-tutor.com/r-introduction/vector)[Read links at bottom]
 * [Data Frame Reference](http://www.r-tutor.com/r-introduction/data-frame)
   [Read links at bottom]
-<!--TODO: Add reading on subsetting data frames -->
 
-**Assignment 4**
+**[Assignment 4]({{ site.baseurl }}/assignments/r-2)**
 
 ### Week 6: Working with Tabular Data & Problem decomposition
 
