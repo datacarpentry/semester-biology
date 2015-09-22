@@ -15,6 +15,14 @@ their volumes (`l * w * h`). You could do this using a spreadsheet, but the
 project that you are working on is going to be generating lots of these files so
 you decide to write a program to automate the process.
 
-Download the data (note that it has a header this time), use `read.csv()` to
-import it into R, and then calculate the volumes in a `data.frame` where the first 
-column contains the ShrubIDs and the second column contains the volume. Print out the ShrubID and volume `data.frame`.
+Download the data, use `read.csv()` to import it into R, and then print out:
+
+1. The lengths as a vector
+2. The lengths as a data frame
+3. The shrub IDs and widths as a data frame
+4. Use `subset()` to get the data records (i.e., rows) for shrubs with heights
+   greater than 3
+5. The volume of each of the shrubs as a vector
+6. The volumes of each of the shrubs in a `data.frame` where the first column
+contains the ShrubIDs and the second column contains the volume. Print out the
+ShrubID and volume `data.frame`.

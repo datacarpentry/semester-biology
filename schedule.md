@@ -64,6 +64,7 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 * [Getting Started](http://datacarpentry.github.io/R-ecology/00-before-we-start.html)
 * [Introduction to R](http://datacarpentry.github.io/R-ecology/01-intro-to-R.html)
 
+
 **[Assignment 3]({{ site.baseurl }}/assignments/r-1)**
 
 ### Week 5: Working with Data
@@ -79,6 +80,9 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 
 * [Starting with data](http://datacarpentry.github.io/R-ecology/02-starting-with-data.html)
 * [Introduction to data frames](http://datacarpentry.github.io/R-ecology/03-data-frames.html)
+* [Vector Reference](http://www.r-tutor.com/r-introduction/vector)[Read links at bottom]
+* [Data Frame Reference](http://www.r-tutor.com/r-introduction/data-frame)
+  [Read links at bottom]
 <!--TODO: Add reading on subsetting data frames -->
 
 **Assignment 4**

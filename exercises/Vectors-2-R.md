@@ -5,14 +5,18 @@ subtitle: Shrub Volume Pt 1
 language: R
 ---
 
-One of your collaborators has posted
-[a comma-delimited text file]({{ site.baseurl }}/data/shrub_dimensions.csv) 
-online for you to analyze from an urban shrub survey of yew [*Taxus baccata*](https://en.wikipedia.org/wiki/Taxus_baccata). 
-The file contains canopy dimensions of each shrub (length, width, height) and 
-they need you to determine the associated volumes, which is easy because these 
-urban shrubs are conveniently rectangular. You could calculate volume using a 
-spreadsheet, but the project that you are working on is going to be generating 
-lots of these files so you decide to write a program to automate the process.
+You have data on the length, width, and height of the yew
+[*Taxus baccata*](https://en.wikipedia.org/wiki/Taxus_baccata) stored in the
+following vectors:
 
-Download the data, using `read.csv(…, head = FALSE)` to import it into R, 
-and then calculate the volumes (`l * w * h`) in a new vector using vector algebra. There should be one value in the vector for each shrub. Print out the vector of volumes.
+```
+length <- c(2.2, 2.1, 2.7, 3.0, 3.1, 2.5, 1.9, 1.1, 3.5, 2.9)
+width <- c(1.3, 2.2, 1.5, 4.5, 3.1, 2.8, 1.8, 0.5, 2.0, 2.7)
+height <- c(9.6, 7.6, 2.2, 1.5, 4.0, 3.0, 4.5, 2.3, 7.5, 3.2)
+```
+
+Copy these vectors into an R script and then determine the following:
+
+1. The volume of each shrub (i.e., the length times the width times the height)
+2. The total volume of all of the shrubs
+3. A vector of the height of shrubs with lengths greater than 2.5
