@@ -9,7 +9,7 @@ exercises: ['Version Control 1', 'Version Control 2', 'Version Control 3', 'Vers
 
 > Following this assignment students should be able to:
 
-> - establish a GitHub local repository
+> - establish a local version control repository
 > - execute basic version control workflow
 > - restore previous versions of a file
 > - resolve merge conflicts
