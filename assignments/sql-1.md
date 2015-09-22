@@ -10,9 +10,9 @@ exercises: ['QAQC 1', 'Importing Data', 'Creating Tables', 'Adding Records', 'Up
 > Following this assignment students should be able to:
 
 > - implement quality control for data entry in spreadsheets
-> - import existing data and create new data using SQLite
+> - import existing data and create new data in a database
 > - understand the basic query structure of SQL
-> - execute SQL commands in SQLite to select, sort, group, and aggregate data
+> - execute SQL commands to select, sort, group, and aggregate data
 
 ####Exercises
 
