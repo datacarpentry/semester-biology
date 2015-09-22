@@ -15,8 +15,12 @@ foot length and weight for all species of rodent.
 2. Write a function that generalizes the queries you used to `SELECT` the 
 average hind foot length and average weight of male and female *D. spectabilis*. 
 Your function should take a `species_id` and use `paste()` to add it to the 
-query.
+male and female queries. Combine the query results into a data frame with
+`species_id`, `sex`, `avg_hindfoot_length`, and `avg_weight` 
+using the `data.frame()` and `rbind()` functions. Your data frame should have 
+two rows (*one row for each sex*).
 3. Automate the query using your function and a `for` loop to cycle through the 
 list of `species_id`.
-4. Store the results in a data frame with the 
-`species_id`, `sex`, `avg_hindfoot_length`, and `avg_weight`.
+4. Store the results in a combined data frame with 
+`species_id`, `sex`, `avg_hindfoot_length`, and `avg_weight`
+using the `rbind()` function.
