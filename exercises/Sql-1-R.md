@@ -10,7 +10,7 @@ This is a follow up to the [SQL Filtering]({{ site.baseurl }}/exercises/Sql-filt
 It is clear Dr. Undómiel appreciates your skill working with large databases and 
 she seems to expect you will maintain your benevolence. (*Such is a fair 
 expectation of a true wizard*). This time though, she's looking for some extra 
-detail in her queries. She's curious if desert rodents are dimorphic in size.
+detail in her queries. She's curious if desert rodents are [dimorphic](https://en.wikipedia.org/wiki/Sexual_dimorphism) in size.
  
 
 1. Connect to the `portal-database.sqlite` using the `RSQLite` package. 
