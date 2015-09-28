@@ -13,7 +13,7 @@ expectation of a true wizard*). This time though, she's looking for some extra
 detail in her queries. She's curious if desert rodents are [dimorphic](https://en.wikipedia.org/wiki/Sexual_dimorphism) in size.
  
 
-1. Connect to the `portal-database.sqlite` using the `RSQLite` package. 
+1. Connect to the `portal_mammals.sqlite` using the `RSQLite` package. 
 2. From the `surveys` table, `SELECT` and print out the average (`AVG()`) hind 
 foot length and average weight of:
   - all *Dipodomys spectabilis* individuals
