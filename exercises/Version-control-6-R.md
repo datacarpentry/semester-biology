@@ -16,7 +16,7 @@ member of your collaborative team has produced a series of files that contain
 lists of areas that resulted from a series of modeling exercises. Each filename
 begins with the word area.
 
-Your programmer has whipped up a small python script called `rich_pred.R` that
+Your programmer has whipped up a small R script called `rich_pred.R` that
 takes a single file containing a list of areas, one per line, and returns the
 area and the predicted richness.
 

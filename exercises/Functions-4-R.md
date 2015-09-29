@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Functions 4
-subtitle: Linking Functions
+subtitle: Nested Functions
 language: R
 ---
 
