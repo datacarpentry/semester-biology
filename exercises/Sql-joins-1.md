@@ -12,7 +12,7 @@ the `Surveys` table by joining `species_id` to `species_id`.
 The Portal mammal data include data from a number of different
 experimental manipulations. You want to do a time-series analysis of the
 natural population dynamics of all of the rodent species at the site, so
-write a query that returns the `year`, `month`, `day`, and full `species name`
+write a query that returns the `year`, `month`, `day`, and `species`
 of every individual captured on the `Control` plots. Choose only
 rodent species (i.e., species for which the `taxa` field in the
 species table is `Rodent`) and exclude all individuals that have not been
