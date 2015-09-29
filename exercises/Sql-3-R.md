@@ -12,7 +12,7 @@ average hind foot length and average weights are pretty similar within species,
 but she wants to support the idea with some statistics. 
 
 1. Modify your species list to remove `species_id` with insufficient data 
-(*i.e., <NA>*). 
+(*i.e., remove species that return <NA> in the R-SQL 2 results table for either `sex` AND remove `species=='PX'` because it only has one entry per `sex` *). 
 
 2. Write a function that selects the `sex`, `hindfoot_length` and `weight` data 
 for a species and returns the results of a `t.test()` of each measurement 
