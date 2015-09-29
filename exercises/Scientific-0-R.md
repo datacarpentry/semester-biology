@@ -35,3 +35,5 @@ You want to get familiar with the data so…
 7. Modify the code to calculate and print the average height of a plant in each 
 experiment.
 8. Determine the maximum height of a plant in each site and print it out.
+9. Create a new data frame called `shrub_data_w_vols` that includes all of the
+   original data and a new column containing the volumes.
