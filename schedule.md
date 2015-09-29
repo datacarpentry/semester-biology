@@ -98,7 +98,7 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 * [Aggregating and analyzing data with `dplyr`](http://datacarpentry.github.io/R-ecology/04-dplyr.html)
 * *optional* [Introduction to `dplyr` vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 
-**Assignment 5**
+**Assignment 5({{ site.baseurl }}/assignments/r-3)**
 
 ### Week 7: Graphs & Statistics
 
