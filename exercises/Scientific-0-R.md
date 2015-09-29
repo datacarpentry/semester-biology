@@ -5,20 +5,20 @@ subtitle: Shrub Volume Pt 3
 language: R
 ---
 
-This is a follow-up to [Data Frames]({{ site.baseurl }}/exercises/Data-frames-R)
+This is a follow-up to [Data Frames 1]({{ site.baseurl }}/exercises/Data-frames-1-R)
 
 Dr. Granger is interested in studying the factors controlling the size and
 carbon storage of shrubs. This research is part of a larger area of research
 trying to understand carbon storage by plants. She has conducted a small
 preliminary experiment looking at the effect of three different treatments on
-shrub volume at four different locations. She has placed two data files on the web
-for you to download:
+shrub volume at four different locations. She has placed two data files on the 
+web for you to download:
 
 * [shrub dimensions data]({{ site.baseurl }}/data/shrub_volume_experiment.csv)
 * [experiments data]({{ site.baseurl }}/data/shrub_volume_experiments_table.csv)
 
-Download these into your `data` folder and get familiar with the data by importing
-the shrub dimensions data using `read.csv()` and then:
+Download these into your `data` folder and get familiar with the data by 
+importing the shrub dimensions data using `read.csv()` and then:
 
 1. Check the column names in the data using the function `names()`
 2. Print out the first few rows of the data using the function `head()`.
