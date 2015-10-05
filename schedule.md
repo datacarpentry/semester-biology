@@ -100,14 +100,12 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 
 **Assignment 5({{ site.baseurl }}/assignments/r-3)**
 
-### Week 7: Graphs & Statistics
+### Week 7: Data Visualization
 
 ### Reading
 
 * [Graphics with ggplot2 using qplot](http://statmethods.net/advgraphs/ggplot2.html)
-* [t-tests](http://statmethods.net/stats/ttest.html)
-* [ANOVA](http://statmethods.net/stats/anova.html)
-* [Regression](http://statmethods.net/stats/regression.html)
+* [Graphics with ggplot2 using ggplot](http://www.noamross.net/blog/2012/10/5/ggplot-introduction.html)
 
 **Assignment 6**
 
