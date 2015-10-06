@@ -98,18 +98,16 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 * [Aggregating and analyzing data with `dplyr`](http://datacarpentry.github.io/R-ecology/04-dplyr.html)
 * *optional* [Introduction to `dplyr` vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 
-**Assignment 5({{ site.baseurl }}/assignments/r-3)**
+**[Assignment 5]({{ site.baseurl }}/assignments/r-3)**
 
-### Week 7: Data Visualization & Basic Statistics
+### Week 7: Data Visualization
 
 ### Reading
 
-* [Graphics with ggplot2 using qplot](http://statmethods.net/advgraphs/ggplot2.html)
 * [Graphics with ggplot2 using ggplot](http://www.noamross.net/blog/2012/10/5/ggplot-introduction.html)
-* [ANOVA](http://statmethods.net/stats/anova.html)
-* [Regression](http://statmethods.net/stats/regression.html)
+* [Graphics with ggplot2 using qplot](http://statmethods.net/advgraphs/ggplot2.html) [*optional*]
 
-**Assignment 6**
+**[Assignment 6]({{ site.baseurl }}/assignments/r-4)**
 
 ### Week 8: Programming Fundamentals 1
 
