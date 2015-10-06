@@ -6,7 +6,7 @@ language: SQL
 ---
 
 The `Plots` table in the Portal database can be joined to the `Surveys` table
-by joining `plot_id` to `plot_id` and the `Species` table can be joined to
+by joining `plot_id` to `plot_id` and the `Species` table can be joined to
 the `Surveys` table by joining `species_id` to `species_id`.
 
 The Portal mammal data include data from a number of different
@@ -17,4 +17,4 @@ of every individual captured on the `Control` plots. Choose only
 rodent species (i.e., species for which the `taxa` field in the
 species table is `Rodent`) and exclude all individuals that have not been
 identified to genus (i.e., species for which the `species_id` field in the
-species table is `UR`). Save this query as `Data From Controls`.
+species table is `UR`). Save this query as `data_from_controls`.
