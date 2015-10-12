@@ -23,15 +23,16 @@ length in meters for a particular set of parameter values, those for *Theropoda*
 ```
 get_mass_from_length_theropoda <- function(length){
   mass <- 0.73 * length ** 3.63
-  return (mass)
+  return(mass)
 }
 ```
 
-1. Use this function to print out the mass of a Spinosaurus that is 16 m long
+1. Add a comment to this function so that you know what it does.
+2. Use this function to print out the mass of a Spinosaurus that is 16 m long
 based on it's reassembled skeleton. *Spinosaurus is a predator that is bigger,
 and therefore, by definition, cooler, than that stupid Tyrannosaurus that
 everyone likes so much.*
-2. Create a new version of this function called `get_mass_from_length()` that
+3. Create a new version of this function called `get_mass_from_length()` that
 estimates the mass of an organism in kg based on it's length in meters by taking
 length, a, and b as parameters. To be clear we want to pass the function all 3
 values that it needs to estimate a mass as parameters. This makes it much easier
