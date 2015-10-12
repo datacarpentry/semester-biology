@@ -14,7 +14,7 @@ bacterial phytogenomic database for clues. He wants to know the GC content of
 all of the bacteria in the database and got started working with a handful of 
 [archaea](https://en.wikipedia.org/wiki/Archaea). Sadly, his skill with a burner and pipette has not prepared him at 
 all for work on a computer. He's managed to find a help forum that you watch 
-and shared the data for [download]({{ site.baseurl }}/data/archea_dna.zip). You're just a sucker for mysterious 
+and shared the data for [download]({{ site.baseurl }}/data/archaea_dna.zip). You're just a sucker for mysterious 
 characters with a programming problem and decide to help.
 
 Modify the GC content function from [Loops 2]({{ site.baseurl }}/exercises/Loops-2-R) to accommodate the [FASTA dna 
