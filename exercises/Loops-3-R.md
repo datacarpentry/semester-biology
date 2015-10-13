@@ -43,3 +43,7 @@ individually. You might find the `list.files()` function useful for working with
 multiple files in a `for` loop. The function should work on a single file at a
 time and the `for` loop should repeatedly call the function and print out the
 result for each file as a vector of the file name and GC content.
+
+*Optional*: For a little extra challenge change your answer so that instead of
+ printing out the file names it prints out the species name that is encoded in
+ the file name, but without the `.fasta` at the end.
