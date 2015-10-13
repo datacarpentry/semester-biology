@@ -13,17 +13,33 @@ is responsible for his transformations and he's looking in the [PATRIC](www.patr
 bacterial phytogenomic database for clues. He wants to know the GC content of 
 all of the bacteria in the database and got started working with a handful of 
 [archaea](https://en.wikipedia.org/wiki/Archaea). Sadly, his skill with a burner and pipette has not prepared him at 
-all for work on a computer. He's managed to find a help forum that you watch 
-and shared the data for [download]({{ site.baseurl }}/data/archaea_dna.zip). You're just a sucker for mysterious 
-characters with a programming problem and decide to help.
+all for work on a computer.
 
-Modify the GC content function from [Loops 2]({{ site.baseurl }}/exercises/Loops-2-R) to accommodate the [FASTA dna 
-sequence format](https://en.wikipedia.org/wiki/FASTA_format) in which Dr. Jekyll provided his data. Each file represents a 
-single archaea species. FASTA files have no header and a single line for 
-comments that you'll want to `skip`, followed by multiple lines of DNA bases. 
-Use a `for` loop and your function to calculate the GC content of each file and 
-print them out individually. You might find the `list.files()` function useful 
-for working with multiple files in a `for` loop. The function should work on a 
-single file at a time and the `for` loop should repeatedly call the function and 
-print out the result as a vector of species name (*extracted from the file 
-name*) and GC content.
+Help him out by downloading [the data]({{ site.baseurl }}/data/archaea_dna.zip)
+and looping over the files to determine the GC content for each file. Unzip the
+the .zip file into your `data` directory. If you look at the data you'll see
+that it's made up of one file per species using the
+[FASTA dna sequence format](https://en.wikipedia.org/wiki/FASTA_format). We
+could try to load using `read.csv`, but the
+[ShortRead package in Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html)
+already exists for parsing fasta files, so we'll use that
+instead. [Install Bioconductor](http://www.bioconductor.org/install/) if you
+haven't already. The following code will then load a single sequence file:
+
+```
+library(ShortRead)
+reads <- readFasta("data/archaea_dna/A-saccharovorans.txt")
+seq <- sread(reads)
+```
+
+You can reuse the GC content function you wrote for
+[Loops 2]({{site.baseurl}}/exercises/Loops-2-R) to calculate the GC content, but
+you might need to modify it to accommodate the different capitalization of the
+bases.
+
+Each file in the zip represents a single archaea species. Use a `for` loop and
+your function to calculate the GC content of each file and print them out
+individually. You might find the `list.files()` function useful for working with
+multiple files in a `for` loop. The function should work on a single file at a
+time and the `for` loop should repeatedly call the function and print out the
+result for each file as a vector of the file name and GC content.
