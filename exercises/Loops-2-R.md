@@ -14,7 +14,7 @@ percentage of bases that are either G or C) and knows just a little R. They sent
 you the following code which will calculate the GC content for a single
 sequence:
 
-``
+```
 library(stringr)
 
 sequence <- 'attggc'
