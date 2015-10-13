@@ -24,11 +24,16 @@ could try to load using `read.csv`, but the
 [ShortRead package in Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html)
 already exists for parsing fasta files, so we'll use that
 instead. [Install Bioconductor](http://www.bioconductor.org/install/) if you
-haven't already. The following code will then load a single sequence file:
-
+haven't already. 
 ```
-library(ShortRead)
-reads <- readFasta("data/archaea_dna/A-saccharovorans.txt")
+source("https://bioconductor.org/biocLite.R")
+biocLite("ShortRead")
+```
+
+The following code will then load a single sequence file:
+```
+library("ShortRead")
+reads <- readFasta("data/archaea_dna/A-saccharovorans.fasta")
 seq <- sread(reads)
 ```
 
