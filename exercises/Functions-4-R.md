@@ -17,7 +17,7 @@ calculated the weight of a Stegosaurus (*no need to scare grandma by
 talking about the totally awesome, and really scary, Spinosaurus*). The
 problem is that your grandmother doesn't really know what a kilogram is,
 she wants to know what it weighed in pounds. So, hook your grandmother
-up and write a function that converts kilograms into pounds and use that
+up and write a function that converts kilograms into pounds. Use that
 function along with your dinosaur mass function to estimate the weight,
 in pounds, of a 12 m long Stegosaurus (*12 m is about as big as they come
 and we want grandma's story to to be as wild as possible*). In
