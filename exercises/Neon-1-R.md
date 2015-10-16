@@ -19,4 +19,4 @@ Download NEON's the existing [small mammal data]({{ site.baseurl }}/data/ordway_
 at each plot. Plot a histogram of the results.
 
 3. Determine the average hind foot length and weight of each species collected 
-for each National Landcover Database (`nlcd`) class. 
+for each National Landcover Database (`nlcd`) class. Plot the average weight of all species with weight measurements from the woody wetlands.
