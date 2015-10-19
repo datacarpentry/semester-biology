@@ -14,7 +14,7 @@ function return one of three outputs: `"DNA"`, `"RNA"`, or `"UNKNOWN"`.
 
 1. Use the function and a `for` loop to print the type of the sequences in the
 following list.
-2. 1. Use the function and `sapply` to print the type of the sequences in the
+2. Use the function and `sapply` to print the type of the sequences in the
 following list.
 
 ```
