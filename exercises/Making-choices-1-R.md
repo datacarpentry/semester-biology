@@ -32,7 +32,7 @@ Use them to print whether or not the following statements are
 8. `w` is greater than `x`, and `y` is greater than `z`
 9. `x` times `w` is between 13.2 and 13.5
 10. `species2` comes before `species1` alphabetically
-11. `dna1` is longer than 5 bases, or `z` is less than `w` * `x`, or both
+11. `dna1` is longer than 5 bases, or `z` is less than `w` * `x`
 12. The combined length of `dna1` and `dna2` is greater than or equal to 30
 13. (`w` + `x` + `y`) divided by the logarithm (base 10) of 100 is equal to 7.15
 14. The GC content (which is always a percentage) of `dna1` is not the same as 
