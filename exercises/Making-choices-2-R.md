@@ -11,8 +11,7 @@ return `FALSE`. Two points are considered near to each other if the absolute
 value of the difference in their latitudes is less than one and the absolute
 value of the difference in their longitudes is less than one.
 
-Fill in the `_________` in the function to make it work and then use it to check 
-if the following pairs of points are near or not and print out the answers.
+Fill in the `_________` in the function to make it work.
 
 ``` 
 near <- function(lat1, long1, lat2, long2){
@@ -26,9 +25,18 @@ near <- function(lat1, long1, lat2, long2){
 }
 ```
 
-1. Point 1: latitude = 29.65, longitude = -82.33. Point 2: latitude = 41.74,
-longitude = -111.83.
-2. Point 1: latitude = 29.65, longitude = -82.33. Point 2: latitude = 30.5,
-longitude = -82.8.
-3. Point 1: latitude = 48.86, longitude = 2.35. Point 2: latitude = 41.89,
-longitude = 2.5.
+1. Improve the documentation for the function so that it is clear what near
+   means and what output the user should expect.
+2. Check if Point 1 is near: latitude = 29.65, longitude = -82.33. Point 2:
+   latitude = 41.74, longitude = -111.83.
+3. Check if Point 2 is near: latitude = 29.65, longitude = -82.33. Point 2: latitude = 30.5,
+   longitude = -82.8.
+4. Create a new version of the function that improves it by allowing the user to
+   pass in a parameter that sets what "near" means. To avoid changing the
+   existing behavior of the function (since some of your lab mates are using it
+   already) give the parameter a default value of 1.
+5. Improve the documentation for the new function so that it reflects this new
+   behavior
+6. Check if Point 3 is near, when near is set to 7: latitude = 48.86, longitude = 2.35.
+   Point 2: latitude = 41.89, longitude = 2.5.
+
