@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: NEON
+title: NEON 1
 subtitle: NEON Database
 language: R
 ---
