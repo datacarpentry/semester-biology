@@ -86,12 +86,11 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 
 **[Assignment 4]({{ site.baseurl }}/assignments/r-2)**
 
-### Week 6: Working with Tabular Data & Problem decomposition
+### Week 6: Working with Tabular Data
 
 #### Topics
 
 * dplyr
-* Problem decomposition
 
 #### Reading:
 
@@ -128,7 +127,7 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 #### Topics
 
 * Conditionals
-* Debugging
+* Problem decomposition
 
 ### Reading
 
@@ -157,7 +156,7 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 #### Topics
 
 * Style
-* Program design
+* Debugging
 
 #### Reading
 
