@@ -1,0 +1,6 @@
+Source: local data frame [2 x 2]
+
+  earlengthcat mean(gccontent)
+         (chr)           (dbl)
+1        large            58.5
+2        small            42.5

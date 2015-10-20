@@ -3,3 +3,14 @@
 [1] "UNKNOWN"
 [1] "RNA"
 [1] "RNA"
+
+                               ttgaatgccttacaactgatcattacacaggcggcatgaagcaaaaatatactgtgaaccaatgcaggcg 
+                                                                                                "DNA" 
+                               gauuauuccccacaaagggagugggauuaggagcugcaucauuuacaagagcagaauguuucaaaugcau 
+                                                                                                "RNA" 
+                                                       gaaagcaagaaaaggcaggcgaggaagggaagaagggggggaaacc 
+                                                                                            "UNKNOWN" 
+guuuccuacaguauuugaugagaaugagaguuuacuccuggaagauaauauuagaauguuuacaacugcaccugaucagguggauaaggaagaugaagacu 
+                                                                                                "RNA" 
+                      gauaaggaagaugaagacuuucaggaaucuaauaaaaugcacuccaugaauggauucauguaugggaaucagccggguc 
+                                                                                                "RNA" 
