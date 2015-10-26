@@ -5,5 +5,9 @@ subtitle: Reading
 language: SQL
 ---
 
-* __Databases Intro__ [Video](http://software-carpentry.org/v4/databases/intro.html) | [Reading](http://datacarpentry.github.io/sql-ecology/00-sql-introduction.html)
-* __Quality Assurance & Control__ [Reading](http://datacarpentry.github.io/spreadsheet-ecology-lesson/04-quality-control.html)
+* __Selecting__[Video](http://software-carpentry.org/v4/databases/select.html)
+* __Filtering__ [Video](http://software-carpentry.org/v4/databases/filter.html)
+* __Sorting__ [Video](http://software-carpentry.org/v4/databases/sort.html)
+* __Nulls__ [Video](http://software-carpentry.org/v4/databases/null.html)
+* __Basic Queries__ [Reading](http://datacarpentry.github.io/sql-ecology/01-sql-basic-queries.html)
+* __Aggregation__ [Video](http://software-carpentry.org/v4/databases/aggregation.html)|[Reading](http://datacarpentry.github.io/sql-ecology/02-sql-aggregation.html)
