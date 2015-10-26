@@ -14,6 +14,10 @@ exercises: ['QAQC 1', 'Importing Data', 'Creating Tables', 'Adding Records', 'Up
 > - understand the basic query structure of SQL
 > - execute SQL commands to select, sort, group, and aggregate data
 
+####Readings
+
+{% include reading.html %}
+
 ####Exercises
 
 {% include assignment.html %}
