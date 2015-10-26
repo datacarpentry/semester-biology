@@ -1,0 +1,5 @@
+{% for readingpage in site.pages %}
+ {% if readingpage.title == page.title and readingpage.subtitle == "Reading" and readingpage.language == page.language %}
+  {{readingpage.content}}
+ {% endif %}
+{% endfor %}
