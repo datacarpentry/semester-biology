@@ -135,19 +135,19 @@ For Joins and Nested Queries  you can watch the video or do the reading, you don
 
 **Assignment 8**
 
-### Week 10: Combining R and SQL databases
-
-### Reading
-
-* [SQL databases and R](http://www.datacarpentry.org/R-ecology/06-r-and-sql.html)
-
-**Assignment 9**
-
-### Week 11: Version Control
+### Week 10: Version Control
 
 ### Reading
 
 * [Git basics in RStudio](http://nicercode.github.io/git/rstudio.html)
+
+**Assignment 9**
+
+### Week 11: Combining R and SQL databases
+
+### Reading
+
+* [SQL databases and R](http://www.datacarpentry.org/R-ecology/06-r-and-sql.html)
 
 **Assignment 10**
 
