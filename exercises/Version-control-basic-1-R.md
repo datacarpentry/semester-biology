@@ -1,6 +1,6 @@
 ---
 layout: exercise
-title: Version Control 1
+title: Version Control Basic 1
 subtitle: Set-up Git
 language: R
 ---
