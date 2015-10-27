@@ -13,6 +13,6 @@ exercises: ['Joins 1', 'Joins 2', 'Joins 3', 'Joins 4', 'Nested Queries', 'Tidy 
 > - nest the results of one query as the input for another
 > - understand the basic rules of tidy data
 
-####Exercises
+{% include reading.html %}
 
 {% include assignment.html %}
