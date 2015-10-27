@@ -6,7 +6,7 @@ language: R
 ---
 
 This is a follow up to
-[Version Control Basic 2]({{ site.baseurl }}/exercises/Version-control-basic-R-2)
+[Version Control Basic 2]({{ site.baseurl }}/exercises/Version-control-basic-2-R)
 
 * Download a copy of the
   [main data file]({{ site.baseurl }}/data/houseelf_earlength_dna_data.csv) and
