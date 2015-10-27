@@ -19,7 +19,7 @@ a
 d8of8pp
 ```
 
-before someone hitting `Ctrl-s` and overwriting all of your hard word. 
+before somehow hitting `Ctrl-s` and overwriting all of your hard word. 
 
 Determined to not let this happen again you've committed to using `git` for
 version control.

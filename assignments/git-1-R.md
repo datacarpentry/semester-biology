@@ -9,7 +9,7 @@ exercises: [Version Control Basic 1, Version Control Basic 2, Version Control Ba
 
 > Following this assignment students should be able to:
 
-> - user version control to keep track to changes to code
+> - use version control to keep track of changes to code
 > - collaborate with someone else via a remote repository
 
 ####Exercises
