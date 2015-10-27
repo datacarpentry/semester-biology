@@ -32,11 +32,13 @@ Fast-forward
 
 3\. You should see the new function in your repository.
 
+```
 gc_content <- function(seq){
    #Calculate the GC-content for one or more sequences
    ear_lengths <- ifelse(seq > 10, "large", "small")
    return(ear_lengths)
 }
+``` 
 
 4\. Write some new code that creates a data frame with information about the
 individual ID, the earth length class, and the gc-content for each individual.
