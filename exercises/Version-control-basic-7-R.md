@@ -6,13 +6,14 @@ language: R
 ---
 
 This is a follow up to
-[Version Control Basic 6]({{ site.baseurl }}/exercises/Version-control-basic-R-6).
-**Wait until your teacher has told you they've updated your repository following
-the last exercise before doing this one.**
+[Version Control Basic 6]({{ site.baseurl }}/exercises/Version-control-basic-6-R).
 
-While you were working on your vectorized GC-content function, Dr. Granger (who
-has suddenly developed some pretty impressive computational skills) has been
-writing a vectorized ear length categorizer. To get it you'll need to `pull` the
+**STOP: Wait until your teacher has told you they've updated your repository 
+following the last exercise before doing this one.**
+
+While you were working on your vectorized GC-content function, Dr. Granger (*who
+has suddenly developed some pretty impressive computational skills*) has been
+writing a ***vectorized ear length categorizer***. To get it you'll need to `pull` the
 most recent changes from Github.
 
 1\. On the `Git` tab click on the `Pull` button with the blue arrow. You should
@@ -45,4 +46,4 @@ individual ID, the earth length class, and the gc-content for each individual.
 
 5\. Save this data frame as a csv file using `write.csv()`
 
-6\. Commit the new code and the resulting csv file and push the results to Github.
+6\. Commit the new code and the resulting .CSV file and push the results to Github.
