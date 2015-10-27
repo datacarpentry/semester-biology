@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Git-R Assignment 1
+title: Git Assignment 1
 subtitle: Readings
 language: R
 ---
