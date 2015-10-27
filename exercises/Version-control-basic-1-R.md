@@ -8,7 +8,7 @@ language: R
 This is a follow up to [Basic 2]({{ site.baseurl }}/exercises/Basic-2-R).
 
 You're continuing your analyses of house-elves with Dr. Granger. Unfortunately
-you weren't using version control one day and your cat jumped all over your
+you weren't using version control and one day your cat jumped all over your
 keyboard and managed to replace your analysis code with:
 
 ```
