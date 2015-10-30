@@ -5,27 +5,11 @@ In a browser:
 * http://www.phdcomics.com/comics/archive.php?comicid=1531
 * http://www.phdcomics.com/comics/archive.php?comicid=1323
 
-Who has a directory on their computer with a bunch of filenames that look like
-these?
+* Who has a directory on their computer with a bunch of filenames like this or
+  like this
+* Learn how to get rid of folders like this and to track changes to things like
+data files and code in a more manageable way.
 
-And how about one that looks like this? (1323)
-
-What we're going to learn about today is how to get rid of folders like this and
-keep the same kind of backup and change information in a more useful way.
-
-Now, these tools can't make your advisor magically make all of they're
-recommended changes the first time you send them a manuscript (or prevent them
-from making a change and then changing it back later), but it does give you a
-better way to keep track of all those revisions.
-
-More importantly it gives you a better way to track changes to things like data
-files and code in a more manageable way. That's important because when the
-reviews come back on your paper and ask you to perform some additional analyses
-and you open up this directory, it can be pretty difficult to figure out which
-file you should actually use. At the very least you'll spend a bunch of extra
-time figuring it out before you get to work, but I've also certainly picked the
-wrong file and had to redo all of my work after I finally realized I wasn't
-getting the same results as in the submitted version of the manuscript.
 
 ## Benefits of version control
 
@@ -154,6 +138,7 @@ add_size_classes <- function(df){
     mutate(size_class = get_size_class(weight, 50))
   return(data_size_class)
 }
+```
 
 * Commit
 * Push
