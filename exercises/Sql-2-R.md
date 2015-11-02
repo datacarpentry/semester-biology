@@ -18,5 +18,5 @@ Produce a data frame with `species_id`, `sex`, `avg_hindfoot_length`, and
 species, one row for each sex.
 
 You can solve this problem in a variety of ways including using `dplyr`, a
-`GROUP BY` in your SQL query, a `for loop`, or using `apply` statements. Take
+`GROUP BY` in your SQL query, a `for` loop, or using `apply` statements. Take
 whichever approach you like best.
