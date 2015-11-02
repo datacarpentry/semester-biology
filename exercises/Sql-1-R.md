@@ -16,8 +16,6 @@ detail in her queries. She's curious if desert rodents are [dimorphic](https://e
 1. Download a new copy of the [Portal database](http://files.figshare.com/2292171/portal_mammals.sqlite). 
 2. Connect to `portal_mammals.sqlite` using the `RSQLite` package. 
 3. Select and print out the average hind foot length and average weight of:
-  - all *Dipodomys spectabilis* individuals
-  - male *D. spectabilis*
-  - female *D. spectabilis*.
-
-
+    - all *Dipodomys spectabilis* individuals
+    - male *D. spectabilis*
+    - female *D. spectabilis*.
