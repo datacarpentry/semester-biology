@@ -1,11 +1,17 @@
 <ol>
 {% for assignment in page.assignments %}
   {% for otherpage in site.pages %}
-    {% if assignment == otherpage.title %}
-      <li>
-        <a href="{{ otherpage.url | prepend: site.baseurl }}">{{ otherpage.title }}</a>
-      </li>
+    {% if otherpage.title == assignment and otherpage.subtitle != "Readings" %}
+      {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
+      {% for readingpage in site.pages %}
+        {% if readingpage.title == assignment and readingpage.subtitle == "Readings" %}
+        {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
+          <li>
+          {{ otherpage.title }} <a href="{{ assignment_link }}">[Assignment]</a> | <a href="{{ reading_link }}">[Reading]</a>
+          </li>
+        {% endif %}
+      {% endfor %}
     {% endif %}
   {% endfor %}
-{% endfor %}	
+{% endfor %}
 </ol>
