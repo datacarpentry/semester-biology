@@ -14,10 +14,10 @@ detail in her queries. She's curious if desert rodents are [dimorphic](https://e
 
 1. Download a new copy of the [Portal database](http://files.figshare.com/2292171/portal_mammals.sqlite). 
 2. Connect to `portal_mammals.sqlite` using the `RSQLite` package.
-3. Start by reminding yourself of what tables are in the database using
-`dbListTables`
+3. Start by reminding yourself about which tables are in the database using
+`dbListTables()`
 4. Then remind yourself of the fields in the `surveys` and `plots` tables using
-   `dbListFields`.
+   `dbListFields()`.
 5. Select and print out the average hind foot length and average weight of:
     - all *Dipodomys spectabilis* individuals on the *control* plots
     - male *D. spectabilis* on the *control* plots
