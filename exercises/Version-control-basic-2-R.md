@@ -6,7 +6,7 @@ language: R
 ---
 
 This is a follow up to
-[Version Control Basic 1]({{ site.baseurl }}/exercises/Version-control-basic-R-1)
+[Version Control Basic 1]({{ site.baseurl }}/exercises/Version-control-basic-1-R)
 
 Create a new file for your analysis named `houseelf-analysis.R` and add a
 comment at the top describing what the analysis is intended to do.
