@@ -14,11 +14,11 @@
           {% if readingpage.title == assignment and readingpage.subtitle == "Readings" %}
           {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
             <tr>
-              <td>{{ otherpage.week }}</td>
+              <td align="right">{{ otherpage.week }}</td>
               <td>{{ otherpage.title }}</td>
               <td>{{ otherpage.subtitle }}</td>
-              <td><a href="{{ reading_link }}">[X]</a></td>
-              <td><a href="{{ assignment_link }}">[X]</a></td>
+              <td align="center"><a href="{{ reading_link }}">[X]</a></td>
+              <td align="center"><a href="{{ assignment_link }}">[X]</a></td>
             </tr>
           {% endif %}
         {% endfor %}
