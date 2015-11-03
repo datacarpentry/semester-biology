@@ -19,26 +19,26 @@ most recent changes from Github.
 1. On the `Git` tab click on the `Pull` button with the blue arrow. You should
 see some text that looks like:
 
-```
-From github.com:ethanwhite/gryffindorforever
-   1e24ac8..815e600  master     -> origin/master
-Updating 1e24ac8..815e600
-Fast-forward
- testme.txt | 1 +
- 1 file changed, 1 insertion(+)
-create mode 100644 youareawesome.txt
-```
+   ```
+   From github.com:ethanwhite/gryffindorforever
+      1e24ac8..815e600  master     -> origin/master
+   Updating 1e24ac8..815e600
+   Fast-forward
+    testme.txt | 1 +
+    1 file changed, 1 insertion(+)
+   create mode 100644 youareawesome.txt
+   ```
 
 2. Click `OK`.
 3. You should see the new function in your repository.
 
-```
-get_size_class <- function(ear_length){
-   # Calculate the size class for one or more earth lengths
-   ear_lengths <- ifelse(ear_length > 10, "large", "small")
-   return(ear_lengths)
-}
-``` 
+   ```
+   get_size_class <- function(ear_length){
+      # Calculate the size class for one or more earth lengths
+      ear_lengths <- ifelse(ear_length > 10, "large", "small")
+      return(ear_lengths)
+   }
+   ``` 
 
 4. Write some new code that creates a data frame with information about the
   individual ID, the earth length class, and the gc-content for each individual.
