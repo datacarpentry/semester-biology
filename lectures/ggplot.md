@@ -35,7 +35,7 @@ ggplot(dm_ts_data, aes(x = year, y = count)) +
 ```
 
 ```
-do_ts_data <- ts_data %>% filter(species_id == "DO")
+do_ts_data <- filter(ts_data, species_id == "DO")
 ggplot(dm_ts_data, aes(x = year, y = count)) +
   geom_line() +
   geom_line(data = do_ts_data, aes(x = year, y = count), color = "red")
