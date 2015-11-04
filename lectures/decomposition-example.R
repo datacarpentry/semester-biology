@@ -20,10 +20,10 @@ get_data <- function(){
 get_size_class <- function(weight, threshold){
   # Determine if a weight is large or small
   if (weight > threshold){
-    size_class = "large"
+    size_class <- "large"
   }
   else {
-    size_class = "small"
+    size_class <- "small"
   }
   return(size_class)
 }
