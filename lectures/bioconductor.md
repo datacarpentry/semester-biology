@@ -30,9 +30,9 @@ data we need.
 As an example we'll briefly look at Bioconductor, which is used for working with
 genomic data in R.
 
-I've downloaded data on the coding regions of the *E. coli* genome from Genbank
-in a format called `FASTA`, which is one format used for storing nucleotide
-sequences.
+I've downloaded data on the coding regions of the *E. coli* genome from
+[Genbank](http://www.ncbi.nlm.nih.gov/) in a format called `FASTA`, which is one
+format used for storing nucleotide sequences.
 
 ```
 library(ShortRead)
