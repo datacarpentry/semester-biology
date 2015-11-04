@@ -4,7 +4,7 @@
 library(dplyr)
 library(ggplot2)
 
-surveys <- read.csv("surveys")
+surveys <- read.csv("surveys.csv")
 
 ts_data <- surveys %>%
              group_by(species_id, year) %>%
