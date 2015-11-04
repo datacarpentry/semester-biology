@@ -15,7 +15,7 @@ for (item in list_of_items) {
 ### Example
 
 ```
-pets <- c('spot', 'gigantor', 'fluffy')
+pets <- c("spot", "gigantor", "fluffy")
 for (pet in pets) {
   paste(pet, "is the name of the class pet")
 }
@@ -24,7 +24,7 @@ for (pet in pets) {
 What this does:
 
 ```
-pets <- c('spot', 'gigantor', 'fluffy')
+pets <- c("spot", "gigantor", "fluffy")
 pet <- pets[1]
 paste(pet, "is the name of the class pet")
 pet <- pets[2]
@@ -41,7 +41,7 @@ paste(pet, "is the name of the class pet")
 ```
 library(stringr)
 
-pets <- c('spot', 'gigantor', 'fluffy')
+pets <- c("spot", "gigantor", "fluffy")
 output <- data.frame()
 for (pet in pets) {
   pet_upper <- str_to_upper(pet)
@@ -110,8 +110,8 @@ surveys <- read.csv("surveys.csv")
 ## Indexing
 
 ```
-pets <- c('spot', 'gigantor', 'fluffy')
-owners <- c('betty', 'bob', 'joe')
+pets <- c("spot", "gigantor", "fluffy")
+owners <- c("betty", "bob", "joe")
 for (i in seq_along(pets)){
   print(paste(pets[i], "is ", owners[i], "'s pet"))
 }
@@ -123,7 +123,7 @@ for (i in seq_along(pets)){
 ```
 library(stringr)
 
-pets <- c('spot', 'gigantor', 'fluffy')
+pets <- c("spot", "gigantor", "fluffy")
 output <- data.frame(name = character(3), namelength = numeric(3),
                      stringsAsFactors = FALSE)
 for (i in seq_along(pets)) {
