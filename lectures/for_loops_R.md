@@ -5,7 +5,7 @@
 * Let us do the same thing for a number of different values
 
 ```
-for (item in list_of_items){
+for (item in list_of_items) {
   commands
 }
 ```
@@ -16,7 +16,7 @@ for (item in list_of_items){
 
 ```
 pets <- c('spot', 'gigantor', 'fluffy')
-for (pet in pets){
+for (pet in pets) {
   paste(pet, "is the name of the class pet")
 }
 ```
@@ -43,7 +43,7 @@ library(stringr)
 
 pets <- c('spot', 'gigantor', 'fluffy')
 output <- data.frame()
-for (pet in pets){
+for (pet in pets) {
   pet_upper <- str_to_upper(pet)
   output <- rbind(output, data.frame(name = pet_upper,
                           namelength = str_length(pet_upper)))
@@ -57,7 +57,7 @@ biomass_data <- data.frame(exper1 = c(24, 32, 62),
                            exper2 = c(10, 9 , 5),
                            exper3 = c(1, 5, 3))
 
-for (exp_biomass in biomass_data){
+for (exp_biomass in biomass_data) {
   npp <- sum(19.3 * exp_biomass ** 2)
   print(npp)
 }
@@ -70,7 +70,7 @@ for (exp_biomass in biomass_data){
 * Short cuts for simple loops
 
 ```
-get_mass_from_length_theropoda <- function(length){
+get_mass_from_length_theropoda <- function(length) {
   mass <- 0.73 * length ** 3.63
   return(mass)
 }
@@ -126,7 +126,7 @@ library(stringr)
 pets <- c('spot', 'gigantor', 'fluffy')
 output <- data.frame(name = character(3), namelength = numeric(3),
                      stringsAsFactors = FALSE)
-for (i in seq_along(pets)){
+for (i in seq_along(pets)) {
   pet_upper <- str_to_upper(pets[i])
   output[i,] <- c(pet_upper, str_length(pet_upper))
 }
