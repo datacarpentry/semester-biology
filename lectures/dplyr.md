@@ -48,7 +48,7 @@ surveys_DS_by_yr_avg_weight <- summarize(surveys_DS_by_yr, avg_weight = mean(wei
 ```
 
 * This can get a little cumbersome
-* Pipes are an alternative called pipes
+* Pipes are an alternative
 * Pipe `%>%` takes the output of the one command and passes it as input to next command
 
 `surveys %>% filter(species_id == 'DS')`
