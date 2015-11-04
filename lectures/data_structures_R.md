@@ -3,7 +3,7 @@
 ## Vectors
 
 * sequence of values with the same type
-* make one using c(): `sites <- c('a', 'a', 'b', 'b')`
+* make one using c(): `sites <- c("a", "a", "b", "b")`
 * explore: `str(sites)`, `length(sites)`
 * TAB: Let the computer do repetitious work, easier, few mistakes
 * slicing: `sites[1]`, `sites[1:3]`, `1:3` makes a vector so this is the same as
