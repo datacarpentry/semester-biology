@@ -1,7 +1,7 @@
 ---
 layout: exercise
-title: Size-biased extinction
-subtitle: Putting it all together
+title: Putting it all together
+subtitle: Size-biased extinction
 language: R
 ---
 
