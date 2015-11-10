@@ -3,6 +3,9 @@ layout: page
 title: All Assignments
 ---
 
+### Git
+* [Git with R](git-1-R.md)
+
 ### Python
 
 * [Assignment 1](python-1)
