@@ -14,13 +14,13 @@ those that did not.
 To address this question we can use the
 [largest dataset on mammalian body size in the world](http://www.esapubs.org/archive/ecol/E084/094/#data),
 which has data on the mass of recently extinct mammals as well as extant mammals
-(i.e., those that are still alive today). Take a look at the
+(*i.e., those that are still alive today*). Take a look at the
 [metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
 understand the structure of the data. One key thing to remember is that species
 can occur on more than one continent, and if they do then they will occur more
 than once in this dataset. Also let's ignore species that went extinct in the
-very recent past (designated by the word `"historical"` in the `"status"`
-column).
+very recent past (*designated by the word `"historical"` in the `status`
+column*).
 
 Import the data into R. If you've looked at a lot of data you'll realize that
 this dataset is tab delimited. Use the argument `sep = "\t"` in `read.csv()` to
@@ -44,30 +44,30 @@ colnames(mammal_sizes) <- c("continent", "status", "order",
    up. Throughout the assignment focus on using good style to make the code easy
    for you or someone else to read.
 2. Calculate the mean mass of the extinct species and the mean mass of the
-   extant species. Don't worry about species that occur more than once. We'll
+   extant species. *Don't worry about species that occur more than once. We'll
    consider the values on different continents to represent independent data
-   points.
+   points.*
 3. It looks like the species that went extinct are larger on average, but there
    are lots of different processes that could cause size-biased extinctions so
    it's not as informative as we might like.  However, if we see the exact same
    pattern on each of the different continents that might really tell us
    something. Repeat the analysis but this time compare the mean masses within
-   each of the different continents (`dplyr` would be one way to do
-   this). Export your results to a CSV file where the first entry on each line
+   each of the different continents (*`dplyr` would be one way to do
+   this*). Export your results to a CSV file where the first entry on each line
    is the continent, the second entry is the average mass of the extant species
    on that continent, and the third entry is the average mass of the extinct
-   species on that continent (the `spread` function in `tidyr` is a handy way to
-   convert the standard `dplyr` output to this form). Call the file
+   species on that continent (*`spread()` from `tidyr` is a handy way to
+   convert the standard `dplyr` output to this form*). Call the file
    `continent_mass_differences.csv`.
 4. Looking at the averages was a good start, but we really need to look at the
    full distributions of masses of the two groups to get the best picture of
    whether or not there was a major size bias in extinctions during the late
    Pleistocene. Make a graph that shows the data for each continent that you
-   think is worth visualizing. For each continent display two histograms (these
-   can be on the same axes or separate sets of axes) that use the same bins to
-   display the number of extinct and extant species. Use the log(mass) rather
+   think is worth visualizing. For each continent display two histograms (*these
+   can be on the same axes or separate sets of axes*) that use the same bins to
+   display the number of extinct and extant species. Use the `log_mass` rather
    than the mass itself so that you can see the form of the distributions more
    clearly. `facet_grid` or `facet_wrap` may be useful to laying out the
    subplots. Label the plots to make it clear to someone viewing them what they
-   are looking at. Save the graph or graphs as `.png` file(s) (this should
-   happen automatically in the code).
+   are looking at. Save the graph or graphs as `.png` file(s) (*this should
+   happen automatically in the code*).
