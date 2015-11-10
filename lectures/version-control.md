@@ -105,6 +105,8 @@ get_size_class <- function(weight, threshold){
 
 ## Remotes
 
+**Draw origin-local figure throughout this section**
+
 * So far we've worked with a local git repository
 * One of the big benefits of version control is easy collaboration
 * To do this we synchronize our local changes with a remote repository
@@ -120,6 +122,7 @@ get_size_class <- function(weight, threshold){
 * Gear icon -> Shell
 * Paste lines from Github -> Enter
 * See files on Github
+* Show browsing repo in past
 
 **Exercise 5**
 
@@ -141,7 +144,9 @@ add_size_classes <- function(df){
 ```
 
 * Commit
+* Show on local not remote
 * Push
+* Show on remote
 
 **Exercise 6**
 
