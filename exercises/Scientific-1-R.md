@@ -9,19 +9,18 @@ There were a relatively large number of extinctions of mammalian species
 roughly 10,000 years ago. To help understand why these extinctions
 happened scientists are interested in understanding whether there were
 differences in the body size of those species that went extinct and
-those that did not. Since we're starting to get pretty good at this
-whole programming thing let's stop messing around with made up datasets
-and do some serious analysis.
+those that did not.
 
-Download the
-[largest dataset on mammalian body size in the world](http://www.esapubs.org/archive/ecol/E084/094/#data).
-Fortunately this dataset has data on the mass of recently extinct mammals as
-well as extant mammals (i.e., those that are still alive today). Take a look at
-the [metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
+To address this question we can use the
+[largest dataset on mammalian body size in the world](http://www.esapubs.org/archive/ecol/E084/094/#data),
+which has data on the mass of recently extinct mammals as well as extant mammals
+(i.e., those that are still alive today). Take a look at the
+[metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
 understand the structure of the data. One key thing to remember is that species
 can occur on more than one continent, and if they do then they will occur more
 than once in this dataset. Also let's ignore species that went extinct in the
-very recent past (designated by the word `"historical"` in the `"status"` column).
+very recent past (designated by the word `"historical"` in the `status`
+column).
 
 Import the data into R. If you've looked at a lot of data you'll realize
 that this dataset is tab delimited. Use the argument `sep = "\t"` in 
@@ -37,10 +36,11 @@ colnames(mammal_sizes) <- c("continent", "status", "order",
 
 To start let's explore the data a little and then start looking at the major question.
 
-1. The following code will determine how many genera (*plural of genus*) are
+1. The following `dplyr` code will determine how many genera (*plural of genus*) are
    in the dataset:
    ```
-   dim(distinct(select(mammal_sizes, genus)))[1]
+   nrow(distinct(select(mammal_sizes, genus)))
+
    ```
    Modify this code into a function to determine the number of species. 
    Remember that a species is uniquely defined by the combination of its 
