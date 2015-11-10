@@ -8,5 +8,5 @@ assignments: ['SQL Assignment 1', 'SQL Assignment 2', 'R Assignment 1', 'R Assig
 
 The above assignments are for this specific version of the course, but other
 assignments are available as well. You can see the full list of
-[Assignments]({{ site.baseurl }}/assignents/), which may be useful if you're using this material
+[Assignments]({{ site.baseurl }}/assignments/), which may be useful if you're using this material
 outside of an organized course.
