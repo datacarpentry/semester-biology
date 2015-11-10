@@ -4,7 +4,7 @@ title: All Assignments
 ---
 
 ### Git
-* [Git with R](git-1-R.md)
+* [Git with R](git-1-R)
 
 ### Python
 
