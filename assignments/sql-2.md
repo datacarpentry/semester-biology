@@ -1,6 +1,7 @@
 ---
 layout: page
 title: SQL Assignment 2
+subtitle: Selecting, Filtering, Sorting, and Aggregating Data
 language: SQL
 exercises: ['Joins 1', 'Joins 2', 'Joins 3', 'Joins 4', 'Nested Queries', 'Tidy Data',  'Database Structure 1', 'Database Structure 2']
 ---
@@ -13,6 +14,6 @@ exercises: ['Joins 1', 'Joins 2', 'Joins 3', 'Joins 4', 'Nested Queries', 'Tidy 
 > - nest the results of one query as the input for another
 > - understand the basic rules of tidy data
 
-####Exercises
+{% include reading.html %}
 
 {% include assignment.html %}

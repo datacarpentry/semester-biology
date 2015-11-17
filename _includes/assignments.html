@@ -1,11 +1,30 @@
-<ol>
-{% for assignment in page.assignments %}
-  {% for otherpage in site.pages %}
-    {% if assignment == otherpage.title %}
-      <li>
-        <a href="{{ otherpage.url | prepend: site.baseurl }}">{{ otherpage.title }}</a>
-      </li>
-    {% endif %}
+<table>
+  <tr>
+    <th width="50">Week</th>
+    <th width="220">Lesson</th>
+    <th width="300">Material</th>
+    <th width="50">Reading</th>
+    <th width="50">Assignment</th>
+  </tr>
+  {% for assignment in page.assignments %}
+    <tr>
+      <td align="right">{{ forloop.index }}</td>
+      {% for otherpage in site.pages %}
+        {% if otherpage.title == assignment and otherpage.subtitle != "Readings" %}
+          {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
+          {% for readingpage in site.pages %}
+            {% if readingpage.title == assignment and readingpage.subtitle == "Readings" %}
+            {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
+              <td>{{ otherpage.title }}</td>
+              <td>{{ otherpage.subtitle }}</td>
+              <td align="center"><a href="{{ reading_link }}">
+                <i class="fa fa-book"></i></a></td>
+              <td align="center"><a href="{{ assignment_link }}">
+                <i class="fa fa-keyboard-o"></i></a></td>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </tr>
   {% endfor %}
-{% endfor %}	
-</ol>
+</table>
