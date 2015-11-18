@@ -5,6 +5,8 @@ title: Debugging
 
 ## Setup
 
+**Send `debugging-example-unfixed.R` to students so they can follow along.**
+
 * Start with a new project including `debugging-example-unfixed.R`
 
 ## Basic Strategy
