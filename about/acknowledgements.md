@@ -24,3 +24,8 @@ is freely available under a Creative Commons license (the same one we
 use here), and the existence of this content not only saves me a massive
 amount of time and effort, but also taught me a lot of what I know about
 programming well.
+
+#### Infrastructure
+
+The site is built using [Jekyll](http://jekyllrb.com/) and uses icons from
+[Font Awesome](http://fontawesome.io) by Dave Gandy.
