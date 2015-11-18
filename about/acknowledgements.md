@@ -1,11 +1,15 @@
 ---
 layout: page
-title: Acknowledgements
+title: Acknowledgments
 ---
 
-#### National Science Foundation
+#### Funding
 
-The development of this course, and this site, have been supported by an [NSF CAREER award](http://nsf.gov/awardsearch/showAward?AWD_ID=0953694) and by the Gordon and Betty Moore Foundation's Data-Driven Discovery Initiative through grants [GBMF4563](https://www.moore.org/grants/list/GBMF4855) and [GBMF4855](https://www.moore.org/grants/list/GBMF4855).
+The development of this course, and this site, have been supported by the Gordon
+and Betty Moore Foundation's Data-Driven Discovery Initiative through grants
+[GBMF4563](https://www.moore.org/grants/list/GBMF4563) and
+[GBMF4855](https://www.moore.org/grants/list/GBMF4855), and by an
+[NSF CAREER award](http://nsf.gov/awardsearch/showAward?AWD_ID=0953694).
 
 #### Data Carpentry
 
@@ -20,3 +24,8 @@ is freely available under a Creative Commons license (the same one we
 use here), and the existence of this content not only saves me a massive
 amount of time and effort, but also taught me a lot of what I know about
 programming well.
+
+#### Infrastructure
+
+The site is built using [Jekyll](http://jekyllrb.com/) and uses icons from
+[Font Awesome](http://fontawesome.io) by Dave Gandy.
