@@ -3,7 +3,7 @@ layout: page
 title: Acknowledgements
 ---
 
-#### National Science Foundation
+#### Funding
 
 The development of this course, and this site, have been supported by an [NSF CAREER award](http://nsf.gov/awardsearch/showAward?AWD_ID=0953694) and by the Gordon and Betty Moore Foundation's Data-Driven Discovery Initiative through grants [GBMF4563](https://www.moore.org/grants/list/GBMF4855) and [GBMF4855](https://www.moore.org/grants/list/GBMF4855).
 
