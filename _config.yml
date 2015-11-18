@@ -7,9 +7,8 @@ permalink:        pretty
 
 # Setup
 title:            Data Carpentry -for- Biologists
-tagline:          'A Jekyll theme'
 description:      'Teaching biologists the tools they need to use computers to do cool science'
-url:              http://www.datacarpentry.org
+url:              http://www.datacarpentry.org/semester-biology
 baseurl:          /semester-biology
 
 author:
