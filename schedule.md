@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['SQL Assignment 1', 'SQL Assignment 2', 'R Assignment 1', 'R Assignment 2', 'R Assignment 3', 'R Assignment 4', 'R Assignment 5', 'R Assignment 6', 'Git-R Assignment 1', 'R Assignment 7', 'Capstone Assignment 1']
+assignments: ['SQL Assignment 1', 'SQL Assignment 2', 'R Assignment 1', 'R Assignment 2', 'R Assignment 3', 'R Assignment 4', 'R Assignment 5', 'R Assignment 6', 'Git-R Assignment 1', 'R Assignment 7', 'R Assignment 8']
 ---
 
 {% include assignments.html %}
