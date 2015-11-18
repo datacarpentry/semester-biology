@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acknowledgements
+title: Acknowledgments
 ---
 
 #### Funding
