@@ -34,7 +34,7 @@ biocLite("ShortRead")
 The following code will then load a single sequence file:
 
 ```
-library("ShortRead")
+library(ShortRead)
 reads <- readFasta("data/archaea_dna/A-saccharovorans.fasta")
 seq <- sread(reads)
 ```
