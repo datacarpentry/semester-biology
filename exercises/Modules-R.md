@@ -10,7 +10,7 @@ Install and familiarize yourself with the `dplyr` package. The `library()` step(
 ```
 install.packages("dplyr")
 
-library("dplyr")
+library(dplyr)
 
 help(package = dplyr)
 ```
