@@ -15,11 +15,11 @@ you the following code which will calculate the GC content for a single
 sequence:
 
 ```
-library("stringr")
+library(stringr)
 
-sequence <- 'attggc'
-Gs <- str_count(sequence, 'g')
-Cs <- str_count(sequence, 'c')
+sequence <- "attggc"
+Gs <- str_count(sequence, "g")
+Cs <- str_count(sequence, "c")
 gc_content <- (Gs + Cs) / str_length(sequence) * 100 
 ```
 
