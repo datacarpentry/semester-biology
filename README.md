@@ -1,6 +1,6 @@
 # Data Carpentry for Biologists (semester)
 
-This is forkable set of teaching materials for teaching biologists how to work
+This is [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
 with data through programming, database management and computing more generally.
 
 This repository contains the complete teaching materials (excluding exams and
