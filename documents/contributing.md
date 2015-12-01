@@ -4,75 +4,55 @@ title: Help
 subtitle: Providing Feedback and Contributing New Material
 ---
 
+# Providing feedback
+
+[Provide feedback](https://github.com/datacarpentry/semester-biology/issues/new) by opening a new issue at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). Please, provide a clear description of your question, comment, or proposed change in the `Title` section and use the `Leave a comment` section for further detail or discussion. Select `Submit new issue` and the repository maintainers will be notified of your feedback. Thanks!
+
+
 # Contributing New Material
 
-Data Carpentry is an open source project, and we welcome contributions of all
-kinds: new and improved lessons, bug reports, and small fixes to existing
-material are all useful.
+Data Carpentry for Biologists is an open source project, and we welcome 
+contributions of all kinds: new and improved lessons, bug reports, and small 
+fixes to existing material are all useful.
 
 By contributing, you are agreeing that Data Carpentry may redistribute your work
 under [these licenses](LICENSE.md).
 
 
-**Table of Contents**
+# Working With GitHub from a Local Repository
 
-*   [Working With GitHub](#working-with-github)
-*   [Locations and Formats](#locations-and-formats)
-*   [FAQ](#faq)
+1.  [Fork and clone](https://help.github.com/articles/fork-a-repo/) the [`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
 
-
-## Working With GitHub
-
-1.  Fork the `datacarpentry/sql-ecology` repository on GitHub.
-
-2.  Clone that repository to your own machine.
-
-3.  Create a branch from `gh-pages` for your changes.
+2.  Create a branch from `gh-pages` for your changes.
     Give your branch a meaningful name,
     such as `fix-typos-in-select-query`
     or `add-groupby`.
 
-4.  Make your changes, commit them, and push them to your repository on GitHub.
+4.  Make your changes, [commit them, and push them to your repository on GitHub](https://help.github.com/articles/create-a-repo/#commit-your-first-change).
 
-5.  Send a pull request to the `gh-pages` branch of the repository
+5.  Send a [pull request](https://help.github.com/articles/using-pull-requests/) to the `gh-pages` branch of the repository
 
 If it is easier for you to send them to us some other way,
-please mail us at
-[board@datacarpentry.org](mailto:board@datacarpentry.org).
+please mail us at *LINK TO EMAIL*.
 Given a choice between you creating content or wrestling with Git,
 we'd rather have you doing the former.
 
 
-## Locations and Formats
+# Locations and Formats
 
-Every lesson has its own repository, with individual files for each topic. We
-use two digits followed by a one-word topic key to ensure files appear in the
-right order when listed.
+Core teaching materials are stored in the relevant folders including
+`lectures/`, 'ipynbs/' (a series of Project Jupyter notebooks), and `readings/`.
 
-Lessons should be written in Markdown.
+Class specific materials are stored in `assignments/`, `exercises/` and `solutions/`. Additional files are stored in `data/` and `code/`.
 
-## Datasets
+Most of the other folders and files support creating the course website using
+[Jekyll](http://jekyllrb.com/).
 
-We don't store data for lessons inside the lesson repositories. For completed
-lessons the data should be publicly available in a data repository appropriate
-to the data type. For lesson development the data may be provided in any way
-that is convenient including posting to a website, on
-[figshare](http://figshare.com/), a public dropbox link, a
-[GitHub gist](https://gist.github.com), or even included in the PR. Once the PR
-is ready to merge the data should be placed in the
-[official data repository](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459)
-and all links to the data updated.
+All web content files are written in Markdown. More details about formats and style used for the website are outlined for [assignments]({{ site.baseurl }}/documents/manage-assignments), [exercises]({{ site.baseurl }}/documents/manage-exercises), and [general style]({{ site.baseurl }}/documents/style-guide).
 
-## Formatting of the material
 
-To ensure a consistent formatting of the lessons, we recommend the following
-guidelines:
-* No trailing white space
-* Wrap lines at 80 characters (unless it breaks URLs)
-* Use unclosed `#` symbols for headers, e.g. `# Heading 1`
-
-## FAQ
+# FAQ
 
 *   *Where can I get help?*
     <br/>
-    Open an issue or email the Discuss list at [dc-discuss@lists.idyll.org](mailto:dc-discuss@lists.idyll.org)
+    Open an issue or email *LINK TO EMAIL* 
