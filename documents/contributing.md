@@ -13,30 +13,42 @@ subtitle: Providing Feedback and Contributing New Material
 
 Data Carpentry for Biologists is an open source project, and we welcome 
 contributions of all kinds: new and improved lessons, bug reports, and small 
-fixes to existing material are all useful.
+fixes to existing material are all useful. We use standard [GitHub flow](https://guides.github.com/introduction/flow/), so
+fork the repository, add or change material, and submit a pull request.
+
+* From GitHub.com
+
+* From a local GitHub repository 
+   1. [Fork and clone](https://help.github.com/articles/fork-a-repo/) the  
+[`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
+   2. Create a branch from `gh-pages` for your changes. Give your branch a 
+      meaningful name, such as `fix-typos-in-select-query` or `add-groupby`.
+   4. Make your changes, [commit them, and push them to your repository on  GitHub](https://help.github.com/articles/create-a-repo/#commit-your-first-change).
+   5.  Send a [pull request](https://help.github.com/articles/using-pull-requests/) to the `gh-pages` branch of the repository
+
+* If it is easier for you to send them to us some other way, please mail us at 
+_LINK TO EMAIL_. Given a choice between you creating content or wrestling with 
+Git, we'd rather have you doing the former.
+
+Course materials are managed on GitHub to facilitate collaboration on
+developing this kind of material for university courses. The central component
+of a flipped computing course is the exercises, so one of the primary form of
+contribution will likely be adding exercises to the pool of exercises. 
+Individual instructors can then select from a rich pool of exercises the ones 
+that fit the topics, languages, and scientific domains that best fit the 
+material they want to cover in the course.
+
+There are lots of great resources for being introduced to the individual
+concepts being taught in courses like this. Our philosophy is to use and improve
+these external resources when available instead of creating new versions of the
+same content. In particularly we actively use
+[Data Carpentry](http://datacarpentry.org/lessons) and
+[Software Carpentry](http://software-carpentry.org/lessons.html) workshop
+materials. However, in cases where the necessary material doesn't exist
+elsewhere it can certainly be added here.
 
 By contributing, you are agreeing that Data Carpentry may redistribute your work
 under [these licenses](LICENSE.md).
-
-
-# Working With GitHub from a Local Repository
-
-1.  [Fork and clone](https://help.github.com/articles/fork-a-repo/) the [`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
-
-2.  Create a branch from `gh-pages` for your changes.
-    Give your branch a meaningful name,
-    such as `fix-typos-in-select-query`
-    or `add-groupby`.
-
-4.  Make your changes, [commit them, and push them to your repository on GitHub](https://help.github.com/articles/create-a-repo/#commit-your-first-change).
-
-5.  Send a [pull request](https://help.github.com/articles/using-pull-requests/) to the `gh-pages` branch of the repository
-
-If it is easier for you to send them to us some other way,
-please mail us at *LINK TO EMAIL*.
-Given a choice between you creating content or wrestling with Git,
-we'd rather have you doing the former.
-
 
 # Locations and Formats
 
