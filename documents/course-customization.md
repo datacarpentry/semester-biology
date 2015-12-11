@@ -34,3 +34,9 @@ If you have Jekyll properly installed, you can then run
 
 from the command line and navigate to `http://localhost:4000/` in your browser 
 to preview the current state of the website.
+
+### What to change immediately to customize this to your own course
+
+- Update course description in `index.md` in the main directory.
+- Update course details in `syllabus.md` in the main directory.
+- Update `acknowlegements.md` and `audience.md` from the `about/` directory.
