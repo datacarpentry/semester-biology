@@ -13,6 +13,6 @@ subtitle: Forking the Course
 - Get started [customizing]({{ site.baseurl }}/documents/course-customization) your local copy of the course by making changes to:
    - [the schedule]({{ site.baseurl }}/documents/update-schedule)
    - [assignments]({{ site.baseurl }}/documents/manage-assignments)
-   - [exercises]({{ site.baseurl }}/documents/course-customization) 
+   - [exercises]({{ site.baseurl }}/documents/manage-exercises) 
 
 - From your local repository, you can also [contribute back](({{ site.baseurl }}/documents/contributing) to our master repository.
