@@ -34,3 +34,7 @@ located and what the file name is. So if you created a new exercise in the `exer
 
    - after pushing to GitHub at:
 `https://yourusername.github.io/semester-biology/exercises/my_awesome_exercise`
+
+- Add `output/` files for corresponding exercises in the `output/` directory with names that match the corresponding exercise with numerals following a `-` for multiple output files. For instance, the set of output files for 
+   - `Making-choices-1-R.md` would be 
+   - `Making-choices-1-R-1.png` and `Making-choices-1-R-2.txt`.
