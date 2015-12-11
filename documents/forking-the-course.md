@@ -15,4 +15,4 @@ subtitle: Forking the Course
    - [assignments]({{ site.baseurl }}/documents/manage-assignments)
    - [exercises]({{ site.baseurl }}/documents/manage-exercises) 
 
-- From your local repository, you can also [contribute back](({{ site.baseurl }}/documents/contributing) to our master repository.
+- From your local repository, you can also [contribute back]({{ site.baseurl }}/documents/contributing) to our master repository.
