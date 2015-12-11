@@ -27,7 +27,6 @@ language: R-Python-or-SQL
 
 - Add, commit, and push the new file to GitHub to get the content added to the website. These steps are further described in [Course Customization Help]({{ site.baseurl }}/documents/course-customization).
 
-
 - Access the exercise file on the web at the url based on where the file is 
 located and what the file name is. So if you created a new exercise in the `exercises/` folder called `my_awesome_exercise.md` it would be located
 
