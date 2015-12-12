@@ -18,8 +18,7 @@ students.
 
 The course and website are designed to encourage collaborative development by
 multiple instructors, with the hopes that this will lead to better training and
-more time for everyone. Take a look at the
-[README](https://github.com/ethanwhite/datacarp-semester-biology/blob/gh-pages/README.md)
+more time for everyone. Take a look at the [Course Development Help]({{ site.baseurl}}/documents)
 if you'd like to use the material for your own course or contribute to its
 development.
 
