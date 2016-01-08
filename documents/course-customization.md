@@ -39,4 +39,4 @@ to preview the current state of the website.
 
 - Update course description in `index.md` in the main directory.
 - Update course details in `syllabus.md` in the main directory.
-- Update `acknowlegements.md` and `audience.md` from the `about/` directory.
+- Update the `# Setup` information in `_config.yml` in the main directory.
