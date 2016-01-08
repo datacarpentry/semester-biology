@@ -8,7 +8,7 @@ subtitle: Forking the Course
 
 - Follow the [steps provided by GitHub](https://help.github.com/articles/fork-a-repo/) to fork the repository.
 
-- `git clone` the your forked version of the repository onto your local machine.
+- `git clone` the forked version of the repository onto your local machine.
 
 - Get started [customizing]({{ site.baseurl }}/documents/course-customization) your local copy of the course by making changes to:
    - [the schedule]({{ site.baseurl }}/documents/update-schedule)
