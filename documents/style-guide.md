@@ -6,7 +6,7 @@ subtitle: Style Guide
 
 ### Page Layout
 
-- Do NOT leave extra whitespace, unless required to properly format the markdown rendering. Include one blank line following the YAML front matter.
+- Do not leave extra whitespace, unless required to properly format the markdown rendering. Include one blank line following the YAML front matter.
 
 - Wrap lines at 80 characters, but don't break urls or markdown rendering.
 
@@ -33,11 +33,6 @@ subtitle: Style Guide
 
 - Use appropriate code style guides [ [R](http://adv-r.had.co.nz/Style.html) | [Python](https://www.python.org/dev/peps/pep-0008/) ] and [best practices](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R.html).
 
-- The code chunks have a shorter effective page width than the 80 characters afforded normal text. Reduce the length of code blocks to match web translation (*~60 characters*).
-
-
-### Philosophy
-
-- Write casually to engage the audience, but be sure to use precise and deliberate language to deliver content. 
-
-- Always clarify or provide informative links for content that is being introduced or that might trip up students. 
+- The code chunks have a shorter effective page width than the 80 characters 
+afforded normal text. Reduce the length of code blocks to improve readability 
+for students (*~60 characters*).
