@@ -6,12 +6,14 @@ subtitle: Providing Feedback and Contributing New Material
 
 ### Providing feedback and getting help
 
-- [Provide feedback or get help](https://github.com/datacarpentry/semester-biology/issues/new) by opening a new issue at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). 
+- [Open a new issue](https://github.com/datacarpentry/semester-biology/issues/new) at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). 
+- Provide a clear description of your question, comment, or proposed change in 
+the `Title` section and use the `Leave a comment` section for further detail or discussion. 
+- Select `Submit new issue` and the repository maintainers will be notified of your feedback. Thanks!
 
-- Please, provide a clear description of your question, comment, or proposed change in the `Title` section and use the `Leave a comment` section for further detail or discussion. Select `Submit new issue` and the repository maintainers will be notified of your feedback. Thanks!
+OR
 
-- If it is necessary for you to send your note to us some other way, please mail 
-us at _LINK TO EMAIL_. We want hear from you and we want it to be easy for you.
+- You can also email us at <datacarpentrysemester@weecology.org>. (*Though we prefer organizing comments and issues on GitHub, we want hear from you and we want it to be easy.*)
 
 
 ### File Locations and Formats
