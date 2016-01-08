@@ -18,7 +18,7 @@ students.
 
 The course and website are designed to encourage collaborative development by
 multiple instructors, with the hopes that this will lead to better training and
-more time for everyone. Take a look at the [Course Development Help]({{ site.baseurl}}/documents)
+more time for everyone. Take a look at the [Course Development Help]({{ site.baseurl}}/docs)
 if you'd like to use the material for your own course or contribute to its
 development.
 
