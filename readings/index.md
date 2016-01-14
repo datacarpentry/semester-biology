@@ -19,6 +19,6 @@ title: Readings
 
 ### SQL
 
-* [Introduction](SQL-0
+* [Introduction](SQL-0)
 * [Assignment 1](SQL-1)
 * [Assignment 2](SQL-2)
