@@ -18,7 +18,7 @@ Base](http://wiki.services.openoffice.org/wiki/Base/Data_Types)
 ### General database information
 
 [Lectures on databases using
-SQLite](http://software-carpentry.org/4_0/databases/) - Excellent video
+SQLite](https://www.youtube.com/playlist?list=PL3416DE5D2419D0D1) - Excellent video
 lecture series from Software Carpentry
 
 [Setting up an ODBC connection to a database (in
