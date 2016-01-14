@@ -16,6 +16,8 @@ title: Readings
 * [Assignment 6](R-6)
 * [Assignment 7](R-7)
 * [Assignment 8](R-8)
+* [Assignment 10](R-10)
+* [Additional Resources](additional-R)
 
 ### SQL
 
