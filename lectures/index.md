@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Material
+title: Lecture Materials
 ---
 <a href="#Python">Python</a> | <a href="#R">R</a> | <a href="#SQL">SQL</a>
 
@@ -70,17 +70,28 @@ with it on your computer by changing the code and seeing what happens.*
 
 ### R <a name="R"></a>
 
-LIST_OF_CLASSROOM_DEMOS
+- [Introduction]({{ site.baseurl }}/lectures/r-intro)
+- [Data Structures]({{ site.baseurl }}/lectures/data_structures_R)
+- [`dplyr`]({{ site.baseurl }}/lectures/dplyr)
+- [`ggplot`]({{ site.baseurl }}/lectures/ggplot)
+- [Functions]({{ site.baseurl }}/lectures/functions)
+- [`for` loops]({{ site.baseurl }}/lectures/for_loops_R)
+- [Conditionals]({{ site.baseurl }}/lectures/conditionals)
+- [Problem Decomposition]({{ site.baseurl }}/lectures/decomposition) | [R-script]({{ site.baseurl }}/lectures/decomposition-example.R)
+- [Genomics Example]({{ site.baseurl }}/lectures/bioconductor)
+- [Version Control]({{ site.baseurl }}/lectures/version-control)
+- [Project Structure]({{ site.baseurl }}/lectures/project_structure)
 
 
 ### SQL <a name="SQL"></a>
 
--   [Introduction to Databases]({{ site.baseurl }}/lectures/intro_to_databases.pdf)
--   [Database Structure]({{ site.baseurl }}/lectures/databases_structure.pdf)
--   [Creating Tables]({{ site.baseurl }}/lectures/sql-creating-tables)
--   [Updating Tables]({{ site.baseurl }}/lectures/sql-updating-tables)
--   [Joins]({{ site.baseurl }}/lectures/sql_joins)
--   [Nested Queries]({{ site.baseurl }}/lectures/sql_nested_queries)
+- [Introduction to Databases]({{ site.baseurl }}/lectures/intro_to_databases.pdf)
+- [Database Structure]({{ site.baseurl }}/lectures/databases_structure.pdf)
+- [Tidy Data]({{ site.baseurl }}/lectures/tidy_data)
+- [Creating Tables]({{ site.baseurl }}/lectures/sql-creating-tables)
+- [Updating Tables]({{ site.baseurl }}/lectures/sql-updating-tables)
+- [Joins]({{ site.baseurl }}/lectures/sql_joins)
+- [Nested Queries]({{ site.baseurl }}/lectures/sql_nested_queries)
 
 
 
