@@ -5,9 +5,9 @@ subtitle: Readings
 language: SQL
 ---
 
-* Selecting - [Video](http://software-carpentry.org/v4/databases/select.html)
-* Filtering - [Video](http://software-carpentry.org/v4/databases/filter.html)
-* Sorting - [Video](http://software-carpentry.org/v4/databases/sort.html)
-* Nulls - [Video](http://software-carpentry.org/v4/databases/null.html)
+* Selecting - [Video](https://www.youtube.com/watch?v=Gua3FpRzLdQ)
+* Filtering - [Video](https://www.youtube.com/watch?v=c3hoWxukrPE)
+* Sorting - [Video](https://www.youtube.com/watch?v=rNwwdijxxKs)
+* Nulls - [Video](https://www.youtube.com/watch?v=KLugfNdGNFw)
 * Basic Queries - [Reading](http://datacarpentry.github.io/sql-ecology/01-sql-basic-queries.html)
-* Aggregation - [Video](http://software-carpentry.org/v4/databases/aggregation.html) | [Reading](http://datacarpentry.github.io/sql-ecology/02-sql-aggregation.html)
+* Aggregation - [Video](https://www.youtube.com/watch?v=ZjuL-pfkUOA) | [Reading](http://datacarpentry.github.io/sql-ecology/02-sql-aggregation.html)
