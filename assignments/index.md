@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Assignments
-assignments: ['SQL Assignment 1', 'SQL Assignment 2', 'R Assignment 1', 'R Assignment 2', 'R Assignment 3', 'R Assignment 4', 'R Assignment 5', 'R Assignment 6', 'Git-R Assignment 1', 'R Assignment 7', 'R Assignment 8']
 ---
 
 ### Git
@@ -18,7 +17,6 @@ assignments: ['SQL Assignment 1', 'SQL Assignment 2', 'R Assignment 1', 'R Assig
 * [Assignment 7](python-7)
 * [Assignment 8](python-8)
 * [Assignment 9](python-9)
-
 
 ### R
 
