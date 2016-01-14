@@ -51,6 +51,8 @@ with it on your computer by changing the code and seeing what happens.*
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/matplotlib.ipynb))
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb)
     ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
+-   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
+    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
 -   [List comprehensions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/list-comprehensions.ipynb)
 ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/list-comprehensions.ipynb))
 -   [Debugging]({{ site.baseurl }}/lectures/basic_debugging.pdf)
@@ -71,8 +73,7 @@ with it on your computer by changing the code and seeing what happens.*
 LIST_OF_CLASSROOM_DEMOS
 
 
-### SQL [UNDER CONSTRUCTION] <a name="SQL"></a>
-*We're just in the process of adding R material to the course. Please, bear with us while we compile and develop the resources*
+### SQL <a name="SQL"></a>
 
 -   [Introduction to Databases]({{ site.baseurl }}/lectures/intro_to_databases.pdf)
 -   [Database Structure]({{ site.baseurl }}/lectures/databases_structure.pdf)
@@ -80,8 +81,7 @@ LIST_OF_CLASSROOM_DEMOS
 -   [Updating Tables]({{ site.baseurl }}/lectures/sql-updating-tables)
 -   [Joins]({{ site.baseurl }}/lectures/sql_joins)
 -   [Nested Queries]({{ site.baseurl }}/lectures/sql_nested_queries)
--   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb)
-    ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
+
 
 
 
