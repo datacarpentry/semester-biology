@@ -39,8 +39,9 @@ colnames(mammal_sizes) <- c("continent", "status", "order",
 ```
 
 1. Create a new RStudio project and a new version control repository for this
-   exercise and commit your changes in small logical chunks. If you would like a
-   private repository on GitHub please ask your instructor to set one
+   exercise and commit your changes in small logical chunks. Make sure to commit    
+   everything that is needed for the analysis to the repository. If you would 
+   like a private repository on GitHub please ask your instructor to set one
    up. Throughout the assignment focus on using good style to make the code easy
    for you or someone else to read.
 2. Calculate the mean mass of the extinct species and the mean mass of the
