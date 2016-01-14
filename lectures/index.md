@@ -109,11 +109,6 @@ with it on your computer by changing the code and seeing what happens.*
 **Style and Best Practices**
 -   [Advanced R](http://adv-r.had.co.nz/Style.html) | [Software Carpentry](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R.html) 
 
-**Advanced Material**
-
--   Regular Expressions - [STAT 545](http://stat545-ubc.github.io/block022_regular-expression.html)
--   Testing - [Advanced R](http://adv-r.had.co.nz/Exceptions-Debugging.html) | [Software Carpentry](http://swcarpentry.github.io/r-novice-inflammation/02-func-R.html)
--   Vocabulary - [Advanced R](http://adv-r.had.co.nz/Vocabulary.html)
 
 ### SQL [UNDER CONSTRUCTION] <a name="SQL"></a>
 *We're just in the process of adding R material to the course. Please, bear with us while we compile and develop the resources*
