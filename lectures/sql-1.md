@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SQL Assignment 1
+title: SQL Lecture 1
 subtitle: Introduction to Databases
 language: SQL
 ---
