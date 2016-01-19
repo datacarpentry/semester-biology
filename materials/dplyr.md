@@ -1,3 +1,9 @@
+---
+layout: lecture
+title: Working with Tabular Data
+language: R
+--- 
+
 ## Packages
 
 * Packages are the main way that reusable code is shared in R

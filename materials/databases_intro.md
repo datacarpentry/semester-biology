@@ -1,4 +1,8 @@
-# Introduction to databases
+---
+layout: lecture
+title: Introduction to Databases
+language: R
+---
 
 **If you haven't already install Firefox**
 

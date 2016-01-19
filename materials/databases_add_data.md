@@ -1,4 +1,8 @@
-# Adding data to databases
+---
+layout: lecture
+title: Adding Data to Databases
+language: R
+---
 
 There are three ways to add data to database management systems
 

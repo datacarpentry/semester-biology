@@ -1,3 +1,9 @@
+---
+layout: lecture
+title: Version Control
+language: R
+--- 
+
 ## Introduction
 
 In a browser:

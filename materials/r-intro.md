@@ -1,4 +1,8 @@
-# Introduction to R
+---
+layout: lecture
+title: Introduction to R
+language: R
+---
 
 * Programming language
 * Statistics and data analysis environment

@@ -1,6 +1,10 @@
-# For Loops
+---
+layout: lecture
+title: for loops
+language: R
+---
 
-## Basic for loops
+## Basic `for` loops
 
 * Let us do the same thing for a number of different values
 

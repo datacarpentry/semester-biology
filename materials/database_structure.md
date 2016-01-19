@@ -1,4 +1,8 @@
-# Database structure
+---
+layout: lecture
+title: Database Structure
+language: R
+---
 
 ## Five basic rules of database structure
 
