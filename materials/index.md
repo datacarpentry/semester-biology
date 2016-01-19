@@ -85,9 +85,10 @@ with it on your computer by changing the code and seeing what happens.*
 
 ### SQL <a name="SQL"></a>
 
-- [Introduction to Databases]({{ site.baseurl }}/lectures/intro_to_databases.pdf)
-- [Database Structure]({{ site.baseurl }}/lectures/databases_structure.pdf)
+- Introduction to Databases: [[Presentation]({{ site.baseurl }}/lectures/intro_to_databases.pdf) | [Lecture]({{ site.baseurl }}/materials/databases_intro)
+- Database Structure [Presentation]({{ site.baseurl }}/lectures/databases_structure.pdf) | [Lecture]({{ site.baseurl }}/materials/database_structure)
 - [Tidy Data]({{ site.baseurl }}/lectures/tidy_data)
+- [Adding Data]({{ site.baseurl }}/materials/databases_add_data)
 - [Creating Tables]({{ site.baseurl }}/lectures/sql-creating-tables)
 - [Updating Tables]({{ site.baseurl }}/lectures/sql-updating-tables)
 - [Joins]({{ site.baseurl }}/lectures/sql_joins)
