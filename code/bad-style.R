@@ -1,43 +1,27 @@
-simulate_shake_of_the_magic_8_ball_and_get_answer <- function(shaketime=3, 
-annotation=TRUE, answers_list=answers) { # This function simulates a shake of a Magic 8 Ball.
-cat("Shaking... ")
-Sys.sleep(shaketime/3)
-cat("... ")
-Sys.sleep(shaketime/3)
-cat("Turning... ")
-Sys.sleep(shaketime/3)
-if(annotation==TRUE) {
-cat(sub_function_1(sub_function_2(answers_list$full), answers_list))
-} else {
-cat(sub_function_2(answers_list$full))
+func1<-function(sub_list, total_list) {
+# calculates percent value of a group of interest. first vector arg is the group of interest, the second is the total population.
+fraction<-sum(sub_list)/sum(total_list)
+percent<-round(fraction,3)*100
+return(percent)
 }
-}
-
-library(stringr)
+trees<-read.csv("http://www.esapubs.org/archive/ecol/E090/251/datafiles/swamp_all_modern.txt", sep = '\t')
+species<-read.csv("http://www.esapubs.org/archive/ecol/E090/251/datafiles/species_codes.txt", sep = '\t')
 library(dplyr)
-sub_function_1<-function(answer, answers_list=answers) { # Annotate
-i <- select(answers_list %>% filter(full==answer), short)
-if (i  ==  'Yes') {
-new_answer<-paste(str_to_upper(answer),'!',sep='')
-} else if (i  ==  'Maybe') {
-new_answer <- paste(answer,'.',sep='')
-} else if (i  ==  'No') {
-new_answer<-paste(answer,'. ... :-(',sep ='')}
-return(new_answer)
+trees<-mutate(trees, Mass = 0.124*DBH**2.53)
+trees_grouped<-group_by(trees, Year, Plot, Species)
+tree_summary<-summarize(trees_grouped, col_1 = n(), col_2 = round(mean(DBH),2), col_3 = round(sum(Mass),0))
+species_rank<-data.frame(year=c(), sp_code=c(), percent_ind=c(), percent_mass=c())
+for (year in unique(tree_summary$Year)) { target_year <- filter(tree_summary, Year == year)
+for (sp_code in unique(tree_summary$Species)) {
+spp<-filter( target_year, Species==sp_code )
+percent_ind<-func1( spp$col_1, target_year$col_1 )
+percent_mass<-func1( spp$col_3, target_year$col_3 )
+species_rank<-rbind( species_rank, data.frame(year, sp_code, percent_ind, percent_mass) )
 }
-
-sub_function_2 <- function(answer_choices=answers$full) { #give it a vector of strings
-ANS <- as.character(sample(answer_choices, 1))
-return(ANS)
 }
-
-answers <- data.frame( 
-full = c("It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely", "You may rely on it", "As I see it, yes", "Most likely", "Outlook good", "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Don't count on it",  "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"),
-short = c("Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "No", "No", "No", "No", "No")
-)
-
-positive_answers<-filter(answers,short=="Yes")# Rig the Magic_8 ball
-simulate_shake_of_the_magic_8_ball_and_get_answer(answers_list=positive_answers)
-
-### For Real
-simulate_shake_of_the_magic_8_ball_and_get_answer()
+species_rank <- left_join(species_rank, species, by = c("sp_code" = "SPCODE"))
+library(ggplot2)
+ggplot(species_rank, aes(x = percent_ind, y = percent_mass)) +
+geom_point(aes(color = factor(SPECIES))) +
+facet_grid(. ~ year) +
+labs(x = "Percent Individuals", y = "Percent Mass", color = "Species")
