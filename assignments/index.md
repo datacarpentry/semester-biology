@@ -31,7 +31,6 @@ title: Assignments
 * [Assignment 9](r-9)
 * [Assignment 10](r-10)
 * [Assignment 11](r-11)
-* [Assignment 12](r-12)
 
 ### SQL
 
