@@ -14,4 +14,4 @@ The [National Ecological Observatory Network](http://www.neoninc.org) has entere
 at each plot. Plot a histogram of the results.
 5. Determine the average hind foot length and weight of each species collected 
 for each National Landcover Database (`nlcd`) class. Plot the average weight of all species with weight measurements from the woody wetlands.
-6. Write a set of nested queries to determine the total number of disturbed traps and average weight of Podimus floridanus for each sampling event (`eventID`).
+6. Write a set of nested queries to determine the total number of disturbed traps and average weight of *Podimus floridanus* for each sampling event (`eventID`).
