@@ -21,7 +21,8 @@ Download these into your `data` folder and get familiar with the data by
 importing the shrub dimensions data using `read.csv()` and then:
 
 1. Check the column names in the data using the function `names()`
-2. Print out the first few rows of the data using the function `head()`.
+2. Use `str()` to show the structure of the data frame and its individual columns
+3. Print out the first few rows of the data using the function `head()`.
 
    Use `dplyr` to complete the remaining tasks.
 3. Select the data from the length column and print it out.
@@ -37,7 +38,7 @@ importing the shrub dimensions data using `read.csv()` and then:
 
    Modify the code to calculate and print the average height of a plant in each
    experiment.
-7. Determine the maximum height of a plant at each site.
+7. Use `max()` to determine the maximum height of a plant at each site.
 8. Create a new data frame called `shrub_data_w_vols` that includes all of the
    original data and a new column containing the volumes, and display it.
 9. Import the experiments data and then use `inner_join` to combine it with the
