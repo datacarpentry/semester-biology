@@ -20,7 +20,7 @@
               {% for readingpage in site.pages %}
                 {% if readingpage.title == assignment and readingpage.subtitle == "Readings" %}
                   {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
-                  <td>{{ otherpage.title }}</td>
+                  <td>{{ otherpage.title | replace:' Assignment ','-' }}</td>
                   <td>{{ otherpage.subtitle }}</td>
                   <td align="center"><a href="{{ reading_link }}">
                     <i class="fa fa-book fa-lg"></i></a></td>
