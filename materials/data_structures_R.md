@@ -1,4 +1,8 @@
-# Data Structures in R
+---
+layout: lecture
+title: Data Structures
+language: R
+--- 
 
 ## Vectors
 

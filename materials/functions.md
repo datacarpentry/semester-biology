@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: lecture
 title: Functions
+language: R
 ---
 
 Package things into understandable chunks & reuse code easily.

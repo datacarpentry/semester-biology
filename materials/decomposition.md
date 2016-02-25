@@ -1,4 +1,8 @@
-# Problem Decomposition
+---
+layout: lecture
+title: Problem Decomposition
+language: R
+---
 
 1. Understand the problem
 2. Break the problem down into a few pieces

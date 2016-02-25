@@ -1,3 +1,9 @@
+---
+layout: lecture
+title: Tidy Database Structure
+language: R
+--- 
+
 ## Multiple tables
 
 * It is often not efficient to include all information of interest in a single

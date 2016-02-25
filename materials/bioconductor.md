@@ -1,4 +1,8 @@
-# Other data structures
+---
+layout: lecture
+title: Other Data Structures
+language: R
+---
 
 ## Lists
 

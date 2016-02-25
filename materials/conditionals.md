@@ -1,4 +1,8 @@
-# Conditionals
+---
+layout: lecture
+title: Conditionals
+language: R
+---
 
 ## Conditions
 

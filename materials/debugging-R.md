@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: lecture
 title: Debugging
+language: R
 ---
 
 ## Setup

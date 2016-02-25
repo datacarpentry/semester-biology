@@ -1,4 +1,8 @@
-# Graphing using ggplot
+---
+layout: lecture
+title: Graphing using ggplot
+language: R
+---
 
 ```
 library(dplyr)

@@ -1,3 +1,9 @@
+---
+layout: lecture
+title: Project Structure
+language: R
+--- 
+
 ## Simple
 
 * Code: / (single top level script)
