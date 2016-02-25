@@ -1,6 +1,9 @@
 # Dependencies
-markdown:         rdiscount
+markdown:         kramdown
 highlighter:      rouge
+
+kramdown:
+  input:          GFM
 
 # Permalinks
 permalink:        pretty
