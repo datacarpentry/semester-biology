@@ -3,6 +3,14 @@ layout: page
 title: Acknowledgments
 ---
 
+#### Primary Contributors
+
+Course materials and website design have been primarily developed and
+implemented by [Ethan White](http://ethanwhite.org) and
+[Zachary Brym](http://zackbrym.weecology.org/). See our
+[contributors page](https://github.com/datacarpentry/semester-biology/graphs/contributors)
+for more details.
+
 #### Funding
 
 The development of this course, and this site, have been supported by the Gordon
