@@ -12,10 +12,10 @@ how to use appropriately. `help()` takes one parameter, the name of the function
 you want information about. E.g.,`help(round)`.
 
 1. The absolute value of -15.5.
-2. 4.483847 rounded to one decimal place. The function `round` takes two
+2. 4.483847 rounded to one decimal place. The function `round()` takes two
    arguments, the number to be rounded and the number of decimal places.
 3. 3.8 rounded to the nearest integer. You don't have to specify the number of
-   decimal places in this case if you don't want to, because `round` will
+   decimal places in this case if you don't want to, because `round()` will
    default to using 0 if the second argument is not provided. Look at
    `help(round)` or `?round` to see how this is indicated.
 4. Assign the value of the square root of 2.6 to a variable. Then round the
@@ -23,4 +23,4 @@ you want information about. E.g.,`help(round)`.
    variable. Print out the rounded value.
 5. Do the same thing as in problem 4, but instead of creating the intermediate
    variable, perform both the square root and the round on a single line by
-   putting the `sqrt` call inside the `round` call.
+   putting the `sqrt()` call inside the `round()` call.
