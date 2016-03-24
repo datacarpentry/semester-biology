@@ -13,7 +13,7 @@ Start by creating a `data` directory in the same directory as your homework
 scripts and then downloading [the data]({{ site.baseurl }}/data/gainesville_precip.csv) and saving it to this `data` directory.
 
 Each row of this data file is a year (from 1961-2013) and each column is a month
-(January- December).
+(January - December).
 
 Rearrange the following program so that it:
 
