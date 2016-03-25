@@ -1,27 +1,26 @@
 <table>
   <tr>
     <th width="50">Week</th>
-    <th width="220">Lesson</th>
-    <th width="300">Material</th>
+    <th width="200">Language</th>
+    <th width="300">Lesson</th>
     <th width="50">Reading</th>
     <th width="50">Lecture</th>
     <th width="50">Assignment</th>
   </tr>
   {% for assignment in page.assignments %}
-    {% capture lecture_name %}{{ assignment | replace:'Assignment','Lecture' }}{% endcapture %}
     <tr>
       <td align="right">{{ forloop.index }}</td>
       {% for otherpage in site.pages %}
-        {% if otherpage.title == assignment and otherpage.subtitle != "Readings" %}
+        {% if otherpage.title == assignment and otherpage.element == 'assignment' %}
+          <td>{{ otherpage.language }}</td>
           {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
           {% for lecturepage in site.pages %}
-            {% if lecturepage.title == lecture_name %}
+            {% if lecturepage.title == assignment and lecturepage.element == 'lecture' %}
               {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
               {% for readingpage in site.pages %}
-                {% if readingpage.title == assignment and readingpage.subtitle == "Readings" %}
+                {% if readingpage.title == assignment and readingpage.element == 'reading' %}
                   {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
-                  <td>{{ otherpage.title | replace:' Assignment ','-' }}</td>
-                  <td>{{ otherpage.subtitle }}</td>
+                  <td>{{ assignment }}</td>
                   <td align="center"><a href="{{ reading_link }}">
                     <i class="fa fa-book fa-lg"></i></a></td>
                   <td align="center"><a href="{{ lecture_link }}">
