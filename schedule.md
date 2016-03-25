@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['SQL Assignment 1', 'SQL Assignment 2', 'R Assignment 1', 'R Assignment 2', 'R Assignment 3', 'R Assignment 4', 'R Assignment 5', 'R Assignment 6', 'Git-R Assignment 1', 'R Assignment 7', 'R Assignment 8']
+assignments: ['Introduction to Databases', 'Database Structure and Joins',
+'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
+'Programming Fundamentals 1', 'Programming Fundamentals 2','Version Control Basics', 'Integrating R and SQL', 'Putting It All Together']
 ---
 
 {% include assignments.html %}
