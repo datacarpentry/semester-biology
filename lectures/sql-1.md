@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SQL Lecture 1
-subtitle: Introduction to Databases
+element: lecture
+title: Introduction to Databases
 language: SQL
 ---
 
