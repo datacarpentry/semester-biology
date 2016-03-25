@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SQL Assignment 2
-subtitle: Readings
+element: reading
+title: Database Structure and Joins
 language: SQL
 ---
 

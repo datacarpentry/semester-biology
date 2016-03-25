@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SQL Lecture 2
-subtitle: Selecting, Filtering, Sorting, and Aggregating Data
+element: lecture
+title: Database Structure and Joins
 language: SQL
 ---
 
