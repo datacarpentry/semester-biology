@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Git-R Lecture 1
-subtitle: Version Control Basics
+element: lecture
+title: Version Control Basics
 language: R
 ---
 
