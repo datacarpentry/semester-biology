@@ -1,7 +1,7 @@
 ---
 layout: page
+element: reading
 title: Additional R Resources
-subtitle: Readings
 language: R
 ---
 
