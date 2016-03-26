@@ -12,7 +12,8 @@ This example will walk you through how to get data that already exists
 into SQLite.
 
 1. Download the main table for the [Portal LTREB mammal survey
-database](http://files.figshare.com/2292172/surveys.csv). *It's kind of large so it might take a few seconds*. This database is published as a Data Paper on [Ecological Archives](http://esapubs.org/archive/default.htm), which is generally a great place to look for ecology data.
+database](https://ndownloader.figshare.com/files/2292172). *It's kind of large so it might take a few seconds*. This database is published as a Data Paper on 
+[Ecological Archives](http://esapubs.org/archive/default.htm), which is generally a great place to look for ecology data.
 2. Create a new database by clicking on `New Database` in the `Database` drop down menu. Select a file name, like `portal_mammals.sqlite`, and location.
 ​
 3. Click on the `Import` icon.
@@ -33,5 +34,5 @@ can cause some data to not be imported and/or prevent you from doing some kinds
 of data manipulations.** ​
 9. Select `recordID` as the `Primary Key` and click `OK`.
 10. Click `OK` when it asks if you are sure you want to import the data.
-11. Now import the [plots](http://files.figshare.com/1919738/plots.csv), and
-    [species](http://files.figshare.com/1919741/species.csv) tables.
+11. Now import the [plots](https://ndownloader.figshare.com/files/3299474), and
+    [species](https://ndownloader.figshare.com/files/3299483) tables.

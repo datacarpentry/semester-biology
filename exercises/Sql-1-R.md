@@ -12,7 +12,7 @@ she seems to expect you will maintain your benevolence. (*Such is a fair
 expectation of a true wizard*). This time though, she's looking for some extra 
 detail in her queries. She's curious if desert rodents are [dimorphic](https://en.wikipedia.org/wiki/Sexual_dimorphism) in size.
 
-1. Download a new copy of the [Portal database](http://files.figshare.com/2292171/portal_mammals.sqlite). 
+1. [Download a new copy](https://ndownloader.figshare.com/files/2292171) of the Portal database. 
 2. Connect to `portal_mammals.sqlite` using the `RSQLite` package.
 3. Start by reminding yourself about which tables are in the database using
 `dbListTables()`

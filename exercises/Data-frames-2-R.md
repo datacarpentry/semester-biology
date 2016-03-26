@@ -9,8 +9,8 @@ Throughout this course we will slowly build on integrating database management
 with R coding. The first and most basic way to get data from your database into
 R is to export it from the database and then import it into R.
 
-Download a [new copy](http://files.figshare.com/1919743/portal_mammals.sqlite)
-of the `portal_mammals.sqlite` database using the SQLite Manager. Write a query
+[Download a new copy](https://ndownloader.figshare.com/files/2292171)
+of the `portal_mammals.sqlite` database. Using the SQLite Manager, write a query
 to extract the year of capture, genus, species, and weight of the 500 largest
 individuals captured at the site. Save your query as a View and export it to as
 a csv file using the `Export Wizard`. You can initiate the `Export Wizard` by
