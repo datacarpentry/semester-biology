@@ -19,7 +19,8 @@ for everyone.
 
 ##### For Instructors
 * [Readings]({{ site.baseurl }}/readings)
-* [Material]({{ site.baseurl }}/material)
+* [Lectures]({{ site.baseurl }}/lectures)
+* [Lecture Materials]({{ site.baseurl }}/materials)
 * [Assignments]({{ site.baseurl }}/assignments)
 * [Course Development Help]({{ site.baseurl}}/docs)
 
