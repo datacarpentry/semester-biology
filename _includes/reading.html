@@ -1,6 +1,6 @@
 <h4>Reading</h4>
 {% for readingpage in site.pages %}
- {% if readingpage.title == page.title and readingpage.subtitle == "Readings" and readingpage.language == page.language %}
+ {% if readingpage.title == page.title and readingpage.element == 'reading' %}
   {{readingpage.content}}
  {% endif %}
 {% endfor %}

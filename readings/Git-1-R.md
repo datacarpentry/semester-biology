@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Git-R Assignment 1
-subtitle: Readings
+element: reading
+title: Version Control Basics
 language: R
 ---
 
