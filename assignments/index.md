@@ -4,7 +4,7 @@ title: Assignments
 ---
 
 ### Git
-* [Git with R](git-1-R)
+* [Git with R](r-git)
 
 ### Python
 
@@ -20,19 +20,19 @@ title: Assignments
 
 ### R
 
-* [Assignment 1](r-1)
-* [Assignment 2](r-2)
-* [Assignment 3](r-3)
-* [Assignment 4](r-4)
-* [Assignment 5](r-5)
-* [Assignment 6](r-6)
-* [Assignment 7](r-7)
-* [Assignment 8](r-8)
-* [Assignment 9](r-9)
-* [Assignment 10](r-10)
-* [Assignment 11](r-11)
+* [Introduction to R and RStudio](r-intro)
+* [Working with Data](r-data)
+* [Data Visualization](r-datavis)
+* [Programming Fundamentals 1](r-fundamentals-1)
+* [Programming Fundamentals 2](r-fundamentals-2)
+* [Version Control Basics](r-git)
+* [Integrating R and SQL](r-sql)
+* [Putting It All Together](r-capstone)
+* [String Exercises](r-strings)
+* [Advanced Topics](r-advanced)
+* [Review](r-review)
 
 ### SQL
 
-* [Assignment 1](sql-1)
-* [Assignment 2](sql-2)
+* [Introduction to Databases](sql-intro)
+* [Database Structure and Joins](sql-joins)
