@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Help
 subtitle: Adding and Modifying Assignments
 ---
@@ -16,7 +16,7 @@ the website, like the title of the page, what language it applies to, and a list
 of accompanying files. The body mainly includes the 'Learning Objectives' 
 content and two [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) tags that are used by Jekyll that MUST be included AS IS. ]]
 
-- Add, commit, and push the new file to GitHub to get the content added to the website. These steps are further described in [Course Customization Help]({{ site.baseurl }}/documents/course-customization).
+- Add, commit, and push the new file to GitHub to get the content added to the website. These steps are further described in [Course Customization Help]({{ site.baseurl }}/docs/course-customization).
 
 - Access the assignment file on the web at the url based on where the file is 
 located and what the file name is. So if you created a new assignment in the 

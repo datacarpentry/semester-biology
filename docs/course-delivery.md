@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Help
 subtitle: Teaching Strategies and Course Delivery
 ---

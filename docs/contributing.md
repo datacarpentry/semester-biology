@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Help
 subtitle: Providing Feedback and Contributing New Material
 ---
@@ -26,7 +26,7 @@ Class specific materials are stored in `assignments/`, `exercises/` and `solutio
 Most of the other folders and files support creating the course website using
 [Jekyll](http://jekyllrb.com/).
 
-All web content files are written in Markdown. More details about formats and style used for the website are outlined for [assignments]({{ site.baseurl }}/documents/manage-assignments), [exercises]({{ site.baseurl }}/documents/manage-exercises), and [general style]({{ site.baseurl }}/documents/style-guide).
+All web content files are written in Markdown. More details about formats and style used for the website are outlined for [assignments]({{ site.baseurl }}/docs/manage-assignments), [exercises]({{ site.baseurl }}/docs/manage-exercises), and [general style]({{ site.baseurl }}/docs/style-guide).
 
 
 ### Contributing New Material
@@ -45,7 +45,7 @@ fork the repository, add or change material, and submit a pull request.
 - From GitHub.com
    1. Click on the `Fork` button at the top right corner of the [`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
    2. Navigate to your forked repository at `https://yourusername.github.io/semester-biology/`
-   3. Navigate to the file you want to change (*like [`contibuting.md`](https://github.com/datacarpentry/semester-biology/blob/gh-pages/documents/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
+   3. Navigate to the file you want to change (*like [`contibuting.md`](https://github.com/datacarpentry/semester-biology/blob/gh-pages/docs/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
    4. Make changes to the file.
    5. Commit the changes using the form at the bottom of the `edit` page. If you are working on your own forked version of the course, you can choose 'Commit directly to the `gh-pages` branch'. The other option ('Create a **new branch**') is used for a work flow with [Pull Requests](https://help.github.com/articles/using-pull-requests), which is our preferred way of receiving collaborative contributions.
 
@@ -60,7 +60,7 @@ Data Carpentry for Biologists is an open source project, and we welcome
 contributions of all kinds: new and improved lessons, bug reports, and small 
 fixes to existing material are all useful. Course materials are managed on 
 GitHub to facilitate collaboration on developing this kind of material for 
-university courses. The central component of a [flipped computing course]({{ site.baseurl }}/documents/course-delivery) is the 
+university courses. The central component of a [flipped computing course]({{ site.baseurl }}/docs/course-delivery) is the 
 exercises, so one of the primary forms of contribution we expect will be adding 
 exercises to the existing set. Individual instructors can then select from a 
 rich pool of exercises the set that best fit the topics, languages, and 
@@ -75,6 +75,6 @@ same content. In particularly we actively use
 materials. However, in cases where the necessary material doesn't exist
 elsewhere it can certainly be added to `materials/`.
 
-By contributing, you are agreeing that your work is [licensed using a combination of CC-BY and MIT licenses](LICENSE.md) and may be openly used, modified, and distributed by others.
+By contributing, you are agreeing that your work is [licensed using a combination of CC-BY and MIT licenses]({{ site.baseurl }}/LICENSE) and may be openly used, modified, and distributed by others.
 
 
