@@ -19,7 +19,7 @@ OR
 ### File Locations and Formats
 
 Core teaching materials are stored in the relevant folders including
-`lectures/`, `ipynbs/` (a series of Project Jupyter notebooks), and `readings/`.
+`lectures/`, `materials/`, and `readings/`.
 
 Class specific materials are stored in `assignments/`, `exercises/` and `solutions/`. Additional files are stored in `data/` and `code/`.
 
