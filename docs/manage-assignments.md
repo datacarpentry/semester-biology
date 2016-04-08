@@ -6,8 +6,8 @@ subtitle: Adding and Modifying Assignments
 
 - Create or modify a [markdown file](http://daringfireball.net/projects/markdown/basics) from the `assignments/` directory.
  
-- Use the [assignments template]({{ site.baseurl }}/documents/assignments-template) [[Raw](https://raw.githubusercontent.com/datacarpentry/semester-biology/gh-pages/documents/assignments-template.md)] to be sure the file content is read correctly 
-by [Jekyll](http://jekyllrb.com/). Items that we expect you to input are `title:`, `subtitle:`, `language:`, `exercises:`, `objective`s list. 
+- Use the [assignments template]({{ site.baseurl }}/docs/assignments-template) [[Raw](https://raw.githubusercontent.com/datacarpentry/semester-biology/gh-pages/docs/assignments-template.md)] to be sure the file content is read correctly 
+by [Jekyll](http://jekyllrb.com/). Items that we expect you to input are `title:`, `language:`, `exercises:`, the 'Learning Objectives' list. 
 [[ EXTRA INFO: Each markdown file needs to start with some information and 
 standard content that is stored in a way Jekyll uses to automate rendering of 
 the website. The starting content, or 'Front Matter', is entered using something 
