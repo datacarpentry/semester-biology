@@ -5,7 +5,7 @@ title: Lecture Materials
 <a href="#Python">Python</a> | <a href="#R">R</a> | <a href="#SQL">SQL</a>
 
 ### General Programing Resources
-- [Problem Decomposition]({{ site.baseurl }}/material/problem-decomposition)
+- [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
 
 ### Python <a name="Python"></a>
 *Most of the material here is presented as
