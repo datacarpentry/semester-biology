@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Help
 subtitle: Customizing the Course for Your Needs
 ---
@@ -8,7 +8,7 @@ subtitle: Customizing the Course for Your Needs
 
 The website is setup to be easy to run automatically through GitHub:
 
-1. [Fork]({{ site.baseurl }}/documents/forking-the-course) 
+1. [Fork]({{ site.baseurl }}/docs/forking-the-course) 
    or [import](https://import.github.com/) the repository
    * In a few minutes you should be able to see the site at:
      `https://yourusername.github.io/semester-biology/`
@@ -30,7 +30,7 @@ introduction on how to do this](https://help.github.com/articles/using-jekyll-wi
 
 If you have Jekyll properly installed, you can then run
 
-`jekyll serve` OR `jekyll serve --baseurl ''`
+`bundle exec jekyll serve`
 
 from the command line and navigate to `http://localhost:4000/` in your browser 
 to preview the current state of the website.

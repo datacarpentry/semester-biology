@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Help
 subtitle: Adding and Modifying Exercises
 ---
@@ -23,9 +23,9 @@ language: R-Python-or-SQL
    * Wrap lines at 80 characters (unless it breaks URLs)
    * Use unclosed `#` symbols for headers, e.g. ```# Heading 1```
    * Use ordered lists only when introducing sequential tasks
-   * For more, please see the website [Style Guide]({{ site.baseurl }}/documents/style-guide).
+   * For more, please see the website [Style Guide]({{ site.baseurl }}/docs/style-guide).
 
-- Add, commit, and push the new file to GitHub to get the content added to the website. These steps are further described in [Course Customization Help]({{ site.baseurl }}/documents/course-customization).
+- Add, commit, and push the new file to GitHub to get the content added to the website. These steps are further described in [Course Customization Help]({{ site.baseurl }}/docs/course-customization).
 
 - Access the exercise file on the web at the url based on where the file is 
 located and what the file name is. So if you created a new exercise in the `exercises/` folder called `my_awesome_exercise.md` it would be located

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: exercise
 title: Help
 subtitle: Forking the Course
 ---
@@ -10,9 +10,9 @@ subtitle: Forking the Course
 
 - `git clone` the forked version of the repository onto your local machine.
 
-- Get started [customizing]({{ site.baseurl }}/documents/course-customization) your local copy of the course by making changes to:
-   - [the schedule]({{ site.baseurl }}/documents/update-schedule)
-   - [assignments]({{ site.baseurl }}/documents/manage-assignments)
-   - [exercises]({{ site.baseurl }}/documents/manage-exercises) 
+- Get started [customizing]({{ site.baseurl }}/docs/course-customization) your local copy of the course by making changes to:
+   - [the schedule]({{ site.baseurl }}/docs/update-schedule)
+   - [assignments]({{ site.baseurl }}/docs/manage-assignments)
+   - [exercises]({{ site.baseurl }}/docs/manage-exercises) 
 
-- From your local repository, you can also [contribute back]({{ site.baseurl }}/documents/contributing) to our master repository.
+- From your local repository, you can also [contribute back]({{ site.baseurl }}/docs/contributing) to our master repository.
