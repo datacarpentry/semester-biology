@@ -1,5 +1,6 @@
 ---
-layout: lecture
+layout: page
+element: notes
 title: Integrating R and SQL
 language: R
 ---
