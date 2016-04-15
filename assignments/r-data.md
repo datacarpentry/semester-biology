@@ -6,7 +6,7 @@ language: R
 exercises: ['Modules', 'Scientific 0', 'Code fix - dplyr', 'Dplyr Using Databases']
 ---
 
-####Learning Objectives
+#### Learning Objectives
 
 > Following this assignment students should be able to:
 >

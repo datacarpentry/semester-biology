@@ -6,10 +6,10 @@ language: R
 exercises: ['Putting it all together']
 ---
 
-####Learning Objectives
+#### Learning Objectives
 
 > Following this assignment students should be able to:
-
+>
 > - integrate programing fundamentals and working with data
 > - solve a data analysis problem with logical and automated code chunks
 > - communicate effectively with informative and well-styled R scripts
