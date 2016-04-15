@@ -2,58 +2,86 @@
 layout: page
 title: Exercises
 ---
-<a href="#Python">Python</a> | <a href="#R">R</a> | <a href="#SQL">SQL</a>
+<a href="#Python">Python</a> \| <a href="#R">R</a> \| <a href="#SQL">SQL</a>
 
 ### Python <a name="Python"></a>
-<ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Output</th>
+  </tr>
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'Python' %}
-    <li>
-    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-    {{ page.subtitle | prepend: "<-- " | append: " -->" }}
+   <tr>
+    <td nowrap><a href="{{ page.url | prepend: site.baseurl }}">
+      {{ page.title | replace:'and','&'  }}</a></td>
+    <td>{{ page.subtitle }}</td>
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+    <td>
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        <a href="{{ solution.path | prepend: site.baseurl}}">output</a>
+        <a href="{{ solution.path | prepend: site.baseurl}}">
+          [{{ solution.path | split:"." | last}}]</a>
       {% endif %}
     {% endfor %}
-    </li>
+    </td>
+   </tr>
   {% endif %}
 {% endfor %}
-</ul>
+</table>
+
 
 ### R <a name="R"></a>
-<ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Output</th>
+  </tr>
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'R' %}
-    <li>
-    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-    {{ page.subtitle | prepend: "<-- " | append: " -->" }}
+   <tr>
+    <td nowrap><a href="{{ page.url | prepend: site.baseurl }}">
+      {{ page.title | replace:'and','&'  }}</a></td>
+    <td>{{ page.subtitle }}</td>
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+    <td>
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        <a href="{{ solution.path | prepend: site.baseurl}}">output</a>
+        <a href="{{ solution.path | prepend: site.baseurl}}">
+          [{{ solution.path | split:"." | last}}]</a>
       {% endif %}
     {% endfor %}
-    </li>
+    </td>
+   </tr>
   {% endif %}
 {% endfor %}
-</ul>
+</table>
 
 ### SQL <a name="SQL"></a>
-<ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Output</th>
+  </tr>
 {% for page in site.pages %}
   {% if page.layout == 'exercise' and page.language == 'SQL' %}
-    <li>
-    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-    {{ page.subtitle | prepend: "<-- " | append: " -->" }}
+   <tr>
+    <td nowrap><a href="{{ page.url | prepend: site.baseurl }}">
+      {{ page.title | replace:'and','&'  }}</a></td>
+    <td>{{ page.subtitle }}</td>
     {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+    <td>
     {% for solution in site.static_files %}
       {% if solution.path contains output_file %}
-        <a href="{{ solution.path | prepend: site.baseurl}}">output</a>
+        <a href="{{ solution.path | prepend: site.baseurl}}">
+          [{{ solution.path | split:"." | last}}]</a>
       {% endif %}
     {% endfor %}
-    </li>
+    </td>
+   </tr>
   {% endif %}
 {% endfor %}
-</ul>
+</table>
