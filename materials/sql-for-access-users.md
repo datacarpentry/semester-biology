@@ -1,6 +1,8 @@
 ---
 layout: page
+element: notes
 title: SQL for Access Users
+language: SQL
 ---
 
 Side by Side Demonstrations

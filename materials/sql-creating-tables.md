@@ -1,6 +1,8 @@
 ---
-layout: page 
+layout: page
+element: notes 
 title: Creating Tables
+language: SQL
 ---
 
 To create new tables in a database we use the [CREATE

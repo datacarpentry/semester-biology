@@ -1,6 +1,8 @@
 ---
 layout: page
-title: SQL Joins
+element: notes
+title: Joins
+language: SQL
 ---
 
 ### Basic join

@@ -1,6 +1,8 @@
 ---
 layout: page
-title: SQL Nested Queries
+element: notes
+title: Nested Queries
+language: SQL
 ---
 
 Basically anything in SQL can be replaced with a query. This includes tables,

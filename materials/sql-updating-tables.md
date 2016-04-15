@@ -1,6 +1,8 @@
 ---
-layout: page 
-title: Updating Tables 
+layout: page
+element: notes 
+title: Updating Tables
+language: SQL
 ---
 
 ### Adding new records
