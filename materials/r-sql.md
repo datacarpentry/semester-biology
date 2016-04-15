@@ -1,4 +1,8 @@
-# R-SQL
+---
+layout: lecture
+title: Integrating R and SQL
+language: R
+---
 
 * Already seen how to connect to database using `dplyr`
 * What if we want to do this outside of a `dplyr` context
