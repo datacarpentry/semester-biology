@@ -4,8 +4,6 @@ title: Integrating R and SQL
 language: R
 ---
 
-# R-SQL
-
 * Already seen how to connect to database using `dplyr`
 * What if we want to do this outside of a `dplyr` context
 * Use `DBI` and `RSQLite` (or other appropriate DBMS plugin)
