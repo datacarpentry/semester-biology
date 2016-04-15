@@ -1,3 +1,9 @@
+---
+layout: lecture
+title: Integrating R and SQL
+language: R
+---
+
 # R-SQL
 
 * Already seen how to connect to database using `dplyr`
