@@ -7,10 +7,10 @@ exercises: ['Higher Order Functions', 'Regular Expressions', 'Debugging', 'Tests
 ---
 
 
-####Learning Objectives
+#### Learning Objectives
 
 > Following this assignment students should be able to:
-
+>
 > - write basic and nested functions
 > - understand the search patterns described by regular expressions
 > - debug and test R script to ensure proper function and output 

@@ -6,10 +6,10 @@ language: R
 exercises: ['R-SQL 1', 'R-SQL 2', 'R-SQL 4', 'NEON 1']
 ---
 
-####Learning Objectives
+#### Learning Objectives
 
 > Following this assignment students should be able to:
-
+>
 > - connect to a remote database and execute simple queries
 > - integrate database and R workflow
 > - export output data from R to database

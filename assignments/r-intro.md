@@ -6,7 +6,7 @@ language: R
 exercises: ['Expressions and Variables 1', 'Expressions and Variables 2', 'Expressions and Variables 3', 'Functions 1', 'Expressions and Variables 5', 'Data Analysis', 'Vectors 1', 'Vectors 2', 'Data Frames 1']
 ---
 
-####Learning Objectives
+#### Learning Objectives
 
 > Following this assignment students should be able to:
 >

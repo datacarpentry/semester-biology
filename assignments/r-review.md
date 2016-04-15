@@ -6,10 +6,10 @@ language: R
 exercises: ['Basic 1', 'Basic 2', 'Making Choices 4', 'Scientific 3']
 ---
 
-####Learning Objectives
+#### Learning Objectives
 
 > Following this assignment students should be able to:
-
+>
 > - ensure proficiency and understanding of course learning objectives
 > - affirm course success by completing challenge exercises  
 

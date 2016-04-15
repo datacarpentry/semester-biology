@@ -6,10 +6,10 @@ language: R
 exercises: ['SQL Practice', 'Graphing 1', 'Graphing 2']
 ---
 
-####Learning Objectives
+#### Learning Objectives
 
 > Following this assignment students should be able to:
-
+>
 > - understand the basic plot function of `ggplot2`
 > - import 'messy' data with missing values and extra lines
 > - execute and visualize a regression analysis
