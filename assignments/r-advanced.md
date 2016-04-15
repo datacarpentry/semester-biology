@@ -15,4 +15,6 @@ exercises: ['Higher Order Functions', 'Regular Expressions', 'Debugging', 'Tests
 > - understand the search patterns described by regular expressions
 > - debug and test R script to ensure proper function and output 
 
+{% include reading.html %}
+
 {% include assignment.html %}

@@ -4,23 +4,23 @@ title: Readings
 ---
 
 ### Git
-* [Git with R](Git-1-R)
+
+* [Git with R](R-git)
 
 ### R
 
-* [Assignment 1](R-1)
-* [Assignment 2](R-2)
-* [Assignment 3](R-3)
-* [Assignment 4](R-4)
-* [Assignment 5](R-5)
-* [Assignment 6](R-6)
-* [Assignment 7](R-7)
-* [Assignment 8](R-8)
-* [Assignment 10](R-10)
-* [Additional Resources](additional-R)
+* [Introduction to R and RStudio](R-intro)
+* [Working with Data](R-data)
+* [Data Visualization](R-datavis)
+* [Programming Fundamentals 1](R-fundamentals-1)
+* [Programming Fundamentals 2](R-fundamentals-2)
+* [Version Control Basics](R-git)
+* [Integrating R and SQL](R-sql)
+* [Putting It All Together](R-capstone)
+* [Advanced Topics](R-advanced)
+* [Additional Resources](R-additional)
 
 ### SQL
 
-* [Introduction](SQL-0)
-* [Assignment 1](SQL-1)
-* [Assignment 2](SQL-2)
+* [Introduction to Databases](SQL-intro)
+* [Database Structure and Joins](SQL-joins)
