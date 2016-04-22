@@ -35,5 +35,5 @@ programming well.
 
 #### Infrastructure
 
-The site is built using [Jekyll](http://jekyllrb.com/) and uses icons from
-[Font Awesome](http://fontawesome.io) by Dave Gandy.
+The site is built using [Jekyll](http://jekyllrb.com/) with the [Hyde](http://hyde.getpoole.com/) theme 
+from [Poole](http://getpoole.com/) and icons from [Font Awesome](http://fontawesome.io) by Dave Gandy.
