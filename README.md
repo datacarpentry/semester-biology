@@ -13,8 +13,13 @@ reading and viewing videos before coming to class and then spending the bulk of
 class time working on exercises with the teacher answering questions and demoing
 the concepts.
 
-We encourage **collaborative development**. This repository was used by @ethanwhite to teach a version of this course (Fall 2015) at the University of
-Florida. Some materials remain under active development. Materials that are specific to a given course (e.g., the syllabus) will be generalized to templates instead of being specific to the current course. We welcome contributions to all other aspects of the course/site and are especially seeking exercises and assignments for a range of disciplines.
+We encourage **collaborative development**. This repository was used by 
+@ethanwhite to teach a version of this course (Fall 2015) at the University of
+Florida. Some materials remain under active development. Materials that are 
+specific to a given course (e.g., the syllabus) will be generalized to templates 
+instead of being specific to the current course. We welcome contributions to all 
+other aspects of the course/site and are especially seeking exercises and 
+assignments for a range of disciplines.
 
 ## Where is everything
 
