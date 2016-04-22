@@ -37,7 +37,7 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Style]({{ site.baseurl }}/materials/style)
 -   [Program Design](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/design.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/design.ipynb))
 -   [Common points of confusion in Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/common-confusions.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/common-confusions.ipynb))
--   [Python & R]({{ site.baseurl }}/materials/R_and_python.pdf) ([notebook](http://nbviewer.ipython.org/url/raw.github.com/ethanwhite/progbio/master/materials/rpy2_demo.ipynb) \| [raw notebook](https://raw.github.com/ethanwhite/progbio/master/materials/rpy2_demo.ipynb))
+-   [Python & R]({{ site.baseurl }}/materials/R_and_python.pdf) ([notebook](http://nbviewer.jupyter.org/github/ethanwhite/progbio/blob/master/lectures/rpy2_demo.ipynb) \| [raw notebook](https://raw.githubusercontent.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb))
 
 ### R <a name="R"></a>
 
