@@ -22,5 +22,6 @@ for everyone.
 * [Lectures]({{ site.baseurl }}/lectures)
 * [Lecture Materials]({{ site.baseurl }}/materials)
 * [Assignments]({{ site.baseurl }}/assignments)
+* [Exercises]({{ site.baseurl }}/exercises)
 * [Course Development Help]({{ site.baseurl}}/docs)
 
