@@ -5,7 +5,7 @@ subtitle: NEON Database
 language: R
 ---
 
-The [National Ecological Observatory Network](http://www.neoninc.org) has entered into the construction phase of development and they are already making their [data available](http://data.neoninc.org)! NEON collects ecological and environmental data for representative regions of the United States at local to continental scales, including, *of course!*, small mammal [box trapping](https://en.wikipedia.org/wiki/Sherman_trap). We've retrieved NEON's existing small mammal data from [Ordway-Swisher Biological Station](http://ordway-swisher.ufl.edu/) [[NEON Data Use Policy](http://www.neoninc.org/about/terms-of-use/data-usage-and-citation-policies)]. 
+The [National Ecological Observatory Network](http://www.neoninc.org) has entered into the construction phase of development and they are already making their [data available](http://data.neoninc.org)! NEON collects ecological and environmental data for representative regions of the United States at local to continental scales, including, *of course!*, small mammal [box trapping](https://en.wikipedia.org/wiki/Sherman_trap). We've retrieved NEON's existing small mammal data from [Ordway-Swisher Biological Station](http://ordway-swisher.ufl.edu/) [[NEON Data Use Policy](http://www.neonscience.org/content/data-usage-and-citation-policies)]. 
 
 1. Create a SQLite database called `ordway_mammals.sqlite`. 
 2. Download the three data tables ([capture]({{ site.baseurl }}/data/ordway_mammals_capture.csv), [plots]({{ site.baseurl }}/data/ordway_mammals_plots.csv), [traps]({{ site.baseurl }}/data/ordway_mammals_traps.csv)) and import them into the SQLite database.
