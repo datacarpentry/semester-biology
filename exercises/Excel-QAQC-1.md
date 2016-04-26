@@ -5,10 +5,8 @@ subtitle: Data entry validation in Excel
 language: SQL
 ---
 
-You're starting a new study of small mammals at the
-[NEON site at Ordway-Swisher](http://ordway-swisher.ufl.edu/NEON.htm). Create a
-spreadsheet in Excel for data entry. It should have four columns: Year, Site,
-Species, and Mass.
+You're starting a new study of small mammals at the [NEON site at Ordway-Swisher](http://ordway-swisher.ufl.edu/NEON.aspx). 
+Create a spreadsheet in Excel for data entry. It should have four columns: Year, Site, Species, and Mass.
 
 Set the following data validation criteria to prevent any obviously wrong data
 from getting entered:
