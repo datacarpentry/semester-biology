@@ -14,8 +14,7 @@ Why test?
 1. Make sure that your code is giving you the correct output on simple cases
 2. Prevent regressions
 3. Prevent changes when someone else's code updates
-4. **Don't publish the wrong answer because of a bug**
-5. http://www.jstor.org/discover/10.2307/25145087?uid=3739928&uid=2460338175&uid=2460337935&uid=2&uid=4&uid=83&uid=63&uid=3739256&sid=21101092361993
+4. **Don't publish the wrong answer because of a bug -> [like this](http://www.jstor.org/stable/25145087)**
 
 Writing tests for Nose
 ----------------------
