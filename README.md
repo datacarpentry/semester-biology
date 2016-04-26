@@ -1,19 +1,21 @@
 # Data Carpentry for Biologists - Semester Course
 
-This is **a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials** for teaching biologists how to work
+This is a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
 with data through programming, database management and computing more generally.
 
 This repository contains the complete teaching materials (excluding exams and
-answers to assignments) and **[website](http://datacarpentry.org/semester-biology) for a university style and self-guided 
-course** teaching computational data skills to biologists. **[Helpful information](http://www.datacarpentry.org/semester-biology/docs/) 
-is available** regarding the structure and function of the course and website materials, as well as customization and delivery of the course.
+answers to assignments) and [website](http://datacarpentry.org/semester-biology) for a university style and self-guided 
+course teaching computational data skills to biologists. 
 
-The course is designed to work primarily as a **flipped classroom**, with students
+[Helpful information](http://www.datacarpentry.org/semester-biology/docs/) 
+is available regarding the structure and function of the course and website materials, as well as customization and delivery of the course.
+
+The course is designed to work primarily as a flipped classroom, with students
 reading and viewing videos before coming to class and then spending the bulk of
 class time working on exercises with the teacher answering questions and demoing
 the concepts.
 
-We encourage **collaborative development**. This repository was used by 
+We encourage collaborative development. This repository was used by 
 @ethanwhite to teach a version of this course (Fall 2015) at the University of
 Florida. Some materials remain under active development. Materials that are 
 specific to a given course (e.g., the syllabus) will be generalized to templates 
@@ -100,8 +102,8 @@ and the standard YAML for a new exercise would look like this:
 ```
 ---
 layout: exercise
-title: Name_of_exercise
-subtitle: Short_description_of_the_exercise
+title: Name of exercise
+subtitle: Short description of the exercise
 language: [R, Python, SQL]
 ---
 ```
