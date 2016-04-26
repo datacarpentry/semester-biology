@@ -11,5 +11,5 @@ language: R
 
 * Readings
 
-  * [Aggregating and analyzing data with `dplyr`](http://datacarpentry.github.io/R-ecology/04-dplyr.html)
+  * [Aggregating and analyzing data with `dplyr`](http://www.datacarpentry.org/R-ecology-lesson/04-dplyr.html)
   * [Introduction to `dplyr` vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) (*optional*)
