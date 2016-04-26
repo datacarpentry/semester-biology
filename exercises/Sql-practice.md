@@ -5,7 +5,7 @@ subtitle: REVIEW Basic Queries
 language: R
 ---
 
-This is a follow-up to [SQL Assignment 1]({{ site.baseurl }}/assignments/sql-1).
+This is a follow-up to [Introduction to Databases]({{ site.baseurl }}/assignments/sql-intro).
 
 Download the [`sql_practice.sqlite` database]({{ site.baseurl }}/data/sql_practice.sqlite). Open it in SQLite Manager and write a query for each of the following:
 
