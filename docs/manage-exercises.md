@@ -12,9 +12,9 @@ be sure the file is read correctly by [Jekyll](http://jekyllrb.com/). [[ EXTRA I
 ```
 ---
 layout: exercise
-title: Name-of-exercise
-subtitle: Exercise-topic-or-short-description
-language: R-Python-or-SQL
+title: Name of exercise
+subtitle: Exercise topic or short description
+language: [R, Python, SQL]
 ---
 ```
 
