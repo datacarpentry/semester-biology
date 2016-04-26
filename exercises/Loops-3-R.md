@@ -9,7 +9,7 @@ This is a follow-up to [Loops 2]({{ site.baseurl }}/exercises/Loops-2-R).
 
 Dr. Jekyll is hard at work to perfect his serum and correct the imbalance with 
 his alter ego, Mr. Hyde. Dr. Jekyll is convinced that some mutation in his DNA 
-is responsible for his transformations and he's looking in the [PATRIC](www.patricbrc.org) 
+is responsible for his transformations and he's looking in the [PATRIC](http://www.patricbrc.org) 
 bacterial phytogenomic database for clues. He wants to know the GC content of 
 all of the bacteria in the database and got started working with a handful of 
 [archaea](https://en.wikipedia.org/wiki/Archaea). Sadly, his skill with a burner and pipette has not prepared him at 
@@ -18,13 +18,10 @@ all for work on a computer.
 Help him out by downloading [the data]({{ site.baseurl }}/data/archaea_dna.zip)
 and looping over the files to determine the GC content for each file. Unzip the
 the .zip file into your `data` directory. If you look at the data you'll see
-that it's made up of one file per species using the
-[FASTA dna sequence format](https://en.wikipedia.org/wiki/FASTA_format). We
-could try to load using `read.csv`, but the
-[ShortRead package in Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html)
-already exists for parsing fasta files, so we'll use that
-instead. [Install Bioconductor](http://www.bioconductor.org/install/) if you
-haven't already. 
+that it's made up of one file per species using the [FASTA dna sequence format](https://en.wikipedia.org/wiki/FASTA_format). We 
+could try to load using `read.csv`, but the [ShortRead package in Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html) 
+already exists for parsing fasta files, so we'll use that instead. [Install Bioconductor](http://www.bioconductor.org/install/) if 
+you haven't already. 
 
 ```
 source("https://bioconductor.org/biocLite.R")
