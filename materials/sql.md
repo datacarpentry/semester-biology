@@ -1,24 +1,31 @@
-SQL
-===
+---
+layout: page
+element: notes
+title: 3-day Introduction to Databases
+language: SQL
+---
+
 
 Monday
 ------
-###Intro
+
+### Intro
 Basic intro lecture
 
-###Intro to SQLite Manager
+### Intro to SQLite Manager
 * Install
 * Executing SQL
 * Navigation
 * Saving queries - Views
 * Imports
 
-###Intro to SQL
+### Intro to SQL
 Quick example of Selecting, Filtering, and Sorting
 
 Wednesday
 ---------
-###Aggregation
+
+### Aggregation
 * Basic joins
 * Filter on aggregate vs. raw values
 * Show how joins work
@@ -27,11 +34,12 @@ Wednesday
     * Show distinct
     * Filter by weight > 100 g
 
-###Joins
+### Joins
 
 
 Friday
 ------
+
 ### Missing data
 
 ### Nesting queries
