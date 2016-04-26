@@ -1,30 +1,34 @@
-# Data Carpentry for Biologists (semester)
+# Data Carpentry for Biologists - Semester Course
 
-This is [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
+This is a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
 with data through programming, database management and computing more generally.
 
 This repository contains the complete teaching materials (excluding exams and
-answers to assignments) and website for a university style course teaching
-computational data skills to biologists.
+answers to assignments) and [website](http://datacarpentry.org/semester-biology) for a university style and self-guided 
+course teaching computational data skills to biologists. 
+
+[Helpful information](http://www.datacarpentry.org/semester-biology/docs/) 
+is available regarding the structure and function of the course and website materials, as well as customization and delivery of the course.
 
 The course is designed to work primarily as a flipped classroom, with students
 reading and viewing videos before coming to class and then spending the bulk of
 class time working on exercises with the teacher answering questions and demoing
 the concepts.
 
-**Under active development:** This repository is currently (Fall 2015) being
-  used by @ethanwhite to teach a version of this course at the University of
-  Florida. At the conclusion of that course some materials that are specific to
-  a given course (e.g., the syllabus) will be generalized to templates instead
-  of being specific to the current course. Contributions to all other aspects of
-  the course/site are possible and encouraged.
+We encourage collaborative development. This repository was used by 
+@ethanwhite to teach a version of this course (Fall 2015) at the University of
+Florida. Some materials remain under active development. Materials that are 
+specific to a given course (e.g., the syllabus) will be generalized to templates 
+instead of being specific to the current course. We welcome contributions to all 
+other aspects of the course/site and are especially seeking exercises and 
+assignments for a range of disciplines.
 
 ## Where is everything
 
-Core teaching materials are stored in the relevant folders including
-`exercises`, `lectures`, and `ipynbs` (a series of Project Jupyter notebooks).
+Core teaching materials are stored in `exercises/`, `lectures/`, and 
+`materials/`.
 
-Class specific materials are stored in `syllabus` and `assignments`.
+Class specific materials are stored in the `syllabus`, `schedule` and `assignments/`.
 
 Most of the other folders and files support creating the course website using
 [Jekyll](http://jekyllrb.com/).
@@ -81,7 +85,7 @@ introduction on how to do this](https://help.github.com/articles/using-jekyll-wi
 
 If you have Jekyll properly installed, you can then run
 
-`jekyll serve --baseurl ''`
+`bundle exec jekyll serve --baseurl ''`
 
 from the command line and navigate to http://localhost:4000/ in your browser to
 preview the current state of the website.
@@ -100,16 +104,16 @@ and the standard YAML for a new exercise would look like this:
 layout: exercise
 title: Name of exercise
 subtitle: Short description of the exercise
-language: R
+language: [R, Python, SQL]
 ---
 ```
 
 This is placed at the very beginning of the markdown file and provides
-information on what kind of content it is (e.g., exercise, lecture, etc.),
+information on what kind of content it is (e.g., exercise, page, etc.),
 the title of the page, and what language it applies to.
 
 The page should then be available at a url based on where the file is located
-and what the file name is. So if you created a new exercise in the `exercises`
+and what the file name is. So if you created a new exercise in the `exercises/`
 folder called `my_awesome_exercise.md` it would be located at:
 
 Locally: `http://localhost:4000/exercises/my_awesome_exercise`
