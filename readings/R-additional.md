@@ -6,7 +6,7 @@ language: R
 ---
 
 ### Reference
-- [A Guide for Data Carpentry Semester]({{ site.baseurl }}/lectures/Walkthrough-R)
+- [A Guide for Data Carpentry Semester]({{ site.baseurl }}/materials/Walkthrough-R)
 - [R Reference](http://swcarpentry.github.io/r-novice-inflammation/reference.html)
 
 ### Programming Fundamentals
