@@ -31,7 +31,7 @@ subtitle: Style Guide
 
 - Code chunks that take up a whole line should be placed in a code block using ```.
 
-- Use appropriate code style guides [ [R](http://adv-r.had.co.nz/Style.html) | [Python](https://www.python.org/dev/peps/pep-0008/) ] and [best practices](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R.html).
+- Use appropriate code style guides [ [R](http://adv-r.had.co.nz/Style.html) \| [Python](https://www.python.org/dev/peps/pep-0008/) ] and [best practices](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R.html).
 
 - The code chunks have a shorter effective page width than the 80 characters 
 afforded normal text. Reduce the length of code blocks to improve readability 
