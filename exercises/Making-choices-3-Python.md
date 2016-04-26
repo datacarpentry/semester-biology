@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Making Choices 3
+subtitle: DNA or RNA?
 language: Python
 ---
 
