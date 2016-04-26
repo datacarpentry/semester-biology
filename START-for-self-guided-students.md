@@ -15,7 +15,7 @@ As a self-guided student you can 1) follow along with the whole course at your o
 
 2. If you are interested in just a couple of modules in SQL or R, the best way to find out the assignment that is best suited to your needs is browsing through the [schedule]({{ site.baseurl }}/schedule). 
 
-*If you are interested in the Python material, the [lesson material]({{ site.baseurl }}/material/#Python) and [assignments]({{ site.baseurl }}/assignments/all-assignments/) developed in previous iterations of the course are still available, but with less direction.*
+*If you are interested in the Python material, the [lesson material]({{ site.baseurl }}/materials/) and [assignments]({{ site.baseurl }}/assignments/) developed in previous iterations of the course are still available, but with less direction.*
 
 ### Step 3: Setup your computer
 
