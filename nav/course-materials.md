@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+title: Course Materials
 ---
 
 * [Readings]({{ site.baseurl }}/readings): Online instructional materials
