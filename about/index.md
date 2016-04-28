@@ -10,3 +10,4 @@ title: About
 * [Why Python]({{ site.baseurl }}/about/why-python)
 * [Why R]({{ site.baseurl }}/about/why-r)
 * [Why this class]({{ site.baseurl }}/about/why-should-you-take-this-class)
+* [CC-BY and MIT License]({{ site.baseurl }}/about/LICENSE)
