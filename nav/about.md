@@ -2,8 +2,9 @@
 layout: default
 ---
 
-* [Getting Started]({{ site.baseurl }}/nav/getting-started)
-* [Schedule]({{ site.baseurl }}/main/schedule)
-* [Course Materials]({{ site.baseurl }}/nav/course-materials)
-* [About]({{ site.baseurl}}/nav/about)
+* [About Us]({{ site.baseurl}}/nav/about)
+* [Course Development Help]({{ site.baseurl }}/docs)
+* [Fork This Course <i class="fa fa-github"></i>]({{ site.baseurl }}/main/schedule)
+
+
 
