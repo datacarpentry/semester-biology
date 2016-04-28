@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: page
+title: About
 ---
 
-* [About Us]({{ site.baseurl}}/nav/about)
+* [About Us]({{ site.baseurl}}/about)
 * [Course Development Help]({{ site.baseurl }}/docs)
-* [Fork This Course <i class="fa fa-github"></i>]({{ site.baseurl }}/main/schedule)
+* [Fork This Course <i class="fa fa-github"></i>]({{ site.github.repo }})
 
 
 
