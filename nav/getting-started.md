@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+title: Getting Started
 ---
 
 ##### Self-Guided Students
