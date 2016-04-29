@@ -5,7 +5,7 @@ subtitle: Shrub Volume Pt 3 with Pandas
 language: Python
 ---
 
-*This problem is related to [Combining Basics]({{ site.baseurl }}/exercises/Combining—the-basics-2-Python),
+*This problem is related to [Combining Basics]({{ site.baseurl }}/exercises/Combining-the-basics-2-Python),
 but using the Pandas library.*
 
 Dr. Granger is interested in studying the factors controlling the size and

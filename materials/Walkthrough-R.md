@@ -158,4 +158,4 @@ The hardest part here is finding the right keywords to use.
 - [Hadley Wickham](http://r-pkgs.had.co.nz/style.html)
 - [Google](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
 
-#### *This document benefited greatly by the inclusion of Data Carpentry materials ([Before we start](http://datacarpentry.github.io/R-ecology/00-before-we-start.html), [Introduction to R](http://datacarpentry.github.io/R-ecology/01-intro-to-R.html)) and Software Carpentry's ([Programming with R Reference](http://swcarpentry.github.io/r-novice-inflammation/reference.html))*
+#### *This document benefited greatly by the inclusion of Data Carpentry materials ([Before we start](http://www.datacarpentry.org/R-ecology-lesson/00-before-we-start.html), [Introduction to R](http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-R.html)) and Software Carpentry's ([Programming with R Reference](http://swcarpentry.github.io/r-novice-inflammation/reference.html))*

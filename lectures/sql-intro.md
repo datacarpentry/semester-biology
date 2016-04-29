@@ -10,4 +10,4 @@ language: SQL
 3. [Creating Tables]({{ site.baseurl }}/materials/sql-creating-tables)
 4. [Updating Tables]({{ site.baseurl }}/materials/sql-updating-tables)
 
-*[An alternate 3-day schedule]({{ site.baseurl }}/materials/sql.md)*
+*[An alternate 3-day schedule]({{ site.baseurl }}/materials/sql)*

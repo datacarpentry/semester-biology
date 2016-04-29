@@ -5,7 +5,7 @@ subtitle: Nested Functions
 language: R
 ---
 
-This is a follow up to [Functions 3]({{ site.baseurl }}/exercises/functions-3-R).
+This is a follow up to [Functions 3]({{ site.baseurl }}/exercises/Functions-3-R).
 
 Measuring things using the metric system is great for us scientists, but
 when you call your grandmother this weekend (*you do call your
