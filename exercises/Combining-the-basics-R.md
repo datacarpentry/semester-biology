@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Combining Basics
-subtitle: Shrub Volume Pt 5
+subtitle: Shrub Volume 5
 language: R
 ---
 

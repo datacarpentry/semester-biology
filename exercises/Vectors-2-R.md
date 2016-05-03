@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Vectors 2
-subtitle: Shrub Volume Pt 1
+subtitle: Shrub Volume 1
 language: R
 ---
 

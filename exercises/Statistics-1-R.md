@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Statistics 1
-subtitle: Adult Size vs. Newborn Size Pt 2
+subtitle: Adult Size vs. Newborn Size 2
 language: R
 ---
 

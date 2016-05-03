@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Scientific 0
-subtitle: Shrub Volume Pt 3
+subtitle: Shrub Volume 3
 language: R
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Statistics 3
-subtitle: Mammal Body Size Pt 4
+subtitle: Mammal Body Size 4
 language: R
 ---
 

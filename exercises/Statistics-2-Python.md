@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Statistics 2
-subtitle: Shrub Volume Pt 3
+subtitle: Shrub Volume 3
 language: Python
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Scientific 2
-subtitle: Mammal Body Size Pt 2
+subtitle: Mammal Body Size 2
 language: Python
 ---
 
