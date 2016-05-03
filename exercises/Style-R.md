@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Good Style
-subtitle: Modify the Code!
+subtitle: Modify the Code
 language: R
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Loops 1
-subtitle: Improve Your Code!
+subtitle: Improve Your Code
 language: Python
 ---
 

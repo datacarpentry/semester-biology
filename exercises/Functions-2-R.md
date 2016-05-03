@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Functions 2
-subtitle: Use and Modify!
+subtitle: Use and Modify
 language: R
 ---
 

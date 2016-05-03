@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Expressions and Variables 5
-subtitle: Modify the Code!
+subtitle: Modify the Code
 language: Python
 ---
 

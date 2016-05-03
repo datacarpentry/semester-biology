@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Version Control 2
-subtitle: Fix the Code!
+subtitle: Fix the Code
 language: R
 ---
 

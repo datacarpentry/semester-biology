@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Regular Expressions
-subtitle: List the Rodents!
+subtitle: List the Rodents
 language: Python
 ---
 
