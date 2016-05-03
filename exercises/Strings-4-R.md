@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Strings 4
-subtitle: Strings, Math, and Dinosaurs
+subtitle: Strings and Math
 language: R
 ---
 
