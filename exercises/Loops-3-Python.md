@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Loops 3
-subtitle: Shrub Volume
+subtitle: Shrub Dimensions
 language: Python
 ---
 
