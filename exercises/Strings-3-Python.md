@@ -1,6 +1,7 @@
 ---
 layout: exercise
 title: Strings 3
+subtitle: Strings and Math
 language: Python
 ---
 
