@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Basic 2
-subtitle: Review Data Manipulation
+subtitle: Data Management Review
 language: Python
 ---
 
