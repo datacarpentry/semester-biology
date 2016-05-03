@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Basic 1
-subtitle: REVIEW with Bird Banding
+subtitle: Vector Review
 language: R
 ---
 
