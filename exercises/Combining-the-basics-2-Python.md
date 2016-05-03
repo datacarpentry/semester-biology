@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Combining Basics
-subtitle: Shrub Volume 2
+subtitle: Shrub Volume
 language: Python
 ---
 
