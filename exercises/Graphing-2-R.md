@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Graphing 2
-subtitle: Adult Size vs. Newborn Size
+subtitle: Adult vs Newborn Size
 language: R
 ---
 
