@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Graphing 2
-subtitle: Body Mass vs. Metabolic Rate
+subtitle: Mass vs Metabolism
 language: Python
 ---
 
