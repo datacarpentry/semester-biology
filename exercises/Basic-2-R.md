@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Basic 2
-subtitle: REVIEW with House-elves
+subtitle: Data Management Review
 language: R
 ---
 
