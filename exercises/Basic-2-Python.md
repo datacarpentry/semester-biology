@@ -1,6 +1,8 @@
 ---
 layout: exercise
-title: Basic Python 2
+title: Basic 2
+subtitle:
+language: Python
 ---
 
 Dr. Granger is interested in studying the relationship between the
