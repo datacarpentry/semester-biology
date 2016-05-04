@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Tests
-subtitle: Fix the Code Some More
+subtitle: Fix the Code
 language: Python
 ---
 
