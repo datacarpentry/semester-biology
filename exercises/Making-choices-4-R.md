@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Making Choices 4
-subtitle: CHALLENGE with Unit Conversion
+subtitle: Unit Conversion Challenge
 language: R
 ---
 
