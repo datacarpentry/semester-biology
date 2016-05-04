@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Version Control Basic 4
-subtitle: Multiple files, one commit
+subtitle: Commit Multiple Files
 language: R
 ---
 
