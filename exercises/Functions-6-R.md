@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Functions 6
-subtitle: Strings from Data with Functions
+subtitle: Strings from Data
 language: R
 ---
 
