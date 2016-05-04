@@ -1,7 +1,7 @@
 ---
 layout: exercise 
 title: Strings 8
-subtitle: Functions and `if` statements
+subtitle: Function with Choices
 language: R
 ---
 
