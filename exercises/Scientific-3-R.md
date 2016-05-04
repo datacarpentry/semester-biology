@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Scientific 3
-subtitle: CHALLENGE with Tree Biomass
+subtitle: Tree Biomass Challenge
 language: R
 ---
 
