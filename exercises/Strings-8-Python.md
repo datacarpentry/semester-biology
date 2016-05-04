@@ -1,6 +1,7 @@
 --- 
 layout: exercise 
 title: Strings 8
+subtitle: Function with Choices
 language: Python
 ---
 
