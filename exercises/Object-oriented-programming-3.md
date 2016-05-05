@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Object Oriented Programming 3
+subtitle: Platypus 3
+language: Python
 ---
 
 We know that platypuses can lay up to three eggs each season. Starting

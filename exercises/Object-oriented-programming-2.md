@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Object Oriented Programming 2
+subtitle: Platypus 2
+language: Python
 ---
 
 Expand the Platypus class, giving it three methods:

@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Object Oriented Programming 1
+subtitle: Platypus 1
+language: Python
 ---
 
 We're experimenting with platypus (platypi?). During the breeding
