@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: For Loops 2
+subtitle: Exponential Growth
+language: Python
 ---
 
 The field of population biology is interested in how the number of
