@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Dictionaries 1
+subtitle: Species Composition 2
+language: Python
 ---
 
 Some measures of similarity, like the Jaccard index in the
