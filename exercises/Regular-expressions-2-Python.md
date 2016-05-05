@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Regular Expressions 2
+subtitle:
+language: Python
 ---
 
 This is a follow up to the [Regular Expressions 1 problem]({{ site.baseurl }}/exercises/Regular-expressions-1).

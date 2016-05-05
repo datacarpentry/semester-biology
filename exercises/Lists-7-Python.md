@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 7
+subtitle:
+language: Python
 ---
 
 This is a follow up on the [Strings 2 problem]({{ site.baseurl }}/exercises/strings-2).  Copy the

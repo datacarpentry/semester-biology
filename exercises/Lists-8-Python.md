@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 8
+subtitle:
+language: Python
 ---
 
 Write a function that returns the complement of an arbitrary DNA strand

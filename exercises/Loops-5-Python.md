@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Loops 5
+subtitle:
+language: Python
 ---
 
 This is a follow up on [Loops 3]({{ site.baseurl }}/exercises/Loops-3).

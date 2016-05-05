@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Scientific Python 3
+subtitle:
+language: Python
 ---
 
 Understanding the total amount of biomass (the total mass of all

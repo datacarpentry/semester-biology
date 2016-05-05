@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 4
+subtitle:
+language: Python
 ---
 
 Write a program that uses a for loop to produce a list of the GC

@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 6
+subtitle:
+language: Python
 ---
 
 One of your collaborators has posted [a comma-delimited text

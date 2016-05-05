@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 2
+subtitle:
+language: Python
 ---
 
 This is a follow up to the [Lists 1 problem]({{ site.baseurl }}/exercises/lists-1).

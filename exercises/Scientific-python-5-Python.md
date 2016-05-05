@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Scientific Python 5
+subtitle:
+language: Python
 ---
 
 There were a relatively large number of [extinctions of mammalian

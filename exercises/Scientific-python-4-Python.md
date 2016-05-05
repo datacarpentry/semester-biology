@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Scientific Python 4
+subtitle:
+language: Python
 ---
 
 Download the file

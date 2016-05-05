@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Shell 4 - Making Executable Programs
+subtitle:
+language: Python
 ---
 
 This is a follow up on the [Shell 3 - Finding Things problem]({{ site.baseurl }}/exercises/shell-3-finding-things).

@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: While loops
+subtitle:
+language: Python
 ---
 
 This is a follow up to the [For Loops 2 problem]({{ site.baseurl }}/exercises/loops-2).

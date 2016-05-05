@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Problem Decomposition
+subtitle:
+language: Python
 ---
 
 One of you lab mates (you may remember them from the For Loops 2

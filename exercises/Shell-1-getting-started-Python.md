@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Shell 1 - Getting Started
+subtitle:
+language: Python
 ---
 
 Do the following using the Linux/Mac shell or GitBash on Windows:

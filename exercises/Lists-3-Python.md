@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 3
+subtitle:
+language: Python
 ---
 
 This is a follow up to the [Lists 1]({{ site.baseurl }}/exercises/lists-1) and [Lists

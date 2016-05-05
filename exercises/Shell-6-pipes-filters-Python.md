@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Shell 6 - Pipes and Filters
+subtitle:
+language: Python
 ---
 
 We have data on bird communities that we've collected that we need to

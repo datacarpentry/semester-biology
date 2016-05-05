@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Scientific Python 6
+subtitle:
+language: Python
 ---
 
 This is a follow up to [Scientific Python 5]({{ site.baseurl }}/exercies/Scientific-python-5)

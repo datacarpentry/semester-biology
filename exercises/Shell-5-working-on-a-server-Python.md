@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Shell 5 - Working on a Server
+subtitle:
+language: Python
 ---
 
 This is a follow up to the [Shell 4 - Making Executable Programs](shell-4-making-executable-programs).

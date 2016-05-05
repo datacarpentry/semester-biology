@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 5
+subtitle:
+language: Python
 ---
 
 Use slices from the following list of lists that contains information

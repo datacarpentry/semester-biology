@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Refactor with regression test
+subtitle:
+language: Python
 ---
 
 This is a follow up to the [Tests 1 problem]({{ site.baseurl }}/exercises/Tests-1).

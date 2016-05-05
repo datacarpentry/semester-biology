@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Making Choices 2
+subtitle:
+language: Python
 ---
 
 As part of the [String Methods 2 problem](exercises/string-methods-2) you wrote

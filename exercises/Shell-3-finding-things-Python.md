@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Shell 3 - Finding Things
+subtitle:
+language: Python
 ---
 
 This is a follow question to [Shell 2 - Pipes and Filters](shell-2-pipes-and-filters).

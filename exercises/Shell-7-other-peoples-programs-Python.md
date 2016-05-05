@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Shell 7 - For Loops + Other Peoples Programs
+subtitle:
+language: Python
 ---
 
 We have data on bird communities that we've collected that we need to

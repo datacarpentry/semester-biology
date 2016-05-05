@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Lists 6
+subtitle:
+language: Python
 ---
 
 This is a follow up to the

@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Shell 2 - Pipes and Filters
+subtitle:
+language: Python
 ---
 
 You're working on a large project trying to predict [diversity
