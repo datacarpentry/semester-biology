@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Inheritance
+subtitle: Platypus 4
+language: Python
 ---
 
 We just realized that in our first platypus experiment, some eggs were
