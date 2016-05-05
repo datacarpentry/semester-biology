@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: Tidy Data
-subtitle: What's wrong with this data
+subtitle: Real Portal Data
 language: SQL
 ---
 
