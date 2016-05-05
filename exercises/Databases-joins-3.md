@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Databases - Joins 3
+subtitle:
+language: Access
 ---
 
 We want to do an analysis comparing the size of individuals on the

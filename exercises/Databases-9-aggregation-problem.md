@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Databases 9 - Aggregation
+subtitle:
+language: Access
 ---
 
 Write a query that returns the number of individuals of each species

@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Databases 7 - Grouping
+subtitle:
+language: Access
 ---
 
 Write a query that returns a list of dates on which individuals of the

@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Databases - Joins 1
+subtitle:
+language: Access
 ---
 
 In a new database import the main table from the Portal database (remember that
