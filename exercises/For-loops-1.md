@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: For Loops 1
+subtitle: Repeat Strings
+language: Python
 ---
 
 [Microsatellite's](http://en.wikipedia.org/wiki/Microsatellite_%28genetics%29)
