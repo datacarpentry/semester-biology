@@ -1,10 +1,12 @@
 ---
 layout: exercise
 title: Libraries 1
+subtitle: Species Area Relationship
+language: Python
 ---
 
 This is a follow up to the
-[Higher Order Functions 2](exercises/higher-order-functions-2) problem.
+[Higher Order Functions](exercises/higher-order-functions) problem.
 
 After writing a program to estimate the number of species at a site of a
 given area based on the average predictions of a suite of different
