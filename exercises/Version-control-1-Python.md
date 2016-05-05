@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 1
+subtitle: Set-up Git
+language: Python
 ---
 
 1. Clone your repository for the course (or cd into it if you've already cloned

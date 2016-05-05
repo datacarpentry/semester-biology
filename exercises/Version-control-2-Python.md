@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 2
+subtitle: Fix the Code
+language: Python
 ---
 
 Growth of biological populations are often modeled using logistic

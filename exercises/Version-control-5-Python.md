@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 5
+subtitle: Add and Revert Comment
+language: Python
 ---
 
 Add a docstring to the start of the `logistic_growth.py` file.

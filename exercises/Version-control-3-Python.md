@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 3
+subtitle: Revert
+language: Python
 ---
 
 You're working late and you sit down to edit `logistic_growth.py`. You

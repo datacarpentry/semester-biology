@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 6
+subtitle: Pull and Move
+language: Python
 ---
 
 *Version control exercises 6-9 assume that you have an instructor adding and

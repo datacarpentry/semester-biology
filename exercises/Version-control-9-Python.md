@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 9
+subtitle: Richness Merge Conflict
+language: Python
 ---
 
 This is a follow up question to

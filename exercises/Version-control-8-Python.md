@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 8
+subtitle: Richness Revert
+language: Python
 ---
 
 This is a follow up question to

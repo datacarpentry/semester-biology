@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 4
+subtitle: Merge Conflict
+language: Python
 ---
 
 You decide to change the parameter values that are being used in

@@ -1,6 +1,8 @@
 ---
 layout: exercise
 title: Version Control 7
+subtitle: Predict Richness
+language: Python
 ---
 
 This is a follow up question to
