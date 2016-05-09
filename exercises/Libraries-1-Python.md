@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Libraries 1
-subtitle: Species Area Relationship
+old_title: Libraries 1
+topic: Libraries
+title: Species Area Relationship
 language: Python
 ---
 

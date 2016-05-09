@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Sorting
-subtitle: ORDER BY
+old_title: Sorting
+topic: Sorting
+title: ORDER BY
 language: SQL
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Debugging
-subtitle: Fix the Code
+old_title: Debugging
+topic: Debugging
+title: Fix the Code
 language: Python
 ---
 

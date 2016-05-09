@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Object Oriented Programming 3
-subtitle: Platypus 3
+old_title: Object Oriented Programming 3
+topic: Object
+title: Platypus 3
 language: Python
 ---
 

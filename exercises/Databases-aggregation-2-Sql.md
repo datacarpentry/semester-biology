@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Aggregation 2
-subtitle: SUM
+old_title: Aggregation 2
+topic: Aggregation
+title: SUM
 language: SQL
 ---
 

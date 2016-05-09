@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Basic 1
-subtitle: List Review
+old_title: Basic 1
+topic: Basic
+title: List Review
 language: Python
 ---
 

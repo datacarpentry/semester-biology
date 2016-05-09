@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Higher Order Functions 1
-subtitle: DNA
+old_title: Higher Order Functions 1
+topic: Higher
+title: DNA
 language: Python
 ---
 

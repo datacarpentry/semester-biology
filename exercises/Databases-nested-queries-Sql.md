@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Nested Queries
-subtitle: Nesting Queries
+old_title: Nested Queries
+topic: Nested
+title: Nesting Queries
 language: SQL
 ---
 

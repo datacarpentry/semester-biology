@@ -1,7 +1,8 @@
 ---
 layout: exercise
+old_title: Updating Records
+topic: Updating
 title: Updating Records
-subtitle: Updating Records
 language: SQL
 ---
 

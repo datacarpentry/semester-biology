@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Regular Expressions 2
-subtitle:
+old_title: Regular Expressions 2
+topic: Regular
+title:
 language: Python
 ---
 

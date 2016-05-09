@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Databases 7 - Grouping
-subtitle:
+old_title: Databases 7 - Grouping
+topic: Databases
+title:
 language: Access
 ---
 

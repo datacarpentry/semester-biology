@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Making Choices 2
-subtitle: Modify the Code
+old_title: Making Choices 2
+topic: Making
+title: Modify the Code
 language: R
 ---
 

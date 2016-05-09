@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: List Comprehensions
-subtitle: Platypus 5
+old_title: List Comprehensions
+topic: List
+title: Platypus 5
 language: Python
 ---
 

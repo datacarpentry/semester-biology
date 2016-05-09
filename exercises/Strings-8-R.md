@@ -1,7 +1,8 @@
 ---
 layout: exercise 
-title: Strings 8
-subtitle: Function with Choices
+old_title: Strings 8
+topic: Strings
+title: Function with Choices
 language: R
 ---
 

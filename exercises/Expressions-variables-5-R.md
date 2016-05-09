@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Expressions and Variables 5
-subtitle: Modify the Code
+old_title: Expressions and Variables 5
+topic: Expressions
+title: Modify the Code
 language: R
 ---
 

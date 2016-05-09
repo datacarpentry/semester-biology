@@ -1,7 +1,8 @@
 ---
 layout: exercise
+old_title: Importing Data
+topic: Importing
 title: Importing Data
-subtitle: Importing Data
 language: SQL
 ---
 

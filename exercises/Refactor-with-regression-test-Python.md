@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Refactor with regression test
-subtitle:
+old_title: Refactor with regression test
+topic: Refactor
+title:
 language: Python
 ---
 

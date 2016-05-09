@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Expressions and Variables 1
-subtitle: Basic Expressions
+old_title: Expressions and Variables 1
+topic: Expressions
+title: Basic Expressions
 language: Python
 ---
 

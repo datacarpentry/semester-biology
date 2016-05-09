@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Code fix - dplyr
-subtitle: Fix the code
+old_title: Code fix - dplyr
+topic: Code
+title: Fix the code
 language: R
 ---
 

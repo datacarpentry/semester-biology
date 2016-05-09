@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Databases - Reports
-subtitle:
+old_title: Databases - Reports
+topic: Databases
+title:
 language: Access
 ---
 

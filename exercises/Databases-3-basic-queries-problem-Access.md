@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Databases 3 - Selecting
-subtitle:
+old_title: Databases 3 - Selecting
+topic: Databases
+title:
 language: Access
 ---
 

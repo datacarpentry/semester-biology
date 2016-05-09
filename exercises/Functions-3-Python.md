@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Functions 3
-subtitle: Use and Modify
+old_title: Functions 3
+topic: Functions
+title: Use and Modify
 language: Python
 ---
 

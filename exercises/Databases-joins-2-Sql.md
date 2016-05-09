@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Joins 2
-subtitle: JOIN for Non-rodents
+old_title: Joins 2
+topic: Joins
+title: JOIN for Non-rodents
 language: SQL
 ---
 

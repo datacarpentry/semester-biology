@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 2
-subtitle: string Functions
+old_title: Strings 2
+topic: Strings
+title: string Functions
 language: Python
 ---
 

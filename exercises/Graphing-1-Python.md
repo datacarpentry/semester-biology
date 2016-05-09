@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Graphing 1
-subtitle: Mammal Body Size 3
+old_title: Graphing 1
+topic: Graphing
+title: Mammal Body Size 3
 language: Python
 ---
 

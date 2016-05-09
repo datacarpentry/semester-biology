@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Tidy Data
-subtitle: Real Portal Data
+old_title: Tidy Data
+topic: Tidy
+title: Real Portal Data
 language: SQL
 ---
 

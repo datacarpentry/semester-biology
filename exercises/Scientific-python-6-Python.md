@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Scientific Python 6
-subtitle:
+old_title: Scientific Python 6
+topic: Scientific
+title:
 language: Python
 ---
 

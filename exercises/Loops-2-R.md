@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Loops 2
-subtitle: stringr
+old_title: Loops 2
+topic: Loops
+title: stringr
 language: R
 ---
 

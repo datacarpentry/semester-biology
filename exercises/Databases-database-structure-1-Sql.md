@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Database Structure 1
-subtitle: Remove Redundant Database Structure
+old_title: Database Structure 1
+topic: Database
+title: Remove Redundant Database Structure
 language: SQL
 ---
 

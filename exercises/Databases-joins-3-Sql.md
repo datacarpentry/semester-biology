@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Joins 3
-subtitle: JOIN Control vs Krat
+old_title: Joins 3
+topic: Joins
+title: JOIN Control vs Krat
 language: SQL
 ---
 

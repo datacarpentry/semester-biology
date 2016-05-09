@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Databases 4 - Filtering
-subtitle:
+old_title: Databases 4 - Filtering
+topic: Databases
+title:
 language: Access
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Shell 5 - Working on a Server
-subtitle:
+old_title: Shell 5 - Working on a Server
+topic: Shell
+title:
 language: Python
 ---
 

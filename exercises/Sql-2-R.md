@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: R-SQL 2
-subtitle: Automate Query
+old_title: R-SQL 2
+topic: R-SQL
+title: Automate Query
 language: R
 ---
 

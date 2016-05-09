@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Shell 1 - Getting Started
-subtitle:
+old_title: Shell 1 - Getting Started
+topic: Shell
+title:
 language: Python
 ---
 

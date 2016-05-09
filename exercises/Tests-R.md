@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Tests
-subtitle: Fix the Code
+old_title: Tests
+topic: Tests
+title: Fix the Code
 language: R
 ---
 

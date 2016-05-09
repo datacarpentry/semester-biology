@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Making Choices
-subtitle: Unit Conversion Challenge
+old_title: Making Choices
+topic: Making
+title: Unit Conversion Challenge
 language: Python
 ---
 

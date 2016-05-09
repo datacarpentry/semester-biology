@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Shell 2 - Pipes and Filters
-subtitle:
+old_title: Shell 2 - Pipes and Filters
+topic: Shell
+title:
 language: Python
 ---
 

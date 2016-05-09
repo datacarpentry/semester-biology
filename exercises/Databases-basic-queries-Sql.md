@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Basic Queries
-subtitle: SELECT
+old_title: Basic Queries
+topic: Basic
+title: SELECT
 language: SQL
 ---
 
