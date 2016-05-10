@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Lists 6
 topic: Lists
-title:
+title: Nested Lists 2
 language: Python
 ---
 

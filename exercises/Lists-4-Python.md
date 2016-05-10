@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Lists 4
 topic: Lists
-title:
+title: Loop
 language: Python
 ---
 

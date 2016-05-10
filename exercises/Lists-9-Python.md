@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Lists 6
 topic: Lists
-title:
+title: DNA or RNA 2
 language: Python
 ---
 

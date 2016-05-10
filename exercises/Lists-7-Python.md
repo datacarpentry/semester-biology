@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Lists 7
 topic: Lists
-title:
+title: Ultimate Question 2
 language: Python
 ---
 

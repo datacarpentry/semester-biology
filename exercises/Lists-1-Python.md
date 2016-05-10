@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Lists 1
 topic: Lists
-title: Lists
+title: Bird Banding 1
 language: Python
 ---
 
