@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Making Choices 2
 topic: Making Choices
-title:
+title: GC Content 3
 language: Python
 ---
 
