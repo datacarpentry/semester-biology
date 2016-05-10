@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Statistics 1
 topic: Statistics
-title: Adult Size vs. Newborn Size 2
+title: Adult vs Newborn Size 2
 language: Python
 ---
 
