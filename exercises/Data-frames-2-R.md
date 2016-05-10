@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Data Frames 2
 topic: Data Frames
-title: From Database to R
+title: Database CSV
 language: R
 ---
 
