@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases 6 - Grouping
-topic: Databases - Grouping
-title:
+topic: Databases 
+title: Grouping
 language: Access
 ---
 
