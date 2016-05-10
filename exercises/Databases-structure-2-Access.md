@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases - Structure 2
-topic: Databases - Structure
-title:
+topic: Databases 
+title: Structure 2
 language: Access
 ---
 
