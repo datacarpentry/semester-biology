@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Distinct
-topic: Distinct
+topic: Basic Queries
 title: DISTINCT
 language: SQL
 ---

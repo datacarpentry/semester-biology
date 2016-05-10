@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Database Structure 2
 topic: Database Structure
-title: Separate Data from Overfilled Cells
+title: Split Cells
 language: SQL
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Sorting
-topic: Sorting
+topic: Basic Queries
 title: ORDER BY
 language: SQL
 ---

@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Database Structure 1
 topic: Database Structure
-title: Remove Redundant Database Structure
+title: Redundancy
 language: SQL
 ---
 

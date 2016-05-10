@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Creating Tables
-topic: Creating Tables
+topic: Database Control
 title: Creating Tables
 language: SQL
 ---

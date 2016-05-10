@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Filtering
-topic: Filtering
+topic: Basic Queries
 title: WHERE
 language: SQL
 ---

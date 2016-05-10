@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Grouping
-topic: Grouping
+topic: Basic Queries
 title: GROUP BY
 language: SQL
 ---
