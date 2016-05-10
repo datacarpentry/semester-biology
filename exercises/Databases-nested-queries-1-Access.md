@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases - Nested Queries 1
-topic: Databases - Nested Queries
-title:
+topic: Databases
+title: Nested Queries
 language: Access
 ---
 
