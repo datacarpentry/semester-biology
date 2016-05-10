@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases 1 - Creating
-topic: Databases - Creating
-title:
+topic: Databases
+title: Creating
 language: Access
 ---
 
