@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases 2 - Importing
-topic: Databases - Importing
-title:
+topic: Databases
+title: Importing
 language: Access
 ---
 
