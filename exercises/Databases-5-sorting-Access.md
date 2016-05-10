@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases 5 - Sorting
-topic: Databases - Sorting
-title:
+topic: Databases 
+title: Sorting
 language: Access
 ---
 
