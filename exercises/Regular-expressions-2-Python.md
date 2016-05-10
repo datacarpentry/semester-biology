@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Regular Expressions 2
 topic: Regular Expressions
-title: List of Rodents 2
+title: List the Rodents 2
 language: Python
 ---
 
