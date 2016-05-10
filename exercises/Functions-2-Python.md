@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Functions 2
-subtitle: Writing Functions
+old_title: Functions 2
+topic: Functions
+title: Writing Functions
 language: Python
 ---
 

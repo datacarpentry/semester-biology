@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Data Frames 2
-subtitle: From Database to R
+old_title: Data Frames 2
+topic: Data Frames
+title: From Database to R
 language: R
 ---
 

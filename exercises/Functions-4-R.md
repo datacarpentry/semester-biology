@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Functions 4
-subtitle: Nested Functions
+old_title: Functions 4
+topic: Functions
+title: Nested Functions
 language: R
 ---
 

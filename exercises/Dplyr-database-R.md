@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Dplyr Using Databases
-subtitle: Link to Databases
+old_title: Dplyr Using Databases
+topic: Dplyr Using Databases
+title: Link to Databases
 language: R
 ---
 

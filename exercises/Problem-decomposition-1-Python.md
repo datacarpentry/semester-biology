@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Problem Decomposition
-subtitle:
+old_title: Problem Decomposition
+topic: Problem Decomposition
+title:
 language: Python
 ---
 

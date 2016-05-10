@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Graphing 1
-subtitle: Mass vs Metabolism
+old_title: Graphing 1
+topic: Graphing
+title: Mass vs Metabolism
 language: R
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 1
-subtitle: Print Strings
+old_title: Strings 1
+topic: Strings
+title: Print Strings
 language: R
 ---
 

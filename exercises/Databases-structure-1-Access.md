@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Databases - Structure 1
-subtitle:
+old_title: Databases - Structure 1
+topic: Databases - Structure
+title:
 language: Access
 ---
 

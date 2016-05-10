@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Version Control Basic 3
-subtitle: Importing data
+old_title: Version Control Basic 3
+topic: Version Control Basic
+title: Importing data
 language: R
 ---
 

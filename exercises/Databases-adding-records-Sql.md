@@ -1,7 +1,8 @@
 ---
 layout: exercise
+old_title: Adding Records
+topic: Adding Records
 title: Adding Records
-subtitle: Adding Records
 language: SQL
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 3
-subtitle: Strings and Math
+old_title: Strings 3
+topic: Strings
+title: Strings and Math
 language: Python
 ---
 

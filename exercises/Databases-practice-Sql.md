@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: SQL Practice
-subtitle: Basic Queries Review
+old_title: SQL Practice
+topic: SQL Practice
+title: Basic Queries Review
 language: R
 ---
 

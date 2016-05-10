@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 7
-subtitle: Split Strings
+old_title: Strings 7
+topic: Strings
+title: Split Strings
 language: R
 ---
 

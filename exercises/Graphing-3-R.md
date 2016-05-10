@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Graphing 3
-subtitle: Mammal Body Size 3
+old_title: Graphing 3
+topic: Graphing
+title: Mammal Body Size 3
 language: R
 ---
 

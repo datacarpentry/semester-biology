@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Database Structure 2
-subtitle: Separate Data from Overfilled Cells
+old_title: Database Structure 2
+topic: Database Structure
+title: Separate Data from Overfilled Cells
 language: SQL
 ---
 

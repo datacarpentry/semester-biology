@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Modules
-subtitle: dplyr
+old_title: Modules
+topic: Modules
+title: dplyr
 language: R
 ---
 

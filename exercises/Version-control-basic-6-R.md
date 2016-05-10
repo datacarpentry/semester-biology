@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Version Control Basic 6
-subtitle: Pushing changes
+old_title: Version Control Basic 6
+topic: Version Control Basic
+title: Pushing changes
 language: R
 ---
 

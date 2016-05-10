@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Grouping
-subtitle: GROUP BY
+old_title: Grouping
+topic: Grouping
+title: GROUP BY
 language: SQL
 ---
 

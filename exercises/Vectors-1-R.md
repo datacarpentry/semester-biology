@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Vectors 1
-subtitle: Vectors
+old_title: Vectors 1
+topic: Vectors
+title: Vectors
 language: R
 ---
 

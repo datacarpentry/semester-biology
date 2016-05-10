@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Data Frames 1
-subtitle: Shrub Volume 2
+old_title: Data Frames 1
+topic: Data Frames
+title: Shrub Volume 2
 language: R
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Joins 4
-subtitle: JOIN for Plot Types
+old_title: Joins 4
+topic: Joins
+title: JOIN for Plot Types
 language: SQL
 ---
 

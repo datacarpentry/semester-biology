@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: For Loops 2
-subtitle: Exponential Growth
+old_title: For Loops 2
+topic: For Loops
+title: Exponential Growth
 language: Python
 ---
 

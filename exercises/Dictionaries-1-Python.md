@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Dictionaries 1
-subtitle: Species Composition 2
+old_title: Dictionaries 1
+topic: Dictionaries
+title: Species Composition 2
 language: Python
 ---
 

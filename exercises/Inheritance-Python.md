@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Inheritance
-subtitle: Platypus 4
+old_title: Inheritance
+topic: Inheritance
+title: Platypus 4
 language: Python
 ---
 

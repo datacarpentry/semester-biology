@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 2
-subtitle: Built-in Functions
+old_title: Strings 2
+topic: Strings
+title: Built-in Functions
 language: R
 ---
 

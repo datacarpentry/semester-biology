@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: For Loops 1
-subtitle: Repeat Strings
+old_title: For Loops 1
+topic: For Loops
+title: Repeat Strings
 language: Python
 ---
 

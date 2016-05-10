@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Shell 7 - For Loops + Other Peoples Programs
-subtitle:
+old_title: Shell 7 - For Loops + Other Peoples Programs
+topic: Shell - For Loops + Other Peoples Programs
+title:
 language: Python
 ---
 

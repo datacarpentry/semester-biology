@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Joins 1
-subtitle: JOIN Species and Plots
+old_title: Joins 1
+topic: Joins
+title: JOIN Species and Plots
 language: SQL
 ---
 

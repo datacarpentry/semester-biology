@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Lists 5
-subtitle:
+old_title: Lists 5
+topic: Lists
+title:
 language: Python
 ---
 

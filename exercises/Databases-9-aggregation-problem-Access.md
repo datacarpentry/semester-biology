@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Databases 9 - Aggregation
-subtitle:
+old_title: Databases 9 - Aggregation
+topic: Databases - Aggregation
+title:
 language: Access
 ---
 

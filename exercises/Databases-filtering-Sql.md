@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Filtering
-subtitle: WHERE
+old_title: Filtering
+topic: Filtering
+title: WHERE
 language: SQL
 ---
 

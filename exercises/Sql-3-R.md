@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: R-SQL 3
-subtitle: Data Stream
+old_title: R-SQL 3
+topic: R-SQL
+title: Data Stream
 language: R
 ---
 

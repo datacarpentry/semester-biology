@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Making Choices 3
-subtitle: DNA or RNA
+old_title: Making Choices 3
+topic: Making Choices
+title: DNA or RNA
 language: R
 ---
 

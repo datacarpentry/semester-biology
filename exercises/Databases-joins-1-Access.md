@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Databases - Joins 1
-subtitle:
+old_title: Databases - Joins 1
+topic: Databases - Joins
+title:
 language: Access
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Distinct
-subtitle: DISTINCT
+old_title: Distinct
+topic: Distinct
+title: DISTINCT
 language: SQL
 ---
 

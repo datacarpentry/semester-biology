@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Version Control 3
-subtitle: Revert
+old_title: Version Control 3
+topic: Version Control
+title: Revert
 language: Python
 ---
 

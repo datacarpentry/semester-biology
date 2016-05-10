@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Expressions and Variables 3
-subtitle: More Variables
+old_title: Expressions and Variables 3
+topic: Expressions and Variables
+title: More Variables
 language: R
 ---
 

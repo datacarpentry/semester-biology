@@ -1,7 +1,8 @@
 ---
 layout: exercise
+old_title: Missing Data
+topic: Missing Data
 title: Missing Data
-subtitle: Missing Data
 language: SQL
 ---
 

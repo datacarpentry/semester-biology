@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Version Control Basic 1
-subtitle: Set-up Git
+old_title: Version Control Basic 1
+topic: Version Control Basic
+title: Set-up Git
 language: R
 ---
 

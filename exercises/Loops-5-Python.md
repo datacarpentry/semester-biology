@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Loops 5
-subtitle:
+old_title: Loops 5
+topic: Loops
+title:
 language: Python
 ---
 

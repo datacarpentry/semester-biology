@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Making Choices 2
-subtitle:
+old_title: Making Choices 2
+topic: Making Choices
+title:
 language: Python
 ---
 

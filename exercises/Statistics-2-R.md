@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Statistics 2
-subtitle: Shrub Volume 4
+old_title: Statistics 2
+topic: Statistics
+title: Shrub Volume 4
 language: R
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Basic 1
-subtitle: Vector Review
+old_title: Basic 1
+topic: Basic
+title: Vector Review
 language: R
 ---
 

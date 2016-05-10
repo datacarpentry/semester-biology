@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Making Choices 5
-subtitle: Modify the Code
+old_title: Making Choices 5
+topic: Making Choices
+title: Modify the Code
 language: Python
 ---
 

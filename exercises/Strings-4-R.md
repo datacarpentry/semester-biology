@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 4
-subtitle: Strings and Math
+old_title: Strings 4
+topic: Strings
+title: Strings and Math
 language: R
 ---
 

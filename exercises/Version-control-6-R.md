@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Version Control 6
-subtitle: Pull and Move
+old_title: Version Control 6
+topic: Version Control
+title: Pull and Move
 language: R
 ---
 
