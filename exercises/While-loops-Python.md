@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: While loops
-topic: While loops
-title:
+topic: For Loops
+title: While
 language: Python
 ---
 
