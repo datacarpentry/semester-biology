@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Making Choices 3
 topic: Making Choices
-title: DNA or RNA
+title: DNA or RNA 1
 language: Python
 ---
 
