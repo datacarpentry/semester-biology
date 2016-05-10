@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Shell 4 - Making Executable Programs
-topic: Shell - Making Executable Programs
-title:
+topic: Shell
+title: Executable Programs
 language: Python
 ---
 
