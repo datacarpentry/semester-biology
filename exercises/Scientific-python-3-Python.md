@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Scientific Python 3
-topic: Scientific Python
-title:
+topic: Scientific
+title: Tree Biomass
 language: Python
 ---
 
