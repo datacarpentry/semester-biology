@@ -1,8 +1,8 @@
---- 
+---
 layout: exercise 
 old_title: Strings 8
 topic: Strings
-title: Function with Choices
+title: Ultimate Question 1
 language: Python
 ---
 
