@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases 9 - Aggregation
-topic: Databases 
-title: Aggregation 2
+topic: Aggregation
+title: Sum
 language: Access
 ---
 

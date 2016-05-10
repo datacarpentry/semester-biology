@@ -1,8 +1,8 @@
 ---
 layout: exercise
 old_title: Databases 2 - Importing
-topic: Databases
-title: Importing
+topic: Database Control
+title: Importing Tables
 language: Access
 ---
 

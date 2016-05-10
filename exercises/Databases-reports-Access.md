@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Databases - Reports
-topic: Databases
+topic: Database Tools
 title: Reports
 language: Access
 ---

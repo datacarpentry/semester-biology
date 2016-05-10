@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Databases 5 - Sorting
-topic: Databases 
+topic: Basic Queries 
 title: Sorting
 language: Access
 ---

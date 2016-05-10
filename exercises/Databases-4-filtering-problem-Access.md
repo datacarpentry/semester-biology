@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Databases 4 - Filtering
-topic: Databases
+topic: Basic Queries
 title: Filtering
 language: Access
 ---

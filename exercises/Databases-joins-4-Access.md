@@ -1,7 +1,7 @@
 ---
 layout: exercise
 old_title: Databases - Joins 4
-topic: Databases
+topic: Advanced Queries
 title: Joins 4
 language: Access
 ---
