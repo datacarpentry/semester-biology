@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Strings 6
 topic: Strings
-title: Strings from Data
+title: GC Content 1
 language: Python
 ---
 
