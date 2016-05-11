@@ -1,5 +1,6 @@
 ---
-layout: lecture
+layout: page
+element: notes
 title: Graphing using ggplot
 language: R
 ---
