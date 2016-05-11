@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Scientific 1
-subtitle: Mammal Body Size Pt 1
+old_title: Scientific 1
+topic: Scientific
+title: Mammal Body Size 1
 language: R
 ---
 

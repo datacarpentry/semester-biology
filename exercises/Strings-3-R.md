@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 3
-subtitle: stringr Functions
+old_title: Strings 3
+topic: Strings
+title: stringr Functions
 language: R
 ---
 

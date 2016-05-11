@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Loops 1
-subtitle: Improve Your Code!
+old_title: Loops 1
+topic: Loops
+title: Improve Your Code
 language: R
 ---
 

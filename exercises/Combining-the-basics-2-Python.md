@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Combining Basics
-subtitle: Shrub Volume Pt. 2
+old_title: Combining Basics
+topic: Combining
+title: Shrub Volume
 language: Python
 ---
 

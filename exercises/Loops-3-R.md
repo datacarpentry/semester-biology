@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Loops 3
-subtitle: Multiple Files
+old_title: Loops 3
+topic: Loops
+title: Multiple Files
 language: R
 ---
 

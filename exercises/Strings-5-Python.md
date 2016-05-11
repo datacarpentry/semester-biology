@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 5
-subtitle: Long Strings
+old_title: Strings 5
+topic: Strings
+title: Long Strings
 language: Python
 ---
 

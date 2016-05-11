@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Expressions and Variables 4
-subtitle: Variable Reassignment
+old_title: Expressions and Variables 4
+topic: Expressions
+title: Variable Reassignment
 language: R
 ---
 

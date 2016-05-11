@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Vectors 2
-subtitle: Shrub Volume Pt 1
+old_title: Vectors 2
+topic: Vectors
+title: Shrub Volume 1
 language: R
 ---
 

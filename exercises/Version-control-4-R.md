@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Version Control 4
-subtitle: Merge Conflict
+old_title: Version Control 4
+topic: Version
+title: Merge Conflict
 language: R
 ---
 

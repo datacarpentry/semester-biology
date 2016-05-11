@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Scientific 0
-subtitle: Shrub Volume Pt 3 with Pandas
+old_title: Scientific 0
+topic: Scientific
+title: Shrub Volume 2
 language: Python
 ---
 

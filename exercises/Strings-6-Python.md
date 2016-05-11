@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 6
-subtitle: Strings from Data
+old_title: Strings 6
+topic: Strings
+title: Strings from Data
 language: Python
 ---
 

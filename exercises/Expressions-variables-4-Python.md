@@ -1,6 +1,8 @@
 ---
 layout: exercise
-title: Expressions and Variables 4
+old_title: Expressions and Variables 4
+topic: Expressions
+title: Variable Reassignment
 language: Python
 ---
 

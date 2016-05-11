@@ -1,6 +1,8 @@
 ---
 layout: exercise
-title: Functions 5
+old_title: Functions 5
+topic: Functions
+title: for loop
 language: Python
 ---
 

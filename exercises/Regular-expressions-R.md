@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Regular Expressions
-subtitle: Find the Rodents!
+old_title: Regular Expressions
+topic: Regular
+title: Find the Rodents
 language: R
 ---
 

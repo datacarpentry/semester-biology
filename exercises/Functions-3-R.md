@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Functions 3
-subtitle: Writing Functions
+old_title: Functions 3
+topic: Functions
+title: Writing Functions
 language: R
 ---
 

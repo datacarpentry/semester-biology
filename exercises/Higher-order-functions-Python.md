@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Higher Order Functions
-subtitle: Species Area Relationship
+old_title: Higher Order Functions
+topic: Higher
+title: Species Area Relationship
 language: Python
 ---
 

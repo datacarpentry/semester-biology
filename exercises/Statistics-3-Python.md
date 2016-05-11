@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Statistics 3
-subtitle: Mammal Body Size Pt 4
+old_title: Statistics 3
+topic: Statistics
+title: Mammal Body Size 4
 language: Python
 ---
 

@@ -1,6 +1,8 @@
 --- 
 layout: exercise 
-title: Strings 8
+old_title: Strings 8
+topic: Strings
+title: Function with Choices
 language: Python
 ---
 

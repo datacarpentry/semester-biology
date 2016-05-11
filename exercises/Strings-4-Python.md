@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Strings 4
-subtitle: string Methods
+old_title: Strings 4
+topic: Strings
+title: string Methods
 language: Python
 ---
 

@@ -1,6 +1,9 @@
 ---
 layout: exercise
-title: Basic Python 1
+old_title: Basic 1
+topic: Basic
+title: List Review
+language: Python
 ---
 
 The number of birds banded at a series of sampling sites has been counted by

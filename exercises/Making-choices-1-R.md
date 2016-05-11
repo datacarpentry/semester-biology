@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Making Choices 1
-subtitle: Choice Operators
+old_title: Making Choices 1
+topic: Making
+title: Choice Operators
 language: R
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Version Control Basic 7
-subtitle: Pulling and pushing
+old_title: Version Control Basic 7
+topic: Version
+title: Pulling and pushing
 language: R
 ---
 

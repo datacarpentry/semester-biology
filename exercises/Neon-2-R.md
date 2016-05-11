@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: NEON 2
-subtitle: NEON Raster
+old_title: NEON 2
+topic: NEON
+title: NEON Raster
 language: R
 ---
 

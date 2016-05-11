@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Functions 1
-subtitle: Built-in Functions
+old_title: Functions 1
+topic: Functions
+title: Built-in Functions
 language: R
 ---
 

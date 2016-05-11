@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Modules 1
-subtitle: math Functions
+old_title: Modules 1
+topic: Modules
+title: math Functions
 language: Python
 ---
 

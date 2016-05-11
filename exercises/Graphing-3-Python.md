@@ -1,7 +1,8 @@
 ---
 layout: exercise
-title: Graphing 3
-subtitle: Adult Size vs. Newborn Size
+old_title: Graphing 3
+topic: Graphing
+title: Adult vs Newborn Size
 language: Python
 ---
 

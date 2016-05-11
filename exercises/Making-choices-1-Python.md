@@ -1,6 +1,8 @@
 ---
 layout: exercise
-title: Making Choices 1
+old_title: Making Choices 1
+topic: Making
+title: Choice Operators
 language: Python
 ---
 
