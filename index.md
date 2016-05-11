@@ -12,10 +12,10 @@ instructors, with the hopes that this will lead to better training and resources
 for everyone. 
 
 ##### For Students
-* [Syllabus]({{ site.baseurl }}/main/syllabus)
-* [Schedule]({{ site.baseurl }}/main/schedule)
-* [Setup]({{ site.baseurl }}/main/computer-setup)
-* [Self-Guided Start-up Guide]({{ site.baseurl}}/main/START-for-self-guided-students)
+* [Syllabus]({{ site.baseurl }}/syllabus)
+* [Schedule]({{ site.baseurl }}/schedule)
+* [Setup]({{ site.baseurl }}/computer-setup)
+* [Self-Guided Start-up Guide]({{ site.baseurl}}/START-for-self-guided-students)
 
 ##### For Instructors
 * [Readings]({{ site.baseurl }}/readings)

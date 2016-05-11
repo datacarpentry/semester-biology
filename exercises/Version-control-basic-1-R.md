@@ -25,7 +25,7 @@ Determined to not let this happen again you've committed to using `git` for
 version control.
 
 Install `git` for your operating system following the
-[setup instructions](http://www.datacarpentry.org/semester-biology/main/computer-setup/). Then
+[setup instructions](http://www.datacarpentry.org/semester-biology/computer-setup/). Then
 create a new project for this assignment in RStudio with the following steps:
 
 1. File -> New Project -> New Directory -> Empty Project
