@@ -75,6 +75,6 @@ same content. In particularly we actively use
 materials. However, in cases where the necessary material doesn't exist
 elsewhere it can certainly be added to `materials/`.
 
-By contributing, you are agreeing that your work is [licensed using a combination of CC-BY and MIT licenses]({{ site.baseurl }}/about/LICENSE) and may be openly used, modified, and distributed by others.
+By contributing, you are agreeing that your work is [licensed using a combination of CC-BY and MIT licenses]({{ site.baseurl }}/LICENSE) and may be openly used, modified, and distributed by others.
 
 
