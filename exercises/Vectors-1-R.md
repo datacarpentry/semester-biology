@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Vectors 1
 topic: Vectors
-title: Vectors
+title: Bird Banding
 language: R
 ---
 
