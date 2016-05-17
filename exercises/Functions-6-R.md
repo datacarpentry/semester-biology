@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Functions 6
 topic: Functions
-title: Strings from Data
+title: Strings from Data 2
 language: R
 ---
 
