@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Functions 5
 topic: Functions
-title: for loop
+title: for Loop
 language: Python
 ---
 
