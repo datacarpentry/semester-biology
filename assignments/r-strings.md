@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Unused String Exercises
 language: R
-exercises: ['Strings 1', 'Strings 2', 'Strings 3', 'Strings 4', 'Strings 5', 'Strings 6', 'Functions 6', 'Loops 1', 'Strings 7']
+exercises: ['Print Strings', 'Built-in Functions', 'stringr Functions', 'Strings and Math', 'Long Strings', 'Strings from Data 1', 'Strings from Data 2', 'Improve Your Code', 'Split Strings']
 ---
 
 #### Learning Objectives

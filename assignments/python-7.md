@@ -2,7 +2,7 @@
 layout: page
 title: Python Assignment 7
 language: Python
-exercises: ['Statistics 1', 'Statistics 2', 'Statistics 3']
+exercises: ['Adult vs Newborn Size 2', 'Shrub Volume 3', 'Mammal Body Size 4']
 ---
 
 {% include assignment.html %}

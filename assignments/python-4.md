@@ -2,7 +2,7 @@
 layout: page
 title: Python Assignment 4
 language: Python
-exercises: ['Making Choices 1', 'Making Choices 5', 'Making Choices 3', 'Combining Basics']
+exercises: ['Choice Operators', 'Modify the Code 2', 'DNA or RNA 1', 'Shrub Volume']
 ---
 
 {% include assignment.html %}

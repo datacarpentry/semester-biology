@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Working with Data
 language: R
-exercises: ['Modules', 'Scientific 0', 'Code fix - dplyr', 'Dplyr Using Databases']
+exercises: ['dplyr', 'Shrub Volume 3', 'Fix the Code 1', 'Link to Databases']
 ---
 
 #### Learning Objectives

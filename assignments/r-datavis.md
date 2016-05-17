@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Data Visualization
 language: R
-exercises: ['SQL Practice', 'Graphing 1', 'Graphing 2']
+exercises: ['Basic Queries Review', 'Mass vs Metabolism', 'Adult vs Newborn Size 1']
 ---
 
 #### Learning Objectives

@@ -2,7 +2,7 @@
 layout: page
 title: Python Assignment 1
 language: Python
-exercises: ['Expressions and Variables 1', 'Expressions and Variables 2', 'Expressions and Variables 3', 'Functions 1', 'Modules 1', 'Expressions and Variables 5', 'Data Analysis']
+exercises: ['Basic Expressions', 'Basic Variables', 'More Variables', 'Built-in Functions', 'math Functions', 'Modify the Code 1', 'Code Shuffle']
 ---
 
 {% include assignment.html %}
