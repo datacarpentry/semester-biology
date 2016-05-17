@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Version Control Basic 5
 topic: Version Control Basic
-title: Adding a remote
+title: Adding a Remote
 language: R
 ---
 

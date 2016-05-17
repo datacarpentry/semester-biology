@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Version Control Basic 2
 topic: Version Control Basic
-title: First commit
+title: First Commit
 language: R
 ---
 
