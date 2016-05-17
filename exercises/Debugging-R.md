@@ -2,7 +2,7 @@
 layout: exercise
 old_title: Debugging
 topic: Debugging
-title: Fix the Code 1
+title: Fix the Code 2
 language: R
 ---
 
