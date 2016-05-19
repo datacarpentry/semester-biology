@@ -6,7 +6,7 @@ title: Automate Query
 language: R
 ---
 
-This is a follow-up to [R-SQL 1]({{ site.baseurl }}/exercises/Sql-2-R).
+This is a follow-up to [R-SQL 1]({{ site.baseurl }}/exercises/Sql-1-R).
 
 Dr. Undómiel agrees with you that the difference in male and female
 *D. spectabilis* hind foot length and weight seems pretty small, but wants to
