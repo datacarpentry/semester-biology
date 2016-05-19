@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Scientific 0
 topic: Scientific
 title: Shrub Volume 2
 language: Python
 ---
 
-*This problem is related to [Combining Basics]({{ site.baseurl }}/exercises/Combining-the-basics-2-Python),
+*This problem is related to [Shrub Volume]({{ site.baseurl }}/exercises/Combining-basics-shrub-volume-Python),
 but using the Pandas library.*
 
 Dr. Granger is interested in studying the factors controlling the size and

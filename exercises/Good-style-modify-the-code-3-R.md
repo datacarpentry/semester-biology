@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Good Style
 topic: Good Style
 title: Modify the Code 3
 language: R

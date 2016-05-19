@@ -1,13 +1,12 @@
 ---
 layout: exercise
-old_title: Code fix - dplyr
 topic: Code fix - dplyr
 title: Fix the Code 1
 language: R
 ---
 
 This is a follow-up to
-[Scientific 0]({{ site.baseurl }}/exercises/Scientific-0-R).
+[Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R).
 If you haven't already downloaded the
 [shrub volume data]({{ site.baseurl }}/data/shrub_volume_experiment.csv)
 do so now and store it in your `data` directory.

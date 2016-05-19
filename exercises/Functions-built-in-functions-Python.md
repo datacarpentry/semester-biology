@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Functions 1
 topic: Functions
 title: Built-in Functions
 language: Python

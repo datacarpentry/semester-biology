@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Adding Records
 topic: Database Control
 title: Adding Records
 language: SQL

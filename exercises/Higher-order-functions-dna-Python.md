@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Higher Order Functions 1
 topic: Higher Order Functions
 title: DNA
 language: Python

@@ -1,20 +1,19 @@
 ---
 layout: exercise
-old_title: Scientific 2
 topic: Scientific
 title: Mammal Body Size 2
 language: R
 ---
 
 This is a follow up to
-[Scientific 1]({{ site.baseurl }}/exercises/Scientific-1-R).
+[Mammal Body Size 1]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-1-R).
 
 Looking at the average mass of extinct and extant species overall is useful, but
 there are lots of different processes that could cause size-biased extinctions
 so it's not as informative as we might like.  However, if we see the exact same
 pattern on each of the different continents that might really tell us
 something. Repeat the analysis in
-[Scientific 1]({{ site.baseurl }}/exercises/Scientific-1-R), but this time compare the mean masses within each of the different continents.
+[Mammal Body Size 1]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-1-R), but this time compare the mean masses within each of the different continents.
 
 Using the `dplyr` and `tidyr` libraries, group the data by continent and status. 
 Summarize the average mass for each group. Spread the groups by status and select the statuses extant and extinct. Calculate the difference in average 

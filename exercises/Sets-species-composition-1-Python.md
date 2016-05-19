@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Sets 1
 topic: Sets
 title: Species Composition 1
 language: Python

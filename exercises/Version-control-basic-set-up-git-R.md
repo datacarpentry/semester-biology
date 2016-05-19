@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Version Control Basic 1
 topic: Version Control Basic
 title: Set-up Git
 language: R
 ---
 
-This is a follow up to [Basic 2]({{ site.baseurl }}/exercises/Basic-2-R).
+This is a follow up to [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R).
 
 You're continuing your analyses of house-elves with Dr. Granger. Unfortunately
 you weren't using version control and one day your cat jumped all over your

@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Functions 3
 topic: Functions
 title: Use and Modify
 language: Python

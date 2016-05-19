@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: R-SQL 1
 topic: R-SQL
 title: Connect and Query
 language: R

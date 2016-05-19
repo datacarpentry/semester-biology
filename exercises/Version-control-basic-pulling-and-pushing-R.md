@@ -1,13 +1,12 @@
 ---
 layout: exercise
-old_title: Version Control Basic 7
 topic: Version Control Basic
 title: Pulling and Pushing
 language: R
 ---
 
 This is a follow up to
-[Version Control Basic 6]({{ site.baseurl }}/exercises/Version-control-basic-6-R).
+[Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R).
 
 **STOP: Wait until your teacher has told you they've updated your repository 
 following the last exercise before doing this one.**

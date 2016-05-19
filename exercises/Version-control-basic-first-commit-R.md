@@ -1,13 +1,12 @@
 ---
 layout: exercise
-old_title: Version Control Basic 2
 topic: Version Control Basic
 title: First Commit
 language: R
 ---
 
 This is a follow up to
-[Version Control Basic 1]({{ site.baseurl }}/exercises/Version-control-basic-1-R)
+[Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R)
 
 Create a new file for your analysis named `houseelf-analysis.R` and add a
 comment at the top describing what the analysis is intended to do.

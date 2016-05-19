@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Strings 7
 topic: Strings
 title: Split Strings
 language: Python

@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases 4 - Filtering
 topic: Basic Queries
 title: Filtering
 language: Access

@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Combining Basics
 topic: Combining Basics
 title: Shrub Volume 5
 language: R
 ---
 
-This is a follow-up to [Statistics 2]({{ site.baseurl }}/exercises/Statistics-2-R).
+This is a follow-up to [Shrub Volume 4]({{ site.baseurl }}/exercises/Statistics-shrub-volume-4-R).
 
 Now that you're familiar with the data, Dr. Granger wants you to conduct a preliminary analysis of these data to include in a grant proposal (*she might be a world renowned expert in carbon storage in plants, but she sure doesn't know much about computers*). If you missed it, the [data file]({{ site.baseurl }}/data/shrub_volume_experiment.csv) is still on the web.
 

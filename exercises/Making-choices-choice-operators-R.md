@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Making Choices 1
 topic: Making Choices
 title: Choice Operators
 language: R

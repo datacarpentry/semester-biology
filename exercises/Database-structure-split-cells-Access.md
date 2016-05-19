@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases - Structure 2
 topic: Database Structure 
 title: Split Cells
 language: Access

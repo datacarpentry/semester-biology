@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Graphing 3
 topic: Graphing
 title: Adult vs Newborn Size 1
 language: Python

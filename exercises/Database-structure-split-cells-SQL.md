@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Database Structure 2
 topic: Database Structure
 title: Split Cells
 language: SQL

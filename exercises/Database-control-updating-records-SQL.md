@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Updating Records
 topic: Database Control
 title: Updating Records
 language: SQL

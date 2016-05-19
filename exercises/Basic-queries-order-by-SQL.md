@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Sorting
 topic: Basic Queries
 title: ORDER BY
 language: SQL

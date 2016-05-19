@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Vectors 2
 topic: Vectors
 title: Shrub Volume 1
 language: R

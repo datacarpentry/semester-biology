@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Version Control 8
 topic: Version Control
 title: Richness Revert
 language: Python

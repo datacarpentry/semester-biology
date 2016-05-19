@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases - Nested Queries 1
 topic: Advanced Queries
 title: Nested Queries
 language: Access

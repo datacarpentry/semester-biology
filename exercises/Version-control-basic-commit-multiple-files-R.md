@@ -1,13 +1,12 @@
 ---
 layout: exercise
-old_title: Version Control Basic 4
 topic: Version Control Basic
 title: Commit Multiple Files
 language: R
 ---
 
 This is a follow up to
-[Version Control Basic 3]({{ site.baseurl }}/exercises/Version-control-basic-3-R)
+[Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R)
 
 
 After talking with Dr. Granger you realize that

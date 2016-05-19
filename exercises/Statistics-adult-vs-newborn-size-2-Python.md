@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Statistics 1
 topic: Statistics
 title: Adult vs Newborn Size 2
 language: Python
 ---
 
-This is a follow up to [Graphing 3]({{ site.baseurl }}/exercises/Graphing-3-Python).
+This is a follow up to [Adult vs Newborn Size 1]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-1-Python).
 
 We've graphed the relationship between adult size and new born size in
 mammals and now it's time to analyze the relationship statistically.

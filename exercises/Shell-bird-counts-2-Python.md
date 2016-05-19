@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Shell 7 - For Loops + Other Peoples Programs
 topic: Shell
 title: Bird Counts 2
 language: Python

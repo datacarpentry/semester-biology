@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases - Joins 3
 topic: Advanced Queries
 title: Joins 3
 language: Access

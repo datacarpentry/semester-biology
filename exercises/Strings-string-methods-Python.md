@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Strings 4
 topic: Strings
 title: string Methods
 language: Python

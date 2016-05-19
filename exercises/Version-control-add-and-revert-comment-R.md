@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Version Control 5
 topic: Version Control
 title: Add and Revert Comment
 language: R

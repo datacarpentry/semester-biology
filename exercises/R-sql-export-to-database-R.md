@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: R-SQL 4
 topic: R-SQL
 title: Export to Database
 language: R

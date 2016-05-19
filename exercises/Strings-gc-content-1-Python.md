@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Strings 6
 topic: Strings
 title: GC Content 1
 language: Python

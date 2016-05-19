@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Version Control 6
 topic: Version Control
 title: Pull and Move
 language: Python

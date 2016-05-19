@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Missing Data
 topic: Database Control
 title: Missing Data
 language: SQL

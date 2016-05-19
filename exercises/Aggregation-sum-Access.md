@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases 9 - Aggregation
 topic: Aggregation
 title: Sum
 language: Access

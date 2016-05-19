@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Inheritance
 topic: Inheritance
 title: Platypus 4
 language: Python

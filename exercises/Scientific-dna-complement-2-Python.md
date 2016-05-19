@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Scientific Python 4
 topic: Scientific
 title: DNA Complement 2
 language: Python

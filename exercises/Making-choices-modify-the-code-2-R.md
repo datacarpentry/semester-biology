@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Making Choices 2
 topic: Making Choices
 title: Modify the Code 2
 language: R

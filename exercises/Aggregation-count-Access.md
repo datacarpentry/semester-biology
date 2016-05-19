@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases 8 - Aggregation
 topic: Aggregation
 title: Count
 language: Access

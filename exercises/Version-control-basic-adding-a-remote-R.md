@@ -1,13 +1,12 @@
 ---
 layout: exercise
-old_title: Version Control Basic 5
 topic: Version Control Basic
 title: Adding a Remote
 language: R
 ---
 
 This is a follow up to
-[Version Control Basic 4]({{ site.baseurl }}/exercises/Version-control-basic-4-R).
+[Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R).
 
 Dr. Granger contacts you and lets you know that she'd like to be able to see
 what you've been doing and to share some more files with you. She's been

@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Loops 2
 topic: Loops
 title: stringr
 language: R
@@ -37,6 +36,6 @@ and print them out individually. The function should work on a single sequence
 at a time and the `for` loop should repeatedly call the function and print out 
 the result.
 
-*You may have noticed that [Functions 5]({{ site.baseurl }}/exercises/Functions-5-R/)
+*You may have noticed that [for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R/)
 prints the results differently. `read.csv()` imports the data as a
 `data.frame()`, unlike the numeric vector in the previous exercise.*

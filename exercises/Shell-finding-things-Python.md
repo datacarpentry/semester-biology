@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Shell 3 - Finding Things
 topic: Shell
 title: Finding Things
 language: Python

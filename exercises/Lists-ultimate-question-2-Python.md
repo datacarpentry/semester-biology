@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Lists 7
 topic: Lists
 title: Ultimate Question 2
 language: Python

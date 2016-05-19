@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Functions 4
 topic: Functions
 title: Nested Functions
 language: R
 ---
 
-This is a follow up to [Functions 3]({{ site.baseurl }}/exercises/Functions-3-R).
+This is a follow up to [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
 
 Measuring things using the metric system is great for us scientists, but
 when you call your grandmother this weekend (*you do call your

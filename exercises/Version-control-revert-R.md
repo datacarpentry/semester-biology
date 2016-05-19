@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Version Control 3
 topic: Version Control
 title: Revert
 language: R

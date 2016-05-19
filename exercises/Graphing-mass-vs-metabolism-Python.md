@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Graphing 2
 topic: Graphing
 title: Mass vs Metabolism
 language: Python

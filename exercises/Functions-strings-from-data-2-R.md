@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Functions 6
 topic: Functions
 title: Strings from Data 2
 language: R
 ---
 
-This is a follow up to [Strings 6]({{ site.baseurl }}/exercises/Strings-6-R/).
+This is a follow up to [Strings from Data 1]({{ site.baseurl }}/exercises/Strings-strings-from-data-1-R/).
 
 A colleague has produced a file with one DNA sequence on each line. Download
 [the file]({{ site.baseurl }}/data/dna_sequences_1.txt) and load it into R using
@@ -19,4 +18,4 @@ the result for each sequence.
 
 *Before we knew about functions we had to take each dna sequence one at a time and then rewrite or copy-paste the same code to analyze each one. Isn't this better?*
 
-*You may have noticed that [Functions 5]({{ site.baseurl }}/exercises/Functions-5-R/) prints the results differently. `read.csv()` imports the data as a `data.frame()`, unlike the numeric vector in the previous exercise.*
+*You may have noticed that [for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R/) prints the results differently. `read.csv()` imports the data as a `data.frame()`, unlike the numeric vector in the previous exercise.*

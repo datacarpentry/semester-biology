@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Distinct
 topic: Basic Queries
 title: DISTINCT
 language: SQL

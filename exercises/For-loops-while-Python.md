@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: While loops
 topic: For Loops
 title: While
 language: Python

@@ -1,14 +1,13 @@
 ---
 layout: exercise
-old_title: Tests
 topic: Tests
 title: Fix the Code 2
 language: Python
 ---
 
-This is a follow up to [Debugging]({{ site.baseurl }}/exercises/Debugging-Python).
+This is a follow up to [Fix the Code 1]({{ site.baseurl }}/exercises/Debugging-fix-the-code-1-Python).
 
-Write tests for your `Debugging` code for the following cases and
+Write tests for your `Fix the Code 1` code for the following cases and
 save it in a file called `test_granger_analysis_code.py` (*remember that
 the file has to start with `test_` for nose to find it*). Make any
 corrections/improvements that need to be made to the code so that all of

@@ -1,13 +1,12 @@
 ---
 layout: exercise
-old_title: Version Control Basic 6
 topic: Version Control Basic
 title: Pushing Changes
 language: R
 ---
 
 This is a follow up to
-[Version Control Basic 5]({{ site.baseurl }}/exercises/Version-control-basic-5-R).
+[Adding a Remote]({{ site.baseurl }}/exercises/Version-control-basic-adding-a-remote-R).
 
 Now that you've set up your remote repository for collaborating with Dr. Granger
 you'd better get to work since she can see everything you're doing.

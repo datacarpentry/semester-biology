@@ -1,15 +1,14 @@
 ---
 layout: exercise
-old_title: Tests
 topic: Tests
 title: Fix the Code 3
 language: R
 ---
 
-This is a follow up to [Debugging]({{ site.baseurl }}/exercises/Debugging-R).
+This is a follow up to [Fix the Code 2]({{ site.baseurl }}/exercises/Fix the Code 2-fix-the-code-2-R).
 
-Write tests for your 'Debugging' code for the following cases and save it in a 
-file called `Tests-R.R`. Make corrections/improvements to the 'Debugging' code 
+Write tests for your 'Fix the Code 2' code for the following cases and save it in a 
+file called `Tests-R.R`. Make corrections/improvements to the 'Fix the Code 2' code 
 so that all of your tests pass.
 
 `test_that("get_gc_content() works",`

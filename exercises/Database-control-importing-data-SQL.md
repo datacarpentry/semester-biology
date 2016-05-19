@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Importing Data
 topic: Database Control
 title: Importing Data
 language: SQL

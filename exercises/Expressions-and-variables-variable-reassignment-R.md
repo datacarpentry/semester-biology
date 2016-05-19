@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Expressions and Variables 4
 topic: Expressions and Variables
 title: Variable Reassignment
 language: R

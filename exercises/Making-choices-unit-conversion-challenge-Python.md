@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Making Choices 4
 topic: Making Choices
 title: Unit Conversion Challenge
 language: Python

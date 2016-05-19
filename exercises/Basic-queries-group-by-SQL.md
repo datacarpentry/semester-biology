@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Grouping
 topic: Basic Queries
 title: GROUP BY
 language: SQL

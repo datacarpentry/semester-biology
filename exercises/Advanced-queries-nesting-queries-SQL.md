@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Nested Queries
 topic: Advanced Queries
 title: Nesting Queries
 language: SQL

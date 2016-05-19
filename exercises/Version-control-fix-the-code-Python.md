@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Version Control 2
 topic: Version Control
 title: Fix the Code
 language: Python

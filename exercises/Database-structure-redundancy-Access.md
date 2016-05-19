@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases - Structure 1
 topic: Database Structure
 title: Redundancy
 language: Access

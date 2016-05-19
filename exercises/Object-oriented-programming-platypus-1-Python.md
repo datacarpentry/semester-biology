@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Object Oriented Programming 1
 topic: Object Oriented Programming
 title: Platypus 1
 language: Python

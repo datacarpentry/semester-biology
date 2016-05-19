@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: R-SQL 3
 topic: R-SQL
 title: Data Stream
 language: R
 ---
 
-This is a follow-up to [R-SQL 2]({{ site.baseurl }}/exercises/Sql-2-R).
+This is a follow-up to [Automate Query]({{ site.baseurl }}/exercises/R-sql-automate-query-R).
 
 Dr. Undómiel is really testing your kindness now. She's seen that all of the 
 average hind foot length and average weights are pretty similar within species, 

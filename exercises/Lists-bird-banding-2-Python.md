@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Lists 2
 topic: Lists
 title: Bird Banding 2
 language: Python

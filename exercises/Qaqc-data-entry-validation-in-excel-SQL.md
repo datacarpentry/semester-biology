@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: QAQC 1
 topic: QAQC
 title: Data entry validation in Excel
 language: SQL

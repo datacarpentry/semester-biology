@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Data Frames 2
 topic: Data Frames
 title: Database CSV
 language: R

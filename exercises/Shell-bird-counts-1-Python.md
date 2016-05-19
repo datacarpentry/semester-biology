@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Shell 6 - Pipes and Filters
 topic: Shell
 title: Bird Counts 1
 language: Python

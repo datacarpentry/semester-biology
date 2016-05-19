@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Regular Expressions 2
 topic: Regular Expressions
 title: List the Rodents 2
 language: Python

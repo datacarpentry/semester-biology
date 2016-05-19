@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Aggregation 1
 topic: Aggregation
 title: COUNT
 language: SQL

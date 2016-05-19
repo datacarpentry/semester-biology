@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: SQL Practice
 topic: SQL Practice
 title: Basic Queries Review
 language: R

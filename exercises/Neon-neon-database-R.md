@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: NEON 1
 topic: NEON
 title: NEON Database
 language: R

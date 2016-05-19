@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Refactor with regression test
 topic: Tests
 title: Refactor
 language: Python

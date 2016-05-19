@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Functions 3
 topic: Functions
 title: Writing Functions
 language: R

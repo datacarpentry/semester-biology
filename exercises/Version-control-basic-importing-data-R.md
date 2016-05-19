@@ -1,13 +1,12 @@
 ---
 layout: exercise
-old_title: Version Control Basic 3
 topic: Version Control Basic
 title: Importing Data
 language: R
 ---
 
 This is a follow up to
-[Version Control Basic 2]({{ site.baseurl }}/exercises/Version-control-basic-2-R)
+[First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R)
 
 1. Download a copy of the
   [main data file]({{ site.baseurl }}/data/houseelf_earlength_dna_data.csv) and

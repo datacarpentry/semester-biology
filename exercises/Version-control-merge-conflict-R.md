@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Version Control 4
 topic: Version Control
 title: Merge Conflict
 language: R

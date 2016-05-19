@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Strings 3
 topic: Strings
 title: Strings and Math
 language: Python

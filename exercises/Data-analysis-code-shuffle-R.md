@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Data Analysis
 topic: Data Analysis
 title: Code Shuffle
 language: R

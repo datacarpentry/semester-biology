@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Strings 1
 topic: Strings
 title: Print Strings
 language: R

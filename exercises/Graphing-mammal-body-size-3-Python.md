@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Graphing 1
 topic: Graphing
 title: Mammal Body Size 3
 language: Python
 ---
 
-This is a follow up to [Scientific 2]({{ site.baseurl }}/exercises/Scientific-2-Python).
+This is a follow up to [Mammal Body Size 2]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-2-Python).
 
 We have previously compared the average masses of extant and extinct species on
 different continents to try to understand whether size has an influence on

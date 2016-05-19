@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Loops 3
 topic: Loops
 title: Shrub Dimensions 1
 language: Python

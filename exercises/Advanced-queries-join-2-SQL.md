@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Joins 2
 topic: Advanced Queries
 title: JOIN 2
 language: SQL

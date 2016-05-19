@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Debugging
 topic: Debugging
 title: Fix the Code 2
 language: R
 ---
 
-This is a follow up to [Basic 2]({{ site.baseurl }}/exercises/Basic-2-R).
+This is a follow up to [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R).
 
 While you were out of town doing field work over the summer Dr. Granger hired
 another student, Gregory Goyle, to help her modify your code so that it did

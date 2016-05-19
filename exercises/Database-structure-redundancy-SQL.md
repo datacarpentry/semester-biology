@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Database Structure 1
 topic: Database Structure
 title: Redundancy
 language: SQL

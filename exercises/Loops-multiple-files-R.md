@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Loops 3
 topic: Loops
 title: Multiple Files
 language: R
 ---
 
-This is a follow-up to [Loops 2]({{ site.baseurl }}/exercises/Loops-2-R).
+This is a follow-up to [stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
 
 Dr. Jekyll is hard at work to perfect his serum and correct the imbalance with 
 his alter ego, Mr. Hyde. Dr. Jekyll is convinced that some mutation in his DNA 
@@ -38,7 +37,7 @@ seq <- sread(reads)
 ```
 
 You can reuse the GC content function you wrote for
-[Loops 2]({{site.baseurl}}/exercises/Loops-2-R) to calculate the GC content, but
+[stringr]({{site.baseurl}}/exercises/Loops-stringr-R) to calculate the GC content, but
 you might need to modify it to accommodate the different capitalization of the
 bases.
 

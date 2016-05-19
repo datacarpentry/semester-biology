@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Joins 3
 topic: Advanced Queries
 title: JOIN 3
 language: SQL

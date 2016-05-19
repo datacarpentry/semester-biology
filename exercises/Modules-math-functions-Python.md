@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Modules 1
 topic: Modules
 title: math Functions
 language: Python

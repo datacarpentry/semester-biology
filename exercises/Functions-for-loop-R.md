@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Functions 5
 topic: Functions
 title: for Loop
 language: R
 ---
 
-This is a follow up to [Functions 4]({{ site.baseurl }}/exercises/Functions-4-R).
+This is a follow up to [Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).
 
 Now that you've impressed Grandma, it's time to do some serious science.
 Take the following vector of Stegosaur lengths

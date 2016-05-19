@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Basic 2
 topic: Basic
 title: Data Management Review
 language: R

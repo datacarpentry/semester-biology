@@ -1,6 +1,5 @@
 ---
 layout: exercise 
-old_title: Strings 8
 topic: Strings
 title: Function with Choices
 language: R

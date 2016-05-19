@@ -1,12 +1,11 @@
 ---
 layout: exercise
-old_title: Statistics 2
 topic: Statistics
 title: Shrub Volume 3
 language: Python
 ---
 
-This is a follow up to [Scientific 0]({{ site.baseurl }}/exercises/Scientific-0-Python).
+This is a follow up to [Shrub Volume 2]({{ site.baseurl }}/exercises/Scientific-shrub-volume-2-Python).
 
 Dr. Granger is interested in studying the factors controlling the size and
 carbon storage of shrubs. This research is part of a larger area of research

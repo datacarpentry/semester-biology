@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Strings 6
 topic: Strings
 title: Strings from Data 1
 language: R

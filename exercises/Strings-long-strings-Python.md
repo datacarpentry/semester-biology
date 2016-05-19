@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Strings 5
 topic: Strings
 title: Long Strings
 language: Python

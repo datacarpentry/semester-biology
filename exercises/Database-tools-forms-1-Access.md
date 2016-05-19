@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases - Forms 1
 topic: Database Tools
 title: Forms 1
 language: Access

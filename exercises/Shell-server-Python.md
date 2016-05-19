@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Shell 5 - Working on a Server
 topic: Shell
 title: Server
 language: Python

@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Putting it all together
 topic: Putting It All Together
 title: Size-biased Extinction
 language: R

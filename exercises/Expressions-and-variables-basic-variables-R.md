@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Expressions and Variables 2
 topic: Expressions and Variables
 title: Basic Variables
 language: R

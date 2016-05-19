@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Libraries 1
 topic: Libraries
 title: Species Area Relationship 2
 language: Python

@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Version Control 9
 topic: Version Control
 title: Richness Merge Conflict
 language: Python

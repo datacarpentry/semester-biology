@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Lists 8
 topic: Lists
 title: DNA Complement 1
 language: Python

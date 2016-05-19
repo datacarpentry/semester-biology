@@ -1,6 +1,5 @@
 ---
 layout: exercise
-old_title: Databases 3 - Selecting
 topic: Basic Queries
 title: Selecting
 language: Access
