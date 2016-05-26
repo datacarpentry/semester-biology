@@ -10,7 +10,7 @@ wgt and hfl need to have their types changes to integer). Now download and
 import the [Plots table]({{ site.baseurl }}/data/PortalMammals_plots.csv) and the
 [Species table]({{ site.baseurl }}/data/PortalMammals_species.csv) (if you don't remember how to
 import tables see the details in the
-[Databases 2 exercise]({{ site.baseurl }}/exercises/Databases-2-problem). We will use this
+[Importing Tables problem]({{ site.baseurl }}/exercises/Database-control-importing-tables-Access). We will use this
 database for all of the exercises on joins, database structure, and nested
 queries. Remember to check that the fields in each table have reasonable
 types. The Plots table can be joined to the main table by joining `plot` to
