@@ -5,7 +5,7 @@ title: Server
 language: Python
 ---
 
-This is a follow up to the [Shell 4 - Making Executable Programs](shell-4-making-executable-programs).
+This is a follow up to the [Executable Programs]({{site.baseurl}}/exercises/Shell-executable-programs-Python).
 
 Now that you've gotten your bash script working locally you decided to
 take it over to your groups server to do some serious analysis. Check
