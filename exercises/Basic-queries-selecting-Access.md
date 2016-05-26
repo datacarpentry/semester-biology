@@ -7,7 +7,7 @@ language: Access
 
 For this and many of the following problems you will create queries that
 retrieve the relevant information from the Portal small mammal survey data that
-you imported in the [Databases 2 problem](databases-2-problem). You may need to
+you imported in the [Importing Tables problem]({{ site.baseurl }}/exercises/Database-control-importing-tables-Access). You may need to
 know more about the database than you currently do in order to answer the
 questions. For example, you may need to know what species is associated with the
 two character species ID or you may need to know the units for the individual's
