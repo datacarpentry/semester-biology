@@ -5,7 +5,7 @@ title: Finding Things
 language: Python
 ---
 
-This is a follow question to [Pipes and Filters]({{ site.baseurl }}/exercises/Shell-pipes-and-filters-Python).
+This is a follow-up question to [Pipes and Filters]({{ site.baseurl }}/exercises/Shell-pipes-and-filters-Python).
 
 Your team quickly realizes that since it's going to have lots of data
 files it will be better to store them in their own directories to keep
