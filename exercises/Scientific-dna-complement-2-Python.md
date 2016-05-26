@@ -17,8 +17,8 @@ row of the datafile:
 The complement of Sequence ID **sequence_id** is **complement**. This
 sequence is **sequence_length** bases long.
 
-Use the complement function you wrote for the [Lists 5
-problem](http://www.programmingforbiologists.org/3-lists-5-problem) to
+Use the complement function you wrote for the [DNA Complement 1
+problem]({{ site.baseurl }}/exercises/Lists-dna-complement-1-Python) to
 determine the value of **complement**. **Bold** words indicate that you
 should substitute the actual value in place of the word so that an
 example sentence looks like:
