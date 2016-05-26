@@ -23,8 +23,8 @@ language: [R, Python, SQL]
 ```
 
 - Open a new text file. Determine the `topic` and `title` of your new exercise 
-and name the file with the format `topic-title-language.md` in the   
-`exercises/` directory. For example the file named `Making-choices-choice-operators-R.md` will have front matter like: 
+and name the file with the format `Topic-title-language.md` in the   
+`exercises/` directory. The file name must start with a capital letter and otherwise follows a general capitalization scheme, such as `Making-choices-choice-operators-R.md` that is derived from the following front matter: 
 
 ```
 ---
@@ -71,9 +71,9 @@ Modifying the front matter of an exercise is a bit more challenging. Changing th
 
 - Modify the `topic`, `title` and/or `language` components of the front matter. 
 
-- Rename the `exercise.md` file to match the revised front matter using the `topic-title-language.md` general format.
+- Rename the `exercise.md` file to match the revised front matter using the `Topic-title-language.md` general format.
 
-- Rename companion `solutions/` files to match the new `topic-title-language.md` general format.
+- Rename companion `solutions/` files to match the new `Topic-title-language.md` general format.
 
 - Fix links to the revised exercise file in other exercises. These links usually appear as reference for follow-up exercises.
 
