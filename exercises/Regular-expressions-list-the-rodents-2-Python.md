@@ -5,7 +5,7 @@ title: List the Rodents 2
 language: Python
 ---
 
-This is a follow up to the [Regular Expressions 1 problem]({{ site.baseurl }}/exercises/Regular-expressions-1).
+This is a follow up to the [List the Rodents 1 problem]({{ site.baseurl }}/exercises/Regular-expressions-list-the-rodents-1-Python).
 
 Once you figured out how to extract the latin binomials from a Wikipedia
 page that, to be generous, wasn't exactly the most consistently formated
