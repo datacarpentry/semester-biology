@@ -5,7 +5,7 @@ title: Connect and Query
 language: R
 ---
 
-This is a follow up to the [SQL Filtering]({{ site.baseurl }}/exercises/Sql-filtering) problem.
+This is a follow up to the [Basic Queries filtering problem]({{ site.baseurl }}/exercises/Basic-queries-where-SQL).
 
 It is clear Dr. Undómiel appreciates your skill working with large databases and 
 she seems to expect you will maintain your benevolence. (*Such is a fair 
