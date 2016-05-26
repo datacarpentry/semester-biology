@@ -16,8 +16,8 @@ languages: ['Access', 'Python', 'R', 'SQL']
   {% for exercise in site.pages %}
     {% if exercise.layout == 'exercise' and exercise.language == language %}
      <tr>
-      <td>{{ exercise.topic | replace:'and','&'  }}</td>
-      <td><a href="{{ exercise.url | prepend: site.baseurl }}">
+      <td nowrap>{{ exercise.topic | replace:'and','&'  }}</td>
+      <td nowrap><a href="{{ exercise.url | prepend: site.baseurl }}">
         {{ exercise.title }}</a></td>
       {% capture output_file %}{{ exercise.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
       <td>
