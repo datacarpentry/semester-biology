@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Dplyr Using Databases
+topic: dplyr
 title: Link to Databases
 language: R
 ---
