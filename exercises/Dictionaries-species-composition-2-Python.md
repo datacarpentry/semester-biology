@@ -5,8 +5,8 @@ title: Species Composition 2
 language: Python
 ---
 
-Some measures of similarity, like the Jaccard index in the
-[Sets 1]({{ site.baseurl }}/exercises/Sets-1), are based only on the presence/absence of
+Some measures of similarity, like the Jaccard index in
+[Species Composition 1]({{ site.baseurl }}/exercises/Sets-species-composition-1-Python), are based only on the presence/absence of
 species. Another major class of similarity measures also includes information on
 their relative abundance in the community. One of these measures is the
 [Euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance) (actually

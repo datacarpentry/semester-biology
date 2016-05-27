@@ -6,7 +6,7 @@ language: Python
 ---
 
 This is a follow up question to
-[Version Control 6]({{ site.baseurl }}/exercises/Version-control-6).
+[Pull and Move]({{ site.baseurl }}/exercises/Version-control-pull-and-move-Python).
 
 Your job is to take all of these files, run them through the python code and
 produce a single list of the areas and associated richness predictions from all

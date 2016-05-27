@@ -5,7 +5,7 @@ title: While
 language: Python
 ---
 
-This is a follow up to the [For Loops 2 problem]({{ site.baseurl }}/exercises/loops-2).
+This is a follow up to the [Exponential Growth problem]({{ site.baseurl }}/exercises/For-loops-exponential-growth-1-Python).
 
 In addition to wanting to be able to calculate the predicted abundance
 at a given point in time for an exponentially growing species, your lab

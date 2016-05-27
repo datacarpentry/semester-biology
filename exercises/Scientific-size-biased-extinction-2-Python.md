@@ -5,7 +5,7 @@ title: Size-biased Extinction 2
 language: Python
 ---
 
-This is a follow up to [Size-biased Extinction 2]({{ site.baseurl }}/exercises/Scientific-size-biased-extinction-1-Python).
+This is a follow up to [Size-biased Extinction 1]({{ site.baseurl }}/exercises/Scientific-size-biased-extinction-1-Python).
 
 Looking at the average mass of extinct and extant species overall is
 useful, but there are lots of different processes that could cause

@@ -5,7 +5,7 @@ title: Forms 3
 language: Access
 ---
 
-This is a follow up to the [Forms 2 exercise]({{ site.baseurl }}/exercises/Databases-forms-2)
+This is a follow up to the [Forms 2 exercise]({{ site.baseurl }}/exercises/Database-tools-forms-2-Access)
 
 Modify your basic data entry form to prevent bad data values from being entered
 into your database. You can do this using the Data tab on the Property Sheet in

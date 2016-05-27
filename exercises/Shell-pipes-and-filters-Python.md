@@ -14,8 +14,7 @@ exercises. Each filename begins with the word `area`.
 Your programmer has whipped up a small python script called
 `rich_pred.py` that takes a single file containing a list of areas,
 one per line, and returns the area and the predicted richness based on
-the functions and approach given in the [Higher Order Functions 2
-problem]({{ site.baseurl }}/exercises/higher-order-functions-2-problem).
+the functions and approach given in the [Species Area Relationship]({{ site.baseurl }}/exercises/Higher-order-functions-species-area-relationship-1-Python) problem.
 
 Your team is, [of
 course](https://web.archive.org/web/20100722082534/http://stackoverflow.com/questions/132520/good-excuses-not-to-use-version-control),
@@ -45,8 +44,7 @@ new shell program and the resulting data file to the repository.
 **Email me when you are done with this problem so that I can update your
 repository for Problem 3.**
 
-*Optional*: Modify your own code from the [Higher Order Functions 2
-problem]({{ site.baseurl }}/exercises/higher-order-functions-2)
+*Optional*: Modify your own code from the [Species Area Relationship]({{ site.baseurl }}/exercises/Higher-order-functions-species-area-relationship-1-Python) problem.
 to create your own version of `rich_pred.py` instead of using the one
 in the repository. One easy way to deal with stdin is to use
 [fileinput.input()](http://docs.python.org/library/fileinput.html). Move

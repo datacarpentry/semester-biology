@@ -5,7 +5,7 @@ title: Nested Functions
 language: Python
 ---
 
-This is a follow up to the [Functions 3 problem]({{ site.baseurl }}/exercises/functions-3).
+This is a follow up to the [Use and Modify Functions problem]({{ site.baseurl }}/exercises/Functions-use-and-modify-Python).
 
 Measuring things using the metric system is great for us scientists, but
 when you call your grandmother this weekend (you do call your

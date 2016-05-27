@@ -5,7 +5,7 @@ title: for Loop
 language: Python
 ---
 
-This is a follow up to the [Functions 4 problem]({{ site.baseurl }}/exercises/functions-4).
+This is a follow up to the [Nested Functions problem]({{ site.baseurl }}/exercises/Functions-nested-functions-Python).
 
 Now that you've impressed Grandma, it's time to do some serious science.
 Take the following list of Stegosaur lengths

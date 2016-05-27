@@ -5,8 +5,7 @@ title: Species Area Relationship 2
 language: Python
 ---
 
-This is a follow up to the
-[Higher Order Functions](exercises/higher-order-functions) problem.
+This is a follow up to the [Species Area Relationship]({{ site.baseurl }}/exercises/Higher-order-functions-species-area-relationship-1-Python) problem.
 
 After writing a program to estimate the number of species at a site of a
 given area based on the average predictions of a suite of different

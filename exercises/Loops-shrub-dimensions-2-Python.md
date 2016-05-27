@@ -5,7 +5,7 @@ title: Shrub Dimensions 2
 language: Python
 ---
 
-This is a follow up to [Loops 3]({{ site.baseurl }}/exercises/Loops-3)
+This is a follow up to [Shrub Dimensions 1]({{ site.baseurl }}/exercises/Loops-shrub-dimensions-1-Python)
 
 One of your collaborators has posted [a comma-delimited text
 file]({{ site.baseurl }}/data/shrub_dimensions.csv)

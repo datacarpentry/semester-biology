@@ -5,7 +5,7 @@ title: Ultimate Question 2
 language: Python
 ---
 
-This is a follow up on the [Strings 2 problem]({{ site.baseurl }}/exercises/strings-2).  Copy the
+This is a follow up on the [Ultimate Question 1 problem]({{ site.baseurl }}/exercises/Strings-ultimate-question-1-Python).  Copy the
 function that you used in the previous problem into your code for the current
 assignment.
 

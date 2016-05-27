@@ -5,7 +5,7 @@ title: Fix the Code 3
 language: R
 ---
 
-This is a follow up to [Fix the Code 2]({{ site.baseurl }}/exercises/Fix the Code 2-fix-the-code-2-R).
+This is a follow up to [Fix the Code 2]({{ site.baseurl }}/exercises/Debugging-fix-the-code-2-R).
 
 Write tests for your 'Fix the Code 2' code for the following cases and save it in a 
 file called `Tests-R.R`. Make corrections/improvements to the 'Fix the Code 2' code 
