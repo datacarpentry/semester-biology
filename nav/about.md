@@ -3,9 +3,17 @@ layout: page
 title: About
 ---
 
-* [About Us]({{ site.baseurl}}/about)
-* [Course Development Help]({{ site.baseurl }}/docs)
-* [Fork This Course <i class="fa fa-github"></i>]({{ site.github.repo }})
-
-
-
+<dl>
+  <dd>
+    <a href="{{ site.baseurl}}/about">
+    <i class="fa fa-group"></i> About Us</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/docs">
+    <i class="fa fa-question-circle"></i> Course Development Help</a>
+  </dd>
+  <dd>
+    <a href="{{ site.github.repo }}">
+    <i class="fa fa-github"></i> Fork This Course</a>
+  </dd>
+</dl>
