@@ -2,10 +2,10 @@ Source: local data frame [4 x 2]
 
    site mean_volume
   (int)       (dbl)
-1     1      35.112
-2     2      38.440
-3     3      52.500
-4     4     140.400
+1     1    23.82600
+2     2    26.56333
+3     3    23.05167
+4     4    57.09600
 
 Source: local data frame [3 x 2]
 
