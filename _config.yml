@@ -26,3 +26,9 @@ collections:
     output: true
   exercises:
     output: true
+  lectures:
+    output: true
+  materials:
+    output: true
+  readings:
+    output: true
