@@ -14,11 +14,11 @@
         {% if otherpage.title == assignment %}
           <td>{{ otherpage.language }}</td>
           {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
-          {% for lecturepage in site.pages %}
-            {% if lecturepage.title == assignment and lecturepage.element == 'lecture' %}
+          {% for lecturepage in site.lectures %}
+            {% if lecturepage.title == assignment %}
               {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
-              {% for readingpage in site.pages %}
-                {% if readingpage.title == assignment and readingpage.element == 'reading' %}
+              {% for readingpage in site.readings %}
+                {% if readingpage.title == assignment %}
                   {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
                   <td>{{ assignment }}</td>
                   <td align="center"><a href="{{ reading_link }}">
