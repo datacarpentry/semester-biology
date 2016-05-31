@@ -13,7 +13,7 @@ languages: ['Access', 'Python', 'R', 'SQL']
       <th>Title</th>
       <th>Output</th>
     </tr>
-  {% for exercise in site.pages %}
+  {% for exercise in site.exercises %}
     {% if exercise.layout == 'exercise' and exercise.language == language %}
      <tr>
       <td nowrap>{{ exercise.topic | replace:'and','&'  }}</td>
