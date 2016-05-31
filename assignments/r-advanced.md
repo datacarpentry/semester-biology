@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Advanced Topics
 language: R
-exercises: ['Higher Order Functions', 'Regular Expressions', 'Debugging', 'Tests']
+exercises: ['Species Area Relationship', 'Find the Rodents', 'Fix the Code 2', 'Fix the Code 3']
 ---
 
 

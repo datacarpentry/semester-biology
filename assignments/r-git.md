@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Version Control Basics
 language: R
-exercises: [Version Control Basic 1, Version Control Basic 2, Version Control Basic 3, Version Control Basic 4, Version Control Basic 5, Version Control Basic 6, Version Control Basic 7]
+exercises: ['Set-up Git', 'First Commit', 'Importing Data', 'Commit Multiple Files', 'Adding a Remote', 'Pushing Changes', 'Pulling and Pushing']
 ---
 
 #### Learning Objectives

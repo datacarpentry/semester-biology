@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Database Structure and Joins
 language: SQL
-exercises: ['Joins 1', 'Joins 2', 'Joins 3', 'Joins 4', 'Nested Queries', 'Tidy Data',  'Database Structure 1', 'Database Structure 2']
+exercises: ['JOIN 1', 'JOIN 2', 'JOIN 3', 'JOIN 4', 'Nesting Queries', 'Real Portal Data', 'Redundancy', 'Split Cells']
 ---
 
 #### Learning Objectives

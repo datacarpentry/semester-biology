@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Integrating R and SQL
 language: R
-exercises: ['R-SQL 1', 'R-SQL 2', 'R-SQL 4', 'NEON 1']
+exercises: ['Connect and Query', 'Automate Query', 'Export to Database', 'NEON Database']
 ---
 
 #### Learning Objectives

@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Introduction to Databases
 language: SQL
-exercises: ['QAQC 1', 'Importing Data', 'Creating Tables', 'Adding Records', 'Updating Records', 'Basic Queries', 'Filtering', 'Sorting', 'Distinct', 'Missing Data', 'Grouping', 'Aggregation 1', 'Aggregation 2']
+exercises: ['Data entry validation in Excel', 'Importing Data', 'Creating Tables', 'Adding Records', 'Updating Records', 'SELECT', 'WHERE', 'ORDER BY', 'DISTINCT', 'Missing Data', 'GROUP BY', 'COUNT', 'SUM']
 ---
 
 #### Learning Objectives

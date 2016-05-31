@@ -2,7 +2,7 @@
 layout: page
 title: Python Assignment 9
 language: Python
-exercises: ['Basic 1', 'Basic 2', 'Making Choices 4', 'Scientific 3']
+exercises: ['List Review', 'Data Management Review', 'Unit Conversion Challenge', 'Tree Biomass']
 ---
 
 {% include assignment.html %}

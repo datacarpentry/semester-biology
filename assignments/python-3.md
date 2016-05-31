@@ -2,7 +2,7 @@
 layout: page
 title: Python Assignment 3
 language: Python
-exercises: ['Functions 3', 'Functions 2', 'Functions 6', 'Loops 1', 'Lists 1', 'Loops 3']
+exercises: ['Use and Modify', 'Writing Functions', 'GC Content 2', 'Improve Your Code', 'Bird Banding 1', 'Shrub Dimensions 1']
 ---
 
 {% include assignment.html %}

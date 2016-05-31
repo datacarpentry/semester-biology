@@ -2,7 +2,7 @@
 layout: page
 title: Python Assignment 8
 language: Python
-exercises: ['Higher Order Functions', 'Regular Expressions', 'Debugging', 'Tests']
+exercises: ['Species Area Relationship 1', 'List the Rodents 1', 'Fix the Code 1', 'Fix the Code 2']
 ---
 
 {% include assignment.html %}

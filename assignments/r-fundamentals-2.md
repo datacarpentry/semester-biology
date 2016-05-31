@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Programming Fundamentals 2
 language: R
-exercises: ['Making Choices 1', 'Making Choices 2', 'Strings 8', 'Making Choices 3', 'Basic 2']
+exercises: ['Choice Operators', 'Modify the Code 2', 'Function with Choices', 'DNA or RNA', 'Data Management Review']
 ---
 
 #### Learning Objectives

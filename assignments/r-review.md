@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Review and Challenge Exercises
 language: R
-exercises: ['Basic 1', 'Basic 2', 'Making Choices 4', 'Scientific 3']
+exercises: ['Vector Review', 'Data Management Review', 'Unit Conversion Challenge', 'Tree Biomass Challenge']
 ---
 
 #### Learning Objectives

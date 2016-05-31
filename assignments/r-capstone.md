@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Putting It All Together
 language: R
-exercises: ['Putting it all together']
+exercises: ['Size-biased Extinction']
 ---
 
 #### Learning Objectives

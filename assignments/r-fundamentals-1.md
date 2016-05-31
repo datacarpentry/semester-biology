@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Programming Fundamentals 1
 language: R
-exercises: ['Functions 2', 'Functions 3', 'Functions 4', 'Functions 5', 'Loops 2', 'Loops 3']
+exercises: ['Use and Modify', 'Writing Functions', 'Nested Functions', 'for Loop', 'stringr', 'Multiple Files']
 ---
 
 #### Learning Objectives
