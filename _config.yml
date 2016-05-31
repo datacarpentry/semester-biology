@@ -20,3 +20,9 @@ author:
 
 github:
   repo:           https://github.com/datacarpentry/semester-biology
+
+collections:
+  assignments:
+    output: true
+  exercises:
+    output: true
