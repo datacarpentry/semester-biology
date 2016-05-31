@@ -11,17 +11,48 @@ courses. We encourage collaborative development and contributions by
 instructors, with the hopes that this will lead to better training and resources 
 for everyone. 
 
-##### For Students
-* [Syllabus]({{ site.baseurl }}/syllabus)
-* [Schedule]({{ site.baseurl }}/schedule)
-* [Setup]({{ site.baseurl }}/computer-setup)
-* [Self-Guided Start-up Guide]({{ site.baseurl}}/START-for-self-guided-students)
+<dl>
+  <dt>For Students</dt>
+  <dd>
+    <a href="{{ site.baseurl}}/syllabus">
+    <i class="fa fa-file-text-o"></i> Syllabus</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/schedule">
+    <i class="fa fa-calendar"></i> Schedule</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/computer-setup">
+    <i class="fa fa-download"></i> Setup</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/START-for-self-guided-students">
+    <i class="fa fa-play-circle"></i> Self-Guided Start-Up Guide</a>
+  </dd>
 
-##### For Instructors
-* [Readings]({{ site.baseurl }}/readings)
-* [Lectures]({{ site.baseurl }}/lectures)
-* [Lecture Materials]({{ site.baseurl }}/materials)
-* [Assignments]({{ site.baseurl }}/assignments)
-* [Exercises]({{ site.baseurl }}/exercises)
-* [Course Development Help]({{ site.baseurl}}/docs)
-
+  <dt>For Instructors</dt>
+  <dd>
+    <a href="{{ site.baseurl}}/readings">
+    <i class="fa fa-book"></i> Readings</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/lectures">
+    <i class="fa fa-comment"></i> Lectures</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/materials">
+    <i class="fa fa-list-alt"></i> Lecture Materials</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/assignments">
+    <i class="fa fa-keyboard-o"></i> Assignments</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/exercises">
+    <i class="fa fa-magic"></i> Exercises</a>
+  </dd>
+  <dd>
+    <a href="{{ site.baseurl}}/docs">
+    <i class="fa fa-question-circle"></i> Course Development Help</a>
+  </dd>
+</dl>
