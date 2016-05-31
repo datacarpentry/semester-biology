@@ -10,8 +10,8 @@
   {% for assignment in page.assignments %}
     <tr>
       <td align="right">{{ forloop.index }}</td>
-      {% for otherpage in site.pages %}
-        {% if otherpage.title == assignment and otherpage.element == 'assignment' %}
+      {% for otherpage in site.assignments %}
+        {% if otherpage.title == assignment %}
           <td>{{ otherpage.language }}</td>
           {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
           {% for lecturepage in site.pages %}
