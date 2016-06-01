@@ -11,17 +11,27 @@ courses. We encourage collaborative development and contributions by
 instructors, with the hopes that this will lead to better training and resources 
 for everyone. 
 
-##### For Students
-* [Syllabus]({{ site.baseurl }}/syllabus)
-* [Schedule]({{ site.baseurl }}/schedule)
-* [Setup]({{ site.baseurl }}/computer-setup)
-* [Self-Guided Start-up Guide]({{ site.baseurl}}/START-for-self-guided-students)
+For Students
+: <a href="{{ site.baseurl}}/syllabus">
+  <i class="fa fa-file-text-o"></i> Syllabus</a>
+: <a href="{{ site.baseurl}}/schedule">
+  <i class="fa fa-calendar"></i> Schedule</a>
+: <a href="{{ site.baseurl}}/computer-setup">
+  <i class="fa fa-download"></i> Setup</a>
+: <a href="{{ site.baseurl}}/START-for-self-guided-students">
+  <i class="fa fa-play-circle"></i> Self-Guided Start-Up Guide</a>
 
-##### For Instructors
-* [Readings]({{ site.baseurl }}/readings)
-* [Lectures]({{ site.baseurl }}/lectures)
-* [Lecture Materials]({{ site.baseurl }}/materials)
-* [Assignments]({{ site.baseurl }}/assignments)
-* [Exercises]({{ site.baseurl }}/exercises)
-* [Course Development Help]({{ site.baseurl}}/docs)
+For Instructors
+: <a href="{{ site.baseurl}}/readings">
+  <i class="fa fa-book"></i> Readings</a>
+: <a href="{{ site.baseurl}}/lectures">
+  <i class="fa fa-comment"></i> Lectures</a>
+: <a href="{{ site.baseurl}}/materials">
+  <i class="fa fa-list-alt"></i> Lecture Materials</a>
+: <a href="{{ site.baseurl}}/assignments">
+  <i class="fa fa-keyboard-o"></i> Assignments</a>
+: <a href="{{ site.baseurl}}/exercises">
+  <i class="fa fa-magic"></i> Exercises</a>
 
+: <a href="{{ site.baseurl}}/docs">
+  <i class="fa fa-question-circle"></i> Course Development Help</a>
