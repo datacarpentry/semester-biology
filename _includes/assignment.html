@@ -1,7 +1,7 @@
 <h4> Exercises </h4>
 <ol>
 {% for exercise in page.exercises %}
-  {% for otherpage in site.pages %}
+  {% for otherpage in site.exercises %}
     {% if exercise == otherpage.title and page.language == otherpage.language %}
       <li><h4>{{ otherpage.title | prepend: "-- " | append: " --" }}</h4>
         {{ otherpage.content }}

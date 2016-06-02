@@ -1,6 +1,6 @@
 <h4>Reading</h4>
-{% for readingpage in site.pages %}
- {% if readingpage.title == page.title and readingpage.element == 'reading' %}
-  {{readingpage.content}}
+{% for readingpage in site.readings %}
+ {% if readingpage.title == page.title %}
+  {{ readingpage.content }}
  {% endif %}
 {% endfor %}

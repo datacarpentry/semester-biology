@@ -13,8 +13,8 @@ languages: ['Access', 'Python', 'R', 'SQL']
       <th>Title</th>
       <th>Output</th>
     </tr>
-  {% for exercise in site.pages %}
-    {% if exercise.layout == 'exercise' and exercise.language == language %}
+  {% for exercise in site.exercises %}
+    {% if exercise.language == language %}
      <tr>
       <td nowrap>{{ exercise.topic | replace:'and','&'  }}</td>
       <td nowrap><a href="{{ exercise.url | prepend: site.baseurl }}">
