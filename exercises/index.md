@@ -32,4 +32,7 @@ languages: ['Access', 'Python', 'R', 'SQL']
     {% endif %}
   {% endfor %}
   </table>
+  <p align="right"><font size="-1">
+    <a href="{{ site.baseurl }}/exercises/">[back to top]</a>
+  </font></p>
 {% endfor %}
