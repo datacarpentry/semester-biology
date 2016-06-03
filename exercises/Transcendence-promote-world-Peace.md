@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Transcendence
-title: Promote World Peace
+title: Promote World
 language: Peace
 ---
 
