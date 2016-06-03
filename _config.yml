@@ -13,6 +13,7 @@ title:            Prof. Hyde
 description:      'course website template'
 url:              http://www.datacarpentry.org/semester-biology
 baseurl:          /semester-biology
+email:            datacarpentrysemester@weecology.org
 
 author:
   name:           'Ethan White & Zack Brym'
