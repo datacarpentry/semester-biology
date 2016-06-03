@@ -2,7 +2,7 @@
 layout: page
 title: Introduction
 language: Love
-exercises: ['Puppy', 'True']
+exercises: ['Puppy', 'Tough']
 ---
 
 {% include assignment.html %}
