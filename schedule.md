@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['Introduction', 'Fundamentals', 'Capstone']
+assignments: ['Introduction', 'Fundamentals', 'Capstone Project']
 ---
 
 {% include assignments.html %}
