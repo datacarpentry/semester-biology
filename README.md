@@ -104,6 +104,8 @@ Locally: `http://localhost:4000/exercises/my_awesome_exercise`
 After pushing to GitHub:
 `https://yourusername.github.io/semester-biology/exercises/my_awesome_exercise`
 
+Example course material markdown files are included in their appropriate directory.
+
 
 ## Acknowledgements
 
