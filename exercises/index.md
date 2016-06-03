@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Exercises
-languages: ['Access', 'Python', 'R', 'SQL']
+languages: ['Love', 'Peace']
 ---
-<a href="#Access">Access</a> \| <a href="#Python">Python</a> \| <a href="#R">R</a> \| <a href="#SQL">SQL</a>
+<a href="#Love">Love</a> \| <a href="#Peace">Peace</a>
 
 {% for language in page.languages %}
   <h3> {{ language }} <a name="{{ language }}"></a></h3>
