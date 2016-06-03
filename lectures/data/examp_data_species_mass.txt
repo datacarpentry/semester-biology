@@ -1,7 +1,0 @@
-site,species,mass
-1,DS,125
-1,DM,70
-2,DM,55
-1,CB,40
-2,DS,110
-1,CB,45
