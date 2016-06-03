@@ -1,6 +1,6 @@
 ---
 layout: page
-element: reading
+element: lecture
 title: Fundamentals
 language: Love
 ---
