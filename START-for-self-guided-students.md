@@ -5,7 +5,7 @@ title: Start-Up Guide for Self-guided Students
 
 ### Step 1: Make sure we can help!
 
-Check out the [target audience]({{ site.baseurl }}/about/audience) of the course and decide if you will benefit from interacting with these materials. If you are a scientists at any educational level that works with data and you 1) want to learn the basics of programming or 2) want to establish a little more formal programming background and work-flow, then you are likely our target audience. You can find a little more encouragement in our description of [why you should take this course]({{ site.baseurl }}/about/why-should-you-take-this-class/).
+Check out the [target audience]({{ site.baseurl }}/about/audience) of the course and decide if you will benefit from interacting with these materials. You can find a little more encouragement in our description of [why you should take this course]({{ site.baseurl }}/about/why-should-you-take-this-class/).
 
 ### Step 2: Decide your approach to the course.
 
@@ -23,4 +23,4 @@ Make sure your computer is [setup]({{ site.baseurl }}/computer-setup).
 
 ### Step 4: Give us feedback
 
-Help us make sure you have a good experience by [providing feedback](https://github.com/ethanwhite/datacarp-semester-biology/issues).
+Help us make sure you have a good experience by providing feedback at the [site repo]({{ site.github.repo }}/issues) or with an [email](mailto:{{ site.email }}).
