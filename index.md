@@ -2,14 +2,9 @@
 layout: default
 ---
 
-This website hosts introductory material for teaching biologists how to interact
-with data including: data structure, database management systems, and
-programming for data manipulation, analysis, and visualization. It is designed
-to be used as a flipped university course and also to be useful for self-guided
-students. Instructors are welcome to modify and use the material for your own 
-courses. We encourage collaborative development and contributions by 
-instructors, with the hopes that this will lead to better training and resources 
-for everyone. 
+This website template organizes and hosts teaching materials for an online course. The template includes options for self-guided instruction or 
+supplemental materials for workshop delivery. We encourage collaborative 
+development of the template and the original data science course materials developed for [Data Carpentry](http://www.datacarpentry.org/) [[original course website](http://www.datacarpentry.org/semester-biology/) | [original course on git](https://github.com/datacarpentry/semester-biology)]. 
 
 For Students
 : <a href="{{ site.baseurl}}/syllabus">
@@ -32,6 +27,5 @@ For Instructors
   <i class="fa fa-keyboard-o"></i> Assignments</a>
 : <a href="{{ site.baseurl}}/exercises">
   <i class="fa fa-magic"></i> Exercises</a>
-
 : <a href="{{ site.baseurl}}/docs">
   <i class="fa fa-question-circle"></i> Course Development Help</a>

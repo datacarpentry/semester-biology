@@ -1,6 +1,0 @@
-"new_code","old_code","alpha_code","description"
-1,1,"CO","Control"
-2,1,"CO","Spectab exclosure"
-3,2,"SK","Short-term Krat Exclosure"
-4,3,"LK","Long-term Krat Exclosure"
-5,4,"RE","Rodent Exclosure"
