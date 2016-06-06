@@ -13,6 +13,7 @@ title:            Data Carpentry -for- Biologists
 description:      'Teaching the tools to get computers to do cool science'
 url:              http://www.datacarpentry.org/semester-biology
 baseurl:          /semester-biology
+email:            datacarpentrysemester@weecology.org
 
 author:
   name:           'Ethan White'
