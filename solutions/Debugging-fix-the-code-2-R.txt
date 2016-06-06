@@ -1,5 +1,0 @@
-"","earlength_class","avg_gc_content"
-"1","extralarge",3200.31
-"2","large",3000.27
-"3","medium",2100.19
-"4","small",2000.2375

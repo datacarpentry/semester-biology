@@ -1,2 +1,0 @@
-"noteID","yr","mo","dy","note"
-1,1963,4,1,"Just completed the April 1963 census of the site. The region is teeming with Dipodomys spectabilis. Using the time machine to conduct trapping prior to the start of the study is working out great!"

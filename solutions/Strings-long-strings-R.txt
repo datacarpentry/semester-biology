@@ -1,4 +1,0 @@
-[1] 1367
-[1] 8
-[1] 78
-The GC content of this sequence is 41.26%

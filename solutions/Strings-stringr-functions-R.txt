@@ -1,7 +1,0 @@
-[1] "atgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgc"
-[1] "Thank goodness it's Friday"
-[1] "gcAgtctgAggAttccAccttctAcctgggAgAgAggAcAtActAtAtcgcAgcAgtggAggtggAAtgg"
-[1] 50
-[1] 16
-[1] "gccgatgtacatggaatata"
-[1] "tgtggagagg"

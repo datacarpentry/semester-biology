@@ -1,5 +1,0 @@
-The GC content of this sequence is 41.1764705882%
-The GC content of this sequence is 43.4343434343%
-The GC content of this sequence is 53.5714285714%
-The GC content of this sequence is 33.734939759%
-The GC content of this sequence is 37.0%
