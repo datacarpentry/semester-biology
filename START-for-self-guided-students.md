@@ -23,4 +23,4 @@ Make sure your computer is [setup]({{ site.baseurl }}/computer-setup).
 
 ### Step 4: Give us feedback
 
-Help us make sure you have a good experience by [providing feedback](https://github.com/ethanwhite/datacarp-semester-biology/issues).
+Help us make sure you have a good experience by [providing feedback]({{ site.github.repo }}/issues).
