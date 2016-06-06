@@ -5,4 +5,4 @@ title: Fundamentals
 language: Love
 ---
 
-[Link to materials file]({{ site.baseurl }}/materials/lecture_materials)
+[Link to materials file]({{ site.baseurl }}/materials/materials-example)
