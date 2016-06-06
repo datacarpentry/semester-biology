@@ -32,6 +32,5 @@ For Instructors
   <i class="fa fa-keyboard-o"></i> Assignments</a>
 : <a href="{{ site.baseurl}}/exercises">
   <i class="fa fa-magic"></i> Exercises</a>
-
 : <a href="{{ site.baseurl}}/docs">
   <i class="fa fa-question-circle"></i> Course Development Help</a>
