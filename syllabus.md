@@ -189,7 +189,7 @@ quickly, which is crucial to learning.
 ### Assignment policy
 
 Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
-submitted via email to [ethanwhite@ufl.edu](mailto:ethanwhite@ufl.edu) with the
+submitted via email to [{{ page.email }}](mailto:{{ page.email }}) with the
 subject line:
  
 ```Data Carpentry Assignment X```, where `X` is the number of the assignment.
