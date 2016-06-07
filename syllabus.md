@@ -1,35 +1,51 @@
 ---
 layout: page
-title: Data Carpentry for Biologists Syllabus
+title: Syllabus
+catalog: WIS 6934
+credits: 3
+semester: Fall 2015
+professor: Dr. Ethan White
+office: Room 1 in Building 150 (just north of Newins-Zeigler)
+email: ethanwhite@ufl.edu
+phone: 352-294-2081
+schedule: ['Tuesdays, 11:45-12:35, 1142 McCarty A',
+           'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
+office_hours: Thursdays 1-2 pm, or by appointment
+TA: Andrew Marx
+TA_email: andrewjmarx@ufl.edu
 ---
 
-WIS 6934, 3 Credits, Fall 2015
+## {{ site.title }} 
+
+{{ page.catalog }}, {{ page.credits }} Credits, {{ page.semester }}
 
 ### Professor
 
-Dr. Ethan White
+{{ page.professor }}
 
-Office: 1 in Building 150
+Office: {{ page.office }}
 
 Email (best way to contact me):
-[ethanwhite@ufl.edu](mailto:ethanwhite@ufl.edu)
+[{{ page.email }}](mailto:{{ page.email }})
 
-Phone: 352-294-2081
+Phone: {{ page.phone }}
 
 
 ### Times & Location
 
 **Note: class is in different locations depending on the day of the week**
 
-Tuesdays, 1142 McCarty A, 11:45-12:35
-Fridays, 219 Newins-Ziegler Hall, 11:45-1:40
+{% for class in page.schedule %}
+  {{ class }}
+{% endfor %}
+
 
 
 ### Office Hours
 
-Times: Thursdays 1-2 pm, or by appointment.
+Times: {{ page.office_hours }}
 
-Location: Room 1 in Building 150 (just north of Newins-Zeigler)
+Location: {{ page.office }}
 
 *Note: my schedule gets very busy during the semester so please try to schedule
 appointments as far in advance as possible. In general it will be very difficult
@@ -38,22 +54,22 @@ to set up appointments less than 24 hours in advance.*
 
 ### Course TA
 
-Andrew Marx
+{{ page.TA }}
 
-Email: andrewjmarx@ufl.edu
+Email: {{ page.TA_email }}
 
 
 ### Website
 
 The syllabus and other relevant class information and resources will be posted
-at [http://datacarpentry.org/semester-biology](http://datacarpentry.org/semester-biology/).
+at [{{ site.url}}]({{ site.baseurl }}/).
 Changes to the schedule will be posted to this site so please try to check it
 periodically for updates.
 
 
 ### Course Communications
 
-Email: ethanwhite@ufl.edu
+Email: [{{ page.email }}](mailto:{{ page.email }})
 
 
 ### Required Texts
@@ -174,8 +190,9 @@ quickly, which is crucial to learning.
 
 Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
 submitted via email to [ethanwhite@ufl.edu](mailto:ethanwhite@ufl.edu) with the
-subject line: Data Carpentry Assignment X, where X is the number of the
-assignment.
+subject line:
+ 
+```Data Carpentry Assignment X```, where `X` is the number of the assignment.
 
 
 ### Course Technology
@@ -279,7 +296,7 @@ the two.
 ## Course Schedule
 
 The details course schedule is available on the course website at:
-[http://datacarpentry.org/semester-biology](http://datacarpentry.org/semester-biology)
+[{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
 
 **Disclaimer:** This syllabus represents my current plans and objectives. As we
 go through the semester, those plans may need to change to enhance the class
