@@ -10,5 +10,5 @@ assignments: ['Introduction to Databases', 'Database Structure and Joins',
 
 The above assignments are for this specific version of the course, but other
 assignments are available as well. You can see the full list of
-[Assignments]({{ site.baseurl }}/assignments/), which may be useful if you're using this material
+[assignments]({{ site.baseurl }}/assignments/), which may be useful if you're using this material
 outside of an organized course.
