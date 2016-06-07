@@ -21,7 +21,7 @@ Ghats in India.
 1.  Write a function that takes a vector of tree diameters as an argument and   
     returns a vector  of tree masses.
 2.  [The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt)
-    is available on [Ecologyical Archives](http://esapubs.org/Archive/), but
+    is available on [Ecological Archives](http://esapubs.org/Archive/), but
     unfortunately due to poor database structure using all of the trees would be
     a hassle. You could try to solve this problem yourself, but it turns out
     that someone else has already solved it for you. Install the
