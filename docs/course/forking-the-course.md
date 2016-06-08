@@ -12,4 +12,4 @@ title: Forking the Course
 
 - Get started [customizing]({{ site.baseurl }}/docs/course/course-customization) and [managing]({{ site.baseurl }}/docs/course/manage-files) your version of the course.
 
-- From your local repository, you can also [contribute back]({{ site.baseurl }}/docs/contributing) to our master repository.
+- From your local repository, you can also [contribute back]({{ site.baseurl }}/docs/course/contributing) to our master repository.
