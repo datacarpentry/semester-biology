@@ -24,13 +24,21 @@ Many of the file names and [front matter](https://jekyllrb.com/docs/frontmatter/
 
 - Add, commit, and push the new or modified file to GitHub to get the content added to the website. These steps are further described in [Course Customization Help]({{ site.baseurl }}/docs/course-customization).
 
-### View Rendered Site Pages
+### Preview changes locally using Jekyll
 
-- Access the assignment file on the web at the url based on where the file is 
-located and what the file name is. So if you created a new assignment in the 
-`assignments/` folder called `my_awesome_assignment.md` it would be located
+If you want to view your changes locally, before pushing them to the live
+website, you'll need to setup [Jekyll](http://jekyllrb.com/) locally. GitHub 
+provides a [good introduction on how to do this](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/).
 
-   - locally at: `http://localhost:4000/assignments/my_awesome_assignment`
+If you have Jekyll properly installed, you can then run
+
+`bundle exec jekyll serve`
+
+from the command line and navigate to `http://localhost:4000/` in your browser 
+to preview the current state of the website. Access a specific file on the web at the url based on where the file is located and what the file name is. 
+So if you made changes to this file `manage-files.md` from the `docs/course/` folder, you could view them
+
+   - locally at: `http://localhost:4000/semester-biology/docs/course/manage-files`
 
    - after pushing to GitHub at: 
-`https://yourusername.github.io/semester-biology/assignments/my_awesome_assignment`
+`https://yourusername.github.io/semester-biology/docs/course/manage-files`
