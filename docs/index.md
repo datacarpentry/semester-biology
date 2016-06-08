@@ -3,11 +3,20 @@ layout: page
 title: Help
 ---
 
-- [Fork the Course]({{ site.baseurl }}/docs/forking-the-course) 
-- [Customize the Course]({{ site.baseurl }}/docs/course-customization) 
-- [Update the Schedule]({{ site.baseurl }}/docs/update-schedule)
-- [Manage Assignments]({{ site.baseurl }}/docs/manage-assignments)
-- [Manage Exercises]({{ site.baseurl }}/docs/manage-exercises)
-- [Use the Style Guide]({{ site.baseurl }}/docs/style-guide) 
-- [Contribute Back to Data Carpentry]({{ site.baseurl }}/docs/contributing)
-- [Deliver the Course]({{ site.baseurl }}/docs/course-delivery) 
+### Course Content Documentation
+
+- [Customize the Course]({{ site.baseurl }}/docs/course/course-customization)
+- [Fork the Course]({{ site.baseurl }}/docs/course/forking-the-course) 
+- [Manage Files]({{ site.baseurl }}/docs/course/manage-files)
+- [Use the Style Guide]({{ site.baseurl }}/docs/course/style-guide) 
+- [Deliver the Course]({{ site.baseurl }}/docs/course/course-delivery)
+- [Contribute Back to Data Carpentry]({{ site.baseurl }}/docs/course/contributing)
+
+### Site Development Documentation
+
+- [Site Structure]({{ site.baseurl }}/docs/site/site-structure)
+- [Generate a Site Template]({{ site.baseurl }}/docs/course/get-site-template)
+
+- Templates
+  : [Assignments]({{ site.baseurl }}/docs/templates/assignments-template)
+  : [Exercises]({{ site.baseurl }}/docs/templates/Exercises-template)
