@@ -20,7 +20,7 @@ exercises: ['Exercise Template', 'Exercise Template']
 
 <!-- End of Assignments Template - Be sure to keep the include statements -->
 
------
+****
 
 Assignment Management
 
