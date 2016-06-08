@@ -6,7 +6,7 @@ subtitle: Providing Feedback and Contributing New Material
 
 ### Providing feedback and getting help
 
-- [Open a new issue]({{ site.github.repo }}/issues/new) at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). 
+- [Open a new issue]({{ site.github.repo }}/issues/new) at the '{{ site.title }}' repository on [GitHub](http://github.com) (*You'll have to be logged into GitHub*). 
 - Provide a clear description of your question, comment, or proposed change in 
 the `Title` section and use the `Leave a comment` section for further detail or discussion. 
 - Select `Submit new issue` and the repository maintainers will be notified of your feedback. Thanks!
@@ -29,15 +29,14 @@ fork the repository, add or change material, and submit a pull request.
    5.  Send a [pull request](https://help.github.com/articles/using-pull-requests/) to the `gh-pages` branch of the main repository.
 
 - From GitHub.com
-   1. Click on the `Fork` button at the top right corner of the [`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
+   1. Click on the `Fork` button at the top right corner of the [`datacarpentry/semester-biology` repository on GitHub]({{ site.github.repo }}).
    2. Navigate to your forked repository at `https://yourusername.github.io/semester-biology/`
    3. Navigate to the file you want to change (*like [`contibuting.md`](https://github.com/datacarpentry/semester-biology/blob/gh-pages/docs/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
    4. Make changes to the file.
    5. Commit the changes using the form at the bottom of the `edit` page. If you are working on your own forked version of the course, you can choose 'Commit directly to the `gh-pages` branch'. The other option ('Create a **new branch**') is used for a work flow with [Pull Requests](https://help.github.com/articles/using-pull-requests), which is our preferred way of receiving collaborative contributions.
 
 - If it is easier for you to send your changes to us some other way, please 
-email us at <datacarpentrysemester@weecology.org>. Given a choice between you 
-creating content or wrestling with Git, we'd rather have you doing the former.
+email us at [{{ site.email }}]([mailto:{{ site.email }}). Given a choice between you creating content or wrestling with Git, we'd rather have you doing the former.
 
 
 ### Philosophy
@@ -46,7 +45,7 @@ Data Carpentry for Biologists is an open source project, and we welcome
 contributions of all kinds: new and improved lessons, bug reports, and small 
 fixes to existing material are all useful. Course materials are managed on 
 GitHub to facilitate collaboration on developing this kind of material for 
-university courses. The central component of a [flipped computing course]({{ site.baseurl }}/docs/course-delivery) is the 
+university courses. The central component of a [flipped computing course]({{ site.baseurl }}/docs/course/course-delivery) is the 
 exercises, so one of the primary forms of contribution we expect will be adding 
 exercises to the existing set. Individual instructors can then select from a 
 rich pool of exercises the set that best fit the topics, languages, and 
