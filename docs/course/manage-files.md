@@ -22,7 +22,7 @@ Many of the file names and [front matter](https://jekyllrb.com/docs/frontmatter/
  
 - Use the appropriate [template]({{ site.baseurl }}/docs) to be sure the file content is formatted correctly for [Jekyll](http://jekyllrb.com/) rendering. Each file needs to start with standard [front matter](https://jekyllrb.com/docs/frontmatter/) content that [Jekyll](http://jekyllrb.com/) uses to automate rendering of the website. Use the [style guide]({{ site.baseurl }}/docs/course/style-guide) for formatting page content following the [front matter](https://jekyllrb.com/docs/frontmatter/).
 
-- Add, commit, and push the new or modified file to GitHub to get the content added to the website. These steps are further described in [Course Customization Help]({{ site.baseurl }}/docs/course-customization).
+- [Add, commit, and push](https://help.github.com/articles/create-a-repo/#commit-your-first-change) the new or modified file to GitHub to get the content added to the website.
 
 ### Preview changes locally using Jekyll
 
