@@ -6,28 +6,14 @@ subtitle: Providing Feedback and Contributing New Material
 
 ### Providing feedback and getting help
 
-- [Open a new issue](https://github.com/datacarpentry/semester-biology/issues/new) at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). 
+- [Open a new issue]({{ site.github.repo }}/issues/new) at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). 
 - Provide a clear description of your question, comment, or proposed change in 
 the `Title` section and use the `Leave a comment` section for further detail or discussion. 
 - Select `Submit new issue` and the repository maintainers will be notified of your feedback. Thanks!
 
 OR
 
-- You can also email us at <datacarpentrysemester@weecology.org>. (*Though we prefer organizing comments and issues on GitHub, we want hear from you and we want it to be easy.*)
-
-
-### File Locations and Formats
-
-Core teaching materials are stored in the relevant folders including
-`lectures/`, `materials/`, and `readings/`.
-
-Class specific materials are stored in `assignments/`, `exercises/` and `solutions/`. Additional files are stored in `data/` and `code/`.
-
-Most of the other folders and files support creating the course website using
-[Jekyll](http://jekyllrb.com/).
-
-All web content files are written in Markdown. More details about formats and style used for the website are outlined for [assignments]({{ site.baseurl }}/docs/manage-assignments), [exercises]({{ site.baseurl }}/docs/manage-exercises), and [general style]({{ site.baseurl }}/docs/style-guide).
-
+- You can also email us at [{{ site.email }}](mailto:{{ site.email }}). (*Though we prefer organizing comments and issues on GitHub, we want hear from you and we want it to be easy.*)
 
 ### Contributing New Material
 
