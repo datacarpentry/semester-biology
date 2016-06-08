@@ -1,7 +1,7 @@
 ---
 layout: exercise
-title: Help
-subtitle: Providing Feedback and Contributing New Material
+topic: Help
+title: Providing Feedback and Contributing New Material
 ---
 
 ### Providing feedback and getting help
