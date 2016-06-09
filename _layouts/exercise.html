@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
   <br>
   {{ content }}
-  {% capture output_file %}{{ page.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+  {% capture output_file %}{{ page.url | remove: 'exercises' | remove: 'docs/templates' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
   {% for solution in site.static_files %}
     {% if solution.path contains output_file %}
       <font size="-1">[<a href="{{ solution.path | prepend: site.baseurl }}">click here for output</a>]</font>
