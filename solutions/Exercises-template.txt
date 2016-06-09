@@ -1,0 +1,4 @@
+A solution file can contain any content or file extension, as long as the 
+solution file name matches the exercise file name. Multiple solution files can 
+be stored using a '-1.ext' '-2.ext' format with '.ext.' representing any file 
+extension.
