@@ -28,4 +28,5 @@ Assignment Management
 2. Add learning objectives.
 3. Name the file with the format: `language-short-description.md`in the
    `assignments/` directory. The file must start with a `lower` case letter.
-4. Generate an `exercises:` list of `exercises/` `title:`. 
+4. Generate an `exercises:` list of `exercises/` `title:`.
+5. Add assignment `title:` to `schedule.md` `assignments:` list. 
