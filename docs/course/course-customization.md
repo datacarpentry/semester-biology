@@ -18,5 +18,7 @@ The website is setup to be easy to run automatically through [GitHub](http://git
   - course details and policy in `syllabus.md` in the main directory
   - `# Setup` information in `_config.yml` in the main directory
   - `assignments:` list in the `schedule.md` front matter
+  - motivation and support documents in `about/`
+  - software download and install in `computer-setup.md`
 
 - If you have any problems please [let us know]({{ site.github.repo}}/issues/new) and we'll be happy to help.
