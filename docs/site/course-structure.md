@@ -8,7 +8,7 @@ title: Course Structure
 
 - `_config.yml`: Customize set up information for use as [`site.variables`](https://jekyllrb.com/docs/variables/)
 - `index.html`: Course description and site navigation
-- `about/` `acknowledgements.md`, `audience.md`, and `why-.` files
+- `about/`: `acknowledgements.md`, `audience.md`, and `why-.` files
 
 ### Initialization Materials
 
@@ -32,12 +32,11 @@ title: Course Structure
       readings/               lectures/            assignments/
 ```
  
-- `schedule.md` generates links for a list of `assignments:` for each of the major course `element:`, `reading`, `lecture`, `assignments`    
+- `schedule.md` generates links for a list of `assignments:` for each of the major course `element:` `reading`, `lecture`, `assignments`    
 - These `element:` must share a `title:` that is inserted into the `assignments:` list. 
 - `element:` may share a common file name, `language-short-description.md`. 
 - `assignments/` MUST have a `lower` case file name. 
 - `readings/` have an `UPPER` first letter of the file name, arbitrarily.
-- [YAML front matter](https://jekyllrb.com/docs/frontmatter/)
 
 ``` 
     readings/            lectures/             assignments/
@@ -61,7 +60,8 @@ language: Foo        language: Foo        language: Foo
 ```
 
 - `lectures/` use links to organize `materials/`. 
-  - `[link text]({{ site.baseurl }}/materials/file-name` *NB: no .MD*
+  - `[link text]({{ site.baseurl }}/materials/file-name)` 
+  - *NB: no* `.MD` *after* `file-name`
 
 ```
                              assignments/
