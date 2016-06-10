@@ -1,12 +1,15 @@
 ---
 layout: exercise
 topic: Help
-title: Site Structure
+title: Site Directory
 ---
+
+Marked (`#`) files and directories are [course customization]({{ site.baseurl }}/docs/course/course-customization) targets.
+
 ```
 .
 ├── _config.yml                # Modify Setup values -> `site.vars`
-├── 404.html                   | Page not found 'destination'
+├── 404.html                   | Page not found destination
 ├── index.html                 # Modify course description
 ├── computer-setup.md          # Download and install software
 ├── LICENSE.md                 | CC BY and MIT
