@@ -7,7 +7,7 @@ language: Access-Python-R-SQL
 
 1. Determine the `topic`, `title`, and `language` from the [front matter](https://jekyllrb.com/docs/frontmatter/) of your new or modified exercise.
 2. Name the file with the format `Topic-title-Language.md` in the `exercises/` directory such as `Templates-exercise-template-Python.md`. The file must start with an `UPPER` case letter.
-3. Generate or repair [site structure]({{ site.baseurl }}/docs/site/site-structure).
+3. Generate or repair [course linkages]({{ site.baseurl }}/docs/site/course-structure).
   - The `title` may be listed in `assignments/`
   - An output file or set of files can be stored in `solutions/` with
     matching `Topic-title-Language` format. The file retains its file 
