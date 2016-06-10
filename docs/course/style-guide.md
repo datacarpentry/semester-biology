@@ -6,7 +6,9 @@ title: Style Guide
 
 ### File Content
 
-All web content files are written in [Markdown](http://daringfireball.net/projects/markdown/basics) and start with [YAML front matter](https://jekyllrb.com/docs/frontmatter/). Any `.MD` file in the course can be modified for content using plain text in [Markdown](http://daringfireball.net/projects/markdown/basics), HTML, or [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers). File names and front matter must be revised carefully according to the [site structure]({{ site.baseurl }}/docs/site/site-structure) and [file templates]({{ site.baseurl }}/docs/). [Add and modify files]({{ site.baseurl }}/docs/course/manage-files) from your local machine or online using [GitHub]({{ site.github.repo }}).
+- All web content files are written in [Markdown](http://daringfireball.net/projects/markdown/basics) and start with [YAML front matter](https://jekyllrb.com/docs/frontmatter/). Any `.MD` file in the course can be modified for content using plain text in [Markdown](http://daringfireball.net/projects/markdown/basics), HTML, or [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers). 
+- File names and front matter must be revised carefully according to the [course structure]({{ site.baseurl }}/docs/site/course-structure) and [file templates]({{ site.baseurl }}/docs/). 
+- [Add and modify files]({{ site.baseurl }}/docs/course/manage-files) from your local machine or online using [GitHub]({{ site.github.repo }}).
 
 ### Page Layout
 
