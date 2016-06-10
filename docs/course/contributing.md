@@ -31,7 +31,7 @@ fork the repository, add or change material, and submit a pull request.
 - From GitHub.com
    1. Click on the `Fork` button at the top right corner of the [`datacarpentry/semester-biology` repository on GitHub]({{ site.github.repo }}).
    2. Navigate to your forked repository at `https://yourusername.github.io/semester-biology/`
-   3. Navigate to the file you want to change (*like [`contibuting.md`](https://github.com/datacarpentry/semester-biology/blob/gh-pages/docs/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
+   3. Navigate to the file you want to change (*like [`contibuting.md`]({{ site.github.repo }}/blob/gh-pages/docs/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
    4. Make changes to the file.
    5. Commit the changes using the form at the bottom of the `edit` page. If you are working on your own forked version of the course, you can choose 'Commit directly to the `gh-pages` branch'. The other option ('Create a **new branch**') is used for a work flow with [Pull Requests](https://help.github.com/articles/using-pull-requests), which is our preferred way of receiving collaborative contributions.
 
@@ -56,7 +56,7 @@ concepts being taught in courses like this. Our philosophy is to use and improve
 these external resources when available instead of creating new versions of the
 same content. In particularly we actively use
 [Data Carpentry](http://datacarpentry.org/lessons) and
-[Software Carpentry](http://software-carpentry.org/lessons.html) workshop
+[Software Carpentry](http://software-carpentry.org/lessons) workshop
 materials. However, in cases where the necessary material doesn't exist
 elsewhere it can certainly be added to `materials/`.
 
