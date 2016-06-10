@@ -15,7 +15,8 @@ title: Help
 ### Site Development Documentation
 
 - [Site Structure]({{ site.baseurl }}/docs/site/site-structure)
-- [Generate a Site Template]({{ site.baseurl }}/docs/course/get-site-template)
+- [Course Structure]({{ site.baseurl }}/docs/site/course-structure)
+- [Generate a Site Template]({{ site.baseurl }}/docs/site/get-site-template)
 
 ### Templates
 
