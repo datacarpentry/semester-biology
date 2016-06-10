@@ -37,7 +37,7 @@ title: Site Structure
 ├── data                       |   Data files used in exercises
 ├── docs                       |   Course & site help docs; Templates
 ├── exercises                  |   Exercise documents
-|   ├── Topic-title-language.md|     UPPER first letter of file name 
+|   ├── Topic-title-Language.md|     UPPER first letter of file name 
 |   └── ...                    |     File name formatted from YAML 
 ├── lectures                   |   Lecture documents
 |   ├── language-descr.md      |     File name matches assignment
