@@ -13,9 +13,8 @@ learn how to use programming and database management systems. We are
 interested in helping folks who are complete beginners and those who
 already have some programming background.
 
-To encourage folks to use this material all of general material on this
-site is licensed under the Creative Commons Attribution License and all
-programs are licensed under the MIT License. Be sure to [let us know what you think](https://github.com/ethanwhite/datacarp-semester-biology/issues/new) so we can be sure to get you the best experience.
+To encourage folks to use this material all of the general material on this
+site is [licensed]({{ site.baseurl }}/LICENSE) under the Creative Commons Attribution License and all programs are [licensed]({{ site.baseurl }}/LICENSE) under the MIT License. Be sure to [let us know what you think]({{ site.github.repo }}/issues/new) so we can be sure to get you the best experience.
 
 Examples of folks who we are trying to help:
 

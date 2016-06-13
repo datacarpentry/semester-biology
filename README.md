@@ -102,8 +102,8 @@ and the standard YAML for a new exercise would look like this:
 ```
 ---
 layout: exercise
+topic: Topic group of exercise
 title: Name of exercise
-subtitle: Short description of the exercise
 language: [R, Python, SQL]
 ---
 ```

@@ -6,14 +6,14 @@ subtitle: Providing Feedback and Contributing New Material
 
 ### Providing feedback and getting help
 
-- [Open a new issue](https://github.com/datacarpentry/semester-biology/issues/new) at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). 
+- [Open a new issue]({{ site.baseurl }}/issues/new) at the 'Data Carpentry for Biologists' repository on GitHub (*You'll have to be logged into GitHub*). 
 - Provide a clear description of your question, comment, or proposed change in 
 the `Title` section and use the `Leave a comment` section for further detail or discussion. 
 - Select `Submit new issue` and the repository maintainers will be notified of your feedback. Thanks!
 
 OR
 
-- You can also email us at <datacarpentrysemester@weecology.org>. (*Though we prefer organizing comments and issues on GitHub, we want hear from you and we want it to be easy.*)
+- You can also email us at [{{ site.email }}](mailto:{{ site.email}}). (*Though we prefer organizing comments and issues on GitHub, we want hear from you and we want it to be easy.*)
 
 
 ### File Locations and Formats
@@ -36,16 +36,16 @@ fork the repository, add or change material, and submit a pull request.
 
 - From a local GitHub repository 
    1. [Fork and clone](https://help.github.com/articles/fork-a-repo/) the  
-[`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
+[`datacarpentry/semester-biology` repository on GitHub]({{ site.github.repo }}).
    2. Create a branch from `gh-pages` for your changes. Give your branch a 
       meaningful name, such as `fix-typos-in-select-query` or `add-groupby`.
    4. Make your changes, [commit them, and push them to your repository on  GitHub](https://help.github.com/articles/create-a-repo/#commit-your-first-change).
    5.  Send a [pull request](https://help.github.com/articles/using-pull-requests/) to the `gh-pages` branch of the main repository.
 
 - From GitHub.com
-   1. Click on the `Fork` button at the top right corner of the [`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
+   1. Click on the `Fork` button at the top right corner of the [`datacarpentry/semester-biology` repository on GitHub]({{ site.github.repo }}).
    2. Navigate to your forked repository at `https://yourusername.github.io/semester-biology/`
-   3. Navigate to the file you want to change (*like [`contibuting.md`](https://github.com/datacarpentry/semester-biology/blob/gh-pages/docs/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
+   3. Navigate to the file you want to change (*like [`contibuting.md`]({{ site.github.repo }}/blob/gh-pages/docs/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
    4. Make changes to the file.
    5. Commit the changes using the form at the bottom of the `edit` page. If you are working on your own forked version of the course, you can choose 'Commit directly to the `gh-pages` branch'. The other option ('Create a **new branch**') is used for a work flow with [Pull Requests](https://help.github.com/articles/using-pull-requests), which is our preferred way of receiving collaborative contributions.
 
