@@ -33,7 +33,8 @@ title: Course Structure
 ```
  
 - `schedule.md` generates links for a list of `assignments:` for each of the major course `element:` `reading`, `lecture`, `assignments`    
-- These `element:` must share a `title:` that is inserted into the `assignments:` list. 
+- These `element:` must share a `title:` that is inserted into the 
+`assignments:` list and `language:`  
 - `element:` may share a common file name, `language-short-description.md`. 
 - `assignments/` MUST have a `lower` case file name. 
 - `readings/` have an `UPPER` first letter of the file name, arbitrarily.
