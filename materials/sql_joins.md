@@ -46,3 +46,5 @@ SELECT species, scientificname
 FROM Main
 JOIN Species WHERE species = new_code;
 ```
+
+> Do Exercises 1-4 - Joins [1]({{ site.baseurl }}/exercises/Advanced-queries-join-1-SQL/) \| [2]({{ site.baseurl }}/exercises/Advanced-queries-join-2-SQL/) \| [3]({{ site.baseurl }}/exercises/Advanced-queries-join-3-SQL/) \| [4]({{ site.baseurl }}/exercises/Advanced-queries-join-4-SQL/)
