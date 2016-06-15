@@ -5,8 +5,8 @@ title: Nested Queries
 language: SQL
 ---
 
-Basically anything in SQL can be replaced with a query. This includes tables,
-conditions, and even values.
+Basically any object or value following a query command statement in SQL, ( * including tables, conditions, and even values* ) can be replaced with another 
+query.
 
 ### Tables
 
