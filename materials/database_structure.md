@@ -7,44 +7,67 @@ language: R
 
 ## Five basic rules of database structure
 
-1. Order doesn’t matter
-    * The information should not be dependent on the order of the rows or the
-      order of the columns
+1. Order doesn’t matter 
 2. No duplicate rows
-3. Every row - column combination contains one value
-4. One field per type of information
+3. Every cell contains one value
+4. One column per type of information
 5. No redundant information
 
-## Order doesn't matter
+### 1. Order doesn't matter
 
-![Order of rows doesn't matter example](database_struct_order_doesnt_matter.png)
+* The information should not be dependent on the order of the rows or the order 
+of the columns
 
-## No duplicate rows
+![Order of rows doesn't matter example]({{ site.baseurl }}/materials/database_struct_order_doesnt_matter.png)
 
-![No duplicate rows example](database_struct_no_dup_rows.png)
+### 2. No duplicate rows
 
-## One value per cell
+![No duplicate rows example]({{ site.baseurl }}/materials/database_struct_no_dup_rows.png)
 
-Don't do this.
+### 3. Every cell contains one value
 
-![One value per cell example](database_struct_one_val_per_cell.png)
+* This is an example of what not to do.
 
-How would you query for Shrubland?
+![One value per cell example]({{ site.baseurl }}/materials/database_struct_one_val_per_cell.png)
 
-## One column per type of information
+* How would you query for `'Shrubland'`?
 
-Don't do this either.
+### 4. One column per type of information
 
-![One column per type of information example](database_struct_one_col_per_type.png)
+* This is also an example of what not to do.
 
-How would you query for records with Grassland and Shrubland?
+![One column per type of information example]({{ site.baseurl }}/materials/database_struct_one_col_per_type.png)
 
-## Proper structure
+* How would you query for records with `'Grassland' AND 'Shrubland'`?
 
-![How to restructure to keep no duplicate rows and one value per cell](database_struct_multiple_habitat_values.png)
+#### Restructure the examples of what not to do for #3 and #4.
 
-This lets us easily subset the data however we want.
+![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database_struct_multiple_habitat_values.png)
 
-## No redundant information
+* The proper structure lets us easily subset the data however we want.
 
-![No redundant information example](database_struct_no_redundant_information.png)
+#### Cross-tablulated data is difficult for SQL to work with.
+
+![Cross-tab table restructure]({{ site.baseurl }}/materials/databases_crosstab_restructured.png)
+
+### 5. No redundant information
+  
+![No redundant information example]({{ site.baseurl }}/materials/database_struct_no_redundant_information.png)
+
+* Use multiple tables to avoid redundant information. Unique `RecordID` link 
+tables with complementary information.
+
+## Multiple tables
+
+* It is often not efficient to include all information of interest in a single
+table.
+
+![Table with redundant information]({{ site.baseurl }}/materials/databases_redundant_table.png)
+
+* To solve these problems,
+    * store data in multiple tables, and 
+    * connect the data in different tables using `JOIN` to describe 
+      relationships between tables ( *hence "relational" database* )
+* Each table contains a single data type
+
+![Restructuring a redundant table into two]({{ site.baseurl }}/materials/databases_redundant_table_restructure.png)
