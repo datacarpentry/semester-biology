@@ -19,14 +19,12 @@ language: R
 * Improve quality control of data entry using scripts and tests
     * vs. type constraints and use of forms in Access, Filemaker, etc.
 
-> Exercise 1
-
 ## Database management systems
 
 * We will be working with 'Relational Databases'
     * The concepts of relational database querying are core to understanding 
       how to do similar things using programming languages such as R or Python.
-* We will use SQLite
+* We will primarily use SQLite
     * Simple to use, 
     * Almost no work to set up
     * Stored in single file
@@ -34,7 +32,7 @@ language: R
 	  * Access - commonly used, GUI
 	  * PostgreSQL - fast/powerful, lots of users
 
-> Open SQLite with Portal DB
+> Open and preview SQLite with `portal_mammals.sqlite`
 
 ### Key features of database management systems
 
@@ -76,7 +74,28 @@ language: R
   new record is added
 * Many databases that you import will already have a field like this
 
-> Exercise 2-5
+### Database Control
+
+There are many ways to add and modify data in a database management system.
+
+1\. Enter the data into another program (e.g., a spreadsheet) and import it to SQLite
+
+> Do [Exercise 1 - Data entry validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/). 
+
+2\. Get the data from somewhere and import it ( *though, data isn't always ready 
+to import into a database* )
+
+> Do [Exercise 2 - Importing Data]({{ site.baseurl }}/exercises/Database-control-importing-data-SQL).
+
+3\. Enter the data directly.
+
+> Demo [Creating Tables]({{ site.baseurl }}/materials/sql-creating-tables).
+>
+> Do [Exercise 3 - Creating Tables]({{ site.baseurl }}/exercises/Database-control-creating-tables-SQL/).
+
+> Demo [Updating Tables]({{ site.baseurl }}/materials/sql-updating-tables).
+>  
+> Do [Exercise 4 - Adding Records]({{ site.baseurl }}/exercises/Database-control-adding-records-SQL/) and [Exercise 5 - Updating Records]({{ site.baseurl }}/exercises/Database-control-updating-records-SQL/).
 
 ## SQL - structured query language
 
@@ -94,4 +113,4 @@ CREATE TABLE SurveyDATA (
 );
 ```
 
-> Exercises 6-13
+> Assign remaining exercises.
