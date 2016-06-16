@@ -39,7 +39,7 @@ FROM Main
 JOIN Species;
 ```
 
-### Just like using WHERE:
+### Just like using WHERE
 
 ```
 SELECT species, scientificname
