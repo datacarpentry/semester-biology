@@ -5,25 +5,29 @@ title: Nested Queries
 language: SQL
 ---
 
-Basically any object or value following a query command statement in SQL, ( * including tables, conditions, and even values* ) can be replaced with another 
+### Take Home Message
+
+* Basically, any object or value following a query command statement in SQL 
+( *including tables, conditions, and even values* ) can be replaced with another 
 query.
 
 ### Tables
 
-What is the mass of the average species at the site? So, we want to first
-determine the average mass of the individual in each species, and then take the
-average of those averages.
+* What is the mass of the average species at the site? 
+    * Determine the average mass of the individuals in each species. 
+    * Take the average of the average masses of each species.
 
-First, write a query to determine the average mass of each species:
+* Write a query to determine the average mass of each species:
 
 ```
 SELECT species, AVG(wgt) as spavgmass
 FROM Main
 WHERE species IS NOT NULL
-GROUP BY species
+GROUP BY species;
 ```
 
-The use that as the table for another query that takes the average of those values:
+* Use the results of that query as the table for another query that takes the 
+average of those values:
 
 ```
 SELECT AVG(spavgmass)
@@ -35,8 +39,11 @@ FROM (SELECT species, AVG(wgt) as spavgmass
 
 ### Values
 
-What is the relative abundance of the different species at the site?
-Let's start by just counting how many individuals there are
+* What is the relative abundance of the different species at the site?
+    * Count how many individuals there are per species.
+    * Divide the count per species by the total number of individuals.
+
+* Write a query to determine the number of individuals per species: 
 
 ```
 SELECT species, COUNT(*)
@@ -45,15 +52,21 @@ WHERE species IS NOT NULL
 GROUP BY species;
 ```
 
-Then use a subquery to divide by the total number of individuals
+* Modify the query with a subquery to divide by the total number of individuals:
 
 ```
-SELECT species, COUNT(*)/(SELECT COUNT(*) FROM Main)
-SELECT species, COUNT(*)*1.0/(SELECT COUNT(*) FROM Main)
-SELECT species, COUNT(*)*1.0/(SELECT COUNT(*) FROM Main WHERE species  IS NOT NULL);
+SELECT species, COUNT(*)/(SELECT COUNT(*) FROM Main);
+```
+```
+SELECT species, COUNT(*) * 100.0/(SELECT COUNT(*) FROM Main);
+```
+```
+SELECT species, COUNT(*) * 100.0/(SELECT COUNT(*) 
+                                  FROM Main 
+                                  WHERE species IS NOT NULL);
 ```
 
-And even sort based on the results of the subquery
+* This finished version of the query even sorts based on the results of the subquery:
 
 ```
 SELECT species, COUNT(*) * 100.0 / (SELECT COUNT(*) FROM Main)
@@ -64,6 +77,8 @@ ORDER BY COUNT(*) * 100.0 / (SELECT COUNT(*) FROM Main) DESC;
 ```
 
 ### Conditions
+
+* List the sampling events for all plots that are not control plots:
 
 ```
 SELECT yr, mo, dy, species
