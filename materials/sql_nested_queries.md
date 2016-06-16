@@ -85,3 +85,5 @@ SELECT yr, mo, dy, species
 FROM Main
 WHERE plot NOT IN (SELECT PlotID FROM Plots WHERE PlotTypeAlphaCode = 'CO');
 ```
+
+> Assign [Exercise 5 - Nesting Queries]({{ site.baseurl }}/exercises/Advanced-queries-nesting-queries-SQL/).
