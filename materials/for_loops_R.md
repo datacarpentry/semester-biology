@@ -5,47 +5,63 @@ title: for loops
 language: R
 ---
 
-## Basic `for` loops
+> Set up R console:
 
-* Let us do the same thing for a number of different values
-
+```r
+library(stringr)
+library(dplyr)
 ```
+
+### Basic `for` loop
+
+* Repeats action for a number of different values
+
+```r
 for (item in list_of_items) {
-  commands
+  do_something(item)
 }
 ```
 
-* When you run a for loop the first time through...
-
-### Example
+* Make sure you know what values you are calling in your loop.
 
 ```
 pets <- c("spot", "gigantor", "fluffy")
 for (pet in pets) {
-  paste(pet, "is the name of the class pet")
+  print(pet)
 }
 ```
 
-What this does:
+* Long-form expression of the previous loop
 
 ```
 pets <- c("spot", "gigantor", "fluffy")
 pet <- pets[1]
-paste(pet, "is the name of the class pet")
+print(pet)
 pet <- pets[2]
-paste(pet, "is the name of the class pet")
+print(pet)
 pet <- pets[3]
-paste(pet, "is the name of the class pet")
+print(pet)
+```
+
+* Do more things.
+
+```
+pets <- c("spot", "gigantor", "fluffy")
+for (pet in pets) {
+  class_pet <- paste(pet, "is the name of the class pet")
+  print(class_pet)
+}
 ```
 
 ### Storing results
 
-* Create something to store them
-* Add your new values each trip through the loop
+* Create an empty object.
+    * `output <- c()`
+    * `output <- data.frame()`
+    * `output <- data.frame(name = character(3))`
+* Add the new values each trip through the loop.
 
 ```
-library(stringr)
-
 pets <- c("spot", "gigantor", "fluffy")
 output <- data.frame()
 for (pet in pets) {
@@ -63,16 +79,29 @@ biomass_data <- data.frame(exper1 = c(24, 32, 62),
                            exper3 = c(1, 5, 3))
 
 for (exp_biomass in biomass_data) {
-  npp <- sum(19.3 * exp_biomass ** 2)
-  print(npp)
+  npp <- 19.3 * exp_biomass ** 2
+  total_npp <- sum(npp)
+  print(total_npp)
 }
 ```
 
-***Complete through exercise 4***
+> Do [Exercise 4 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
-## Apply
+> Make sure students get the basics before moving on.
 
-* Short cuts for simple loops
+### Alternate loops
+
+* [`apply()`](http://finzi.psych.upenn.edu/R/library/base/html/apply.html)
+    * Short cut for simple loops over rows and columns
+    * Other versions allow you various control options
+        * [`lapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Operate across lists and vectors
+        * [`mapply()`](http://finzi.psych.upenn.edu/R/library/base/html/mapply.html): Pass multiple variables or function arguments
+        * [`rapply()`](http://finzi.psych.upenn.edu/R/library/base/html/rapply.html): Recursive operation
+    * Why use `apply()`:
+        * Speed 
+            * [Avoid premature optimization](http://c2.com/cgi/wiki?PrematureOptimization).
+        * Single line of code
+            * Must maintain readability
 
 ```
 get_mass_from_length_theropoda <- function(length) {
@@ -81,58 +110,52 @@ get_mass_from_length_theropoda <- function(length) {
 }
 
 lengths = c(5, 10, 15)
-lapply(lengths, FUN = get_mass_from_length_theropoda)
-sapply(lengths, FUN = get_mass_from_length_theropoda)
+lapply(lengths, FUN=get_mass_from_length_theropoda)
+sapply(lengths, FUN=get_mass_from_length_theropoda)
 ```
 
-* There are also versions that allow you to pass multiple parameters or operate
-  across either rows or columns
-* Arguments for apply:
-    * speed (avoid premature optimization)
-    * readability
-
-* Also keep in mind that many functions in R will be vectorized
+* Many functions also work with vectors
+    * No need to loop through the vector's values
 
 ```
-get_mass_from_length(lengths, as, bs)
+get_mass_from_length_theropoda(lengths)
 ```
 
-### MAKE SURE BASICS MAKE SENSE BEFORE COVERING THIS
-
-
-
-## Dplyr
-
-* Many kinds of looping over data can also be handled using functions in dplyr
+* `dplyr`
+    * Must have tidy data
+    * Use `group_by()` and `summarize()`
 
 ```
-estimate_mass <- function(hindfoot_length, weight){
-  mass 
-}
-surveys <- read.csv("surveys.csv")
+biomass_data <- data.frame(experiment = c(1, 1, 1, 2, 2, 2, 3, 3, 3),
+                           biomass = c(24, 32, 62, 10, 9, 5, 1, 5, 3))
+
+biomass_data %>%
+  group_by(experiment) %>%
+  summarize(total_npp = sum(19.3 * biomass ** 2))
 ```
 
-## Indexing
+* Indexing
 
 ```
 pets <- c("spot", "gigantor", "fluffy")
 owners <- c("betty", "bob", "joe")
 for (i in seq_along(pets)){
-  print(paste(pets[i], "is ", owners[i], "'s pet"))
+  print(paste(pets[i], " is ", owners[i], "'s pet", sep =""))
 }
 ```
 
 
-### Preallocating memory
+* Preallocated memory with indexing
 
 ```
-library(stringr)
-
 pets <- c("spot", "gigantor", "fluffy")
 output <- data.frame(name = character(3), namelength = numeric(3),
                      stringsAsFactors = FALSE)
 for (i in seq_along(pets)) {
   pet_upper <- str_to_upper(pets[i])
-  output[i,] <- c(pet_upper, str_length(pet_upper))
+  pet_length <- str_length(pets[i])
+  output[i,] <- c(pet_upper, pet_length)
 }
 ```
+
+> Assign [Exercise 5 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
