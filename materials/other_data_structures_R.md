@@ -5,6 +5,18 @@ title: Other Data Structures
 language: R
 ---
 
+> Remind students to [Install Bioconductor](http://www.bioconductor.org/install/).
+
+> Remember to downloade [*E. coli* genome data]({{ site.baseurl }}/data/ecoli_coding.fasta)
+ 
+> Set up R console:
+
+```
+source("https://bioconductor.org/biocLite.R")
+biocLite("ShortRead")
+library("ShortRead")
+```
+ 
 ## Lists
 
 Lists are generic vectors that can hold other things.
@@ -26,29 +38,25 @@ field_notes$sites
 field_notes$helpers
 ```
 
-## Objects - e.g.,  Bioconductor
+## Objects 
 
-We've looked at several kinds of objects so far including vectors, data frames,
-and lists, but we can also make arbitrary objects that store whatever kinds of
+* The several data structures that we've looked at so far are objects. 
+    * `vector()`
+    * `data.frame()`
+    * `list()`
+* We can also make arbitrary objects that store whatever kinds of
 data we need.
 
-As an example we'll briefly look at Bioconductor, which is used for working with
-genomic data in R.
+### Bioconductor
 
-[Install Bioconductor](http://www.bioconductor.org/install/) if you
-haven't already. 
-
-```
-source("https://bioconductor.org/biocLite.R")
-biocLite("ShortRead")
-```
+* As an example we'll briefly look at Bioconductor, which is used for working 
+with genomic data in R.
 
 I've downloaded data on the coding regions of the *E. coli* genome from
 [Genbank](http://www.ncbi.nlm.nih.gov/) in a format called `FASTA`, which is one
 format used for storing nucleotide sequences.
 
 ```
-library(ShortRead)
 reads <- readFasta("data/ecoli_coding.fasta")
 reads
 ```
