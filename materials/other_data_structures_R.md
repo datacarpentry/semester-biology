@@ -57,7 +57,7 @@ data we need.
 
 ### Bioconductor
 
-* [Bioconductor](http://www.bioconductor.org/) is software for bioinformatics, that includes (`ShortRead`) 
+* [Bioconductor](http://www.bioconductor.org/) is software for bioinformatics, that includes `ShortRead` 
 for working with genomic data in R.
 
 * We're using genomic data from [Genbank](http://www.ncbi.nlm.nih.gov/).
