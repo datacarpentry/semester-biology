@@ -102,7 +102,7 @@ to import into a database* )
 * The language of databases
 * Even graphical tools like Microsoft Access write SQL for you behind the scenes
 
-```sql
+```
 CREATE DATABASE MammalSurveys;
 CREATE TABLE SurveyDATA (
     IndivID  INT,
