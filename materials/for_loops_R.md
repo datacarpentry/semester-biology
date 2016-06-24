@@ -7,7 +7,7 @@ language: R
 
 > Set up R console:
 
-```r
+```
 library(stringr)
 library(dplyr)
 ```
@@ -16,7 +16,7 @@ library(dplyr)
 
 * Repeats action for a number of different values
 
-```r
+```
 for (item in list_of_items) {
   do_something(item)
 }
