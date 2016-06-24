@@ -5,102 +5,109 @@ title: Other Data Structures
 language: R
 ---
 
-> Remind students to [Install Bioconductor](http://www.bioconductor.org/install/).
+> Remind students to [install Bioconductor](http://www.bioconductor.org/install/).
 
-> Remember to downloade [*E. coli* genome data]({{ site.baseurl }}/data/ecoli_coding.fasta)
+> Remember to download [Archaea genome data]({{ site.baseurl }}/data/archaea_dna.zip).
  
 > Set up R console:
 
 ```
 source("https://bioconductor.org/biocLite.R")
 biocLite("ShortRead")
-library("ShortRead")
+library(ShortRead)
 ```
  
-## Lists
+### Lists
 
-Lists are generic vectors that can hold other things.
+* Lists are generic vectors that can hold other things.
 
 ```
 sites <- c("a", "b", "c")
-notes <- "It was a good day in the field today. Warm, sunny, lots of gators"
+notes <- "It was a good day in the field today. Warm, sunny, lots of gators."
 helpers <- 4
 field_notes <- list(sites, notes, helpers)
 field_notes[1]
 field_notes[[1]]
 ```
 
-We can also give the values names:
+* We can also give the values names.
 
 ```
 field_notes <- list(sites=sites, notes=notes, helpers=helpers)
 field_notes$sites
-field_notes$helpers
+field_notes[["sites"]]
 ```
 
-## Objects 
+### Objects 
 
-* The several data structures that we've looked at so far are objects. 
+* Data structures are defined in R as `class()` and stored in `objects()`. 
     * `vector()`
+        * `"character"` 
+        * `"integer"` 
+        * `"numeric"`
     * `data.frame()`
+        * `"data.frame"`
     * `list()`
+        * `"list"`
 * We can also make arbitrary objects that store whatever kinds of
 data we need.
+    * Genome sequences
+    * Geographical information
+    * Evolutionary trees
 
 ### Bioconductor
 
-* As an example we'll briefly look at Bioconductor, which is used for working 
-with genomic data in R.
+* [Bioconductor](http://www.bioconductor.org/) is software for bioinformatics, that includes (`ShortRead`) 
+for working with genomic data in R.
 
-I've downloaded data on the coding regions of the *E. coli* genome from
-[Genbank](http://www.ncbi.nlm.nih.gov/) in a format called `FASTA`, which is one
-format used for storing nucleotide sequences.
+* We're using genomic data from [Genbank](http://www.ncbi.nlm.nih.gov/).
+    * Archaea genome
+    * Coding regions
+    * `.FASTA`
+        * Format stores nucleotide sequences
 
 ```
-reads <- readFasta("data/ecoli_coding.fasta")
+reads <- readFasta("data/archaea_dna/T-pendens.fasta")
+```
+
+* `reads` is a special kind of object class, `ShortRead`.
+
+```
 reads
 ```
 
-This tells us that `reads` is it's own special kind of object called a
-`ShortRead`.
-
-`str(read)`
-
-Using `str` we can see that inside this object are other kinds of objects,
-including something called `DNAStringSet`, which holds groups of sequences.
+* The `str()` of `ShortRead` includes other kinds of objects.
+    * Object access:
+        * using the `@` operator
+        * `ShortRead` functions
+    * `"DNAStringSet"` holds groups of sequences
+        * `@sread` 
+        * `sread()`
 
 ```
+str(reads)
+
 reads@sread
+reads@sread[[1]]
+
 reads@sread@ranges
 reads@sread@ranges@start
+
+sread(reads)
 ```
 
-We can use functions to access and work with pieces of these objects.
+* Managing and manipulating complex data structures
+    * Hard to get right in all cases 
+    * Best to rely on existing tools
+    * Someone has probably already developed a tool for your data structure.
+* Other useful `ShortRead` functions
 
 ```
-sequences <- sread(reads)
-sequences
-sequences[1]
+reverse(reads@sread)
+complement(reads@sread)
+reverseComplement(reads@sread)
+alphabetFrequency(reads@sread)
+translate(reads@sread)
 ```
 
-These kinds of objects can then be used with special functions designed to work
-with specific kinds of data.
-
-```
-firstseq <- sequences[[1]]
-reverse(firstseq)
-complement(firstseq)
-reverseComplement(firstseq)
-alphabetFrequencies(firstseq)]
-translate(firstseq)
-```
-
-* **Someone has probably already written it. See if you can use their work.**
-* Parsing and manipulating data is hard to get right in all cases, it's best to
-  rely on existing tools to handle this when possible
-
-```
-reverse(sequences)
-complement(sequences)
-reverseComplement(sequences)
-```
+> Assign [Exercise 6 - Multiple Files]({{ site.baseurl }}/exercises/Loops-multiple-files-R).
