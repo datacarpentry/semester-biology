@@ -7,7 +7,7 @@ language: R
 
 > Remind students to setup a GitHub account and email me their username.
 
-> Arrange for partner to `push` following code as per ### Collaborating
+> Arrange for partner to `push` following code for 'Collaborating' demo.
 
 ```
 get_size_class_ts_data <- function(df){
@@ -22,7 +22,7 @@ get_size_class_ts_data <- function(df){
 }
 
 plot_ts_data <- function(df){
-  #Plot time-series data by size class
+  # Plot time-series data by size class
   # Input: data frame with year, size_class, and counts columns
   ggplot(df, aes(x = year, y = counts, color = size_class)) +
     geom_line()
@@ -36,7 +36,7 @@ plot_ts_data <- function(df){
 * Who has a directory on their computer with a bunch of filenames
     * [Like this?](http://www.phdcomics.com/comics/archive.php?comicid=1531)
     * [Or like this?](http://www.phdcomics.com/comics/archive.php?comicid=1323)
-* Get rid of folders like this and track changes to things like
+* Get rid of messy folders and track changes to things like
 data files and code in a more manageable way.
 
 
@@ -67,9 +67,10 @@ data files and code in a more manageable way.
 
 ### First commit
 
-*The following example uses the code from the problem decomposition lecture*
+*The following example uses the code from the problem decomposition lecture.*
 
-* Create a new file `large-small-ts-analysis.R`.
+* Create a new file. 
+    * `large-small-ts-analysis.R`
 * Add some code to the file.
     * `get_data()`
 
@@ -82,10 +83,10 @@ get_data <- function() {
 data <- get_data()
 ```
 
-* Git -> Select `large-small-ts-analysis.R` 
+* Git -> Select `large-small-ts-analysis.R`. 
     * Changes in staged files will be included in next commit.
 * Commit with message. 
-    * "Start project comparing dynamics of different sized Rodents"
+    * `"Start project comparing dynamics of different sized rodents"`
 * History: 
     * One commit
     * See what changes where made
@@ -94,15 +95,14 @@ data <- get_data()
 
 * `large-small-ts-analysis.R` doesn't currently show on `Git` tab
     * No saved changes since last commit
-* Add some more code to `large-small-ts-analysis.R`
+* Add some more code to `large-small-ts-analysis.R`.
     * `get_size_class()`
 
 ```
 get_size_class <- function(weight) {
   if (weight > 50){
     size_class = "large"
-  }
-  else{
+  } else {
     size_class = "small"
   }
   return(size_class)
@@ -115,20 +115,19 @@ get_size_class <- function(weight) {
 * To commit these changes, we need to stage the file.
     * Check the box next to `large-small-ts-analysis.R`.
 * Commit with message.
-    * "Add function for determining size class"
+    * `"Add function for determining size class"`
 * History: 
     * Two commits 
     * Each commit shows the additions we made in that commit.
 
 * Modify the code in `large-small-ts-analysis.R` 
-    * Add `threshold` to `get_size_class()` `if()`
+    * Add `threshold` to `if()` in `get_size_class()`. 
 
 ```
 get_size_class <- function(weight, threshold){
   if (weight > threshold){
     size_class = "large"
-  }
-  else{
+  } else {
     size_class = "small"
   }
   return(size_class)
@@ -144,7 +143,7 @@ get_size_class <- function(weight, threshold){
         * The new version of the line is shown as added.
 
 
-> Do [Exercise 2 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/).
+> Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/).
 
 ## GitHub Remotes
 
@@ -153,7 +152,7 @@ get_size_class <- function(weight, threshold){
 * So far we've worked with a local `Git` repository.
 * One of the big benefits of version control is easy collaboration.
 * To do this, we synchronize our local changes with a `remote` repository.
-* We'll use GitHub 
+* We'll use GitHub. 
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
@@ -161,19 +160,19 @@ get_size_class <- function(weight, threshold){
 
 ### Add a remote
 
-* Make a new `Git` repository ( *students should have been assigned one* )
-* Copy remote adding code from GitHub
+* Make a new `Git` repository ( *Students should have been assigned one.* )
+* Copy remote adding code from GitHub.
     * `git remote add origin https://github.com/user/repo.git`
-* Gear icon -> Shell
+* <i class="fa fa-gear"></i> -> Shell
 * Paste lines from GitHub -> Enter
 * See files on GitHub
 * Show browsing repo in past
 
-> Do [Exercise 5 - Adding a Remote]({{ site.baseurl }}/exercises/Version-control-adding-a-remote-R/).
+> Do [Exercise 5 - Adding a Remote]({{ site.baseurl }}/exercises/Version-control-basic-adding-a-remote-R/).
 
 ### Push to a remote
 
-* Add `add_size_classes()`
+* Add `add_size_classes()`.
 
 ```
 add_size_classes <- function(df) {
@@ -189,22 +188,22 @@ add_size_classes <- function(df) {
 ```
 
 * Commit
-* Show on local, not remote
+    * Show on local, not remote
 * Push
-* Show on remote
+    * Show on remote
 
-> Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-pushing-changes-R/).
+> Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
 
 ### Collaborating
 
 * Big advantage to remotes is easy collaboration
 * Avoids emailing files and shared folders where you are never sure if you actually have the most recent version
 * Makes it easy to see what collaborators have done
-* While I've been talking one of my collaborators has finished adding the other
+* While I've been talking, one of my collaborators has finished adding the other
 functions we need.
 
 * Pull
 * Show history
 * Run code
 
-> Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-pulling-and-pushing-R/).
+> Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
