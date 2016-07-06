@@ -8,27 +8,27 @@
   # apply to all individuals
 # Turn the data into time-series of counts
 # Graph the time-series
+
 library(dplyr)
 library(ggplot2)
 
-get_data <- function(){
+get_data <- function() {
   # Import data from surveys.csv
   data <- read.csv('surveys.csv')
   return(data)
 }
 
-get_size_class <- function(weight, threshold){
+get_size_class <- function(weight, threshold) {
   # Determine if a weight is large or small
   if (weight > threshold){
     size_class <- "large"
-  }
-  else {
+  } else {
     size_class <- "small"
   }
   return(size_class)
 }
 
-add_size_classes <- function(df){
+add_size_classes <- function(df) {
   # Add size class data to a data frame
   # Input: data frame with weight column containing size information
   data_size_class <-
@@ -39,7 +39,7 @@ add_size_classes <- function(df){
   return(data_size_class)
 }
 
-get_size_class_ts_data <- function(df){
+get_size_class_ts_data <- function(df) {
   # Convert individual data to time-series data for each of a set of size classes
   # Input: data frame with a year column for time
   #        and a size_class column
@@ -50,8 +50,8 @@ get_size_class_ts_data <- function(df){
   return(ts_data)
 }
 
-plot_ts_data <- function(df){
-  #Plot time-series data by size class
+plot_ts_data <- function(df) {
+  # Plot time-series data by size class
   # Input: data frame with year, size_class, and counts columns
   ggplot(df, aes(x = year, y = counts, color = size_class)) +
     geom_line()
