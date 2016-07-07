@@ -42,6 +42,6 @@ importing the shrub dimensions data using `read.csv()` and then:
 8. Use `max()` to determine the maximum height of a plant at each site.
 9. Create a new data frame called `shrub_data_w_vols` that includes all of the
    original data and a new column containing the volumes, and display it.
-10.Import the experiments data and then use `inner_join` to combine it with the
-   shrub dimensions data to automatically add a `manipulation` column to the
-   shrub data.
+10. Import the experiments data and then use `inner_join` to combine it with the
+    shrub dimensions data to automatically add a `manipulation` column to the
+    shrub data.
