@@ -3,7 +3,8 @@
 {% for exercise in page.exercises %}
   {% for otherpage in site.pages %}
     {% if exercise == otherpage.title and page.language == otherpage.language and otherpage.layout == 'exercise' %}
-      <li><h4>{{ otherpage.title | prepend: "-- " | append: " --" }}</h4>
+      <li><h4><a href="{{ site.baseurl }}{{ otherpage.url }}">
+        <font color="000000">{{ otherpage.title | prepend: "-- " | append: " --" }}</font></a></h4>
         {{ otherpage.content }}
         {% capture output_file %}{{ otherpage.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
         {% for solution in site.static_files %}
