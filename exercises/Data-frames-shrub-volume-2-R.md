@@ -5,7 +5,7 @@ title: Shrub Volume 2
 language: R
 ---
 
-This is a follow up to [Shrub Volume 1]({{ site.baseurl }}/exercises/Vectors-shrub-volume-1-R)
+This is a follow up to [Shrub Volume 1]({{ site.baseurl }}/exercises/Vectors-shrub-volume-1-R).
 
 One of your collaborators has posted [a comma-delimited text
 file]({{ site.baseurl }}/data/shrub_dimensions_labeled.csv)
