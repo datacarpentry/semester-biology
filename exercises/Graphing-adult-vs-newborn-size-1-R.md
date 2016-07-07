@@ -36,5 +36,5 @@ these are null values using the optional `read.csv()` argument,
    create subplot for each order.
 5. Now let's visualize the relationships between the variables using a simple
    linear model. Create a new graph like your faceted plot, but using
-   `geom_smooth` to fit a linear model to each order. You can go this using the
+   `geom_smooth` to fit a linear model to each order. You can do this using the
    optional argument `method = "lm"` in `geom_smooth`.
