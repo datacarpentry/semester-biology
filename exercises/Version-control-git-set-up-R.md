@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Version Control
-title: Set-up Git
+title: Git Set-up
 language: R
 ---
 
