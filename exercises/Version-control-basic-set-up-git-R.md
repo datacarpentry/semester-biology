@@ -5,7 +5,8 @@ title: Set-up Git
 language: R
 ---
 
-This is a follow up to [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R).
+This exercise and [Version Control Basics]({{ site.baseurl }}/assignments/r-git) assignment references the [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R) problem. 
+*It will not be necessary to complete the [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R) exercise for this assignment, though we encourage the review and self-evaluation of your problem solving wizardry.*
 
 You're continuing your analyses of house-elves with Dr. Granger. Unfortunately
 you weren't using version control and one day your cat jumped all over your
