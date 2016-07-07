@@ -2,7 +2,7 @@
 <ol>
 {% for exercise in page.exercises %}
   {% for otherpage in site.pages %}
-    {% if exercise == otherpage.title and page.language == otherpage.language %}
+    {% if exercise == otherpage.title and page.language == otherpage.language and otherpage.layout == 'exercise' %}
       <li><h4>{{ otherpage.title | prepend: "-- " | append: " --" }}</h4>
         {{ otherpage.content }}
         {% capture output_file %}{{ otherpage.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
