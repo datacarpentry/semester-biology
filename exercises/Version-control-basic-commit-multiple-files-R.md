@@ -6,7 +6,7 @@ language: R
 ---
 
 This is a follow up to
-[Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R)
+[Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R).
 
 
 After talking with Dr. Granger you realize that
