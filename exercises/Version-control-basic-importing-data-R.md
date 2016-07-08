@@ -6,7 +6,7 @@ language: R
 ---
 
 This is a follow up to
-[First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R)
+[First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R).
 
 1. Download a copy of the
   [main data file]({{ site.baseurl }}/data/houseelf_earlength_dna_data.csv) and
