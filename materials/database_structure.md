@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Database Structure
-language: R
+language: SQL
 ---
 
 ## Five basic rules of database structure
@@ -54,8 +54,11 @@ of the columns
   
 ![No redundant information example]({{ site.baseurl }}/materials/database_struct_no_redundant_information.png)
 
-* Use multiple tables to avoid redundant information. Unique `RecordID` link 
-tables with complementary information.
+* Redundant information makes it more difficult to update or revise data. 
+    * If something changes we want to be able to change it in one place, not hundreds of places.     
+* Use multiple tables to avoid redundant information. 
+    * Easier and less error prone
+    * Use a Unique `RecordID` to link tables with complementary information.
 
 ## Multiple tables
 
@@ -67,7 +70,7 @@ table.
 * To solve these problems,
     * store data in multiple tables, and 
     * connect the data in different tables using `JOIN` to describe 
-      relationships between tables ( *hence "relational" database* )
+      relationships between tables (*hence "relational" database*)
 * Each table contains a single data type
 
 ![Restructuring a redundant table into two]({{ site.baseurl }}/materials/databases_redundant_table_restructure.png)
