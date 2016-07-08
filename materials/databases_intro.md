@@ -2,14 +2,14 @@
 layout: page
 element: notes
 title: Introduction to Databases
-language: R
+language: SQL
 ---
 
 > Remind students to install Firefox.
 
 > Walk through installing SQLite Manager Add-on.
 
-## Why use a database management system
+### Why use a database management system
 
 * Simple and effective software for storing, managing and retrieving information
 * Widely used to store and maintain lots of existing data
@@ -21,7 +21,7 @@ language: R
     * Use data entry forms in  Excel, Access, Filemaker, etc.
     * Use quality control scripts to test entered data.
 
-## Database management systems
+### Database management systems
 
 * We will be working with 'Relational Databases'.
     * The concepts of relational database querying are core to understanding 
@@ -82,46 +82,3 @@ language: R
 * The easiest way to do this is to use an `INTEGER` that increments every time a
   new record is added.
 * Many databases that you import will already have a field like this.
-
-### Database Control
-
-There are many ways to add and modify data in a database management system.
-
-1\. Enter the data into another program (e.g., a spreadsheet) and import it to SQLite.
-
-> Do [Exercise 1 - Data entry validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/). 
-
-2\. Get the data from somewhere and import it ( *though, data isn't always ready 
-to import into a database* )
-
-> Do [Exercise 2 - Importing Data]({{ site.baseurl }}/exercises/Database-control-importing-data-SQL).
-
-3\. Enter the data directly.
-
-> Demo [Creating Tables]({{ site.baseurl }}/materials/sql-creating-tables).
->
-> Do [Exercise 3 - Creating Tables]({{ site.baseurl }}/exercises/Database-control-creating-tables-SQL/).
-
-> Demo [Updating Tables]({{ site.baseurl }}/materials/sql-updating-tables).
->  
-> Do [Exercise 4 - Adding Records]({{ site.baseurl }}/exercises/Database-control-adding-records-SQL/) and [Exercise 5 - Updating Records]({{ site.baseurl }}/exercises/Database-control-updating-records-SQL/).
-
-## SQL - structured query language
-
-> Show students the `Execute SQL` tab.
-
-* The language of databases
-* Even graphical tools like Microsoft Access write SQL for you behind the scenes
-
-```
-CREATE DATABASE MammalSurveys;
-CREATE TABLE SurveyDATA (
-    IndivID  INT,
-	SpeciesID  VARCHAR,
-	BodyMass INT,
-	HindFoot INT,
-	PRIMARY KEY(IndivID)
-);
-```
-
-> Assign remaining exercises.
