@@ -5,9 +5,12 @@ title: Introduction to Databases
 language: SQL
 ---
 
-> Remind students to install Firefox.
+> Remember to 
+>
+> * Remind students to install Firefox.
+> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 
-> Walk through installing SQLite Manager Add-on.
+> Walk students through installing SQLite Manager Add-on.
 
 ### Why use a database management system
 
