@@ -34,7 +34,7 @@ language: SQL
 	  * Access - commonly used, GUI
 	  * PostgreSQL - fast/powerful, lots of users
 
-> Open and preview SQLite with `portal_mammals.sqlite`
+> Open and preview SQLite with `portal_mammals.sqlite`.
 
 ### Key features of database management systems
 
@@ -55,7 +55,7 @@ language: SQL
 
 > Show students the
 >
-> * objects panel with `Tables` and `Views` 
+> * objects panel with `Tables` and `Views`.
 > * `Browse & Search` tab.
 
 ### Data Types
