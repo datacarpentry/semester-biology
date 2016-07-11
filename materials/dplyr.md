@@ -9,14 +9,13 @@ language: R
 > 
 > * download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).   
 > * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
-> * `setwd()` in R.
 
 
 ### Packages
 
 * Main way that reusable code is shared in R
 * Combination of code, data, and documentation
-* Download and instal packages with the R console:
+* Download and install packages with the R console:
     * `install.packages("dplyr")`
 * Using a package:
     * Load all of the functions in the package: `library("dplyr")`
