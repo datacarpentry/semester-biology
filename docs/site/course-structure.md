@@ -22,7 +22,7 @@ title: Course Structure
 ### Layout and Linkages
  
 ```
-    START-for-sef-guided-students.md        syllabus.md 
+     START-for-self-guided-students.md      syllabus.md 
                    \____________________________/
                                   |  
                              schedule.md
