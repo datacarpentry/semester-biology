@@ -26,5 +26,5 @@ title: Help
 - [Assignments]({{ site.baseurl }}/docs/templates/assignments-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/docs/templates/assignments-template.md))
 - [Exercises]({{ site.baseurl }}/docs/templates/Exercises-template)
 ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/docs/templates/Exercises-template.md))
-- [Exercise Solutions]({{ site.baseurl }}/solutions/Exercises-template.txt) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/solutions/Exercises-template.md))
+- [Exercise Solutions]({{ site.baseurl }}/solutions/Exercises-template.txt)
 
