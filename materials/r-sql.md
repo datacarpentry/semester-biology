@@ -7,8 +7,9 @@ language: R
 
 > Remember to
 >    
-> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171). *Make sure it does not have `SpeciesCounts` view.*
-> * `setwd()` in R.
+> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
+> * open `portal_mammals.sqlite` in SQLite Manager. 
+> * *Make sure the copy you are going to use in class does not have the `SpeciesCounts` table or view.*
 
 * We've already seen how to connect to databases using `dplyr`.
 * What if we want to work outside of a `dplyr` context?
@@ -47,12 +48,16 @@ species_counts <- dbGetQuery(conn, query)
 
 ### Write new information to database
 
+> Show the original `portal_mammals.sqlite` in SQLite Manager.
+
 * Write as a table
 
 ```
 dbWriteTable(conn, "SpeciesCounts", species_counts)
 dbListTables(conn)
 ```
+
+> Show `SpeciesCounts` table in `portal_mammals.sqlite`.
 
 * Write as a view
 
