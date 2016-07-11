@@ -5,9 +5,11 @@ title: Version Control
 language: R
 --- 
 
-> Remind students to setup a GitHub account and email me their username.
+> Remind students to setup a GitHub account and email the instructor their
+> username.
 
-> Arrange for partner to `push` following code for 'Collaborating' demo.
+> Arrange to have a teaching partner attend class and `push` the following code 
+> for the 'Collaborating' demo.
 
 ```
 get_size_class_ts_data <- function(df){
@@ -29,6 +31,11 @@ plot_ts_data <- function(df){
 }
 ```
 
+> Open the following links in a browser and zoom in to make the images fill the screen.
+>
+> > * [Like this?](http://www.phdcomics.com/comics/archive.php?comicid=1531)
+> > * [Or like this?](http://www.phdcomics.com/comics/archive.php?comicid=1323)
+
 ## Introduction
 
 ### Motivation
@@ -42,17 +49,17 @@ data files and code in a more manageable way.
 
 ### Benefits of version control
 
-* Track changes ( *but better* )
+* Track changes (*but better*)
     * Tracks every change ever made in groups called commits
-	* Every commit stores the full state of all of your files at that time
+        * Every commit stores the full state of all of your files at that time
     * Never lose anything
         * Revert or restore to any commit
-	* Easily unbreak your code/data/manuscript
-	* No more file name changes
+        * Easily unbreak your code/data/manuscript
+        * No more file name changes
 * Collaboration
     * Work on things simultaneously
-	* See what changes others have made
-	* Everyone has the most recent version of everything
+        * See what changes others have made
+        * Everyone has the most recent version of everything
 
 ## Version control using RStudio & Git
 
@@ -156,7 +163,7 @@ get_size_class <- function(weight, threshold){
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
-	* For the assignment, we'll use private repositories that I'll make for you.
+        * For the assignment, we'll use private repositories that I'll make for you.
 
 ### Add a remote
 
