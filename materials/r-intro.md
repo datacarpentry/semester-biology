@@ -41,14 +41,14 @@ language: R
 * Who here uses `setwd()`?
 * Start a new project
 * Create a `data` subdirectory
-* Add an example `.CSV` file
+* Add an example `csv` file
 * Load it
 
 ### Project structure
 
 * Two common structures
 * code in top-level directory with subdirectories for data, results, etc
-  ( *possibly with subdirectories of their own* )
+  (*possibly with subdirectories of their own*)
 * code in a separate subdirectory
 
 ### Assignments format
