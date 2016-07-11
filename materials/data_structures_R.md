@@ -37,7 +37,7 @@ total_weight <- sum(weights)
 * Subsetting:
     * `counts[sites == 'a']`
         * `==` means "equal to" in most languages. 
-        * Not `=`. `=` is used to assign `function()` arguments.
+        * Not `=`. `=` is used for assignment.
         * `!=`, `<`, `>`
 
 > Do [Exercise 1 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/).
@@ -77,5 +77,7 @@ surveys <- data.frame(sites, counts, weights)
 * Subsetting values/blocks: 
     * `surveys[1,2]` 
     * `surveys[1:2,1:3]`
+
+> Do [Exercise 3 - More Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-more-variables-R/).
 
 > Assign remaining exercises.
