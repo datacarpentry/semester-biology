@@ -95,13 +95,15 @@ for (exp_biomass in biomass_data) {
     * Short cut for simple loops over rows and columns
     * Other versions allow you various control options
         * [`lapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Operate across lists and vectors
+        * [`sapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Simplify output to vector
         * [`mapply()`](http://finzi.psych.upenn.edu/R/library/base/html/mapply.html): Pass multiple variables or function arguments
-        * [`rapply()`](http://finzi.psych.upenn.edu/R/library/base/html/rapply.html): Recursive operation
     * Why use `apply()`:
-        * Speed 
+        * Readability
+            * Single line of code
+            * Simple command structure
+        * Speed?
+            * Noticeable in complex operations ([some debate](https://stackoverflow.com/questions/2275896/is-rs-apply-family-more-than-syntactic-sugar))
             * [Avoid premature optimization](http://c2.com/cgi/wiki?PrematureOptimization).
-        * Single line of code
-            * Must maintain readability
 
 ```
 get_mass_from_length_theropoda <- function(length) {
