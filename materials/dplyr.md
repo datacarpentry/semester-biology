@@ -22,7 +22,7 @@ language: R
         * Can result in namespace issues when different packages have functions with the same name 
         * `filter()` is the name of a function in `dplyr` and `stats` packages
     * Call a function in the package directly: `::`
-        * No import needed
+        * No use of `library()` needed
         * `dplyr::filter()` vs. `stats::filter()`  
             
 
@@ -75,22 +75,22 @@ surveys_by_species <- group_by(surveys, species_id)
 surveys_DS <- filter(surveys, species_id == "DS")
 surveys_DS_by_yr <- group_by(surveys_DS, year)
 avg_weight_DS_by_yr <- summarize(surveys_DS_by_yr, 
-                                 avg_weight = mean(weight, na.rm=T))
+                                 avg_weight = mean(weight, na.rm=TRUE))
 ```
 
 * Pipes:
     * Operator: 
         * `%>%`
-    * Operation: 
-        * `x %>% f(y)` translates to `f(x, y)`
+    * Operation:
         * `%>%` takes the output of one command and passes it as input to the next command 
+        * `x %>% f(y)` translates to `f(x, y)`
         * `surveys %>% filter(species_id == "DS")`
 
 ```
 surveys %>%
   filter(species_id == "DS") %>%
   group_by(year) %>%
-  summarize(avg_weight = mean(weight, na.rm=T))
+  summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
 
 ### Using `dplyr` with databases
