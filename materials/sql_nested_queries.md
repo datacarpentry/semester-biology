@@ -8,7 +8,7 @@ language: SQL
 ### Take Home Message
 
 * Basically, any object or value following a query command statement in SQL 
-( *including tables, conditions, and even values* ) can be replaced with another 
+(*including tables, conditions, and even values*) can be replaced with another 
 query.
 
 ### Tables
