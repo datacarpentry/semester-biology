@@ -41,7 +41,7 @@ dictionary for each site that includes the species names and associated
 abundances for each site, where the abundance is the sum of all of the
 values in the cover column, for each species at the site. Then pass all
 possible pairs of dictionaries to your function for calculating the
-Euclidean distance between each pair of sites. Save the results to a csv
+Euclidean distance between each pair of sites. Save the results to a `csv`
 file where the first column is the plot id for one of the two plots, the
 second column is the plot id for the other of the two plots, and the
 third column is the 1 minus the Euclidean Distance (our abundance based

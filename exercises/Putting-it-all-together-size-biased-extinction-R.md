@@ -54,10 +54,10 @@ colnames(mammal_sizes) <- c("continent", "status", "order",
    pattern on each of the different continents that might really tell us
    something. Repeat the analysis but this time compare the mean masses within
    each of the different continents (*`dplyr` would be one way to do
-   this*). Export your results to a CSV file where the first entry on each line
-   is the continent, the second entry is the average mass of the extant species
-   on that continent, and the third entry is the average mass of the extinct
-   species on that continent (*`spread()` from `tidyr` is a handy way to
+   this*). Export your results to a `csv` file where the first entry on each
+   line is the continent, the second entry is the average mass of the extant 
+   species on that continent, and the third entry is the average mass of the
+   extinct species on that continent (*`spread()` from `tidyr` is a handy way to
    convert the standard `dplyr` output to this form*). Call the file
    `continent_mass_differences.csv`.
 4. Looking at the averages was a good start, but we really need to look at the

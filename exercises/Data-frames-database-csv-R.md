@@ -13,7 +13,7 @@ R is to export it from the database and then import it into R.
 of the `portal_mammals.sqlite` database. Using the SQLite Manager, write a query
 to extract the year of capture, genus, species, and weight of the 500 largest
 individuals captured at the site. Save your query as a View and export it to as
-a csv file using the `Export Wizard`. You can initiate the `Export Wizard` by
+a `csv` file using the `Export Wizard`. You can initiate the `Export Wizard` by
 clicking on the view's `Structure` tab and choosing `Export` or by selecting
 `Export View` from either the `View` menu or the right click menu for the
 view. You should check the `First row contains column names` box so that it is

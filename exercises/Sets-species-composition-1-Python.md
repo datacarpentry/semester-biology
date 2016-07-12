@@ -40,7 +40,7 @@ for the purposes of this analysis we are only interested in whether or
 not the species occurs within the plot.
 
 Use sets as described below to answer this question. Calculate the
-similarities within each year. Save the results to a csv file where the
+similarities within each year. Save the results to a `csv` file where the
 first column is the year, the second column is the plot id for one of
 the two plots, the third column is the plot id for the other of the two
 plots, and the fourth column is the Jaccard similarity.

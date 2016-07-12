@@ -17,7 +17,7 @@ binomial for each species you decide to also get the family so that each
 line of the results is family, genus, species (we don't care about sub
 families, sub genera, etc.). And, because transfering things between
 databases and programming languages using text files is for rookies,
-novices, and newbs, you decide to skip the whole csv thing and move all
+novices, and newbs, you decide to skip the whole `csv` thing and move all
 of the resulting information straight into an SQLite database.
 
 When you're done with this assignment, commit the raw data file and the

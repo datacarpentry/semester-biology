@@ -42,6 +42,6 @@ see some text that looks like:
 
 4. Write some new code that creates a data frame with information about the
   individual ID, the earth length class, and the gc-content for each individual.
-5. Save this data frame as a csv file using `write.csv()`
-6. Commit the new code and the resulting .CSV file and push the results to
+5. Save this data frame as a `csv` file using `write.csv()`
+6. Commit the new code and the resulting `csv` file and push the results to
   Github.
