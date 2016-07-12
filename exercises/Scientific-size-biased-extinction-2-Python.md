@@ -13,7 +13,7 @@ size-biased extinctions so it's not as informative as we might like.
 However, if we see the exact same pattern on each of the different
 continents that might really tell us something. Repeat the analysis in
 the Numpy 1 problem, but this time compare the mean masses within each
-of the different continents. Export your results to a csv file where the
+of the different continents. Export your results to a `csv` file where the
 first entry on each line is the continent, the second entry is the
 average mass of the extant species on that continent, the third entry is
 the average mass of the extinct species on that continent, and the forth
