@@ -11,7 +11,7 @@ While you were out of town doing field work over the summer Dr. Granger hired
 another student, Gregory Goyle, to help her modify your code so that it did
 something a bit different than the original code. The new code was intended to
 include more size classes and to output the average GC content for each size
-class to a CSV file rather than the individual level data. Unfortunately Greg
+class to a `csv` file rather than the individual level data. Unfortunately Greg
 hasn't learned an important lesson about programming, that it's
 [almost always better to work with existing code than to try to rewrite it from scratch](http://www.joelonsoftware.com/articles/fog0000000069.html),
 so he figured it would be easier to just start over than to try to understand

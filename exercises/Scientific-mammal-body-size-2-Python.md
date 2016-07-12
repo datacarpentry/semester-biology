@@ -15,7 +15,7 @@ pattern on each of the different continents that might really tell us
 something. Repeat the analysis in
 [Mammal Body Size 1]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-1-Python), but this time compare the
 mean masses within each of the different continents. Export your results to a
-CSV file where the first entry on each line is the continent, the second entry
+`csv` file where the first entry on each line is the continent, the second entry
 is the average mass of the extant species on that continent, the third entry is
 the average mass of the extinct species on that continent, and the forth entry
 is the difference between the average extant and average extinct masses. Call

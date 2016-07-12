@@ -35,7 +35,7 @@ Write a Python script that:
     and the third column contains the GC content of the DNA sequence.
 5.  Prints the average GC-content for both large-eared elves and
     small-eared elves to the screen.
-6.  Exports the table of individual level GC values to a CSV (comma
+6.  Exports the table of individual level GC values to a `csv` (comma
     delimited text) file titled `grangers_analysis.csv`.
 
 This code should use functions to break the code up into manageable

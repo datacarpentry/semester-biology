@@ -38,7 +38,7 @@ and determines the total amount of carbon in the shrub.
    shrub) where the first column has the experiment number, the second column
    contains the string `'tall'`, `'medium'` or `'short'` depending on the height of
    the shrub, and the third column contains the shrub carbon.
-- Exports this table to a CSV (comma delimited text) file titled
+- Exports this table to a `csv` (*comma delimited text*) file titled
    `shrubs_experiment_results.csv`.
 - Use functions to break the code up into manageable pieces. 
 
