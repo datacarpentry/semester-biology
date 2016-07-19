@@ -13,6 +13,7 @@ exercises: ['Connect and Query', 'Automate Query', 'Export to Database', 'NEON D
 > - connect to a remote database and execute simple queries
 > - integrate database and R workflow
 > - export output data from R to database
+> - tidy data table with redundant fields or overfilled cells 
 
 {% include reading.html %}
 
