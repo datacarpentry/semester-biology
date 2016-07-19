@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Integrating R and SQL
 language: R
-exercises: ['Connect and Query', 'Automate Query', 'Export to Database', 'NEON Database']
+exercises: ['Connect and Query', 'Automate Query', 'Export to Database', 'NEON Database', 'Tree Biomass']
 ---
 
 #### Learning Objectives
