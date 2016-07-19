@@ -18,21 +18,21 @@ but one good option is the equation:
     
 Mass = 0.124 * Diameter<sup>2.53</sup>
 
-where `Mass` is measured in kg of dry above-ground biomass and `Diameter` is in cm [DBH](https://en.wikipedia.org/wiki/Diameter_at_breast_height). ([Brown 1997](http://www.fao.org/docrep/W4095E/W4095E00.htm)). 
+where `Mass` is measured in kg of dry above-ground biomass and `Diameter` is in cm [DBH](https://en.wikipedia.org/wiki/Diameter_at_breast_height) ([Brown 1997](http://www.fao.org/docrep/W4095E/W4095E00.htm)). 
 
 We're going to estimate the total tree biomass for trees in a 96 hectare area of 
 the Western Ghats in India. [The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt) is available on [Ecological Archives](http://esapubs.org/Archive/). Unfortunately, the data is stored in poor database 
 structure and using all of the tree stems would be difficult without first 
-tidying up the data. You can have a look at [the metadata]((http://esapubs.org/archive/ecol/E091/216/metadata.htm) to get familiar with the data structure.
+tidying up the data. You can have a look at [the metadata](http://esapubs.org/archive/ecol/E091/216/metadata.htm) to get familiar with the data structure.
 
 1. Use `tidyr` to `gather()` the raw data into rows for each measured stem. 
 2. Write a function that takes a vector of tree diameters as an argument and   
 returns a vector of tree masses.
-3. Stems are measured in girth (*or circumference*) rather than diameter. Write a function to take an vector of circumferences as an argument and returns an vector of diameters (*circumference = pi \* diameter*).
+3. Stems are measured in girth (*or circumference*) rather than diameter. Write a function to take an vector of circumferences as an argument and returns a vector of diameters (*circumference = pi \* diameter*).
 4. Use the two functions you've written to estimate the total biomass (*i.e., 
 the sum of the masses*) of trees in this dataset and print the result to the
 screen.
-5. `separate()` the `SpCode` into `GenusCode` and `SpCode` and estimate the 
+5. `separate()` the `SpCode` into `GenusCode` and `SpEpCode` and estimate the 
 total biomass per genus in a table. *It is a bit of an erroneous assumption that 
 all of the genus in the dataset will be identified uniquely by their four letter 
-code, but we'll go with it for purpose of the exercise.* 
+code, but we'll go with it for the purpose of this exercise.* 
