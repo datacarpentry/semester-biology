@@ -1,0 +1,17 @@
+[1] 26710042
+
+Source: local data frame [242 x 2]
+
+   GenusCode         Mass
+       (chr)        (dbl)
+1       Acac 1.284860e+04
+2       Acro 1.789854e+04
+3       Acti 6.419857e+04
+4       Aegl 6.473563e+00
+5       Agla 4.480269e+05
+6       Agro 2.357332e+01
+7       Aila 1.589495e+03
+8       Alan 6.739780e+03
+9       Albi 3.790156e+04
+10      Allo 1.654088e+03
+..       ...          ...
