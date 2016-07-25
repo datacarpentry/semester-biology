@@ -21,7 +21,7 @@ library(tidyr)
 
 ### Restructure tables with messy data 
 
-* Cells with multiple values breaks rule #3.
+* Cells with multiple values break rule #3.
 * Redundant column information or cross-tabulated data breaks rule #4.
 
 ![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database_struct_multiple_habitat_values.png)
@@ -44,6 +44,12 @@ scary_sightings <- data.frame(
 3   bears        0-N         64-N
 ```
 
+* What do the values in the table represent?
+    * `lions` and `tigers` and `bears` are names of `animals`
+    * `1-Y`, `17-N`, etc. represent: 
+        * Counts of animals sighted on the `brick_road` or in the `emerald_city`
+        * And, were the animal sightings scary? `Y` or `N`
+
 > Ask students,
 > 
 > * "What makes `scary_sightings` messy?"
@@ -65,8 +71,9 @@ scary_sightings <- data.frame(
     * Removes redundant columns
     * Arguments:
         * Piped `data.frame`
-        * Column names
-        * Column range
+        * Column name for grouping of old column headers
+        * Column name for grouping of old column values
+        * Column range for old columns with values
 
 ```
 less_scary <- scary_sightings %>%
