@@ -32,7 +32,7 @@ the specifications for the earlength size classes were:
 
 Write tests to check:
 
-1.  That each case is working when the numbers are in the range
-2.  The edge cases of 8, 10, and 15
-3.  What happens if non-numerical values are passed to the function
-    (e.g., a string from a header row that didn't get removed)
+1.  that each case is working when the numbers are in the range,
+2.  the edge cases of 8, 10, and 15, and
+3.  what happens if non-numerical values are passed to the function
+    (e.g., a string from a header row that didn't get removed).

@@ -17,7 +17,7 @@ writing a ***vectorized ear length categorizer***. To get it you'll need to `pul
 most recent changes from Github.
 
 1. On the `Git` tab click on the `Pull` button with the blue arrow. You should
-see some text that looks like:
+   see some text that looks like:
 
    ```
    From github.com:ethanwhite/gryffindorforever
@@ -44,4 +44,4 @@ see some text that looks like:
   individual ID, the earth length class, and the gc-content for each individual.
 5. Save this data frame as a `csv` file using `write.csv()`
 6. Commit the new code and the resulting `csv` file and push the results to
-  Github.
+   Github.

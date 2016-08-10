@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Version Control Basic
-title: Set-up Git
+title: Set Up Git
 language: R
 ---
 
@@ -32,7 +32,7 @@ Install `git` for your operating system following the
 [setup instructions](http://www.datacarpentry.org/semester-biology/computer-setup/). Then
 create a new project for this assignment in RStudio with the following steps:
 
-1. File -> New Project -> New Directory -> Empty Project
-2. Choose where to put your project
-3. Select `Create a git repository`
-4. If everything worked in the upper right corner of RStudio you should see a `Git` tab
+1. File -> New Project -> New Directory -> Empty Project.
+2. Choose where to put your project.
+3. Select `Create a git repository`.
+4. If everything worked in the upper right corner of RStudio you should see a `Git` tab.

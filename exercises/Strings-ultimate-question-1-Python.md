@@ -7,8 +7,10 @@ language: Python
 
 Write a function that prints:
 
+```
 The ultimate answer to the ultimate question of life, the universe, and
 everything is: XXX.
+```
 
 Where XXX is either a string or a number that is passed to the function
 as a parameter. **Use a format string to accomplish this.** Use this

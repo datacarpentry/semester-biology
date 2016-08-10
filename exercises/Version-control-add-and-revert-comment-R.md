@@ -13,8 +13,10 @@ following comment
 
 ```### Really lame fake program that unsuccessfully
 attempts to simulate a problem that can be trivially solved using a
-little math``` 
+little math.``` 
 
-Add the comment and save your file. When you wake up the next morning you 
-realize that maybe this wasn't the smartest idea you've had this week. Revert 
-the change, add a better comment, and commit the change.
+Add the comment and save your file.
+
+When you wake up the next morning you realize that maybe this wasn't
+the smartest idea you've had this week. Revert the change, add a
+better comment, and commit the change.

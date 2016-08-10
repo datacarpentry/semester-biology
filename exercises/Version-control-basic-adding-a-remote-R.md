@@ -25,4 +25,4 @@ you use a shared `git` repository on the hosting site [Github](https://github.co
     * Paste them into the Shell.
     * Press enter.
 3. Go back to the Github webpage for your repository and you should see your
-  files.
+   files.
