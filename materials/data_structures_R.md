@@ -5,30 +5,46 @@ title: Data Structures
 language: R
 --- 
 
-## Vectors
+### Vectors
 
-* sequence of values with the same type
-* make one using c(): `sites <- c("a", "a", "b", "b")`
-* explore: `str(sites)`, `length(sites)`
-* Use the Tab key for autocomplete: Let the computer do repetitious work, easier, few mistakes
-* slicing: `sites[1]`, `sites[1:3]`, `1:3` makes a vector so this is the same as
-  `sites[c(1, 2, 3)]` which you can use to get any subset or order you want
-* math:
+* A sequence of values with the same type
+* Assignment: 
+    * `c()`
+
+``` 
+sites <- c("a", "a", "b", "b")
+```
+
+* Useful commands: 
+    * `str(sites)` 
+    * `length(sites)`
+* Slicing: 
+    * `sites[1]` 
+    * `sites[1:3]`
+        * `1:3` makes a vector. So, this is the same as
+    * `sites[c(1, 2, 3)]` 
+        * You can use a vector to get any subset or order you want
+* Math:
+    * `sum()`
+    * `max()`
 
 ```
 counts <- c(0, 2, 2, 6)
 weights <- c(1.5, 2.6, 8.4, 0.2)
-sum(counts)
-max(weights)
 total_weight <- sum(weights)
 ```
 
-* subsetting: `counts[sites == 'a']`
-* `==` means "equal to" in most languages; `=` means assignment
+* Subsetting:
+    * `counts[sites == 'a']`
+        * `==` means "equal to" in most languages. 
+        * Not `=`. `=` is used for assignment.
+        * `!=`, `<`, `>`
 
-***Exercise 1***
+> Do [Exercise 1 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/).
 
-## Matrices (if linear algebra folks)
+### Matrices (if linear algebra folks)
+
+* A two-dimensional set of values with a single data type
 
 ```
 x <- matrix(1:6, 2)
@@ -36,21 +52,32 @@ y <- matrix(1:3, ncol = 1)
 x %*% y
 ```
 
-## Data Frames
+### Data frames
 
 * A list of equal length vectors grouped together
-* Create: `surveys <- data.frame(sites, counts, weights)` or `read.csv`
-* Explore: `str(surveys)`, `length(surveys)`, `nrow(surveys)`,`ncol(surveys)`
-* Subsetting columns
+* Assignment: 
+    * `data.frame()`
+    * `read.csv()`
 
 ```
-surveys["sites"]
-surveys[c("counts", "weights")]
-surveys$sites
-surveys[["sites"]]
+surveys <- data.frame(sites, counts, weights)
 ```
 
-* Subsetting rows: `subset(surveys, sites == 'a')`
-* Subsetting values/blocks: `surveys[1,2]`, `surveys[1:2,1:3]`
+* Useful commands: 
+    * `str(surveys)`
+    * `length(surveys)`
+    * `nrow(surveys)`, `ncol(surveys)`
+* Subsetting columns:
+    * `surveys["sites"]`
+    * `surveys[c("counts", "weights")]`
+    * `surveys$sites`
+    * `surveys[["sites"]]`
+* Subsetting rows: 
+    * `subset(surveys, sites == 'a')`
+* Subsetting values/blocks: 
+    * `surveys[1,2]` 
+    * `surveys[1:2,1:3]`
 
-***Exercise 3***
+> Do [Exercise 3 - More Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-more-variables-R/).
+
+> Assign remaining exercises.

@@ -5,79 +5,101 @@ title: Working with Tabular Data
 language: R
 --- 
 
-## Packages
+> Remember to
+> 
+> * download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).   
+> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 
-* Packages are the main way that reusable code is shared in R
+
+### Packages
+
+* Main way that reusable code is shared in R
 * Combination of code, data, and documentation
-* Install to get the package on your computer
-* Tell programs that you want to use the package
+* Download and install packages with the R console:
+    * `install.packages("dplyr")`
+* Using a package:
+    * Load all of the functions in the package: `library("dplyr")`
+        * Can result in namespace issues when different packages have functions with the same name 
+        * `filter()` is the name of a function in `dplyr` and `stats` packages
+    * Call a function in the package directly: `::`
+        * No use of `library()` needed
+        * `dplyr::filter()` vs. `stats::filter()`  
+            
 
-* Installing packages: `install.packages('dplyr')`
-* Using a package
-  * Load all of the functions: `library('dplyr')`
-  * Can result in namespace issues: different packages same name
-  * An alternative is to call the package directly using `::`
-  * `stats::filter()` vs. `dplyr::filter()`, no import needed
+### Basic `dplyr`
 
-## Basic Dplyr
-
-Does a lot of the same things we've learned to do in SQL.
-
-`surveys <- read.csv("surveys.csv")`
-
-* Select: `select(surveys, year, month, day)`
-* Filter: `filter(surveys, species_id = 'DS')`, `filter(surveys, species_id = 'DS', year > 1995)`
-* Mutate: `mutate(surveys, weight_kg = weight / 1000)`
-
-***Problem 3, 1-5***
-
-## Group and Summarize
-
-Like in SQL we can also group by and aggregate
-
-* Group by: `surveys_by_species <- group_by(surveys, species_id)`
-* Different looking kind of data frame, and it has groups
-* To use those groups we use summarize:
-
-`summarize(surveys_by_species, avg_weight = mean(weight))`
-
-***Problem 3, 6-7***
-
-## Pipes
-
-* Combine a bunch of these kinds of manipulation
-* Standard approach is intermediate variables
+* Does a lot of the same things we've learned to do in SQL.
 
 ```
-surveys_DS <- filter(surveys, species_id == 'DS')`
+surveys <- read.csv("surveys.csv")
+```
+
+* Select: 
+    * `select(surveys, year, month, day)`
+* Filter: 
+    * `filter(surveys, species_id == "DS")`
+    * `filter(surveys, species_id == "DS", year > 1995)`
+* Mutate: 
+    * `mutate(surveys, weight_kg = weight / 1000)`
+
+> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R), Tasks 1-6.
+
+### Aggregation
+
+* Group by: 
+    * `group_by(surveys, species_id)`
+    * Different looking kind of `data.frame` 
+        * Source, grouping, and data type information
+
+```
+surveys_by_species <- group_by(surveys, species_id)
+```
+
+* Grouping with `summarize()`:
+    * `summarize(surveys_by_species, avg_weight = mean(weight))`
+    * Real data problem: 
+        * `mean(weight)` when `weight` has missing values (`NA`) 
+            * Returns `NA`
+            * `mean(weight, na.rm=TRUE)`
+
+> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R), Tasks 7-8.
+
+### Pipes
+
+* Combine a series of data manipulation actions
+* Intermediate variables
+    * Step-wise approach 
+    * Can get cumbersome with lots of variable objects in the environment
+
+```
+surveys_DS <- filter(surveys, species_id == "DS")
 surveys_DS_by_yr <- group_by(surveys_DS, year)
-surveys_DS_by_yr_avg_weight <- summarize(surveys_DS_by_yr, avg_weight = mean(weight))
+avg_weight_DS_by_yr <- summarize(surveys_DS_by_yr, 
+                                 avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-* This can get a little cumbersome
-* Pipes are an alternative
-* Pipe `%>%` takes the output of the one command and passes it as input to next
-  command, so `x %>% f(y) == f(x, y)`
-
-`surveys %>% filter(species_id == 'DS')`
-
-```
-surveys %>% filter(species_id == 'DS') %>% group_by(year) %>% summarize(avg_weight = mean(weight))
-```
+* Pipes:
+    * Operator: 
+        * `%>%`
+    * Operation:
+        * `%>%` takes the output of one command and passes it as input to the next command 
+        * `x %>% f(y)` translates to `f(x, y)`
+        * `surveys %>% filter(species_id == "DS")`
 
 ```
 surveys %>%
-  filter(species_id == 'DS') %>%
+  filter(species_id == "DS") %>%
   group_by(year) %>%
-  summarize(avg_weight = mean(weight))
+  summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-## Using Dplyr with databases
+### Using `dplyr` with databases
 
-We can also use Dplyr to access data directly from a database.
-
-* No need to export files from the database
-* Let's the database do the heavy lifting: faster, no RAM limits
+* We can also use `dplyr` to access data directly from a database.
+    * No need to export files from the database
+    * Lets the database do the heavy lifting
+        * Faster
+        * No RAM limits
 
 ```
 portaldb <- src_sqlite("portal_mammals.sqlite")

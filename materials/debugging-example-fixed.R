@@ -11,6 +11,7 @@
 
 library(dplyr)
 library(ggplot2)
+options(error = tamper::tamper)
 
 get_data <- function() {
   # Import data from surveys.csv
@@ -32,9 +33,9 @@ add_size_classes <- function(df) {
   # Add size class data to a data frame
   # Input: data frame with weight column containing size information
   data_size_class <-
-    df %>% 
-    na.omit() %>% 
-    rowwise() %>% 
+    df %>%
+    na.omit() %>%
+    rowwise() %>%
     mutate(size_class = get_size_class(weight, 50))
   return(data_size_class)
 }
@@ -44,8 +45,8 @@ get_size_class_ts_data <- function(df) {
   # Input: data frame with a year column for time
   #        and a size_class column
   ts_data <-
-    df %>% 
-    group_by(year, size_class) %>% 
+    df %>%
+    group_by(year, size_class) %>%
     summarize(counts = n())
   return(ts_data)
 }

@@ -5,11 +5,18 @@ title: Integrating R and SQL
 language: R
 ---
 
-* Already seen how to connect to database using `dplyr`
-* What if we want to do this outside of a `dplyr` context
-* Use `DBI` and `RSQLite` (or other appropriate DBMS plugin)
+> Remember to
+>    
+> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
+> * open `portal_mammals.sqlite` in SQLite Manager. 
+> * make sure the copy you are going to use in class does not have the `SpeciesCounts` table or view.
 
-## Connect
+* We've already seen how to connect to databases using `dplyr`.
+* What if we want to work outside of a `dplyr` context?
+* Use `DBI` and `RSQLite`.
+    * also other database management systems plugins
+
+### Connect
 
 ```
 library(DBI)
@@ -18,7 +25,7 @@ portalDB <- "portal_mammals.sqlite"
 conn <- dbConnect(SQLite(), portalDB)
 ```
 
-## Checkout the database
+### Check out database structure
 
 ```
 dbListTables(conn)
@@ -26,34 +33,42 @@ dbListFields(conn, "plots")
 dbListFields(conn, "surveys")
 ```
 
-## Run queries
+### Run queries
 
 ```
 query <- "SELECT genus, species, COUNT(*)
           FROM surveys JOIN species
-		  ON surveys.species_ID = species.species_ID
-		  GROUP BY genus, species"
+          ON surveys.species_ID = species.species_ID
+          GROUP BY genus, species;"
 species_counts <- dbGetQuery(conn, query)
 ```
 
-**Exercise 1**
+> Do [Exercise 1 - Connect and Query]({{ site.baseurl }}/exercises/R-sql-connect-and-query-R).
 
 
-## Write new information to database
+### Write new information to database
+
+> Show the original `portal_mammals.sqlite` in SQLite Manager.
+
+* Write as a table
 
 ```
 dbWriteTable(conn, "SpeciesCounts", species_counts)
+dbListTables(conn)
 ```
 
-* Show that this table now exists in the database
-* Alternatively we could make a view
+> Show `SpeciesCounts` table in `portal_mammals.sqlite`.
+
+* Write as a view
 
 ```
 viewquery <- paste("CREATE VIEW SpeciesCounts AS", query)
 dbSendQuery(conn, viewquery)
 ```
 
-* Show the view in the DB
+> Show the `SpeciesCounts` view in `portal_mammals.sqlite`.
 
 
-**Exercise 3**
+> Do [Exercise 3 - Export to Database]({{ site.baseurl }}/exercises/R-sql-export-to-database-R).
+
+> Assign remaining exercises.

@@ -5,32 +5,33 @@ title: Project Structure
 language: R
 --- 
 
-## Simple
-
-* Code: / (single top level script)
-* Project File: /
-* README: / (description of what you're doing and how to run w/top level script)
-* Data: /data (sub dirs if useful)
-* Results: /results (sub dirs if useful)
+### Simple
+* Main/Root directory (`./`)
+    * Code file (`.R`)
+        * single top level script
+        * linked data manipulation and analysis scripts
+    * Project File (`.Rproj`)
+    * `README`
+        * description of what you're doing and how to run w/top level script
+        * `.txt` or `.md`        
+    * Data (`./data/`) 
+        * Sub directories may be useful
+    * Results (`./results/`)
+        * Sub directories may be useful
 
 ```
-/README
-/myproject.Rproj
-/mydatascript.R
-/myanalysisscript.R
-/data/datafile1.txt
-/data/datafile2.txt
-/results/graph1.png
-/results/graph2.png
-/paper/mypaper.Rmd
-/paper/mypaper.pdf
+./README
+./myproject.Rproj
+./mydatascript.R
+./myanalysisscript.R
+./data/datafile1.txt
+./data/datafile2.txt
+./results/graph1.png
+./results/graph2.png
 ```
 
-## Advanced
+### Advanced
 
-* Project file & README: /
-* Docs: /doc
-* Paper: /paper or /doc/paper
-* Code: /src
-* Data: /data
-* Results: /results
+* Code directory (`./code/` or `./src/`)
+* Documentation file (`./docs/`)
+* Manuscript files (`./paper/` or `./doc/paper/`)
