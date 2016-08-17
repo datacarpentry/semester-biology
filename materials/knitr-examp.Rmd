@@ -1,0 +1,49 @@
+---
+title: "Portal population dynamics"
+author: "Ethan White"
+date: "December 1, 2015"
+output: html_document
+---
+
+Explore patterns in population dynamics at Portal.
+
+## Required Libraries 
+```{r, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+```
+
+## Data
+
+Data is from the [Portal project teaching database](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459) published on Figshare. We need the surveys table for our analysis:
+
+```{r}
+download.file("http://files.figshare.com/2292172/surveys.csv", "surveys.csv")
+data <- read.csv("surveys.csv")
+```
+
+## Analyze population time-series
+
+Get the time-series of counts for all species.
+
+```{r}
+time_series <-
+  data %>%
+  group_by(species_id, year) %>%
+  summarize(count = n()) %>%
+  na.omit()
+
+head(time_series)
+```
+
+Plot the time-series.
+
+```{r, message=FALSE, echo=FALSE}
+ggplot(time_series, aes(x = year, y = count)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~species_id) +
+  scale_x_continuous(breaks=pretty_breaks(n=2))
+```
+
