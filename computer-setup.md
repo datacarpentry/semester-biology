@@ -3,6 +3,9 @@ layout: page
 title: Computer Setup
 ---
 
+***WIS 6934 students will need their own laptops set up with SQL by the start of 
+classes, R by week 3, and Git by week 8.***
+
 ### Python
 
 Download and install the
