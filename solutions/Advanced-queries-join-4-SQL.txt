@@ -1,4 +1,4 @@
-"plot_type","Individuals_Sampled"
+"plot_type","individuals_sampled"
 "Control",15466
 "Long-term Krat Exclosure",5031
 "Rodent Exclosure",4090
