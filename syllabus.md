@@ -8,9 +8,9 @@ professor: Dr. Ethan White
 office: Room 1 in Building 150 (just north of Newins-Zeigler)
 email: ethanwhite@ufl.edu
 phone: 352-294-2081
-schedule: ['Tuesdays, 11:45-12:35, 1142 McCarty A',
-           'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
-office_hours: Thursdays 1-2 pm, or by appointment
+schedule: ['Tuesdays, 3-4, 219 Newins-Ziegler Hall',
+           'Fridays, 11:45-1:40, 222 Newins-Ziegler Hall']
+office_hours: Thursdays 3-4 pm, or by appointment
 TA: Andrew Marx
 TA_email: andrewjmarx@ufl.edu
 ---
@@ -38,7 +38,6 @@ Phone: {{ page.phone }}
 {% for class in page.schedule %}
   {{ class }}
 {% endfor %}
-
 
 
 ### Office Hours
@@ -101,10 +100,10 @@ Knowledge of basic biology.
 
 In this course you will learn all of the fundamental aspects of computer
 programming that are necessary for conducting biological research. By the end of
-the course you will be able to use these tools to import data into R,
-perform analysis on that data, and export the results as graphs, text files, or
-whatever else you might need. By learning how to get the computer to do your
-work for you, you will be able to do more science faster.
+the course you will be able to use these tools to import data into R, perform
+analysis on that data, and export the results to graphs, text files, and
+databases. By learning how to get the computer to do your work for you, you will
+be able to do more science faster.
 
 
 ### Course Goals and Objectives
@@ -126,15 +125,14 @@ This course contributes to the 'Quantitative Skills' and 'Conducting and
 Analyzing Independent/Original Research' Student Learning Outcomes specified in
 the
 [Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](http://assessment.aa.ufl.edu/Data/Sites/22/media/2013-14gaap/cals/2013-14-cals-wildlife-ecol-and-consvn-phd-aap.pdf),
-by providing students the skills and they knowledge they need to manage and
-analyze the data used in research.
+by providing students the skills and knowledge they need to manage and analyze
+the data used in research.
 
 
 ### Teaching Philosophy
 
 This class is taught using a flipped, learner-centered, approach, because
-learning to program and work with data has very little to do with listening to
-someone talk about programming and a lot to do with students working on
+learning to program and work with data requires actively working on
 computers. Flipped classes work well for all kinds of content, but I think they
 work particularly well for computer oriented classes. If you're interested in
 knowing more take a look at this great
@@ -144,16 +142,15 @@ knowing more take a look at this great
 ### Instructional Methods
 
 As a flipped classroom, students are provided with either reading or video
-material that they are expected to view/read prior to class. Many classes will
-typically start with 5-10 minutes of either reviewing parts of this material or
-answering student questions about it. The rest of the class period will be used
-to work on exercises. During this time the instructor will actively engage with
-students to help them understand material they find confusing, explain
-misunderstandings and help identify mistakes that are preventing students from
-from accomplishing the exercises, and discuss novel applications and alternative
-approaches to the data analysis challenges students are attempting to solve. For
-more challenging topics class may start with 20-30 minute demonstrations on the
-concepts followed by time to work on exercises.
+material that they are expected to view/read prior to class. Classes will
+involve brief refreshers on new concepts followed by working on exercises in
+class that cover that concept. While students are working on exercises the
+instructor will actively engage with students to help them understand material
+they find confusing, explain misunderstandings and help identify mistakes that
+are preventing students from completing the exercises, and discuss novel
+applications and alternative approaches to the data analysis challenges students
+are attempting to solve. For more challenging topics class may start with 20-30
+minute demonstrations on the concepts followed by time to work on exercises.
 
 
 ## Course Policies
@@ -162,7 +159,8 @@ concepts followed by time to work on exercises.
 ### Attendance Policy
 
 Attendance will not be taken or factor into the grades for this class. However,
-experience suggests that students who regularly miss class perform poorly.
+experience suggests that students who regularly miss class struggle to learn the
+material.
 
 
 ### Quiz/Exam Policy
@@ -183,23 +181,23 @@ of the assignment as you can based on what we have covered in class by the
 following class period. Therefore, even if something unexpected happens at the
 last minute you should already be close to done with the assignment. This policy
 also allows rapid feedback to be provided to students by returning assignments
-quickly, which is crucial to learning.
+quickly.
 
 
 ### Assignment policy
 
 Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
-submitted via email to [{{ page.email }}](mailto:{{ page.email }}) with the
-subject line:
- 
-```Data Carpentry Assignment X```, where `X` is the number of the assignment.
+submitted via Canvas.
 
 
 ### Course Technology
 
-Students are required to provide their laptops and to install free and open
-source software on those laptops. Support will be provided by the instructor in
-the installation of required software.
+Students are required to provide their own laptops and to install free and open
+source software on those laptops (see [Setup]({{ site.baseurl }}/computer-setup)
+for installation instructions). Support will be provided by the instructor in
+the installation of required software. If you don't have access to a laptop
+please contact the instructor and they will do their best to provide you with
+one.
 
 
 ## UF Policies
@@ -297,6 +295,7 @@ the two.
 
 The details course schedule is available on the course website at:
 [{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
+
 
 **Disclaimer:** This syllabus represents my current plans and objectives. As we
 go through the semester, those plans may need to change to enhance the class
