@@ -57,12 +57,30 @@
       <td align="right">{{ forloop.index }}</td>
       <td>{{ language }}</td>
       <td>{{ assignment }}</td>
-      <td align="center"><a href="{{ reading_link }}">
-        <i class="fa fa-book fa-lg"></i></a></td>
-      <td align="center"><a href="{{ lecture_link }}">
-        <i class="fa fa-comment fa-lg"></i></a></td>
-      <td align="center"><a href="{{ assignment_link }}">
-        <i class="fa fa-keyboard-o fa-lg"></i></a></td>
+
+      {% if reading_link %}
+        <td align="center"><a href="{{ reading_link }}">
+          <i class="fa fa-book fa-lg"></i></a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      {% endif %}
+
+      {% if lecture_link %}
+        <td align="center"><a href="{{ lecture_link }}">
+          <i class="fa fa-comment fa-lg"></i></a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-comment fa-lg"></i></font></td>
+      {% endif %}
+
+      {% if assignment_link %}
+        <td align="center"><a href="{{ assignment_link }}">
+          <i class="fa fa-keyboard-o fa-lg"></i></a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-keyboard-o fa-lg"></i></font></td>
+      {% endif %}
     </tr>
 
   {% endfor %}
