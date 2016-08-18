@@ -22,7 +22,9 @@ One common ecological process that can be observed from space is [phenology](htt
 Multi-band satellite imagery can be processed to provide a vegetation index of greenness called [NDVI](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). 
 NDVI values range from `-1.0` to `1.0`, where negative values indicate clouds, 
 snow, and water; bare soil returns values from `0.1` to `0.2`; and green vegetation returns values greater than `0.3`.
-Because these image data are rather large, download the [`HARV_NDVI`]({{ site.baseurl }}/data/HARV_NDVI.zip) and [`SJER_NDVI`]({{ site.baseurl }}/data/SJER_NDVI.zip) and place them in a folder with the NEON airborne data.
+Download [`HARV_NDVI`]({{ site.baseurl }}/data/HARV_NDVI.zip) and [`SJER_NDVI`]({{ site.baseurl }}/data/SJER_NDVI.zip) and place them in a folder with the NEON airborne data. The `zip` contain folders with a year's worth of NDVI sampling 
+from MODIS. The files are in order (*and named*) by date and can be organized 
+implicitly by sampling period for analysis. 
 
 1. Generate a [Canopy Height Model](http://neondataskills.org/R/Raster-Calculations-In-R/) for each site (`HARV` and `SJER`) using simple `raster` math, where `chm = dsm - dtm`.
 
@@ -38,6 +40,9 @@ the four figures on the same panel and to set margins to make labels visible.*
 
 4. Evaluate and visualize the `mean(NDVI)` [among plots](http://neondataskills.org/R/crop-extract-raster-data-R/) at each site for each 
 of the MODIS sampling periods. *Prepare your analysis results in a `data.frame` that is suitable to `ggplot2` so that it is easy to plot the sites in different colors.*
+
+   *Optional: Extract `sampling_day` from the NDVI `file_name` and include that 
+   with your `data.frame` for graphing.*
 
 5. Describe the differences in vegetation structure (`chm`) and seasonal phenology (`NDVI`) that you have observed from this analysis.
  
