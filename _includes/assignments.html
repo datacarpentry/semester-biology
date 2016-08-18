@@ -1,4 +1,5 @@
 <table>
+
   <tr>
     <th width="50">Week</th>
     <th width="200">Language</th>
@@ -7,32 +8,63 @@
     <th width="50">Lecture</th>
     <th width="50">Assignment</th>
   </tr>
+
   {% for assignment in page.assignments %}
+
+    {% for otherpage in site.pages %}
+      {% if otherpage.title == assignment and otherpage.element == 'assignment' %}
+        {% capture language %}{{ otherpage.language }}{% endcapture %}
+        {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
+        {% break %}
+      {% endif %}
+      {% assign language = nil %}
+      {% assign assignment_link = nil %}
+    {% endfor %}
+
+    {% for lecturepage in site.pages %}
+      {% if language %}
+        {% if lecturepage.title == assignment and lecturepage.element == 'lecture' and lecturepage.language == language %}
+          {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% else %}
+        {% if lecturepage.title == assignment and lecturepage.element == 'lecture' %}
+          {% capture language %}{{ lecturepage.language }}{% endcapture %}
+          {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+      {% assign lecture_link = nil %}
+    {% endfor %}
+
+    {% for readingpage in site.pages %}
+      {% if language %}
+        {% if readingpage.title == assignment and readingpage.element == 'reading' and readingpage.language == language %}
+          {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% else %}
+        {% if readingpage.title == assignment and readingpage.element == 'reading' %}
+          {% capture language %}{{ readingpage.language }}{% endcapture %}
+          {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+      {% assign reading_link = nil %}
+    {% endfor %}
+
     <tr>
       <td align="right">{{ forloop.index }}</td>
-      {% for otherpage in site.pages %}
-        {% if otherpage.title == assignment and otherpage.element == 'assignment' %}
-          <td>{{ otherpage.language }}</td>
-          {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
-          {% for lecturepage in site.pages %}
-            {% if lecturepage.title == assignment and lecturepage.element == 'lecture' and lecturepage.language == otherpage.language %}
-              {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
-              {% for readingpage in site.pages %}
-                {% if readingpage.title == assignment and readingpage.element == 'reading' and readingpage.language == otherpage.language %}
-                  {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
-                  <td>{{ assignment }}</td>
-                  <td align="center"><a href="{{ reading_link }}">
-                    <i class="fa fa-book fa-lg"></i></a></td>
-                  <td align="center"><a href="{{ lecture_link }}">
-                    <i class="fa fa-comment fa-lg"></i></a></td>
-                  <td align="center"><a href="{{ assignment_link }}">
-                    <i class="fa fa-keyboard-o fa-lg"></i></a></td>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
+      <td>{{ language }}</td>
+      <td>{{ assignment }}</td>
+      <td align="center"><a href="{{ reading_link }}">
+        <i class="fa fa-book fa-lg"></i></a></td>
+      <td align="center"><a href="{{ lecture_link }}">
+        <i class="fa fa-comment fa-lg"></i></a></td>
+      <td align="center"><a href="{{ assignment_link }}">
+        <i class="fa fa-keyboard-o fa-lg"></i></a></td>
     </tr>
+
   {% endfor %}
+
 </table>
