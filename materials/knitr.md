@@ -1,6 +1,8 @@
 ---
+layout: page
+element: notes
 title: Knitr
-layout: default
+language: R
 ---
 
 ### Literate programming

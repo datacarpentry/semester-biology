@@ -5,8 +5,8 @@ title: JOIN 3
 language: SQL
 ---
 
-We want to do an analysis comparing the size of individuals on the control plots
-to the Long-term Krat Exclosures. Write a query that returns the `year`,
+We want to do an analysis comparing the size of individuals on the `Control` 
+plots to the `Long-term Krat Exclosures`. Write a query that returns the `year`,
 `genus`, `species`, `weight` and the `plot_type` for all cases where the plot
 type is either `Control` or `Long-term Krat Exclosure`. Be sure to choose only
 rodents and exclude individuals that have not been identified to genus as in

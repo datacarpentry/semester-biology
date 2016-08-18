@@ -1,4 +1,4 @@
-"year","Total_Abundance"
+"year","total_abundance"
 1977,487
 1978,992
 1979,658

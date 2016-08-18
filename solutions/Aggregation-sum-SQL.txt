@@ -1,4 +1,4 @@
-"species_id","year","Total_Abundance","Total_Biomass_kg"
+"species_id","year","total_abundance","total_biomass_kg"
 "DM",1977,264,7.57
 "DO",1977,12,0.512
 "DS",1977,98,3.886

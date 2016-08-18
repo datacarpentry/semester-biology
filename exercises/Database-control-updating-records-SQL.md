@@ -5,7 +5,7 @@ title: Updating Records
 language: SQL
 ---
 
-Add the following note to the `FieldNotes` table in the Portal database
+Add the following note to the `field_notes` table in the Portal database
 for the date `10`/`1`/`2015`:
 
 `"Vegetation seems to have returned to normal for this time of year. The

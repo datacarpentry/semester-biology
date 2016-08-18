@@ -48,20 +48,22 @@ with it on your computer by changing the code and seeing what happens.*
 - [Functions]({{ site.baseurl }}/materials/functions_R)
 - [`for` loops]({{ site.baseurl }}/materials/for_loops_R)
 - [Other Data Structures]({{ site.baseurl }}/materials/other_data_structures_R)
-- [Conditionals]({{ site.baseurl }}/materials/conditionals)
+- [Conditionals]({{ site.baseurl }}/materials/conditionals_R)
 - [Problem Decomposition]({{ site.baseurl }}/materials/decomposition) ([R-script]({{ site.baseurl }}/materials/decomposition-example.R))
 - [Version Control]({{ site.baseurl }}/materials/version-control)
 - [Integrating R and SQL]({{ site.baseurl }}/materials/r-sql)
+- [`tidyr`]({{ site.baseurl }}/materials/tidyr)
 - [Project Structure]({{ site.baseurl }}/materials/project_structure)
-- [Debugging]({{ site.baseurl }}/materials/debugging-R) 
+- [Debugging]({{ site.baseurl }}/materials/debugging-R)
+- [`knitr`]({{ site.baseurl }}/materials/knitr) 
 
 
 ### SQL <a name="SQL"></a>
 
-- [Introduction to Databases]({{ site.baseurl }}/materials/databases_intro) ([presentation]({{ site.baseurl }}/materials/intro_to_databases.pdf)) 
+- [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql) ([presentation]({{ site.baseurl }}/materials/intro_to_databases.pdf))
+- [Database Control - SQLite Manager]({{ site.baseurl }}/materials/database-control-sql)
+- [Database Control - Queries]({{ site.baseurl }}/materials/database-control-queries-sql)
 - [Database Structure]({{ site.baseurl }}/materials/database_structure) ([presentation]({{ site.baseurl }}/materials/databases_structure.pdf))
-- [Creating Tables]({{ site.baseurl }}/materials/sql-creating-tables)
-- [Updating Tables]({{ site.baseurl }}/materials/sql-updating-tables)
 - [Joins]({{ site.baseurl }}/materials/sql_joins)
 - [Nested Queries]({{ site.baseurl }}/materials/sql_nested_queries)
 
