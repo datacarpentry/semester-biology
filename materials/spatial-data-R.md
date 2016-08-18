@@ -88,6 +88,14 @@ chm_harv <- dsm_harv - dtm_harv
 ### Import and reproject shapefiles
 
 * `vector` data can be added to `rasters` to provide reference information
+    * `csv`
+    * `shapefile`
+        * set of multiple files
+            * same name, different extensions
+        * `readOGR("directory/", "file_name_without_extentsions")`
+            * stores data in a single `data.frame`
+            * access 'attributes' similar to GIS software using `$`
+                * `file_name$site_id`
 
 ```
 plots_harv <- readOGR("plot_locations/", "HARV_plots")
@@ -124,9 +132,18 @@ plot(plots_harv_utm, add=TRUE, pch=1, cex=2, lwd=2)
 [1] 18.00000 15.94000 18.70999 19.45999 22.72000
 ```
 
+* These are canopy heights from `chm_harv` at the coordinates from 
+  `plots_harv_utm`. 
+    * Order of values lines up with `plots_harv_utm$site_id`.
+
 ### `raster` in time series
 
-* NDVI is a data product stored in a `raster`
+* Values over time can be stored in
+    * a single file with multiple bands (*or layers*,`stack`)
+        * similar to `RGB` raster with multiple color bands
+    * multiple coordinated files
+* The assignment uses multiple coordinated files of NDVI
+    * NDVI is a data product (*vegetation index*) stored in a `raster`
     * Works just like the files with 'raw' data
 
 > Assign remainder of [Exercise 1 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
