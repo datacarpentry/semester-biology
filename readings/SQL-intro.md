@@ -8,7 +8,6 @@ language: SQL
 * Introduction
 
   * Databases Intro - [Video](https://www.youtube.com/watch?v=kaKa6N9lEG8) \| [Reading](http://www.datacarpentry.org/sql-ecology-lesson//00-sql-introduction.html)
-  * Quality Assurance & Control - [Reading](http://www.datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control.html)
 
 * Basic Queries
 
