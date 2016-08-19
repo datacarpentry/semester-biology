@@ -1,6 +1,6 @@
 ---
 layout: page
-element: notes
+element: lecture
 title: Knitr
 language: R
 ---
