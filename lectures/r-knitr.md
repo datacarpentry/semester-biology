@@ -1,7 +1,7 @@
 ---
 layout: page
 element: lecture
-title: Project Weeks
+title: Knitr
 language: R
 ---
 
