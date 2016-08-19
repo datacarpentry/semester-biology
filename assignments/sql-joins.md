@@ -1,9 +1,9 @@
 ---
 layout: page
 element: assignment
-title: Database Structure and Joins
+title: Joins and Tidy Data
 language: SQL
-exercises: ['JOIN 1', 'JOIN 2', 'JOIN 3', 'JOIN 4', 'Nesting Queries', 'Real Portal Data']
+exercises: ['JOIN 1', 'JOIN 2', 'JOIN 3', 'JOIN 4', 'Real Portal Data', 'Data entry validation in Excel']
 ---
 
 #### Learning Objectives
@@ -11,8 +11,8 @@ exercises: ['JOIN 1', 'JOIN 2', 'JOIN 3', 'JOIN 4', 'Nesting Queries', 'Real Por
 > Following this assignment students should be able to:
 >
 > - use joins to combine tables in SQL
-> - nest the results of one query as the input for another
 > - understand the basic rules of tidy data
+> - implement quality control for data entry in spreadsheets
 
 {% include reading.html %}
 

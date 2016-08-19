@@ -6,4 +6,4 @@ language: SQL
 ---
 
 1. [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql)
-2. [Database Control]({{ site.baseurl }}/materials/database-control-sql)
+2. [Basic Queries *to be added*]({{ site.baseurl }}/materials/sql-basic-queries)
