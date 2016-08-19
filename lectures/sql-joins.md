@@ -1,7 +1,7 @@
 ---
 layout: page
 element: lecture
-title: Database Structure and Joins
+title: Joins and Tidy Data
 language: SQL
 ---
 
