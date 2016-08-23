@@ -19,8 +19,8 @@ sar_parameters = [[22.7, 0.3], [1.2, 0.163, 0.009],
 
 Now, follow these instructions carefully:
 
-1.  Save the file and commit the change
-2.  Email me to let me know you've changed the file
+1.  Save the file and commit the change.
+2.  Email me to let me know you've changed the file.
 3.  I'll email you back and tell you to go ahead and try to push the change to
     your GitHub repository.
 4.  You should get an error indicating that the commit failed because

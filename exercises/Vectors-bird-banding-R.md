@@ -23,8 +23,8 @@ number_of_birds <- c(28, 32, 1, 0, 10, 22, 30, 19, 145, 27,
 1. How many sites are there?
 2. How many birds were counted at site 42?
 3. How many birds were counted at the last site? Have the computer
-choose the last site automatically in some way, not by manually
-entering its position.
+   choose the last site automatically in some way, not by manually
+   entering its position.
 4. What is the total number of birds counted across all of the sites?
 5. What is the smallest number of birds counted?
 6. What is the largest number of birds counted?

@@ -17,6 +17,6 @@ height <- c(9.6, 7.6, 2.2, 1.5, 4.0, 3.0, 4.5, 2.3, 7.5, 3.2)
 
 Copy these vectors into an R script and then determine the following:
 
-1. The volume of each shrub (i.e., the length times the width times the height)
-2. The total volume of all of the shrubs
-3. A vector of the height of shrubs with lengths greater than 2.5
+1. The volume of each shrub (i.e., the length times the width times the height).
+2. The total volume of all of the shrubs.
+3. A vector of the height of shrubs with lengths greater than 2.5.

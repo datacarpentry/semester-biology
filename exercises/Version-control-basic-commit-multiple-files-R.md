@@ -8,7 +8,6 @@ language: R
 This is a follow up to
 [Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R).
 
-
 After talking with Dr. Granger you realize that
 `houseelf_earlength_dna_data.csv` is only the first of many files to come. To
 help keep track of the files you'll need to number them, so rename the current

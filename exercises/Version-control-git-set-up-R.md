@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Version Control
-title: Git Set-up
+title: Git Setup
 language: R
 ---
 
@@ -13,4 +13,3 @@ language: R
 5. `commit` the completed version of the assignment (*don't forget to include a
    good commit message*).
 6. `push` the changes to GitHub.
-

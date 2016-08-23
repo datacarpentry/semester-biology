@@ -16,11 +16,11 @@ started.
 The problem is that all of the important code that needs refactoring is
 outside of functions at the bottom of the script. So,
 
-1.  Move the bulk of this code into one of more functions
+1.  Move the bulk of this code into one of more functions.
 2.  Write a test that executes the main function using StringIO to make
-    example data
-3.  Make sure it is doing what you expect
+    example data.
+3.  Make sure it is doing what you expect.
 4.  Refactor the portion of the code that gets the average values of gc
     content for each size class to use Numpy or Pandas.
 5.  Rerun your tests to make sure that both the regression test and the
-    unit tests still pass
+    unit tests still pass.

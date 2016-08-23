@@ -28,7 +28,7 @@ the specifications for the earlength size classes were:
 
 `test_that("get_size_class() works",`
 
-1.  for each case when the numbers are in the range.
-2.  for the edgecases of 8, 10, and 15.
+1.  for each case when the numbers are in the range,
+2.  for the edgecases of 8, 10, and 15,
 3.  but the function fails if non-numerical values are input as an argument
     (e.g., a string from a header row that didn't get removed).
