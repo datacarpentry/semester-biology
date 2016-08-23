@@ -7,7 +7,7 @@ language: SQL
 
 > Remember to
 >
-> *  download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
+> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
 
 ### Selecting columns
@@ -56,7 +56,7 @@ FROM surveys;
 ```
 
 
-> Do Exercise 2 - [SELECT]({{ site.baseurl }}/exercises/Basic-queries-select-SQL.md)
+> Do [Exercise 2 - SELECT]({{ site.baseurl }}/exercises/Basic-queries-select-SQL).
 
 
 ### Filtering
@@ -66,13 +66,13 @@ FROM surveys;
 ```
 SELECT hindfoot_length
 FROM surveys
-WHERE species_id = 'DS'
+WHERE species_id = 'DS';
 ```
 
 ```
 SELECT species_id
 FROM surveys
-WHERE hindfoot_length >= 30
+WHERE hindfoot_length >= 30;
 ```
 
 * To combine two or more conditions use `AND` and `OR`.
@@ -90,12 +90,13 @@ WHERE species_id = 'DS' AND year > 1990;
 ```
 SELECT year, month, day, species_id, hindfoot_length
 FROM surveys
-WHERE species_id = 'DS' AND year > 1990 AND hindfoot_length IS NOT NULL;
+WHERE species_id = 'DS' AND year > 1990 
+  AND hindfoot_length IS NOT NULL;
 ```
 
 * If you want only NULL values, use `IS NULL` instead
 
-> Do Exercise 3 - [WHERE]({{ site.baseurl }}/exercises/Basic-queries-where-SQL.md)
+> Do [Exercise 3 - WHERE]({{ site.baseurl }}/exercises/Basic-queries-where-SQL).
 
 
 ### Style
@@ -139,20 +140,20 @@ FROM species
 ORDER BY taxa, genus, species;
 ```
 
-> Do Exercise 4 - [ORDER BY]({{ site.baseurl }}/exercises/Basic-queries-order-by-SQL.md)
+> Do [Exercise 4 - ORDER BY]({{ site.baseurl }}/exercises/Basic-queries-order-by-SQL).
 
 
 ### Comments
 
 * Even with good style it can quickly become difficult to remember exactly what
-  a long query is doing. To help us remember/understand what the code is doing we
-  can use comments.
+  a long query is doing. To help us remember/understand what the code is doing 
+  we can use comments.
 
 ```
 -- Get post-2000 weight data on Kangaroo Rats
 SELECT year, month, day, species_id, weight
 FROM surveys
-WHERE year > 2000 AND species_id IN ('DO', 'DM', 'DS')
+WHERE year > 2000 AND species_id IN ('DO', 'DM', 'DS');
 ```
 
 * `IN` is a short way to check a single variable against multiple conditions. In
