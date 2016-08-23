@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Version Control Basics
 language: R
-exercises: ['Set-up Git', 'First Commit', 'Importing Data', 'Commit Multiple Files', 'Adding a Remote', 'Pushing Changes', 'Pulling and Pushing']
+exercises: ['Set Up Git', 'First Commit', 'Importing Data', 'Commit Multiple Files', 'Adding a Remote', 'Pushing Changes', 'Pulling and Pushing']
 ---
 
 #### Learning Objectives
