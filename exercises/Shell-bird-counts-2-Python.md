@@ -29,7 +29,7 @@ already written some code that does this.  Instead of rewriting the code
 ourselves we can simply add it to a pipeline. Let's go ahead and download the
 file:
 
-`curl -O http://www.programmingforbiologists.org/code/species_counts.py`
+`curl -O http://www.programmingforbiologists.org/code/species-counts.py`
 
 To run this code we need to tell the shell to run it using python, which we do
 by giving it the name of the program that will run it, then the name of our

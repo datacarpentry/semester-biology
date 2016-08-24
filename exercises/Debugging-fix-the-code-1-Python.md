@@ -32,4 +32,4 @@ tests later to help you track the tricky problems down, so the really important
 thing at this point is to get the code running so that you can actually run the 
 tests.
 
-[Download the code]({{ site.baseurl }}/code/buggy_granger_analysis_code.py) to get started.
+[Download the code]({{ site.baseurl }}/code/buggy-granger-analysis-code.py) to get started.
