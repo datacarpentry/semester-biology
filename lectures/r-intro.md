@@ -6,5 +6,5 @@ language: R
 ---
 
 1. [Introduction]({{ site.baseurl }}/materials/r-intro)
-2. [Data Structures]({{ site.baseurl }}/materials/data_structures_R)
+2. [Data Structures]({{ site.baseurl }}/materials/data-structures-R)
 
