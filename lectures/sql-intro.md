@@ -5,6 +5,7 @@ title: Introduction to Databases
 language: SQL
 ---
 
-1. [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql)
-2. [Basic Queries]({{ site.baseurl }}/materials/sql-basic-queries)
-3. [Aggregation]({{ site.baseurl }}/materials/sql-aggregation)
+1. [Demo Code for Where Students Can Get in the Course]({{ site.baseurl }}/code/first_day_demo.R)
+2. [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql)
+3. [Basic Queries]({{ site.baseurl }}/materials/sql-basic-queries)
+4. [Aggregation]({{ site.baseurl }}/materials/sql-aggregation)
