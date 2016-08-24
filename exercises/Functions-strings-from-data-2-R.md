@@ -8,7 +8,7 @@ language: R
 This is a follow up to [Strings from Data 1]({{ site.baseurl }}/exercises/Strings-strings-from-data-1-R/).
 
 A colleague has produced a file with one DNA sequence on each line. Download
-[the file]({{ site.baseurl }}/data/dna_sequences_1.txt) and load it into R using
+[the file]({{ site.baseurl }}/data/dna-sequences-1.txt) and load it into R using
 `read.csv()`. The file has no header.
 
 Write a function to calculate GC content. GC content is the percentage of bases 

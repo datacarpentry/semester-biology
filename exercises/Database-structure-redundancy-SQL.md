@@ -5,7 +5,7 @@ title: Redundancy
 language: SQL
 ---
 
-Here's where we tell you that you have been working with a simplified version of the Portal database. (*We're sure that you had suspicions that the data was too clean, anyway*). Download the original [`Plots` table]({{ site.baseurl }}/data/Portal_plots_original.csv) and follow the steps from [Importing Data]({{ site.baseurl }}/exercises/Database-control-importing-data-SQL). Name the `New Database` something like `portal_mammals_original.sqlite`. Then,
+Here's where we tell you that you have been working with a simplified version of the Portal database. (*We're sure that you had suspicions that the data was too clean, anyway*). Download the original [`Plots` table]({{ site.baseurl }}/data/Portal-plots-original.csv) and follow the steps from [Importing Data]({{ site.baseurl }}/exercises/Database-control-importing-data-SQL). Name the `New Database` something like `portal_mammals_original.sqlite`. Then,
 
 **Before starting this problem make sure that you have a backup of your database** In general, when developing a database it's probably 
 best to work on a copy that is specifically just for development. Once it's working then apply it to your actual database. *Always, always, backup your databases before messing with them in this manner. 

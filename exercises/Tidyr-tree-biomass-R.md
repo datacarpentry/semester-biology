@@ -23,7 +23,7 @@ where `Mass` is measured in kg of dry above-ground biomass and
 
 We're going to estimate the total tree biomass for trees in a 96
 hectare area of the Western Ghats in India.
-[The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt)
+[The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot-data-Rev.txt)
 is available on
 [Ecological Archives](http://esapubs.org/Archive/).
 Unfortunately, the data is stored in a poor database structure and

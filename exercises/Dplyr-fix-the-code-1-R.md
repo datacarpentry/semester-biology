@@ -8,14 +8,14 @@ language: R
 This is a follow-up to
 [Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R).
 If you haven't already downloaded the
-[shrub volume data]({{ site.baseurl }}/data/shrub_volume_experiment.csv)
+[shrub volume data]({{ site.baseurl }}/data/shrub-volume-experiment.csv)
 do so now and store it in your `data` directory.
 
 The following code is supposed to import the shrub volume data and calculate the
 average shrub volume for each experiment and, separately, for each site
 
 ```
-read.csv("data/shrub_volume_experiment.csv")
+read.csv("data/shrub-volume-experiment.csv")
 shrub_data %>%
   mutate(volume = length * width * height) %>%
   group_by(site) %>%

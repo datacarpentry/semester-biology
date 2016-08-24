@@ -6,7 +6,7 @@ language: R
 ---
 
 A colleague has produced a file with one DNA sequence on each
-line. Download [the file]({{ site.baseurl }}/data/dna_sequences_1.txt)
+line. Download [the file]({{ site.baseurl }}/data/dna-sequences-1.txt)
 and load it into R using `read.csv()`. The file has no header and is
 separated by white space (`""`).
 

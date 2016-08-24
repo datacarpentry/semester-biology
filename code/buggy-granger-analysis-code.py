@@ -35,7 +35,7 @@ def export_to_csv(data, filename):
     output_file.close()
 
 if '__name__' == __main__:
-    elves_data = get_data_from_web('http://programmingforbiologists.org/sites/programmingforbiologists.org/files/houseelf_earlength_dna_data.csv')
+    elves_data = get_data_from_web('http://programmingforbiologists.org/sites/programmingforbiologists.org/files/houseelf-earlength-dna-data.csv')
     
     #Determine individual level earth length category and gc content values
     results = []

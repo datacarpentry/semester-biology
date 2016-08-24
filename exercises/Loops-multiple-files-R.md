@@ -15,7 +15,7 @@ all of the bacteria in the database and got started working with a handful of
 [archaea](https://en.wikipedia.org/wiki/Archaea). Sadly, his skill with a burner and pipette has not prepared him at 
 all for work on a computer.
 
-Help him out by downloading [the data]({{ site.baseurl }}/data/archaea_dna.zip)
+Help him out by downloading [the data]({{ site.baseurl }}/data/archaea-dna.zip)
 and looping over the files to determine the GC content for each file. Unzip the
 the .zip file into your `data` directory. If you look at the data you'll see
 that it's made up of one file per species using the [FASTA dna sequence format](https://en.wikipedia.org/wiki/FASTA_format). We 

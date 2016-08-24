@@ -22,7 +22,7 @@ One common ecological process that can be observed from space is [phenology](htt
 Multi-band satellite imagery can be processed to provide a vegetation index of greenness called [NDVI](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). 
 NDVI values range from `-1.0` to `1.0`, where negative values indicate clouds, 
 snow, and water; bare soil returns values from `0.1` to `0.2`; and green vegetation returns values greater than `0.3`.
-Download [`HARV_NDVI`]({{ site.baseurl }}/data/HARV_NDVI.zip) and [`SJER_NDVI`]({{ site.baseurl }}/data/SJER_NDVI.zip) and place them in a folder with the NEON airborne data. The `zip` contain folders with a year's worth of NDVI sampling 
+Download [`HARV_NDVI`]({{ site.baseurl }}/data/HARV-NDVI.zip) and [`SJER_NDVI`]({{ site.baseurl }}/data/SJER-NDVI.zip) and place them in a folder with the NEON airborne data. The `zip` contain folders with a year's worth of NDVI sampling 
 from MODIS. The files are in order (*and named*) by date and can be organized 
 implicitly by sampling period for analysis. 
 

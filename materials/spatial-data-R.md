@@ -8,8 +8,8 @@ language: R
 > Remember to download and set-up directory:
 >
 > * [LiDAR rasters and plots]({{ site.baseurl }}/data/Neon-airborne.zip)
-> * [`HARV_NDVI`]({{ site.baseurl }}/data/HARV_NDVI.zip) 
-> * [`SJER_NDVI`]({{ site.baseurl }}/data/SJER_NDVI.zip)
+> * [`HARV_NDVI`]({{ site.baseurl }}/data/HARV-NDVI.zip) 
+> * [`SJER_NDVI`]({{ site.baseurl }}/data/SJER-NDVI.zip)
 
 > Set-up R Console:
 

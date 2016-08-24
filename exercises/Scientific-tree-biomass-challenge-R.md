@@ -20,7 +20,7 @@ Ghats in India.
 
 1.  Write a function that takes a vector of tree diameters as an argument and   
     returns a vector  of tree masses.
-2.  [The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt)
+2.  [The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot-data-Rev.txt)
     is available on [Ecological Archives](http://esapubs.org/Archive/), but
     unfortunately due to poor database structure using all of the trees would be
     a hassle. You could try to solve this problem yourself, but it turns out
@@ -28,7 +28,7 @@ Ghats in India.
     [EcoData Retriever](http://ecodataretriever.org/) and use it to download and
     cleanup this data automatically (using the command line interface the
     command would be `retriever install csv Ramesh2010` and the data will be
-    stored in `Ramesh2010_macroplots.csv`) and import it into R.
+    stored in `Ramesh2010-macroplots.csv`) and import it into R.
 3.  If you look at the file or [the
     metadata](http://esapubs.org/archive/ecol/E091/216/metadata.htm)
     carefully you'll notice that the data is actually in girth (i.e.,
