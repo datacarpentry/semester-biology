@@ -11,5 +11,4 @@ language: R
 
 * Readings
 
-  * [Graphics with ggplot2 using ggplot](http://www.noamross.net/blog/2012/10/5/ggplot-introduction.html)
-  * [Graphics with ggplot2 using qplot](http://statmethods.net/advgraphs/ggplot2.html) (*optional*)
+  * [R for Data Science - Data visualisation](http://r4ds.had.co.nz/data-visualisation.html)
