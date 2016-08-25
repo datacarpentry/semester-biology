@@ -55,8 +55,23 @@ SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
 FROM surveys;
 ```
 
-
 > Do [Exercise 2 - SELECT]({{ site.baseurl }}/exercises/Basic-queries-select-SQL).
+> Don't worry if you don't know how to save it yet, we'll cover that in a
+> minute.
+
+### Saving queries for future use
+
+* Views save queries to run again.
+* Create them by using `Create View` in the `View` menu, or by adding `CREATE
+  VIEW *viewname* AS` to the beginning of a query.
+
+```
+CREATE VIEW hindfoots_m AS
+SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
+FROM surveys;
+```
+
+> Save the results of Exercise 2 as a new view.
 
 
 ### Filtering
