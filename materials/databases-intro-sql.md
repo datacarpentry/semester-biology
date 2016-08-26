@@ -22,6 +22,7 @@ language: SQL
     * Set valid data type and value constraints.
     * Use data entry forms in  Excel, Access, Filemaker, etc.
     * Use quality control scripts to test entered data.
+* Concepts are core to understanding data manipulation in other languages
 
 ### Database management systems
 
