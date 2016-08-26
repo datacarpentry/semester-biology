@@ -8,7 +8,6 @@ language: SQL
 > Remember to 
 >
 > * Remind students to install Firefox.
-> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 
 > Walk students through installing SQLite Manager Add-on.
 
@@ -37,20 +36,44 @@ language: SQL
 	  * Access - commonly used, GUI
 	  * PostgreSQL - fast/powerful, lots of users
 
-> Open and preview SQLite with `portal_mammals.sqlite`.
-
-### Key features of database management systems
-
-* Data is separate from manipulations of the data
-* Tables - store the data
-* Queries - store questions about the data
-    * If we update the data, the query asks the same question of the new data.
-
 ### Relational databases
 
 * Data is stored in tables.
     * One table per type of data
     * Tables can be linked together to combine information.
+
+> Open SQLite Manager
+> Walk through importing surveys table
+
+1. Download https://ndownloader.figshare.com/files/2292172
+2. `Database` -> `New Database` -> name `portal_mammals.sqlite`
+3. `Import`
+4. `Select File` and navigate to raw data
+5. Select `csv` & check `First row contains column names`
+6. `OK` to modify the data
+7. Name table `surveys`
+8. Select data types
+
+    * Fields in databases have types that define the kind of data they contain.
+    * Each field/column can only have one type.
+    * We have to define the types in advance.
+    * Types include
+        * Integer
+        * Text
+        * Decimal/Double/Real/Float
+    * Types are highly configurable for when space is limiting
+        * Maximum value of integers
+        * Maximum length of text
+        * How many values before and after the decimal place
+9. Select `recordID` as the `Primary Key` and click `OK`.
+
+    * Every table "needs" a column (or set of columns) that is unique across
+      records/row.
+    * This is called the `Primary Key`.
+    * The easiest way to do this is to use an `INTEGER` that increments every time a
+      new record is added.
+    * Many databases that you import will already have a field like this.
+
 * Each row contains a single record.
     * A single observation or data point
 * Each column or field contains a single attribute.
@@ -60,28 +83,15 @@ language: SQL
 >
 > * objects panel with `Tables` and `Views`.
 > * `Browse & Search` tab.
+> * Show students the `Structure` tab.
 
-### Data Types
+> We've just done most of Exercise 1
+> Do [Exercise 1.11 - Importing Data]({{ site.baseurl }}/exercises/Database-control-importing-data-SQL).
 
-* Fields in databases have types that define the kind of data they contain.
-* Each field/column can only have one type.
-* We have to define the types in advance.
-* Types include
-    * Integer
-    * Text
-    * Decimal/Double/Real/Float
-* Types are highly configurable for when space is limiting
-    * Maximum value of integers
-    * Maximum length of text
-    * How many values before and after the decimal place
 
-> Show students the `Structure` tab.
+### Queries separate from data
 
-### Primary keys
-
-* Every table "needs" a column (or set of columns) that is unique across
-  records/row.
-* This is called the `Primary Key`.
-* The easiest way to do this is to use an `INTEGER` that increments every time a
-  new record is added.
-* Many databases that you import will already have a field like this.
+* Data is separate from manipulations of the data
+* Tables - store the data
+* Queries - store questions about the data
+    * If we update the data, the query asks the same question of the new data.
