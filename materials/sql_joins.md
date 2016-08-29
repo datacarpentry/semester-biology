@@ -19,16 +19,14 @@ language: SQL
 ```
 SELECT year, month, day, genus, species
 FROM surveys
-JOIN species WHERE surveys.species_id = species.species_id;
+JOIN species ON surveys.species_id = species.species_id;
 ```
 * This query selects `year`, `month`, and `day` from `surveys` and 
 `genus` and `species` from the `species` table.
     * The query links the `species_id` from `surveys` with `species_id` from `species`.
-* When using `JOIN` it is more appropriate to set the condition using `ON`
-    * `ON` represents a matching identifier between two tables
-    * It is best to `JOIN` using at least one variable that is a unique record.
-        * `species.species_id` values are unique.
-        * `surveys.species_id` values occur in multiple records.
+* `ON` basically works like `WHERE`
+    * It represents a matching identifier between two tables
+    * In fact, you can even use `WHERE` instead
 
 ```
 SELECT year, month, day, genus, species
