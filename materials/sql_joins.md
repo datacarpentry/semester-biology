@@ -79,3 +79,24 @@ JOIN plots p ON sv.plot_id = p.plot_id;
 ```
 
 > Do Exercise 2 - [JOIN 1]({{ site.baseurl }}/exercises/Advanced-queries-join-1-SQL/)
+
+
+### Combining joins with WHERE, ORDER BY, and aggregation
+
+* Joins can be combined with everything else we've learned about SQL
+
+```
+SELECT sp.genus, sp.species, COUNT(*) as number
+FROM surveys sv
+JOIN species sp  ON sv.species_id = sp.species_id
+JOIN plots p ON sv.plot_id = p.plot_id
+WHERE p.plot_type = 'Rodent Exclosure'
+GROUP BY sp.genus, sp.species
+HAVING number > 50
+ORDER BY number;
+```
+
+* To build of big queries like this start small and then expand
+* Test each step
+
+> Do Exercise 3 - [JOIN 2]({{ site.baseurl }}/exercises/Advanced-queries-join-2-SQL/)
