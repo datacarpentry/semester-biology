@@ -27,12 +27,15 @@ JOIN species ON surveys.species_id = species.species_id;
 * `ON` basically works like `WHERE`
     * It represents a matching identifier between two tables
     * In fact, you can even use `WHERE` instead
+    * If you don't limit the join using `ON`, bad things happen, because the
+      JOIN combines each row in `surveys` with every row in `species`
 
-```
-SELECT year, month, day, genus, species
-FROM surveys
-JOIN species ON species.species_id = surveys.species_id;
-```
+    ```
+    SELECT year, month, day, genus, species
+    FROM surveys
+    JOIN species
+    ```
+
 
 ### Multi-table join
 
