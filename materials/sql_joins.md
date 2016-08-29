@@ -36,6 +36,11 @@ JOIN species ON surveys.species_id = species.species_id;
     JOIN species
     ```
 
+*  Most standard uses of `JOIN` involve at least one variable that is a unique record.
+    * `species.species_id` values are unique.
+    * `surveys.species_id` values occur in multiple records.
+    * So one way to think about this join is that it adds the information in
+      `species_id` to the surveys table
 
 ### Multi-table join
 
