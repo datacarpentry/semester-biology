@@ -42,9 +42,12 @@ JOIN species ON surveys.species_id = species.species_id;
     * So one way to think about this join is that it adds the information in
       `species_id` to the surveys table
 
+> Do Exercise 1 - [JOIN 0]({{ site.baseurl }}/exercises/Advanced-queries-join-0-SQL/)
+
+
 ### Multi-table join
 
-* Use multiple `JOIN` to link multiple tables.
+* Use multiple `JOIN`s to link multiple tables.
 
 ```
 SELECT year, month, day, genus, species, plot_type
@@ -75,4 +78,4 @@ JOIN species sp  ON sv.species_id = sp.species_id
 JOIN plots p ON sv.plot_id = p.plot_id;
 ```
 
-> Do Exercises 1-4 - [JOIN 1]({{ site.baseurl }}/exercises/Advanced-queries-join-1-SQL/), [JOIN 2]({{ site.baseurl }}/exercises/Advanced-queries-join-2-SQL/), [JOIN 3]({{ site.baseurl }}/exercises/Advanced-queries-join-3-SQL/), [JOIN 4]({{ site.baseurl }}/exercises/Advanced-queries-join-4-SQL/)
+> Do Exercise 2 - [JOIN 1]({{ site.baseurl }}/exercises/Advanced-queries-join-1-SQL/)
