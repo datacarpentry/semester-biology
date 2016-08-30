@@ -71,8 +71,8 @@ HAVING MIN(weight) IS NOT NULL;
 
 ### Only grouped or aggregated fields in `SELECT`
 
-* Only grouped or aggregated fields should be used in `SELECT` when using `GROUP
-BY`
+* When using `GROUP BY` only fields that are in the `GROUP BY` clause or
+aggregated fields should be used in the `SELECT`
 
 ```
 SELECT species_id, plot_id, MIN(weight), MAX(weight), AVG(weight)
@@ -80,6 +80,9 @@ FROM surveys
 WHERE weight IS NOT NULL
 GROUP BY species_id, plot_id;
 ```
+
+* Using fields that aren't grouped or aggregated results in counter intuitive
+  results.
 
 ```
 SELECT species_id, plot_id, MIN(weight), MAX(weight), AVG(weight)
