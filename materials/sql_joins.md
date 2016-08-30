@@ -19,26 +19,35 @@ language: SQL
 ```
 SELECT year, month, day, genus, species
 FROM surveys
-JOIN species WHERE surveys.species_id = species.species_id;
+JOIN species ON surveys.species_id = species.species_id;
 ```
 * This query selects `year`, `month`, and `day` from `surveys` and 
 `genus` and `species` from the `species` table.
     * The query links the `species_id` from `surveys` with `species_id` from `species`.
-* When using `JOIN` it is more appropriate to set the condition using `ON`
-    * `ON` represents a matching identifier between two tables
-    * It is best to `JOIN` using at least one variable that is a unique record.
-        * `species.species_id` values are unique.
-        * `surveys.species_id` values occur in multiple records.
+* `ON` basically works like `WHERE`
+    * It represents a matching identifier between two tables
+    * In fact, you can even use `WHERE` instead
+    * If you don't limit the join using `ON`, bad things happen, because the
+      JOIN combines each row in `surveys` with every row in `species`
 
-```
-SELECT year, month, day, genus, species
-FROM surveys
-JOIN species ON species.species_id = surveys.species_id;
-```
+    ```
+    SELECT year, month, day, genus, species
+    FROM surveys
+    JOIN species
+    ```
+
+*  Most standard uses of `JOIN` involve at least one variable that is a unique record.
+    * `species.species_id` values are unique.
+    * `surveys.species_id` values occur in multiple records.
+    * So one way to think about this join is that it adds the information in
+      `species_id` to the surveys table
+
+> Do Exercise 1 - [JOIN 0]({{ site.baseurl }}/exercises/Advanced-queries-join-0-SQL/)
+
 
 ### Multi-table join
 
-* Use multiple `JOIN` to link multiple tables.
+* Use multiple `JOIN`s to link multiple tables.
 
 ```
 SELECT year, month, day, genus, species, plot_type
@@ -69,4 +78,25 @@ JOIN species sp  ON sv.species_id = sp.species_id
 JOIN plots p ON sv.plot_id = p.plot_id;
 ```
 
-> Do Exercises 1-4 - [JOIN 1]({{ site.baseurl }}/exercises/Advanced-queries-join-1-SQL/), [JOIN 2]({{ site.baseurl }}/exercises/Advanced-queries-join-2-SQL/), [JOIN 3]({{ site.baseurl }}/exercises/Advanced-queries-join-3-SQL/), [JOIN 4]({{ site.baseurl }}/exercises/Advanced-queries-join-4-SQL/)
+> Do Exercise 2 - [JOIN 1]({{ site.baseurl }}/exercises/Advanced-queries-join-1-SQL/)
+
+
+### Combining joins with WHERE, ORDER BY, and aggregation
+
+* Joins can be combined with everything else we've learned about SQL
+
+```
+SELECT sp.genus, sp.species, COUNT(*) as number
+FROM surveys sv
+JOIN species sp  ON sv.species_id = sp.species_id
+JOIN plots p ON sv.plot_id = p.plot_id
+WHERE p.plot_type = 'Rodent Exclosure'
+GROUP BY sp.genus, sp.species
+HAVING number > 50
+ORDER BY number;
+```
+
+* To build of big queries like this start small and then expand
+* Test each step
+
+> Do Exercise 3 - [JOIN 2]({{ site.baseurl }}/exercises/Advanced-queries-join-2-SQL/)

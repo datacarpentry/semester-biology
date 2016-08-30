@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Joins and Tidy Data
 language: SQL
-exercises: ['JOIN 1', 'JOIN 2', 'JOIN 3', 'JOIN 4', 'Real Portal Data', 'Data entry validation in Excel']
+exercises: ['JOIN 0', 'JOIN 1', 'JOIN 2', 'JOIN 3', 'JOIN 4', 'Real Portal Data', 'Data entry validation in Excel']
 ---
 
 #### Learning Objectives

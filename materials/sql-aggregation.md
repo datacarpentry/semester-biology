@@ -47,3 +47,46 @@ GROUP BY species_id, plot_id;
 * Aggregation functions remove null values from the calculations.
 
 > Do [Exercise 8 - COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL).
+
+### `HAVING`
+
+* To filter by an outcome of an aggregation use `HAVING`
+
+```
+SELECT species_id, plot_id, MIN(weight), MAX(weight), AVG(weight)
+FROM surveys
+GROUP BY species_id, plot_id
+HAVING MIN(weight) IS NOT NULL;
+```
+
+* This works after aggregation, whereas `WHERE` works before aggregation
+
+```
+SELECT species_id, plot_id, MIN(weight), MAX(weight), AVG(weight)
+FROM surveys
+WHERE weight > 10
+GROUP BY species_id, plot_id
+HAVING MIN(weight) IS NOT NULL;
+```
+
+### Only grouped or aggregated fields in `SELECT`
+
+* When using `GROUP BY` only fields that are in the `GROUP BY` clause or
+aggregated fields should be used in the `SELECT`
+
+```
+SELECT species_id, plot_id, MIN(weight), MAX(weight), AVG(weight)
+FROM surveys
+WHERE weight IS NOT NULL
+GROUP BY species_id, plot_id;
+```
+
+* Using fields that aren't grouped or aggregated results in counter intuitive
+  results.
+
+```
+SELECT species_id, plot_id, MIN(weight), MAX(weight), AVG(weight)
+FROM surveys
+WHERE weight IS NOT NULL
+GROUP BY species_id;
+```
