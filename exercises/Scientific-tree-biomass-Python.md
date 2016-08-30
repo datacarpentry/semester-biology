@@ -21,7 +21,7 @@ in a 96 hectare area of the Western Ghats in India.
 
 1.  Write a function that takes an array/Series of tree diameters as an
     argument and returns an array/Series of tree masses.
-2.  [The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot-data-Rev.txt)
+2.  [The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt)
     is available on [Ecological Archives](http://esapubs.org/Archive/), but
     unfortunately due to poor database structure using all of the trees would be
     a hassle. You could try to solve this problem yourself, but it turns out
