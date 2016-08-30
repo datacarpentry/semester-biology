@@ -14,7 +14,7 @@ analysis (prior to submitting a grant application to the Ministry of
 Magic) and she would like you to conduct the analysis for her (she might
 know everything there is to know about magic, but she sure doesn't know
 much about computers). She has placed the file on the web for you to
-[download]({{ site.baseurl }}/data/houseelf_earlength_dna_data.csv).
+[download]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv).
 
 You might be able to do this analysis by hand in Excel, but counting all
 of those bases would be a lot of work, and besides, Dr. Granger seems to

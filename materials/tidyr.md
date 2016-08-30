@@ -24,7 +24,7 @@ library(tidyr)
 * Cells with multiple values break rule #3.
 * Redundant column information or cross-tabulated data breaks rule #4.
 
-![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database_struct_multiple_habitat_values.png)
+![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database-struct-multiple-habitat-values.png)
 
 * Here is another messy dataset.
 

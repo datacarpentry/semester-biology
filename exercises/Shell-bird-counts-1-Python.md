@@ -17,14 +17,14 @@ number of individuals.
 
 Download one of these files using the `curl` command:
 
-`curl -O http://www.programmingforbiologists.org/data/data_drycanyon_2013.txt`
+`curl -O {{ site.url }}/data/data-drycanyon-2013.txt`
 
 If we wanted to find the least common species in the data file and store that
 information we could do something like:
 
 ```
-sort data_drycanyon_2013.txt -k 3 -n > sorted_counts.txt
-head -1 sorted_counts.txt > least_common_species.txt
+sort data-drycanyon-2013.txt -k 3 -n > sorted-counts.txt
+head -1 sorted-counts.txt > least-common-species.txt
 ```
 
 Now we want to get the most common species at the site. You can do this using
@@ -32,4 +32,4 @@ the `tail` command. Since we don't need the intermediate `sorted_counts.txt`
 file, use a pipe instead of creating the intermediate file.
 
 Save both the curl command and the one line command for storing the least common
-species in a text file called `get_most_common_species.sh`.
+species in a text file called `get-most-common-species.sh`.

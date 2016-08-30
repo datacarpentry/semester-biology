@@ -5,7 +5,7 @@ title: Split Cells
 language: SQL
 ---
 
-The original Portal `Species` table is also messy. [Download it]({{ site.baseurl }}/data/Portal_species_original.csv)
+The original Portal `Species` table is also messy. [Download it]({{ site.baseurl }}/data/Portal-species-original.csv)
 and import it into the `portal_mammals_original.sqlite` database. Again,
  
 **Before starting this problem make sure that you have a backup of your database** In general, when developing a database it's probably 
