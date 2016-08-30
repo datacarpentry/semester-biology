@@ -9,6 +9,24 @@ language: SQL
 >
 > *  download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
+> * display a fully joined version of the Portal data using
+> `SELECT * FROM surveys JOIN species ON surveys.species_id = species.species_id JOIN plots ON surveys.plot_id = plots.plot_id;`
+
+### Why use multiple tables
+
+* It is often not efficient to include all information of interest in a single
+table.
+* Redundant information makes it more difficult to update or revise data.
+    * If something changes we want to be able to change it in one place, not
+    hundreds of places.
+* Use multiple tables
+* Each table contains a single kind of information
+    * `surveys`: information about individuals
+    * `species`: information about species
+	* `plots`: information about plots
+* Connect tables using joins to describe relationships between tables
+(*"relational" database*)
+
 
 ### Basic join
 
