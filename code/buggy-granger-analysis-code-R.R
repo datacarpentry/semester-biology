@@ -21,7 +21,7 @@ get_size_class <- function(earlength){
   return(earlength)
 }
 
-elves_data <- read.csv('houseelf_earlength_dna_data.csv')
+elves_data <- read.csv('houseelf-earlength-dna-data.csv')
 
 # Determine individual level earth length category and gc content values
 gc_content <- get_gc_content(elves_data[["dnaseq"]])

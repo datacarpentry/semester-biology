@@ -18,17 +18,17 @@ language: SQL
 * The information should not be dependent on the order of the rows or the order 
 of the columns
 
-![Order of rows doesn't matter example]({{ site.baseurl }}/materials/database_struct_order_doesnt_matter.png)
+![Order of rows doesn't matter example]({{ site.baseurl }}/materials/database-struct-order-doesnt-matter.png)
 
 ### 2. No duplicate rows
 
-![No duplicate rows example]({{ site.baseurl }}/materials/database_struct_no_dup_rows.png)
+![No duplicate rows example]({{ site.baseurl }}/materials/database-struct-no-dup-rows.png)
 
 ### 3. Every cell contains one value
 
 * This is an example of what not to do.
 
-![One value per cell example]({{ site.baseurl }}/materials/database_struct_one_val_per_cell.png)
+![One value per cell example]({{ site.baseurl }}/materials/database-struct-one-val-per-cell.png)
 
 * How would you query for `'Shrubland'`?
 
@@ -36,23 +36,23 @@ of the columns
 
 * This is also an example of what not to do.
 
-![One column per type of information example]({{ site.baseurl }}/materials/database_struct_one_col_per_type.png)
+![One column per type of information example]({{ site.baseurl }}/materials/database-struct-one-col-per-type.png)
 
 * How would you query for records with `'Grassland' AND 'Shrubland'`?
 
 #### Restructure the examples of what not to do for #3 and #4.
 
-![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database_struct_multiple_habitat_values.png)
+![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database-struct-multiple-habitat-values.png)
 
 * The proper structure lets us easily subset the data however we want.
 
 #### Cross-tablulated data is difficult for SQL to work with.
 
-![Cross-tab table restructure]({{ site.baseurl }}/materials/databases_crosstab_restructured.png)
+![Cross-tab table restructure]({{ site.baseurl }}/materials/databases-crosstab-restructured.png)
 
 ### 5. No redundant information
   
-![No redundant information example]({{ site.baseurl }}/materials/database_struct_no_redundant_information.png)
+![No redundant information example]({{ site.baseurl }}/materials/database-struct-no-redundant-information.png)
 
 * Redundant information makes it more difficult to update or revise data. 
     * If something changes we want to be able to change it in one place, not hundreds of places.     
@@ -65,7 +65,7 @@ of the columns
 * It is often not efficient to include all information of interest in a single
 table.
 
-![Table with redundant information]({{ site.baseurl }}/materials/databases_redundant_table.png)
+![Table with redundant information]({{ site.baseurl }}/materials/databases-redundant-table.png)
 
 * To solve these problems,
     * store data in multiple tables, and 
@@ -73,4 +73,4 @@ table.
       relationships between tables (*hence "relational" database*)
 * Each table contains a single data type
 
-![Restructuring a redundant table into two]({{ site.baseurl }}/materials/databases_redundant_table_restructure.png)
+![Restructuring a redundant table into two]({{ site.baseurl }}/materials/databases-redundant-table_restructure.png)

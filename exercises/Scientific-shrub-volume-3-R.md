@@ -14,8 +14,8 @@ preliminary experiment looking at the effect of three different treatments on
 shrub volume at four different locations. She has placed two data files on the 
 web for you to download:
 
-* [shrub dimensions data]({{ site.baseurl }}/data/shrub_volume_experiment.csv)
-* [experiments data]({{ site.baseurl }}/data/shrub_volume_experiments_table.csv)
+* [shrub dimensions data]({{ site.baseurl }}/data/shrub-volume-experiment.csv)
+* [experiments data]({{ site.baseurl }}/data/shrub-volume-experiments-table.csv)
 
 Download these into your `data` folder and get familiar with the data by 
 importing the shrub dimensions data using `read.csv()` and then:

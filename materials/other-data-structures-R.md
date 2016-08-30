@@ -7,7 +7,7 @@ language: R
 
 > Remind students to [install Bioconductor](http://www.bioconductor.org/install/).
 
-> Remember to download [Archaea genome data]({{ site.baseurl }}/data/archaea_dna.zip).
+> Remember to download [Archaea genome data]({{ site.baseurl }}/data/archaea-dna.zip).
  
 > Set up R console:
 

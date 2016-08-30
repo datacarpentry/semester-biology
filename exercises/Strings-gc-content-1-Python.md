@@ -6,7 +6,7 @@ language: Python
 ---
 
 A colleague has produced a file with one DNA sequence on each line. Download
-[the file]({{ site.baseurl }}/data/dna_sequences_1.txt) and load it into Python using
+[the file]({{ site.baseurl }}/data/dna-sequences-1.txt) and load it into Python using
 `numpy.loadtxt()`. You will need to use the optional argument `dtype = str` to
 tell `loadtxt()` that the data is composed of strings.
 

@@ -29,7 +29,7 @@ in a 96 hectare area of the Western Ghats in India.
     [EcoData Retriever](http://ecodataretriever.org/) and use it to download and
     cleanup this data automatically (using the command line interface the
     command would be `retriever install csv Ramesh2010` and the data will be
-    stored in `Ramesh2010_macroplots.csv`) and import it into Python.
+    stored in `Ramesh2010-macroplots.csv`) and import it into Python.
 3.  If you look at the file or [the
     metadata](http://esapubs.org/archive/ecol/E091/216/metadata.htm)
     carefully you'll notice that the data is actually in girth (i.e.,

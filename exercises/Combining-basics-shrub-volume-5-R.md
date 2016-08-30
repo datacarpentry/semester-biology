@@ -7,7 +7,7 @@ language: R
 
 This is a follow-up to [Shrub Volume 4]({{ site.baseurl }}/exercises/Statistics-shrub-volume-4-R).
 
-Now that you're familiar with the data, Dr. Granger wants you to conduct a preliminary analysis of these data to include in a grant proposal (*she might be a world renowned expert in carbon storage in plants, but she sure doesn't know much about computers*). If you missed it, the [data file]({{ site.baseurl }}/data/shrub_volume_experiment.csv) is still on the web.
+Now that you're familiar with the data, Dr. Granger wants you to conduct a preliminary analysis of these data to include in a grant proposal (*she might be a world renowned expert in carbon storage in plants, but she sure doesn't know much about computers*). If you missed it, the [data file]({{ site.baseurl }}/data/shrub-volume-experiment.csv) is still on the web.
 
 You might be able to do this analysis by hand in Excel, but Dr. Granger seems to
 always get funded meaning that you'll be doing this again soon with a much

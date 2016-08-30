@@ -8,7 +8,7 @@ language: R
 This is a follow up to [Shrub Volume 1]({{ site.baseurl }}/exercises/Vectors-shrub-volume-1-R).
 
 One of your collaborators has posted [a comma-delimited text
-file]({{ site.baseurl }}/data/shrub_dimensions_labeled.csv)
+file]({{ site.baseurl }}/data/shrub-dimensions-labeled.csv)
 online for you to analyze. The file contains dimensions of a series of
 shrubs (ShrubID, Length, Width, Height) and they need you to determine
 their volumes (`l * w * h`). You could do this using a spreadsheet, but the 
