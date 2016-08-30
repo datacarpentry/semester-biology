@@ -23,7 +23,7 @@ table.
 * Each table contains a single kind of information
     * `surveys`: information about individuals
     * `species`: information about species
-	* `plots`: information about plots
+    * `plots`: information about plots
 * Connect tables using joins to describe relationships between tables
 (*"relational" database*)
 
