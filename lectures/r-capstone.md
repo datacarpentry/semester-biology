@@ -6,4 +6,4 @@ language: R
 ---
 
 1. [Debugging]({{ site.baseurl }}/materials/debugging-R)
-2. [Project Structure]({{ site.baseurl }}/materials/project_structure)
+2. [Project Structure]({{ site.baseurl }}/materials/project-structure)
