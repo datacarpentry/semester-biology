@@ -5,9 +5,6 @@ title: Importing Data
 language: SQL
 ---
 
-Hand entering data is great if you're collecting your own data and need
-to enter it yourself, but it's a pretty terrible way to use already
-available data, especially if it's more than a few dozen lines long.
 This example will walk you through how to get data that already exists
 into SQLite.
 
@@ -26,7 +23,7 @@ modify the `Fields separated` or `enclosed by`*. You'll want to make sure to
 select `First row contains column names`.
 ​
 6. Click `OK` when it asks if you want to modify the data.
-7. Name the table that you are importing into `Surveys`.
+7. Name the table that you are importing into `surveys`.
 8. Identify the type for each field, using the `Data Type` drop-down menus. If
 it is not obvious if the data type is an `INTEGER` or `VARCHAR` for each
 variable, check the [metadata](http://esapubs.org/archive/ecol/E090/118/metadata.htm). **Important: if you specify the wrong data type it

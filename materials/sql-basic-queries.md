@@ -10,6 +10,8 @@ language: SQL
 > * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
 
+> Introduce the Portal Project database
+
 ### Selecting columns
 
 * Choose which columns to return.
