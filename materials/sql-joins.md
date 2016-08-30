@@ -62,6 +62,14 @@ JOIN species ON surveys.species_id = species.species_id;
 
 > Do Exercise 1 - [JOIN 0]({{ site.baseurl }}/exercises/Advanced-queries-join-0-SQL/)
 
+* We can also use `USING` as short hand in cases where the column names are the
+same across tables.
+
+```
+SELECT year, month, day, genus, species
+FROM surveys
+JOIN species USING (species_id);
+```
 
 ### Multi-table join
 
