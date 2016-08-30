@@ -46,7 +46,7 @@ language: SQL
 > Open SQLite Manager
 > Walk through importing surveys table
 
-1. Download https://ndownloader.figshare.com/files/2292172
+1. Download [https://ndownloader.figshare.com/files/2292172](https://ndownloader.figshare.com/files/2292172)
 2. `Database` -> `New Database` -> name `portal_mammals.sqlite`
 3. `Import`
 4. `Select File` and navigate to raw data
@@ -66,7 +66,7 @@ language: SQL
         * Maximum value of integers
         * Maximum length of text
         * How many values before and after the decimal place
-9. Select `recordID` as the `Primary Key` and click `OK`.
+9. Select `record_id` as the `Primary Key` and click `OK`.
 
     * Every table "needs" a column (or set of columns) that is unique across
       records/row.
