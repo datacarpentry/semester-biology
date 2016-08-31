@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Joins and Tidy Data
 language: SQL
-exercises: ['JOIN 0', 'JOIN 1', 'JOIN 2', 'JOIN 3', 'JOIN 4', 'Improving Messy Data', 'Data entry validation in Excel']
+exercises: ['Basic Join', 'Multi-table Join', 'Filtered Join', 'Detailed Join', 'Aggregated Join', 'Improving Messy Data', 'Data entry validation in Excel']
 ---
 
 #### Learning Objectives
