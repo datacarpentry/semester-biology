@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Advanced Queries
-title: JOIN 0
+title: Basic Join
 language: SQL
 ---
 

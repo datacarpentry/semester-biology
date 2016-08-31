@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Advanced Queries
-title: JOIN 1
+title: Multi-table Join
 language: SQL
 ---
 
@@ -13,5 +13,5 @@ The Portal mammal data include data from a number of different experimental
 manipulations. You want to do a time-series analysis of the population dynamics
 of all of the species at the site, taking into account the different
 experimental manipulations. Write a query that returns the `year`, `month`,
-`day`, `genus` and `species` of every individual as well as the `plot_id` and `plot_type` of
-the plot they are captured on. Save this query as `data_from_controls`.
+`day`, `genus` and `species` of every individual as well as the `plot_id` and `plot_type` of the plot they are captured on. Save this query as 
+`species_plot_data`.

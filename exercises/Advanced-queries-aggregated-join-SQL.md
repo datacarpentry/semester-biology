@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Advanced Queries
-title: JOIN 4
+title: Aggregated Join
 language: SQL
 ---
 
