@@ -9,6 +9,24 @@ language: SQL
 >
 > *  download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
+> * display a fully joined version of the Portal data using
+> `SELECT * FROM surveys JOIN species ON surveys.species_id = species.species_id JOIN plots ON surveys.plot_id = plots.plot_id;`
+
+### Why use multiple tables
+
+* It is often not efficient to include all information of interest in a single
+table.
+* Redundant information makes it more difficult to update or revise data.
+    * If something changes we want to be able to change it in one place, not
+    hundreds of places.
+* Use multiple tables
+* Each table contains a single kind of information
+    * `surveys`: information about individuals
+    * `species`: information about species
+    * `plots`: information about plots
+* Connect tables using joins to describe relationships between tables
+(*"relational" database*)
+
 
 ### Basic join
 
@@ -17,33 +35,39 @@ language: SQL
     * based on condition
   
 ```
-SELECT year, month, day, genus, species
+SELECT DISTINCT year, month, day, plot_type 
 FROM surveys
-JOIN species ON surveys.species_id = species.species_id;
+JOIN species ON surveys.plot_id = plots.plot_id
 ```
+
 * This query selects `year`, `month`, and `day` from `surveys` and 
-`genus` and `species` from the `species` table.
-    * The query links the `species_id` from `surveys` with `species_id` from `species`.
+`plot_type` from the `plots` table.
+    * The query links the `plot_id` from `surveys` with `plot_id` from `plots`.
 * `ON` basically works like `WHERE`
     * It represents a matching identifier between two tables
     * In fact, you can even use `WHERE` instead
     * If you don't limit the join using `ON`, bad things happen, because the
-      JOIN combines each row in `surveys` with every row in `species`
+      JOIN combines each row in `surveys` with every row in `plots`
 
     ```
-    SELECT year, month, day, genus, species
+    SELECT DISTINCT year, month, day, plot_type
     FROM surveys
-    JOIN species
+    JOIN plots
     ```
 
-*  Most standard uses of `JOIN` involve at least one variable that is a unique record.
-    * `species.species_id` values are unique.
-    * `surveys.species_id` values occur in multiple records.
-    * So one way to think about this join is that it adds the information in
-      `species_id` to the surveys table
+* One way to think about this join is that it adds the information in
+  `plots` to the `surveys` table
 
 > Do Exercise 1 - [JOIN 0]({{ site.baseurl }}/exercises/Advanced-queries-join-0-SQL/)
 
+* We can also use `USING` as short hand in cases where the column names are the
+same across tables.
+
+```
+SELECT year, month, day, genus, species
+FROM surveys
+JOIN species USING (species_id);
+```
 
 ### Multi-table join
 
