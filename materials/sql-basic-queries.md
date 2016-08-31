@@ -79,6 +79,13 @@ FROM surveys;
 ### Filtering
 
 * Use `WHERE` to select only the rows meeting certain criteria.
+    * Follow `WHERE` with conditional statement
+        * Conditional operator links column and condition
+        
+        `=`       | equals
+        `>`  `<`  | greater / less than
+        `>=` `<=` | greater / less than or equal to
+        `!=` `<>` | not equals (`!=` *consistent with other languages*)
 
 ```
 SELECT hindfoot_length
