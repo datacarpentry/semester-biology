@@ -32,4 +32,6 @@ could also use really descriptive alternatives like
 this or leave out some of the words to make it shorter (e.g.,
 `indiv_mass_g`).* 
 
-Have a think about appropriate variable names and then rename the variables in your program to what you find most useful.
+Have a think about appropriate variable names and then rename the variables in
+your program to what you find most useful. Make sure your code still runs
+properly after you've changed the names.
