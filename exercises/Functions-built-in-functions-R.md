@@ -21,6 +21,6 @@ you want information about. E.g.,`help(round)`.
 4. Assign the value of the square root of 2.6 to a variable. Then round the
    variable you've created to 2 decimal places and assign it to another
    variable. Print out the rounded value.
-5. Do the same thing as in problem 4, but instead of creating the intermediate
-   variable, perform both the square root and the round on a single line by
-   putting the `sqrt()` call inside the `round()` call.
+5. Do the same thing as task 4 (*immediately above*), but instead of creating
+   the intermediate variable, perform both the square root and the round on a
+   single line by putting the `sqrt()` call inside the `round()` call.
