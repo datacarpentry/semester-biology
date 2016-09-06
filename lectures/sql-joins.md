@@ -5,6 +5,6 @@ title: Joins and Tidy Data
 language: SQL
 ---
 
-1. [Database Structure]({{ site.baseurl }}/materials/database-structure)
-2. [Joins]({{ site.baseurl }}/materials/sql-joins)
-3. [Nested Queries]({{ site.baseurl }}/materials/sql-nested-queries)
+1. [Joins]({{ site.baseurl }}/materials/sql-joins)
+2. [Tidy Data]({{ site.baseurl }}/materials/tidy-data)
+3. [Data Entry]({{ site.baseurl }}/materials/data-entry)
