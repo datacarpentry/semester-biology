@@ -6,6 +6,8 @@ title: Lecture Materials
 
 ### General Programing Resources
 -   [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
+-   [Git Collaboration]({{ site.baseurl }}/materials/git-collaboration-example)
+-   [Git in 30 minutes]({{ site.baseurl }}/materials/git-in-30-minutes)
 
 ### Access <a name="Access"></a>
 -   [Advanced Queries]({{ site.baseurl }}/materials/access-adv-queries)
@@ -33,9 +35,9 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Lists: loops, methods, and nested lists]({{ site.baseurl }}/materials/lists-loops-methods-nesting.pdf)
 -   [For loops](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/for-loops.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/for-loops.ipynb))
 -   [While loops](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/while-loops.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/while-loops.ipynb))
--   [Importing delimited text files](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/import.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/import.ipynb))
+-   [Importing delimited text files]({{ site.baseurl }}/materials/importing-data-into-python) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/import.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/import.ipynb))
 -   [Web data]({{ site.baseurl }}/materials/web-data)
--   [Exporting data from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/export.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/export.ipynb))
+-   [Exporting data from Python]({{ site.baseurl }}/materials/exporting-data-from-python) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/export.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/export.ipynb))
 -   [Numpy]({{ site.baseurl }}/materials/a-brief-introduction-to-numpy) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/numpy.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/numpy.ipynb))
 -   [Graphing]({{ site.baseurl }}/materials/a-brief-introduction-to-matplotlib) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/matplotlib.ipynb))
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
@@ -56,6 +58,11 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Biopython]({{ site.baseurl }}/materials/biopython-data-types-and-methods)
 -   [Debugging Example 'Overkill' Solution]({{ site.baseurl }}/materials/debug-examp-overkill)
 -   [Errors](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/errors.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/errors.ipynb))
+-   [First Class Functions]({{ site.baseurl }}/materials/first-class-functions)
+-   [For Loops Indexing]({{ site.baseurl }}/materials/for-loops-indexing)
+-   [Functions (Similar Alternate)](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/functions-lecture.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/functions-lecture.ipynb))
+-   [Installing `nose` on Windows]({{ site.baseurl }}/materials/installing-nose-on-windows)
+-   [Making Choices]({{ site.baseurl }}/materials/if-then-else)
 
 ### R <a name="R"></a>
 
@@ -74,7 +81,7 @@ with it on your computer by changing the code and seeing what happens.*
 - [`tidyr`]({{ site.baseurl }}/materials/tidyr)
 - [Project Structure]({{ site.baseurl }}/materials/project-structure)
 - [Debugging]({{ site.baseurl }}/materials/debugging-R)
-- [`knitr`]({{ site.baseurl }}/materials/knitr)
+- [`knitr`]({{ site.baseurl }}/materials/knitr) ([Example `RMD`]({{ site.baseurl }}/materials/knitr-examp.Rmd))
 - [R Cheat Sheet]({{ site.baseurl }}/materials/Walkthrough-R)
 
 
@@ -96,6 +103,7 @@ with it on your computer by changing the code and seeing what happens.*
 - [Database Control - Queries]({{ site.baseurl }}/materials/database-control-queries-sql)
 - [Database Structure]({{ site.baseurl }}/materials/database-structure) ([presentation]({{ site.baseurl }}/materials/databases-structure.pdf))
 - [Database Resources]({{ site.baseurl }}/materials/database-resources)
+- [Exporting from OpenOffice]({{ site.baseurl }}/materials/exporting-tables-and-queries-from-openoffice-base-to-csv)
 
 
 
