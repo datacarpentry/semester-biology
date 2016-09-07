@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Forms in Access
+element: notes
+title: Forms
+language: Access
 ---
 
 Forms allow us to manage how data is entered.

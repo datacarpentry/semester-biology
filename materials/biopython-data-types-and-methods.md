@@ -1,13 +1,17 @@
---- layout: post title: Biopython Data Types & Methods created:
-1291696272 categories: [] ---
+---
+layout: page
+element: notes
+title: Biopython Data Types & Methods
+language: Python
+---
 
 Sequence objects
 
 from Bio.Seq import Seq
 
-my\_seq = Seq('ATTAGC')
+my_seq = Seq('ATTAGC')
 
-\>\>\> len(my\_seq)
+>>> len(my_seq)
 
 6
 
@@ -15,7 +19,7 @@ my\_seq = Seq('ATTAGC')
 
 #### Slicing
 
-\>\>\> my\_seq[1:4]
+>>> my_seq[1:4]
 
 Seq('TTA', Alphabet())
 
@@ -23,13 +27,13 @@ Seq('TTA', Alphabet())
 
 #### Methods
 
-my\_seq.complement()
+my_seq.complement()
 
-my\_seq.reverse\_complement()
+my_seq.reverse_complement()
 
-my\_seq.transcribe()
+my_seq.transcribe()
 
-my\_seq.translate()
+my_seq.translate()
 
  
 
@@ -37,6 +41,6 @@ my\_seq.translate()
 
 from Bio.SeqRecord import SeqRecord
 
-my\_seq\_id = 'AC12345'
+my_seq_id = 'AC12345'
 
-my\_seq\_record = SeqRecord(my\_seq, id=my\_seq\_id)
+my_seq_record = SeqRecord(my_seq, id=my_seq_id)

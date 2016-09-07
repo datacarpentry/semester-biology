@@ -73,4 +73,4 @@ table.
       relationships between tables (*hence "relational" database*)
 * Each table contains a single data type
 
-![Restructuring a redundant table into two]({{ site.baseurl }}/materials/databases-redundant-table_restructure.png)
+![Restructuring a redundant table into two]({{ site.baseurl }}/materials/databases-redundant-table-restructure.png)

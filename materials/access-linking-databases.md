@@ -1,5 +1,9 @@
-Linking to Other Databases From Access
-======================================
+---
+layout: page
+element: notes
+title: Linking to Other Databases From Access
+language: Access
+---
 
 We often want to link Access with external databases.
 

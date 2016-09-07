@@ -1,5 +1,9 @@
-Debugging Example - Pleistocene Overkill
-========================================
+---
+layout: page
+element: notes
+title: Debugging Example - Pleistocene Overkill
+language: Python
+---
 
 Mistakes
 --------

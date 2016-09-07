@@ -1,16 +1,19 @@
---- layout: post title: A brief introduction to matplotlib created:
-1289851333 categories: [] ---
+--- 
+layout: page 
+element: notes
+title: A brief introduction to matplotlib 
+language: Python
+---
 
 #### Import
 
 import matplotlib.pyplot as p
 
-\
-
 #### Basic plots of two variables
 
-p.plot(x, y, color\_symbol\_info) \#color\_symbol\_info looks like 'bo-'
-for blue circles connected by a solid line\
+p.plot(x, y, color_symbol_info)
+
+color_symbol_info looks like 'bo-' for blue circles connected by a solid line
 
 p.loglog(x, y)
 
@@ -48,8 +51,7 @@ p.hold(False)
 
 #### Subplots
 
-p.subplot(number\_of\_rows\_of\_plots, number\_of\_cols\_of\_plots,
-position)
+p.subplot(number_of_rows_of_plots, number_of_cols_of_plots, position)
 
 #### Multiple Figures
 
