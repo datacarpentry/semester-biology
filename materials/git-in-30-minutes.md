@@ -1,4 +1,8 @@
-# A quick introduction to Git and GitHub
+---
+layout: page
+element: notes
+title: A quick introduction to Git and GitHub
+---
 
 ## Setup
 

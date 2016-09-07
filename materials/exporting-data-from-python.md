@@ -1,17 +1,21 @@
---- layout: post title: Exporting data from Python created: 1288905276
-categories: [] ---
+---
+layout: page
+element: notes
+title: Exporting data from Python
+language: Python
+---
 
 #### List of lists into CSV file
 
 import csv
 
-output\_file = open('C:\\path\\to\\file', 'w')
+output_file = open('C:path/to/file', 'w')
 
-datawriter = csv.writer(output\_file)
+datawriter = csv.writer(output_file)
 
 datawriter.writerows(data)
 
-output\_file.close()
+output_file.close()
 
  
 
@@ -19,4 +23,4 @@ output\_file.close()
 
 import numpy
 
-numpy.savetxt('C:\\path\\to\\file', X, delimiter = ',')
+numpy.savetxt('C:path/to/file', X, delimiter = ',')

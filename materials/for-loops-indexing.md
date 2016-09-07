@@ -1,5 +1,10 @@
-For Loops
-=========
+---
+layout: page
+element: notes
+title: For Loops
+language: Python
+---
+
 Using Range
 -----------
 Print the even numbers from 1 to 10

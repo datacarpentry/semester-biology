@@ -1,5 +1,9 @@
---- layout: post title: Exporting tables and queries from OpenOffice
-Base to csv created: 1288729701 categories: [] ---
+---
+layout: page
+element: notes
+title: Exporting tables and queries from OpenOffice
+language: OpenOffice
+---
 
 #### Option 1 - Using Calc
 
@@ -20,13 +24,13 @@ solution](http://user.services.openoffice.org/en/forum/viewtopic.php?f=13&t=5009
 1.  Open the query
 2.  Access the underlying SQL
 3.  Copy it to the clipboard
-4.  In the menu bar of the main Base window click **Tools -\> SQL**
+4.  In the menu bar of the main Base window click **Tools -> SQL**
 5.  Paste the SQL from the query into the **Command to execute** window
 6.  Go the to beginning of the word FROM and type **INTO TEXT
-    "name\_of\_output\_file"** followed by a space
+    "name_of_output_file"** followed by a space
 7.  Press the execute button
 8.  Your query will have been saved as a csv file named
-    name\_of\_output\_file.csv in the same directory as your database
+    name_of_output_file.csv in the same directory as your database
 
 #### Option 3 - Wait
 
