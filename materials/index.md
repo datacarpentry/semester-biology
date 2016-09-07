@@ -46,25 +46,31 @@ with it on your computer by changing the code and seeing what happens.*
 - [`dplyr`]({{ site.baseurl }}/materials/dplyr)
 - [`ggplot`]({{ site.baseurl }}/materials/ggplot)
 - [Functions]({{ site.baseurl }}/materials/functions-R)
-- [`for` loops]({{ site.baseurl }}/materials/for-loops_R)
+- [`for` loops]({{ site.baseurl }}/materials/for-loops-R)
 - [Other Data Structures]({{ site.baseurl }}/materials/other-data-structures-R)
 - [Conditionals]({{ site.baseurl }}/materials/conditionals-R)
 - [Problem Decomposition]({{ site.baseurl }}/materials/decomposition) ([R-script]({{ site.baseurl }}/materials/decomposition-example.R))
+- [Spatial Data]({{ site.baseurl }}/materials/spatial-data-R)
 - [Version Control]({{ site.baseurl }}/materials/version-control)
 - [Integrating R and SQL]({{ site.baseurl }}/materials/r-sql)
 - [`tidyr`]({{ site.baseurl }}/materials/tidyr)
 - [Project Structure]({{ site.baseurl }}/materials/project-structure)
 - [Debugging]({{ site.baseurl }}/materials/debugging-R)
-- [`knitr`]({{ site.baseurl }}/materials/knitr) 
+- [`knitr`]({{ site.baseurl }}/materials/knitr)
+- [R Cheat Sheet]({{ site.baseurl }}/materials/Walkthrough-R)
 
 
 ### SQL <a name="SQL"></a>
 
 - [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql) ([presentation]({{ site.baseurl }}/materials/intro-to-databases.pdf))
+- [Basic Queries]({{ site.baseurl }}/materials/sql-basic-queries)
+- [Aggregation]({{ site.baseurl }}/materials/sql-aggregation)
 - [Database Control - SQLite Manager]({{ site.baseurl }}/materials/database-control-sql)
 - [Database Control - Queries]({{ site.baseurl }}/materials/database-control-queries-sql)
 - [Database Structure]({{ site.baseurl }}/materials/database-structure) ([presentation]({{ site.baseurl }}/materials/databases-structure.pdf))
 - [Joins]({{ site.baseurl }}/materials/sql-joins)
+- [Tidy Data]({{ site.baseurl }}/materials/tidy-data)
+- [Data Entry in Excel]({{ site.baseurl }}/materials/data-entry)
 - [Nested Queries]({{ site.baseurl }}/materials/sql-nested-queries)
 
 
