@@ -1,4 +1,8 @@
-# State in Integrated Development Environments
+---
+layout: page
+element: notes
+title: State in Integrated Development Environments
+---
 
 In most integrated development environments (including Canopy) you can run code
 in three different ways:

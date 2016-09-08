@@ -1,5 +1,9 @@
-Regular Expressions
-===================
+---
+layout: page
+element: notes
+title: Regular Expressions
+language: Python
+---
 
 NOTES
 -----

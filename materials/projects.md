@@ -1,5 +1,9 @@
-Projects - Intro
-================
+---
+layout: page
+element: notes
+title: Projects - Intro
+language: R
+---
 
 * R, databases or both
 * Can be on anything

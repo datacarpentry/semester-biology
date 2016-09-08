@@ -1,5 +1,9 @@
-Basic Program Design
-====================
+---
+layout: page
+element: notes
+title: Basic Program Design
+language: Python
+---
 
     """module docstring"""
 

@@ -1,4 +1,9 @@
-# Python + SQL
+---
+layout: page
+element: notes
+title: Python + SQL
+language: Python
+---
 
 ## Connecting to the database
 
