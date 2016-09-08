@@ -8,12 +8,15 @@ title: Lecture Materials
 -   [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
 -   [Git Collaboration]({{ site.baseurl }}/materials/git-collaboration-example)
 -   [Git in 30 minutes]({{ site.baseurl }}/materials/git-in-30-minutes)
+-   [Shell]({{ site.baseurl }}/materials/shell) \| [Shell Alternate]({{ site.baseurl }}/materials/shell2)
+-   [State in IDEs]({{ site.baseurl }}/materials/state-in-IDEs)
 
 ### Access <a name="Access"></a>
 -   [Advanced Queries]({{ site.baseurl }}/materials/access-adv-queries)
 -   [Databases Week 2]({{ site.baseurl }}/materials/databases2)
 -   [Forms]({{ site.baseurl }}/materials/access-forms)
 -   [Linking Databases]({{ site.baseurl }}/materials/access-linking-databases)
+-   [Setting up an ODBC connection in Windows]({{ site.baseurl }}/materials/setting-up-an-odbc-connection-in-windows)
 -   [Reports]({{ site.baseurl }}/materials/access-reports)
 
 ### Python <a name="Python"></a>
@@ -39,7 +42,7 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Web data]({{ site.baseurl }}/materials/web-data)
 -   [Exporting data from Python]({{ site.baseurl }}/materials/exporting-data-from-python) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/export.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/export.ipynb))
 -   [Numpy]({{ site.baseurl }}/materials/a-brief-introduction-to-numpy) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/numpy.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/numpy.ipynb))
--   [Graphing]({{ site.baseurl }}/materials/a-brief-introduction-to-matplotlib) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/matplotlib.ipynb))
+-   [Graphing]({{ site.baseurl }}/materials/graphing) ([notebook](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/matplotlib.ipynb) \| [raw](https://raw.github.com/ethanwhite/progbio/master/ipynbs/matplotlib.ipynb)) \| [Graphing Alternate]({{ site.baseurl }}/materials/a-brief-introduction-to-matplotlib)
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
 -   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
 -   [List comprehensions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/list-comprehensions.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/list-comprehensions.ipynb))
@@ -49,7 +52,8 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Style]({{ site.baseurl }}/materials/style)
 -   [Program Design](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/design.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/design.ipynb))
 -   [Common points of confusion in Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/common-confusions.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/common-confusions.ipynb))
--   [Python & R]({{ site.baseurl }}/materials/R-and-python.pdf) ([notebook](http://nbviewer.jupyter.org/github/ethanwhite/progbio/blob/master/lectures/rpy2_demo.ipynb) \| [raw notebook](https://raw.githubusercontent.com/ethanwhite/progbio/master/lectures/rpy2_demo.ipynb))
+-   [Python & R]({{ site.baseurl }}/materials/R-and-python.pdf) ([notebook](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/python-R.ipynb) \| [raw](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/python-R.ipynb))
+-   [Rpy2](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/rpy2-demo.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/rpy2-demo.ipynb))
 
 #### Extra Notes
 
@@ -63,6 +67,25 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Functions (Similar Alternate)](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/functions-lecture.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/functions-lecture.ipynb))
 -   [Installing `nose` on Windows]({{ site.baseurl }}/materials/installing-nose-on-windows)
 -   [Making Choices]({{ site.baseurl }}/materials/if-then-else)
+-   [Modules]({{ site.baseurl }}/materials/modules-using)
+-   [Multi-way ANOVA](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/multi-way-anova.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/multi-way-anova.ipynb))
+-   [Object Oriented Programming](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/oop.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/oop.ipynb))
+-   [Object Oriented Programming Example](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/oop-example.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/oop-example.ipynb))
+-   [Packaging]({{ site.baseurl }}/materials/packaging)
+-   [`pandas`](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/pandas.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/pandas.ipynb))
+-   [Program Design]({{ site.baseurl }}/materials/program-design)
+-   [Python Resources]({{ site.baseurl }}/materials/python-resources)
+-   [Rainfall Example](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/rainfall.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/rainfall.ipynb))
+-   [Regular Expressions]({{ site.baseurl }}/materials/regexp)
+-   [Requests](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/requests.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/requests.ipynb))
+-   [Running Blast]({{ site.baseurl }}/materials/running-blast-from-pythons)
+-   [Scientist's Python Inferno]({{ site.baseurl }}/materials/scientists-python-inferno)
+-   [Shell in Python]({{ site.baseurl }}/materials/shell-in-python)
+-   [SQL in Python]({{ site.baseurl }}/materials/sql-python) \| [Alternate SQL in Python]({{ site.baseurl }}/materials/using-python-to-interface-with-databases)
+-   [Statistics in Scipy]({{ site.baseurl }}/materials/statistics-in-scipy)
+-   [Style Guide]({{ site.baseurl }}/materials/style-guide-Python)
+-   [Testing](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/gh-pages/materials/testing-in-ipynb.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/gh-pages/materials/testing-in-ipynb.ipynb))
+-   [Using Help]({{ site.baseurl }}/materials/using-help)
 
 ### R <a name="R"></a>
 
@@ -76,13 +99,14 @@ with it on your computer by changing the code and seeing what happens.*
 - [Conditionals]({{ site.baseurl }}/materials/conditionals-R)
 - [Problem Decomposition]({{ site.baseurl }}/materials/decomposition-R) ([R-script]({{ site.baseurl }}/materials/decomposition-example.R))
 - [Spatial Data]({{ site.baseurl }}/materials/spatial-data-R)
-- [Version Control]({{ site.baseurl }}/materials/version-control)
+- [Version Control]({{ site.baseurl }}/materials/version-control-R)
 - [Integrating R and SQL]({{ site.baseurl }}/materials/r-sql)
 - [`tidyr`]({{ site.baseurl }}/materials/tidyr)
 - [Project Structure]({{ site.baseurl }}/materials/project-structure)
 - [Debugging]({{ site.baseurl }}/materials/debugging-R)
 - [`knitr`]({{ site.baseurl }}/materials/knitr) ([Example `RMD`]({{ site.baseurl }}/materials/knitr-examp.Rmd))
 - [R Cheat Sheet]({{ site.baseurl }}/materials/Walkthrough-R)
+- [Projects]({{ site.baseurl }}/materials/projects)
 
 
 ### SQL <a name="SQL"></a>
@@ -104,6 +128,21 @@ with it on your computer by changing the code and seeing what happens.*
 - [Database Structure]({{ site.baseurl }}/materials/database-structure) ([presentation]({{ site.baseurl }}/materials/databases-structure.pdf))
 - [Database Resources]({{ site.baseurl }}/materials/database-resources)
 - [Exporting from OpenOffice]({{ site.baseurl }}/materials/exporting-tables-and-queries-from-openoffice-base-to-csv)
+- [SQL for Access Users]({{ site.baseurl }}/materials/sql-for-access-users)
+
+#### Database Structure Image Files
+
+- [Basic Structure]({{ site.baseurl }}/materials/databases-basic-table-structure.png)
+- [Cross-tabulated Table]({{ site.baseurl }}/materials/databases-crosstab-table.png)
+- [Crosstab Restructured]({{ site.baseurl }}/materials/databases-crosstab-restructured.png)
+- [Multiple Values]({{ site.baseurl }}/materials/database-struct-multiple-habitat-values.png)
+- [No Duplicate Rows]({{ site.baseurl }}/materials/database-struct-no-dup-rows.png)
+- [No Redundant Information]({{ site.baseurl }}/materials/database-struct-no-redundant-information.png)
+- [One Column per Type]({{ site.baseurl }}/materials/database-struct-one-col-per-type.png)
+- [One Value per Cell]({{ site.baseurl }}/materials/database-struct-one-val-per-cell.png)
+- [Order Doesn't Matter]({{ site.baseurl }}/materials/database-struct-order-doesnt-matter.png)
+- [Redundant Table]({{ site.baseurl }}/materials/databases-redundant-table.png)
+- [Redundant Table Restructure]({{ site.baseurl }}/materials/databases-redundant-table-restructure.png)
 
 
 
