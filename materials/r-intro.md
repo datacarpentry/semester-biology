@@ -28,28 +28,59 @@ language: R
     * Environment/History
     * Project management
 
-> Demo
->
-> * working directly in interpreter.
-> * writing code and running it from the editor.
-> * clearing the global environment.
-> * Integrated help (start typing, `F1` for more info).
+
+### Basic expressions
+
+* Write code directly in the interpreter
+
+```
+2 + 5
+4 * 2 / 3
+```
+
+* Write code in text editor and the run either by line or all code
+
+```
+2 + 5
+4 * 2 / 3
+```
+
+* `Source` vs `Source with Echo`
 
 
-### Projects
+### Types
 
-* Who here uses `setwd()`?
-* Start a new project
-* Create a `data` subdirectory
-* Add an example `csv` file
-* Load it
+* All values have types
 
-### Project structure
+```
+str(2)
+str('hello world')
+```
 
-* Two common structures
-* code in top-level directory with subdirectories for data, results, etc
-  (*possibly with subdirectories of their own*)
-* code in a separate subdirectory
+### Variables
+
+* A variable is a name that has a value associated with it
+    * Assign using `<-` or `=`
+
+```
+weight <- 26
+```
+
+* It works just like the value itself
+
+```
+double_weight <- weight * 2
+```
+
+* It won't change unless you assign a new value to it directly
+
+```
+weight
+weight * 2
+weight
+weight <- 22
+weight
+```
 
 ### Assignments format
 
