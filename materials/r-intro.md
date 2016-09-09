@@ -84,8 +84,26 @@ weight
 
 ### Assignments format
 
-* Output:
-    * `cat("1: ", answer)`
-    * `cat("1.1: ", answer)`
-* Comment before each problem:
-    * `# Problem 1`
+* Comment before each problem and each sub-problem
+
+```
+# Problem 1
+
+# 1.1
+2 + 2
+
+# 1.2
+2 - 8
+
+# Problem 2
+
+width = 2
+height = 3
+length = 1.5
+volume = width * height * length
+volume
+```
+
+> Do [Exercise 1 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
+> Do [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
+
