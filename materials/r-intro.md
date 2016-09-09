@@ -107,3 +107,37 @@ volume
 > Do [Exercise 1 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
 > Do [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
 
+
+### Functions
+
+* A function is basically a complicated expression. It is a command that returns
+  a value, but hides the details of how that value is determined. This is useful
+  because we typically don't want to look at the details of how numbers are
+  rounded or lists of numbers are sorted.
+
+```
+abs(-2)
+```
+
+* A function call is composed of two parts, the name of the function and the
+  arguments that the function requires to calculate the value it returns. In the
+  example above abs() is the name of the function, and -2 is the argument.
+
+* Functions can take multiple arguments. For example, if we want to round pi to
+  two decimal places we would use the round function with the arguments 3.14159
+  and 2, where the first argument is the number to be rounded and the second
+  argument is the number of decimal points to round it to.
+
+```
+round(3.14159, 2)
+```
+
+* Save the output of a function by assigning it to a variable
+
+```
+pi_approx <- round(3.14159, 2)
+pi_approx
+```
+
+> Do [Exercise 4 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
+
