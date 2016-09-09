@@ -70,7 +70,7 @@ x %*% y
     * `read.csv()`
 
 ```
-surveys <- data.frame(sites, counts, weights)
+surveys <- data.frame(sites, density_ha, area_ha)
 ```
 
 * Useful commands: 
@@ -83,5 +83,36 @@ surveys <- data.frame(sites, counts, weights)
     * `surveys$sites`
     * `surveys[["sites"]]`
 
+
+### Importing data
+
+* `read.csv()`
+* Download the file for the Shrub Volume 2 exercise
+* How do we tell R where this file is
+
+> When someone says `setwd` discuss issues
+> Ask if anyone has heard of projects
+
+### Projects
+
+* Start a new project
+* Create a `data` subdirectory
+* Download Shrub Volume 2 file to that directory
+* Load it
+
+```
+shrub_data <- read.csv('./data/shrub-dimensions-labeled.csv')
+```
+
+> DO NOT USE setwd() FOR THIS CLASS
+
+> Do [Exercise 10 - Shrub Volume 2]({{ site.baseurl }}/exercises/Expressions-and-variables-more-variables-R/).
+
+### Project structure
+
+* Two common structures
+* code in top-level directory with subdirectories for data, results, etc
+  (*possibly with subdirectories of their own*)
+* code in a separate subdirectory
 
 > Assign remaining exercises.
