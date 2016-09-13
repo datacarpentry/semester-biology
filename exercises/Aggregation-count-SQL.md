@@ -5,6 +5,5 @@ title: COUNT
 language: SQL
 ---
 
-Write a query that returns the number of individuals of all known species
-combined (`total_abundance`) in each year, sorted chronologically. Include the 
-year in the output. Save it as `total_abundance_by_year`.
+Write a query that returns the combined number of individuals from all known species (`total_abundance`) grouped by year and sorted chronologically. Include
+the year in the output. Save it as `total_abundance_by_year`.
