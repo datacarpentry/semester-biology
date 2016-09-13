@@ -91,6 +91,8 @@ surveys <- data.frame(sites, density_ha, area_ha)
 * How do we tell R where this file is
 
 > When someone says `setwd` discuss issues
+>   * Code doesn't work on different computers
+>   * Even worse if collaborating with several people
 > Ask if anyone has heard of projects
 
 ### Projects
