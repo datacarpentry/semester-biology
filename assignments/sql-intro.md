@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Introduction to Databases
 language: SQL
-exercises: ['Importing Data', 'SELECT', 'WHERE', 'ORDER BY', 'DISTINCT', 'Missing Data', 'GROUP BY', 'COUNT', 'SUM']
+exercises: ['Importing Data', 'SELECT', 'WHERE', 'ORDER BY', 'DISTINCT', 'Missing Data', 'COUNT', 'SUM']
 ---
 
 #### Learning Objectives
