@@ -1,5 +1,9 @@
---- layout: post title: Using Python to Interface with Databases
-created: 1318107057 categories: [] ---
+--- 
+layout: page
+element: notes
+title: Using Python to Interface with Databases
+language: Python
+---
 
 We will use [SQLite](http://sqlite.org/) to discuss how to use Python
 with databases, but most other major systems work in the same way, just

@@ -1,4 +1,9 @@
-# Using Modules
+---
+layout: page
+element: notes
+title: Using Modules
+language: Python
+---
 
 ## Definition
 

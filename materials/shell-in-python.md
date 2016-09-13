@@ -1,4 +1,10 @@
-### Shell from inside Python
+---
+layout: page
+element: notes
+title: Shell from inside Python
+language: Python
+---
+
 Everything you can do in the shell you can do using Python.
 The two key modules for doing so are:
 

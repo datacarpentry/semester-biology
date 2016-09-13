@@ -1,5 +1,9 @@
-Making Choices
-==============
+---
+layout: page
+element: notes
+title: Making Choices
+language: Python
+---
 
     number = -2
     if number < 0:

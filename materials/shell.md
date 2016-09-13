@@ -1,5 +1,8 @@
-The Shell
-=========
+---
+layout: page
+element: notes
+title: The Shell
+---
 
 Introduction
 ------------

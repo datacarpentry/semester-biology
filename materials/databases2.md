@@ -1,5 +1,9 @@
-Databases Week 2 - Joins, Nested Queries, and Database Structure
-================================================================
+---
+layout: page
+element: notes
+title: Databases Week 2 - Joins, Nested Queries, and Database Structure
+language: Access
+---
 
 Monday - Joins
 --------------

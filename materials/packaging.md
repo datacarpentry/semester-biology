@@ -1,5 +1,9 @@
-Python Packaging
-================
+---
+layout: page
+element: notes
+title: Packaging
+language: Python
+---
 
 Basic Packaging
 ---------------

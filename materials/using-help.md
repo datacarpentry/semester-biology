@@ -1,4 +1,9 @@
-# Using Python's built-in help
+---
+layout: page
+element: notes
+title: Using Python's built-in help
+language: Python
+---
 
 You can access Python's built-in help using the `help()` function with the name
 of any function inside the parentheses:

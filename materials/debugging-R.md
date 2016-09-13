@@ -7,7 +7,7 @@ language: R
 
 > Remember to
 >
-> * download [`debugging-example-unfixed.R`]({{ site.baseurl }}/materials/debugging-example-unfixed.R) and [`debugging-example-fixed.R`]({{ site.baseurl }}/materials/debugging-example-fixed.R).
+> * download [`debugging-example-unfixed.R`]({{ site.baseurl }}/code/debugging-example-unfixed.R) and [`debugging-example-fixed.R`]({{ site.baseurl }}/code/debugging-example-fixed.R).
 > * send `debugging-example-unfixed.R` to students so they can follow along.
 > * set up a new `Git` project that includes `debugging-example-unfixed.R`.
 

@@ -1,5 +1,9 @@
---- layout: post title: Importing data into Python created: 1288801032
-categories: [] ---
+---
+layout: page
+element: notes
+title: Importing data
+language: Python
+---
 
 ### From files
 

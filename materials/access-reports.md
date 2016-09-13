@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Reports in Access
+element: notes
+title: Reports 
+language: Access
 ---
 
 In the same way that Forms are simple controllable ways to enter data in tables,
