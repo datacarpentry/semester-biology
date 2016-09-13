@@ -8,39 +8,49 @@ language: R
 ### Vectors
 
 * A sequence of values with the same type
-* Assignment: 
-    * `c()`
+* Create using `c()`, which stands for "combine"
 
-``` 
+```
 sites <- c("a", "a", "b", "b")
 ```
 
-* Useful commands: 
+* Functions:
     * `str(sites)` 
     * `length(sites)`
-* Slicing: 
+	
+* Slicing:
     * `sites[1]` 
     * `sites[1:3]`
         * `1:3` makes a vector. So, this is the same as
     * `sites[c(1, 2, 3)]` 
         * You can use a vector to get any subset or order you want
-* Math:
-    * `sum()`
-    * `max()`
+
+* Math functions:
 
 ```
-counts <- c(0, 2, 2, 6)
-weights <- c(1.5, 2.6, 8.4, 0.2)
-total_weight <- sum(weights)
+density_ha <- c(2.8, 3.2, 1.5, 3.8)
+mean(density_ha)
+max(density_ha)
+min(density_ha)
+sum(density_ha)
+```
+
+* Vector math combines values in the same position
+
+```
+density_ha <- c(2.8, 3.2, 1.5, 3.8)
+area_ha <- c(3, 5, 1.9, 2.7)
+total_number <- density_ha * area_ha
 ```
 
 * Subsetting:
-    * `counts[sites == 'a']`
+    * `total_number[sites == 'a']`
         * `==` means "equal to" in most languages. 
         * Not `=`. `=` is used for assignment.
         * `!=`, `<`, `>`
 
-> Do [Exercise 1 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/).
+> Do [Exercise 9 - Shrub Volume 1]({{ site.baseurl }}/exercises/Vectors-shrub-volume-1-R/).
+
 
 ### Matrices (if linear algebra folks)
 
@@ -60,7 +70,7 @@ x %*% y
     * `read.csv()`
 
 ```
-surveys <- data.frame(sites, counts, weights)
+surveys <- data.frame(sites, density_ha, area_ha)
 ```
 
 * Useful commands: 
@@ -72,12 +82,39 @@ surveys <- data.frame(sites, counts, weights)
     * `surveys[c("counts", "weights")]`
     * `surveys$sites`
     * `surveys[["sites"]]`
-* Subsetting rows: 
-    * `subset(surveys, sites == 'a')`
-* Subsetting values/blocks: 
-    * `surveys[1,2]` 
-    * `surveys[1:2,1:3]`
 
-> Do [Exercise 3 - More Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-more-variables-R/).
+
+### Importing data
+
+* `read.csv()`
+* Download the file for the Shrub Volume 2 exercise
+* How do we tell R where this file is
+
+> When someone says `setwd` discuss issues
+>   * Code doesn't work on different computers
+>   * Even worse if collaborating with several people
+> Ask if anyone has heard of projects
+
+### Projects
+
+* Start a new project
+* Create a `data` subdirectory
+* Download Shrub Volume 2 file to that directory
+* Load it
+
+```
+shrub_data <- read.csv('./data/shrub-dimensions-labeled.csv')
+```
+
+> DO NOT USE setwd() FOR THIS CLASS
+
+> Do [Exercise 10 - Shrub Volume 2]({{ site.baseurl }}/exercises/Expressions-and-variables-more-variables-R/).
+
+### Project structure
+
+* Two common structures
+* code in top-level directory with subdirectories for data, results, etc
+  (*possibly with subdirectories of their own*)
+* code in a separate subdirectory
 
 > Assign remaining exercises.
