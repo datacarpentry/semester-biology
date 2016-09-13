@@ -121,11 +121,11 @@ abs(-2)
 
 * A function call is composed of two parts, the name of the function and the
   arguments that the function requires to calculate the value it returns. In the
-  example above abs() is the name of the function, and -2 is the argument.
+  example above `abs()` is the name of the function, and `-2` is the argument.
 
-* Functions can take multiple arguments. For example, if we want to round pi to
-  two decimal places we would use the round function with the arguments 3.14159
-  and 2, where the first argument is the number to be rounded and the second
+* Functions can take multiple arguments. For example, if we want to round `pi` to
+  two decimal places we would use the round function with the arguments `3.14159`
+  and `2`, where the first argument is the number to be rounded and the second
   argument is the number of decimal points to round it to.
 
 ```
