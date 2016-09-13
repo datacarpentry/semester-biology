@@ -12,4 +12,4 @@ language: R
 
 * Readings
 
-  * [Software Carpentry lesson on making choices](http://swcarpentry.github.io/r-novice-inflammation/04-cond.html)
+  * [Software Carpentry lesson on making choices](http://swcarpentry.github.io/r-novice-inflammation/04-cond/)

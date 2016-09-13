@@ -12,5 +12,5 @@ language: R
 
 * Readings
 
-  * [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R.html)
-  * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R.html)
+  * [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R/)
+  * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R/)
