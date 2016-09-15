@@ -22,20 +22,19 @@ numbers of rows when we look at it.*
 
 1. Use the `nrow()` function to determine how many records are represented in
    `surveys`.
-2. Select (*and print*) the `year`, `month`, `day`, and `species_id` columns in
-   that order.
+2. Select the `year`, `month`, `day`, and `species_id` columns in that order.
 3. Create a new data frame with the `year`, `species_id`, and weight in
    kilograms of each individual, with no null weights.
 4. Use the `distinct()` function to print the `species_id` for each
-   species in the dataset that have been weighed. Name this table `species_ids`.
+   species in the dataset that has been weighed. Name this table `species_ids`.
 5. Determine how many rows are in `species_ids`. *You will have to take this
    `<derived table>` and make it a local data frame (`tbl_df`) using
    `collect()`.*
-6. Calculate the average size of a *Neotoma Albigula* (`NL`) in `surveys` stored
-   in a local data frame.
+6. Calculate the average size of a *Neotoma Albigula* (`NL`) in `surveys` and
+   store the result in a local data frame.
 7. Create a local data frame with the number of individuals counted in each year
-   of the study. *If you don't know how to count things using `dplyr`, I'd
-   recommend checking back at the
+   of the study. *If you don't know how to count things using `dplyr`, take
+   another look at the
    [`dplyr` vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html).
    Vignettes are a great way to reference packages in R if you don't know the 
    name of a function you need but you know the package has that capability. In
