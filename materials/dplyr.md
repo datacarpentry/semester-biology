@@ -110,3 +110,23 @@ query <- "SELECT year, month, day, genus, species
           ON surveys.species_id = species.species_id"
 tbl(portaldb, sql(query))
 ```
+
+* Queries and data manipulation functions return similar results with various headings.
+
+```
+> tbl(portaldb, "surveys")
+Source: sqlite 3.8.6 [portal_mammals.sqlite]
+From: surveys
+
+> tbl(portaldb, sql(query))
+Source: sqlite 3.8.6 [portal_mammals.sqlite]
+From: <derived table>
+
+> surveys <- tbl(portaldb, "surveys")
+> select(surveys, year, month, day)
+Source: sqlite 3.8.6 [portal_mammals.sqlite]
+From: surveys
+```
+
+* Queries and data manipulation results will remain in the external database.
+* Use `collect()` to store results in a local data frame.
