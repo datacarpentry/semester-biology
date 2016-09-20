@@ -42,7 +42,7 @@ surveys <- read.csv("surveys.csv")
 * Mutate: 
     * `mutate(surveys, weight_kg = weight / 1000)`
 
-> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R), Tasks 1-6.
+> Do [Exercise 2 - Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 ### Aggregation
 
@@ -62,7 +62,7 @@ surveys_by_species <- group_by(surveys, species_id)
             * Returns `NA`
             * `mean(weight, na.rm=TRUE)`
 
-> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R), Tasks 7-8.
+> Do [Exercise 3 - Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
 
 ### Joins
 
@@ -74,7 +74,7 @@ combined <- inner_join(surveys, species, by = "species_id")
 head(combined)
 ```
 
-> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R), Task 10.
+> Do [Exercise 4 - Shrub Volume Join]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R).
 
 ### Pipes
 
@@ -105,7 +105,7 @@ surveys %>%
   summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-> Do [Fix the Code 1]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-1-R)
+> Do [Fix the Code 1]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-1-R).
 
 ### Using `dplyr` with databases
 
