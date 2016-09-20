@@ -7,7 +7,8 @@ language: R
 
 > Remember to
 > 
-> * download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).   
+> * download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).
+> * download [`species.csv`](https://ndownloader.figshare.com/files/3299483).
 > * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 
 
@@ -23,8 +24,7 @@ language: R
         * `filter()` is the name of a function in `dplyr` and `stats` packages
     * Call a function in the package directly: `::`
         * No use of `library()` needed
-        * `dplyr::filter()` vs. `stats::filter()`  
-            
+        * `dplyr::filter()` vs. `stats::filter()`
 
 ### Basic `dplyr`
 
@@ -62,7 +62,19 @@ surveys_by_species <- group_by(surveys, species_id)
             * Returns `NA`
             * `mean(weight, na.rm=TRUE)`
 
-> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R), Tasks 7-8.
+> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl}}/exercises/Scientific-shrub-volume-3-R), Tasks 7-8.
+
+### Joins
+
+* `inner_join` in `dplyr` works like `JOIN` in SQL
+
+```
+species <- read.csv("species.csv")
+combined <- inner_join(surveys, species, by = "species_id")
+head(combined)
+```
+
+> Do [Exercise 2 - Shrub Volume 3]({{ site.baseurl}}/exercises/Scientific-shrub-volume-3-R), Task 10.
 
 ### Pipes
 
@@ -92,6 +104,8 @@ surveys %>%
   group_by(year) %>%
   summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
+
+> Do [Fix the Code 1]({{ site.baseurl}}/exercises/Dplyr-fix-the-code-1-R)
 
 ### Using `dplyr` with databases
 
