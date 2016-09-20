@@ -26,23 +26,4 @@ numbers of rows when we look at it.*
 3. Create a new data frame with the `year`, `species_id`, and weight in
    kilograms of each individual, with no null weights.
 4. Use the `distinct()` function to print the `species_id` for each
-   species in the dataset that has been weighed. Name this table `species_ids`.
-5. Determine how many rows are in `species_ids`. *You will have to take this
-   `<derived table>` and make it a local data frame (`tbl_df`) using
-   `collect()`.*
-6. Calculate the average size of a *Neotoma Albigula* (`NL`) in `surveys` and
-   store the result in a local data frame.
-7. Create a local data frame with the number of individuals counted in each year
-   of the study. *If you don't know how to count things using `dplyr`, take
-   another look at the
-   [`dplyr` vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html).
-   Vignettes are a great way to reference packages in R if you don't know the 
-   name of a function you need but you know the package has that capability. In
-   this case, you will want to search for 'count'.*
-
-*Want a challenge?*: Create a local data frame containing the average size of each rodent
-   species for individuals captured on the `Control` plots. You can do this by
-   either creating a connection to the `species` and `plots` tables and using
-   `inner_join` in `dplyr` or by writing the query in `SQL` and using
-   `tbl(portaldb, sql(query))`, where `query` is a string containing the SQL you
-   want to run. Better yet try doing it both ways.
+   species in the dataset that has been weighed.
