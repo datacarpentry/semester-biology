@@ -39,3 +39,10 @@ numbers of rows when we look at it.*
    Vignettes are a great way to reference packages in R if you don't know the 
    name of a function you need but you know the package has that capability. In
    this case, you will want to search for 'count'.*
+
+*Want a challenge?*: Create a local data frame containing the average size of each rodent
+   species for individuals captured on the `Control` plots. You can do this by
+   either creating a connection to the `species` and `plots` tables and using
+   `inner_join` in `dplyr` or by writing the query in `SQL` and using
+   `tbl(portaldb, sql(query))`, where `query` is a string containing the SQL you
+   want to run. Better yet try doing it both ways.
