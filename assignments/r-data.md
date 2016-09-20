@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Working with Data
 language: R
-exercises: ['dplyr', 'Shrub Volume Data Basics', 'Shrub Volume Aggregation', 'Shrub Volume Join', 'Fix the Code 1', 'Link to Databases']
+exercises: ['dplyr', 'Shrub Volume Data Basics', 'Shrub Volume Aggregation', 'Shrub Volume Join', 'Fix the Code 1', 'Link to Databases', 'Collect from Databases']
 ---
 
 #### Learning Objectives
