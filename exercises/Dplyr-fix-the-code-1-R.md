@@ -6,7 +6,7 @@ language: R
 ---
 
 This is a follow-up to
-[Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R).
+[Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
 If you haven't already downloaded the
 [shrub volume data]({{ site.baseurl }}/data/shrub-volume-experiment.csv)
 do so now and store it in your `data` directory.
