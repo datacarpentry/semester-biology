@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Debugging
-title: Fix the Code 2
+title: Debug the Code
 language: R
 ---
 

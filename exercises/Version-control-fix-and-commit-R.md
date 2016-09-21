@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Version Control
-title: Fix the Code
+title: Fix and Commit
 language: R
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: dplyr
-title: Fix the Code 1
+title: Fix the Code
 language: R
 ---
 
