@@ -39,7 +39,7 @@ surveys <- read.csv("surveys.csv")
     * `filter(surveys, species_id == "DS")`
     * `filter(surveys, species_id == "DS", year > 1995)`
 * Mutate: 
-    * `mutate(surveys, weight_kg = weight / 1000)`
+    * `mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)`
 
 > Do [Exercise 2 - Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
