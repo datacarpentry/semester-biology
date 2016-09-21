@@ -1,11 +1,11 @@
 ---
 layout: exercise
 topic: Functions
-title: Strings from Data 2
+title: String Data
 language: R
 ---
 
-This is a follow up to [Strings from Data 1]({{ site.baseurl }}/exercises/Strings-strings-from-data-1-R/).
+This is a follow up to [Strings from Data]({{ site.baseurl }}/exercises/Strings-strings-from-data-R/).
 
 A colleague has produced a file with one DNA sequence on each line. Download
 [the file]({{ site.baseurl }}/data/dna-sequences-1.txt) and load it into R using
