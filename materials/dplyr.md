@@ -20,13 +20,6 @@ language: R
 * Combination of code, data, and documentation
 * Download and install packages with the R console:
     * `install.packages("dplyr")`
-* Using a package:
-    * Load all of the functions in the package: `library("dplyr")`
-        * Can result in namespace issues when different packages have functions with the same name 
-        * `filter()` is the name of a function in `dplyr` and `stats` packages
-    * Call a function in the package directly: `::`
-        * No use of `library()` needed
-        * `dplyr::filter()` vs. `stats::filter()`
 
 ### Basic `dplyr`
 
