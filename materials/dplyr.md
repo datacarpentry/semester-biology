@@ -105,7 +105,7 @@ surveys %>%
   summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-> Do [Fix the Code 1]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-1-R).
+> Do [Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
 
 ### Using `dplyr` with databases
 
