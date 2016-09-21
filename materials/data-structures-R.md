@@ -49,7 +49,7 @@ total_number <- density_ha * area_ha
         * Not `=`. `=` is used for assignment.
         * `!=`, `<`, `>`
 
-> Do [Exercise 9 - Shrub Volume 1]({{ site.baseurl }}/exercises/Vectors-shrub-volume-1-R/).
+> Do [Exercise 9 - Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
 
 
 ### Matrices (if linear algebra folks)
@@ -87,7 +87,7 @@ surveys <- data.frame(sites, density_ha, area_ha)
 ### Importing data
 
 * `read.csv()`
-* Download the file for the Shrub Volume 2 exercise
+* Download the file for the Shrub Volume Data Frame exercise
 * How do we tell R where this file is
 
 > When someone says `setwd` discuss issues
@@ -99,7 +99,7 @@ surveys <- data.frame(sites, density_ha, area_ha)
 
 * Start a new project
 * Create a `data` subdirectory
-* Download Shrub Volume 2 file to that directory
+* Download Shrub Volume Data Frame file to that directory
 * Load it
 
 ```
@@ -108,7 +108,7 @@ shrub_data <- read.csv('./data/shrub-dimensions-labeled.csv')
 
 > DO NOT USE setwd() FOR THIS CLASS
 
-> Do [Exercise 10 - Shrub Volume 2]({{ site.baseurl }}/exercises/Expressions-and-variables-more-variables-R/).
+> Do [Exercise 10 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volue-data-frame-R).
 
 ### Project structure
 
