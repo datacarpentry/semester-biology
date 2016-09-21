@@ -10,7 +10,9 @@ language: R
 > * download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).
 > * download [`species.csv`](https://ndownloader.figshare.com/files/3299483).
 > * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
-
+>
+> * Consider removing the `dplyr` package so you can demonstrate installing it.
+>     * Linux users: you may not want to do this because the source install is slow
 
 ### Packages
 
