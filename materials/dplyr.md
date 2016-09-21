@@ -18,6 +18,7 @@ language: R
 
 * Main way that reusable code is shared in R
 * Combination of code, data, and documentation
+* R has a rich ecosystem of packages for data manipulation & analysis
 * Download and install packages with the R console:
     * `install.packages("dplyr")`
 
