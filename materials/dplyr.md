@@ -24,7 +24,10 @@ language: R
 
 ### Basic `dplyr`
 
+* Modern data manipulation library for R
 * Does a lot of the same things we've learned to do in SQL.
+
+> * Start a new project (modeling good practice)
 
 ```
 surveys <- read.csv("surveys.csv")
