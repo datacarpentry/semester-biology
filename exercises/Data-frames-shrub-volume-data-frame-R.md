@@ -1,11 +1,11 @@
 ---
 layout: exercise
 topic: Data Frames
-title: Shrub Volume 2
+title: Shrub Volume Data Frame
 language: R
 ---
 
-This is a follow up to [Shrub Volume 1]({{ site.baseurl }}/exercises/Vectors-shrub-volume-1-R).
+This is a follow up to [Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R).
 
 One of your collaborators has posted [a comma-delimited text
 file]({{ site.baseurl }}/data/shrub-dimensions-labeled.csv)
