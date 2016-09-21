@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Making Choices
-title: Modify the Code 2
+title: Complete the Code
 language: R
 ---
 
