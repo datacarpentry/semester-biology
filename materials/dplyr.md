@@ -10,25 +10,31 @@ language: R
 > * download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).
 > * download [`species.csv`](https://ndownloader.figshare.com/files/3299483).
 > * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
-
+>
+> * Consider removing the `dplyr` package so you can demonstrate installing it.
+>     * Linux users: you may not want to do this because the source install is slow
+>
+> INSTALL WARNING: Some Windows users have issues installing `dplyr` receiving
+> errors that the associate files cannot be copied. This is an issue with
+> McAfee anti-virus. Streaming protection should be temporarily disabled to
+> allow installation.
 
 ### Packages
 
 * Main way that reusable code is shared in R
 * Combination of code, data, and documentation
+* R has a rich ecosystem of packages for data manipulation & analysis
 * Download and install packages with the R console:
     * `install.packages("dplyr")`
 * Using a package:
     * Load all of the functions in the package: `library("dplyr")`
-        * Can result in namespace issues when different packages have functions with the same name 
-        * `filter()` is the name of a function in `dplyr` and `stats` packages
-    * Call a function in the package directly: `::`
-        * No use of `library()` needed
-        * `dplyr::filter()` vs. `stats::filter()`
 
 ### Basic `dplyr`
 
+* Modern data manipulation library for R
 * Does a lot of the same things we've learned to do in SQL.
+
+> * Start a new project (modeling good practice)
 
 ```
 surveys <- read.csv("surveys.csv")
@@ -40,7 +46,7 @@ surveys <- read.csv("surveys.csv")
     * `filter(surveys, species_id == "DS")`
     * `filter(surveys, species_id == "DS", year > 1995)`
 * Mutate: 
-    * `mutate(surveys, weight_kg = weight / 1000)`
+    * `mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)`
 
 > Do [Exercise 2 - Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
