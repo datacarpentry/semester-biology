@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Strings
-title: Strings from Data 1
+title: Strings from Data
 language: R
 ---
 

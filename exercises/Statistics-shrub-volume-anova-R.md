@@ -1,11 +1,11 @@
 ---
 layout: exercise
 topic: Statistics
-title: Shrub Volume 4
+title: Shrub Volume ANOVA
 language: R
 ---
 
-This is a follow up to [Shrub Volume 3]({{ site.baseurl }}/exercises/Scientific-shrub-volume-3-R).
+This is a follow up to [Shrub Volume Carbon]({{ site.baseurl }}/exercises/Combining-basics-shrub-volume-carbon-R).
 
 Dr. Granger wants you to run an ANOVA to determine if the different experimental 
 treatments lead to differences in shrub carbon.

@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Introduction to R and RStudio
 language: R
-exercises: ['Basic Expressions', 'Basic Variables', 'More Variables', 'Built-in Functions', 'Modify the Code 1', 'Code Shuffle', 'Bird Banding', 'Shrub Volume 1', 'Shrub Volume 2']
+exercises: ['Basic Expressions', 'Basic Variables', 'More Variables', 'Built-in Functions', 'Modify the Code', 'Code Shuffle', 'Bird Banding', 'Shrub Volume Vectors', 'Shrub Volume Data Frame']
 ---
 
 #### Learning Objectives

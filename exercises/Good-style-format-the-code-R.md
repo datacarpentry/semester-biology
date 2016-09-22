@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Good Style
-title: Modify the Code 3
+title: Format the Code
 language: R
 ---
 

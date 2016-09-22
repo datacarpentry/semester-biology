@@ -1,12 +1,12 @@
 ---
 layout: exercise
 topic: Statistics
-title: Mammal Body Size 4
+title: Mammal Body Size T-test
 language: R
 ---
 
-This is a follow up to [Mammal Body Size 2]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-2-R)
-and [Mammal Body Size 3]({{ site.baseurl }}/exercises/Graphing-mammal-body-size-3-R).
+This is a follow up to [Mammal Body Size by Continent]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-by-continent-R)
+and [Mammal Body Size Distribution]({{ site.baseurl }}/exercises/Graphing-mammal-body-size-distribution-R).
 
 We have previously compared the average masses of extant and extinct species on
 different continents to try to understand whether size has an influence on

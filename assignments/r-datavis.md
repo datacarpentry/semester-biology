@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Data Visualization
 language: R
-exercises: ['Basic Queries Review', 'Mass vs Metabolism', 'Adult vs Newborn Size 1']
+exercises: ['Basic Queries Review', 'Mass vs Metabolism', 'Adult vs Newborn Size']
 ---
 
 #### Learning Objectives

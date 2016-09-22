@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Scientific
-title: Mammal Body Size 1
+title: Mammal Body Size
 language: R
 ---
 

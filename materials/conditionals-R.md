@@ -150,4 +150,4 @@ is_best_superhero <- function(superhero) {
 is_best_superhero("Hulk")
 ```
 
-> Do [Exercise 2 - Modify the Code 2]({{ site.baseurl }}/exercises/Making-choices-modify-the-code-2-R).
+> Do [Exercise 2 - Complete the Code]({{ site.baseurl }}/exercises/Making-choices-complete-the-code-R).

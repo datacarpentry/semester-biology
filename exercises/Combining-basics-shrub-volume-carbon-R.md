@@ -1,11 +1,11 @@
 ---
 layout: exercise
 topic: Combining Basics
-title: Shrub Volume 5
+title: Shrub Volume Carbon
 language: R
 ---
 
-This is a follow-up to [Shrub Volume 4]({{ site.baseurl }}/exercises/Statistics-shrub-volume-4-R).
+This is a follow-up to [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 Now that you're familiar with the data, Dr. Granger wants you to conduct a preliminary analysis of these data to include in a grant proposal (*she might be a world renowned expert in carbon storage in plants, but she sure doesn't know much about computers*). If you missed it, the [data file]({{ site.baseurl }}/data/shrub-volume-experiment.csv) is still on the web.
 
