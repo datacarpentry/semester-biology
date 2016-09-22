@@ -13,6 +13,11 @@ language: R
 >
 > * Consider removing the `dplyr` package so you can demonstrate installing it.
 >     * Linux users: you may not want to do this because the source install is slow
+>
+> INSTALL WARNING: Some Windows users have issues installing `dplyr` receiving
+> errors that the associate files cannot be copied. This is an issue with
+> McAfee anti-virus. Streaming protection should be temporarily disabled to
+> allow installation.
 
 ### Packages
 
