@@ -21,6 +21,8 @@ language: R
 * R has a rich ecosystem of packages for data manipulation & analysis
 * Download and install packages with the R console:
     * `install.packages("dplyr")`
+* Using a package:
+    * Load all of the functions in the package: `library("dplyr")`
 
 ### Basic `dplyr`
 
