@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Data Visualization
 language: R
-exercises: ['Basic Queries Review', 'Mass vs Metabolism', 'Adult vs Newborn Size']
+exercises: ['Basic Queries Review', 'Mass vs Metabolism', 'Adult vs Newborn Size', 'Sexual Dimorphism Exploration', 'Sexual Dimorphism Data Manipulation']
 ---
 
 #### Learning Objectives
