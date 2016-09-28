@@ -10,10 +10,12 @@ mathematical form of this relationship should be is unclear. Let's look at the
 problem empirically for mammals.
 
 Download some
-[mammal life history data](http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt) from the web. 
-You can do this either directly in the program using `read.csv()` or download 
-the file to your computer using your browser, save it in the `data`
-subdirectory, and import it from there.
+[mammal life history data](http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
+from the web.  You can do this either directly in the program using `read.csv()`
+or download the file to your computer using your browser, save it in the `data`
+subdirectory, and import it from there. It is tab delimited so you'll want to
+use `sep = "\t"` as an optional argument when calling `read.csv()`. The `\t` is
+how we indicate a tab character to R (and most other programming languages).
 
 When you import the data there are some extra blank lines at
 the end of this file. Get rid of them by using the optional `read.csv()`
