@@ -109,6 +109,45 @@ ggplot(dm_ts_data, aes(x = year, y = count)) +
 
 > Do Task 5 in [Exercise 3 - Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
 
+### Statistical transformations
+
+* `geoms` include statistical transformations
+* So far we've seen
+    * `identity`: the raw form of the data or no transoformation
+    * `smooth`: model line (e.g., loess, lm)
+* Transformations also exist to make things like histograms, bar plots, etc.
+* Occur as defaults in associated `geoms`
+
+* To look at the abundances of different species in the dataset use a bar plot
+
+```
+surveys <- read.csv("surveys.csv")
+surveys <- filter(surveys, weight > 0)
+ggplot(surveys, aes(x = species_id))
+  + geom_bar()
+```
+
+* Uses the transformation `count` to count the number of rows for each species
+
+* To look at the distribution of weights in the dataset use a histogram
+
+```
+ggplot(surveys, aes(x = weight)) +
+  geom_histogram()
+```
+
+* Uses `bin` transform: split weights into bins and count rows in each bin
+* These can be combined with all of other things we've learned
+
+```
+ggplot(surveys, aes(x = weight, fill = species_id)) +
+  geom_histogram() +
+  scale_x_log10() +
+  facet_wrap(~plot_id) +
+  xlab("Mass (g)") +
+  ylab("Number of Individuals") +
+  theme_bw(base_size = 16)
+```
 
 ### Additional information
 
