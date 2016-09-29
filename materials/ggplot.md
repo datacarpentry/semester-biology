@@ -55,7 +55,7 @@ ggplot(dm_ts_data, aes(x = year, y = count)) +
   xlab("Year") +
   ylab("Number of Individuals") +
   ggtitle("Dipodomys Merriami Time-Series at Portal") +
-  theme_bw(base_size = 12, base_family = "Helvetica")
+  theme_bw()
 ```
 
 > Do [Exercise 2 - Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
