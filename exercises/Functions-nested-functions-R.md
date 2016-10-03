@@ -20,6 +20,6 @@ she wants to know what it weighed in pounds. So, hook your grandmother
 up and write a function that converts kilograms into pounds. Use that
 function along with your dinosaur mass function to estimate the weight,
 in pounds, of a 12 m long Stegosaurus (*12 m is about as big as they come
-and we want grandma's story to to be as wild as possible*). In
+and we want grandma's story to be as wild as possible*). In
 *Stegosauria*, `a` has been estimated as `10.95` and `b` has been estimated as
 `2.64` ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
