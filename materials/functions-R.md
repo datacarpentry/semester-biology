@@ -90,7 +90,11 @@ add <- function() {
 }
 ```
 
-> Do [Exercise 1 - Use and Modify, Task 3]({{ site.baseurl }}/exercises/Functions-use-and-modify-R) and [Exercise 2 - Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
+> Do [Exercise 1 - Use and Modify, Task 3]({{ site.baseurl }}/exercises/Functions-use-and-modify-R)
+> and [Exercise 2 - Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
+>
+> *Discuss what passing `a` and `b` in is much more useful than having them
+> fixed*
 
 ### Nesting Functions
 
