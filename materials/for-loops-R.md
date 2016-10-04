@@ -53,6 +53,10 @@ for (pet in pets) {
 }
 ```
 
+> Do [Exercise 4 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
+
+> Make sure students get the basics before moving on.
+
 ### Storing results
 
 * Create an empty object.
@@ -71,6 +75,8 @@ for (pet in pets) {
 }
 ```
 
+> Assign [Exercise 5 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
+
 ### Looping over columns in data frames
 
 ```
@@ -84,10 +90,6 @@ for (exp_biomass in biomass_data) {
   print(total_npp)
 }
 ```
-
-> Do [Exercise 4 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
-
-> Make sure students get the basics before moving on.
 
 ### Alternate loops
 
@@ -160,4 +162,4 @@ for (i in seq_along(pets)) {
 }
 ```
 
-> Assign [Exercise 5 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
+
