@@ -8,9 +8,9 @@ language: R
 * Topics
 
   * Functions
-  * Loops
+  * Conditionals
 
 * Readings
 
   * [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R/)
-  * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R/)
+  * [Software Carpentry lesson on making choices](http://swcarpentry.github.io/r-novice-inflammation/04-cond/)
