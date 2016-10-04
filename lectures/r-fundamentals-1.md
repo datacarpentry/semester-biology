@@ -6,6 +6,5 @@ language: R
 ---
 
 1. [Functions]({{ site.baseurl }}/materials/functions-R)
-2. [Loops]({{ site.baseurl }}/materials/for-loops-R)
-3. [Other Data Structures]({{ site.baseurl }}/materials/other-data-structures-R)
+2. [Conditionals]({{ site.baseurl }}/materials/conditionals-R)
 

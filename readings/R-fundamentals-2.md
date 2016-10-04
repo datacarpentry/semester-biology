@@ -7,9 +7,9 @@ language: R
 
 * Topics
 
-  * Conditionals
+  * Iteration
   * Problem decomposition
 
 * Readings
 
-  * [Software Carpentry lesson on making choices](http://swcarpentry.github.io/r-novice-inflammation/04-cond/)
+  * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R/)

@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Programming Fundamentals 1
 language: R
-exercises: ['Use and Modify', 'Writing Functions', 'Nested Functions', 'for Loop', 'stringr', 'Multiple Files']
+exercises: ['Use and Modify', 'Writing Functions', 'Nested Functions', 'Choice Operators', 'Complete the Code', 'Function with Choices']
 ---
 
 #### Learning Objectives
@@ -12,7 +12,8 @@ exercises: ['Use and Modify', 'Writing Functions', 'Nested Functions', 'for Loop
 >
 > - use, modify, and write custom functions
 > - use the output of one function as the input of another
-> - use `for` loops to automate function operations 
+> - understand and use the basic relational operators
+> - use an `if` statement to evaluate conditionals
 
 {% include reading.html %}
 
