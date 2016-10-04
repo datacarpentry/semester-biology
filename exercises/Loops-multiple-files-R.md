@@ -19,7 +19,7 @@ Help him out by downloading [the data]({{ site.baseurl }}/data/archaea-dna.zip)
 and looping over the files to determine the GC content for each file. Unzip the
 the .zip file into your `data` directory. If you look at the data you'll see
 that it's made up of one file per species using the [FASTA dna sequence format](https://en.wikipedia.org/wiki/FASTA_format). We 
-could try to load using `read.csv`, but the [ShortRead package in Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html) 
+could try to load it using `read.csv`, but the [ShortRead package in Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html)
 already exists for parsing fasta files, so we'll use that instead. [Install Bioconductor](http://www.bioconductor.org/install/) if 
 you haven't already. 
 
