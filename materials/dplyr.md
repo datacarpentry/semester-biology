@@ -147,22 +147,7 @@ bbs_counts_csv <- read.csv("BBS_counts.csv")
 > Do [Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
 
 
-* Queries and data manipulation functions return similar results with various headings.
-
-```
-> tbl(portaldb, "surveys")
-Source: sqlite 3.8.6 [portal_mammals.sqlite]
-From: surveys
-
-> tbl(portaldb, sql(query))
-Source: sqlite 3.8.6 [portal_mammals.sqlite]
-From: <derived table>
-
-> surveys <- tbl(portaldb, "surveys")
-> select(surveys, year, month, day)
-Source: sqlite 3.8.6 [portal_mammals.sqlite]
-From: surveys
-```
-
+* Queries and data manipulation functions return similar results with various 
+  headings (`Source:   query`).
 * Queries and data manipulation results will remain in the external database.
-* Use `collect()` to store results in a local data frame.
+* Use `collect()` to store results in a local data frame (`# A tibble`).

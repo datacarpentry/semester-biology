@@ -1,10 +1,10 @@
-[1] 35549
+[1] NA
 
-Source: sqlite 3.8.6 [portal_mammals.sqlite]
-From: surveys [35,549 x 4]
+Source:   query [?? x 4]
+Database: sqlite 3.8.6 [portal_mammals.sqlite]
 
     year month   day species_id
-   (int) (int) (int)      (chr)
+   <int> <int> <int>      <chr>
 1   1977     7    16         NL
 2   1977     7    16         NL
 3   1977     7    16         DM
@@ -15,14 +15,13 @@ From: surveys [35,549 x 4]
 8   1977     7    16         DM
 9   1977     7    16         DM
 10  1977     7    16         PF
-..   ...   ...   ...        ...
+# ... with more rows
 
-Source: sqlite 3.8.6 [portal_mammals.sqlite]
-From: surveys [32,283 x 3]
-Filter: weight, !is.null(weight) 
+Source:   query [?? x 3]
+Database: sqlite 3.8.6 [portal_mammals.sqlite]
 
     year species_id weight_kg
-   (int)      (chr)     (dbl)
+   <int>      <chr>     <dbl>
 1   1977         DM     0.040
 2   1977         DM     0.048
 3   1977         DM     0.029
@@ -33,13 +32,13 @@ Filter: weight, !is.null(weight)
 8   1977         OX     0.022
 9   1977         DM     0.035
 10  1977         PF     0.007
-..   ...        ...       ...
+# ... with more rows
 
-Source: sqlite 3.8.6 [portal_mammals.sqlite]
-From: <derived table> [?? x 1]
+Source:   query [?? x 1]
+Database: sqlite 3.8.6 [portal_mammals.sqlite]
 
    species_id
-        (chr)
+        <chr>
 1          DM
 2          DO
 3          PF
@@ -50,4 +49,4 @@ From: <derived table> [?? x 1]
 8          OL
 9          RM
 10         DS
-..        ...
+# ... with more rows

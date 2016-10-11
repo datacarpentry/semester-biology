@@ -1,4 +1,4 @@
-Joining by: "experiment"
+Joining, by = "experiment"
    site experiment length width height manipulation
 1     1          1    2.2   1.3    9.6      control
 2     1          2    2.1   2.2    7.6         burn

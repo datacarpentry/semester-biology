@@ -1,15 +1,13 @@
 [1] 25
 
-Source: local data frame [1 x 1]
-
+# A tibble: 1 × 1
   avg_weight
-       (dbl)
+       <dbl>
 1  0.1592457
 
-Source: local data frame [26 x 2]
-
+# A tibble: 26 × 2
     year no_individuals
-   (int)          (int)
+   <int>          <int>
 1   1977            503
 2   1978           1048
 3   1979            719
@@ -20,4 +18,4 @@ Source: local data frame [26 x 2]
 8   1984            981
 9   1985           1438
 10  1986            942
-..   ...            ...
+# ... with 16 more rows
