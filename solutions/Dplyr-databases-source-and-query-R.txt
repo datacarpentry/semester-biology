@@ -1,0 +1,20 @@
+Source:   query [?? x 2]
+Database: sqlite 3.8.6 [portal_mammals.sqlite]
+
+  `AVG(s.hindfoot_length)` `AVG(s.weight)`
+                     <dbl>           <dbl>
+1                 50.04674        120.3318
+
+Source:   query [?? x 2]
+Database: sqlite 3.8.6 [portal_mammals.sqlite]
+
+  `AVG(s.hindfoot_length)` `AVG(s.weight)`
+                     <dbl>           <dbl>
+1                 50.52039        123.3665
+
+Source:   query [?? x 2]
+Database: sqlite 3.8.6 [portal_mammals.sqlite]
+
+  `AVG(s.hindfoot_length)` `AVG(s.weight)`
+                     <dbl>           <dbl>
+1                 49.54717        117.0033
