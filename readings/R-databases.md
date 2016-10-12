@@ -1,7 +1,7 @@
 ---
 layout: page
 element: reading
-title: Integrating R and SQL
+title: Working with Databases
 language: R
 ---
 
