@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Working with Databases
 language: R
-exercises: ['Source and Query', 'Manipulate Query', 'Copy to Database', 'NEON Database', 'Tree Biomass']
+exercises: ['Source and Query', 'Manipulate Query', 'Copy to Database', 'NEON Mammals', 'Tree Biomass']
 ---
 
 #### Learning Objectives
