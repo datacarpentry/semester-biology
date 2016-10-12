@@ -1,0 +1,16 @@
+Source:   query [?? x 3]
+Database: sqlite 3.8.6 [portal_mammals.sqlite]
+
+    year species_id avg_weight
+   <int>      <chr>      <dbl>
+1   1977         DS  121.43750
+2   1977         OT   21.00000
+3   1977         PE   19.50000
+4   1977         PP   15.33333
+5   1978         DS  115.19865
+6   1978         OT   23.22000
+7   1978         PE   20.42857
+8   1978         PP   14.86957
+9   1979         DS  111.79695
+10  1979         OT   23.07576
+# ... with more rows
