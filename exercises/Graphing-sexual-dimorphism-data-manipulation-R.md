@@ -41,17 +41,20 @@ resulted in a lot of plots, but many of them had low sample sizes.
     Now, remake your original graph using only the data on families with greater
     than 25 species.
 
-2. Sexual size dimorophism doesn't seem to show up clearly when looking at
-   distributions of male and female masses across species, but maybe the
-   differences among species are too large relative to the differences between
-   sexes to see what is happening. So, you decide to look at the distribution of
-   differences between species. Use `mutate()` to create a new column which is 
-   the relative size difference between female and male masses
+2. Sexual size dimorphism doesn't seem to show up clearly when visually
+   comparing the distributions of male and female masses across species. Maybe
+   the differences among species are too large relative to the differences 
+   between sexes to see what is happening; so, you decide to calculate the
+   difference between male and female masses for each species and look at the
+   distribution of those values for all species in the data.
+   
+   Use `mutate()` to create a new column which is the relative size difference
+   between female and male masses 
 
-   `(F_mass - M_mass) / F_mass` 
+   `(F_mass - M_mass) / F_mass`
 
-   and then make a histogram of these differences with a vertical line at 0 
-   difference.
+   and then make a single histogram that shows all of the species-level
+   differences. Add a vertical line at 0 difference for reference.
 
 3. Combine the two other tasks to produce histograms of the relative size
    difference for each family, only including families with more than 25
