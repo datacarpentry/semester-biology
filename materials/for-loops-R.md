@@ -81,16 +81,14 @@ for (pet in pets) {
 * By default data frames loop over columns
 
 ```
-biomass_data <- data.frame(exper1 = c(24, 32, 62),
-                           exper2 = c(10, 9 , 5),
-                           exper3 = c(1, 5, 3))
-
-for (exp_biomass in biomass_data) {
-  npp <- 19.3 * exp_biomass ** 2
-  total_npp <- sum(npp)
-  print(total_npp)
+pets <- data.frame(pet_name = c("spot", "gigantor", "fluffy"),
+                   pet_type = c("fish", "hamster", "lizard"))
+for (pet in pets){
+  print("Start new loop")
+  print(pet)
 }
 ```
+
 
 * To loop over rows we need to loop over an `index` for the row number
 
