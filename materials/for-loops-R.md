@@ -54,7 +54,7 @@ for (pet in pets) {
 }
 ```
 
-> Do [Exercise 4 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
+> Do [Exercise 1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
 > Make sure students get the basics before moving on.
 
@@ -75,8 +75,6 @@ for (pet in pets) {
                           namelength = str_length(pet_upper)))
 }
 ```
-
-> Assign [Exercise 5 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
 
 ### Looping in data frames
 
@@ -117,6 +115,10 @@ for (i in 1:nrow(pets)) {
   output[i,] <- c(pet_upper, pet_length)
 }
 ```
+
+> Assign [Exercise 2 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
+> Assign [Exercise 3 - DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
+
 
 ### Alternate loops
 
