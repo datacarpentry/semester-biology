@@ -31,6 +31,7 @@ for (pet in pets) {
 }
 ```
 
+* Need `print()` to display values inside a loop, function, or conditional.
 * Long-form expression of the previous loop
 
 ```
