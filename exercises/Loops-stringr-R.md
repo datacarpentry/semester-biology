@@ -7,7 +7,7 @@ language: R
 
 A colleague has produced a file with one DNA sequence on each line. Download
 [the file]({{ site.baseurl }}/data/dna-sequences-1.txt) and load it into R using 
-`read.csv()`. The file has no header.
+`read.csv()`. The file has no header. Name the resulting data frame `sequences`.
 
 Your colleague wants to calculate the GC content of each DNA sequence (i.e., the
 percentage of bases that are either G or C) and knows just a little R. They sent
@@ -28,14 +28,24 @@ This code uses the excellent
 for working with the sequence data. You'll need to install this package before
 using it.
 
-Convert the last three lines of this code into a function to calculate the GC
-content of a DNA sequence.
+1. Convert the last three lines of this code into a function to calculate the GC
+content of a DNA sequence. Name that function `get_gc_content`.
 
-Use a `for` loop and your function to calculate the GC content of each sequence 
-and print them out individually. The function should work on a single sequence 
-at a time and the `for` loop should repeatedly call the function and print out 
-the result.
+2. Use a `for` loop and your function to calculate the GC content of each sequence
+and store the results in a new data frame. To do this you'll need to use an
+`index` to loop over the rows of the data frame. The function should work on a
+single sequence at a time and the `for` loop should repeatedly call the function
+and store the output.
 
-*You may have noticed that [for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R/)
-prints the results differently. `read.csv()` imports the data as a
-`data.frame()`, unlike the numeric vector in the previous exercise.*
+Fill in the following `for` loop to complete this exercise:
+
+```
+# pre-allocate the memory with one row for each sequence
+gc_contents <- data.frame(gc_content = numeric(nrow(_________)))
+
+# loop over sequences using an index for the row and store the output in gc_contents
+for (i in 1:nrow(__________)){
+  ________[i,] <- get_gc_content(sequences[____])
+}
+```
+
