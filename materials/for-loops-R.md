@@ -31,6 +31,7 @@ for (pet in pets) {
 }
 ```
 
+* Need `print()` to display values inside a loop, function, or conditional.
 * Long-form expression of the previous loop
 
 ```
@@ -53,7 +54,7 @@ for (pet in pets) {
 }
 ```
 
-> Do [Exercise 4 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
+> Do [Exercise 1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
 > Make sure students get the basics before moving on.
 
@@ -75,21 +76,47 @@ for (pet in pets) {
 }
 ```
 
-> Assign [Exercise 5 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
+### Looping in data frames
 
-### Looping over columns in data frames
+* By default data frames loop over columns
 
 ```
-biomass_data <- data.frame(exper1 = c(24, 32, 62),
-                           exper2 = c(10, 9 , 5),
-                           exper3 = c(1, 5, 3))
-
-for (exp_biomass in biomass_data) {
-  npp <- 19.3 * exp_biomass ** 2
-  total_npp <- sum(npp)
-  print(total_npp)
+pets <- data.frame(pet_name = c("spot", "gigantor", "fluffy"),
+                   pet_type = c("fish", "hamster", "lizard"))
+for (pet in pets){
+  print("Start new loop")
+  print(pet)
 }
 ```
+
+
+* To loop over rows we need to loop over an `index` for the row number
+
+```
+pets <- data.frame(pet_name = c("spot", "gigantor", "fluffy"),
+                   pet_type = c("fish", "hamster", "lizard"))
+for (i in 1:nrow(pets)){
+  print(paste(pets$pet_name[i], " is a ", pets$pet_type[i], sep =""))
+}
+```
+
+* We can also use the index to store the output by pre-allocating memory
+* This is a lot faster than using `rbind` because it doesn't copy the data frame
+  every time through the loop
+
+```
+output <- data.frame(name = character(3), namelength = numeric(3),
+                     stringsAsFactors = FALSE)
+for (i in 1:nrow(pets)) {
+  pet_upper <- str_to_upper(pets$pet_name[i])
+  pet_length <- str_length(pets$pet_type[i])
+  output[i,] <- c(pet_upper, pet_length)
+}
+```
+
+> Assign [Exercise 2 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
+> Assign [Exercise 3 - DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
+
 
 ### Alternate loops
 
@@ -137,29 +164,3 @@ biomass_data %>%
   group_by(experiment) %>%
   summarize(total_npp = sum(19.3 * biomass ** 2))
 ```
-
-* Indexing
-
-```
-pets <- c("spot", "gigantor", "fluffy")
-owners <- c("betty", "bob", "joe")
-for (i in seq_along(pets)){
-  print(paste(pets[i], " is ", owners[i], "'s pet", sep =""))
-}
-```
-
-
-* Preallocated memory with indexing
-
-```
-pets <- c("spot", "gigantor", "fluffy")
-output <- data.frame(name = character(3), namelength = numeric(3),
-                     stringsAsFactors = FALSE)
-for (i in seq_along(pets)) {
-  pet_upper <- str_to_upper(pets[i])
-  pet_length <- str_length(pets[i])
-  output[i,] <- c(pet_upper, pet_length)
-}
-```
-
-
