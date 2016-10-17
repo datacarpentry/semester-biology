@@ -41,7 +41,7 @@ Fill in the following `for` loop to complete this exercise:
 
 ```
 # pre-allocate the memory with one row for each sequence
-gc_contents <- data.frame(gc_content = numeric(nrow(_________)))
+gc_contents <- data.frame(gc_content = numeric(nrow(_______)))
 
 # loop over sequences using an index for the row and store the output in gc_contents
 for (i in 1:nrow(__________)){

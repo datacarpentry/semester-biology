@@ -11,8 +11,8 @@ This is a follow up to [Nested Functions]({{ site.baseurl }}/exercises/Functions
     Take the following vector of Stegosaur lengths
 
     ```
-    lengths <- c(10.1, 9.5, 11.2, 9.8, 10.4, 12.0, 11.5, 9.5, 9.8,
-	10.0, 10.7, 10.2, 11.9, 9.7, 11.2, 11.8, 10.7)
+    lengths <- c(10.1, 9.5, 11.2, 9.8, 10.4, 12.0, 11.5, 9.5,
+	9.8, 10.0, 10.7, 10.2, 11.9, 9.7, 11.2, 11.8, 10.7)
 	```
 
 	and estimate the mass in kilograms for each length using a `for` loop,
