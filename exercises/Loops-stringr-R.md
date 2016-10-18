@@ -31,21 +31,24 @@ using it.
 1. Convert the last three lines of this code into a function to calculate the GC
 content of a DNA sequence. Name that function `get_gc_content`.
 
-2. Use a `for` loop and your function to calculate the GC content of each sequence
-and store the results in a new data frame. To do this you'll need to use an
-`index` to loop over the rows of the data frame. The function should work on a
+2. Use a `for` loop and your function to calculate the GC content of each
+sequence and store the results in a new vector. The function should work on a
 single sequence at a time and the `for` loop should repeatedly call the function
 and store the output.
 
-Fill in the following `for` loop to complete this exercise:
+3. Use a `for` loop and your function to calculate the GC content of each sequence
+and store the results in a new data frame. To do this you'll need to use an
+`index` to loop over the rows of the data frame.
+
+    Fill in the following `for` loop to complete this exercise:
 
 ```
 # pre-allocate the memory with one row for each sequence
 gc_contents <- data.frame(gc_content = numeric(nrow(_______)))
 
-# loop over sequences using an index for the row and store the output in gc_contents
+# loop over sequences using an index for the row and
+# store the output in gc_contents
 for (i in 1:nrow(__________)){
   ________[i,] <- get_gc_content(sequences[____])
 }
 ```
-
