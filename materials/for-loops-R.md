@@ -62,19 +62,19 @@ for (pet in pets) {
 
 * Create an empty object.
     * `output <- c()`
-    * `output <- data.frame()`
-    * `output <- data.frame(name = character(3))`
 * Add the new values each trip through the loop.
+* Need to now vector combination `c(c(1, 2, 3), 4) -> [1] 1 2 3 4`
 
 ```
 pets <- c("spot", "gigantor", "fluffy")
-output <- data.frame()
-for (pet in pets) {
+upper_case_pets <- c()
+for (pet in pets){
   pet_upper <- str_to_upper(pet)
-  output <- rbind(output, data.frame(name = pet_upper,
-                          namelength = str_length(pet_upper)))
+  upper_case_pets <- c(upper_case_pets, pet_upper)
+  print(upper_case_pets)
 }
 ```
+
 
 ### Looping in data frames
 
@@ -89,8 +89,9 @@ for (pet in pets){
 }
 ```
 
-
-* To loop over rows we need to loop over an `index` for the row number
+* Who has seen/used a different approach to looping than has been show?
+* That's called looping over an `index` and while it's overly complicated for
+  simple loops it's useful for more complicated things like looping over rows
 
 ```
 pets <- data.frame(pet_name = c("spot", "gigantor", "fluffy"),
@@ -101,7 +102,7 @@ for (i in 1:nrow(pets)){
 ```
 
 * We can also use the index to store the output by pre-allocating memory
-* This is a lot faster than using `rbind` because it doesn't copy the data frame
+* This is a lot faster than adding rows because it doesn't copy the data frame
   every time through the loop
 
 ```
