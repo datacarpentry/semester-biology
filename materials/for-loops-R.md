@@ -54,7 +54,7 @@ for (pet in pets) {
 }
 ```
 
-> Do [Exercise 1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
+> Do [Exercise 1.1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
 > Make sure students get the basics before moving on.
 
