@@ -49,8 +49,8 @@ print(pet)
 ```
 pets <- c("spot", "gigantor", "fluffy")
 for (pet in pets) {
-  class_pet <- paste(pet, "is the name of the class pet")
-  print(class_pet)
+  pet_upper <- str_to_upper(pet)
+  print(pet_upper)
 }
 ```
 
