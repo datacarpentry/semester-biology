@@ -148,7 +148,7 @@ date,time,lat,long
 * To get a list of all these files in our `data` directory use `list.files`
 
 ```
-download.file("http://datacarpentry/semester-biology/data/collar-data-2016-01.zip")
+download.file("http://www.datacarpentry.org/semester-biology/data/collar-data-2016-01.zip")
 unzip("collar-data-2016-01.zip")
 list.files()
 collar_data_files <- list.files('data', pattern = 'collar-data-.*.txt')
