@@ -119,49 +119,121 @@ for (i in 1:nrow(pets)) {
 > Assign [Exercise 3 - DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
 
 
-### Alternate loops
+### Alternatives to loops
 
-* [`apply()`](http://finzi.psych.upenn.edu/R/library/base/html/apply.html)
-    * Short cut for simple loops over rows and columns
-    * Other versions allow you various control options
-        * [`lapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Operate across lists and vectors
-        * [`sapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Simplify output to vector
-        * [`mapply()`](http://finzi.psych.upenn.edu/R/library/base/html/mapply.html): Pass multiple variables or function arguments
-    * Why use `apply()`:
-        * Readability
-            * Single line of code
-            * Simple command structure
-        * Speed?
-            * Noticeable in complex operations ([some debate](https://stackoverflow.com/questions/2275896/is-rs-apply-family-more-than-syntactic-sugar))
-            * [Avoid premature optimization](http://c2.com/cgi/wiki?PrematureOptimization).
+#### Vectorization
+
+* Operations that work on all of the elements in a vector
+* Make functions that work with vectors so no need to loop over values
 
 ```
-get_mass_from_length_theropoda <- function(length) {
-  mass <- 0.73 * length ** 3.63
-  return(mass)
+lengths <- c(2.26, 1.48, 3.84)
+mass <- 0.73 * length ** 3.63
+mass
+```
+
+* Works for most simple math
+
+#### Looping over files
+
+* To learn alternatives learn how to do the same thing with many files. First
+  with loops and then with some alternatives in R
+* E.g., we have a set of files with satellite collar location data
+
+```
+date,time,lat,long
+2016-01-01,4:20,26.16,-35.28
+```
+
+* To get a list of all these files in our `data` directory use `list.files`
+
+```
+download.file("http://datacarpentry/semester-biology/data/collar-data-2016-01.zip")
+unzip("collar-data-2016-01.zip")
+list.files()
+collar_data_files <- list.files('data', pattern = 'collar-data-.*.txt')
+```
+
+* Using a specific pattern makes goal clear and avoids weird errors
+* Now we can loop over the files to work with them
+
+```
+num_samps = c()
+for (data_file in collar_data_files){
+  data = read.csv(data_file)
+  samples = nrow(data)
+  num_samps = c(num_samps, samples) 
+}
+num_samp
+```
+
+```
+get_num_samps <- function(data_file_name){
+  data = read.csv(data_file_name)
+  samples = nrow(data)
+  return(samples)
 }
 
-lengths = c(5, 10, 15)
-lapply(lengths, FUN=get_mass_from_length_theropoda)
-sapply(lengths, FUN=get_mass_from_length_theropoda)
+num_samps = c()
+for (data_file in collar_data_files){
+  num_samps = c(num_samps, get_num_samps(data_file) 
+}
+num_samp
 ```
 
-* Many functions also work with vectors
-    * No need to loop through the vector's values
+#### apply/map
+
+* Since: 1) create empty object, 2) loop, 3) add result to storage object; is so
+  common, many languages have a shortcut for use in simple situations.
+* In R the main version this is the `apply` family
 
 ```
-get_mass_from_length_theropoda(lengths)
+num_samps = sapply(collar_data_files, get_num_samps)
 ```
 
-* `dplyr`
-    * Must have tidy data
-    * Use `group_by()` and `summarize()`
+* There are a variety
+of [`apply()`](http://finzi.psych.upenn.edu/R/library/base/html/apply.html)
+statements that handle different use cases
+    * [`lapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Operate across lists and vectors
+    * [`sapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Simplify output to vector
+    * [`mapply()`](http://finzi.psych.upenn.edu/R/library/base/html/mapply.html): Pass multiple variables or function arguments
+* Why use `apply()`:
+    * Readability
+        * Single line of code
+        * Simple command structure
+    * Speed?
+        * Only
+          ([sometimes](https://stackoverflow.com/questions/2275896/is-rs-apply-family-more-than-syntactic-sugar))
+          and even then often not enough to matter.
+        * [Avoid premature optimization](http://c2.com/cgi/wiki?PrematureOptimization).
+
+* In a number of other languages this is called `map`
+* There is now a `map` for R that works similarly in the `purrr` package
+
+#### dplyr
+
+* Use `rowwise` to get `dplyr` to run the function on each row
 
 ```
-biomass_data <- data.frame(experiment = c(1, 1, 1, 2, 2, 2, 3, 3, 3),
-                           biomass = c(24, 32, 62, 10, 9, 5, 1, 5, 3))
-
-biomass_data %>%
-  group_by(experiment) %>%
-  summarize(total_npp = sum(19.3 * biomass ** 2))
+num_samps <- data.frame(myfiles, stringsAsFactors=FALSE) %>%
+  rowwise() %>%
+  mutate(samples = get_num_samps(myfiles))
 ```
+
+* This is an example of why to use `stringsAsFactors=FALSE`
+
+```
+num_samps <- data.frame(myfiles) %>%
+  rowwise() %>%
+  mutate(samples = get_num_samps(myfiles))
+```
+
+* Instead of passing the file names this passes the integer values for the
+  levels
+
+```
+num_samps <- data.frame(myfiles) %>%
+  rowwise() %>%
+  mutate(samples = typeof(myfiles))
+```
+  
