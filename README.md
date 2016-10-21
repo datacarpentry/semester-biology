@@ -8,7 +8,8 @@ answers to assignments) and [website](http://datacarpentry.org/semester-biology)
 course teaching computational data skills to biologists. 
 
 [Helpful information](http://www.datacarpentry.org/semester-biology/docs/) 
-is available regarding the structure and function of the course and website materials, as well as customization and delivery of the course.
+is available regarding the structure and function of the course and website materials,
+as well as customization and delivery of the course.
 
 The course is designed to work primarily as a flipped classroom, with students
 reading and viewing videos before coming to class and then spending the bulk of
