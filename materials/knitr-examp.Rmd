@@ -1,8 +1,8 @@
 ---
 title: "Portal population dynamics"
-author: "Ethan White"
+author: "Instructor's name"
 date: "December 1, 2015"
-output: html_document
+output: pdf_document
 ---
 
 Explore patterns in population dynamics at Portal.
@@ -18,8 +18,10 @@ library(scales)
 
 Data is from the [Portal project teaching database](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459) published on Figshare. We need the surveys table for our analysis:
 
-```{r}
-download.file("http://files.figshare.com/2292172/surveys.csv", "surveys.csv")
+```{r, cache=TRUE}
+# Setting cache=TRUE lets you re-use the results of this code chunk instead of
+# re-calculating or re-downloading it from scratch.
+download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 data <- read.csv("surveys.csv")
 ```
 
@@ -37,13 +39,33 @@ time_series <-
 head(time_series)
 ```
 
-Plot the time-series.
+## Plot the time-series.
 
-```{r, message=FALSE, echo=FALSE}
+```{r, message=FALSE, echo=FALSE, cache=TRUE}
 ggplot(time_series, aes(x = year, y = count)) +
   geom_point() +
   geom_line() +
   facet_wrap(~species_id) +
   scale_x_continuous(breaks=pretty_breaks(n=2))
+```
+
+
+## A simple model
+
+```{r, echo=FALSE}
+model = data %>% group_by(year) %>% 
+  summarize(count = n()) %>% 
+  lm(count ~ year, data = .)
+
+results = anova(model)
+```
+
+We found a marginally significant linear relationship between the total count 
+and year (p = `r round(results[["Pr(>F)"]][1], 3)`; see Table 1 for more deails)
+
+```{r, echo=FALSE}
+# knitr's `kable` function is a handy way to make nice-looking tables 
+# from data frames
+knitr::kable(results, caption = "A pretty table")
 ```
 
