@@ -1,6 +1,6 @@
 ---
 title: "Portal population dynamics"
-author: "Ethan White and David J. Harris"
+author: "Instructor's name"
 date: "December 1, 2015"
 output: pdf_document
 ---
