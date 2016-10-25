@@ -3,14 +3,22 @@ r-knitr
 author: Ethan P White and David J Harris
 autosize: true
 title: Knitr
+transition: none
 
 
 Literate programming
 ========================================================
+incremental: true
 
 * Combine text, code, figures, tables, etc.
 * Write papers without having to remember to swap figures
 * Automatically generate reports
+
+***
+```{r, cache=TRUE, echo=FALSE}
+download.file("http://andrewgelman.com/wp-content/uploads/2014/09/scotland.jpg", "scotland_fail.jpg")
+```
+* http://andrewgelman.com/2014/09/19/never-happened-r-markdown/ ![52% + 58% does not add up to 100%](scotland_fail.jpg)
 
 Getting started
 ========================================================
@@ -37,7 +45,8 @@ Markdown
         * `1.`
     * `# Header`
 
-***
+Markdown
+========================================================
 
 * Easy to read for humans
 * Easy to convert into other things for computers
@@ -61,3 +70,17 @@ cat(
 1+1
 ```
 
+Code inside documents
+========================================================
+* Chunks have lots of useful options
+  * Options are described at http://yihui.name/knitr/options/
+  * Options will be listed in RStudio if you press tab inside
+    the `{r}`brackets at the top of the chunk
+    
+* You can run code inside your text too:
+    * `` `r cos(pi)` `` turns into `r cos(pi)` when you press the "knit" button.
+
+
+A real example
+========================================================
+`materials/knitr/knitr-examp.Rmd`
