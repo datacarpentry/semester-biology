@@ -59,16 +59,14 @@ Markdown
 Simple example
 ========================================================
 
-```{r, echo=FALSE}
-cat(
-"```{r}
-# This is an R code chunk. 
-# Code that you write here gets executed,
-# then the results are shown below
-1+1
-```")
+* R code chunks start with  `` ```{r}`` and end with `` `````.
+  Code that you write inside them gets executed,
+  then the results are shown below
+
+```{r}
 1+1
 ```
+
 
 Code inside documents
 ========================================================
