@@ -62,8 +62,8 @@ for (pet in pets) {
 
 * Create an empty object.
     * `output <- c()`
-* Add the new values each trip through the loop.
-* Need to now vector combination `c(c(1, 2, 3), 4) -> [1] 1 2 3 4`
+* Add the new values with vector combination each trip through the loop.
+    * `c(c(1, 2, 3), 4) -> [1] 1 2 3 4`
 
 ```
 pets <- c("spot", "gigantor", "fluffy")
