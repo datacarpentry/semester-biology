@@ -9,7 +9,7 @@ The [National Ecological Observatory Network](http://www.neonscience.org) has in
 Elevation models generated from [LiDAR](http://neondataskills.org/self-paced-tutorial/1_About-LiDAR-Data-Light-Detection-and-Ranging_Activity1/) can be used to map the topography and vegetation structure at the sites.
 This data gets really powerful when you can compare ecological processes across 
 sites. 
-[Download]({{ site.baseurl }}/data/Neon-airborne.zip) the elevation models for the [Harvard Forest](http://harvardforest.fas.harvard.edu/) (`HARV`) and [San Joaquin Experimental Range](http://www.fs.fed.us/psw/ef/san_joaquin/) (`SJER`) 
+[Download]({{ site.baseurl }}/data/NEON-airborne.zip) the elevation models for the [Harvard Forest](http://harvardforest.fas.harvard.edu/) (`HARV`) and [San Joaquin Experimental Range](http://www.fs.fed.us/psw/ef/san_joaquin/) (`SJER`) 
 and the plot locations for each of these sites. 
 Often, plots within a site are used as representative samples of the larger site 
 and act as reference areas to obtain more detailed information and ensure 
