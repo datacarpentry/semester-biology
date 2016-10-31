@@ -16,8 +16,7 @@ and act as reference areas to obtain more detailed information and ensure
 accuracy of satellite imagery (*i.e., ground truth*).
 
 These high-resolution images can then be integrated with satellite imagery that 
-is gathered more frequently. We will use data collected from [MODIS](http://modis.gsfc.nasa.gov/), 
-which orbits the globe every 16 days. 
+is gathered more frequently. We will use data collected from [MODIS](http://modis.gsfc.nasa.gov/).
 One common ecological process that can be observed from space is [phenology](https://en.wikipedia.org/wiki/Phenology) (*or seasonal patterns*) of plants.
 Multi-band satellite imagery can be processed to provide a vegetation index of greenness called [NDVI](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). 
 NDVI values range from `-1.0` to `1.0`, where negative values indicate clouds, 
