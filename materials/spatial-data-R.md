@@ -23,50 +23,25 @@ library(rgdal)
 * Spatial data is often organized in a `raster`.
     * gridded format (*like coordinates*)
     * each pixel is a value
+	* most remote sensing and environmental data
+
+* `raster()` import
+
+```
+dsm_harv <- raster("HARV_dsmCrop.tif")
+dsm_harv
+```
+
 * Metadata is important to describe the context of spatial data.
     * `bands`
     * `projection`
     * `units`
     * `min`, `max`, `mean`
 
-```
-> GDALinfo("HARV_dsmCrop.tif")
-rows        1367 
-columns     1697 
-bands       1 
-lower left origin.x        731453 
-lower left origin.y        4712471 
-res.x       1 
-res.y       1 
-ysign       -1 
-oblique.x   0 
-oblique.y   0 
-driver      GTiff 
-projection  +proj=utm +zone=18 +datum=WGS84 +units=m +no_defs 
-file        HARV_dsmCrop.tif 
-apparent band summary:
-   GDType hasNoDataValue NoDataValue blockSize1 blockSize2
-1 Float64           TRUE       -9999          1       1697
-apparent band statistics:
-    Bmin   Bmax    Bmean      Bsd
-1 305.07 416.07 359.8531 17.83169
-Metadata:
-AREA_OR_POINT=Area 
-```
-
-* `raster()` import
+* Metadata can also be accessed without loading the file into R
 
 ```
-> dsm_harv <- raster("HARV_dsmCrop.tif")
-> dsm_harv
-class       : RasterLayer 
-dimensions  : 1367, 1697, 2319799  (nrow, ncol, ncell)
-resolution  : 1, 1  (x, y)
-extent      : 731453, 733150, 4712471, 4713838  (xmin, xmax, ymin, ymax)
-coord. ref. : +proj=utm +zone=18 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
-data source : /Users/Zack/Desktop/DataRA/misc-datacarp/Neon-phenology-from-space/NEON-airborne/HARV_dsmCrop.tif 
-names       : HARV_dsmCrop 
-values      : 305.07, 416.07  (min, max)
+GDALinfo("HARV_dsmCrop.tif")
 ```
 
 * `plot(raster)`
@@ -105,15 +80,8 @@ plot(plots_harv, add=TRUE, pch=1, cex=2, lwd=2)
 * Uh oh, nothing happened.
 
 ```
-> plots_harv
-class       : SpatialPointsDataFrame 
-features    : 5 
-extent      : -72.17808, -72.1662, 42.53402, 42.54048  (xmin, xmax, ymin, ymax)
-coord. ref. : +proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0 
-variables   : 2
-names       : id, plot_id 
-min values  :  1,       1 
-max values  :  5,       5 
+plots_harv
+
 ```
 
 * Coordinate Reference System (*`crs` or 'projection'*) is different from `raster`.
@@ -128,8 +96,7 @@ plot(plots_harv_utm, add=TRUE, pch=1, cex=2, lwd=2)
 * Use `vector` to `extract()` values from `raster`
 
 ```
-> extract(chm_harv, plots_harv_utm)
-[1] 18.00000 15.94000 18.70999 19.45999 22.72000
+extract(chm_harv, plots_harv_utm)
 ```
 
 * These are canopy heights from `chm_harv` at the coordinates from 
