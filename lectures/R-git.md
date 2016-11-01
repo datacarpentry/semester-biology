@@ -5,4 +5,4 @@ title: Version Control Basics
 language: R
 ---
 
-[Version Control]({{ site.baseurl }}/materials/version-control-R)
+* [Version Control]({{ site.baseurl }}/materials/version-control-R)
