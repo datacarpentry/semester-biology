@@ -11,6 +11,11 @@ language: R
 > * [`HARV_NDVI`]({{ site.baseurl }}/data/HARV-NDVI.zip) 
 > * [`SJER_NDVI`]({{ site.baseurl }}/data/SJER-NDVI.zip)
 
+> Load the following into browser window:
+
+> * Projections figure from http://neondataskills.org/R/Introduction-to-Raster-Data-In-R/
+> * Canopy Height Model figure from http://neondataskills.org/R/Raster-Calculations-In-R/
+
 > Set-up R Console:
 
 ```
@@ -44,21 +49,40 @@ dsm_harv
 GDALinfo("HARV_dsmCrop.tif")
 ```
 
-* `plot(raster)`
-    * package modifies R basic `graphics`
+* `dsm_harv` is a `RasterLayerObject` and we can get individual pieces of it's
+   metadata using appropriate functions
 
 ```
-plot(dsm_harv, main="HARV", xlab="Easting", ylab="Northing")
+nbands(dsm_harv)
+crs(dsm_harv)
+```
+
+* Plotting
+    * package modifies R basic `graphics
+`
+```
+plot(dsm_harv)
+```
+
+* Looking at raster values
+
+```
+hist(dsm_harv)
 ```
 
 ### `raster` math
+
+* The DSM data is a Digital Surface Model: elevation of top physical point
+* DTM is Digital Terrain Model: elevation of the ground
+* We can create a Canopy Height Model (CHM) by taking the difference between them
 
 ```
 dtm_harv <- raster("HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
-> Do [Exercise 1 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R), Tasks 1-2.
+> Do Tasks 1-2 from [Exercise 1 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
+
 
 ### Import and reproject shapefiles
 
@@ -81,7 +105,6 @@ plot(plots_harv, add=TRUE, pch=1, cex=2, lwd=2)
 
 ```
 plots_harv
-
 ```
 
 * Coordinate Reference System (*`crs` or 'projection'*) is different from `raster`.
@@ -93,6 +116,8 @@ plots_harv_utm <- spTransform(plots_harv, crs(chm_harv))
 plot(plots_harv_utm, add=TRUE, pch=1, cex=2, lwd=2)
 ```
 
+### Extract raster data
+
 * Use `vector` to `extract()` values from `raster`
 
 ```
@@ -102,6 +127,17 @@ extract(chm_harv, plots_harv_utm)
 * These are canopy heights from `chm_harv` at the coordinates from 
   `plots_harv_utm`. 
     * Order of values lines up with `plots_harv_utm$site_id`.
+
+* To get an average of the values in a nearby region use `buffer`
+
+```
+extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
+```
+
+
+### Making your own point data
+
+
 
 ### `raster` in time series
 
