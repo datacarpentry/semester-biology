@@ -176,7 +176,7 @@ get_num_samps <- function(data_file_name){
 
 num_samps = c()
 for (data_file in collar_data_files){
-  num_samps = c(num_samps, get_num_samps(data_file) 
+  num_samps = c(num_samps, get_num_samps(data_file))
 }
 num_samp
 ```
@@ -207,12 +207,12 @@ statements that handle different use cases
           and even then often not enough to matter.
         * [Avoid premature optimization](http://c2.com/cgi/wiki?PrematureOptimization).
 
-* In a number of other languages this is called `map`
-* There is now a `map` for R that works similarly in the `purrr` package
+* In a number of other languages this is called `map()`
+* There is now a `map()` for R that works similarly in the `purrr` package
 
 #### dplyr
 
-* Use `rowwise` to get `dplyr` to run the function on each row
+* Use `rowwise()` to get `dplyr` to run the function on each row
 
 ```
 num_samps <- data.frame(myfiles, stringsAsFactors=FALSE) %>%
