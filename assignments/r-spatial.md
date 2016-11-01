@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Working with Spatial Data
 language: R
-exercises: ['Phenology from Space 1', 'Phenology from Space 2']
+exercises: ['Canopy Height from Space', 'Phenology from Space']
 ---
 
 #### Learning Objectives

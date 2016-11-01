@@ -7,7 +7,7 @@ language: R
 
 > Remember to download and set-up directory:
 >
-> * [LiDAR rasters and plots]({{ site.baseurl }}/data/Neon-airborne.zip)
+> * [LiDAR rasters and plots]({{ site.baseurl }}/data/NEON-airborne.zip)
 > * [`HARV_NDVI`]({{ site.baseurl }}/data/HARV-NDVI.zip) 
 > * [`SJER_NDVI`]({{ site.baseurl }}/data/SJER-NDVI.zip)
 
@@ -58,8 +58,8 @@ crs(dsm_harv)
 ```
 
 * Plotting
-    * package modifies R basic `graphics
-`
+    * package modifies R basic `graphics`
+
 ```
 plot(dsm_harv)
 ```
@@ -81,7 +81,7 @@ dtm_harv <- raster("HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
-> Do Tasks 1-2 from [Exercise 1 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
+> Do Tasks 1-2 from [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 
 ### Import and reproject shapefiles
@@ -149,4 +149,4 @@ extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
     * NDVI is a data product (*vegetation index*) stored in a `raster`
     * Works just like the files with 'raw' data
 
-> Assign remainder of [Exercise 1 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
+> Assign remainder of [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R) and [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R). 
