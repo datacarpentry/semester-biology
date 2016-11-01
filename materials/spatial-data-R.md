@@ -134,6 +134,8 @@ extract(chm_harv, plots_harv_utm)
 extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 ```
 
+> Assign remainder of [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+
 
 ### Making your own point data
 
@@ -149,4 +151,4 @@ extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
     * NDVI is a data product (*vegetation index*) stored in a `raster`
     * Works just like the files with 'raw' data
 
-> Assign remainder of [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R) and [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R). 
+> [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
