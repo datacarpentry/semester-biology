@@ -5,4 +5,4 @@ title: Working with Spatial Data
 language: R
 ---
 
-[Spatial Data Introduction]({{ site.baseurl }}/materials/spatial-data-R)
+* [Spatial Data Introduction]({{ site.baseurl }}/materials/spatial-data-R)
