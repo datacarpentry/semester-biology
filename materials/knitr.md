@@ -5,6 +5,8 @@ title: Knitr
 language: R
 ---
 
+> Download [`knitr-examp.Rmd`]({{ site.baseurl }}/materials/knitr-examp.Rmd).
+
 ### Literate programming
 
 * Combine text, code, figures, tables, etc.
@@ -15,12 +17,17 @@ language: R
 ### Getting started
 
 * File -> New File -> R Markdown
-* Enter a title and author(s)
-* Shows a basic stub of a document
-* Press `Knit PDF` to create a pdf from it
+    * Enter a title and author(s).
+    * Choose 'Default Output Format' as `HTML`.
+* Generates a basic stub of a `.Rmd` document. 
+* Press `Knit to HTML` to create an `HTML` from it
     * 1st time may ask you to install some packages
+    * `install.packages("rmarkdown")` in console for permanence
 * Runs the code in the code chunks and prints their output along with the
   markdown formatted text
+* Can also create `PDF` & Word versions of our files
+    * `PDF` Requires `pandoc` and `TeX` installation
+    * Use the `Knit` dropdown or change `output: pdf_document` 
 
 
 ### Markdown
@@ -41,56 +48,34 @@ language: R
 * Github will automatically render it
     * https://github.com/ethanwhite/CV/blob/master/CV.md
 
+### R chunks 
+
+        ```{r}
+        ```
+
+* Code that you write inside them gets executed, then the results are shown
+below.
+* Chunks have lots of useful options
+  * Options are described at http://yihui.name/knitr/options/
+  * Options will be listed in RStudio if you press tab inside
+    the `{r}` brackets at the top of the chunk
+    
+* You can run code inside your text too:
+    * `r cos(pi)` turns into `-1` when you press the "knit" button.
 
 ### Example
 
-	Explore patterns in population dynamics at Portal.
+> Demo
+>
+> * [`knitr-examp.Rmd`]({{ site.baseurl }}/materials/knitr-examp.Rmd) in RStudio
+> or, 
+> * [direct link](https://raw.githubusercontent.com/datacarpentry/semester-biology/gh-pages/materials/knitr-examp.Rmd).
 
-	## Required Libraries 
-	```{r}
-	library(dplyr)
-	library(ggplot2)
-	```
-
-	## Data
-
-    Data is from the [Portal project teaching database]() published on Figshare.
-    We need the surveys table for our analysis:
-
-	```{r}
-	download.file("http://files.figshare.com/2292172/surveys.csv", "surveys.csv")
-	data <- read.csv("surveys.csv")
-	```
-
-	## Analyze population time-series
-
-	Get the time-series of counts for all species.
-
-	```{r}
-	time_series <-
-	  data %>%
-	  group_by(species_id, year) %>%
-	  summarize(count = n()) %>%
-	  na.omit()
-
-	head(time_series)
-	```
-
-	Plot the time-series.
-
-	```{r}
-	ggplot(time_series, aes(x = year, y = count)) +
-	  geom_point() +
-	  geom_line() +
-	  facet_wrap(~species_id)
-	```
-
-* Clean up by adding
-    * `message=FALSE` to first and last chunk
-    * `echo=FALSE` to last chunk
+* Talking points
+    * front matter
+    * chunks
+    * chunk options
+        * `message=FALSE` to first and last chunk
+        * `echo=FALSE` to last chunk
     * `library(scales)` & `scale_x_continuous(breaks=pretty_breaks(n=2))`
 
-### Output formats
-
-* In addition to pdf we can also create html & Word versions of our files
-* Use the `Knit` dropdown or change `output`: `html_document`
