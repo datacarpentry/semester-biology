@@ -2,7 +2,7 @@
 title: "Portal population dynamics"
 author: "Instructor's name"
 date: "December 1, 2015"
-output: pdf_document
+output: html_document
 ---
 
 Explore patterns in population dynamics at Portal.
@@ -19,8 +19,8 @@ library(scales)
 Data is from the [Portal project teaching database](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459) published on Figshare. We need the surveys table for our analysis:
 
 ```{r, cache=TRUE}
-# Setting cache=TRUE lets you re-use the results of this code chunk instead of
-# re-calculating or re-downloading it from scratch.
+# Setting cache=TRUE lets you re-use the results of this code chunk in other code
+# chunks instead of re-calculating or re-downloading it each time.
 download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 data <- read.csv("surveys.csv")
 ```
@@ -53,11 +53,11 @@ ggplot(time_series, aes(x = year, y = count)) +
 ## A simple model
 
 ```{r, echo=FALSE}
-model = data %>% group_by(year) %>% 
+model <- data %>% group_by(year) %>% 
   summarize(count = n()) %>% 
   lm(count ~ year, data = .)
 
-results = anova(model)
+results <- anova(model)
 ```
 
 We found a marginally significant linear relationship between the total count 
