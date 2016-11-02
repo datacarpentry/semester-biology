@@ -145,40 +145,43 @@ date,time,lat,long
 2016-01-01,4:20,26.16,-35.28
 ```
 
-* To get a list of all these files in our `data` directory use `list.files`
+* To get a list of all these files in our `data` directory use `list.files()`
 
 ```
 download.file("http://www.datacarpentry.org/semester-biology/data/collar-data-2016-01.zip")
 unzip("collar-data-2016-01.zip")
 list.files()
-collar_data_files <- list.files('data', pattern = 'collar-data-.*.txt')
+collar_data_files <- list.files("collar-data-2016-01", 
+                                pattern="collar-data-.*.txt",
+                                full.names=TRUE)
 ```
 
-* Using a specific pattern makes goal clear and avoids weird errors
+* Using the `pattern` argument makes file structure clear and avoids errors
+* `full.names = TRUE` retains directory information
 * Now we can loop over the files to work with them
 
 ```
-num_samps = c()
+num_samps <- c()
 for (data_file in collar_data_files){
-  data = read.csv(data_file)
-  samples = nrow(data)
-  num_samps = c(num_samps, samples) 
+  data <- read.csv(data_file)
+  samples <- nrow(data)
+  num_samps <- c(num_samps, samples) 
 }
-num_samp
+num_samps
 ```
 
 ```
 get_num_samps <- function(data_file_name){
-  data = read.csv(data_file_name)
-  samples = nrow(data)
+  data <- read.csv(data_file_name)
+  samples <- nrow(data)
   return(samples)
 }
 
-num_samps = c()
+num_samps <- c()
 for (data_file in collar_data_files){
-  num_samps = c(num_samps, get_num_samps(data_file))
+  num_samps <- c(num_samps, get_num_samps(data_file))
 }
-num_samp
+num_samps
 ```
 
 #### apply/map
