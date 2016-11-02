@@ -43,12 +43,6 @@ dsm_harv
     * `units`
     * `min`, `max`, `mean`
 
-* Metadata can also be accessed without loading the file into R
-
-```
-GDALinfo("HARV_dsmCrop.tif")
-```
-
 * `dsm_harv` is a `RasterLayerObject` and we can get individual pieces of it's
    metadata using appropriate functions
 
