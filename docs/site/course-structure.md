@@ -37,7 +37,8 @@ title: Course Structure
 `assignments:` list and `language:`  
 - `element:` may share a common file name, `language-short-description.md`. 
 - `assignments/` MUST have a `lower` case file name. 
-- `readings/` have an `UPPER` first letter of the file name, arbitrarily.
+- `readings/` and `lectures/` have an `UPPER` first letter of the file name, for
+proper inclusion in `assignments/`.
 
 ``` 
     readings/            lectures/             assignments/
@@ -67,8 +68,8 @@ language: Foo        language: Foo        language: Foo
 ```
                              assignments/
                     ______________|_____________
-                   /                            \
-               readings/                     exercises/
+                   /              |             \
+               readings/      lectures/      exercises/
                                             _____|_____  
                                            /     |     \
                                      solutions/ code/ data/

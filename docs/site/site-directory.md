@@ -43,7 +43,7 @@ Marked (`#`) files and directories are [course customization]({{ site.baseurl }}
 |   ├── Topic-title-Language.md|     UPPER first letter of file name 
 |   └── ...                    |     File name formatted from YAML 
 ├── lectures                   |   Lecture documents
-|   ├── language-descr.md      |     File name matches assignment
+|   ├── LANGUAGE-descr.md      |     File name matches assignment
 |   └── ...                    |
 ├── materials                  |   Lecture materials documents
 |   ├── language-descr.md      |     Unmanaged descriptive file name 
@@ -54,7 +54,7 @@ Marked (`#`) files and directories are [course customization]({{ site.baseurl }}
 |   └── favicon.ico            | Browser tab icon file 
 |                              | Course Materials (Cont.)
 ├── readings                   |   Reading materials
-|   ├── Language-descr.md      |     File name matches assignment
+|   ├── LANGUAGE-descr.md      |     File name matches assignment
 |   └── ...                    |
 └── solutions                  |   Solutions documents
     ├── Topic-tit...guage-1.txt|     File name matches exercise
