@@ -32,7 +32,7 @@ The following code will then load a single sequence file:
 
 ```
 library(ShortRead)
-reads <- readFasta("data/archaea_dna/A-saccharovorans.fasta")
+reads <- readFasta("data/archaea-dna/A-saccharovorans.fasta")
 seq <- sread(reads)
 ```
 
@@ -43,12 +43,13 @@ bases.
 
 Each file in the zip represents a single archaea species. Use a `for` loop and
 your function to calculate the GC content of each file and print them out
-individually. You might find the `list.files()` function useful for working with
-multiple files in a `for` loop. The function should work on a single file at a
-time and the `for` loop should repeatedly call the function and store the
-results in a data frame with a row for each file and columns for both the file
-name and GC content.
+individually. You might find the `list.files()` function and the
+`full.names = TRUE` argument useful for working with multiple files in a `for`
+loop. The function should work on a single file at a time and the `for` loop
+should repeatedly call the function and store the results in a data frame with a 
+row for each file and columns for both the file name and GC content.
 
 *Optional*: For a little extra challenge change your answer so that instead of
- printing out the file names it prints out the species name that is encoded in
- the file name, but without the `.fasta` at the end.
+printing out the file names it prints out the species name that is encoded in
+the file name without the `".data/archaea-dna/"` path at the beginning and the
+`".fasta"` extension at the end.
