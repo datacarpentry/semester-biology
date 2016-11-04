@@ -43,12 +43,6 @@ dsm_harv
     * `units`
     * `min`, `max`, `mean`
 
-* Metadata can also be accessed without loading the file into R
-
-```
-GDALinfo("HARV_dsmCrop.tif")
-```
-
 * `dsm_harv` is a `RasterLayerObject` and we can get individual pieces of it's
    metadata using appropriate functions
 
@@ -130,6 +124,7 @@ extract(chm_harv, plots_harv_utm)
 
 * To get an average of the values in a nearby region use `buffer`
 
+
 ```
 extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 ```
@@ -139,16 +134,66 @@ extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 
 ### Making your own point data
 
+* Make spatial data from `csv` file with latitudes and longitudes
+* Need to know the `proj4string` for standard latitude/longitude data
+* `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`
+
+```
+plot_latlong_data <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
+plot_latlong_data
+crs_longlat <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+plot_latlong_data_spat <- SpatialPointsDataFrame(plot_latlong_data[c('long', 'lat')],
+                                                    plot_latlong_data,
+                                                    proj4string = crs_longlat)
+str(plot_latlong_data_spat)
+plot(plot_latlong_data_spatial)
+```
 
 
-### `raster` in time series
+### Stacks of rasters
 
-* Values over time can be stored in
-    * a single file with multiple bands (*or layers*,`stack`)
-        * similar to `RGB` raster with multiple color bands
-    * multiple coordinated files
-* The assignment uses multiple coordinated files of NDVI
-    * NDVI is a data product (*vegetation index*) stored in a `raster`
-    * Works just like the files with 'raw' data
+* Sets of rasters in the same location often analyzed together
+* `Raster stack`
+* Can be stored in one or multiple files
+* To load all layers use `stack()` on a single multi-band file or multiple files
+* We'll load a time-series of NDVI data from Harvard Forest into a raster stack
+    * NDVI is a remotely sensed vegetation index that measures greenness
+	* Provides information on plant phenology and productivity
+
+```
+library(raster)
+ndvi_files = list.files("data/HARV_NDVI/",
+                         full.names = TRUE,
+                         pattern = "HARV_NDVI.*.tif")
+ndvi_files
+ndvi_rasters <- stack(ndvi_files)
+```
+
+* Can visualize up to 16 layers using `plot()`
+
+```
+plot(ndvi_rasters)
+plot(ndvi_rasters, seq(1, nlayers(ndvi_rasters), by = 2))
+hist(ndvi_rasters)
+```
+
+* Calculate values across each raster using `cellStats()`
+
+```
+avg_ndvi <- cellStats(ndvi_rasters, mean)
+```
+
+* Store in data frame
+
+```
+avg_ndvi_df <- data.frame(samp_period = seq_along(avg_ndvi), ndvi = avg_ndvi)
+```
+
+* Get row names into column
+
+```
+library(dplyr)
+avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df)
+```
 
 > [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).

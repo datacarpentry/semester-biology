@@ -16,10 +16,10 @@ Download [`HARV_NDVI`]({{ site.baseurl }}/data/HARV-NDVI.zip) and [`SJER_NDVI`](
 from MODIS. The files are in order (*and named*) by date and can be organized 
 implicitly by sampling period for analysis.
 
-1. Evaluate and visualize the `mean(NDVI)` [among plots](http://neondataskills.org/R/crop-extract-raster-data-R/) at each site for each 
-of the MODIS sampling periods. *Prepare your analysis results in a `data.frame` that is suitable to `ggplot2` so that it is easy to plot the sites in different colors.*
+1. Plot the mean NDVI through time for Harvard Forest and SJER using
+different colors for the two sites.
 
-   *Optional: Extract `sampling_day` from the NDVI `file_name` and include that 
-   with your `data.frame` for graphing.*
+   *Optional challenge: Extract `sampling_day` from the NDVI `file_name` and
+   include that with your `data.frame` for graphing.*
 
-2. Describe the differences in vegetation structure (`chm`) and seasonal phenology (`NDVI`) that you have observed from this analysis in a `TXT` file.
+2. Describe the differences in vegetation structure (`chm`) and seasonal phenology (`NDVI`) that you observe in this analysis in a comment.
