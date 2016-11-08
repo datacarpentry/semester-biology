@@ -15,7 +15,7 @@ language: R
 ### Getting started
 
 * Open RStudio
-* File -> New File -> R Markdown
+* `File` -> `New File` -> `R Markdown`
     * Enter a title and author(s).
     * Choose 'Default Output Format' as `HTML`.
 * Generates a basic stub of a `.Rmd` document
@@ -158,3 +158,37 @@ knitr::kable(results, caption = "Table 1")
 ```</code></pre>
 
 * `knitr::kable()` is a handy way to make nice-looking tables from data frames.
+
+### R Presentations
+
+* `File` -> `New File` -> `R Presentation`
+    * Save to location.
+    * `Rpres` generates `MD` and directory of figures.
+
+* Template `Rpres` file includes title page and sample code blocks.
+
+<pre><code>Untitled
+========================================================
+author: 
+date: 
+autosize: true
+
+First Slide
+========================================================
+
+For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```</code></pre>
+
+* `Preview` in RStudio panel
+* Convert to `HTML`
+    * `More` -> `View in Browser` or `Save As Web Page...`
