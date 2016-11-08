@@ -5,5 +5,5 @@ title: Working with Databases
 language: R
 ---
 
-1. [Integrating R and SQL]({{ site.baseurl }}/materials/r-sql)
+1. [`dplyr` with Databases]({{ site.baseurl }}/materials/r-databases)
 2. [`tidyr`]({{ site.baseurl }}/materials/tidyr)
