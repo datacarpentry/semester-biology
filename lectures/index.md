@@ -2,15 +2,11 @@
 layout: page
 title: Lectures
 ---
- 
-### Git
 
-* [Git with R](R-git)
+### SQL
 
-### Python
-
-*  *Python [materials]({{ site.baseurl }}/materials/) were used in [previous iterations](http://www.programmingforbiologists.org/) of the course at Utah State 
-University, but have not yet been organized for this lecture structure.*
+* [Introduction to Databases](SQL-intro)
+* [Database Structure and Joins](SQL-joins)
 
 ### R
 
@@ -23,8 +19,7 @@ University, but have not yet been organized for this lecture structure.*
 * [Integrating R and SQL](R-sql)
 * [Putting It All Together](R-capstone)
 
+### Git
 
-### SQL
+* [Git with R](R-git)
 
-* [Introduction to Databases](SQL-intro)
-* [Database Structure and Joins](SQL-joins)

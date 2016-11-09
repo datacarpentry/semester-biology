@@ -3,9 +3,10 @@ layout: page
 title: Readings
 ---
 
-### Git
+### SQL
 
-* [Git with R](R-git)
+* [Introduction to Databases](SQL-intro)
+* [Database Structure and Joins](SQL-joins)
 
 ### R
 
@@ -20,7 +21,6 @@ title: Readings
 * [Advanced Topics](R-advanced)
 * [Additional Resources](R-additional)
 
-### SQL
+### Git
 
-* [Introduction to Databases](SQL-intro)
-* [Database Structure and Joins](SQL-joins)
+* [Git with R](R-git)
