@@ -20,10 +20,8 @@ surveys <- tbl(portaldb, "surveys")
 the R environment. *Also, we won't need to worry about it printing out huge 
 numbers of rows when we look at it.*
 
-1. Use the `nrow()` function to determine how many records are represented in
-   `surveys`.
-2. Select the `year`, `month`, `day`, and `species_id` columns in that order.
-3. Create a new data frame with the `year`, `species_id`, and weight in
+1. Select the `year`, `month`, `day`, and `species_id` columns in that order.
+2. Create a new data frame with the `year`, `species_id`, and weight in
    kilograms of each individual, with no null weights.
-4. Use the `distinct()` function to print the `species_id` for each
+3. Use the `distinct()` function to print the `species_id` for each
    species in the dataset that has been weighed.
