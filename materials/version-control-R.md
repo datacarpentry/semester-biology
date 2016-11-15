@@ -178,8 +178,11 @@ get_size_class <- function(weight, threshold){
 }
 ```
 
-* `Save`
+* `Save` and show changes are staged
 * `More` -> `Revert`
+
+* Get previous state of a file
+    * `History` -> select commit -> `View file @ ...`
 
 ## GitHub Remotes
 
