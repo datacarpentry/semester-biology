@@ -11,6 +11,9 @@ language: R
 > Arrange to have a teaching partner attend class and `push` the following code 
 > for the 'Collaborating' demo.
 
+> **Students need 2 projects to follow along with live coding.**
+> **Must switch projects when shifting from live coding to exercises**
+
 ```
 get_size_class_ts_data <- function(df){
   # Convert individual data to time-series data for each of a set of size classes
@@ -100,7 +103,7 @@ data <- get_data()
 
 ### Building a history
 
-* `large-small-ts-analysis.R` doesn't currently show on `Git` tab
+* `large-small-ts-analysis.R` doesn't currently show on the `Git` tab
     * No saved changes since last commit
 * Add some more code to `large-small-ts-analysis.R`.
     * `get_size_class()`
