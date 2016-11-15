@@ -70,6 +70,17 @@ data files and code in a more manageable way.
 3. Select `Create a git repository`.
 4. Check to make sure you have a you have a `Git` tab in the upper right window.
 
+#### Tell git who you are
+
+* Click on gear icon
+* Select `Shell`
+
+```
+git config --global user.name 'Ethan White'
+git config --global user.email 'ethan@weecology.org'
+git config --global --list
+```
+
 > Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 
 ### First commit
