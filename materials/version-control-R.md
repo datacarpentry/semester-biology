@@ -103,6 +103,7 @@ data <- get_data()
 
 * Git -> Select `large-small-ts-analysis.R`. 
     * Changes in staged files will be included in next commit.
+    * Can also see changes by selecting `Diff`
 * Commit with message. 
     * `"Start project comparing dynamics of different sized rodents"`
 * History: 
