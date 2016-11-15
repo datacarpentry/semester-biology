@@ -66,17 +66,6 @@ data files and code in a more manageable way.
 
 ## Version control using RStudio & Git
 
-### Tell git who you are
-
-* Click on gear icon
-* Select `Shell`
-
-```
-git config --global user.name 'Ethan White'
-git config --global user.email 'ethan@weecology.org'
-git config --global --list
-```
-
 ### Getting started
 
 1. File -> New Project -> New Directory -> Empty Project
