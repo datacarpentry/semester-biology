@@ -84,6 +84,17 @@ git config --global --list
 3. Select `Create a git repository`.
 4. Check to make sure you have a you have a `Git` tab in the upper right window.
 
+#### Tell git who you are
+
+* Click on gear icon
+* Select `Shell`
+
+```
+git config --global user.name 'Ethan White'
+git config --global user.email 'ethan@weecology.org'
+git config --global --list
+```
+
 > Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 
 ### First commit
@@ -106,6 +117,7 @@ data <- get_data()
 
 * Git -> Select `large-small-ts-analysis.R`. 
     * Changes in staged files will be included in next commit.
+    * Can also see changes by selecting `Diff`
 * Commit with message. 
     * `"Start project comparing dynamics of different sized rodents"`
 * History: 
@@ -165,6 +177,27 @@ get_size_class <- function(weight, threshold){
 
 
 > Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/).
+
+### Git as a time machine
+
+* Experiment with impunity
+
+```
+get_size_class <- function(weight, threshold){
+  if (weight > threshold){
+    size_class = 1
+  } else {
+    size_class = 2
+  }
+  return(size_class)
+}
+```
+
+* `Save` and show changes are staged
+* `More` -> `Revert`
+
+* Get previous state of a file
+    * `History` -> select commit -> `View file @ ...`
 
 ## GitHub Remotes
 
