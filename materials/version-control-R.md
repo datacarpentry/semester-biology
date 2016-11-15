@@ -163,6 +163,24 @@ get_size_class <- function(weight, threshold){
 
 > Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/).
 
+### Git as a time machine
+
+* Experiment with impunity
+
+```
+get_size_class <- function(weight, threshold){
+  if (weight > threshold){
+    size_class = 1
+  } else {
+    size_class = 2
+  }
+  return(size_class)
+}
+```
+
+* `Save`
+* `More` -> `Revert`
+
 ## GitHub Remotes
 
 > Draw diagram to link local machine with GitHub `origin`.
