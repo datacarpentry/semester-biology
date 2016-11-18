@@ -246,6 +246,7 @@ add_size_classes <- function(df) {
 * Big advantage to remotes is easy collaboration
 * Avoids emailing files and shared folders where you are never sure if you actually have the most recent version
 * Makes it easy to see what collaborators have done
+* Automatically combines non-overlapping changes
 * While I've been talking, one of my collaborators has finished adding the other
 functions we need.
 
