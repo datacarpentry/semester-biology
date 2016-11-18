@@ -255,4 +255,7 @@ add_size_classes <- function(df) {
 * Show history
 * Run code
 
+> Show an example of a working repository
+> Show examples of pull requests
+
 > Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
