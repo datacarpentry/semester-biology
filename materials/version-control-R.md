@@ -205,6 +205,7 @@ get_size_class <- function(weight, threshold){
 ### Add a remote
 
 * Make a new `Git` repository ( *Students should have been assigned one.* )
+* **Add helper as collaborator**
 * Copy remote adding code from GitHub.
     * `git remote add origin https://github.com/user/repo.git`
 * <i class="fa fa-gear"></i> -> Shell
