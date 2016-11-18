@@ -22,3 +22,7 @@ The website is setup to be easy to run automatically through [GitHub](http://git
   - software download and install in `computer-setup.md`
 
 - If you have any problems please [let us know]({{ site.github.repo}}/issues/new) and we'll be happy to help.
+
+Check out an example of a [customized course](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/).
+*Please, let us know if you have developed a customized version so we can list
+it here.*
