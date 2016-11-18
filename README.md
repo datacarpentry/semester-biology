@@ -23,7 +23,7 @@ available as templates for contributions of new materials and other materials
 that are specific to the course (e.g., the syllabus) are developed in a way to
 facilitate easy customization. 
 
-    - An example of a [customized course](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/.
+- An example of a [customized course](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/.
 
 
 ## Where is everything
