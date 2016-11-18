@@ -236,6 +236,8 @@ add_size_classes <- function(df) {
 * Push
     * Show on remote
 
+> Draw push/pull on diagram on board
+
 > Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
 
 ### Collaborating
