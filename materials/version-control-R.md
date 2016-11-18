@@ -199,6 +199,7 @@ get_size_class <- function(weight, threshold){
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
+	    * https://education.github.com/
         * For the assignment, we'll use private repositories that I'll make for you.
 
 ### Add a remote
