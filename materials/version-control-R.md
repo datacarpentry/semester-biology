@@ -241,6 +241,20 @@ add_size_classes <- function(df) {
 
 > Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
 
+> Have students email a link to their repo to their instructor once they have
+> finished Pushing Changes
+>
+> The instructor should then commit the following code to their repo
+>
+> get_ear_length <- function(seq){
+>     #Calculate the GC-content for one or more sequences
+>     ear_lengths <- ifelse(seq > 10, "large", "small")
+>     return(ear_lengths)
+> }
+>
+> With the commit message:
+> Add function for determining ear length class
+
 ### Collaborating
 
 * Big advantage to remotes is easy collaboration
