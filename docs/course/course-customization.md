@@ -13,16 +13,22 @@ The website is setup to be easy to run automatically through [GitHub](http://git
    - If you want to use a custom domain name instead of `github.io`, follow
       [GitHub's instructions for setting up a custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
 
+- Update `# Setup` information in `_config.yml` in the main directory for proper
+  site rendering.
+
 - [Add or Edit]({{ site.baseurl }}/docs/course/manage-files) any of the course content files. In particular, you will be interested to update:
   - course description in `index.md` in the main directory
   - course details and policy in `syllabus.md` in the main directory
-  - `# Setup` information in `_config.yml` in the main directory
   - `assignments:` list in the `schedule.md` front matter
   - motivation and support documents in `about/`
   - software download and install in `computer-setup.md`
 
 - If you have any problems please [let us know]({{ site.github.repo}}/issues/new) and we'll be happy to help.
 
-Check out an example of a [customized course](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/).
-*Please, let us know if you have developed a customized version so we can list
-it here.*
+Check out some examples of customized courses:
+
+- [Introduction to Ecology](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/)
+- [Introduction to Scientific Computing](https://palderman.github.io/IntroSciComp/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman/alderman)
+
+   *Please, let us know if you have developed a customized version of the course
+   so we can list it here.*
