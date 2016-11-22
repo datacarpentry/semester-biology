@@ -199,11 +199,13 @@ get_size_class <- function(weight, threshold){
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
+	    * https://education.github.com/
         * For the assignment, we'll use private repositories that I'll make for you.
 
 ### Add a remote
 
 * Make a new `Git` repository ( *Students should have been assigned one.* )
+* **Add helper as collaborator**
 * Copy remote adding code from GitHub.
     * `git remote add origin https://github.com/user/repo.git`
 * <i class="fa fa-gear"></i> -> Shell
@@ -235,18 +237,39 @@ add_size_classes <- function(df) {
 * Push
     * Show on remote
 
+> Draw push/pull on diagram on board
+
 > Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
+
+> Have students email a link to their repo to their instructor once they have
+> finished Pushing Changes
+>
+> The instructor should then commit the following code to their repo
+>
+> get_ear_length <- function(seq){
+>     #Calculate the GC-content for one or more sequences
+>     ear_lengths <- ifelse(seq > 10, "large", "small")
+>     return(ear_lengths)
+> }
+>
+> With the commit message:
+> Add function for determining ear length class
 
 ### Collaborating
 
 * Big advantage to remotes is easy collaboration
-* Avoids emailing files and shared folders where you are never sure if you actually have the most recent version
+* Avoids emailing files and shared folders where you are never sure if you
+  actually have the most recent version
 * Makes it easy to see what collaborators have done
+* Automatically combines non-overlapping changes
 * While I've been talking, one of my collaborators has finished adding the other
-functions we need.
+  functions we need.
 
 * Pull
 * Show history
 * Run code
+
+> Show an example of a working repository
+> Show examples of pull requests
 
 > Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
