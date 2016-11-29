@@ -21,5 +21,16 @@ for (i in 1:5){
    to print the first five odd numbers squared one line at a time. *Use a
    descriptive variable to identify the index values such as `for (odd in 
    odds)`.*
-4. Modify your odd numbers squared `for` loop to `paste()` and print a
-   statement for each odd number in the form "`odd` squared is `odd_squared`".
+4. Modify your `for` loop from task 3 to `paste()` and print a statement for 
+   each odd number in the form "`odd` squared is `odd_squared`".
+5. Create a vector of a `seq()` of numbers from 5 to 50 by 5 and use it in a
+   `for` loop to generate another vector of those numbers squared. Your `for`
+   loop should look something like:
+
+   ```
+   output <- c()
+   for (number in _____) {
+     _____ <- _____^2
+     output <- c(output, number_squared)
+   }
+   ```
