@@ -5,16 +5,13 @@ title: Basic Vector
 language: R
 ---
 
-The following code capitalizes the first letter of `pet` and stores it as
-`name`:
+The following code capitalizes the first letter of `pet`, puts it in a sentence,
+and stores it as `my_pet`:
 
 ```
-library(stringr)
 pet <- "spot"
-pet_letters <- str_split(pet, "")[[1]]
-first <- toupper(pet_letters[1])
-others <- str_c(pet_letters[-1], collapse = "")
-name <- str_c(first, others, sep = "")
+pet_name <- stringr::str_to_title(pet)
+my_pet <- paste("My pet's name is ", pet_name, ".", sep = "")
 ```
 
 Modify the code to loop over a vector of multiple pet names and print them to
