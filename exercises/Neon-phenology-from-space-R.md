@@ -5,9 +5,11 @@ title: Phenology from Space
 language: R
 ---
 
-The high-resolution images from [NEON Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R) can be integrated with satellite imagery that 
-is gathered more frequently. We will use data collected from [MODIS](http://modis.gsfc.nasa.gov/).
-One common ecological process that can be observed from space is [phenology](https://en.wikipedia.org/wiki/Phenology) (*or seasonal patterns*) of plants.
+The high-resolution images from [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R) 
+can be integrated with satellite imagery that is gathered more frequently. We
+will use data collected from [MODIS](http://modis.gsfc.nasa.gov/). One common
+ecological process that can be observed from space is [phenology](https://en.wikipedia.org/wiki/Phenology) 
+(*or seasonal patterns*) of plants.
 Multi-band satellite imagery can be processed to provide a vegetation index of greenness called [NDVI](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). 
 NDVI values range from `-1.0` to `1.0`, where negative values indicate clouds, 
 snow, and water; bare soil returns values from `0.1` to `0.2`; and green vegetation returns values greater than `0.3`.
@@ -21,7 +23,7 @@ implicitly by sampling period for analysis.
 2. Plot the mean NDVI of the `plot_locations` (`extract()`) for Harvard Forest
    and SJER through time using different colors for the two sites. 
 3. Describe the differences in vegetation structure (`chm`) from
-   [NEON Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R)
+   [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R)
    and seasonal phenology (`NDVI`) that you observe in this analysis in a
    comment. Also, describe the impact of the different mean calculations on the
    analysis. 
