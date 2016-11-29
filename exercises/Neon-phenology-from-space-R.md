@@ -16,10 +16,15 @@ Download [`HARV_NDVI`]({{ site.baseurl }}/data/HARV-NDVI.zip) and [`SJER_NDVI`](
 from MODIS. The files are in order (*and named*) by date and can be organized 
 implicitly by sampling period for analysis.
 
-1. Plot the mean NDVI through time for Harvard Forest and SJER using
-different colors for the two sites.
+1. Plot the whole-raster mean NDVI (`cellStats()`) for Harvard Forest and SJER
+   through time using different colors for the two sites. 
+2. Plot the mean NDVI of the `plot_locations` (`extract()`) for Harvard Forest
+   and SJER through time using different colors for the two sites. 
+3. Describe the differences in vegetation structure (`chm`) from
+   [NEON Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R)
+   and seasonal phenology (`NDVI`) that you observe in this analysis in a
+   comment. Also, describe the impact of the different mean calculations on the
+   analysis. 
 
-   *Optional challenge: Extract `sampling_day` from the NDVI `file_name` and
-   include that with your `data.frame` for graphing.*
-
-2. Describe the differences in vegetation structure (`chm`) and seasonal phenology (`NDVI`) that you observe in this analysis in a comment.
+*Optional challenge: Extract `sampling_day` from the NDVI `file_name` and
+include that with your `data.frame` for graphing.*
