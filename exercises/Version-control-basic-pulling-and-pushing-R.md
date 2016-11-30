@@ -8,8 +8,9 @@ language: R
 This is a follow up to
 [Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R).
 
-**STOP: Wait until your teacher has told you they've updated your repository 
-following the last exercise before doing this one.**
+**STOP: Make sure you sent your teacher an email following the last exercise
+with a link to your Github repository and wait until your teacher has told you
+they've updated your repository before doing this one.**
 
 While you were working on your vectorized GC-content function, Dr. Granger (*who
 has suddenly developed some pretty impressive computational skills*) has been
