@@ -53,10 +53,11 @@ for (pet in pets) {
   print(pet_upper)
 }
 ```
-
-> Do [Exercise 1.1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
+> Do [Exercise 1 - Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) and [Exercise 2 - Basic Vector]({{ site.baseurl }}/exercises/Loops-basic-vector-R/).
 
 > Make sure students get the basics before moving on.
+
+> Do [Exercise 3.1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
 ### Storing results
 
@@ -115,8 +116,8 @@ for (i in 1:nrow(pets)) {
 }
 ```
 
-> Assign [Exercise 2 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
-> Assign [Exercise 3 - DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
+> Assign [Exercise 4 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
+> Assign [Exercise 5 - DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
 
 
 ### Alternatives to loops
