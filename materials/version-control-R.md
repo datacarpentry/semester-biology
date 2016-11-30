@@ -85,7 +85,7 @@ data files and code in a more manageable way.
 
 #### Tell git who you are
 
-* Click on gear icon (<i class="fa fa-gear"></i>)
+* Click on <i class="fa fa-gear"></i> `More`
 * Select `Shell`
 
 ```
@@ -190,7 +190,7 @@ get_size_class <- function(weight, threshold){
 
 ### Git as a time machine
 
-* Experiment with impunity
+#### Experiment with impunity
 
 ```
 get_size_class <- function(weight, threshold){
@@ -204,10 +204,17 @@ get_size_class <- function(weight, threshold){
 ```
 
 * `Save` and show changes are staged
-* `More` -> `Revert`
+* <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 * Get previous state of a file
     * `History` -> select commit -> `View file @ ...`
+
+#### Delete with impunity
+
+* Close the upper left window with the `large-small-ts-analysis.R`.
+* Choose the `File` tab in the lower right window.
+* Select `large-small-ts-analysis.R` -> `Delete` -> `Yes`
+* <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 ## GitHub Remotes
 
@@ -229,7 +236,7 @@ get_size_class <- function(weight, threshold){
 * **Add helper as collaborator**
 * Copy remote adding code from GitHub.
     * `git remote add origin https://github.com/user/repo.git`
-* <i class="fa fa-gear"></i> -> Shell
+* <i class="fa fa-gear"></i> `More` -> Shell
 * Paste lines from GitHub -> Enter
 * See files on GitHub
 * Show browsing repo in past
