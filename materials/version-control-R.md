@@ -13,6 +13,7 @@ language: R
 
 > For class
 > 
+> * Download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).
 > * Arrange to have a teaching partner attend class and `push` the following
 >   code for the 'Collaborating' demo.
 
@@ -78,11 +79,13 @@ data files and code in a more manageable way.
 1. File -> New Project -> New Directory -> Empty Project
 2. Choose where to put your project.
 3. Select `Create a git repository`.
-4. Check to make sure you have a you have a `Git` tab in the upper right window.
+4. Check to make sure you have a `Git` tab in the upper right window.
+
+> Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 
 #### Tell git who you are
 
-* Click on gear icon
+* Click on gear icon (<i class="fa fa-gear"></i>)
 * Select `Shell`
 
 ```
@@ -91,11 +94,21 @@ git config --global user.email 'ethan@weecology.org'
 git config --global --list
 ```
 
-> Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
-
-### First commit
+### First commits
 
 *The following example uses the code from the problem decomposition lecture.*
+
+#### Commit data
+
+* Download the data file [`surveys.csv`](https://ndownloader.figshare.com/files/2292172) to your project directory.
+* Git -> Select `surveys.csv`.
+* Commit with message. 
+    * `"Add survey data of different sized rodents"`
+* History: 
+    * One commit
+    * Changes too large to see
+
+#### Commit R script
 
 * Create a new file. 
     * `large-small-ts-analysis.R`
@@ -115,10 +128,10 @@ data <- get_data()
     * Changes in staged files will be included in next commit.
     * Can also see changes by selecting `Diff`
 * Commit with message. 
-    * `"Start project comparing dynamics of different sized rodents"`
+    * `"Start script comparing dynamics of different sized rodents"`
 * History: 
-    * One commit
-    * See what changes where made
+    * Two commits
+    * See what changes where made to `large-small-ts-analysis.R`
 
 ### Building a history
 
@@ -146,8 +159,9 @@ get_size_class <- function(weight) {
 * Commit with message.
     * `"Add function for determining size class"`
 * History: 
-    * Two commits 
-    * Each commit shows the additions we made in that commit.
+    * Three commits 
+    * Each `large-small-ts-analysis.R` commit shows the additions we made in
+      that commit.
 
 * Modify the code in `large-small-ts-analysis.R` 
     * Add `threshold` to `if()` in `get_size_class()`. 
