@@ -5,18 +5,21 @@ title: Version Control
 language: R
 --- 
 
-> Remind students to setup a GitHub account and email the instructor their
-> username.
+> Before class
+>
+> * Remind students to setup a GitHub account and email the instructor their
+>   username. 
+> * Setup repo with students' username and respond with link to repo in email.
 
-> Arrange to have a teaching partner attend class and `push` the following code 
-> for the 'Collaborating' demo.
-
-> **Students need 2 projects to follow along with live coding.**
-> **Must switch projects when shifting from live coding to exercises**
+> For class
+> 
+> * Arrange to have a teaching partner attend class and `push` the following
+>   code for the 'Collaborating' demo.
 
 ```
 get_size_class_ts_data <- function(df){
-  # Convert individual data to time-series data for each of a set of size classes
+  # Convert individual data to time-series data for each of a set 
+  # of size classes
   # Input: data frame with a year column for time
   #        and a size_class column
   ts_data <-
@@ -34,10 +37,14 @@ plot_ts_data <- function(df){
 }
 ```
 
-> Open the following links in a browser and zoom in to make the images fill the screen.
+> * Open the following links in a browser and zoom in to make the images fill
+>   the screen.
 >
 > > * [Like this?](http://www.phdcomics.com/comics/archive.php?comicid=1531)
 > > * [Or like this?](http://www.phdcomics.com/comics/archive.php?comicid=1323)
+
+> **Students need 2 projects to follow along with live coding.**
+> **Must switch projects when shifting from live coding to exercises**
 
 ## Introduction
 
