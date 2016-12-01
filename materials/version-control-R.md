@@ -5,18 +5,22 @@ title: Version Control
 language: R
 --- 
 
-> Remind students to setup a GitHub account and email the instructor their
-> username.
+> Before class
+>
+> * Remind students to setup a GitHub account and email the instructor their
+>   username. 
+> * Setup repo with students' username and respond with link to repo in email.
 
-> Arrange to have a teaching partner attend class and `push` the following code 
-> for the 'Collaborating' demo.
-
-> **Students need 2 projects to follow along with live coding.**
-> **Must switch projects when shifting from live coding to exercises**
+> For class
+> 
+> * Download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).
+> * Arrange to have a teaching partner attend class and `push` the following
+>   code for the 'Collaborating' demo.
 
 ```
 get_size_class_ts_data <- function(df){
-  # Convert individual data to time-series data for each of a set of size classes
+  # Convert individual data to time-series data for each of a set 
+  # of size classes
   # Input: data frame with a year column for time
   #        and a size_class column
   ts_data <-
@@ -34,10 +38,14 @@ plot_ts_data <- function(df){
 }
 ```
 
-> Open the following links in a browser and zoom in to make the images fill the screen.
+> * Open the following links in a browser and zoom in to make the images fill
+>   the screen.
 >
 > > * [Like this?](http://www.phdcomics.com/comics/archive.php?comicid=1531)
 > > * [Or like this?](http://www.phdcomics.com/comics/archive.php?comicid=1323)
+
+> **Students need 2 projects to follow along with live coding.**
+> **Must switch projects when shifting from live coding to exercises**
 
 ## Introduction
 
@@ -71,11 +79,13 @@ data files and code in a more manageable way.
 1. File -> New Project -> New Directory -> Empty Project
 2. Choose where to put your project.
 3. Select `Create a git repository`.
-4. Check to make sure you have a you have a `Git` tab in the upper right window.
+4. Check to make sure you have a `Git` tab in the upper right window.
+
+> Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 
 #### Tell git who you are
 
-* Click on gear icon
+* Click on <i class="fa fa-gear"></i> `More`
 * Select `Shell`
 
 ```
@@ -84,11 +94,21 @@ git config --global user.email 'ethan@weecology.org'
 git config --global --list
 ```
 
-> Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
-
-### First commit
+### First commits
 
 *The following example uses the code from the problem decomposition lecture.*
+
+#### Commit data
+
+* Download the data file [`surveys.csv`](https://ndownloader.figshare.com/files/2292172) to your project directory.
+* Git -> Select `surveys.csv`.
+* Commit with message. 
+    * `"Add survey data of different sized rodents"`
+* History: 
+    * One commit
+    * Changes too large to see
+
+#### Commit R script
 
 * Create a new file. 
     * `large-small-ts-analysis.R`
@@ -108,10 +128,10 @@ data <- get_data()
     * Changes in staged files will be included in next commit.
     * Can also see changes by selecting `Diff`
 * Commit with message. 
-    * `"Start project comparing dynamics of different sized rodents"`
+    * `"Start script comparing dynamics of different sized rodents"`
 * History: 
-    * One commit
-    * See what changes where made
+    * Two commits
+    * See what changes where made to `large-small-ts-analysis.R`
 
 ### Building a history
 
@@ -139,8 +159,9 @@ get_size_class <- function(weight) {
 * Commit with message.
     * `"Add function for determining size class"`
 * History: 
-    * Two commits 
-    * Each commit shows the additions we made in that commit.
+    * Three commits 
+    * Each `large-small-ts-analysis.R` commit shows the additions we made in
+      that commit.
 
 * Modify the code in `large-small-ts-analysis.R` 
     * Add `threshold` to `if()` in `get_size_class()`. 
@@ -169,7 +190,7 @@ get_size_class <- function(weight, threshold){
 
 ### Git as a time machine
 
-* Experiment with impunity
+#### Experiment with impunity
 
 ```
 get_size_class <- function(weight, threshold){
@@ -183,10 +204,17 @@ get_size_class <- function(weight, threshold){
 ```
 
 * `Save` and show changes are staged
-* `More` -> `Revert`
+* <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 * Get previous state of a file
     * `History` -> select commit -> `View file @ ...`
+
+#### Delete with impunity
+
+* Close the upper left window with the `large-small-ts-analysis.R`.
+* Choose the `File` tab in the lower right window.
+* Select `large-small-ts-analysis.R` -> `Delete` -> `Yes`
+* <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 ## GitHub Remotes
 
@@ -208,7 +236,7 @@ get_size_class <- function(weight, threshold){
 * **Add helper as collaborator**
 * Copy remote adding code from GitHub.
     * `git remote add origin https://github.com/user/repo.git`
-* <i class="fa fa-gear"></i> -> Shell
+* <i class="fa fa-gear"></i> `More` -> Shell
 * Paste lines from GitHub -> Enter
 * See files on GitHub
 * Show browsing repo in past

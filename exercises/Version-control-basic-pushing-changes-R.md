@@ -20,4 +20,5 @@ you'd better get to work since she can see everything you're doing.
 3. Once you've committed the change click the `Push` button in the upper right
    corner of the window and then click `OK` when `git` is done pushing.
 4. You should be able to see the changes you made on Github.
-5. Email your teacher to let them know that you've finished this exercise.
+5. Email your teacher to let them know you've finished this exercise. Include in
+   the email a link to your Github repository. 
