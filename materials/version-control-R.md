@@ -186,7 +186,9 @@ get_size_class <- function(weight, threshold){
         * The new version of the line is shown as added.
 
 
-> Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/).
+> Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/),
+> [Exercise 3 - Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R/),
+> and [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
 ### Git as a time machine
 
