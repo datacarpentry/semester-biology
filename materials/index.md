@@ -15,7 +15,7 @@ title: Lecture Materials
 
 #### Course Notes
 
-- [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql) ([presentation]({{ site.baseurl }}/materials/intro-to-databases.pdf))
+- [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql)
 - [Basic Queries]({{ site.baseurl }}/materials/sql-basic-queries)
 - [Aggregation]({{ site.baseurl }}/materials/sql-aggregation)
 - [Joins]({{ site.baseurl }}/materials/sql-joins)
@@ -27,7 +27,7 @@ title: Lecture Materials
 
 - [Database Control - SQLite Manager]({{ site.baseurl }}/materials/database-control-sql)
 - [Database Control - Queries]({{ site.baseurl }}/materials/database-control-queries-sql)
-- [Database Structure]({{ site.baseurl }}/materials/database-structure) ([presentation]({{ site.baseurl }}/materials/databases-structure.pdf))
+- [Database Structure]({{ site.baseurl }}/materials/database-structure)
 - [Database Resources]({{ site.baseurl }}/materials/database-resources)
 - [Exporting from OpenOffice]({{ site.baseurl }}/materials/exporting-tables-and-queries-from-openoffice-base-to-csv)
 - [SQL for Access Users]({{ site.baseurl }}/materials/sql-for-access-users)
@@ -97,7 +97,6 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Statistics](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/statistics.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/statistics.ipynb))
 -   [Interacting with Databases from Python](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/python-databases.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/python-databases.ipynb))
 -   [List comprehensions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/list-comprehensions.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/list-comprehensions.ipynb))
--   [Debugging]({{ site.baseurl }}/materials/basic-debugging.pdf)
 -   [Debugger]({{ site.baseurl }}/materials/debugger)
 -   [Testing]({{ site.baseurl }}/materials/testing)
 -   [Style]({{ site.baseurl }}/materials/style)
