@@ -276,10 +276,10 @@ add_size_classes <- function(df) {
 >
 > The instructor should then commit the following code to their repo
 >
-> get_ear_length <- function(seq){
->     #Calculate the GC-content for one or more sequences
->     ear_lengths <- ifelse(seq > 10, "large", "small")
->     return(ear_lengths)
+> get_size_class <- function(ear_length){
+>   # Calculate the size class for one or more ear lengths
+>   ear_lengths <- ifelse(ear_length > 10, "large", "small")
+>   return(ear_lengths)
 > }
 >
 > With the commit message:
