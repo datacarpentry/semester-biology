@@ -74,6 +74,8 @@ The website is setup to be easy to run automatically through GitHub:
      `https://yourusername.github.io/semester-biology/`
 2. Update `# Setup` information in `_config.yml` in the main directory for
    proper site rendering.
+   * You must `push` this change to your repository to build and browse your 
+     forked version.
 3. Edit any of the markdown (.md) files
 4. Commit and push the changes
    * The changes should now be reflected on the website

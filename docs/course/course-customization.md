@@ -15,6 +15,11 @@ The website is setup to be easy to run automatically through [GitHub](http://git
 
 - Update `# Setup` information in `_config.yml` in the main directory for proper
   site rendering.
+  - You must `push` this change to your repository to build and browse your 
+    forked version. 
+  - If you choose to keep the "Data Carpentry" name in your `title:`, please
+    [contact us via email ({{ site.email }})](mailto:{{ site.email }}) 
+    to confirm permission.
 
 - [Add or Edit]({{ site.baseurl }}/docs/course/manage-files) any of the course content files. In particular, you will be interested to update:
   - course description in `index.md` in the main directory
