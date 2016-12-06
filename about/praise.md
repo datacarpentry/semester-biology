@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Praise for Programming for Biologists
+title: Praise for Data Carpentry for Biologists
 ---
 
 > This is one of the most immediately useful courses I've ever
