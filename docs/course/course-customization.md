@@ -7,16 +7,19 @@ title: Customizing the Course for Your Needs
 The website is setup to be easy to run automatically through [GitHub](http://github.com):
 
 - [Fork]({{ site.baseurl }}/docs/course/forking-the-course) 
-   or [import](https://import.github.com/) the repository
-   - In a few minutes you should be able to see a copy of the site at:
-     `https://yourusername.github.io/semester-biology/`
-   - If you want to use a custom domain name instead of `github.io`, follow
-      [GitHub's instructions for setting up a custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
-
+   or [import](https://import.github.com/) the repository to 
+   `https://github.com/yourusername/semester-biology`.
+   - You may change the `Repository name` (`semester-biology`) from the 
+     `Settings` tab.
+   
 - Update `# Setup` information in `_config.yml` in the main directory for proper
   site rendering.
   - You must `push` this change to your repository to build and browse your 
-    forked version. 
+    forked version.
+  - In a few minutes you should be able to see a copy of the site at:
+    `https://yourusername.github.io/semester-biology/`
+  - If you want to use a custom domain name instead of `github.io`, follow
+    [GitHub's instructions for setting up a custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
   - If you choose to keep the "Data Carpentry" name in your `title:`, please
     [contact us via email ({{ site.email }})](mailto:{{ site.email }}) 
     to confirm permission.
