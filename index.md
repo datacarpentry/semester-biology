@@ -18,6 +18,8 @@ For Students
   <i class="fa fa-calendar fa-fw"></i> Schedule</a>
 : <a href="{{ site.baseurl}}/computer-setup">
   <i class="fa fa-download fa-fw"></i> Setup</a>
+: <a href="{{ site.baseurl}}/materials/projects">
+  <i class="fa fa-folder-open fa-fw"></i> Projects</a>
 : <a href="{{ site.baseurl}}/START-for-self-guided-students">
   <i class="fa fa-play-circle fa-fw"></i> Self-Guided Start-Up Guide</a>
 

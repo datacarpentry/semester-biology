@@ -118,6 +118,17 @@ Students completing this course will be able to:
 * Apply general data management and analysis concepts to other programming
   languages and database management systems
 
+### Course Project
+
+Projects offer an opportunity to work with bigger data-related computing tasks
+and learn specific computing tools you need for your research. Projects can
+involve programming, databases, or both. They should be on
+something you are excited about.
+
+As a rough guideline projects should represent ~30-40 hours of work. Some class
+time will be provided for working on projects.
+
+Get more details about the project from the [Projects Introduction]({{ site.baseurl}}/materials/projects).
 
 ### How this course relates to the Student Learning Outcomes in Wildlife Ecology and Conservation
 
