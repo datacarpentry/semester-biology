@@ -9,10 +9,13 @@ This is a follow-up to [Introduction to Databases]({{ site.baseurl }}/assignment
 
 Download the [`sql-practice.sqlite` database]({{ site.baseurl }}/data/sql-practice.sqlite). Open it in SQLite Manager and write a query for each of the following:
 
-*When writing the solution to each review problem, take a second to think carefully about which fields are actually relevant to the problem. Write your query so that only these relevant fields are selected for the final output. In other words, if you are going to do some form of analysis with the data you select, which fields do you actually need?* (**HINT: none of these problems should have SELECT \* in the answer.**)
+*When writing the query to satisfy each research question, take a second to
+think carefully about which fields are actually relevant. Write your query so
+that only these relevant fields are selected for the final output. In other
+words, if you are going to continue with an analysis of the data you select,
+which fields do you actually need?* (**HINT: none of these problems should have
+SELECT \* in the answer.**)
 
-1. Write a query that lists all the males in order by weight, starting with the heaviest.
-
-2. Write a query that lists all males with a weight greater than 10 and all females with a weight less than 10.
-
-3. Write a query that displays the number of females at each site. Name the field with the number of females something meaningful.
+1. What is the distribution of males and females that weigh greater than 10?
+2. Where (*in what sites*) are the 10 heaviest males?
+3. How many females are at each site?
