@@ -5,7 +5,9 @@ title: Exponential Growth 2
 language: Python
 ---
 
-One of you lab mates (you may remember them from the For Loops 2
+*The data for this problem is no longer available.*
+
+One of your lab mates (you may remember them from the For Loops 2
 problem) is busy working on insect population dynamics. Initial results
 suggested that exponential growth was too simplistic for understanding
 the observed dynamics, so now they need to look at logistic growth.
@@ -26,10 +28,8 @@ ceil function in the math module.
 Your lab mate has compiled data from literature on the reproductive
 rates and carrying capacity for a number of different individuals for a
 variety of species. You've been teaching them about database structure
-so they have broken the data into two tables: an [individuals
-table](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/individuals_table.csv)
-and [species
-table](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/species_table.csv).
+so they have broken the data into two tables: an *individuals
+table* and *species table*.
 The database has information on several different taxonomic groups, but
 for this project your lab mate is only interested in the data for the
 insects.
@@ -41,10 +41,7 @@ population size of 10. Once you've determined the value for each
 species, plot the time to equilibrium as a function of the reproductive
 rate and (on a separate graph) the carrying capacity.
 
-You can either break this problem down into manageable parts yourself
-(you can use the [problem decomposition
-steps](http://www.programmingforbiologists.org/problem-decomposition-steps)
-to help) or follow [this
-approach](http://www.programmingforbiologists.org/problem-decomposition-problem-decomposition).
+Break this problem down into manageable parts yourself using the [problem
+decomposition steps]({{ site.baseurl }}/materials/problem-decomposition).
 Turn in the Python code and (if you use one) a database file with any
 queries that you use.

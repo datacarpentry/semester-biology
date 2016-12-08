@@ -5,7 +5,7 @@ title: NEON Raster
 language: R
 ---
 
-Jane just got a job working to develop data products for [NEON](neoninc.org). 
+Jane just got a job working to develop data products for [NEON](http://www.neonscience.org/). 
 She's got to familiarize herself with working with LiDAR data and seeks out the 
 great 'Work with Data' [tutorial for raster data](http://neondataskills.org/lidar-data/lidar-data-rasters-in-R/). 
 Help Jane take the next step and develop a few additional products from the 
