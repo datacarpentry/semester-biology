@@ -108,7 +108,7 @@ shrub_data <- read.csv('./data/shrub-dimensions-labeled.csv')
 
 > DO NOT USE setwd() FOR THIS CLASS
 
-> Do [Exercise 10 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volue-data-frame-R).
+> Do [Exercise 10 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
 
 ### Project structure
 

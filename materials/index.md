@@ -64,7 +64,7 @@ title: Lecture Materials
 - [`tidyr`]({{ site.baseurl }}/materials/tidyr)
 - [Project Structure]({{ site.baseurl }}/materials/project-structure)
 - [Debugging]({{ site.baseurl }}/materials/debugging-R)
-- [`knitr`]({{ site.baseurl }}/materials/knitr) ([Example `RMD`]({{ site.baseurl }}/materials/knitr-examp.Rmd))
+- [`knitr`]({{ site.baseurl }}/materials/knitr)
 - [R Cheat Sheet]({{ site.baseurl }}/materials/Walkthrough-R)
 - [Projects]({{ site.baseurl }}/materials/projects)
 

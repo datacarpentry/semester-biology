@@ -58,7 +58,7 @@ readable, and most computationally efficient ways to solve this problem.
 
 When tackling a broad problem like this it is always important to
 think about how you are going to [decompose the
-problem]({{ site.baseurl }}/material/problem-decomposition) into manageable pieces. Take a few
+problem]({{ site.baseurl }}/materials/problem-decomposition) into manageable pieces. Take a few
 minutes to think about how you would approach this problem before
 following the steps outlined below. Sketch them out in a text file, or
 by writing out just the final commands you will use (i.e., none of the

@@ -5,8 +5,9 @@ title: DNA Complement 2
 language: Python
 ---
 
-Download the file
-[sequence_data_complete.txt](http://www.programmingforbiologists.org/sites/programmingforbiologists.org/files/sequence_data_complete.txt)
+*The data for this problem is no longer available.*
+
+Download the file *sequence_data_complete.txt*
 from the website. This file consists of three columns separate by
 commas: 1) A sequence ID (like the primary keys we've using in our
 database work); 2) The length of the sequence; and 3) The sequence
