@@ -69,13 +69,14 @@ elsewhere it can certainly be added here.
 The website is setup to be easy to run automatically through GitHub:
 
 1. [Fork](https://github.com/datacarpentry/semester-biology#fork-destination-box)
-   or [import](https://import.github.com/) the repository
-   * In a few minutes you should be able to see the site at:
-     `https://yourusername.github.io/semester-biology/`
+   or [import](https://import.github.com/) the repository to 
+   `https://github.com/yourusername/semester-biology`.
 2. Update `# Setup` information in `_config.yml` in the main directory for
    proper site rendering.
    * You must `push` this change to your repository to build and browse your 
      forked version.
+   * In a few minutes you should be able to see the site at:
+     `https://yourusername.github.io/semester-biology/`
 3. Edit any of the markdown (.md) files
 4. Commit and push the changes
    * The changes should now be reflected on the website
