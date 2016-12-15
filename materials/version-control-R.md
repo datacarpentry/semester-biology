@@ -9,32 +9,21 @@ language: R
 >
 > * Remind students to setup a GitHub account and email the instructor their
 >   username. 
-> * Setup repo with students' username and respond with link to repo in email.
+> * Setup class organization at Github. 
+> * Add students' username to organization with "create repo" permissions and
+>   respond with link to organization in email.
 
 > For class
 > 
-> * Download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).
+> * Download [`houseelf-earlength-dna-data.csv`]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv).
 > * Arrange to have a teaching partner attend class and `push` the following
 >   code for the 'Collaborating' demo.
 
 ```
-get_size_class_ts_data <- function(df){
-  # Convert individual data to time-series data for each of a set 
-  # of size classes
-  # Input: data frame with a year column for time
-  #        and a size_class column
-  ts_data <-
-    df %>% 
-    group_by(year, size_class) %>% 
-    summarize(counts = n())
-  return(ts_data)
-}
-
-plot_ts_data <- function(df){
-  # Plot time-series data by size class
-  # Input: data frame with year, size_class, and counts columns
-  ggplot(df, aes(x = year, y = counts, color = size_class)) +
-    geom_line()
+get_size_class <- function(ear_length){
+   # Calculate the size class for one or more earth lengths
+   ear_lengths <- ifelse(ear_length > 10, "large", "small")
+   return(ear_lengths)
 }
 ```
 
@@ -44,8 +33,8 @@ plot_ts_data <- function(df){
 > > * [Like this?](http://www.phdcomics.com/comics/archive.php?comicid=1531)
 > > * [Or like this?](http://www.phdcomics.com/comics/archive.php?comicid=1323)
 
-> **Students need 2 projects to follow along with live coding.**
-> **Must switch projects when shifting from live coding to exercises**
+> 
+> **Live coding demo parallels assignment.**
 
 ## Introduction
 
@@ -72,27 +61,31 @@ data files and code in a more manageable way.
         * See what changes others have made
         * Everyone has the most recent version of everything
 
-## Version control using RStudio & Git
+## Version control using Git & RStudio
 
-### Getting started
+### Create a Git repo
+
+1. Navigate to Github in a web browser and login.
+2. Click the `+` at the upper right corner of the page that flashes `Create 
+   new...` and choose `New repository`.
+3. Choose the class organization (e.g., `dcsemesterYEAR`) as the `Owner` of the
+   repo.
+4. Fill in a `Repository name` that follows the form `FirstnameLastname`.
+5. Select `Private`.
+6. Select `Initialize this repository with a README`.
+7. Click `Create Repository`.
+
+### Connect to the Git repo in RStudio
 
 1. File -> New Project -> New Directory -> Empty Project
-2. Choose where to put your project.
-3. Select `Create a git repository`.
-4. Check to make sure you have a `Git` tab in the upper right window.
+2. Navigate to your new Git repo -> Click the `Clone or download` button -> Click the `Copy to clipboard` button.
+3. Paste the `Repository URL:` *The `Project directory name:` should populate*.
+4. Choose where to `Create project as subdirectory of:`.
+5. Click `Create Project`.
+6. Check to make sure you have a `Git` tab in the upper right window.
 
 > Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 
-#### Tell git who you are
-
-* Click on <i class="fa fa-gear"></i> `More`
-* Select `Shell`
-
-```
-git config --global user.name 'Ethan White'
-git config --global user.email 'ethan@weecology.org'
-git config --global --list
-```
 
 ### First commits
 
