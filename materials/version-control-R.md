@@ -252,16 +252,8 @@ data_size_class <-
 > Have students email a link to their repo to their instructor once they have
 > finished Pushing Changes
 >
-> The instructor should then commit the following code to their repo
->
-> library(dplyr)
-> data_size_class <-
->   data %>% 
->   rowwise() %>% 
->   transmute(id = id, earlengthcat = get_size_class(earlength, 10))
->
-> With the commit message:
-> "Add function for determining gc content of a dna sequence"
+> The instructor should then commit the *Add output table* code to their repo
+> with the commit message: "Generate data frame with id and earlength class"
 
 ### Collaborating
 
