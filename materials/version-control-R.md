@@ -20,11 +20,12 @@ language: R
 >   code for the 'Collaborating' demo.
 
 ```
-get_size_class <- function(ear_length){
-   # Calculate the size class for one or more earth lengths
-   ear_lengths <- ifelse(ear_length > 10, "large", "small")
-   return(ear_lengths)
-}
+library(dplyr)
+
+data_size_class <-
+  data %>% 
+  rowwise() %>% 
+  transmute(id = id, earlengthcat = get_size_class(earlength, 10))
 ```
 
 > * Open the following links in a browser and zoom in to make the images fill
@@ -89,14 +90,14 @@ data files and code in a more manageable way.
 
 ### First commits
 
-*The following example uses the code from the problem decomposition lecture.*
+*The following example uses the code from the [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R) exercise.*
 
 #### Commit data
 
-* Download the data file [`surveys.csv`](https://ndownloader.figshare.com/files/2292172) to your project directory.
-* Git -> Select `surveys.csv`.
+* Download the data file [`houseelf-earlength-dna-data.csv`]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv) to your project directory.
+* Git -> Select `houseelf-earlength-dna-data.csv`.
 * Commit with message. 
-    * `"Add survey data of different sized rodents"`
+    * `"Add earlength data of houseelves"`
 * History: 
     * One commit
     * Changes too large to see
@@ -104,38 +105,38 @@ data files and code in a more manageable way.
 #### Commit R script
 
 * Create a new file. 
-    * `large-small-ts-analysis.R`
+    * `houseelf-analysis.R`
 * Add some code to the file.
     * `get_data()`
 
 ```
 get_data <- function() {
-  data <- read.csv("surveys.csv")
+  data <- read.csv("houseelf-earlength-dna-data.csv")
   return(data)
 }
 
 data <- get_data()
 ```
 
-* Git -> Select `large-small-ts-analysis.R`. 
+* Git -> Select `houseelf-analysis.R`. 
     * Changes in staged files will be included in next commit.
     * Can also see changes by selecting `Diff`
 * Commit with message. 
-    * `"Start script comparing dynamics of different sized rodents"`
+    * `"Start script comparing earlength and DNA of houseelves"`
 * History: 
     * Two commits
-    * See what changes where made to `large-small-ts-analysis.R`
+    * See what changes where made to `houseelf-analysis.R`
 
 ### Building a history
 
-* `large-small-ts-analysis.R` doesn't currently show on the `Git` tab
+* `houseelf-analysis.R` doesn't currently show on the `Git` tab
     * No saved changes since last commit
-* Add some more code to `large-small-ts-analysis.R`.
+* Add some more code to `houseelf-analysis.R`.
     * `get_size_class()`
 
 ```
-get_size_class <- function(weight) {
-  if (weight > 50){
+get_size_class <- function(earlength){
+  if (earlength > 10){
     size_class = "large"
   } else {
     size_class = "small"
@@ -144,24 +145,24 @@ get_size_class <- function(weight) {
 }
 ```
 
-* Save `large-small-ts-analysis.R`.
+* Save `houseelf-analysis.R`.
 * Now we see the file on the `Git` tab.
     * `M` indicates that it's been modified.
 * To commit these changes, we need to stage the file.
-    * Check the box next to `large-small-ts-analysis.R`.
+    * Check the box next to `houseelf-analysis.R`.
 * Commit with message.
     * `"Add function for determining size class"`
 * History: 
     * Three commits 
-    * Each `large-small-ts-analysis.R` commit shows the additions we made in
+    * Each `houseelf-analysis.R` commit shows the additions we made in
       that commit.
 
-* Modify the code in `large-small-ts-analysis.R` 
+* Modify the code in `houseelf-analysis.R` 
     * Add `threshold` to `if()` in `get_size_class()`. 
 
 ```
-get_size_class <- function(weight, threshold){
-  if (weight > threshold){
+get_size_class <- function(earlength, threshold){
+  if (earlength > threshold){
     size_class = "large"
   } else {
     size_class = "small"
@@ -188,8 +189,8 @@ get_size_class <- function(weight, threshold){
 #### Experiment with impunity
 
 ```
-get_size_class <- function(weight, threshold){
-  if (weight > threshold){
+get_size_class <- function(earlength, threshold){
+  if (earlength > threshold){
     size_class = 1
   } else {
     size_class = 2
@@ -206,9 +207,9 @@ get_size_class <- function(weight, threshold){
 
 #### Delete with impunity
 
-* Close the upper left window with the `large-small-ts-analysis.R`.
+* Close the upper left window with the `houseelf-analysis.R`.
 * Choose the `File` tab in the lower right window.
-* Select `large-small-ts-analysis.R` -> `Delete` -> `Yes`
+* Select `houseelf-analysis.R` -> `Delete` -> `Yes`
 * <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 ## GitHub Remotes
@@ -218,41 +219,25 @@ get_size_class <- function(weight, threshold){
 * So far we've worked with a local `Git` repository.
 * One of the big benefits of version control is easy collaboration.
 * To do this, we synchronize our local changes with a `remote` repository.
-* We'll use GitHub. 
+* We're using GitHub. 
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
 	    * https://education.github.com/
-        * For the assignment, we'll use private repositories that I'll make for you.
-
-### Add a remote
-
-* Make a new `Git` repository ( *Students should have been assigned one.* )
-* **Add helper as collaborator**
-* Copy remote adding code from GitHub.
-    * `git remote add origin https://github.com/user/repo.git`
-* <i class="fa fa-gear"></i> `More` -> Shell
-* Paste lines from GitHub -> Enter
-* See files on GitHub
-* Show browsing repo in past
-
-> Do [Exercise 5 - Adding a Remote]({{ site.baseurl }}/exercises/Version-control-basic-adding-a-remote-R/).
+        * For the assignment, we're using private repositories that we made at
+          the beginning.
 
 ### Push to a remote
 
-* Add `add_size_classes()`.
+* Add output table
 
 ```
-add_size_classes <- function(df) {
-  # Add size class data to a data frame
-  # Input: data frame with weight column containing size information
-  data_size_class <-
-    df %>% 
-    na.omit() %>% 
-    rowwise() %>% 
-    mutate(size_class = get_size_class(weight, 50))
-  return(data_size_class)
-}
+library(dplyr)
+
+data_size_class <-
+  data %>% 
+  rowwise() %>% 
+  transmute(id = id, earlengthcat = get_size_class(earlength, 10))
 ```
 
 * Commit
@@ -269,14 +254,14 @@ add_size_classes <- function(df) {
 >
 > The instructor should then commit the following code to their repo
 >
-> get_size_class <- function(ear_length){
->   # Calculate the size class for one or more ear lengths
->   ear_lengths <- ifelse(ear_length > 10, "large", "small")
->   return(ear_lengths)
-> }
+> library(dplyr)
+> data_size_class <-
+>   data %>% 
+>   rowwise() %>% 
+>   transmute(id = id, earlengthcat = get_size_class(earlength, 10))
 >
 > With the commit message:
-> Add function for determining ear length class
+> "Add function for determining gc content of a dna sequence"
 
 ### Collaborating
 
