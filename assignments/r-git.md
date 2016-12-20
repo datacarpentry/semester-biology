@@ -1,7 +1,7 @@
 ---
 layout: page
 element: assignment
-title: Version Control Basics
+title: Version Control Projects
 language: R
 exercises: ['Set Up Git', 'First Commit', 'Importing Data', 'Commit Multiple Files', 'Pushing Changes', 'Pulling and Pushing']
 ---
