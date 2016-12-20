@@ -28,7 +28,7 @@ before somehow hitting `Ctrl-s` and overwriting all of your hard word.
 Determined to not let this happen again you've committed to using `git` for
 version control.
 
-Install `git` for your operating system following the
+Install `Git` for your operating system following the
 [setup instructions](http://www.datacarpentry.org/semester-biology/computer-setup/). Then
 create a new repo at the Github organization for the class:
 
@@ -46,7 +46,7 @@ Next, set up a project for this assignment in RStudio with the following steps:
 
 1. File -> New Project -> New Directory -> Empty Project
 2. Navigate to your new Git repo -> Click the `Clone or download` button -> Click the `Copy to clipboard` button.
-3. Paste the `Repository URL:` *The `Project directory name:` should populate*.
+3. Paste the `Repository URL:`. *The `Project directory name:` should populate*.
 4. Choose where to `Create project as subdirectory of:`.
 5. Click `Create Project`.
 6. Check to make sure you have a `Git` tab in the upper right window.
