@@ -1,19 +1,11 @@
 ---
 layout: page
 element: reading
-title: Introduction to Databases
+title: Database Queries
 language: SQL
 ---
 
-* Introduction
-
-  * Databases Intro - [Video](https://www.youtube.com/watch?v=kaKa6N9lEG8) \| [Reading](http://www.datacarpentry.org/sql-ecology-lesson//00-sql-introduction.html)
-
-* Basic Queries
-
-  * Selecting - [Video](https://www.youtube.com/watch?v=Gua3FpRzLdQ)
-  * Filtering - [Video](https://www.youtube.com/watch?v=c3hoWxukrPE)
-  * Sorting - [Video](https://www.youtube.com/watch?v=rNwwdijxxKs)
-  * Nulls - [Video](https://www.youtube.com/watch?v=KLugfNdGNFw)
-  * Basic Queries - [Reading](http://www.datacarpentry.org/sql-ecology-lesson//01-sql-basic-queries.html)
-  * Aggregation - [Video](https://www.youtube.com/watch?v=ZjuL-pfkUOA) \| [Reading](http://www.datacarpentry.org/sql-ecology-lesson//02-sql-aggregation.html)
+* [Databases Intro](https://www.youtube.com/watch?v=kaKa6N9lEG8)
+* [Basic Queries](http://www.datacarpentry.org/sql-ecology-lesson/01-sql-basic-queries.html) - [Selecting](https://www.youtube.com/watch?v=Gua3FpRzLdQ), [Filtering](https://www.youtube.com/watch?v=c3hoWxukrPE), [Sorting](https://www.youtube.com/watch?v=rNwwdijxxKs), [Nulls](https://www.youtube.com/watch?v=KLugfNdGNFw)
+* Aggregation - [Video](https://www.youtube.com/watch?v=ZjuL-pfkUOA), [Reading](http://www.datacarpentry.org/sql-ecology-lesson/02-sql-aggregation.html)
+* Joins - [Video](https://www.youtube.com/watch?v=79EBoVPUzkE), [Reading](http://www.datacarpentry.org/sql-ecology-lesson/03-sql-joins-aliases.html)
