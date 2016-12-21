@@ -1,18 +1,19 @@
 ---
 layout: page
 element: assignment
-title: Joins and Tidy Data
+title: Data Entry and Storage
 language: SQL
-exercises: ['Basic Join', 'Multi-table Join', 'Filtered Join', 'Detailed Join', 'Aggregated Join', 'Improving Messy Data', 'Data entry validation in Excel']
+exercises: ['Improving Messy Data', 'Data entry validation in Excel', 'Importing
+Data']
 ---
 
 #### Learning Objectives
 
 > Following this assignment students should be able to:
 >
-> - use joins to combine tables in SQL
 > - understand the basic rules of tidy data
 > - implement quality control for data entry in spreadsheets
+> - create an SQL database by importing data
 
 {% include reading.html %}
 
