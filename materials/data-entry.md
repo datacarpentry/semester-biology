@@ -42,7 +42,7 @@ protection against bad data being entered
 
 > Demo a data entry form in Excel or Google Forms
 
-> Do [Exercise 2 - Data Entry Validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/.
+> Do [Exercise 2 - Data Entry Validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/).
 
 ### Quality Control
 

@@ -80,7 +80,7 @@ SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
 FROM surveys;
 ```
 
-> Save the results of Exercise 2 as a new view.
+> Save the results of Exercise 1 as a new view.
 
 
 ### Filtering
