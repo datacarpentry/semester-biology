@@ -33,9 +33,9 @@ Install `Git` for your operating system following the
 create a new repo at the Github organization for the class:
 
 1. Navigate to Github in a web browser and login.
-2. Click the `+` at the upper right corner of the page that flashes `Create 
-   new...` and choose `New repository`.
-3. Choose the class organization (e.g., `dcsemesterYEAR`) as the `Owner` of the
+2. Click the `+` at the upper right corner of the page that shows the words
+   `Create  new...` when you hover over it and choose `New repository`.
+3. Choose the class organization (e.g., `dcsemester`) as the `Owner` of the
    repo.
 4. Fill in a `Repository name` that follows the form `FirstnameLastname`.
 5. Select `Private`.
@@ -44,9 +44,11 @@ create a new repo at the Github organization for the class:
 
 Next, set up a project for this assignment in RStudio with the following steps:
 
-1. File -> New Project -> New Directory -> Empty Project
-2. Navigate to your new Git repo -> Click the `Clone or download` button -> Click the `Copy to clipboard` button.
-3. Paste the `Repository URL:`. *The `Project directory name:` should populate*.
+1. File -> New Project -> New Directory -> Version Control -> Git
+2. Navigate to your new Git repo -> Click the `Clone or download` button ->
+   Click the `Copy to clipboard` button.
+3. Paste the `Repository URL:`. *A suggested `Project directory name:` should be
+   automatically generated*.
 4. Choose where to `Create project as subdirectory of:`.
 5. Click `Create Project`.
 6. Check to make sure you have a `Git` tab in the upper right window.
