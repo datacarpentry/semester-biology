@@ -12,6 +12,13 @@ language: SQL
 
 > Introduce the Portal Project database
 
+### Database Queries
+
+* Data is separate from manipulations of the data
+* Tables - store the data
+* Queries - store questions about the data
+    * If we update the data, the query asks the same question of the new data.
+
 ### Selecting columns
 
 * Choose which columns to return.
@@ -57,7 +64,7 @@ SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
 FROM surveys;
 ```
 
-> Do [Exercise 2 - SELECT]({{ site.baseurl }}/exercises/Basic-queries-select-SQL).
+> Do [Exercise 1 - SELECT]({{ site.baseurl }}/exercises/Basic-queries-select-SQL).
 > Don't worry if you don't know how to save it yet, we'll cover that in a
 > minute.
 
@@ -73,7 +80,7 @@ SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
 FROM surveys;
 ```
 
-> Save the results of Exercise 2 as a new view.
+> Save the results of Exercise 1 as a new view.
 
 
 ### Filtering
@@ -120,7 +127,7 @@ WHERE species_id = 'DS' AND year > 1990
 
 * If you want only NULL values, use `IS NULL` instead
 
-> Do [Exercise 3 - WHERE]({{ site.baseurl }}/exercises/Basic-queries-where-SQL).
+> Do [Exercise 2 - WHERE]({{ site.baseurl }}/exercises/Basic-queries-where-SQL).
 
 
 ### Style
@@ -164,7 +171,7 @@ FROM species
 ORDER BY taxa, genus, species;
 ```
 
-> Do [Exercise 4 - ORDER BY]({{ site.baseurl }}/exercises/Basic-queries-order-by-SQL).
+> Do [Exercise 3 - ORDER BY]({{ site.baseurl }}/exercises/Basic-queries-order-by-SQL).
 
 
 ### Comments

@@ -18,8 +18,9 @@ protection against bad data being entered
 * Be careful of data conversion issues from spreadsheets
 
 > Show posts/papers on dates and gene names
-> * https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7
-> * https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/
+>
+> * [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7)
+> * [https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/](https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/)
 
 ### Quality Assurance
 
@@ -39,7 +40,9 @@ protection against bad data being entered
     * `Allow` = `List`
     * Enter list values in `Sources`: DM, DO, DS, PP, PM
 
-> Demo a data entry form in Access or Google Forms
+> Demo a data entry form in Excel or Google Forms
+
+> Do [Exercise 2 - Data Entry Validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/).
 
 ### Quality Control
 

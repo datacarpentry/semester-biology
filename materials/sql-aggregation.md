@@ -46,7 +46,7 @@ GROUP BY species_id, plot_id;
 
 * Aggregation functions remove null values from the calculations.
 
-> Do [Exercise 8 - COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL).
+> Do [Exercise 7 - COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL).
 
 ### `HAVING`
 

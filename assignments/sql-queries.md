@@ -1,18 +1,20 @@
 ---
 layout: page
 element: assignment
-title: Introduction to Databases
+title: Database Queries
 language: SQL
-exercises: ['Importing Data', 'SELECT', 'WHERE', 'ORDER BY', 'DISTINCT', 'Missing Data', 'GROUP BY', 'COUNT', 'SUM']
+exercises: ['SELECT', 'WHERE', 'ORDER BY', 'DISTINCT', 'Missing Data', 'GROUP
+BY', 'COUNT', 'SUM', 'Basic Join', 'Multi-table Join', 'Filtered Join',
+'Detailed Join', 'Aggregated Join']
 ---
 
 #### Learning Objectives
 
 > Following this assignment students should be able to:
 >
-> - create an SQL database by importing data
 > - understand the basic query structure of SQL
 > - execute SQL commands to select, sort, group, and aggregate data
+> - use joins to combine tables in SQL
 
 {% include reading.html %}
 

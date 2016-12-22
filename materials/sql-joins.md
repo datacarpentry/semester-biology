@@ -58,7 +58,7 @@ JOIN species ON surveys.plot_id = plots.plot_id
 * One way to think about this join is that it adds the information in
   `plots` to the `surveys` table
 
-> Do [Exercise 1 - Basic Join]({{ site.baseurl }}/exercises/Advanced-queries-basic-join-SQL/).
+> Do [Exercise 9 - Basic Join]({{ site.baseurl }}/exercises/Advanced-queries-basic-join-SQL/).
 
 * We can also use `USING` as short hand in cases where the column names are the
 same across tables.
@@ -102,7 +102,7 @@ JOIN species sp  ON sv.species_id = sp.species_id
 JOIN plots p ON sv.plot_id = p.plot_id;
 ```
 
-> Do [Exercise 2 - Multi-table Join]({{ site.baseurl }}/exercises/Advanced-queries-multi-table-join-SQL/).
+> Do [Exercise 10 - Multi-table Join]({{ site.baseurl }}/exercises/Advanced-queries-multi-table-join-SQL/).
 
 
 ### Combining joins with WHERE, ORDER BY, and aggregation
@@ -123,4 +123,4 @@ ORDER BY number;
 * To build of big queries like this start small and then expand
 * Test each step
 
-> Do [Exercise 3 - Filtered Join]({{ site.baseurl }}/exercises/Advanced-queries-filtered-join-SQL/).
+> Do [Exercise 11 - Filtered Join]({{ site.baseurl }}/exercises/Advanced-queries-filtered-join-SQL/).
