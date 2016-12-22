@@ -47,7 +47,7 @@ work is sufficient for the project, whether it is reasonable to accomplish it in
 1. The code and/or data involved in the project in your class project Github 
    repo.
 2. A 1-2 page description of what you did and how the resulting project
-   works as a text file or as a wiki page in the your class project Github repo. 
+   works as a `.txt` file in the your class project Github repo. 
    For example if the project is primarily based on code, how should the
    instructor run the code and what is the expected output. If the project was
    taking a bunch of poorly structured data, tidying it, and putting it in to a
