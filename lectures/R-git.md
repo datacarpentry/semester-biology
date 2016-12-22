@@ -1,7 +1,7 @@
 ---
 layout: page
 element: lecture
-title: Version Control Projects
+title: Projects Version Control and Structure
 language: R
 ---
 
