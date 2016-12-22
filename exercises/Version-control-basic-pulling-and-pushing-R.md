@@ -42,8 +42,9 @@ the most recent changes from Github.
      transmute(id = id, earlengthcat = get_ear_len_cat(earlength, 10))
    ``` 
 
-4. Modifies the code to generate the `data.frame` to include the `gccontent`
-   with the `id`, and `earlengthcat` for each individual.
+4. Modify the code to add a `gccontent` column to the `data.frame` that includes
+   the `id` and `earlengthcat` for each individual. The `gccontent` column
+   should hold the results of your GC-content function.
 5. Save this data frame as a `CSV` file using `write.csv()`
 6. Commit the new code and the resulting `CSV` file and push the results to
    Github.
