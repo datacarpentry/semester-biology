@@ -220,18 +220,40 @@ get_size_class <- function(earlength, threshold){
 
 * So far we've worked with a local `Git` repository.
 * One of the big benefits of version control is easy collaboration.
-* To do this, we synchronize our local changes with a `remote` repository.
-* We're using GitHub. 
+* To do this, we synchronize our local changes with a remote repository called
+  `origin`.
+* Our remote repository is on GitHub. 
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
-	    * https://education.github.com/
+	* https://education.github.com/
         * For the assignment, we're using private repositories that we made at
           the beginning.
 
 ### Push to a remote
 
-* Add output table
+* `Push` sends your recent commits to the `origin` remote.
+
+> Draw push arrow on diagram on board from local to `origin`.
+
+* Before a `Push` your commits show in your local history but not on the remote.
+
+> Show local commit history and lack of history in remote.
+
+* To `Push` to your remote, select the `Push` button at the top of the `Git`
+  tab.
+* Now your changes and commit history are also stored on the remote.
+
+> Show local commits now on `origin`.
+
+
+> Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
+
+> Have students email a link to their repo to their instructor once they have
+> finished Pushing Changes
+>
+> The instructor should then commit the following code to their repo
+> with the commit message: "Generate data frame with id and earlength class"
 
 ```
 library(dplyr)
@@ -242,21 +264,6 @@ data_size_class <-
   transmute(id = id, earlengthcat = get_size_class(earlength, 10))
 ```
 
-* Commit
-    * Show on local, not remote
-* Push
-    * Show on remote
-
-> Draw push/pull on diagram on board
-
-> Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
-
-> Have students email a link to their repo to their instructor once they have
-> finished Pushing Changes
->
-> The instructor should then commit the *Add output table* code to their repo
-> with the commit message: "Generate data frame with id and earlength class"
-
 ### Collaborating
 
 * Big advantage to remotes is easy collaboration
@@ -264,14 +271,26 @@ data_size_class <-
   actually have the most recent version
 * Makes it easy to see what collaborators have done
 * Automatically combines non-overlapping changes
-* While I've been talking, one of my collaborators has finished adding the other
-  functions we need.
+* While I've been talking, Dr. Granger has finished adding some code that we
+  need to put our results into a data frame.
 
-* Pull
-* Show history
-* Run code
+> Show `origin` with collaborator commit.
 
-> Show an example of a working repository
-> Show examples of pull requests
+> Add collaborator local repo to diagram and `pull` arrow from `origin` to
+> locals.
+ 
+* `Pull` the changes from the remote repo with the `Pull` button on the Git tab
+
+> Show updates to history following `Pull` and run code
 
 > Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
+
+* Collaborating on Github can get more complex with "forks" and "branches.
+
+> *Optional*: Redraw diagram with local, `origin`, and `upstream`. Arrows from
+> `origin` to/from `upstream` are pull requests and merges.
+
+> Show an [example of a working repository]({{ site.github.repo }}) with
+> branches and forks. Navigate to pull requests.
+
+
