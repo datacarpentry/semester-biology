@@ -1,9 +1,9 @@
 ---
 layout: page
 element: assignment
-title: Version Control Basics
+title: Projects Version Control and Structure
 language: R
-exercises: ['Set Up Git', 'First Commit', 'Importing Data', 'Commit Multiple Files', 'Adding a Remote', 'Pushing Changes', 'Pulling and Pushing']
+exercises: ['Set Up Git', 'First Commit', 'Importing Data', 'Commit Multiple Files', 'Pushing Changes', 'Pulling and Pushing', 'Project Proposal']
 ---
 
 #### Learning Objectives

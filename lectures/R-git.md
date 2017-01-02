@@ -1,8 +1,9 @@
 ---
 layout: page
 element: lecture
-title: Version Control Basics
+title: Projects Version Control and Structure
 language: R
 ---
 
-* [Version Control]({{ site.baseurl }}/materials/version-control-R)
+1. [Version Control]({{ site.baseurl }}/materials/version-control-R)
+2. [Project Structure]({{ site.baseurl }}/materials/project-structure)
