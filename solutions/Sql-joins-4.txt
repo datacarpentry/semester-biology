@@ -1,0 +1,6 @@
+"plot_type","Individuals_Sampled"
+"Control",15466
+"Long-term Krat Exclosure",5031
+"Rodent Exclosure",4090
+"Short-term Krat Exclosure",5769
+"Spectab exclosure",3891

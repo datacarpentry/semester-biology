@@ -1,0 +1,6 @@
+"plot_type","Average_Ind_Sampled"
+"Control",1957.5
+"Long-term Krat Exclosure",1314.75
+"Rodent Exclosure",790.6666666666666
+"Short-term Krat Exclosure",1488.75
+"Spectab exclosure",1965.5
