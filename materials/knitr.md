@@ -63,7 +63,7 @@ language: R
 <pre><code>```{r}
 ```</code></pre>
 
-* Code that you write inside chucnks gets executed during the "knit" process and 
+* Code that you write inside chunks gets executed during the "knit" process and 
 the results are shown below.
 
 <pre><code>```{r}

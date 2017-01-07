@@ -40,6 +40,6 @@ like it would be a lot easier if it could be automated.
 
 **Paul:** A faculty member with little computer background who realizes
 that computing has become so central to his area of research that he
-needs to at least have a rough idea of how his students are work the
+needs to at least have a rough idea of how his students are working the
 magic they do for projects with a lot of programming. Even better he'd
 like to get to the point where he can really engage and help out.
