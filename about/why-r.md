@@ -28,3 +28,5 @@ including:
     advanced topics on their own and allows me to avoid duplicating
     effort.  I also contribute material that I have developed back to Data 
     Carpentry.
+7.  [R is becoming the standard computing platform in Ecology](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1394/abstract).
+
