@@ -106,7 +106,7 @@ ggplot(ant_acacia, aes(x = CIRC, y = AXIS1)) +
 ```
 ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
   geom_point() +
-  geom_point(data = acacia, aes(x = year, y = AXIS2), color = "red") +
+  geom_point(data = acacia, aes(x = CIRC, y = AXIS2), color = "red") +
   labs(x = "Circumference [cm]", y = "Canopy Width [m]")
 ```
 
