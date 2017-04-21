@@ -43,6 +43,8 @@ title: Praise for Data Carpentry for Biologists
 
 > A great introduction to a broad and complex topic.
 
+> Easily the most useful course I have taken at UF. Keep up the awesome work!
+
 > After this class I feel that I really have acquired a basic understanding of
 > [computing] and am ready to solve some real problems with it.
 
