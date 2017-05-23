@@ -6,7 +6,7 @@ title: Strip Course Content for Site Template
 
 ### From most up-to-date course version on [GitHub]({{ site.github.repo }})...
 
-- Familiarize yourself with the [site]({{ site.baseurl }}/docs/site/site-structure) and [course]({{ site.baseurl }}/docs/site/course-structure) structure.
+- Familiarize yourself with the [site]({{ site.baseurl }}/docs/site/site-directory) and [course]({{ site.baseurl }}/docs/site/course-structure) structure.
   - `_includes/`, `_layouts/`, `nav/`, and `public` contain essential site 
 software for [Jekyll](https://jekyllrb.com/) to render the website from `.HTML` 
 and `.MD` files. These files can be left AS IS for a 'computer programming' 
