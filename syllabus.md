@@ -3,14 +3,14 @@ layout: page
 title: Syllabus
 catalog: WIS 6934
 credits: 3
-semester: Fall 2015
-professor: Dr. Ethan White
+semester: Fall 2017
+professor: Dr. Ethan White and Kristina Riemer
 office: Room 1 in Building 150 (just north of Newins-Zeigler)
 email: ethanwhite@ufl.edu
 phone: 352-294-2081
-schedule: ['Tuesdays, 3-4, 219 Newins-Ziegler Hall',
-           'Fridays, 11:45-1:40, 222 Newins-Ziegler Hall']
-office_hours: Thursdays 3-4 pm, or by appointment
+schedule: ['Tuesdays, 4:05-4:55, 222 Newins-Ziegler Hall',
+           'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
+office_hours: by appointment
 TA: Andrew Marx
 TA_email: andrewjmarx@ufl.edu
 ---
