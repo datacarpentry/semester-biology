@@ -3,9 +3,10 @@ layout: page
 title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Database Queries',
 'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
-'Projects Version Control and Structure', 'Programming Fundamentals 1', 'Programming Fundamentals 2', 'Knitr', 'Working with Spatial Data','Working with
-Databases', 'Putting It All Together', 'Project Week', 'Project Week', 'Project
-Week']
+'Projects Version Control and Structure', 'Project Week', 'Working with Spatial Data',
+'Working with Spatial Data 2', 'Programming Fundamentals 1',
+'Programming Fundamentals 2', 'Project Week', 'Working with Databases',
+'Knitr', 'Project Week', 'Project Week']
 ---
 
 {% include assignments.html %}
