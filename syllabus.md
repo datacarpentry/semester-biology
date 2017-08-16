@@ -25,8 +25,8 @@ TA_email: andrewjmarx@ufl.edu
 
 Office: {{ page.office }}
 
-Email (best way to contact me):
-[{{ page.email }}](mailto:{{ page.email }})
+Email (best way to contact us):
+[{{ page.email }}](mailto:{{ page.email }}), [kristina.riemer@ufl.edu](mailto:kristina.riemer@ufl.edu)
 
 Phone: {{ page.phone }}
 
@@ -55,7 +55,7 @@ to set up appointments less than 24 hours in advance.*
 
 {{ page.TA }}
 
-Email: {{ page.TA_email }}
+Email: [{{ page.TA_email }}](mailto:{{ page.TA_email }})
 
 
 ### Website
@@ -263,8 +263,8 @@ Other resources are available at http://www.distance.ufl.edu/getting-help for:
 Should you have any complaints with your experience in this course please visit
 http://www.distance.ufl.edu/student-complaints to submit a complaint.
 
-Most importantly, if you are struggling for any reason please come talk to me
-and I will do my best to help.
+**Most importantly, if you are struggling for any reason please come talk to me
+and I will do my best to help.**
 
 
 ## Grading Policies
