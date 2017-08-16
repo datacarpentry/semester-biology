@@ -5,8 +5,8 @@ title: Assignments
 
 ### SQL
 
-* [Introduction to Databases](sql-intro)
-* [Database Structure and Joins](sql-joins)
+* [Introduction to Databases](sql-data)
+* [Database Structure and Joins](sql-queries)
 
 ### R
 
