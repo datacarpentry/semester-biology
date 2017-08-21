@@ -46,7 +46,7 @@ language: SQL
 
 ### Importing table into SQLite Manager
 
-1. Download [https://ndownloader.figshare.com/files/2292172](https://ndownloader.figshare.com/files/2292172)
+1. Download [the Portal Project survey data](https://ndownloader.figshare.com/files/2292172)
 2.  Open SQLite Manager
 3. `Database` -> `New Database` -> name `portal_mammals.sqlite`
 4. `Import`
