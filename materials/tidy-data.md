@@ -21,7 +21,7 @@ messy and what we could do to improve it.
 
 1. Be consistent
 2. Make it a rectangle
-3. One row for each
+3. One row for each data point
 4. One column per type of information
 5. Every cell contains one value
 6. Minimize redundancy using multiple tables
