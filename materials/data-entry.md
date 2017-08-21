@@ -25,7 +25,7 @@ protection against bad data being entered
 ### Quality Assurance
 
 * Stopping bad data from ever being entered
-* Let's us set rules about what values can be entered into a column
+* Set rules about what values can be entered into a column
 
 * Select an area of cells, most often a column
 * `Data -> Data Validation`
@@ -34,7 +34,7 @@ protection against bad data being entered
     * Use `Data` to set the type of limitation: `between` 
     * Then use additional boxes to provide specifics: `1` and `10`
 * Add a message to explain what goes in a cell in `Input Message`
-* Add a useful error message using `Error Alert
+* Add a useful error message using `Error Alert`
 
 * Make lists of choices
     * `Allow` = `List`
