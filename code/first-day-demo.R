@@ -1,15 +1,16 @@
 library(dplyr)
 library(ggplot2)
 library(raster)
-library(ecoretriever)
+library(rdataretriever)
 
 if (!file.exists('bbs.sqlite')){
-  ecoretriever::install('BBS', 'sqlite', 'bbs.sqlite')
+  rdataretriever::get_updates()
+  rdataretriever::install('breed-bird-survey', 'sqlite', 'bbs.sqlite')
 }
 
 bbs_db <- src_sqlite('bbs.sqlite')
-surveys <- tbl(bbs_db, "bbs_counts")
-sites <- tbl(bbs_db, "bbs_routes") %>%
+surveys <- tbl(bbs_db, "breed_bird_survey_counts")
+sites <- tbl(bbs_db, "breed_bird_survey_routes") %>%
   data.frame()
 
 rich_data <- surveys %>%
@@ -30,4 +31,4 @@ richness_w_env <- inner_join(rich_data, bioclim_bbs)
 ggplot(richness_w_env, aes(x = bio12, y = richness)) +
   geom_point() +
   geom_smooth() +
-  facet_wrap(~statenum)
+  facet_wrap(~statenum, scales = 'free')
