@@ -26,7 +26,7 @@ of content or replaced with a descriptive placeholder.
 ### OR, `pull` a well out-dated, but largely generated, template...
 
 ```
-git checkout -b make-template gh-pages
+git checkout -b make-template master
 git pull https://github.com/brymz/datacarp-semester-biology.git template
 ```
 - [GitHub Pull Request](https://github.com/datacarpentry/semester-biology/pull/408)

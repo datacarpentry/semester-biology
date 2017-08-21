@@ -7,8 +7,8 @@ language: R
 
 *Version control exercises 6-9 assume that you have an instructor adding and
  modifying files in your repository. If not, the files are available in the
- [`data`](https://github.com/datacarpentry/semester-biology/tree/gh-pages/data) and
- [`code`](https://github.com/datacarpentry/semester-biology/tree/gh-pages/code) directories of
+ [`data`](https://github.com/datacarpentry/semester-biology/tree/master/data) and
+ [`code`](https://github.com/datacarpentry/semester-biology/tree/master/code) directories of
  the course repository.*
 
 You're working on a large project trying to predict diversity hotspots. Another

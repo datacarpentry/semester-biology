@@ -20,11 +20,11 @@ title: Help
 
 ### Templates
 
-- [Readings]({{ site.baseurl }}/docs/templates/Readings-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/docs/templates/Readings-template.md))
-- [Lectures]({{ site.baseurl }}/docs/templates/Lectures-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/docs/templates/Lectures-template.md))
-- [Materials]({{ site.baseurl }}/docs/templates/materials-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/docs/templates/materials-template.md))
-- [Assignments]({{ site.baseurl }}/docs/templates/assignments-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/docs/templates/assignments-template.md))
+- [Readings]({{ site.baseurl }}/docs/templates/Readings-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/master/docs/templates/Readings-template.md))
+- [Lectures]({{ site.baseurl }}/docs/templates/Lectures-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/master/docs/templates/Lectures-template.md))
+- [Materials]({{ site.baseurl }}/docs/templates/materials-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/master/docs/templates/materials-template.md))
+- [Assignments]({{ site.baseurl }}/docs/templates/assignments-template) ([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/master/docs/templates/assignments-template.md))
 - [Exercises]({{ site.baseurl }}/docs/templates/Exercises-template)
-([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/gh-pages/docs/templates/Exercises-template.md))
+([raw file](https://raw.githubusercontent.com{{ site.github.repo | remove: 'https://github.com' }}/master/docs/templates/Exercises-template.md))
 - [Exercise Solutions]({{ site.baseurl }}/solutions/Exercises-template.txt)
 
