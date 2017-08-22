@@ -10,7 +10,8 @@ email: ethanwhite@ufl.edu
 phone: 352-294-2081
 schedule: ['Tuesdays, 4:05-4:55, 222 Newins-Ziegler Hall',
            'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
-office_hours: by appointment
+office_hours: Monday 2-3:15 and Wednesday 11-12
+office_hours_location: Newins-Zeigler 203
 TA: Andrew Marx
 TA_email: andrewjmarx@ufl.edu
 ---
@@ -44,11 +45,11 @@ Phone: {{ page.phone }}
 
 Times: {{ page.office_hours }}
 
-Location: {{ page.office }}
+Location: {{ page.office_hours_location }}
 
-*Note: my schedule gets very busy during the semester so please try to schedule
-appointments as far in advance as possible. In general it will be very difficult
-to set up appointments less than 24 hours in advance.*
+Or by appointment. *Note: my schedule gets very busy during the semester so
+please try to schedule appointments as far in advance as possible. In general it
+will be very difficult to set up appointments less than 24 hours in advance.*
 
 
 ### Course TA
