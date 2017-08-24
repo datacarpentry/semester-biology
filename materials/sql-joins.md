@@ -9,7 +9,7 @@ language: SQL
 >
 > *  download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
-> * display a fully joined version of the Portal data using
+> * display a fully joined version of the Portal data using:  
 > `SELECT * FROM surveys JOIN species ON surveys.species_id = species.species_id JOIN plots ON surveys.plot_id = plots.plot_id;`
 
 ### Why use multiple tables
@@ -24,6 +24,7 @@ table.
     * `surveys`: information about individuals
     * `species`: information about species
     * `plots`: information about plots
+* If a species name changes we only need to change it in the `species` table
 * Connect tables using joins to describe relationships between tables
 (*"relational" database*)
 
