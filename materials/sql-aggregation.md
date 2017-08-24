@@ -16,11 +16,11 @@ language: SQL
 calculate combined values for each group.
 
 ```
-SELECT COUNT(*)
+SELECT AVG(weight)
 FROM surveys;
 ```
 
-* Other aggregation functions include `MIN`, `MAX`, `AVG`, and `SUM`.
+* Other aggregation functions include `MIN`, `MAX`, `SUM`, and `COUNT`.
 
 ```
 SELECT MIN(weight), MAX(weight), AVG(weight)
@@ -45,10 +45,25 @@ GROUP BY species_id, plot_id;
 ```
 
 * Aggregation functions remove null values from the calculations.
+* To count the number of individuals identified to species
+
+```
+SELECT species_id, plot_id, COUNT(weight)
+FROM surveys;
+```
+
+* To count the number of individuals trapped use
+
+```
+SELECT species_id, plot_id, COUNT(*)
+FROM surveys;
+```
+
+* Using `*` counts any row with at least one non-null value
 
 > Do [Exercise 7 - COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL).
 
-### `HAVING`
+### Filtering after aggregation
 
 * To filter by an outcome of an aggregation use `HAVING`
 
@@ -69,7 +84,7 @@ GROUP BY species_id, plot_id
 HAVING MIN(weight) IS NOT NULL;
 ```
 
-### Only grouped or aggregated fields in `SELECT`
+### Only use grouped or aggregated fields in `SELECT`
 
 * When using `GROUP BY` only fields that are in the `GROUP BY` clause or
 aggregated fields should be used in the `SELECT`
@@ -81,8 +96,7 @@ WHERE weight IS NOT NULL
 GROUP BY species_id, plot_id;
 ```
 
-* Using fields that aren't grouped or aggregated results in counter intuitive
-  results.
+* Using fields that aren't grouped or aggregated give counter intuitive results.
 
 ```
 SELECT species_id, plot_id, MIN(weight), MAX(weight), AVG(weight)
