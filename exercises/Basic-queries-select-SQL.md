@@ -15,10 +15,10 @@ metadata for this dataset is available online at [Ecological Archives](http://es
 
 1.  Write a query that displays all of the records for all of the fields (`*`)
     in the main table. Save it as a view named `all_survey_data`.
-2.  We want to generate data for an analysis of body size differences
-    between males and females of each species. We have decided that we
-    can ignore the information related to when and where the individuals
-    were trapped. Create a query that returns all of the necessary
-    information, but nothing else. Save this as 
+2.  We want to generate data for an analysis of body size differences (using
+    both weight and hind foot length) between males and females of each
+    species. We have decided that we can ignore the information related to when
+    and where the individuals were trapped. Create a query that returns all of
+    the necessary information, but nothing else. Save this as
     `size_differences_among_sexes_data`.
 
