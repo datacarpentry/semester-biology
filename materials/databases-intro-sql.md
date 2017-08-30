@@ -48,10 +48,10 @@ language: SQL
 
 1. Download [the Portal Project survey data](https://ndownloader.figshare.com/files/2292172)
 2.  Open SQLite Manager
-3. `Database` -> `New Database` -> name `portal_mammals.sqlite`
-4. `Import`
-5. `Select File` and navigate to raw data
-6. Select `csv` & check `First row contains column names`
+3. `Database` -> `New Database` -> name `portal_mammals` -> `OK` -> `Open` (don’t select any files)
+4. `Import` button or `Database` -> `Import`
+5. `Select File` -> navigate to just downloaded `surveys.csv` -> `Open`
+6. Check `First row contains column names` & select `Comma` option
 7. `OK` to modify the data
 8. Name table `surveys`
 9. Select data types
@@ -61,7 +61,7 @@ language: SQL
     * We have to define the types in advance.
     * Types include
         * Integer
-        * Text
+        * Text (varchar)
         * Decimal/Double/Real/Float
     * Types are highly configurable for when space is limiting
         * Maximum value of integers
@@ -76,12 +76,13 @@ language: SQL
     * The easiest way to do this is to use an `INTEGER` that increments every
       time a new record is added.
     * Many databases that you import will already have a field like this.
+    * If no column is chosen as a primary key or the column chosen does not contain unique integers, SQLite Manager will automatically create one called ‘rowid’
 
 > Show students the
 >
 > * objects panel with `Tables` and `Views`.
 > * `Browse & Search` tab.
-> * Show students the `Structure` tab.
+> * `Structure` tab.
 
 > We've just done most of Exercise 3.
 > Do [Exercise 3.11 - Importing Data]({{ site.baseurl }}/exercises/Database-control-importing-data-SQL).
