@@ -27,7 +27,7 @@ facilitate easy customization.
 
 - Here are some examples of customized courses:
   - [Introduction to Ecology](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/)
-  - [Introduction to Scientific Computing](https://palderman.github.io/IntroSciComp/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman/alderman)
+  - [Data Science for Agriculture](https://palderman.github.io/DataSciAg/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman)
 
 
 ## Where is everything
