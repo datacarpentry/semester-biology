@@ -21,7 +21,7 @@ For Students
 : <a href="{{ site.baseurl}}/materials/projects">
   <i class="fa fa-folder-open fa-fw"></i> Projects</a>
 : <a href="{{ site.baseurl }}/materials/turn-in-checklist">
-  <i class="fa fa-check-square fa-fw"></i> Turn in checklist</a>
+  <i class="fa fa-check-square fa-fw"></i> Assignment Submission & Checklist</a>
 : <a href="{{ site.baseurl}}/START-for-self-guided-students">
   <i class="fa fa-play-circle fa-fw"></i> Self-Guided Start-Up Guide</a>
 
