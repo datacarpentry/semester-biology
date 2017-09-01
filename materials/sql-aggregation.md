@@ -60,7 +60,7 @@ FROM surveys;
 ```
 
 * Using `*` counts any row with at least one non-null value
-* We can name aggregated columns use `as`
+* We can name aggregated columns using `as`
 
 ```
 SELECT species_id, plot_id, COUNT(*) as count
