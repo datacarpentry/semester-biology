@@ -60,6 +60,12 @@ FROM surveys;
 ```
 
 * Using `*` counts any row with at least one non-null value
+* We can name aggregated columns use `as`
+
+```
+SELECT species_id, plot_id, COUNT(*) as count
+FROM surveys;
+```
 
 > Do [Exercise 7 - COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL).
 
