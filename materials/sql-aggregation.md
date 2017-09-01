@@ -48,7 +48,7 @@ GROUP BY species_id, plot_id;
 * To count the number of individuals identified to species
 
 ```
-SELECT species_id, plot_id, COUNT(weight)
+SELECT species_id, plot_id, COUNT(species_id)
 FROM surveys;
 ```
 
