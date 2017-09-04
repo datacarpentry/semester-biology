@@ -6,9 +6,9 @@ language: R
 ---
 
 Calculate a total biomass in grams for 3 white-throated woodrats
-([*Neotoma albigula*](https://en.wikipedia.org/wiki/White-throated_woodrat)) and then convert it to kilograms. The total biomass
-is simply the sum of the biomass of all individuals, but in this case we
-only know that the average size of a single individual is 250 grams.
+([*Neotoma albigula*](https://en.wikipedia.org/wiki/White-throated_woodrat)) and
+then convert it to kilograms. The total biomass is three times the average size
+of a single individual. An average individual weighs 250 grams.
 
 1. Add a new section to your R script starting with a comment.
 2. Create a variable `grams` and assign it the mass of a single
@@ -32,6 +32,6 @@ could also use really descriptive alternatives like
 this or leave out some of the words to make it shorter (e.g.,
 `indiv_mass_g`).* 
 
-Have a think about appropriate variable names and then rename the variables in
-your program to what you find most useful. Make sure your code still runs
-properly after you've changed the names.
+Think about good variable names and then rename the variables in your program to
+what you find most useful. Make sure your code still runs properly after you've
+changed the names.

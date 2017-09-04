@@ -6,11 +6,11 @@ language: R
 ---
 
 A built-in function is one that you don't need to install and load a package to
-use. To learn how to use any function that you don't know how to use
-appropriately, use the `help()` function. `help()` takes one parameter, the name
-of the function that you want information about (*e.g.,* `help(abs)`).
-Familiarize yourself with the built-in functions `abs()`, `round()`, `sqrt()`,
-`tolower()`, and `toupper()`.  Use these built-in functions to print the following items:
+use. To learn how to use a function use the `help()` function. `help()` takes
+one parameter, the name of the function that you want information about (*e.g.,*
+`help(abs)`).  Familiarize yourself with the built-in functions `abs()`,
+`round()`, `sqrt()`, `tolower()`, and `toupper()`.  Use these built-in functions
+to print the following items:
 
 1. The absolute value of -15.5.
 2. 4.483847 rounded to one decimal place. *The function `round()` takes two
