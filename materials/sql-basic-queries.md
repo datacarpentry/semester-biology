@@ -19,6 +19,11 @@ language: SQL
 * Queries - store questions about the data
     * If we update the data, the query asks the same question of the new data.
 
+### Using SQLite Manager
+
+* Type SQL into `Enter SQL` box under `Execute SQL` tab
+* Show output with `Run SQL` or keyboard shortcut `command` + `;`
+
 ### Selecting columns
 
 * Choose which columns to return.
@@ -99,6 +104,8 @@ SELECT hindfoot_length
 FROM surveys
 WHERE species_id = 'DS';
 ```
+
+* Note single quotes around desired value
 
 ```
 SELECT species_id

@@ -9,6 +9,8 @@ assignments: ['Data Entry and Storage', 'Database Queries',
 'Knitr', 'Project Week', 'Project Week']
 ---
 
+[Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
+
 {% include assignments.html %}
 
 The above assignments are for this specific version of the course, but other
