@@ -88,7 +88,7 @@ surveys <- data.frame(sites, density_ha, area_ha)
 ### Importing data
 
 * `read.csv()`
-* Download the file for the Shrub Volume Data Frame exercise
+* Download [the file]({{ site.baseurl }}/data/shrub-dimensions-labeled.csv) for the Shrub Volume Data Frame exercise
 * How do we tell R where this file is
 
 > When someone says `setwd` discuss issues
