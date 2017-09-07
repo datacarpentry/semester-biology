@@ -11,7 +11,7 @@ language: R
 * Create using `c()`, which stands for "combine"
 
 ```
-sites <- c("a", "a", "b", "b")
+sites <- c("a", "a", "b", “c”)
 ```
 
 * Functions:
@@ -23,6 +23,7 @@ sites <- c("a", "a", "b", "b")
     * `sites[1:3]`
         * `1:3` makes a vector. So, this is the same as
     * `sites[c(1, 2, 3)]` 
+    * `sites[c(4, 1, 3)]`
         * You can use a vector to get any subset or order you want
 
 * Math functions:
@@ -78,16 +79,16 @@ surveys <- data.frame(sites, density_ha, area_ha)
     * `length(surveys)`
     * `nrow(surveys)`, `ncol(surveys)`
 * Subsetting columns:
-    * `surveys["sites"]`
-    * `surveys[c("counts", "weights")]`
-    * `surveys$sites`
-    * `surveys[["sites"]]`
+    * `surveys[“area_ha”]`
+    * `surveys[c(“area_ha”, “sites”)]`
+    * `surveys$area_ha`
+    * `surveys[[“area_ha”]]`
 
 
 ### Importing data
 
 * `read.csv()`
-* Download the file for the Shrub Volume Data Frame exercise
+* Download [the file]({{ site.baseurl }}/data/shrub-dimensions-labeled.csv) for the Shrub Volume Data Frame exercise
 * How do we tell R where this file is
 
 > When someone says `setwd` discuss issues
