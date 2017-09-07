@@ -11,7 +11,7 @@ language: R
 * Create using `c()`, which stands for "combine"
 
 ```
-sites <- c("a", "a", "b", "b")
+sites <- c("a", "a", "b", “c”)
 ```
 
 * Functions:
@@ -23,6 +23,7 @@ sites <- c("a", "a", "b", "b")
     * `sites[1:3]`
         * `1:3` makes a vector. So, this is the same as
     * `sites[c(1, 2, 3)]` 
+    * `sites[c(4, 1, 3)]`
         * You can use a vector to get any subset or order you want
 
 * Math functions:
