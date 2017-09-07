@@ -79,10 +79,10 @@ surveys <- data.frame(sites, density_ha, area_ha)
     * `length(surveys)`
     * `nrow(surveys)`, `ncol(surveys)`
 * Subsetting columns:
-    * `surveys["sites"]`
-    * `surveys[c("counts", "weights")]`
-    * `surveys$sites`
-    * `surveys[["sites"]]`
+    * `surveys[“area_ha”]`
+    * `surveys[c(“area_ha”, “sites”)]`
+    * `surveys$area_ha`
+    * `surveys[[“area_ha”]]`
 
 
 ### Importing data
