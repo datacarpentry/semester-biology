@@ -76,7 +76,7 @@ language: SQL
     * The easiest way to do this is to use an `INTEGER` that increments every
       time a new record is added.
     * Many databases that you import will already have a field like this.
-    * If no column is chosen as a primary key or the column chosen does not contain unique integers, SQLite Manager will automatically create one called ‘rowid’
+    * Otherwise autogenerates one. 
 
 > Show students the
 >
