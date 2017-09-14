@@ -21,8 +21,8 @@ language: SQL
 
 ### Using SQLite Manager
 
-* Type SQL into `Enter SQL` box under `Execute SQL` tab
-* Show output with `Run SQL` or keyboard shortcut `command` + `;`
+* Use `Execute SQL` tab
+* Run SQL w/ keyboard shortcut `command` + `;`
 
 ### Selecting columns
 
@@ -104,8 +104,6 @@ SELECT hindfoot_length
 FROM surveys
 WHERE species_id = 'DS';
 ```
-
-* Note single quotes around desired value
 
 ```
 SELECT species_id
