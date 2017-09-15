@@ -127,6 +127,14 @@ surveys %>%
 portaldb <- src_sqlite("portal_mammals.sqlite")
 surveys <- tbl(portaldb, "surveys")
 surveys
+species <- tbl(portaldb, "species")
+portal_data <- inner_join(surveys, species, by = "species_id") %>%
+               select(year, month, day, genus, species)
+```
+
+* Can also extract data directly using SQL
+
+```
 query <- "SELECT year, month, day, genus, species
           FROM surveys JOIN species
           ON surveys.species_id = species.species_id"
