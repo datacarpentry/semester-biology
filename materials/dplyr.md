@@ -121,6 +121,7 @@ surveys %>%
     * Lets the database do the heavy lifting
         * Faster
         * No RAM limits
+* Need to install the `dbplyr` package
 
 ```
 portaldb <- src_sqlite("portal_mammals.sqlite")
