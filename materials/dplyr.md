@@ -163,3 +163,5 @@ bbs_counts_csv <- read.csv("BBS_counts.csv")
 * Number of rows is unknown as shown by `??`
 * Queries and data manipulation results will remain in the external database.
 * Use `collect()` to store results in a local data frame (`# A tibble`).
+
+* If you want to move store a table from R in the database use `copy_to`
