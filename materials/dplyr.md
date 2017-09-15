@@ -141,6 +141,10 @@ query <- "SELECT year, month, day, genus, species
 tbl(portaldb, sql(query))
 ```
 
+* Either of these runs the query in the database
+
+> Do [Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
+
 * Speed example using Breeding Bird Survey of North America data
     * ~85 million cells (>250 MB)
 
@@ -153,9 +157,6 @@ bbs_counts
 # Loading from csv takes 30 seconds
 bbs_counts_csv <- read.csv("BBS_counts.csv")
 ```
-
-> Do [Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
-
 
 * Queries and data manipulation functions return similar results with various 
   headings (`Source:   query`).
