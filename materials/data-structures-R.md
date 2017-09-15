@@ -50,7 +50,7 @@ total_number <- density_ha * area_ha
         * Not `=`. `=` is used for assignment.
         * `!=`, `<`, `>`
 
-> Do [Exercise 9 - Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
+> Do [Exercise 8 - Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
 
 
 ### Matrices (if linear algebra folks)
@@ -109,7 +109,7 @@ shrub_data <- read.csv('./data/shrub-dimensions-labeled.csv')
 
 > DO NOT USE setwd() FOR THIS CLASS
 
-> Do [Exercise 10 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
+> Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
 
 ### Project structure
 
