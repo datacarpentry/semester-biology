@@ -15,4 +15,4 @@ library(dplyr)
 help(package = dplyr)
 ```
 
-This [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) is a great reference for *data manipulation verbs* to keep in mind.
+This [vignette](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) is a great reference for *data manipulation verbs* to keep in mind.
