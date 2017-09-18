@@ -11,11 +11,11 @@ Make sure you have an existing copy of the `portal_mammals.sqlite` database or
 [download a new copy](https://ndownloader.figshare.com/files/2292171).
 
 Notice how the solution to [Link to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R) 
-task 4 is a `lazy query` (or maybe a `query`) and that the number of rows is unknown (`??`).
+task 3 is a `lazy query` (or maybe a `query`) and that the number of rows is unknown (`??`).
 
 1. Take this `lazy query` and make it a local data frame using `collect()`
    and determine how many rows it has.
-2. Calculate the average size of a *Neotoma Albigula* (`NL`) in `surveys` and
+2. Calculate the average weight in kilograms of a *Neotoma Albigula* (`NL`) in `surveys` and
    store the result in a local data frame.
 3. Create a local data frame with the number of individuals counted in each year
    of the study. *If you don't know how to count things using `dplyr`, take
