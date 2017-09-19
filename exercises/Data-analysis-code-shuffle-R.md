@@ -27,7 +27,7 @@ character in R is `#`.
 ```
 plot(monthly_mean_ppt, type = "l", xlab = "Month", ylab = "Mean Precipitation")
 monthly_mean_ppt <- colMeans(ppt_data)
-ppt_data <- read.csv("./data/gainesville-precip.csv", header = FALSE)
+ppt_data <- read.csv("data/gainesville-precip.csv", header = FALSE)
 ```
 
 It's OK if you don't know exactly how the details of the program work at this
