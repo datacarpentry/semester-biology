@@ -104,7 +104,7 @@ surveys <- data.frame(sites, density_ha, area_ha)
 * Load it
 
 ```
-shrub_data <- read.csv('./data/shrub-dimensions-labeled.csv')
+shrub_data <- read.csv('data/shrub-dimensions-labeled.csv')
 ```
 
 > DO NOT USE setwd() FOR THIS CLASS
