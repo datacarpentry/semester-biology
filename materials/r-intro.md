@@ -28,6 +28,7 @@ language: R
     * Environment/History
     * Project management
 
+> Create new folder for scripts
 
 ### Basic expressions
 
@@ -47,6 +48,7 @@ language: R
 
 * `Source` vs `Source with Echo`
 
+> Create notes R script, put in new folder
 
 ### Types
 
@@ -103,8 +105,10 @@ length = 1.5
 volume = width * height * length
 volume
 ```
+> Create assignment script, put in new folder
 
 > Do [Exercise 1 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
+
 > Do [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
 
 
