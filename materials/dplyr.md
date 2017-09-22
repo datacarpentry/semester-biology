@@ -107,7 +107,7 @@ surveys %>%
   summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-> Do [Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
+> Do [Exercise 5 - Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
 
 ### Using `dplyr` with databases
 
@@ -139,7 +139,7 @@ portal_data <- dbGetQuery(portaldb, query)
 
 * Either of these runs the query in the database
 
-> Do [Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
+> Do [Exercise 6 - Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
 
 * Speed example using Breeding Bird Survey of North America data
     * ~85 million cells (>250 MB)
