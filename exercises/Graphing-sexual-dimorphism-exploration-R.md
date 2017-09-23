@@ -34,6 +34,6 @@ Using `ggplot`:
 5. Make the same graph as in the last task, but for wing size instead of
    mass. Do you notice anything strange? If so, you may have gotten caught by
    the use of non-standard null values. If you already noticed and fixed this,
-   Nice Work! If not, you can use the optional `na.strings = c(-999, -999.0)`
+   Nice Work! If not, you can use the optional `na.strings = c(“-999”, “-999.0”)`
    argument in `read.csv()` to tell R what value(s) indicated nulls in a
    dataset.
