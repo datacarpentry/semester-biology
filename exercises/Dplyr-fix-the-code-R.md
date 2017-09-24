@@ -12,7 +12,7 @@ If you haven't already downloaded the
 do so now and store it in your `data` directory.
 
 The following code is supposed to import the shrub volume data and calculate the
-average shrub volume for each experiment and, separately, for each site
+average shrub volume for each site and, separately, for each experiment
 
 ```
 read.csv("data/shrub-volume-experiment.csv")
