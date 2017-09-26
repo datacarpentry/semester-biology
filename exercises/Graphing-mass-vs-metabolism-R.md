@@ -24,13 +24,12 @@ size_mr_data <- data.frame(
     106.670, 119.660, 104.150, 33.165, 4.900, 4.865))
 ```
 
-Now make three plots with appropriate axis labels:
+Now make two plots with appropriate axis labels:
 
 1.  A graph of body mass vs. metabolic rate
-2.  A graph of log(body mass) vs. log(metabolic rate) (You can do this
-    transformation inside the call to `aes()`)
 3.  A graph of body mass vs. metabolic rate, with logarithmically scaled axes
-    (this is different from number 2), and the point size set to 5.
+    (this stretches the axis, but keeps the numbers on the original scale), and
+    the point size set to 5.
 
 Think about what the shape of these graphs tells you about the form of
 the relationship between mass and metabolic rate.

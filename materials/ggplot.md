@@ -5,60 +5,62 @@ title: Graphing using ggplot
 language: R
 ---
  
-> Set up R console:
-
-```
-library(dplyr)
-library(ggplot2)
-
-acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t")
-```
-
 > Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - Acacia drepanolobium Surveys
-				 
+
+### Data
+
+* Data on acacia size in an experiment in Africa excluding large herbivores
+* Data is tab separate
+* Includes information on if the plant is dead in the HEIGHT column
+
+```
+acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = "dead")
+```
+
 ### Basics
 
 * [`ggplot()`](http://docs.ggplot2.org/current/ggplot.html) arguments:
-    * default dataset 
+    * default dataset - what data are we working with
     * set of mappings
         * 'Aesthetics' from variables
-    * `ggplot(acacia, aes(x = CIRC, y = AXIS1))`
+		* what columns should we use for different aspects of the plot
+    * `ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))`
+
 * Add components of figures with layers
     * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
 
-* Simple scatter plot showing branch circumference and canopy width
+* Scatter plot showing branch circumference and canopy height
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) + 
+library(ggplot2)
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point()
 ```
 
-* Rescale variables with mapping
+* To change things about the layer pass arguments to the geom
 
 ```
-ggplot(acacia, aes(x = CIRC, y = log10(AXIS1))) +
-  geom_point()
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, color = "blue", alpha = 0.5)
 ```
 
-* Rescale variables with layer
+* Rescale axes
     * [`scale_continuous()`](http://docs.ggplot2.org/current/scale_continuous.html)
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
-  geom_point() +
-  scale_y_log10()
-```
-
-* Labels and theme
-
-```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
-  geom_point(size = 3, color = "red") +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, color = "blue", alpha = 0.5) +
   scale_y_log10() +
-  labs(x = "Circumference [cm]", y = "Canopy Width [m]",
-       title = "Acacia Survey at UHURU") +
-  annotation_logticks(sides = "l") +
-  theme_bw()
+  scale_x_log10()
+```
+
+* Add Labels (documentation for your graphs!)
+
+```
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, color = "blue", alpha = 0.5) +
+  labs(x = "Circumference [cm]", y = "Canopy Height [m]",
+       title = "Acacia Survey at UHURU")
 ```
 
 > Do [Exercise 2 - Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
@@ -68,17 +70,19 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
 * Group on a single graph
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1, color = ANT)) +
-  geom_point()
+ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
+  geom_point(size = 3, alpha = 0.5)
 ```
 
 * Facet specification
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
-  geom_point() +
-  facet_wrap(~ANT)
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_wrap(~TREATMENT)
 ```
+
+* Where are all the acacia in the open plots? (eaten?)
 
 > Do Tasks 1-4 in [Exercise 3 - Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
 
@@ -91,33 +95,37 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
     * Add additional layers, as necessary
         * Order matters
 
-* Combining different kinds of layers
+* Combine different kinds of layers
+* Add a linear model to each plot
 
 ```
-ant_acacia <- filter(acacia, ANT %in% c("CM", "CS", "TP"))
-ggplot(ant_acacia, aes(x = CIRC, y = AXIS1)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   geom_smooth(method = "lm") +
-  facet_wrap(~ANT)
+  facet_wrap(~TREATMENT)
 ```
 
 * Combining different data sources
+* Add tree size data for context
+* Layers are plotted in the order they are added
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
-  geom_point() +
-  geom_point(data = acacia, aes(x = CIRC, y = AXIS2), color = "red") +
-  labs(x = "Circumference [cm]", y = "Canopy Width [m]")
+trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
+                  sep="\t", na.strings = c("dead", "missing", "MISSING", "NA"))
+ggplot() +
+  geom_point(data = trees, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(data = acacia, aes(x = CIRC, y = HEIGHT), color = "red") +
+  labs(x = "Circumference [cm]", y = "Height [m]")
 ```
 
 * Each layer will default to `ggplot()` mappings unless modified
     * So, we don't have to specify the arguments that are the same
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
-  geom_point() +
-  geom_point(aes(y = AXIS2), color = "red") +
-  labs(x = "Circumference [cm]", y = "Canopy Width [m]")
+ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(data = trees) +
+  geom_point(data = acacia, color = "red") +
+  labs(x = "Circumference [cm]", y = "Height [m]")
 ```
 
 > Do Task 5 in [Exercise 3 - Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
@@ -131,17 +139,16 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
 * Transformations also exist to make things like histograms, bar plots, etc.
 * Occur as defaults in associated Geoms
 
-* To look at the abundances of different ant associations in the dataset, use a
-bar plot
+* To look at the number of acacia in each treatment use a bar plot
     * [`geom_bar()`](http://docs.ggplot2.org/current/geom_bar.html)
 
 ```
-ggplot(acacia, aes(x = ANT)) + 
+ggplot(acacia, aes(x = TREATMENT)) +
   geom_bar()
 ```
 
 * Uses the transformation `stat_count()`
-    * Counts the number of rows for each species
+    * Counts the number of rows for each treatment
 
 * To look at the distribution of circumferences in the dataset use a histogram
     * [`geom_histogram()`](http://docs.ggplot2.org/current/geom_histogram.html)
@@ -154,7 +161,7 @@ ggplot(acacia, aes(x = CIRC)) +
 * Uses `stat_bins()` for data transformation
     * Splits circumferences into bins and counts rows in each bin
 * Uses `bins` argument to split data into groups
-    * Defaults to `bins = 30` if not specified in function call
+    * Defaults to `bins = 30`
 
 * These can be combined with all of the other `ggplot2` features we've learned
 
@@ -162,10 +169,8 @@ ggplot(acacia, aes(x = CIRC)) +
 ggplot(acacia, aes(x = CIRC, fill = ANT)) +
   geom_histogram(bins = 15) +
   scale_x_log10() +
-  annotation_logticks(sides = "b") +
   facet_wrap(~TREATMENT) +
-  labs(x = "Circumference", y = "Number of Individuals") +
-  theme_bw(base_size = 16)
+  labs(x = "Circumference", y = "Number of Individuals")
 ```
 
 ### Additional information
