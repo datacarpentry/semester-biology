@@ -24,7 +24,7 @@ size_mr_data <- data.frame(
     106.670, 119.660, 104.150, 33.165, 4.900, 4.865))
 ```
 
-Now make three plots with appropriate axis labels:
+Now make two plots with appropriate axis labels:
 
 1.  A graph of body mass vs. metabolic rate
 3.  A graph of body mass vs. metabolic rate, with logarithmically scaled axes
