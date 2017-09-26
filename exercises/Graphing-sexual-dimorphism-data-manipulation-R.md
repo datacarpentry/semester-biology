@@ -60,3 +60,4 @@ resulted in a lot of plots, but many of them had low sample sizes.
    difference for each family, only including families with more than 25
    species.
 
+4. Save the figure from task 3 as a .jpg file with the name `sexual_dimorphism_histogram`. 
