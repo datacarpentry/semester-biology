@@ -31,12 +31,7 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
 ```
 ggplot(acacia, aes(x = CIRC, y = AXIS1)) + 
   geom_point()
-```
 
-* Rescale variables with mapping
-
-```
-ggplot(acacia, aes(x = CIRC, y = log10(AXIS1))) +
   geom_point()
 ```
 
