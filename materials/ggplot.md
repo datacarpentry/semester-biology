@@ -139,17 +139,16 @@ ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
 * Transformations also exist to make things like histograms, bar plots, etc.
 * Occur as defaults in associated Geoms
 
-* To look at the abundances of different ant associations in the dataset, use a
-bar plot
+* To look at the number of acacia in each treatment use a bar plot
     * [`geom_bar()`](http://docs.ggplot2.org/current/geom_bar.html)
 
 ```
-ggplot(acacia, aes(x = ANT)) + 
+ggplot(acacia, aes(x = TREATMENT)) +
   geom_bar()
 ```
 
 * Uses the transformation `stat_count()`
-    * Counts the number of rows for each species
+    * Counts the number of rows for each treatment
 
 * To look at the distribution of circumferences in the dataset use a histogram
     * [`geom_histogram()`](http://docs.ggplot2.org/current/geom_histogram.html)
@@ -162,7 +161,7 @@ ggplot(acacia, aes(x = CIRC)) +
 * Uses `stat_bins()` for data transformation
     * Splits circumferences into bins and counts rows in each bin
 * Uses `bins` argument to split data into groups
-    * Defaults to `bins = 30` if not specified in function call
+    * Defaults to `bins = 30`
 
 * These can be combined with all of the other `ggplot2` features we've learned
 
@@ -170,10 +169,8 @@ ggplot(acacia, aes(x = CIRC)) +
 ggplot(acacia, aes(x = CIRC, fill = ANT)) +
   geom_histogram(bins = 15) +
   scale_x_log10() +
-  annotation_logticks(sides = "b") +
   facet_wrap(~TREATMENT) +
-  labs(x = "Circumference", y = "Number of Individuals") +
-  theme_bw(base_size = 16)
+  labs(x = "Circumference", y = "Number of Individuals")
 ```
 
 ### Additional information
