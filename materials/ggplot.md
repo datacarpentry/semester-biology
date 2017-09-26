@@ -204,3 +204,18 @@ ggplot(acacia, aes(x = CIRC, fill = ANT)) +
     * Multiple plots
         * [`facet_grid()`](http://docs.ggplot2.org/current/facet_grid.html)
         * [`facet_wrap()`](http://docs.ggplot2.org/current/facet_wrap.html)
+
+### Saving plots as new files
+
+```
+ggsave(“acacia_by_treatment.jpg”)
+```
+
+* Lots of optional arguments
+    * Location
+    * Type
+    * Size
+
+```
+ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
+```
