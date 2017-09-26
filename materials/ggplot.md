@@ -20,19 +20,20 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
 ### Basics
 
 * [`ggplot()`](http://docs.ggplot2.org/current/ggplot.html) arguments:
-    * default dataset 
+    * default dataset - what data are we working with
     * set of mappings
         * 'Aesthetics' from variables
-    * `ggplot(acacia, aes(x = CIRC, y = AXIS1))`
+		* what columns should we use for different aspects of the plot
+    * `ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))`
+
 * Add components of figures with layers
     * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
 
 * Simple scatter plot showing branch circumference and canopy width
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) + 
-  geom_point()
-
+library(ggplot2)
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point()
 ```
 
@@ -40,7 +41,7 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
     * [`scale_continuous()`](http://docs.ggplot2.org/current/scale_continuous.html)
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   scale_y_log10()
 ```
@@ -48,7 +49,7 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
 * Labels and theme
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "red") +
   scale_y_log10() +
   labs(x = "Circumference [cm]", y = "Canopy Width [m]",
@@ -64,14 +65,14 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
 * Group on a single graph
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1, color = ANT)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = ANT)) +
   geom_point()
 ```
 
 * Facet specification
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   facet_wrap(~ANT)
 ```
@@ -91,7 +92,7 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
 
 ```
 ant_acacia <- filter(acacia, ANT %in% c("CM", "CS", "TP"))
-ggplot(ant_acacia, aes(x = CIRC, y = AXIS1)) +
+ggplot(ant_acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   geom_smooth(method = "lm") +
   facet_wrap(~ANT)
@@ -100,7 +101,7 @@ ggplot(ant_acacia, aes(x = CIRC, y = AXIS1)) +
 * Combining different data sources
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   geom_point(data = acacia, aes(x = CIRC, y = AXIS2), color = "red") +
   labs(x = "Circumference [cm]", y = "Canopy Width [m]")
@@ -110,7 +111,7 @@ ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
     * So, we don't have to specify the arguments that are the same
 
 ```
-ggplot(acacia, aes(x = CIRC, y = AXIS1)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   geom_point(aes(y = AXIS2), color = "red") +
   labs(x = "Circumference [cm]", y = "Canopy Width [m]")
