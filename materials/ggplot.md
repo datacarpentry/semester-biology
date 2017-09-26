@@ -50,7 +50,8 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5) +
-  scale_y_log10()
+  scale_y_log10() +
+  scale_x_log10()
 ```
 
 * Label
