@@ -19,6 +19,10 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
 
 ### Basics
 
+```
+library(ggplot2)
+```
+
 * [`ggplot()`](http://docs.ggplot2.org/current/ggplot.html) arguments:
     * default dataset - what data are we working with
     * set of mappings
@@ -32,7 +36,6 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
 * Scatter plot showing branch circumference and canopy height
 
 ```
-library(ggplot2)
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point()
 ```
