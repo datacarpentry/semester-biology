@@ -105,10 +105,9 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 * Add a linear model to each plot
 
 ```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
   geom_point() +
-  geom_smooth(method = "lm") +
-  facet_wrap(~TREATMENT)
+  geom_smooth(method = "lm")
 ```
 
 * Combining different data sources
