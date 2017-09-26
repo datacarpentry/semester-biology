@@ -33,7 +33,7 @@ library(ggplot2)
 * Add components of figures with layers
     * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
 
-* Scatter plot showing branch circumference and canopy height
+* Scatter plot showing branch circumference and height
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
@@ -57,12 +57,14 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   scale_x_log10()
 ```
 
+* Not changing the data itself, just the presentation of it
+
 * Add Labels (documentation for your graphs!)
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5) +
-  labs(x = "Circumference [cm]", y = "Canopy Height [m]",
+  labs(x = "Circumference [cm]", y = "Height [m]",
        title = "Acacia Survey at UHURU")
 ```
 
@@ -71,6 +73,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 ### Grouping
 
 * Group on a single graph
+* Look at influence of experimental treatment
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
