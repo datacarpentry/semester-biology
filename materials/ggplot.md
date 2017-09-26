@@ -5,17 +5,18 @@ title: Graphing using ggplot
 language: R
 ---
  
-> Set up R console:
-
-```
-library(dplyr)
-library(ggplot2)
-
-acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t")
-```
-
 > Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - Acacia drepanolobium Surveys
-				 
+
+### Data
+
+* Data on acacia size in an experiment in Africa excluding large herbivores
+* Data is tab separate
+* Includes information on if the plant is dead in the HEIGHT column
+
+```
+acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = "dead")
+```
+
 ### Basics
 
 * [`ggplot()`](http://docs.ggplot2.org/current/ggplot.html) arguments:
