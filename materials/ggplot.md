@@ -54,14 +54,13 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   scale_x_log10()
 ```
 
-* Label
+* Add Labels (documentation for your graphs!)
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5) +
-  scale_y_log10() +
-  labs(x = "Circumference [cm]", y = "Canopy Width [m]",
-       title = "Acacia Survey at UHURU") +
+  labs(x = "Circumference [cm]", y = "Canopy Height [m]",
+       title = "Acacia Survey at UHURU")
 ```
 
 > Do [Exercise 2 - Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
