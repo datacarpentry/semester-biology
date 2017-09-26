@@ -29,7 +29,7 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
 * Add components of figures with layers
     * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
 
-* Simple scatter plot showing branch circumference and canopy width
+* Scatter plot showing branch circumference and canopy height
 
 ```
 library(ggplot2)
@@ -37,25 +37,30 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point()
 ```
 
-* Rescale variables with layer
+* To change things about the layer pass arguments to the geom
+
+```
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, color = "blue", alpha = 0.5)
+```
+
+* Rescale axes
     * [`scale_continuous()`](http://docs.ggplot2.org/current/scale_continuous.html)
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
-  geom_point() +
+  geom_point(size = 3, color = "blue", alpha = 0.5) +
   scale_y_log10()
 ```
 
-* Labels and theme
+* Label
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
-  geom_point(size = 3, color = "red") +
+  geom_point(size = 3, color = "blue", alpha = 0.5) +
   scale_y_log10() +
   labs(x = "Circumference [cm]", y = "Canopy Width [m]",
        title = "Acacia Survey at UHURU") +
-  annotation_logticks(sides = "l") +
-  theme_bw()
 ```
 
 > Do [Exercise 2 - Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
