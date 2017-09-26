@@ -95,33 +95,37 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
     * Add additional layers, as necessary
         * Order matters
 
-* Combining different kinds of layers
-
-```
-ant_acacia <- filter(acacia, ANT %in% c("CM", "CS", "TP"))
-ggplot(ant_acacia, aes(x = CIRC, y = HEIGHT)) +
-  geom_point() +
-  geom_smooth(method = "lm") +
-  facet_wrap(~ANT)
-```
-
-* Combining different data sources
+* Combine different kinds of layers
+* Add a linear model to each plot
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
-  geom_point(data = acacia, aes(x = CIRC, y = AXIS2), color = "red") +
-  labs(x = "Circumference [cm]", y = "Canopy Width [m]")
+  geom_smooth(method = "lm") +
+  facet_wrap(~TREATMENT)
+```
+
+* Combining different data sources
+* Add tree size data for context
+* Layers are plotted in the order they are added
+
+```
+trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
+                  sep="\t", na.strings = c("dead", "missing", "MISSING", "NA"))
+ggplot() +
+  geom_point(data = trees, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(data = acacia, aes(x = CIRC, y = HEIGHT), color = "red") +
+  labs(x = "Circumference [cm]", y = "Height [m]")
 ```
 
 * Each layer will default to `ggplot()` mappings unless modified
     * So, we don't have to specify the arguments that are the same
 
 ```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
-  geom_point() +
-  geom_point(aes(y = AXIS2), color = "red") +
-  labs(x = "Circumference [cm]", y = "Canopy Width [m]")
+ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(data = trees) +
+  geom_point(data = acacia, color = "red") +
+  labs(x = "Circumference [cm]", y = "Height [m]")
 ```
 
 > Do Task 5 in [Exercise 3 - Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
