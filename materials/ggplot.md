@@ -70,17 +70,19 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 * Group on a single graph
 
 ```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = ANT)) +
-  geom_point()
+ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
+  geom_point(size = 3, alpha = 0.5)
 ```
 
 * Facet specification
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
-  geom_point() +
-  facet_wrap(~ANT)
+  geom_point(size = 3, alpha = 0.5) +
+  facet_wrap(~TREATMENT)
 ```
+
+* Where are all the acacia in the open plots? (eaten?)
 
 > Do Tasks 1-4 in [Exercise 3 - Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
 
