@@ -171,7 +171,7 @@ ggplot(acacia, aes(x = CIRC)) +
 * These can be combined with all of the other `ggplot2` features we've learned
 
 ```
-ggplot(acacia, aes(x = CIRC, fill = ANT)) +
+ggplot(acacia, aes(x = CIRC)) +
   geom_histogram(bins = 15) +
   scale_x_log10() +
   facet_wrap(~TREATMENT) +
