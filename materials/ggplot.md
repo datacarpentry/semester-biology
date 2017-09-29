@@ -5,12 +5,12 @@ title: Graphing using ggplot
 language: R
 ---
  
-> Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - Acacia drepanolobium Surveys
+> Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
 
 ### Data
 
 * Data on acacia size in an experiment in Africa excluding large herbivores
-* Data is tab separate
+* Data is tab separated
 * Includes information on if the plant is dead in the HEIGHT column
 
 ```
