@@ -102,7 +102,15 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
         * Order matters
 
 * Combine different kinds of layers
-* Add a linear model to each plot
+* Add a linear model
+
+```
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+* Do this by treatment
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
@@ -118,7 +126,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
                   sep="\t", na.strings = c("dead", "missing", "MISSING", "NA"))
 ggplot() +
-  geom_point(data = trees, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(data = trees, aes(x = CIRC, y = HEIGHT), color = "gray") +
   geom_point(data = acacia, aes(x = CIRC, y = HEIGHT), color = "red") +
   labs(x = "Circumference [cm]", y = "Height [m]")
 ```
@@ -128,7 +136,7 @@ ggplot() +
 
 ```
 ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point(data = trees) +
+  geom_point(data = trees, color = "gray") +
   geom_point(data = acacia, color = "red") +
   labs(x = "Circumference [cm]", y = "Height [m]")
 ```
