@@ -5,5 +5,5 @@ title: Data Visualization
 language: R
 ---
 
-* [`ggplot`]({{ site.baseurl }}/materials/ggplot)
+* [ggplot]({{ site.baseurl }}/materials/ggplot)
 

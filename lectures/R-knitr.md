@@ -5,4 +5,4 @@ title: Knitr
 language: R
 ---
 
-[`knitr`]({{ site.baseurl }}/materials/knitr)
+[knitr]({{ site.baseurl }}/materials/knitr)
