@@ -5,33 +5,52 @@ title: Project Structure
 language: R
 --- 
 
-### Simple
-* Main/Root directory (`./`)
-    * Code file (`.R`)
-        * single top level script
-        * linked data manipulation and analysis scripts
-    * Project File (`.Rproj`)
-    * `README`
-        * description of what you're doing and how to run w/top level script
-        * `.txt` or `.md`        
-    * Data (`./data/`) 
-        * Sub directories may be useful
-    * Results (`./results/`)
-        * Sub directories may be useful
+### Introduction
 
-```
-./README
-./myproject.Rproj
-./mydatascript.R
-./myanalysisscript.R
-./data/datafile1.txt
-./data/datafile2.txt
-./results/graph1.png
-./results/graph2.png
-```
+* Learn how to organize a computational project
+* Many benefits to good organization & documentation
+    * Understand all project components
+    * Work more efficiently
+    * Easier for collaboration
+* Save a lot of time & frustration in long run, even if it’s time-consuming and frustrating to do it right initially
 
-### Advanced
+### Example project walk-through
+Download [example project]({{ site.baseurl }}/data/example_project.zip). 
 
-* Code directory (`./code/` or `./src/`)
-* Documentation file (`./docs/`)
-* Manuscript files (`./paper/` or `./doc/paper/`)
+* Good file structure
+    * All project files in one main folder
+    * Subfolders (data, scripts, etc.)
+* Main folder is R project
+    * Self-contained project
+    * Use relative instead of absolute paths
+* Good folder & file names
+    * Descriptive but not too long
+    * No spaces
+    * Consistent format
+* README
+    * Everything someone needs to know to understand project
+* Raw data
+    * In separate folder from cleaned data
+    * Never change!
+    * Each file should have metadata
+* Scripts with code
+    * Relative file paths to read in and create files
+    * Lots of comments
+    * Order: libraries, data, user-created functions, everything else
+    * Good variable & column names
+* Two methods to deal with different versions of same file
+    * Good = consistent naming scheme
+        * Each copy has date or version number
+        * Don’t call anything final, cause no file ever is! 
+    * Better = version control, only have one copy of each file
+* Running all scripts
+    * Good = description of order to run each script in README
+    * Better = script to run all scripts
+    * Best = Make
+* Combine code output and text in single document, e.g., knitr
+
+### Goal of good project structure
+
+* Reproducibility = ability to get same results from set of data & code
+* Give entire project folder to someone else (or your future self!), they can understand all parts and recreate your results, figures, documents, etc. 
+* Improving reproducibility makes YOUR life easier! 
