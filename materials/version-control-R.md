@@ -20,12 +20,9 @@ language: R
 >   code for the 'Collaborating' demo.
 
 ```
-library(dplyr)
-
-data_size_class <-
-  data %>% 
-  rowwise() %>% 
-  transmute(id = id, earlengthcat = get_size_class(earlength, 10))
+library(ggplot2)
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
 ```
 
 > * Open the following links in a browser and zoom in to make the images fill
@@ -91,91 +88,70 @@ data files and code in a more manageable way.
 
 ### First commits
 
-*The following example uses the code from the [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R) exercise.*
-
 #### Commit data
 
 * Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/file/11003/download?token=JN-QrebL5udjuX1AQvUt3hUYtzrLW0StCFbgxE5PpGA) to your project directory.
-* Git -> Select `houseelf-earlength-dna-data.csv`.
+* Git -> Select `Gaeta_etal_CLC_data.csv`.
 * Commit with message. 
-    * `"Add earlength data of houseelves"`
+    * `Add fish size and growth rate data`
 * History: 
     * One commit
     * Changes too large to see
 
 #### Commit R script
 
-* Create a new file. 
-    * `houseelf-analysis.R`
-* Add some code to the file.
-    * `get_data()`
+* Read in data to new R script.
 
 ```
-get_data <- function() {
-  data <- read.csv("houseelf-earlength-dna-data.csv")
-  return(data)
-}
-
-data <- get_data()
+fish_data = read.csv("Gaeta_etal_CLC_data.csv")
 ```
 
-* Git -> Select `houseelf-analysis.R`. 
+* Save as `fish-analysis.R`. 
+* Git -> Select `fish-analysis.R`. 
     * Changes in staged files will be included in next commit.
     * Can also see changes by selecting `Diff`
 * Commit with message. 
-    * `"Start script comparing earlength and DNA of houseelves"`
+    * `Start script comparing fish length and scale size`
 * History: 
     * Two commits
-    * See what changes where made to `houseelf-analysis.R`
+    * See what changes were made to `fish-analysis.R`
 
 ### Building a history
 
-* `houseelf-analysis.R` doesn't currently show on the `Git` tab
+* `fish-analysis.R` doesn't currently show on the `Git` tab
     * No saved changes since last commit
-* Add some more code to `houseelf-analysis.R`.
-    * `get_size_class()`
+* Add some more code to `fish-analysis.R`
+    * Create new categorical size column
 
 ```
-get_size_class <- function(earlength){
-  if (earlength > 10){
-    size_class = "large"
-  } else {
-    size_class = "small"
-  }
-  return(size_class)
-}
+library(dplyr)
+fish_data_cat = fish_data %>% 
+  mutate(length_cat = ifelse(length > 200, "big", "small"))
 ```
 
-* Save `houseelf-analysis.R`.
+* Save `fish-analysis.R`.
 * Now we see the file on the `Git` tab.
     * `M` indicates that it's been modified.
 * To commit these changes, we need to stage the file.
-    * Check the box next to `houseelf-analysis.R`.
+    * Check the box next to `fish-analysis.R`.
 * Commit with message.
-    * `"Add function for determining size class"`
+    * `Add categorical fish length column`
 * History: 
     * Three commits 
-    * Each `houseelf-analysis.R` commit shows the additions we made in
+    * Each `fish-analysis.R` commit shows the additions we made in
       that commit.
 
-* Modify the code in `houseelf-analysis.R` 
-    * Add `threshold` to `if()` in `get_size_class()`. 
+* Modify this code in `fish-analysis.R` 
+    * Change category cut-off size
 
 ```
-get_size_class <- function(earlength, threshold){
-  if (earlength > threshold){
-    size_class = "large"
-  } else {
-    size_class = "small"
-  }
-  return(size_class)
-}
+fish_data_cat = fish_data %>% 
+  mutate(length_cat = ifelse(length > 300, "big", "small"))
 ```
 
-* Stage -> Commit
-    * Now we see both red and green sections. 
-        * Green for lines that have been added 
-        * Red for lines that have been deleted 
+* Save file -> stage -> commit
+    * `Change size cutoff for new column`
+    * Green sections for added lines, red for deleted
     * Git works line by line.
         * The previous version of the line is shown as deleted.
         * The new version of the line is shown as added.
@@ -190,14 +166,8 @@ get_size_class <- function(earlength, threshold){
 #### Experiment with impunity
 
 ```
-get_size_class <- function(earlength, threshold){
-  if (earlength > threshold){
-    size_class = 1
-  } else {
-    size_class = 2
-  }
-  return(size_class)
-}
+fish_data_cat = fish_data %>% 
+  mutate(length_cat = ifelse(length > 300, "large", "small"))
 ```
 
 * `Save` and show changes are staged
@@ -208,10 +178,10 @@ get_size_class <- function(earlength, threshold){
 
 #### Delete with impunity
 
-* Close the upper left window with the `houseelf-analysis.R`.
+* Close the upper left window with the `fish-analysis.R`.
 * Choose the `File` tab in the lower right window.
-* Select `houseelf-analysis.R` -> `Delete` -> `Yes`
-* <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
+* Select `fish-analysis.R` -> `Delete` -> `Yes`
+* Stage deleted file -> <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 ## GitHub Remotes
 
@@ -252,15 +222,12 @@ get_size_class <- function(earlength, threshold){
 > finished Pushing Changes
 >
 > The instructor should then commit the following code to their repo
-> with the commit message: "Generate data frame with id and earlength class"
+> with the commit message: `Plot histogram of scale length by fish categorical size`
 
 ```
-library(dplyr)
-
-data_size_class <-
-  data %>% 
-  rowwise() %>% 
-  transmute(id = id, earlengthcat = get_size_class(earlength, 10))
+library(ggplot2)
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
 ```
 
 ### Collaborating
