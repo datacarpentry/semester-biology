@@ -15,7 +15,7 @@ language: R
 
 > For class
 > 
-> * Download [`houseelf-earlength-dna-data.csv`]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv).
+> * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/file/11003/download?token=JN-QrebL5udjuX1AQvUt3hUYtzrLW0StCFbgxE5PpGA).
 > * Arrange to have a teaching partner attend class and `push` the following
 >   code for the 'Collaborating' demo.
 
@@ -95,7 +95,7 @@ data files and code in a more manageable way.
 
 #### Commit data
 
-* Download the data file [`houseelf-earlength-dna-data.csv`]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv) to your project directory.
+* Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/file/11003/download?token=JN-QrebL5udjuX1AQvUt3hUYtzrLW0StCFbgxE5PpGA) to your project directory.
 * Git -> Select `houseelf-earlength-dna-data.csv`.
 * Commit with message. 
     * `"Add earlength data of houseelves"`
