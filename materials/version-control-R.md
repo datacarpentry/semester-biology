@@ -237,8 +237,7 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   actually have the most recent version
 * Makes it easy to see what collaborators have done
 * Automatically combines non-overlapping changes
-* While I've been talking, Dr. Granger has finished adding some code that we
-  need to put our results into a data frame.
+* While I've been talking, a collaborator has added a plot of scale size and fish length to the code.
 
 > Show `origin` with collaborator commit.
 
