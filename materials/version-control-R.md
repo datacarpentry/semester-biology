@@ -67,8 +67,7 @@ data files and code in a more manageable way.
 ### Create a Git repo
 
 1. Navigate to Github in a web browser and login.
-2. Click the `+` at the upper right corner of the page that shows the words
-   `Create  new...` when you hover over it and choose `New repository`.
+2. Click the `+` at the upper right corner of the page and choose `New repository`.
 3. Choose the class organization (e.g., `dcsemester`) as the `Owner` of the
    repo.
 4. Fill in a `Repository name` that follows the form `FirstnameLastname`.
@@ -78,14 +77,14 @@ data files and code in a more manageable way.
 
 ### Connect to the Git repo in RStudio
 
-1. File -> New Project -> New Directory -> Version Control -> Git
+1. File -> New Project -> Version Control -> Git
 2. Navigate to your new Git repo -> Click the `Clone or download` button ->
    Click the `Copy to clipboard` button.
-3. Paste the `Repository URL:` *A suggested `Project directory name:` should be
-   automatically generated*.
-4. Choose where to `Create project as subdirectory of:`.
-5. Click `Create Project`.
-6. Check to make sure you have a `Git` tab in the upper right window.
+3. Paste this in `Repository URL:`. 
+4. Leave `Project directory name:` blank; automatically given repo name. 
+5. Choose where to `Create project as subdirectory of:`.
+6. Click `Create Project`.
+7. Check to make sure you have a `Git` tab in the upper right window.
 
 > Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 
