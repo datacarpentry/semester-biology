@@ -24,7 +24,7 @@ For Students
   <i class="fa fa-check-square fa-fw"></i> Assignment Submission & Checklist</a>
 : <a href="{{ site.baseurl}}/START-for-self-guided-students">
   <i class="fa fa-play-circle fa-fw"></i> Self-Guided Start-Up Guide</a>
-: <a href="{{ site.baseurl}}/materials/datasets”>
+: <a href="{{ site.baseurl}}/materials/datasets">
   <i class="fa fa-download fa-fw"></i> Datasets</a>
 
 For Instructors
