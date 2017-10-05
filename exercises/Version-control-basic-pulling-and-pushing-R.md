@@ -12,9 +12,9 @@ This is a follow up to
 with a link to your Github repository and wait until your teacher has told you
 they've updated your repository before doing this one.**
 
-While you were working on your vectorized GC-content function, Dr. Granger (*who
+While you were working on your plot of size among lakes, your colleague (*who
 has suddenly developed some pretty impressive computational skills*) wrote some
-code to generate a `data.frame` with `dplyr`. To get it you'll need to `pull`
+code to generate a histogram of scale lengths. To get it you'll need to `pull`
 the most recent changes from Github.
 
 1. On the `Git` tab click on the `Pull` button with the blue arrow. You should
@@ -31,20 +31,16 @@ the most recent changes from Github.
    ```
 
 2. Click `OK`.
-3. You should see the new lines of code in your `houseelf-analysis.R.
+3. You should see the new lines of code in your `fish-analysis.R`.
 
    ```
-   library(dplyr)
-   
-   data_size_class <-
-     data %>% 
-     rowwise() %>% 
-     transmute(id = id, earlengthcat = get_ear_len_cat(earlength, 10))
+library(ggplot2)
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
    ``` 
 
-4. Modify the code to add a `gccontent` column to the `data.frame` that includes
-   the `id` and `earlengthcat` for each individual. The `gccontent` column
-   should hold the results of your GC-content function.
+4. Modify this code to look at narrower ranges of scale size classes by changing 
+   the bins argument to 80. 
 5. Save this data frame as a `CSV` file using `write.csv()`
 6. Commit the new code and the resulting `CSV` file and push the results to
    Github.
