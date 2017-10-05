@@ -54,3 +54,10 @@ work is sufficient for the project, whether it is reasonable to accomplish it in
    database: describe what the original state of the data was; described the
    tables in the new database and how the relate to one other; and provide an
    example of a query that extracts useful information from the database.
+
+## Examples of previous projects
+
+* Cleaned four datasets on Burmese python diets, which had varying lengths, structures, and creators, so that they could be used together for future analyses
+* Using spatial occurrences of species from two openly available sources, created spatial maps of occurrences and extracted corresponding climate variables
+* Used Bioconductor package to compare transcriptomes of a bird species that underwent two experimental toxin treatments
+* Created web application for users to explore data associated with tagged fish using Shiny package
