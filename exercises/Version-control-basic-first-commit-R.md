@@ -8,7 +8,7 @@ language: R
 This is a follow up to
 [Set Up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R).
 
-Create a new file for your analysis named `houseelf-analysis.R` and add a
+Create a new file for your analysis named `fish-analysis.R` and add a
 comment at the top describing what the analysis is intended to do.
 
 Commit this file to version control with a good commit message. Then check to
