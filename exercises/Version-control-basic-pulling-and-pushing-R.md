@@ -39,7 +39,7 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
    ``` 
 
-4. Modify this code to look at narrower ranges of scale size classes by changing 
+4. Modify this code to look at narrower ranges of scale size classes by setting 
    the bins argument to 80. 
 5. Save this data frame as a `CSV` file using `write.csv()`
 6. Commit the new code and the resulting `CSV` file and push the results to

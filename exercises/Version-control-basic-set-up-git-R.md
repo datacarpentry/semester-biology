@@ -5,7 +5,7 @@ title: Set Up Git
 language: R
 ---
 
-Let’s say that you’re working on analyzing fish scale size data one day. Unfortunately you weren't using version control and one day your cat jumped 
+Let’s say that you’re working on analyzing fish scale size data one day. Unfortunately you weren't using version control and your cat jumped 
 all over your keyboard and managed to replace your analysis code with:
 
 ```
