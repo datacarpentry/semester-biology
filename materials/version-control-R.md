@@ -157,8 +157,8 @@ fish_data_cat = fish_data %>%
         * The new version of the line is shown as added.
 
 
-> Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/),
-> [Exercise 3 - Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R/),
+> Do [Exercise 2 - First Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-solo-commit-R/),
+> [Exercise 3 - Second Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-second-solo-commit-R/),
 > and [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
 ### Git as a time machine
@@ -216,7 +216,7 @@ fish_data_cat = fish_data %>%
 > Show local commits now on `origin`.
 
 
-> Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
+> Do [Exercise 5 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
 
 > Have students email a link to their repo to their instructor once they have
 > finished Pushing Changes
