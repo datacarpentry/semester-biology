@@ -1,15 +1,14 @@
 ---
 layout: exercise
 topic: Version Control Basic
-title: First Commit
+title: First Solo Commit
 language: R
 ---
 
 This is a follow up to
 [Set Up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R).
 
-Create a new file for your analysis named `fish-analysis.R` and add a
-comment at the top describing what the analysis is intended to do.
+In `fish-analysis.R`, add a comment above the creation of `fish_data_cat` describing what this code does. 
 
-Commit this file to version control with a good commit message. Then check to
+Commit this change to version control with a good commit message. Then check to
 see if you can see this commit in the history.
