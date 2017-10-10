@@ -6,7 +6,7 @@ language: R
 ---
 
 This is a follow up to
-[Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R).
+[Second Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-second-solo-commit-R).
 
 After talking to a colleague, you realize that
 `Gaeta_etal_CLC_data.csv` is only the first of many files to come. To
