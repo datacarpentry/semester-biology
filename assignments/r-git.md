@@ -15,4 +15,7 @@ exercises: ['Set Up Git', 'First Solo Commit', 'Second Solo Commit', 'Commit Mul
 
 {% include reading.html %}
 
+### How To
+The exercises in this assignment should be worked through along with the [Version Control lecture notes]({{ site.baseurl }}/materials/version-control-R). Start at the beginning of the lecture notes and do the exercises where they are linked to in the notes. 
+
 {% include assignment.html %}
