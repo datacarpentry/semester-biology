@@ -15,7 +15,7 @@ language: R
 
 > For class
 > 
-> * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/file/11003/download?token=JN-QrebL5udjuX1AQvUt3hUYtzrLW0StCFbgxE5PpGA).
+> * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv).
 > * Arrange to have a teaching partner attend class and `push` the following
 >   code for the 'Collaborating' demo.
 
@@ -90,7 +90,7 @@ data files and code in a more manageable way.
 
 #### Commit data
 
-* Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/file/11003/download?token=JN-QrebL5udjuX1AQvUt3hUYtzrLW0StCFbgxE5PpGA) to your project directory.
+* Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv) to your project directory.
 * Git -> Select `Gaeta_etal_CLC_data.csv`.
 * Commit with message. 
     * `Add fish size and growth rate data`
@@ -157,8 +157,8 @@ fish_data_cat = fish_data %>%
         * The new version of the line is shown as added.
 
 
-> Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/),
-> [Exercise 3 - Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R/),
+> Do [Exercise 2 - First Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-solo-commit-R/),
+> [Exercise 3 - Second Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-second-solo-commit-R/),
 > and [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
 ### Git as a time machine
@@ -216,7 +216,7 @@ fish_data_cat = fish_data %>%
 > Show local commits now on `origin`.
 
 
-> Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
+> Do [Exercise 5 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
 
 > Have students email a link to their repo to their instructor once they have
 > finished Pushing Changes

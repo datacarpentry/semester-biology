@@ -19,5 +19,5 @@ title: List of datasets
 | Mammal life history | tsv | <http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt> |
 | Bird size | tsv | <http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt> |
 | Example project | zip | <http://www.datacarpentry.org/semester-biology/data/example_project.zip> |
-| Fish scale length | csv | <https://lter.limnology.wisc.edu/file/11003/download?token=74LB6lwRyIWeQhJ-oFa1Ov2xaI6Ttdvli4MsLeRfjbQ> |
+| Fish scale length | csv | <https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv> |
 
