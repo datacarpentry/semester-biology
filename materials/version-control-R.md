@@ -15,7 +15,7 @@ language: R
 
 > For class
 > 
-> * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/file/11003/download?token=JN-QrebL5udjuX1AQvUt3hUYtzrLW0StCFbgxE5PpGA).
+> * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv).
 > * Arrange to have a teaching partner attend class and `push` the following
 >   code for the 'Collaborating' demo.
 
@@ -90,7 +90,7 @@ data files and code in a more manageable way.
 
 #### Commit data
 
-* Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/file/11003/download?token=JN-QrebL5udjuX1AQvUt3hUYtzrLW0StCFbgxE5PpGA) to your project directory.
+* Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv) to your project directory.
 * Git -> Select `Gaeta_etal_CLC_data.csv`.
 * Commit with message. 
     * `Add fish size and growth rate data`
