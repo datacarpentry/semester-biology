@@ -1,16 +1,13 @@
 ---
 layout: exercise
 topic: Version Control Basic
-title: Importing Data
+title: Second Solo Commit
 language: R
 ---
 
 This is a follow up to
-[First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R).
+[First Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R).
 
-1. Download a copy of the
-   [main data file](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv) and
-   save it to a new `data` subdirectory in your project folder.
-2. Commit this file to version control.
-3. Add some code to `fish-analysis.R` that imports the data into R.
-4. Commit these changes to version control
+You discover that the device used to measure the scale length of the fish in `Gaeta_etal_CLC_data.csv` is not accurate for those smaller than 1 mm. Use dplyr to remove the fish with a scalelength of less than 1 mm from `fish_data_cat`. The new dataset will have 4,029 rows. 
+
+Commit this change to version control with a good commit message.
