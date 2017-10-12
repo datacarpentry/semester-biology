@@ -34,13 +34,11 @@ the most recent changes from Github.
 3. You should see the new lines of code in your `fish-analysis.R`.
 
    ```
-library(ggplot2)
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
    ``` 
 
 4. Modify this code to look at narrower ranges of scale size classes by setting 
    the bins argument to 80. 
-5. Save this data frame as a `CSV` file using `write.csv()`
-6. Commit the new code and the resulting `CSV` file and push the results to
-   Github.
+5. Save this plot as `scale_hist_by_length.jpg` using `ggsave`. 
+6. Commit the new code and resulting .jpg file by adding both files to the stage and committing with a good commit message, then push this to GitHub. 

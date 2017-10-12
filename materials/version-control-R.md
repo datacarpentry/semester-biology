@@ -20,7 +20,6 @@ language: R
 >   code for the 'Collaborating' demo.
 
 ```
-library(ggplot2)
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
 ```
@@ -74,10 +73,10 @@ data files and code in a more manageable way.
 
 ### Connect to the Git repo in RStudio
 
-1. File -> New Project -> Version Control -> Git
-2. Navigate to your new Git repo -> Click the `Clone or download` button ->
+1. From new GitHub repository, click green `Clone or download` button ->
    Click the `Copy to clipboard` button.
-3. Paste this in `Repository URL:`. 
+2. In RStudio, File -> New Project -> Version Control -> Git
+3. Paste copied URL in `Repository URL:`. 
 4. Leave `Project directory name:` blank; automatically given repo name. 
 5. Choose where to `Create project as subdirectory of:`.
 6. Click `Create Project`.
@@ -225,7 +224,6 @@ fish_data_cat = fish_data %>%
 > with the commit message: `Plot histogram of scale length by fish categorical size`
 
 ```
-library(ggplot2)
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
 ```
@@ -248,7 +246,7 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
 
 > Show updates to history following `Pull` and run code
 
-> Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
+> Do Tasks 3-6 in [Exercise 6 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
 
 * Collaborating on Github can get more complex with "forks" and "branches.
 
