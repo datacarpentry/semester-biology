@@ -73,10 +73,10 @@ data files and code in a more manageable way.
 
 ### Connect to the Git repo in RStudio
 
-1. File -> New Project -> Version Control -> Git
-2. Navigate to your new Git repo -> Click the `Clone or download` button ->
+1. From new GitHub repository, click green `Clone or download` button ->
    Click the `Copy to clipboard` button.
-3. Paste this in `Repository URL:`. 
+2. In RStudio, File -> New Project -> Version Control -> Git
+3. Paste copied URL in `Repository URL:`. 
 4. Leave `Project directory name:` blank; automatically given repo name. 
 5. Choose where to `Create project as subdirectory of:`.
 6. Click `Create Project`.
