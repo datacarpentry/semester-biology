@@ -246,7 +246,7 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
 
 > Show updates to history following `Pull` and run code
 
-> Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
+> Do Tasks 3-6 in [Exercise 6 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
 
 * Collaborating on Github can get more complex with "forks" and "branches.
 
