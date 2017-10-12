@@ -20,7 +20,6 @@ language: R
 >   code for the 'Collaborating' demo.
 
 ```
-library(ggplot2)
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
 ```
@@ -225,7 +224,6 @@ fish_data_cat = fish_data %>%
 > with the commit message: `Plot histogram of scale length by fish categorical size`
 
 ```
-library(ggplot2)
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
 ```

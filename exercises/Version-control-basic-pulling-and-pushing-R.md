@@ -34,7 +34,6 @@ the most recent changes from Github.
 3. You should see the new lines of code in your `fish-analysis.R`.
 
    ```
-library(ggplot2)
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
    ``` 
