@@ -160,6 +160,8 @@ fish_data_cat = fish_data %>%
 > [Exercise 3 - Second Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-second-solo-commit-R/),
 > and [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
+> Instructor also do exercises
+
 ### Git as a time machine
 
 #### Experiment with impunity
