@@ -33,8 +33,7 @@ library(rgdal)
 * `raster()` import
 
 ```
-dsm_harv <- raster("HARV_dsmCrop.tif")
-dsm_harv
+dsm_harv <- raster(“data/NEON-airborne/HARV_dsmCrop.tif")
 ```
 
 * Metadata is important to describe the context of spatial data.
@@ -71,7 +70,7 @@ hist(dsm_harv)
 * We can create a Canopy Height Model (CHM) by taking the difference between them
 
 ```
-dtm_harv <- raster("HARV_dtmCrop.tif")
+dtm_harv <- raster(“data/NEON-airborne/HARV_dtmCrop.tif”)
 chm_harv <- dsm_harv - dtm_harv
 ```
 
@@ -91,7 +90,7 @@ chm_harv <- dsm_harv - dtm_harv
                 * `file_name$site_id`
 
 ```
-plots_harv <- readOGR("plot_locations/", "HARV_plots")
+plots_harv <- readOGR(“data/NEON-airborne/plot_locations/", "HARV_plots")
 plot(plots_harv, add=TRUE, pch=1, cex=2, lwd=2)
 ```
 
