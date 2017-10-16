@@ -147,11 +147,11 @@ plots_chm$buffer <- extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 
 ```
 plot_latlong_data <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
-plot_latlong_data
 crs_longlat <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
-plot_latlong_data_spat <- SpatialPointsDataFrame(plot_latlong_data[c('long', 'lat')],
-                                                    plot_latlong_data,
-                                                    proj4string = crs_longlat)
+plot_latlong_data_spat <- SpatialPointsDataFrame(plot_latlong_data[c('long', 'lat')], plot_latlong_data, proj4string = crs_longlat)
+```
+
+```
 str(plot_latlong_data_spat)
 plot(plot_latlong_data_spat)
 ```
