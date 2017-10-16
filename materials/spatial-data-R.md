@@ -33,7 +33,7 @@ library(rgdal)
 * `raster()` import
 
 ```
-dsm_harv <- raster(“data/NEON-airborne/HARV_dsmCrop.tif")
+dsm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
 ```
 
 * Metadata is important to describe the context of spatial data.
@@ -70,7 +70,7 @@ hist(dsm_harv)
 * We can create a Canopy Height Model (CHM) by taking the difference between them
 
 ```
-dtm_harv <- raster(“data/NEON-airborne/HARV_dtmCrop.tif”)
+dtm_harv <- raster("data/NEON-airborne/HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
@@ -90,7 +90,7 @@ chm_harv <- dsm_harv - dtm_harv
                 * `file_name$site_id`
 
 ```
-plots_harv <- readOGR(“data/NEON-airborne/plot_locations/", "HARV_plots")
+plots_harv <- readOGR("data/NEON-airborne/plot_locations/", "HARV_plots")
 plot(chm_harv)
 plot(plots_harv, add = TRUE, pch = 4, cex = 1.5)
 ```
@@ -148,7 +148,10 @@ plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fu
 ```
 plot_latlong_data <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
 crs_longlat <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
-plot_latlong_data_spat <- SpatialPointsDataFrame(plot_latlong_data[c('long', 'lat')], plot_latlong_data, proj4string = crs_longlat)
+plot_latlong_data_spat <- SpatialPointsDataFrame(
+	plot_latlong_data[c('long', 'lat')], 
+	plot_latlong_data, 
+	proj4string = crs_longlat)
 ```
 
 ```
