@@ -116,20 +116,24 @@ plot(plots_harv_utm, add = TRUE, pch = 4, cex = 1.5)
 ### Extract raster data
 
 * Use `vector` to `extract()` values from `raster`
-
-```
-extract(chm_harv, plots_harv_utm)
-```
-
 * These are canopy heights from `chm_harv` at the coordinates from 
   `plots_harv_utm`. 
-    * Order of values lines up with `plots_harv_utm$site_id`.
+
+```
+plots_chm <- extract(chm_harv, plots_harv_utm)
+```
+
+* Order of values lines up with `plots_harv_utm$plot_id`.
+
+```
+plots_harv_utm$plot_id
+plots_hm <- data.frame(plots_chm, plots_harv_utm$plot_id)
+```
 
 * To get an average of the values in a nearby region use `buffer`
 
-
 ```
-extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
+plots_chm$buffer <- extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 ```
 
 > Assign remainder of [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
