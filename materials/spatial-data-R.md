@@ -127,13 +127,13 @@ plots_chm <- extract(chm_harv, plots_harv_utm)
 
 ```
 plots_harv_utm$plot_id
-plots_hm <- data.frame(plots_chm, plots_harv_utm$plot_id)
+plots_chm <- data.frame(plot_num = plots_harv_utm$plot_id, plot_value = plots_chm)
 ```
 
 * To get an average of the values in a nearby region use `buffer`
 
 ```
-plots_chm$buffer <- extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
+plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 ```
 
 > Assign remainder of [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
@@ -168,11 +168,9 @@ plot(plot_latlong_data_spat)
 	* Provides information on plant phenology and productivity
 
 ```
-library(raster)
 ndvi_files = list.files("data/HARV_NDVI/",
                          full.names = TRUE,
                          pattern = "HARV_NDVI.*.tif")
-ndvi_files
 ndvi_rasters <- stack(ndvi_files)
 ```
 
@@ -180,8 +178,7 @@ ndvi_rasters <- stack(ndvi_files)
 
 ```
 plot(ndvi_rasters)
-plot(ndvi_rasters, seq(1, nlayers(ndvi_rasters), by = 2))
-hist(ndvi_rasters)
+plot(ndvi_rasters, c(1, 3, 5, 7, 9, 11))
 ```
 
 * Calculate values across each raster using `cellStats()`
