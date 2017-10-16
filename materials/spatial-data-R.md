@@ -92,7 +92,7 @@ chm_harv <- dsm_harv - dtm_harv
 ```
 plots_harv <- readOGR(“data/NEON-airborne/plot_locations/", "HARV_plots")
 plot(chm_harv)
-plot(plots_harv, add=TRUE, pch=1, cex=2, lwd=2)
+plot(plots_harv, add = TRUE, pch = 4, cex = 1.5)
 ```
 
 * Uh oh, nothing happened.
@@ -110,7 +110,7 @@ crs(plots_harv)
 
 ```
 plots_harv_utm <- spTransform(plots_harv, crs(chm_harv))
-plot(plots_harv_utm, add=TRUE, pch=1, cex=2, lwd=2)
+plot(plots_harv_utm, add = TRUE, pch = 4, cex = 1.5)
 ```
 
 ### Extract raster data
