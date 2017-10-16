@@ -5,11 +5,11 @@ title: Spatial Data Introduction
 language: R
 --- 
 
-> Remember to download and set-up directory:
+> Remember to download and put into data subdirectory:
 >
-> * [LiDAR rasters and plots]({{ site.baseurl }}/data/NEON-airborne.zip)
-> * [`HARV_NDVI`]({{ site.baseurl }}/data/HARV-NDVI.zip) 
-> * [`SJER_NDVI`]({{ site.baseurl }}/data/SJER-NDVI.zip)
+> * [LiDAR rasters and plot locations]({{ site.baseurl }}/data/NEON-airborne.zip)
+> * [Harvard Forest NDVI]({{ site.baseurl }}/data/HARV-NDVI.zip) 
+> * [San Joaquin Experimental Range NDVI]({{ site.baseurl }}/data/SJER-NDVI.zip)
 
 > Load the following into browser window:
 
