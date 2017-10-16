@@ -105,7 +105,7 @@ crs(plots_harv)
 ```
 
 * Change projection: 
-    * reproject `raster` with `projectraster()`
+    * reproject `raster` with `projectRaster()`
     * reproject `vector` with `spTransform()`
 
 ```
@@ -149,7 +149,7 @@ plot_latlong_data_spat <- SpatialPointsDataFrame(plot_latlong_data[c('long', 'la
                                                     plot_latlong_data,
                                                     proj4string = crs_longlat)
 str(plot_latlong_data_spat)
-plot(plot_latlong_data_spatial)
+plot(plot_latlong_data_spat)
 ```
 
 
