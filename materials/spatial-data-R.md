@@ -91,16 +91,20 @@ chm_harv <- dsm_harv - dtm_harv
 
 ```
 plots_harv <- readOGR(“data/NEON-airborne/plot_locations/", "HARV_plots")
+plot(chm_harv)
 plot(plots_harv, add=TRUE, pch=1, cex=2, lwd=2)
 ```
 
 * Uh oh, nothing happened.
 
+* Coordinate Reference System (*`crs` or `projection`*) is different from `raster`.
+
 ```
-plots_harv
+crs(chm_harv)
+crs(plots_harv)
 ```
 
-* Coordinate Reference System (*`crs` or 'projection'*) is different from `raster`.
+* Change projection: 
     * reproject `raster` with `projectraster()`
     * reproject `vector` with `spTransform()`
 
