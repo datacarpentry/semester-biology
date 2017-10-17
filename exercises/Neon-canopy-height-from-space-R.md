@@ -15,12 +15,9 @@ Often, plots within a site are used as representative samples of the larger site
 and act as reference areas to obtain more detailed information and ensure 
 accuracy of satellite imagery (*i.e., ground truth*).
 
-1. Generate a [Canopy Height Model](http://neondataskills.org/R/Raster-Calculations-In-R/) for each site (`HARV` and `SJER`) using simple `raster` math, where `chm = dsm - dtm`.
+1. Create two [Canopy Height Models](http://neondataskills.org/R/Raster-Calculations-In-R/) using simple `raster` math (`chm = dsm - dtm`), one for the `HARV` site (which was done during the lecture) and another for the `SJER` site. 
 
-2. `plot()` the `chm` and `hist()` of canopy heights for each site on a single 
-panel. *The `raster` package modifies `plot()` from the basic R `graphics` 
-package, so use `par(mfrow=c(2,2), mar=c(5, 4, 2, 2))` prior to plotting to get 
-the four figures on the same panel and to set margins to make labels visible.*
+2. Create plots and histograms of canopy heights for both of the sites on a single panel. To do so, type in the following line first to set up the panel: `par(mfrow = c(2, 2), mar = c(5, 4, 2, 2))`. This specifies that there will be four figures on the same panel, and their margins. In the following lines, create the four plots using `plot()` and `hist()`. If you run these five lines together, they should create a 4-figured panel. 
 
 3. Add the `plot_locations` to the site images. *Use the `add=TRUE` argument in another `plot()` immediately proceeding plotting the site image to add the plot points.*
 
