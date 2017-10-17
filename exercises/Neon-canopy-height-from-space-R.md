@@ -19,10 +19,6 @@ accuracy of satellite imagery (*i.e., ground truth*).
 
 2. Create plots and histograms of canopy heights for both of the sites on a single panel. To do so, type in the following line first to set up the panel: `par(mfrow = c(2, 2), mar = c(5, 4, 2, 2))`. This specifies that there will be four figures on the same panel, and their margins. In the following lines, create the four plots using `plot()` and `hist()`. If you run these five lines together, they should create a 4-figured panel. 
 
-3. Add the `plot_locations` to the site images. *Use the `add=TRUE` argument in another `plot()` immediately proceeding plotting the site image to add the plot points.*
+3. Add corresponding points from `plot_locations` folder to each site plot. Don’t forget to use the `add = TRUE` argument to add one plot on top of another. If points don’t show up, compare the crs of the canopy height model and the plot locations. 
 
-   *Don't see the `plot_locations` on the map??? Compare the `crs(chm)` to 
-   `crs(plot_locations)`. [HINT:](http://neondataskills.org/R/vector-data-reproject-crs-R/) They should be the same.* 
-
-4. Extract the maximum canopy heights for each plot at both sites within 10
-   meters of the center of the plot.
+4. Create a single dataframe with two columns, one of the maximum canopy heights for each point at the `HARV` site and one for the `SJER` points’ maximum canopy heights. 
