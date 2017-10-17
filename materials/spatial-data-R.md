@@ -84,13 +84,13 @@ chm_harv <- dsm_harv - dtm_harv
     * `shapefile`
         * set of multiple files
             * same name, different extensions
-        * `readOGR("directory/", "file_name_without_extentsions")`
+        * `readOGR("directory", "file_name_without_extensions")`
             * stores data in a single `data.frame`
             * access 'attributes' similar to GIS software using `$`
                 * `file_name$site_id`
 
 ```
-plots_harv <- readOGR("data/NEON-airborne/plot_locations/", "HARV_plots")
+plots_harv <- readOGR("data/NEON-airborne/plot_locations", "HARV_plots")
 plot(chm_harv)
 plot(plots_harv, add = TRUE, pch = 4, cex = 1.5)
 ```
