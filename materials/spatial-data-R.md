@@ -160,6 +160,29 @@ str(points_spat)
 plot(points_spat)
 ```
 
+### Map of point data
+
+* Can plot points on Google Map segment with `ggmap` package
+
+```
+library(ggmap)
+```
+
+* Uses only dataframes, not spatial data
+* Generate map segment with csv coordinates
+
+```
+avg_long = mean(points_csv$long)
+avg_lat = mean(points_csv$lat)
+map = get_map(location = c(lon = avg_long, lat = avg_lat), zoom = 14)
+```
+
+* Plot original csv points
+
+```
+ggmap(map) +
+    geom_point(data = points_csv, aes(x = long, y = lat))
+```
 
 ### Stacks of rasters
 
