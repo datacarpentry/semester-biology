@@ -142,23 +142,47 @@ plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fu
 ### Making your own point data
 
 * Make spatial data from `csv` file with latitudes and longitudes
+* Do to combine with other spatial data
 * Need to know the `proj4string` for standard latitude/longitude data
 * `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`
 
 ```
-plot_latlong_data <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
-crs_longlat <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
-plot_latlong_data_spat <- SpatialPointsDataFrame(
-	plot_latlong_data[c('long', 'lat')], 
-	plot_latlong_data, 
-	proj4string = crs_longlat)
+points_csv <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
+points_crs <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+points_spat <- SpatialPointsDataFrame(
+	points_csv[c(‘long', 'lat')], 
+	points_csv, 
+	proj4string = points_crs)
 ```
 
 ```
-str(plot_latlong_data_spat)
-plot(plot_latlong_data_spat)
+str(points_spat)
+plot(points_spat)
 ```
 
+### Map of point data
+
+* Can plot points on Google Map segment with `ggmap` package
+
+```
+library(ggmap)
+```
+
+* Uses only dataframes, not spatial data
+* Generate map segment with csv coordinates
+
+```
+avg_long = mean(points_csv$long)
+avg_lat = mean(points_csv$lat)
+map = get_map(location = c(lon = avg_long, lat = avg_lat), zoom = 14)
+```
+
+* Plot original csv points
+
+```
+ggmap(map) +
+    geom_point(data = points_csv, aes(x = long, y = lat))
+```
 
 ### Stacks of rasters
 
