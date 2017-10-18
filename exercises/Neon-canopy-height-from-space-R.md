@@ -21,4 +21,4 @@ accuracy of satellite imagery (*i.e., ground truth*).
 
 3. Add corresponding points from `plot_locations` folder to each site plot. Don’t forget to use the `add = TRUE` argument to add one plot on top of another. If points don’t show up, compare the crs of the canopy height model and the plot locations. 
 
-4. Create a single dataframe with two columns, one of the maximum canopy heights for each point at the `HARV` site and one for the `SJER` points’ maximum canopy heights. 
+4. Create a single dataframe with two columns, one of the maximum canopy heights for each point at the `HARV` site and one for the `SJER` points’ maximum canopy heights. When extracting the canopy height values, use a buffer of 10.  
