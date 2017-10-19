@@ -150,7 +150,7 @@ plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fu
 points_csv <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
 points_crs <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
 points_spat <- SpatialPointsDataFrame(
-	points_csv[c(‘long', 'lat')], 
+	points_csv[c('long', 'lat')], 
 	points_csv, 
 	proj4string = points_crs)
 ```
@@ -217,14 +217,16 @@ avg_ndvi <- cellStats(ndvi_rasters, mean)
 * Store in data frame
 
 ```
-avg_ndvi_df <- data.frame(samp_period = seq_along(avg_ndvi), ndvi = avg_ndvi)
+avg_ndvi_df <- data.frame(samp_period = 1:length(avg_ndvi), ndvi = avg_ndvi)
 ```
 
 * Get row names into column
 
 ```
 library(dplyr)
-avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df)
+avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df, var = "name")
 ```
 
 > [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
+
+> [Exercise 3 - Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
