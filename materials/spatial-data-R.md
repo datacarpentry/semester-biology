@@ -228,3 +228,5 @@ avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df)
 ```
 
 > [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
+
+> [Exercise 3 - Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
