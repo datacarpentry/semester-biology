@@ -20,13 +20,4 @@ implicitly by sampling period for analysis.
 
 1. Plot the whole-raster mean NDVI (`cellStats()`) for Harvard Forest and SJER
    through time using different colors for the two sites. 
-2. Plot the mean NDVI of the `plot_locations` (`extract()`) for Harvard Forest
-   and SJER through time using different colors for the two sites. 
-3. Describe the differences in vegetation structure (`chm`) from
-   [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R)
-   and seasonal phenology (`NDVI`) that you observe in this analysis in a
-   comment. Also, describe the impact of the different mean calculations on the
-   analysis. 
-
-*Optional challenge: Extract `sampling_day` from the NDVI `file_name` and
-include that with your `data.frame` for graphing.*
+2. Extract the NDVI values from all rasters for the `plot_locations` in `NEON-airborne`. Transpose this with `t()` so that there is one column for each point, make this into a dataframe, and turn the rownames into a column. Do this for both `HARV` and `SJER`. 
