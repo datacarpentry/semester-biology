@@ -224,7 +224,7 @@ avg_ndvi_df <- data.frame(samp_period = 1:length(avg_ndvi), ndvi = avg_ndvi)
 
 ```
 library(dplyr)
-avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df)
+avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df, var = "name")
 ```
 
 > [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
