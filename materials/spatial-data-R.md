@@ -217,7 +217,7 @@ avg_ndvi <- cellStats(ndvi_rasters, mean)
 * Store in data frame
 
 ```
-avg_ndvi_df <- data.frame(samp_period = seq_along(avg_ndvi), ndvi = avg_ndvi)
+avg_ndvi_df <- data.frame(samp_period = 1:length(avg_ndvi), ndvi = avg_ndvi)
 ```
 
 * Get row names into column
