@@ -42,9 +42,9 @@ function_name <- function(inputs) {
 ```
 
 ```
-add <- function(a, b) {
-  total <- a + b
-  return(total)
+calc_shrub_vol <- function(length, width, height) {
+  volume <- length * width * height
+  return(volume)
 }
 ```
 
@@ -52,8 +52,8 @@ add <- function(a, b) {
 * Call the function with some arguments.
 
 ```
-add(2, 3)
-summed <- add(2, 3)
+calc_shrub_vol(0.8, 1.6, 2.0)
+shrub_vol <- calc_shrub_volume(0.8, 1.6, 2.0)
 ```
 
 > * Do [Exercise 1 - Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R), Tasks 1-2.
@@ -68,26 +68,28 @@ summed <- add(2, 3)
     * Don't do this
 
 ```
-a <- 1
-b <- 2
+length <- 1
+width <- 2
+height <- 3
 
-add <- function() {
-  total <- a + b
-  return(total)
+calc_shrub_vol <- function() {
+  volume <- length * width * height
+  return(volume)
 }
 ```
 
 * Defaults can be set for common inputs.
 
 ```
-add <- function(a=1, b=2) {
-  total <- a + b
-  return(total)
+calc_shrub_vol <- function(length = 1, width = 1, height = 1) {
+  volume <- length * width * height
+  return(volume)
 }
 
-add()
-add(b=3)
-add(4, 5)
+calc_shrub_vol()
+calc_shrub_vol(width = 2)
+calc_shrub_vol(0.8, 1.6, 2.0)
+calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 ```
 
 > Do [Exercise 1 - Use and Modify, Task 3]({{ site.baseurl }}/exercises/Functions-use-and-modify-R)
