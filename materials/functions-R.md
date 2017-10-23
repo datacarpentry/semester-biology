@@ -97,25 +97,33 @@ calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 >
 > *Discuss why passing `a` and `b` in is more useful than having them fixed*
 
-### Nesting Functions
 
-* Functions can be used to organize, manipulate, or group other functions.
-    * The `do_something()` in our basic function can be anything.
-        * math
-        * built-in function
-        * self-written function 
+### Combining Functions
+
+* Each function should be single conceptual chunk of code
+* Functions can be combined to do larger tasks in two ways
+
+* Calling multiple functions in a row
 
 ```
-make_pie_filling <- function(stuff) {
-  filling <- pi * stuff
-  return(filling)
+est_shrub_mass <- function(volume){
+  mass <- 2.65 * volume^0.9
 }
+
+shrub_mass <- est_shrub_mass(calc_shrub_vol(0.8, 1.6, 2.0))
+
+shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) %>%
+  est_shrub_mass()
 ```
 
+* Calling functions from inside other functions
+* Allows organizing function calls into logical groups
+
 ```
-make_pie <- function(stuff, crust) {
-  pie <- crust + make_pie_filling(stuff)
-  return(pie)
+est_shrub_mass_dim <- function(length, width, height){
+  volume = calc_shrub_vol(length, width, height)
+  mass <- est_shrub_mass(volume)
+  return(mass)
 }
 ```
 
