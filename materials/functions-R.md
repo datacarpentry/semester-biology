@@ -53,7 +53,7 @@ calc_shrub_vol <- function(length, width, height) {
 
 ```
 calc_shrub_vol(0.8, 1.6, 2.0)
-shrub_vol <- calc_shrub_volume(0.8, 1.6, 2.0)
+shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
 > * Do [Exercise 1 - Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R), Tasks 1-2.
@@ -112,6 +112,7 @@ est_shrub_mass <- function(volume){
 
 shrub_mass <- est_shrub_mass(calc_shrub_vol(0.8, 1.6, 2.0))
 
+library(dplyr)
 shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) %>%
   est_shrub_mass()
 ```
@@ -125,6 +126,8 @@ est_shrub_mass_dim <- function(length, width, height){
   mass <- est_shrub_mass(volume)
   return(mass)
 }
+
+est_shrub_mass_dim(0.8, 1.6, 2.0)
 ```
 
 > Do [Exercise 3 - Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).
