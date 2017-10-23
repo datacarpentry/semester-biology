@@ -65,7 +65,19 @@ summed <- add(2, 3)
     * 'Global' variables can influence function, but should not.
         * Very confusing and error prone to use a variable that isn't passed in
           as an argument
-    * Defaults can be set for common inputs.
+    * Don't do this
+
+```
+a <- 1
+b <- 2
+
+add <- function() {
+  total <- a + b
+  return(total)
+}
+```
+
+* Defaults can be set for common inputs.
 
 ```
 add <- function(a=1, b=2) {
@@ -76,18 +88,6 @@ add <- function(a=1, b=2) {
 add()
 add(b=3)
 add(4, 5)
-```
-
-* NOT
-
-```
-a <- 1
-b <- 2
-
-add <- function() {
-  total <- a + b
-  return(total)
-}
 ```
 
 > Do [Exercise 1 - Use and Modify, Task 3]({{ site.baseurl }}/exercises/Functions-use-and-modify-R)
