@@ -42,9 +42,9 @@ function_name <- function(inputs) {
 ```
 
 ```
-add <- function(a, b) {
-  total <- a + b
-  return(total)
+calc_shrub_vol <- function(length, width, height) {
+  volume <- length * width * height
+  return(volume)
 }
 ```
 
@@ -52,8 +52,8 @@ add <- function(a, b) {
 * Call the function with some arguments.
 
 ```
-add(2, 3)
-summed <- add(2, 3)
+calc_shrub_vol(0.8, 1.6, 2.0)
+shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
 > * Do [Exercise 1 - Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R), Tasks 1-2.
@@ -65,57 +65,69 @@ summed <- add(2, 3)
     * 'Global' variables can influence function, but should not.
         * Very confusing and error prone to use a variable that isn't passed in
           as an argument
-    * Defaults can be set for common inputs.
+    * Don't do this
 
 ```
-add <- function(a=1, b=2) {
-  total <- a + b
-  return(total)
+length <- 1
+width <- 2
+height <- 3
+
+calc_shrub_vol <- function() {
+  volume <- length * width * height
+  return(volume)
+}
+```
+
+* Defaults can be set for common inputs.
+
+```
+calc_shrub_vol <- function(length = 1, width = 1, height = 1) {
+  volume <- length * width * height
+  return(volume)
 }
 
-add()
-add(b=3)
-add(4, 5)
-```
-
-* NOT
-
-```
-a <- 1
-b <- 2
-
-add <- function() {
-  total <- a + b
-  return(total)
-}
+calc_shrub_vol()
+calc_shrub_vol(width = 2)
+calc_shrub_vol(0.8, 1.6, 2.0)
+calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 ```
 
 > Do [Exercise 1 - Use and Modify, Task 3]({{ site.baseurl }}/exercises/Functions-use-and-modify-R)
 > and [Exercise 2 - Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
 >
-> *Discuss what passing `a` and `b` in is much more useful than having them
-> fixed*
+> *Discuss why passing `a` and `b` in is more useful than having them fixed*
 
-### Nesting Functions
 
-* Functions can be used to organize, manipulate, or group other functions.
-    * The `do_something()` in our basic function can be anything.
-        * math
-        * built-in function
-        * self-written function 
+### Combining Functions
+
+* Each function should be single conceptual chunk of code
+* Functions can be combined to do larger tasks in two ways
+
+* Calling multiple functions in a row
 
 ```
-make_pie_filling <- function(stuff) {
-  filling <- pi * stuff
-  return(filling)
+est_shrub_mass <- function(volume){
+  mass <- 2.65 * volume^0.9
 }
+
+shrub_mass <- est_shrub_mass(calc_shrub_vol(0.8, 1.6, 2.0))
+
+library(dplyr)
+shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) %>%
+  est_shrub_mass()
 ```
 
+* Calling functions from inside other functions
+* Allows organizing function calls into logical groups
+
 ```
-make_pie <- function(stuff, crust) {
-  pie <- crust + make_pie_filling(stuff)
-  return(pie)
+est_shrub_mass_dim <- function(length, width, height){
+  volume = calc_shrub_vol(length, width, height)
+  mass <- est_shrub_mass(volume)
+  return(mass)
 }
+
+est_shrub_mass_dim(0.8, 1.6, 2.0)
 ```
 
 > Do [Exercise 3 - Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).
