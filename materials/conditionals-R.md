@@ -74,80 +74,115 @@ False
 
 * Conditional statements generate `"logical"` to filter inputs.
 * `if` statements use conditional statements to control flow of program processing.
-* `if (`the conditional statement is `TRUE ) {` do something `}`
+* `if (the conditional statement is TRUE ) { do something }`
     * 'Who is the best superhero?'
 
 ```
-superhero <- "Batman"
-if (superhero == "Batman") {
-  print("That is correct")
+veg_type <- "tree"
+volume <- 16.08
+if (veg_type == "tree") {
+  mass <- 2.65 * volume^0.9
   }
-print("Done")
+print(mass)
 ```
 
 ```
-superhero <- "Black Widow"
+veg_type <- "shrub"
 ```
 
-* `} else {` do a different something `}`
+* `} else { do something else }`
 
 ```
-if (superhero == "Batman") {
-  print("That is correct")
+if (veg_type == "tree") {
+  mass <- 2.65 * volume^0.9
 } else {
-  print("Please try again")
+  print("I don't know how to convert volume to mass for that vegetation type")
+  mass <- NA
 }
-print("Done")
+print(mass)
 ```
 
-* `} else if (` a different conditional statement is `TRUE ) {` 
-    * do another different something
+* `} else if ( a different conditional statement is TRUE ) {` 
+    * do something else
 
 ```
-if (superhero == "Batman") {
-  print("That is correct")
-} else if (superhero == "Black Widow") {
-  print("OK, you may have a point")
+if (veg_type == "tree") {
+  mass <- 2.65 * volume^0.9
+} else if (veg_type == "grass") {
+  mass <- 0.65 * volume^1.2
 } else {
-  print("Please try again")
+  print("I don't know how to convert volume to mass for that vegetation type")
+  mass <- NA
 }
-print("Done")
+print(mass)
 ```
 
 ```
-superhero <- "Flash"
+veg_type = "liana"
 ```
 
 ## Convert to function
 
 ```
-is_best_superhero <- function(superhero) {
-  if (superhero == "Batman") {
-	print("That is correct")
-  } else if (superhero == "Black Widow") {
-	print("OK, you may have a point")
+est_mass <- function(volume, veg_type){
+  if (veg_type == "tree") {
+	mass <- 2.65 * volume^0.9
+  } else if (veg_type == "grass") {
+	mass <- 0.65 * volume^1.2
   } else {
-	print("Please try again")
+	print("I don't know how to convert volume to mass for that vegetation type")
+	mass <- NA
   }
 }
 
-is_best_superhero("Hulk")
-```
-
-* OK. The Hulk is awesome!
-
-```
-is_best_superhero <- function(superhero) {
-  if (superhero == "Batman") {
-	print("That is correct")
-  } else if (superhero == "Black Widow" | superhero == "Hulk") {
-	print("OK, you may have a point")
-  } else {
-	print("Please try again")
-  }
-}
-
-is_best_superhero("Hulk")
+est_mass(1.6, "tree")
+est_mass(1.6, "grass")
+est_mass(1.6, "shrub")
 ```
 
 > Do [Exercise 2 - Complete the Code]({{ site.baseurl }}/exercises/Making-choices-complete-the-code-R).
+
+
+* Can use more complex conditions
+
+```
+est_mass <- function(volume, veg_type, age){
+  if (veg_type == "tree") {
+    if (age < 5) {
+	  mass <- 1.6 * volume^0.8
+	{
+	else {
+	  mass <- 2.65 * volume^0.9
+	}
+  } else if (veg_type == "grass" | veg_type == "shrub") {
+	mass <- 0.65 * volume^1.2
+  } else {
+	print("I don't know how to convert volume to mass for that vegetation type")
+	mass <- NA
+  }
+}
+
+est_mass(1.6, "tree")
+est_mass(1.6, "grass")
+est_mass(1.6, "shrub")
+```
+
+* But nesting can be difficult to follow so try to minimize it
+* `%in%` is also helpful for checking if something is part of a list
+
+```
+est_mass <- function(volume, veg_type){
+  if (veg_type == "tree") {
+	mass <- 2.65 * volume^0.9
+  } else if (veg_type %in% c("grass", "shrub") {
+	mass <- 0.65 * volume^1.2
+  } else {
+	print("I don't know how to convert volume to mass for that vegetation type")
+	mass <- NA
+  }
+}
+
+est_mass(1.6, "shrub")
+```
+
+> Do [Choices with Functions]({{ site.baseurl }}/exercises/Making-choices-choices-with-functions-R).
