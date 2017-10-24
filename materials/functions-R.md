@@ -56,7 +56,18 @@ calc_shrub_vol(0.8, 1.6, 2.0)
 shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
+<<<<<<< Updated upstream
 > * Do [Exercise 1 - Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
+=======
+* Walk through function execution
+    * Call function
+	* Assign 0.8 to length, 1.6 to width, and 2.0 to height inside function
+	* Calculate volume
+	* Send the volume back as output
+	* Store it in `shrub_vol`
+
+> * Do [Exercise 1 - Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R), Tasks 1-2.
+>>>>>>> Stashed changes
 
 * Treat functions like a black box.
     * Can't access a variable that was created in a function
