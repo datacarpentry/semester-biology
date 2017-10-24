@@ -56,7 +56,14 @@ calc_shrub_vol(0.8, 1.6, 2.0)
 shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
-> * Do [Exercise 1 - Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R), Tasks 1-2.
+* Walk through function execution
+    * Call function
+	* Assign 0.8 to length, 1.6 to width, and 2.0 to height inside function
+	* Calculate volume
+	* Send the volume back as output
+	* Store it in `shrub_vol`
+
+> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
 
 * Treat functions like a black box.
     * Can't access a variable that was created in a function
@@ -92,10 +99,9 @@ calc_shrub_vol(0.8, 1.6, 2.0)
 calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 ```
 
-> Do [Exercise 1 - Use and Modify, Task 3]({{ site.baseurl }}/exercises/Functions-use-and-modify-R)
-> and [Exercise 2 - Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
+> Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
 >
-> *Discuss why passing `a` and `b` in is more useful than having them fixed*
+> * Discuss why passing `a` and `b` in is more useful than having them fixed*
 
 
 ### Combining Functions
@@ -130,4 +136,4 @@ est_shrub_mass_dim <- function(length, width, height){
 est_shrub_mass_dim(0.8, 1.6, 2.0)
 ```
 
-> Do [Exercise 3 - Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).
+> Do [Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).
