@@ -169,7 +169,11 @@ est_mass(1.6, "grass")
 est_mass(1.6, "shrub")
 ```
 
+* First checks if the vegetation type is "tree"
+* If it is checks to see if it is < 5 years old
+* If so does one calculation, if not does another
 * But nesting can be difficult to follow so try to minimize it
+
 * `%in%` is also helpful for checking if something is part of a list
 
 ```
