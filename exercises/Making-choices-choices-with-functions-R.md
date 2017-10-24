@@ -27,7 +27,7 @@ report_rsquared <- function(data, species, formula){
 ```
 
 1. Execute the function using the [UHURU data](http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt)
-   and specifying `species = "CM"` and `formula = AXIS1~CIRC`.
+   and specifying `species = "CM"` and `formula = "AXIS1~CIRC"`.
 2. Modify the function so that it also determines `if()` the `rsquared` is
    significant based on a given `threshold`. The modified function should 
    `return()` the `species`, `rsquared` and a `significance` value of `"S"` for
