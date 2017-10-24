@@ -133,6 +133,7 @@ est_mass <- function(volume, veg_type){
 	print("I don't know how to convert volume to mass for that vegetation type")
 	mass <- NA
   }
+  return(mass)
 }
 
 est_mass(1.6, "tree")
@@ -160,6 +161,7 @@ est_mass <- function(volume, veg_type, age){
 	print("I don't know how to convert volume to mass for that vegetation type")
 	mass <- NA
   }
+  return(mass)
 }
 
 est_mass(1.6, "tree")
@@ -180,6 +182,7 @@ est_mass <- function(volume, veg_type){
 	print("I don't know how to convert volume to mass for that vegetation type")
 	mass <- NA
   }
+  return(mass)
 }
 
 est_mass(1.6, "shrub")
