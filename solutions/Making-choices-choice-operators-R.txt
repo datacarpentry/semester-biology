@@ -4,10 +4,6 @@
 [1] FALSE
 [1] FALSE
 [1] TRUE
-[1] TRUE
 [1] FALSE
-[1] TRUE
-[1] TRUE
-[1] TRUE
 [1] TRUE
 [1] TRUE
