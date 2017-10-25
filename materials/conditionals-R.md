@@ -5,6 +5,9 @@ title: Conditionals
 language: R
 ---
 
+> INSTRUCTOR NOTE: Code examples should generally build up by modifying the
+> existing code example rather than by retyping the full example.
+
 ### Conditionals
 
 * Usage: 
