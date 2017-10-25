@@ -173,22 +173,4 @@ est_mass(1.6, "shrub", age = 5)
 * If so does one calculation, if not does another
 * But nesting can be difficult to follow so try to minimize it
 
-* `%in%` is also helpful for checking if something is part of a list
-
-```
-est_mass <- function(volume, veg_type){
-  if (veg_type == "tree") {
-	mass <- 2.65 * volume^0.9
-  } else if (veg_type %in% c("grass", "shrub")) {
-	mass <- 0.65 * volume^1.2
-  } else {
-	print("I don't know how to convert volume to mass for that vegetation type")
-	mass <- NA
-  }
-  return(mass)
-}
-
-est_mass(1.6, "shrub")
-```
-
 > Do [Choices with Functions]({{ site.baseurl }}/exercises/Making-choices-choices-with-functions-R).
