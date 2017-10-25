@@ -74,7 +74,7 @@ dtm_harv <- raster("data/NEON-airborne/HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
-> Do Tasks 1-2 from [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Tasks 1-2 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 
 ### Import and reproject shapefiles
@@ -136,7 +136,7 @@ plots_chm <- data.frame(plot_num = plots_harv_utm$plot_id, plot_value = plots_ch
 plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 ```
 
-> Assign remainder of [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Tasks 3-4 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 
 ### Stacks of rasters
@@ -182,7 +182,7 @@ library(dplyr)
 avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df, var = "name")
 ```
 
-> [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
+> Do [Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
 
 
 ### Making your own point data
@@ -206,7 +206,7 @@ str(points_spat)
 plot(points_spat)
 ```
 
-> [Exercise 3 - Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
+> Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
 
 
 ### Map of point data
