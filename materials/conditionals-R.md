@@ -75,7 +75,8 @@ False
 * Conditional statements generate `"logical"` to filter inputs.
 * `if` statements use conditional statements to control flow of program processing.
 * `if (the conditional statement is TRUE ) { do something }`
-    * 'Who is the best superhero?'
+
+* Different mass calculations for different vegetation types
 
 ```
 veg_type <- "tree"
@@ -141,7 +142,7 @@ est_mass(1.6, "grass")
 est_mass(1.6, "shrub")
 ```
 
-> Do [Exercise 2 - Complete the Code]({{ site.baseurl }}/exercises/Making-choices-complete-the-code-R).
+> Do [Complete the Code]({{ site.baseurl }}/exercises/Making-choices-complete-the-code-R).
 
 
 * Can use more complex conditions
@@ -151,8 +152,7 @@ est_mass <- function(volume, veg_type, age){
   if (veg_type == "tree") {
     if (age < 5) {
 	  mass <- 1.6 * volume^0.8
-	{
-	else {
+	} else {
 	  mass <- 2.65 * volume^0.9
 	}
   } else if (veg_type == "grass" | veg_type == "shrub") {
@@ -164,9 +164,8 @@ est_mass <- function(volume, veg_type, age){
   return(mass)
 }
 
-est_mass(1.6, "tree")
-est_mass(1.6, "grass")
-est_mass(1.6, "shrub")
+est_mass(1.6, "tree", age = 2)
+est_mass(1.6, "shrub", age = 5)
 ```
 
 * First checks if the vegetation type is "tree"
@@ -180,7 +179,7 @@ est_mass(1.6, "shrub")
 est_mass <- function(volume, veg_type){
   if (veg_type == "tree") {
 	mass <- 2.65 * volume^0.9
-  } else if (veg_type %in% c("grass", "shrub") {
+  } else if (veg_type %in% c("grass", "shrub")) {
 	mass <- 0.65 * volume^1.2
   } else {
 	print("I don't know how to convert volume to mass for that vegetation type")
