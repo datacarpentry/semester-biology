@@ -26,16 +26,8 @@ Use them to print whether or not the following statements are
 4.  2 * `x` + 0.2 is equal to `y`
 5. `dna1` is the same as `dna2`
 6. `dna1` is not the same as `dna2`
-7. The number of occurrences of the base t is the same in `dna1` and `dna2`
+7. `w` is greater than `x`, and `y` is greater than `z`
+8. `x` times `w` is between 13.2 and 13.5
+9. `dna1` is longer than 5 bases (use `nchar()` to figure out how long a string
+   is), or `z` is less than `w` * `x`
 
-   *Use `str_count()` from the [`stringr` package](http://cran.r-project.org/web/packages/stringr/stringr.pdf).
-   You'll need to install this package before using it and will also want to
-   familiarize yourself with `str_length()`.*
-
-8. `w` is greater than `x`, and `y` is greater than `z`
-9. `x` times `w` is between 13.2 and 13.5
-10. `dna1` is longer than 5 bases, or `z` is less than `w` * `x`
-11. The combined length of `dna1` and `dna2` is greater than or equal to 30
-12. (`w` + `x` + `y`) divided by the logarithm (base 10) of 100 is equal to 7.15
-13. The GC content (*which is always a percentage*) of `dna1` is not the same as 
-the GC content of `dna2`
