@@ -74,7 +74,7 @@ dtm_harv <- raster("data/NEON-airborne/HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
-> Do Tasks 1-2 from [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Tasks 1-2 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 
 ### Import and reproject shapefiles
@@ -136,53 +136,8 @@ plots_chm <- data.frame(plot_num = plots_harv_utm$plot_id, plot_value = plots_ch
 plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 ```
 
-> Assign remainder of [Exercise 1 - Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Tasks 3-4 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
-
-### Making your own point data
-
-* Make spatial data from `csv` file with latitudes and longitudes
-* Do to combine with other spatial data
-* Need to know the `proj4string` for standard latitude/longitude data
-* `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`
-
-```
-points_csv <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
-points_crs <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
-points_spat <- SpatialPointsDataFrame(
-	points_csv[c('long', 'lat')], 
-	points_csv, 
-	proj4string = points_crs)
-```
-
-```
-str(points_spat)
-plot(points_spat)
-```
-
-### Map of point data
-
-* Can plot points on Google Map segment with `ggmap` package
-
-```
-library(ggmap)
-```
-
-* Uses only dataframes, not spatial data
-* Generate map segment with csv coordinates
-
-```
-avg_long = mean(points_csv$long)
-avg_lat = mean(points_csv$lat)
-map = get_map(location = c(lon = avg_long, lat = avg_lat), zoom = 14)
-```
-
-* Plot original csv points
-
-```
-ggmap(map) +
-    geom_point(data = points_csv, aes(x = long, y = lat))
-```
 
 ### Stacks of rasters
 
@@ -227,6 +182,53 @@ library(dplyr)
 avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df, var = "name")
 ```
 
-> [Exercise 2 - Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
+> Do [Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
 
-> [Exercise 3 - Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
+
+### Making your own point data
+
+* Make spatial data from `csv` file with latitudes and longitudes
+* Do to combine with other spatial data
+* Need to know the `proj4string` for standard latitude/longitude data
+* `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`
+
+```
+points_csv <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
+points_crs <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+points_spat <- SpatialPointsDataFrame(
+	points_csv[c('long', 'lat')], 
+	points_csv, 
+	proj4string = points_crs)
+```
+
+```
+str(points_spat)
+plot(points_spat)
+```
+
+> Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
+
+
+### Map of point data
+
+* Can plot points on Google Map segment with `ggmap` package
+
+```
+library(ggmap)
+```
+
+* Uses only dataframes, not spatial data
+* Generate map segment with csv coordinates
+
+```
+avg_long = mean(points_csv$long)
+avg_lat = mean(points_csv$lat)
+map = get_map(location = c(lon = avg_long, lat = avg_lat), zoom = 14)
+```
+
+* Plot original csv points
+
+```
+ggmap(map) +
+    geom_point(data = points_csv, aes(x = long, y = lat))
+```

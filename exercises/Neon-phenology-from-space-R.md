@@ -20,4 +20,4 @@ implicitly by sampling period for analysis.
 
 1. Plot the whole-raster mean NDVI (`cellStats()`) for Harvard Forest and SJER
    through time using different colors for the two sites. 
-2. Extract the NDVI values from all rasters for the `plot_locations` in `NEON-airborne`. Transpose this with `t()` so that there is one column for each point, make this into a dataframe, and turn the rownames into a column. Do this for both `HARV` and `SJER`. 
+2. Extract the NDVI values from all rasters for the `HARV_plots` and `SJER_plots`in `NEON-airborne/plot_locations`. This results in a matrix with one column per raster and one row per point. To more easily work with this data, we want to have one column with the raster names and one column per point, which you can do by transposing the matrix with the `t()` function. Then make this into a dataframe and turn the rownames into a column. Do this for both `HARV` and `SJER`. 
