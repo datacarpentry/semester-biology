@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Programming Fundamentals 1
 language: R
-exercises: ['Writing Functions', 'Use and Modify', 'Nested Functions', 'Choice Operators', 'Complete the Code', 'Choices with Functions']
+exercises: ['Writing Functions', 'Use and Modify', 'Nested Functions', 'Choice Operators', 'Simple If Statement', 'Complete the Code', 'Choices with Functions']
 ---
 
 #### Learning Objectives
