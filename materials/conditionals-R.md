@@ -36,7 +36,7 @@ language: R
     * `dplyr::filter()`
     * `if()`, `else`, `while()`
 
-> Do [Exercise 1 - Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+> Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 > Discuss floating point with students.
 >
@@ -121,6 +121,8 @@ print(mass)
 ```
 veg_type = "liana"
 ```
+
+> Do [Simple If Statement]({{ site.baseurl }}/exercises/Making-choices-simple-if-statement-R).
 
 ## Convert to function
 
