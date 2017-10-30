@@ -5,23 +5,17 @@ title: Basic Vector
 language: R
 ---
 
-The following code capitalizes the first letter of `pet`, puts it in a sentence,
-and stores it as `my_pet`:
+The following code gets just the genus from strings that are scientific names and capitalizes the first letter of the genus name. The `str_extract` and `str_to_title` functions are from the [`stringr` package](https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html), which is great for working with strings. 
 
 ```
-pet <- "spot"
-pet_name <- stringr::str_to_title(pet)
-my_pet <- paste("My pet's name is ", pet_name, ".", sep = "")
+waterbird <- "cygnus olor"
+waterbird_genus <- str_extract(waterbird, "\\w+")
+waterbird_genus_cap <- str_to_title(waterbird_genus)
+print(waterbird_genus_cap)
 ```
 
-Modify the code to loop over a vector of multiple pet names and print them to
-the screen one line at a time. Use the vector of pet names:
+Modify the code to loop over a vector of multiple scientific names and print the capitalized genus names to the screen one line at a time, using the following vector: 
 
 ```
-pets <- c("spot", "gigantor", "fluffy")
+waterbirds <- c("cygnus olor", "aix sponsa", "anas acuta")
 ```
-
-This code uses the excellent
-[`stringr` package](http://cran.r-project.org/web/packages/stringr/stringr.pdf)
-for working with the sequence data. You'll need to install this package before
-using it.
