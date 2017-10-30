@@ -55,14 +55,32 @@ for (waterbird in waterbirds){
 > Do [Basic Vector]({{ site.baseurl }}/exercises/Loops-basic-vector-R/).
 
 
+### Numeric values in `for` loops
+
+* Do functions or math as actions within for loops
+* Variable can be given any name, then refer to with that name in loop
+
+```
+for (num in 100:150){
+  print(num * 10)
+}
+```
+
+* Use `paste()` to put together strings and variables
+
+```
+for (num in 100:150){
+  print(paste("My favorite number is", num * 10))
+}
+```
+
+> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) tasks 1-4.
 
 
 
-# BELOW TBD
 
-> Do [Exercise 1 - Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) 
 
-> Make sure students get the basics before moving on.
+
 
 > Do [Exercise 3.1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
