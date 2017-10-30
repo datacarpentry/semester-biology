@@ -14,7 +14,21 @@ library(dplyr)
 
 ### Basic `for` loop
 
-* Repeats action for a number of different values
+* Do same action to each component of a list
+
+```
+waterbirds <- c("cygnus olor", "aix sponsa", "anas acuta")
+waterbird <- waterbirds[1]
+print(waterbird)
+waterbird <- waterbirds[2]
+print(waterbird)
+waterbird <- waterbirds[3]
+print(waterbird)
+```
+
+* This is tedious
+* Use for loop to do same action repeatedly
+* Easier & fewer errors
 
 ```
 for (item in list_of_items) {
@@ -22,38 +36,31 @@ for (item in list_of_items) {
 }
 ```
 
-* Make sure you know what values you are calling in your loop.
-
-```
-pets <- c("spot", "gigantor", "fluffy")
-for (pet in pets) {
-  print(pet)
-}
-```
-
 * Need `print()` to display values inside a loop, function, or conditional.
-* Long-form expression of the previous loop
 
 ```
-pets <- c("spot", "gigantor", "fluffy")
-pet <- pets[1]
-print(pet)
-pet <- pets[2]
-print(pet)
-pet <- pets[3]
-print(pet)
-```
-
-* Do more things.
-
-```
-pets <- c("spot", "gigantor", "fluffy")
-for (pet in pets) {
-  pet_upper <- str_to_upper(pet)
-  print(pet_upper)
+for (waterbird in waterbirds){
+  print(waterbird)
 }
 ```
-> Do [Exercise 1 - Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) and [Exercise 2 - Basic Vector]({{ site.baseurl }}/exercises/Loops-basic-vector-R/).
+
+* Do more actions
+
+```
+for (waterbird in waterbirds){
+  waterbird_cap <- str_to_title(waterbird)
+  print(waterbird_cap)
+}
+```
+> Do [Basic Vector]({{ site.baseurl }}/exercises/Loops-basic-vector-R/).
+
+
+
+
+
+# BELOW TBD
+
+> Do [Exercise 1 - Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) 
 
 > Make sure students get the basics before moving on.
 
