@@ -82,25 +82,35 @@ for (num in 100:150){
 
 
 
-> Do [Exercise 3.1 - for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
+
 
 ### Storing results
 
 * Create an empty object.
-    * `output <- c()`
-* Add the new values with vector combination each trip through the loop.
-    * `c(c(1, 2, 3), 4) -> [1] 1 2 3 4`
 
 ```
-pets <- c("spot", "gigantor", "fluffy")
-upper_case_pets <- c()
-for (pet in pets){
-  pet_upper <- str_to_upper(pet)
-  upper_case_pets <- c(upper_case_pets, pet_upper)
-  print(upper_case_pets)
+output <- c()
+```
+
+* Iteratively add new values to object. 
+
+```
+output <- c(1, 2, 3)
+output <- c(output, 4)
+```
+* Use this method within a `for` loop to save outputs. 
+
+```
+waterbirds_cap_list <- c()
+for (waterbird in waterbirds){
+  waterbird_cap <- str_to_title(waterbird)
+  waterbirds_cap_list <- c(waterbirds_cap_list, waterbird_cap)
+  print(waterbirds_cap_list)
 }
+waterbirds_cap_list
 ```
 
+> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) task 5.
 
 ### Looping in data frames
 
@@ -159,6 +169,8 @@ mass
 ```
 
 * Works for most simple math
+
+> Do [for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
 #### Looping over files
 
