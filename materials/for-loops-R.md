@@ -5,7 +5,7 @@ title: for loops
 language: R
 ---
 
-### Doings actions repeatedly without loops
+### Apply functions
 
 #### sapply
 
@@ -41,11 +41,6 @@ sapply(shrub_vols, est_mass)
 
 * Do same action on many things with single line of code! 
 * Easily scales up
-
-```
-shrub_vols <- c(rnorm(100, mean = 10, sd = 3))
-sapply(shrub_vols, est_mass)
-```
 
 #### Other apply functions
 
@@ -97,7 +92,7 @@ plant_vols_df %>%
   map(est_mass)
 ```
 
-### Doings actions repeatedly with loops
+### For loops
 
 > Set up R console:
 
