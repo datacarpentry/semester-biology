@@ -5,34 +5,50 @@ title: for loops
 language: R
 ---
 
+### Doings actions repeatedly without loops
+
 #### apply/map
 
-* Since: 1) create empty object, 2) loop, 3) add result to storage object; is so
-  common, many languages have a shortcut for use in simple situations.
-* In R the main version this is the `apply` family
+* Use function to find mass for one volume
 
 ```
-num_samps = sapply(collar_data_files, get_num_samps)
+est_mass <- function(volume){
+  mass <- 2.65 * volume^0.9
+  return(mass)
+}
+
+shrub_vol1 <- 1.6
+est_mass(shrub_vol1)
 ```
 
-* There are a variety
-of [`apply()`](http://finzi.psych.upenn.edu/R/library/base/html/apply.html)
-statements that handle different use cases
-    * [`lapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Operate across lists and vectors
-    * [`sapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Simplify output to vector
-    * [`mapply()`](http://finzi.psych.upenn.edu/R/library/base/html/mapply.html): Pass multiple variables or function arguments
-* Why use `apply()`:
-    * Readability
-        * Single line of code
-        * Simple command structure
-    * Speed?
-        * Only
-          ([sometimes](https://stackoverflow.com/questions/2275896/is-rs-apply-family-more-than-syntactic-sugar))
-          and even then often not enough to matter.
-        * [Avoid premature optimization](http://c2.com/cgi/wiki?PrematureOptimization).
+* Easy to find mass for other volumes
 
-* In a number of other languages this is called `map()`
-* There is now a `map()` for R that works similarly in the `purrr` package
+```
+shrub_vol2 <- 5.6
+est_mass(shrub_vol2)
+
+shrub_vol3 <- 3.1
+est_mass(shrub_vol3)
+```
+
+* Typing this to get each shrub’s volume is tedious and error-prone
+* Use `apply()`-type functions instead
+
+```
+shrub_vols <- c(1.6, 5.6, 3.1)
+sapply(shrub_vols, est_mass)
+```
+
+* Do same action on many things with single line of code! 
+* Easily scales up
+
+```
+shrub_vols <- c(rnorm(100, mean = 10, sd = 3))
+sapply(shrub_vols, est_mass)
+```
+
+
+### Doings actions repeatedly with loops
 
 > Set up R console:
 
