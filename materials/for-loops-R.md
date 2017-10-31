@@ -42,6 +42,8 @@ sapply(shrub_vols, est_mass)
 * Do same action on many things with single line of code! 
 * Easily scales up
 
+> Do Task 1 of [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
+
 #### Other apply functions
 
 * Handful of similar functions in `apply()` family
@@ -72,6 +74,8 @@ mapply(est_mass_type, volume = plant_vols, veg_type = plant_types)
 ```
 
 * First argument is function, rest are function arguments
+
+> Do Task 2 of [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
 
 #### tidyverse version of apply
 
