@@ -41,7 +41,7 @@ For all other genera you'll use a general equation developed for trees:
 volume = 0.5 * HEIGHT^0.6 * pi * AXIS_1 * AXIS_2
 ```
 
-1. Write a function called `tree_volume_calc` that calculates the canopy volume for the *Acacia* species in the dataset. To do so, use an if statement in combination with the `str_detect()` function from the `stringr` R package. The code `str_detect(SPECIES, "Acacia") will return `TRUE` if the string stored in this variable contains the word "Acacia" and `FALSE` if it does not. This function will have to take the following arguments as input: SPECIES, HEIGHT, AXIS_1, AXIS_2. Then run the following line: 
+1. Write a function called `tree_volume_calc` that calculates the canopy volume for the *Acacia* species in the dataset. To do so, use an if statement in combination with the `str_detect()` function from the `stringr` R package. The code `str_detect(SPECIES, "Acacia")` will return `TRUE` if the string stored in this variable contains the word "Acacia" and `FALSE` if it does not. This function will have to take the following arguments as input: SPECIES, HEIGHT, AXIS_1, AXIS_2. Then run the following line: 
 
 	`tree_volume_calc("Acacia_brevispica", 2.2, 3.5, 1.12)`
 
