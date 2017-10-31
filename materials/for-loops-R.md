@@ -5,6 +5,95 @@ title: for loops
 language: R
 ---
 
+### Apply functions
+
+#### sapply
+
+* Use function to find mass for one volume
+
+```
+est_mass <- function(volume){
+  mass <- 2.65 * volume^0.9
+  return(mass)
+}
+
+shrub_vol1 <- 1.6
+est_mass(shrub_vol1)
+```
+
+* Easy to find mass for other volumes
+
+```
+shrub_vol2 <- 5.6
+est_mass(shrub_vol2)
+
+shrub_vol3 <- 3.1
+est_mass(shrub_vol3)
+```
+
+* Typing this to get each shrub’s volume is tedious and error-prone
+* Use `apply()`-type functions instead
+
+```
+shrub_vols <- c(1.6, 5.6, 3.1)
+sapply(shrub_vols, est_mass)
+```
+
+* Do same action on many things with single line of code! 
+* Easily scales up
+
+#### Other apply functions
+
+* Handful of similar functions in `apply()` family
+* Differ depending on type of input and output data
+* `lapply()`like `sapply()` but returns list
+
+```
+lapply(shrub_vols, est_mass)
+```
+
+* `apply()` works on multi-dimensional data
+* `mapply()` for functions with multiple arguments
+
+```
+est_mass_type <- function(volume, veg_type){
+  if (veg_type == "tree"){
+    mass <- 2.65 * volume^0.9
+  } else {
+    mass <- NA
+  }
+  return(mass)
+}
+
+est_mass_type(1.6, "tree")
+plant_vols <- c(1.6, 3, 8)
+plant_types <- c("tree", "grass", "tree")
+mapply(est_mass_type, volume = plant_vols, veg_type = plant_types)
+```
+
+* First argument is function, rest are function arguments
+
+#### tidyverse version of apply
+
+* Use `map` function from `purrr` package
+* Similar to apply
+
+```
+library(purrr)
+map(plant_vols, est_mass)
+```
+
+* Use with pipes
+
+```
+plant_vols_df = data.frame(vols = plant_vols)
+plant_vols_df %>% 
+  filter(vols > 2) %>% 
+  map(est_mass)
+```
+
+### For loops
+
 > Set up R console:
 
 ```
@@ -221,35 +310,6 @@ for (data_file in collar_data_files){
 }
 num_samps
 ```
-
-#### apply/map
-
-* Since: 1) create empty object, 2) loop, 3) add result to storage object; is so
-  common, many languages have a shortcut for use in simple situations.
-* In R the main version this is the `apply` family
-
-```
-num_samps = sapply(collar_data_files, get_num_samps)
-```
-
-* There are a variety
-of [`apply()`](http://finzi.psych.upenn.edu/R/library/base/html/apply.html)
-statements that handle different use cases
-    * [`lapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Operate across lists and vectors
-    * [`sapply()`](http://finzi.psych.upenn.edu/R/library/base/html/lapply.html): Simplify output to vector
-    * [`mapply()`](http://finzi.psych.upenn.edu/R/library/base/html/mapply.html): Pass multiple variables or function arguments
-* Why use `apply()`:
-    * Readability
-        * Single line of code
-        * Simple command structure
-    * Speed?
-        * Only
-          ([sometimes](https://stackoverflow.com/questions/2275896/is-rs-apply-family-more-than-syntactic-sugar))
-          and even then often not enough to matter.
-        * [Avoid premature optimization](http://c2.com/cgi/wiki?PrematureOptimization).
-
-* In a number of other languages this is called `map()`
-* There is now a `map()` for R that works similarly in the `purrr` package
 
 #### dplyr
 
