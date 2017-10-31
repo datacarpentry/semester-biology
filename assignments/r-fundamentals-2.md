@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Programming Fundamentals 2
 language: R
-exercises: ['Use and Modify with Apply', 'Basic Index', 'Basic Vector', 'for Loop', 'stringr', 'DNA or RNA', 'Multiple Files', 'Data Management Review']
+exercises: ['Use and Modify with Apply', 'Crown Volume Calculation', 'Basic Index', 'Basic Vector', 'for Loop', 'stringr', 'DNA or RNA', 'Multiple Files', 'Data Management Review']
 ---
 
 #### Learning Objectives
