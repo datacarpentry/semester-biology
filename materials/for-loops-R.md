@@ -47,7 +47,7 @@ shrub_vols <- c(rnorm(100, mean = 10, sd = 3))
 sapply(shrub_vols, est_mass)
 ```
 
-### Other apply functions
+#### Other apply functions
 
 * Handful of similar functions in `apply()` family
 * Differ depending on type of input and output data
@@ -78,6 +78,24 @@ mapply(est_mass_type, volume = plant_vols, veg_type = plant_types)
 
 * First argument is function, rest are function arguments
 
+#### tidyverse version of apply
+
+* Use `map` function from `purrr` package
+* Similar to apply
+
+```
+library(purrr)
+map(plant_vols, est_mass)
+```
+
+* Use with pipes
+
+```
+plant_vols_df = data.frame(vols = plant_vols)
+plant_vols_df %>% 
+  filter(vols > 2) %>% 
+  map(est_mass)
+```
 
 ### Doings actions repeatedly with loops
 
