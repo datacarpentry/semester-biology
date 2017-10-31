@@ -17,7 +17,8 @@ and `AXIS_2`). Read these data in using the following code:
 ```
 tree_data <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
                  sep = '\t',
-                 na.strings = c("dead", "missing", "MISSING", "NA", "?", "3.3."),
+                 na.strings = c("dead", "missing", "MISSING",
+                                "NA", "?", "3.3."),
                  stringsAsFactors = FALSE)
 ```
 
