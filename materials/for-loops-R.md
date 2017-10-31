@@ -7,7 +7,7 @@ language: R
 
 ### Doings actions repeatedly without loops
 
-#### apply/map
+#### sapply
 
 * Use function to find mass for one volume
 
@@ -46,6 +46,37 @@ sapply(shrub_vols, est_mass)
 shrub_vols <- c(rnorm(100, mean = 10, sd = 3))
 sapply(shrub_vols, est_mass)
 ```
+
+### Other apply functions
+
+* Handful of similar functions in `apply()` family
+* Differ depending on type of input and output data
+* `lapply()`like `sapply()` but returns list
+
+```
+lapply(shrub_vols, est_mass)
+```
+
+* `apply()` works on multi-dimensional data
+* `mapply()` for functions with multiple arguments
+
+```
+est_mass_type <- function(volume, veg_type){
+  if (veg_type == "tree"){
+    mass <- 2.65 * volume^0.9
+  } else {
+    mass <- NA
+  }
+  return(mass)
+}
+
+est_mass_type(1.6, "tree")
+plant_vols <- c(1.6, 3, 8)
+plant_types <- c("tree", "grass", "tree")
+mapply(est_mass_type, volume = plant_vols, veg_type = plant_types)
+```
+
+* First argument is function, rest are function arguments
 
 
 ### Doings actions repeatedly with loops
