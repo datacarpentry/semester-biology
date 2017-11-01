@@ -97,7 +97,7 @@ plant_vols_df %>%
   map(est_mass)
 ```
 
-> Do [Crown Volume Calculation]({{ site.baseurl }}/exercises/Loops-crown—volume-calculation-R).
+> Do [Crown Volume Calculation]({{ site.baseurl }}/exercises/Loops-crown-volume-calculation-R).
 
 ### For loops
 
