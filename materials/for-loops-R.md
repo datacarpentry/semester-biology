@@ -108,7 +108,7 @@ library(stringr)
 library(dplyr)
 ```
 
-### Basic `for` loop
+#### Basic `for` loop
 
 * Do same action to each component of a list
 
@@ -151,7 +151,7 @@ for (waterbird in waterbirds){
 > Do [Basic Vector]({{ site.baseurl }}/exercises/Loops-basic-vector-R/).
 
 
-### Numeric values in `for` loops
+#### Numeric values in `for` loops
 
 * Do functions or math as actions within for loops
 * Variable can be given any name, then refer to with that name in loop
@@ -173,7 +173,7 @@ for (num in 100:150){
 > Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) tasks 1-4.
 
 
-### Storing results
+#### Storing results
 
 * Create an empty object.
 
@@ -201,7 +201,7 @@ waterbirds_cap_list
 
 > Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) task 5.
 
-### Looping in data frames
+#### Looping in data frames
 
 * Loops go over columns of dataframes
 
