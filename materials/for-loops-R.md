@@ -304,14 +304,4 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 	}
 	```
 
-3. With dplyr
-
-* `rowwise()` runs function on each dataframe row
-* Use `stringsAsFactors` to make name column contain characters
-
-	```
-	numbers_vector_3 = data.frame(collar_data_files, 
-	                          stringsAsFactors = FALSE) %>% 
-	  rowwise() %>% 
-	  mutate(number = get_numbers(collar_data_files))
-	```
+3. 
