@@ -173,13 +173,6 @@ for (num in 100:150){
 > Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) tasks 1-4.
 
 
-
-
-
-
-
-
-
 ### Storing results
 
 * Create an empty object.
@@ -213,11 +206,15 @@ waterbirds_cap_list
 * By default data frames loop over columns
 
 ```
-pets <- data.frame(pet_name = c("spot", "gigantor", "fluffy"),
-                   pet_type = c("fish", "hamster", "lizard"))
-for (pet in pets){
+waterbirds <- data.frame(sci_name = c("cygnus olor", 
+                                      "aix sponsa", 
+                                      "anas acuta"), 
+                         common_name = c("mute swan", 
+                                         "wood duck", 
+                                         "pintail"))
+for (waterbird in waterbirds){
   print("Start new loop")
-  print(pet)
+  print(waterbird)
 }
 ```
 
@@ -226,24 +223,37 @@ for (pet in pets){
   simple loops it's useful for more complicated things like looping over rows
 
 ```
-pets <- data.frame(pet_name = c("spot", "gigantor", "fluffy"),
-                   pet_type = c("fish", "hamster", "lizard"))
-for (i in 1:nrow(pets)){
-  print(paste(pets$pet_name[i], " is a ", pets$pet_type[i], sep =""))
+for (i in 1:nrow(waterbirds)){
+  print(i)
 }
 ```
+
+```
+for (i in 1:nrow(waterbirds)){
+  print(waterbirds$sci_name[i])
+}
+```
+
+```
+for (i in 1:nrow(waterbirds)){
+  print(paste(waterbirds$sci_name[i], "is a", 
+              waterbirds$common_name[i]))
+}
+```
+
 
 * We can also use the index to store the output by pre-allocating memory
 * This is a lot faster than adding rows because it doesn't copy the data frame
   every time through the loop
 
 ```
-output <- data.frame(name = character(3), namelength = numeric(3),
-                     stringsAsFactors = FALSE)
-for (i in 1:nrow(pets)) {
-  pet_upper <- str_to_upper(pets$pet_name[i])
-  pet_length <- str_length(pets$pet_type[i])
-  output[i,] <- c(pet_upper, pet_length)
+waterbirds_2 <- data.frame(capital_name = character(3), 
+                           name_length = numeric(3), 
+                           stringsAsFactors = FALSE)
+for (i in 1:nrow(waterbirds)){
+  common_name_cap <- str_to_title(waterbirds$common_name[i])
+  sci_name_length <- str_length(waterbirds$sci_name[i])
+  waterbirds_2[i,] <- c(common_name_cap, sci_name_length)
 }
 ```
 
