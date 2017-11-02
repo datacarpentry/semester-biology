@@ -281,11 +281,11 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 1. With loop
 
 	```
-	number_loop <- c()
+	numbers_vector_1 <- c()
 	for (data_file in collar_data_files){
 	  file <- read.csv(data_file)
 	  number <- nrow(file)
-	  number_loop <- c(number_loop, number)
+	  numbers_vector_1 <- c(numbers_vector_1, number)
 	}
 	```
 
@@ -298,9 +298,9 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 	  return(number)
 	}
 	
-	number_function <- c()
+	numbers_vector_2 <- c()
 	for (data_file in collar_data_files){
-	  number_function <- c(number_function, get_numbers(data_file))
+	  numbers_vector_2 <- c(numbers_vector_2, get_numbers(data_file))
 	}
 	```
 
@@ -310,7 +310,7 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 * Use `stringsAsFactors` to make name column contain characters
 
 	```
-	number_dplyr = data.frame(collar_data_files, 
+	numbers_vector_3 = data.frame(collar_data_files, 
 	                          stringsAsFactors = FALSE) %>% 
 	  rowwise() %>% 
 	  mutate(number = get_numbers(collar_data_files))
