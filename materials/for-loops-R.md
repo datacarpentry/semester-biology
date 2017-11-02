@@ -261,11 +261,6 @@ for (i in 1:nrow(waterbirds)){
 }
 ```
 
-> Assign [Exercise 4 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
-> Assign [Exercise 5 - DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
-
-> Do [for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
-
 #### Looping over files
 
 * Repeat same actions on many similar files
