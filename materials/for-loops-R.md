@@ -264,22 +264,6 @@ for (i in 1:nrow(waterbirds)){
 > Assign [Exercise 4 - stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
 > Assign [Exercise 5 - DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
 
-
-### Alternatives to loops
-
-#### Vectorization
-
-* Operations that work on all of the elements in a vector
-* Make functions that work with vectors so no need to loop over values
-
-```
-lengths <- c(2.26, 1.48, 3.84)
-mass <- 0.73 * length ** 3.63
-mass
-```
-
-* Works for most simple math
-
 > Do [for Loop]({{ site.baseurl }}/exercises/Functions-for-loop-R).
 
 #### Looping over files
