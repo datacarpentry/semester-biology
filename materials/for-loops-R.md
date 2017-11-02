@@ -268,78 +268,55 @@ for (i in 1:nrow(waterbirds)){
 
 #### Looping over files
 
-* To learn alternatives learn how to do the same thing with many files. First
-  with loops and then with some alternatives in R
-* E.g., we have a set of files with satellite collar location data
+* Repeat same actions on many similar files
+* Get names of satellite collar location files
 
 ```
-date,time,lat,long
-2016-01-01,4:20,26.16,-35.28
+download.file("http://www.datacarpentry.org/semester-biology/data/collar-data-2016-01.zip", 
+              "collar_data.zip")
+unzip("collar_data.zip")
+collar_data_files = list.files(pattern = "collar-data-.*.txt", 
+                               full.names = TRUE)
 ```
 
-* To get a list of all these files in our `data` directory use `list.files()`
+* Look at one of the files
 
-```
-download.file("http://www.datacarpentry.org/semester-biology/data/collar-data-2016-01.zip")
-unzip("collar-data-2016-01.zip")
-list.files()
-collar_data_files <- list.files("collar-data-2016-01", 
-                                pattern="collar-data-.*.txt",
-                                full.names=TRUE)
-```
+* Three ways to do same thing: get number of samples in each file
 
-* Using the `pattern` argument makes file structure clear and avoids errors
-* `full.names = TRUE` retains directory information
-* Now we can loop over the files to work with them
+1. With loop
 
-```
-num_samps <- c()
-for (data_file in collar_data_files){
-  data <- read.csv(data_file)
-  samples <- nrow(data)
-  num_samps <- c(num_samps, samples) 
-}
-num_samps
-```
+	```
+	number_loop <- c()
+	for (data_file in collar_data_files){
+	  file <- read.csv(data_file)
+	  number <- nrow(file)
+	  number_loop <- c(number_loop, number)
+	}
+	```
 
-```
-get_num_samps <- function(data_file_name){
-  data <- read.csv(data_file_name)
-  samples <- nrow(data)
-  return(samples)
-}
+2. With function and loop
 
-num_samps <- c()
-for (data_file in collar_data_files){
-  num_samps <- c(num_samps, get_num_samps(data_file))
-}
-num_samps
-```
+	```
+	get_numbers <- function(data_file_name){
+	  file <- read.csv(data_file_name)
+	  number <- nrow(file)
+	  return(number)
+	}
+	
+	number_function <- c()
+	for (data_file in collar_data_files){
+	  number_function <- c(number_function, get_numbers(data_file))
+	}
+	```
 
-#### dplyr
+3. With dplyr
 
-* Use `rowwise()` to get `dplyr` to run the function on each row
+* `rowwise()` runs function on each dataframe row
+* Use `stringsAsFactors` to make name column contain characters
 
-```
-num_samps <- data.frame(myfiles, stringsAsFactors=FALSE) %>%
-  rowwise() %>%
-  mutate(samples = get_num_samps(myfiles))
-```
-
-* This is an example of why to use `stringsAsFactors=FALSE`
-
-```
-num_samps <- data.frame(myfiles) %>%
-  rowwise() %>%
-  mutate(samples = get_num_samps(myfiles))
-```
-
-* Instead of passing the file names this passes the integer values for the
-  levels
-
-```
-num_samps <- data.frame(myfiles) %>%
-  rowwise() %>%
-  mutate(samples = typeof(myfiles))
-```
-  
+	```
+	number_dplyr = data.frame(collar_data_files, 
+	                          stringsAsFactors = FALSE) %>% 
+	  rowwise() %>% 
+	  mutate(number = get_numbers(collar_data_files))
+	```
