@@ -203,7 +203,7 @@ waterbirds_cap_list
 
 ### Looping in data frames
 
-* By default data frames loop over columns
+* Loops go over columns of dataframes
 
 ```
 waterbirds <- data.frame(sci_name = c("cygnus olor", 
@@ -218,13 +218,19 @@ for (waterbird in waterbirds){
 }
 ```
 
-* Who has seen/used a different approach to looping than has been show?
-* That's called looping over an `index` and while it's overly complicated for
-  simple loops it's useful for more complicated things like looping over rows
+* Can loop over rows of data frames using index
 
 ```
 for (i in 1:nrow(waterbirds)){
   print(i)
+}
+```
+
+* Index can be any letter/word, i is convention
+
+```
+for (r in 1:nrow(waterbirds)){
+  print(r)
 }
 ```
 
@@ -241,10 +247,8 @@ for (i in 1:nrow(waterbirds)){
 }
 ```
 
-
-* We can also use the index to store the output by pre-allocating memory
-* This is a lot faster than adding rows because it doesn't copy the data frame
-  every time through the loop
+* Less memory to create initial empty dataframe
+* Creates copy of dataframe when adding rows
 
 ```
 waterbirds_2 <- data.frame(capital_name = character(3), 
