@@ -304,4 +304,8 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 	}
 	```
 
-3. 
+3. With function and `apply`
+
+```
+numbers_vector_3 <- unlist(lapply(collar_data_files, get_numbers))
+```
