@@ -90,11 +90,14 @@ map(plant_vols, est_mass)
 * Use with pipes
 
 ```
+library(dplyr)
 plant_vols_df = data.frame(vols = plant_vols)
 plant_vols_df %>% 
   filter(vols > 2) %>% 
   map(est_mass)
 ```
+
+> Do [Crown Volume Calculation]({{ site.baseurl }}/exercises/Loops-crown-volume-calculation-R).
 
 ### For loops
 
