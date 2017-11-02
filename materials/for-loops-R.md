@@ -309,3 +309,12 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 ```
 numbers_vector_3 <- unlist(lapply(collar_data_files, get_numbers))
 ```
+
+* How to choose when there are many ways to do the same thing? 
+    * Speed
+        * Matters in few cases
+        * Hard to identify bottlenecks
+    * Readability
+        * Easy to understand
+    * Personal preference
+* There is no “right” way to do anything
