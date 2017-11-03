@@ -37,7 +37,8 @@ Use `list.files()`, with `full.names` set to true, to generate a list of the nam
 of all the sequence files. Then create a for loop that uses the above `seq` code to 
 read in each sequence file. When this works, add to the loop a function that 
 calculates GC content of each file. You can use the GC content function you wrote for 
-[stringr]({{site.baseurl}}/exercises/Loops-stringr-R), but it will have to be 
-modified due to capitalization in the sequence files. Once this is working, create
-an empty data frame that is filled with values from the for loop, one column with 
-file names and the second column with GC contents. 
+[stringr]({{site.baseurl}}/exercises/Loops-stringr-R), but you will have to 
+capitalize the “g” and “c” strings in the `str_count` functions because the sequences 
+in these files are upper case. Once this is working, create an empty data frame to 
+store the output and fill it with values from the for loop, one column with file 
+names and the second column with GC contents. 

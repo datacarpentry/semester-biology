@@ -6,7 +6,7 @@ language: R
 ---
 
 A colleague has produced a file with one DNA sequence on each line. Download
-[the file]({{ site.baseurl }}/data/dna-sequences-1.txt). Load it into R with`read.table()`, setting `header = TRUE` and naming the resulting data frame `sequences`.
+[the file]({{ site.baseurl }}/data/dna-sequences-1.txt). Load it into R with`read.csv()` and name the data frame `sequences`.
 
 Your colleague wants to calculate the GC content of each DNA sequence (i.e., the
 percentage of bases that are either G or C) and knows just a little R. They sent
