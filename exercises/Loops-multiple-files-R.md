@@ -7,49 +7,38 @@ language: R
 
 This is a follow-up to [stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).
 
-Dr. Jekyll is hard at work to perfect his serum and correct the imbalance with 
-his alter ego, Mr. Hyde. Dr. Jekyll is convinced that some mutation in his DNA 
-is responsible for his transformations and he's looking in the [PATRIC](http://www.patricbrc.org) 
-bacterial phytogenomic database for clues. He wants to know the GC content of 
-all of the bacteria in the database and got started working with a handful of 
-[archaea](https://en.wikipedia.org/wiki/Archaea). Sadly, his skill with a burner and pipette has not prepared him at 
-all for work on a computer.
+The same colleague wants to scale up their analysis to work on data from the [PATRIC](http://www.patricbrc.org) bacterial phytogenomic database. They want to know the GC content of all of the bacteria in the database and have started working initially 
+with just a handful of [archaea](https://en.wikipedia.org/wiki/Archaea). 
 
-Help him out by downloading [the data]({{ site.baseurl }}/data/archaea-dna.zip)
-and looping over the files to determine the GC content for each file. Unzip the
-the .zip file into your `data` directory. If you look at the data you'll see
-that it's made up of one file per species using the [FASTA dna sequence format](https://en.wikipedia.org/wiki/FASTA_format). We 
-could try to load it using `read.csv`, but the [ShortRead package in Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html)
-already exists for parsing fasta files, so we'll use that instead. [Install Bioconductor](http://www.bioconductor.org/install/) if 
-you haven't already. 
+Help out by downloading [the data]({{ site.baseurl }}/data/archaea-dna.zip)
+and looping over the files to determine the GC content for each file. Once 
+downloaded, either unzip the .zip file manually or use the `unzip` function. 
+
+Read the [.fasta files](https://en.wikipedia.org/wiki/FASTA_format) in the unzipped 
+folder into R using the [ShortRead package](http://www.bioconductor.org/packages/release/bioc/html/ShortRead.html) in Bioconductor. Start by installing [Bioconductor](http://www.bioconductor.org/install/) with the following code (this may take a
+while, so be patient): 
 
 ```
 source("https://bioconductor.org/biocLite.R")
 biocLite("ShortRead")
 ```
 
-The following code will then load a single sequence file:
+Each fasta file contains one long sequence of DNA for an archaea species. The 
+following code loads one sequence file, where `seq` is the variable name for the data 
+file:
 
 ```
 library(ShortRead)
-reads <- readFasta("data/archaea-dna/A-saccharovorans.fasta")
+reads <- readFasta("archaea-dna/A-saccharovorans.fasta")
 seq <- sread(reads)
 ```
 
-You can reuse the GC content function you wrote for
-[stringr]({{site.baseurl}}/exercises/Loops-stringr-R) to calculate the GC content, but
-you might need to modify it to accommodate the different capitalization of the
-bases.
-
-Each file in the zip represents a single archaea species. Use a `for` loop and
-your function to calculate the GC content of each file and print them out
-individually. You might find the `list.files()` function and the
-`full.names = TRUE` argument useful for working with multiple files in a `for`
-loop. The function should work on a single file at a time and the `for` loop
-should repeatedly call the function and store the results in a data frame with a 
-row for each file and columns for both the file name and GC content.
-
-*Optional*: For a little extra challenge change your answer so that instead of
-printing out the file names it prints out the species name that is encoded in
-the file name without the `".data/archaea-dna/"` path at the beginning and the
-`".fasta"` extension at the end.
+Use `list.files()`, with `full.names` set to true, to generate a list of the names
+of all the sequence files. Then create a for loop that uses the above `seq` code to 
+read in each sequence file. When this works, add to the loop a function that 
+calculates GC content of each file. You can use the GC content function you wrote for 
+[stringr]({{site.baseurl}}/exercises/Loops-stringr-R), but you will have to 
+capitalize the “g” and “c” strings in the `str_count` functions because the sequences 
+in these files are upper case. Once this is working, create an empty data frame to 
+store the output and fill it with values from the for loop, one column with file 
+names and the second column with GC contents. 
