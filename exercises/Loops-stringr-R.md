@@ -23,10 +23,7 @@ gc_content <- (num_g + num_c) / str_length(sequence) * 100
 1. Convert the last three lines of this code into a function to calculate the GC
 content of a DNA sequence. Name that function `get_gc_content`.
 
-2. Use a `for` loop and your function to calculate the GC content of each
-sequence in the data frame and store the results in a new vector. The function should work on a single sequence at a time and the `for` loop should repeatedly call the function and store the output.
-
-3. Use a `for` loop and your function to calculate the GC content of each sequence
+2. Use a `for` loop and your function to calculate the GC content of each sequence
 and store the results in a new data frame using an index. The following code will help you create this data frame:
 
 ```
