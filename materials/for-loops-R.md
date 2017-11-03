@@ -170,7 +170,7 @@ for (num in 100:150){
 }
 ```
 
-> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) tasks 1-4.
+> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) tasks 1-2.
 
 
 #### Storing results
@@ -199,7 +199,7 @@ for (waterbird in waterbirds){
 waterbirds_cap_list
 ```
 
-> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) task 5.
+> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) task 3.
 
 #### Looping in data frames
 
@@ -261,6 +261,8 @@ for (i in 1:nrow(waterbirds)){
 }
 ```
 
+> Do [stringr]({{ site.baseurl }}/exercises/Loops-stringr-R/).
+
 #### Looping over files
 
 * Repeat same actions on many similar files
@@ -318,3 +320,7 @@ numbers_vector_3 <- unlist(lapply(collar_data_files, get_numbers))
         * Easy to understand
     * Personal preference
 * There is no “right” way to do anything
+
+> Do [Multiple Files]({{ site.baseurl }}/exercises/Loops-multiple-files-R/).
+
+> Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R/).
