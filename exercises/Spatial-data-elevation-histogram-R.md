@@ -38,7 +38,8 @@ A colleague of yours is working on a project on deer mice ([*Peromyscus manicula
 
 	Turn the dataframe into a spatial object and extract the elevations for the points in the object. Test that your function works by putting in `"Peromyscus manipulatus"` as the argument. 
 
-7. Run this function on the following vector of mouse species names using a for loop to get a vector of elevations for 50 occurrences for each of these 5 species. 
+7. Run this function on the following vector of mouse species names using either a 
+loop to get a vector or an apply function to get a list of elevations for 50 occurrences of each of these 5 species. 
 
 	```
 	mouse_species = c("Peromyscus maniculatus", "Peromyscus leucopus", "Peromyscus eremicus", "Peromyscus merriami", "Peromyscus boylii")
