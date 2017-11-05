@@ -36,7 +36,7 @@ A colleague of yours is working on a project on deer mice ([*Peromyscus manicula
 	mouse_df = mouse_df %>% filter(!is.na(longitude) & !is.na(latitude))
 	```
 
-	Turn the dataframe into a spatial object and extract the elevations for the points in the object. Test that your function works by putting in `"Peromyscus manipulatus"` as the argument. 
+	Turn the dataframe into a spatial object and extract the elevations for the points in the object. Test that your function works by putting in `"Peromyscus maniculatus"` as the argument.
 
 7. Run this function on the following vector of mouse species names using either a 
 loop to get a vector or an apply function to get a list of elevations for 50 occurrences of each of these 5 species. 
