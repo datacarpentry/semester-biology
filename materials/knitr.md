@@ -122,7 +122,7 @@ time_series <-
   filter(species_id %in% c('DM', 'DO', 'DS')) %>%
   na.omit()
 
-head(time_series)
+knitr::cable(head(time_series))
 ```</code></pre>
 
 * `echo=FALSE` let's you show the results of the code chunk without showing the code.
