@@ -35,8 +35,7 @@ language: R
         * `1.`
 
 	
-<pre><code>
-## Concept
+<pre><code>## Concept
 
 Exploration of population dynamic patterns at **The Portal Project**.
 How do counts of rodents like *Dipodomys* species change through time?
@@ -45,8 +44,7 @@ In this document I will:
 
 1. Load data from the [Portal Project Teaching Database](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459)
 2. Process it into population time series
-3. And make initial visualizations
-</code></pre>
+3. And make initial visualizations</code></pre>
 
 * Easy to read for humans
 * Easy to convert into other things for computers
@@ -66,26 +64,22 @@ In this document I will:
 * R Markdown allows you to include code to run in the document
 * Click on `Insert` and choose R
 
-<pre><code>
-## Required Packages
+<pre><code>## Required Packages
 
 ```{r}
 library(dplyr)
 library(ggplot2)
-```
-</code></pre>
+```</code></pre>
 
 
 * Knitting runs the code and prints its output
 
-<pre><code>
-## Data
+<pre><code>## Data
 
 ```{r}
 data <- read.csv("https://ndownloader.figshare.com/files/2292172")
 head(data)
-```
-</code></pre>
+```</code></pre>
 
 
 ### Chunk options
@@ -128,7 +122,7 @@ time_series <-
   filter(species_id %in% c('DM', 'DO', 'DS')) %>%
   na.omit()
 
-head(time_series)
+knitr::kable(head(time_series))
 ```</code></pre>
 
 * `echo=FALSE` let's you show the results of the code chunk without showing the code.
@@ -141,7 +135,7 @@ ggplot(time_series, aes(x = year, y = count)) +
   geom_line() +
   geom_smooth() +
   facet_wrap(~species_id)
-```</pre></code>
+```</code></pre>
 
 ### Notebook
 
