@@ -78,8 +78,8 @@ library(ggplot2)
 
 ```{r}
 data <- read.csv("https://ndownloader.figshare.com/files/2292172")
-head(data)```
-</code></pre>
+head(data)
+```</code></pre>
 
 
 ### Chunk options
@@ -122,7 +122,7 @@ time_series <-
   filter(species_id %in% c('DM', 'DO', 'DS')) %>%
   na.omit()
 
-knitr::cable(head(time_series))
+knitr::kable(head(time_series))
 ```</code></pre>
 
 * `echo=FALSE` let's you show the results of the code chunk without showing the code.
