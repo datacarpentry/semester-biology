@@ -5,6 +5,10 @@ title: gganimate
 language: R
 ---
 
+> * ImageMagick needs to be installed to save as gif (the default)
+> * Save to html file if installing ImageMagick isn't an option
+>     * E.g., gganimate(p, "output.html")
+
 ### Installation
 
 * Some R packages are not published to CRAN
@@ -33,8 +37,7 @@ library(ggplot2)
 library(gganimate)
 
 gnv_weather$year = format(gnv_weather$date, "%Y")
-gnv_weather$jday = format(gnv_weather$date, "%j")
-gnv_weather = filter(gnv_weather, tmax > 
+gnv_weather$jday = as.numeric(format(gnv_weather$date, "%j"))
 
 ggplot(gnv_weather, aes(x = jday, y = tmax / 10)) +
   geom_point()
@@ -43,19 +46,22 @@ ggplot(gnv_weather, aes(x = jday, y = tmax / 10)) +
 * Then add `frame` element to `aes()`
 
 ```
-p <- ggplot(gnv_weather, aes(x = jday, y = tmax / 10, frame = year))
-  + geom_point()
+p <- ggplot(gnv_weather, aes(x = jday, y = tmax / 10, frame = year)) +
+  geom_point()
 
 gganimate(p)
 ```
 
 * Uses the `animation` package
-* Fore complicated but more powerful
+* More complicated but more powerful
 
 ```
+install.packages('animation')
+library(animation)
+
 saveGIF({
   for (yr in 1984:2016){
-    data = filter(gnv_weather, year == yr)
+    data = dplyr::filter(gnv_weather, year == yr)
     plot(data$jday, data$tmax)
   }
 })
