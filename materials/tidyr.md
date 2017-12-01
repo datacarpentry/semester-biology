@@ -5,12 +5,6 @@ title: tidyr
 language: SQL
 ---
 
-> Set up R console:
-
-```
-library(tidyr)
-```
-
 ### Remember the five basic rules of database structure
 
 1. Order doesn’t matter 
@@ -26,43 +20,54 @@ library(tidyr)
 
 ![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database-struct-multiple-habitat-values.png)
 
-* Here is another messy dataset.
+### tidyr
 
 ```
-scary_sightings <- data.frame(
-  animals = c("lions", "tigers", "bears"),
-  brick_road = c("1-Y", "0-N", "0-N"),
-  emerald_city = c("17-N", "8-Y", "64-N")
+library(tidyr)
+```
+
+* Package to deal with messy data
+* Part of tidyverse
+* Gets data in format that works with ggplot2, dplyr, etc.
+
+* Here is another messy dataset
+* In wide format
+
+```
+genes_wide = data.frame(
+  name = c("A", "B", "C"), 
+  a = c("16-Y", "25-N", "13-Y"), 
+  t = c("1-N", "12-Y", "31-Y")
 )
 ```
 
 ```
-> scary_sightings
-  animals brick_road emerald_city
-1   lions        1-Y         17-N
-2  tigers        0-N          8-Y
-3   bears        0-N         64-N
+> genes_wide
+  name    a    t
+1    A 16-Y  1-N
+2    B 25-N 12-Y
+3    C 13-Y 31-Y
 ```
 
 * What do the values in the table represent?
-    * `lions` and `tigers` and `bears` are names of `animals`
-    * `1-Y`, `17-N`, etc. represent: 
-        * Counts of animals sighted on the `brick_road` or in the `emerald_city`
-        * And, were the animal sightings scary? `Y` or `N`
+    * `A`, `B`, and `C` are names of gene names
+    * `16-Y`, `1-N`, etc. represent: 
+        * Counts of bases `a` and `t`
+        * If a particular sequence involving that base is present in the gene, `Y` or `N`
 
 > Ask students,
 > 
-> * "What makes `scary_sightings` messy?"
-> * "What are the variables in `scary_sightings`?"
+> * "What makes `genes_wide` messy?"
+> * "What are the variables in `genes_wide`?”
 
-* Tidy variables in `scary_sightings`
-    * `animals` 
-        * `lions` and `tigers` and `bears`
-    * `site` 
-        * `brick_road` and `emerald_city`
-    * `sightings`
+* Tidy variables in `genes_wide`
+    * `name` 
+        * `A`, `B`, and `C`
+    * `base` 
+        * `a` and `t`
+    * `base_counts`
         * count
-    * `scared`
+    * `sequence`
         * `Y` or `N`
 
 ### `tidyr` helps restructure messy data
@@ -74,22 +79,22 @@ scary_sightings <- data.frame(
         * Column name for grouping of old column headers
         * Column name for grouping of old column values
         * Column range for old columns with values
+    * Gets data in long format
 
 ```
-less_scary <- scary_sightings %>%
-  gather(site, scary_counts, brick_road:emerald_city)
+genes_long = genes_wide %>% 
+  gather(base, base_counts, a:t)
 ```
 
 ```
-> less_scary
-
-  animals         site scary_counts
-1   lions   brick_road          1-Y
-2  tigers   brick_road          0-N
-3   bears   brick_road          0-N
-4   lions emerald_city         17-N
-5  tigers emerald_city          8-Y
-6   bears emerald_city         64-N
+> genes_long
+  name base base_counts
+1    A    a        16-Y
+2    B    a        25-N
+3    C    a        13-Y
+4    A    t         1-N
+5    B    t        12-Y
+6    C    t        31-Y
 ```
 
 * `separate()`
@@ -101,19 +106,19 @@ less_scary <- scary_sightings %>%
         * Separator value or character
 
 ```
-sightings <- less_scary %>%
-  separate(scary_counts, c("count", "scary"), sep="-")
+genes = genes_long %>% 
+  separate(base_counts, c("counts", "sequence"), sep = "-")
 ```
 
 ```
-> sightings
-  animals         site count scary
-1   lions   brick_road     1     Y
-2  tigers   brick_road     0     N
-3   bears   brick_road     0     N
-4   lions emerald_city    17     N
-5  tigers emerald_city     8     Y
-6   bears emerald_city    64     N
+> genes
+  name base counts sequence
+1    A    a     16        Y
+2    B    a     25        N
+3    C    a     13        Y
+4    A    t      1        N
+5    B    t     12        Y
+6    C    t     31        Y
 ```
 
-> Do [Exercise 5 - Tree Biomass]({{ site.baseurl }}/exercises/Tidyr-tree-biomass-R).
+* Use `spread()` to turn data from long to wide format
