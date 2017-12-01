@@ -114,5 +114,3 @@ genes = genes_long %>%
 5    B    t     12        Y
 6    C    t     31        Y
 ```
-
-> Do [Exercise 5 - Tree Biomass]({{ site.baseurl }}/exercises/Tidyr-tree-biomass-R).
