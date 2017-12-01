@@ -5,12 +5,6 @@ title: tidyr
 language: SQL
 ---
 
-> Set up R console:
-
-```
-library(tidyr)
-```
-
 ### Remember the five basic rules of database structure
 
 1. Order doesn’t matter 
@@ -26,7 +20,18 @@ library(tidyr)
 
 ![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database-struct-multiple-habitat-values.png)
 
-* Here is another messy dataset.
+### tidyr
+
+```
+library(tidyr)
+```
+
+* Package to deal with messy data
+* Part of tidyverse
+* Gets data in format that works with ggplot2, dplyr, etc.
+
+* Here is another messy dataset
+* In wide format
 
 ```
 genes_wide = data.frame(
@@ -74,6 +79,7 @@ genes_wide = data.frame(
         * Column name for grouping of old column headers
         * Column name for grouping of old column values
         * Column range for old columns with values
+    * Gets data in long format
 
 ```
 genes_long = genes_wide %>% 
@@ -114,3 +120,5 @@ genes = genes_long %>%
 5    B    t     12        Y
 6    C    t     31        Y
 ```
+
+* Use `spread()` to turn data from long to wide format
