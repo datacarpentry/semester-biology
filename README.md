@@ -1,7 +1,7 @@
 # Introducing Agroecology - Extension Training Materials
 
 This is a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching practitioners the basics of agroecology through
-introduction of foundational concepts and interactive learning activities.
+the introduction of foundational concepts and interactive learning activities.
 
 The initial materials are presented primarily for a 1.5 day in-service training
 sponsored by UF/IFAS Extension, though the materials should also be organized
