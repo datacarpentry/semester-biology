@@ -2,14 +2,22 @@
 layout: default
 ---
 
-This website hosts introductory material for teaching biologists how to interact
-with data including: data structure, database management systems, and
-programming for data manipulation, analysis, and visualization. It is designed
-to be used as a flipped university course and also to be useful for self-guided
-students. Instructors are welcome to modify and use the material for your own 
-courses. We encourage collaborative development and contributions by 
-instructors, with the hopes that this will lead to better training and resources 
-for everyone. 
+This website hosts the material for the UF/IFAS Extension IST 31557, "What is
+Agroecology and how is it relevant to your Extension program?". The IST is
+designed to improve awareness and utility of foundational themes in agroecology
+relevant across Extension programs. Participants will be provided a suite of
+resources through this site and opportunities for direct application of
+agroecology activities and innovation­ to their Extension programming.
+ 
+After completing this training, participants will:
+- understand the goals and guiding principles of agroecology.
+- understand key ecological concepts integrating agriculture, natural resource 
+management, and community development.
+- be able to describe the components of an agroecosystem and specifically
+identify an agroecosystem relevant to his/her work.
+- be able to apply the agroecology framework for program development,
+specifically in relation to priority work group areas, impact reporting
+indicators, and logic models.
 
 For Students
 : <a href="{{ site.baseurl}}/syllabus">
