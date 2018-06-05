@@ -9,16 +9,16 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Data Carpentry for Biologists
-description:      'Teaching the tools to get computers to do cool science'
-url:              http://www.datacarpentry.org/semester-biology
-baseurl:          /semester-biology
-email:            datacarpentrysemester@weecology.org
-feedbackurl:      https://docs.google.com/forms/d/e/1FAIpQLSdV_polFmoukgjcs1IC0Dd4iO1rdgwFnOds28xC_ma_z4tNIw
+title:            Introducing Agroecology
+description:      'The Basics of What is Agroecology for Practitioners'
+url:              http://trec-agroecology.github.io/introducing-agroecology
+baseurl:          /introducing-agroecology
+email:            brymz@ufl.edu
+feedbackurl:      https://trec.ifas.ufl.edu/agroecology
 author:
-  name:           'Ethan White'
-  url:            https://twitter.com/ethanwhite
+  name:           'Zack Brym'
+  url:            https://trec.ifas.ufl.edu/faculty/brym
 
 github:
-  repo:           https://github.com/datacarpentry/semester-biology
+  repo:           https://github.com/TREC-Agroecology/introducing-agroecology
   #               Be sure the 'Issues' feature is activated in 'Settings'
