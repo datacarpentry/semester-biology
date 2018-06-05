@@ -19,6 +19,6 @@ author:
   name:           'Zack Brym'
   url:            https://trec.ifas.ufl.edu/faculty/brym
 
-github:
+github:           [metadata]
   repo:           https://github.com/TREC-Agroecology/introducing-agroecology
   #               Be sure the 'Issues' feature is activated in 'Settings'
