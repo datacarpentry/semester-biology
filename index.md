@@ -23,7 +23,7 @@ Workshop Links
 : <a href="{{ site.baseurl}}/agenda.pdf">
   <i class="fa fa-file-text-o fa-fw"></i> Agenda</a>
 : <a href="{{ site.baseurl}}/schedule">
-  <i class="fa fa-calendar fa-fw"></i> Activities</a>
+  <i class="fa fa-calendar fa-fw"></i> Activity Schedule</a>
 : <a href="{{ site.baseurl}}/readings">
   <i class="fa fa-book fa-fw"></i> Readings</a>
 : <a href="{{ site.baseurl}}/lectures">
@@ -31,6 +31,6 @@ Workshop Links
 : <a href="{{ site.baseurl}}/materials">
   <i class="fa fa-list-alt fa-fw"></i> Lecture Materials</a>
 : <a href="{{ site.baseurl}}/assignments">
-  <i class="fa fa-keyboard-o fa-fw"></i> Assignments</a>
+  <i class="fa fa-cubes fa-fw"></i> Activities</a>
 : <a href="{{ site.baseurl}}/exercises">
   <i class="fa fa-magic fa-fw"></i> Exercises</a>
