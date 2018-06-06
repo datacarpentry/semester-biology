@@ -20,7 +20,7 @@ specifically in relation to priority work group areas, impact reporting
 indicators, and logic models.
 
 Workshop Links
-: <a href="{{ site.baseurl}}/syllabus">
+: <a href="{{ site.baseurl}}/agenda.pdf">
   <i class="fa fa-file-text-o fa-fw"></i> Agenda</a>
 : <a href="{{ site.baseurl}}/schedule">
   <i class="fa fa-calendar fa-fw"></i> Activities</a>
