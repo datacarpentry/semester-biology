@@ -1,12 +1,11 @@
 <table>
 
   <tr>
-    <th width="50">Week</th>
-    <th width="200">Language</th>
-    <th width="300">Lesson</th>
-    <th width="50">Reading</th>
-    <th width="50">Lecture</th>
-    <th width="50">Assignment</th>
+    <th width="50"></th>
+    <th width="300">Topic</th>
+    <th width="50">Resources</th>
+    <th width="50">Presentation</th>
+    <th width="50">Activity</th>
   </tr>
 
   {% for assignment in page.assignments %}
@@ -55,7 +54,6 @@
 
     <tr>
       <td align="right">{{ forloop.index }}</td>
-      <td>{{ language }}</td>
       <td>{{ assignment }}</td>
 
       {% if reading_link %}
@@ -76,10 +74,10 @@
 
       {% if assignment_link %}
         <td align="center"><a href="{{ assignment_link }}">
-          <i class="fa fa-keyboard-o fa-lg"></i></a></td>
+          <i class="fa fa-cubes fa-lg"></i></a></td>
       {% else %}
         <td align="center"><font color="f1f1f1">
-          <i class="fa fa-keyboard-o fa-lg"></i></font></td>
+          <i class="fa fa-cubes fa-lg"></i></font></td>
       {% endif %}
     </tr>
 
