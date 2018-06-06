@@ -1,21 +1,16 @@
 ---
 layout: page
-title: Assignment Schedule
-assignments: ['Data Entry and Storage', 'Database Queries',
-'Introduction to R and RStudio', ' ”Hurricane Week” ', 'Working with Data', 'Data Visualization',
-'Projects Structure', 'Version Control', 'Working with Spatial Data', 'Programming Fundamentals 1',
-'Programming Fundamentals 2', 'Project Week', 'Knitr',
-'gganimate', 'tidyr', 'Project Week']
+title: Activity Schedule
+assignments: ['Introductions', 'What is Agroecology?', 'Goals and Principles of
+Agroecology', 'The Agroecosystems Concept', 'Agroecosystem Tour', 'Agroecology
+in Your Extension Program', 'Recap and Assessment']
 ---
-
-[Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
 
 {% include assignments.html %}
 
-The above assignments are for this specific version of the course, but other
-assignments are available as well. You can see the full list of
-[assignments]({{ site.baseurl }}/assignments/), which may be useful if you're using this material
-outside of an organized course.
+You can see the full list of [activities]({{ site.baseurl }}/assignments/), 
+which may be useful if you're using this material outside of an organized 
+course.
 
 <!-- Schedule Management
 - Update the `assignments:` list with `title:` from `assignments/` files. 
