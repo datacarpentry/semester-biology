@@ -33,4 +33,4 @@ Workshop Links
 : <a href="{{ site.baseurl}}/assignments">
   <i class="fa fa-cubes fa-fw"></i> Activities</a>
 : <a href="{{ site.baseurl}}/exercises">
-  <i class="fa fa-magic fa-fw"></i> Exercises</a>
+  <i class="fa fa-bullseye fa-fw"></i> Exercises</a>
