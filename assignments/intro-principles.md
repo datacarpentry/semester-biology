@@ -1,32 +1,19 @@
 ---
 layout: page
 element: assignment
-title: Goals and Principles of Agroecology                
+title: Goals and Principles                
 language: Intro
-exercises: ['Exercise Template', 'Exercise Template']
+exercises: ['The Pyramid', 'Agroecology vs Sustainable Agriculture']
 ---
 
 #### Learning Objectives
 
-> Following this assignment students should be able to:
+> At the end of this segment you should:
 >
-> - Insert objective 1
-> - Insert objective 2
-> - Insert objective 3
+> - Be able to name the 3 goals of agroecology
+> - Be able to name the 4 guiding principles of agroecology
+> - Understand key ecological concepts integrating agroecology's key areas
 
 {% include reading.html %}
 
 {% include assignment.html %}
-
-<!-- End of Assignments Template - Be sure to keep the include statements -->
-
-****
-
-Assignment Management
-
-1. Determine the `title` and `language` of your new or modified assignment.
-2. Add learning objectives.
-3. Name the file with the format: `language-short-description.md`in the
-   `assignments/` directory. The file must start with a `lower` case letter.
-4. Generate an `exercises:` list of `exercises/` `title:`.
-5. Add assignment `title:` to `schedule.md` `assignments:` list. 
