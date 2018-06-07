@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Activities
+title: Segments
 ---
 
 ### Agroecology IST
