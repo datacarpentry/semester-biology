@@ -1,11 +1,11 @@
-<h4>Reading</h4>
+<h4>Resources</h4>
 {% for readingpage in site.pages %}
   {% if readingpage.title == page.title and readingpage.element == 'reading' %}
    {{ readingpage.content }}
   {% endif %}
 {% endfor %}
 
-<h4>Lecture Notes</h4>
+<h4>Presentation Notes</h4>
 {% for lecturepage in site.pages %}
   {% if lecturepage.title == page.title and lecturepage.element == 'lecture' %}
    {{ lecturepage.content }}
