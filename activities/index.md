@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercises
+title: Activities
 languages: ['Intro']
 ---
 
