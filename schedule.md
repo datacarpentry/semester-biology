@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Activity Schedule
-assignments: ['Introductions', 'What is Agroecology?', 'Goals and Principles of
-Agroecology', 'The Agroecosystems Concept', 'Agroecosystem Tour', 'Agroecology
-in Your Extension Program', 'Recap and Assessment']
+assignments: ['Introductions', 'What is Agroecology?', 'Goals and Principles', 'The Agroecosystems Concept', 'Agroecosystem Tour', 'Agroecology in Your
+Program', 'Recap and Assessment']
 ---
 
 {% include assignments.html %}
