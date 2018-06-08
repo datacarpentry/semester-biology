@@ -5,4 +5,6 @@ title: Introductions
 language: Intro
 ---
 
-Insert Markdown and [links to materials file]({{ site.baseurl }}/docs/templates/materials-template)
+- [Introductions]({{ site.baseurl }}/materials/introductions)
+- [Why Agroecology?]({{ site.baseurl }}/materials/why-agroecology)
+- [Brief History]({{ site.baseurl }}/materials/brief-history)
