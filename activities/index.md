@@ -30,7 +30,7 @@ languages: ['Intro']
       <td>
       {% for solution in site.static_files %}
         {% if solution.path contains output_file %}
-          <a href="{{ solution.path | prepend: site.baseurl}}">
+          <a href="{{ solution.path | prepend: site.baseurl }}">
             [{{ solution.path | split:"." | last}}]</a>
         {% endif %}
       {% endfor %}
