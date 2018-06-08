@@ -5,15 +5,12 @@ title: Why Agroecology
 language: Intro
 ---
 
-1. Determine the `topic`, `title`, and `language` from the [front matter](https://jekyllrb.com/docs/frontmatter/) of your new or modified exercise.
-2. Name the file with the format `Topic-title-Language.md` in the `exercises/` directory such as `Templates-exercise-template-Python.md`. The file must start with an `UPPER` case letter.
-3. Generate or repair [course linkages]({{ site.baseurl }}/docs/site/course-structure).
-  - The `title` may be listed in `assignments/`
-  - An output file or set of files can be stored in `solutions/` with
-    matching `Topic-title-Language` format. The file retains its file 
-    extension. Multiple files are numbered such as: 
-    `Templates-exercise-template-Python-1.txt`, 
-    `Templates-exercise-template-Python-2.jpg`, ...
-  - Reference the exercise in a follow-up link: 
-    ```[Title]({{ site.baseurl }}/exercises/Topic-title-Language)```
-4. Be sure to [contribute]({{ site.baseurl l}}/docs/course/contributing) your new exercise to the [Data Carpentry Repository](https://github.com/datacarpentry/semester-biology). 
+You've just had a chance to learn about the history of agroecology and the
+motivation for your instructors and hosts to engage with agroecology.
+
+1. Take a moment to reflect on the answer you gave to the group during 
+introductions. Would your answer be similar or different? Would you add 
+anything?
+2. Find a neighbor with a similar area to yours. Discuss your response to #1.
+Did you have a similar or different reaction?
+3. Repeat #2 with a neighbor who has a different area to yours.
