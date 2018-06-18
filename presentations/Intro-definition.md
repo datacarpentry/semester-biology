@@ -5,4 +5,5 @@ title: What is Agroecology?
 language: Intro
 ---
 
-Insert Markdown and [links to materials file]({{ site.baseurl }}/docs/templates/materials-template)
+- [Agroecology Definition and Use]({{ site.baseurl }}/materials/agroecology-definition)
+- [What is NOT Agroecology](({{ site.baseurl }}/materials/not-agroecology)
