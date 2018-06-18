@@ -5,6 +5,14 @@ title: Extension Impacts
 language: Intro
 ---
 
+### Workload Indicators
+
+- There are so many workload indicators and establishing meaningful impacts is
+challenging.
+- Integrated programs can target multiple workload indicators and impacts.
+
+[Workload Indicators Table](http://pdec.ifas.ufl.edu/workload/WorkloadIndicatorsContacts.pdf)
+
 ### Impact Initiatives 
 
 [PDEC Impacts Summary](http://pdec.ifas.ufl.edu/impacts/)
@@ -70,12 +78,3 @@ members of the workforce.
 
 1. Youth development
 2. Developing organizational and volunteer systems to support youth development
-
-
-### Workload Indicators
-
-- There are so many workload indicators and establishing meaningful impacts is
-challenging.
-- Integrated programs can target multiple workload indicators and impacts.
-
-[Workload Indicators Table](http://pdec.ifas.ufl.edu/workload/WorkloadIndicatorsContacts.pdf)

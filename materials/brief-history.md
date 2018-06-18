@@ -7,6 +7,11 @@ language: Intro
 
 ### Agronomy and Ecology
 
+Early agriculture developments
+- defined by fertilizer limitation
+- Sprengel and Leibig, 1840, Law of the minimum
+- Rudolf Steiner, 1924, biodynamic
+- Sir Albert Howard, 1943, soil fertility
 
 Ecology = study of natural systems (pure science)
 
@@ -16,11 +21,10 @@ Earliest combination
 - "crop ecology" (1920s)
 - where crops were grown and their optimal 
 ecological conditions
-– 1928; K.Klages; “Crop ecology & geography” 
+– 1928; K.Klages; “Crop ecology & geography”
+- 1930; Bensin: "Agroecology" 
 – 1939; H.Hanson; “Ecology in agriculture’
 
-Early agriculture defined by fertilizer limitation
-- Von Leibig vs. H
 
 ### Agriculture and Ecology Diverges
 
@@ -69,3 +73,5 @@ interest in crop ecology and a framework for examining agriculture
 - Food systems, rural development, and social responsibility
 - 2009; Wezel et al
 - 2016; Brym and Reeve
+
+> Do [Use the Term]({{ site.baseurl }}/activities/What-is-agroecology-use-the-term-Intro)

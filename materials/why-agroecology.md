@@ -20,3 +20,5 @@ have chosen to stick around.
 Hilary will also take a extra few minutes to introduce us to the Archbold
 Biological Station, Buck Island Ranch, and their cohesive set of goals across
 agriculture and natural resources.
+
+> Do [Why Agroecology]({{ site.baseurl }}/activities/Introductions-why-agroecology-Intro)
