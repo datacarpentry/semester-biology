@@ -13,6 +13,8 @@ challenging.
 
 [Workload Indicators Table](http://pdec.ifas.ufl.edu/workload/WorkloadIndicatorsContacts.pdf)
 
+> Do [Priority Areas and Indicators]({{ site.baseurl }}/activities/Agroecology-in-your-program-priority-areas-and-indicators-Intro)
+
 ### Impact Initiatives 
 
 [PDEC Impacts Summary](http://pdec.ifas.ufl.edu/impacts/)
