@@ -16,4 +16,4 @@ language: Access-Python-R-SQL
     `Templates-exercise-template-Python-2.jpg`, ...
   - Reference the exercise in a follow-up link: 
     ```[Title]({{ site.baseurl }}/exercises/Topic-title-Language)```
-4. Be sure to [contribute]({{ site.baseurl l}}/docs/course/contributing) your new exercise to the [Data Carpentry Repository](https://github.com/datacarpentry/semester-biology). 
+4. Be sure to [contribute]({{ site.baseurl }}/docs/course/contributing) your new exercise to the [Data Carpentry Repository](https://github.com/datacarpentry/semester-biology). 
