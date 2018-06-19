@@ -5,15 +5,13 @@ title: Assessing Model Agroecosystems
 language: Intro
 ---
 
-1. Determine the `topic`, `title`, and `language` from the [front matter](https://jekyllrb.com/docs/frontmatter/) of your new or modified exercise.
-2. Name the file with the format `Topic-title-Language.md` in the `exercises/` directory such as `Templates-exercise-template-Python.md`. The file must start with an `UPPER` case letter.
-3. Generate or repair [course linkages]({{ site.baseurl }}/docs/site/course-structure).
-  - The `title` may be listed in `assignments/`
-  - An output file or set of files can be stored in `solutions/` with
-    matching `Topic-title-Language` format. The file retains its file 
-    extension. Multiple files are numbered such as: 
-    `Templates-exercise-template-Python-1.txt`, 
-    `Templates-exercise-template-Python-2.jpg`, ...
-  - Reference the exercise in a follow-up link: 
-    ```[Title]({{ site.baseurl }}/exercises/Topic-title-Language)```
-4. Be sure to [contribute]({{ site.baseurl l}}/docs/course/contributing) your new exercise to the [Data Carpentry Repository](https://github.com/datacarpentry/semester-biology). 
+1. Consider the goals of agroecology. What progress has your system made to
+improve the outcomes of each of the main goals of agroecology (production,
+environment, society)? By intuition, give your system a score for each goal.
+
+2. Consider the linkages you drew on your agroecosystem diagram in [Know Your Agroecosystem]({{ site.baseurl }}/activities/The-agroecosystems-concept-know-your-agroecosystem-Intro), step 2.
+Are there specific management practices or interventions that have improved the 
+sustainability of the system through strengthening or weakening those linkages?
+What linkages would you focus on the improve the agroecosystem-oriented score?
+How does your assessment of the system change when you look at the extended
+system from [Know Your Agroecosystem]({{ site.baseurl }}/activities/The-agroecosystems-concept-know-your-agroecosystem-Intro), step 3.
