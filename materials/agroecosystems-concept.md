@@ -49,6 +49,8 @@ language: Intro
    - manager
    - consumer
 
+![agroecosystem diagram]({{ site.baseurl }}/materials/agroecosystem-diagram.png)
+
 > Do [Know your Agroecosystem]({{ site.baseurl }}/activities/The-agroecosystems-concept-know-your-agroecosystem-Intro), Step 1
 
 ### Agroecosystem Awareness
