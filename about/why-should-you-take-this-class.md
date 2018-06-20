@@ -3,16 +3,16 @@ layout: page
 title: Why should you take this class?
 ---
 
-Because [biology students really need to know how to
-program](http://www.wired.com/wiredscience/2009/03/why-biology-students-should-learn-how-to-program/).
+Because [we should invest more in the transition to sustainable agriculture](https://www.ucsusa.org/food-agriculture/advance-sustainable-agriculture/counting-on-agroecology).
 
-Because it's [quantifiably
-worthwhile](http://software-carpentry.org/blog/2011/06/doing-the-math.html) for a
-scientist to learn how to program well.
+Because international agriculture and development groups have recognized the
+importance of agroecology([FAO](http://www.fao.org/family-farming/themes/agroecology/en/), [SARE](https://www.sare.org/Learning-Center/Books/Manage-Insects-on-Your-Farm/Text-Version/Recent-Advances-in-Ecological-Pest-Management/Agroecological-Strategies-to-Enhance-On-Farm-Insect-Pollinators), [Groundswell International](https://www.groundswellinternational.org/approach/agroecological-farming/))
 
-Because [xkcd](http://xkcd.com/) says so:
+Because the evidence increasingly says so:
+- [Pretty and Hine, 2001](https://www.theguardian.com/global-development-professionals-network/2016/oct/09/agroecological-farming-feed-world-africa)
+- [National Research Council, 2010](https://www.nap.edu/catalog/12832/toward-sustainable-agricultural-systems-in-the-21st-century)
+- [Rodale Institute, 2014](https://rodaleinstitute.org/assets/WhitePaper.pdf)
 
-[![xkcd
-cartoon](http://imgs.xkcd.com/comics/11th_grade.png)](http://xkcd.com/519/)
 
-And because [students really like it]({{ site.baseurl }}/about/praise).
+And because [students really like it]({{ site.baseurl }}/about/praise), 
+*we hope*.
