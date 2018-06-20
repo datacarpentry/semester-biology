@@ -12,6 +12,8 @@ in-service training and then will attempt to build on that material to make it
 maximally useful to the broader audience.
 
 To encourage folks to use this material all of the general material on this
-site is [licensed]({{ site.baseurl }}/LICENSE) under the Creative Commons Attribution License. 
+site is [licensed]({{ site.baseurl }}/LICENSE) under the Creative Commons 
+Attribution License and the software used to develop the website if [licensed]({{ site.baseurl }}/LICENSE) 
+under the MIT License. 
 
 Be sure to let us know [what you think about the course material](mailto:{{ site.email }}) or [what you think about the course website](mailto:datacarpentrysemester@weecology.org) so we can be sure to get you the best experience.
