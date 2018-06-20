@@ -58,16 +58,3 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-### Using the "Data Carpentry" trademark
-
-As detailed in the Instructional Material and Software sections, everyone is
-free to use the materials provided here for running courses as long as they
-provide attribution to the original source.
- 
-"Data Carpentry", the name, is a registered trademark. We are in the process of
-developing criteria under which a college/university course may use the "Data
-Carpentry" name (in the same way that there are [criteria for using the name for 
-self-organized workshops](http://www.datacarpentry.org/self-organized-workshops/)). 
-For now, if you are interested in including "Data Carpentry" in the name of your 
-course please email Ethan White at [datacarpentrysemester@weecology.org](mailto:datacarpentrysemester@weecology.org).
