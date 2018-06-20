@@ -5,4 +5,6 @@ title: Agroecology in Your Program
 language: Intro
 ---
 
-Insert Markdown and [links to materials file]({{ site.baseurl }}/docs/templates/materials-template)
+- [PDEC Impacts Summary](http://pdec.ifas.ufl.edu/impacts/)
+- [Work Groups Pages](http://pdec.ifas.ufl.edu/teams/u.pl)
+- [Workload Indicators Table](http://pdec.ifas.ufl.edu/workload/WorkloadIndicatorsContacts.pdf)
