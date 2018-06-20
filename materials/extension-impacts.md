@@ -17,10 +17,6 @@ challenging.
 
 ### Impact Initiatives 
 
-[PDEC Impacts Summary](http://pdec.ifas.ufl.edu/impacts/)
-
-[Work Groups Pages](http://pdec.ifas.ufl.edu/teams/u.pl)
-
 #### Agriculture/Horticulture
 
 *Initiative 1* - Increasing the sustainability, profitability, and competitiveness 
