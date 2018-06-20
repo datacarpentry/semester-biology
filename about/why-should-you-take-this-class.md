@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Why should you take this class?
+title: Why should you take this workshop?
 ---
 
 Because [we should invest more in the transition to sustainable agriculture](https://www.ucsusa.org/food-agriculture/advance-sustainable-agriculture/counting-on-agroecology).
