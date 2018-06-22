@@ -5,6 +5,8 @@ title: Help
 
 ### Course Content Documentation
 
+*These course content documents correspond to the [original website content](http://www.datacarpentry.org/semester-biology/).*
+
 - [Customize the Course]({{ site.baseurl }}/docs/course/course-customization)
 - [Fork the Course]({{ site.baseurl }}/docs/course/forking-the-course) 
 - [Manage Files]({{ site.baseurl }}/docs/course/manage-files)
@@ -13,6 +15,8 @@ title: Help
 - [Contribute Back to Data Carpentry]({{ site.baseurl }}/docs/course/contributing)
 
 ### Site Development Documentation
+
+*These site development documents correspond to the [original website](http://www.datacarpentry.org/semester-biology/).*
 
 - [Site Directory]({{ site.baseurl }}/docs/site/site-directory)
 - [Course Structure]({{ site.baseurl }}/docs/site/course-structure)
