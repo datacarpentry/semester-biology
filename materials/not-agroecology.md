@@ -16,15 +16,12 @@ Agroecology is NOT…
 
 ### Enough Food
 
-Bad
-
-- How do we produce enough food?
-
-Better
-
-- How do we produce more with less? 
-- How do we produce more nutritious food? 
-- How do we produce more available food?
+- Bad
+   - How do we produce enough food?
+- Better
+   - How do we produce more with less? 
+   - How do we produce more nutritious food? 
+   - How do we produce more available food?
 
 ### Better Technology
 
