@@ -8,7 +8,7 @@ language: Intro
 
 ### Value of biodiversity and ecosystem function
 
-<iframe src="https://widgets.figshare.com/articles/6591167/embed?show_title=1" width="568" height="426" frameborder="0"></iframe>
+<iframe src="https://widgets.figshare.com/articles/6591167/embed?show_title=0" width="568" height="426" frameborder="0"></iframe>
 
 *It is best to download this file as it may not display correctly in the
 embedded frame.*
