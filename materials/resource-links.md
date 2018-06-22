@@ -23,6 +23,7 @@ systems
 - Dennison, 2012, Darwinian Agriculture
 - Shepard, 2013, Restoration Agriculture
 - [Rodale Institute, 2014, Regnerative Organic Agriculture and Climate Change](https://rodaleinstitute.org/assets/WhitePaper.pdf)
+- [Drinkwater, 2016, Systems Research for Agriculture](https://www.southernsare.org/Grants/Systems-Research/Systems-Research-for-Agriculture)
 - Rosset and Altieri, 2017, Agroecology: Science and Politics
 
 #### Online Resources
@@ -31,3 +32,5 @@ systems
 - [TREC Agroecology Lab](https://trec.ifas.ufl.edu/agroecology/)
 - [UF Agroecology Program](https://agroecology.ifas.ufl.edu/)
 - [Food and Agriculture Organization of the United Nations](http://www.fao.org/agroecology/overview/en/)
+- [International Panel of Experts on Sustainable Food Systems](http://www.ipes-food.org/agroecology)
+- [Sociedad Cientifica Latinoamericana de Agroecologia](http://agroeco.org/)
