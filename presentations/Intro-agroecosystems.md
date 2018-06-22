@@ -5,5 +5,5 @@ title: The Agroecosystems Concept
 language: Intro
 ---
 
-- [The Agroecosystem Concept]({{ site.baseurl }}/materials/agroecosystem-concept)
-- [Agroecosystem Assessment]({{ site.baseurl }}/materials/agroecosystem-assessment)
+- [The Agroecosystem Concept]({{ site.baseurl }}/materials/agroecosystems-concept)
+- [Agroecosystem Assessment]({{ site.baseurl }}/materials/agroecosystems-assessment)
