@@ -16,8 +16,6 @@ title: Programming Resources
 -   [Download page for Wing
     IDE](http://wingide.com/downloads/wingide-101/) (go to the bottom of
     the page for the free version - Wing IDE 101)
--   [Installing Nose on Windows](installing-nose-windows) (Linux and Mac
-    folks can install from the appropriate repositories)
 
 ### Programming in Python
 

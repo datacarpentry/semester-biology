@@ -5,8 +5,8 @@ title: Lectures
 
 ### SQL
 
-* [Introduction to Databases](SQL-intro)
-* [Database Structure and Joins](SQL-joins)
+* [Introduction to Databases](SQL-data)
+* [Database Structure and Joins](SQL-queries)
 
 ### R
 
