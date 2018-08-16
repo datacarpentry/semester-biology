@@ -15,5 +15,5 @@ language: R
 
 * Readings
 
-  * [NEON Raster Tutorial](http://neondataskills.org/tutorial-series/raster-data-series/)
-  * [NEON Vector Tutorial](http://neondataskills.org/tutorial-series/vector-data-series/)
+  * [NEON Raster Tutorial](https://www.neonscience.org/resources/series/introduction-working-raster-data-r)
+  * [NEON Vector Tutorial](http://neondataskills.org/vector-data-series/)
