@@ -1,10 +1,15 @@
 <h4> Exercises </h4>
 <ol>
 {% for exercise in page.exercises %}
+  {% assign exercise_loop = forloop %}
   {% for otherpage in site.pages %}
     {% if exercise == otherpage.title and page.language == otherpage.language and otherpage.layout == 'exercise' %}
       <li><h4><a href="{{ site.baseurl }}{{ otherpage.url }}">
-        <font color="000000">{{ otherpage.title | prepend: "-- " | append: " --" }}</font></a></h4>
+        {% if page.points[exercise_loop.index0] %}
+        <font color="000000">{{ otherpage.title | append: " (" }}{{page.points[exercise_loop.index0] | append: " pts)"}}</font></a></h4>
+        {% else %}
+        <font color="000000">{{ otherpage.title }}</font></a></h4>
+        {% endif %}
         {{ otherpage.content }}
         {% capture output_file %}{{ otherpage.url | remove: 'exercises' | remove: 'docs/templates'| remove: '/' | prepend: '/solutions/' }}{% endcapture %}
         {% for solution in site.static_files %}

@@ -4,6 +4,7 @@ element: assignment
 title: Working with Data
 language: R
 exercises: ['dplyr', 'Shrub Volume Data Basics', 'Shrub Volume Aggregation', 'Shrub Volume Join', 'Fix the Code', 'Link to Databases', 'Collect from Databases']
+points: [10, 10, 10, 15, 15, 20, 20]
 ---
 
 #### Learning Objectives

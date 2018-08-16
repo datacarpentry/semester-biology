@@ -6,6 +6,7 @@ language: SQL
 exercises: ['SELECT', 'WHERE', 'ORDER BY', 'DISTINCT', 'Missing Data', 'GROUP
 BY', 'COUNT', 'SUM', 'Basic Join', 'Multi-table Join', 'Filtered Join',
 'Detailed Join', 'Aggregated Join']
+points: [5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10, 10]
 ---
 
 #### Learning Objectives
