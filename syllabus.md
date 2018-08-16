@@ -119,17 +119,6 @@ Students completing this course will be able to:
 * Apply general data management and analysis concepts to other programming
   languages and database management systems
 
-### Course Project
-
-Projects offer an opportunity to work with bigger data-related computing tasks
-and learn specific computing tools you need for your research. Projects can
-involve programming, databases, or both. They should be on
-something you are excited about.
-
-As a rough guideline projects should represent ~30-40 hours of work. Some class
-time will be provided for working on projects.
-
-Get more details about the project from the [Projects Introduction]({{ site.baseurl}}/materials/projects).
 
 ### How this course relates to the Student Learning Outcomes in Wildlife Ecology and Conservation
 
@@ -270,13 +259,10 @@ and I will do my best to help.**
 
 ## Grading Policies
 
-Grading for this course will revolve around a combination of assignments (75%)
-and an independent project (25%).
-
-There will be 11 equally weighted assignments. One problem from each assignment
-(selected at the instructors discretion after the assignments have been
-submitted) will receive a thorough code review and a detailed grade. Other
-problems will be graded as follows:
+Grading for this course is based on 13 equally weighted assignments. One problem
+from each assignment (selected at the instructors discretion after the
+assignments have been submitted) will receive a thorough code review and a
+detailed grade. Other problems will be graded as follows:
 
 * Produces the correct answer using the requested approach: 100%
 * Generally uses the right approach, but a minor mistake results in an incorrect
