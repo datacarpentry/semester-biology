@@ -3,20 +3,20 @@ layout: page
 title: Syllabus
 catalog: WIS 6934
 credits: 3
-semester: Fall 2017
-professor: Dr. Ethan White and Kristina Riemer
+semester: Fall 2018
+professor: Dr. Ethan White
 office: Room 1 in Building 150 (just north of Newins-Zeigler)
 email: ethanwhite@ufl.edu
 phone: 352-294-2081
-schedule: ['Tuesdays, 4:05-4:55, 222 Newins-Ziegler Hall',
-           'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
-office_hours: Monday 2-3:15 and Wednesday 11-12
+schedule: ['Tuesdays, 12:50-1:40', 'Fridays, 11:45-1:40']
+location: 219 Newins-Ziegler Hall
+office_hours: Monday 2-3:15
 office_hours_location: Newins-Zeigler 203
 TA: Andrew Marx
 TA_email: andrewjmarx@ufl.edu
 ---
 
-## {{ site.title }} 
+## {{ site.title }}
 
 {{ page.catalog }}, {{ page.credits }} Credits, {{ page.semester }}
 
@@ -27,14 +27,17 @@ TA_email: andrewjmarx@ufl.edu
 Office: {{ page.office }}
 
 Email (best way to contact us):
-[{{ page.email }}](mailto:{{ page.email }}), [kristina.riemer@ufl.edu](mailto:kristina.riemer@ufl.edu)
+[{{ page.email }}](mailto:{{ page.email }})
 
 Phone: {{ page.phone }}
 
 
-### Times & Location
+### Location
 
-**Note: class is in different locations depending on the day of the week**
+{{location}}
+
+
+### Times
 
 {% for class in page.schedule %}
   {{ class }}
@@ -78,7 +81,7 @@ There is no required text book for this class.
 
 
 ### Course Description
- 
+
 Computers are increasingly essential to the study of all aspects of
 biology. Data management skills are needed for entering data without errors,
 storing it in a usable way, and extracting key aspects of the data for
@@ -171,24 +174,18 @@ There are no quizzes or exams in this course.
 
 ### Make-up policy
 
-Late assignments will be docked 20% and will not be accepted more than 48 hours
-late except in cases of genuine emergencies that can be documented by the
-student or in cases where this has been discussed and approved in advance. This
-policy is based on the idea that in order to learn how to use computers well,
-students should be working with them at multiple times each week. Time has been
-allotted in class for working on assignments and students are expected to work
-on them outside of class. It is intended that you should have finished as much
-of the assignment as you can based on what we have covered in class by the
-following class period. Therefore, even if something unexpected happens at the
-last minute you should already be close to done with the assignment. This policy
-also allows rapid feedback to be provided to students by returning assignments
-quickly.
+Life happens and therefore there is an automatic grace period of 48 hours for
+the submission of late assignments with no need to request an extension.
+However, it is highly recommended that you submit assignments on time when
+possible because assignments build on one another and it can be hard to catch up
+if you fall behind. Reasonable requests for longer extensions will also be granted.
 
 
 ### Assignment policy
 
 Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
-submitted via Canvas.
+submitted via Canvas. This allows you to be finished with one week's material
+before starting the next week's material.
 
 
 ### Course Technology
@@ -233,9 +230,9 @@ courtesy in all email messages, threaded discussions and chats.
 
 For issues with technical difficulties for E-learning in Canvas, please contact the UF Help Desk at:
 
-* Learning-support@ufl.edu 
+* Learning-support@ufl.edu
 * (352) 392-HELP - select option 2
-* https://lss.at.ufl.edu/help.shtml 
+* https://lss.at.ufl.edu/help.shtml
 
 Any requests for make-ups due to technical issues MUST be accompanied by the
 ticket number received from LSS when the problem was reported to them. The
@@ -297,5 +294,5 @@ The details course schedule is available on the course website at:
 
 **Disclaimer:** This syllabus represents my current plans and objectives. As we
 go through the semester, those plans may need to change to enhance the class
-learning opportunity. Such changes, communicated clearly, are not unusual and
-should be expected.
+learning opportunity. Such changes will be communicated clearly both on the
+website and in class.
