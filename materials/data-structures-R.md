@@ -114,4 +114,4 @@ shrub_data <- read.csv('data/shrub-dimensions-labeled.csv')
 
 > Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
 
-> Assign remaining exercises. Submit as compressed main folder, see [Assignment Submission & Checklist]({{ site.baseurl. }}/materials/turn-in-checklist)
+> Assign remaining exercises. Submit as compressed main folder, see [Assignment Submission & Checklist]({{ site.baseurl }}/materials/turn-in-checklist)
