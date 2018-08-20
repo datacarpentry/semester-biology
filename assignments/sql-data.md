@@ -3,9 +3,8 @@ layout: page
 element: assignment
 title: Data Entry and Storage
 language: SQL
-exercises: ['Improving Messy Data', 'Data entry validation in Excel', 'Importing
-Data']
-points: [30, 40, 30]
+exercises: ['Improving Messy Data', 'Data entry validation in Excel']
+points: [50, 50]
 ---
 
 #### Learning Objectives

@@ -6,6 +6,5 @@ language: SQL
 ---
 
 
-* [Data Organization](http://kbroman.org/dataorg/)
+* [Data Organization](https://doi.org/10.1080/00031305.2017.1375989)
 * [Quality Assurance and Control](http://www.datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control)
-* [Relational Databases Structure and Import](http://www.datacarpentry.org/sql-ecology-lesson/00-sql-introduction)
