@@ -33,14 +33,31 @@ surveys
 colnames(surveys)
 ```
 
-### Run queries review
+### Build up query
 
 ```
-query <- "SELECT genus, species, COUNT(*)
-          FROM surveys JOIN species
-          ON surveys.species_id = species.species_id
-          GROUP BY genus, species"
-species_counts <- tbl(portaldb, sql(query))
+column_query <- "SELECT genus, species
+                 FROM species"
+
+tbl(portaldb, sql(column_query))
+```
+
+```
+join_query <- "SELECT genus, species
+               FROM surveys
+               JOIN species
+               ON surveys.species_id = species.species_id"
+
+tbl(portaldb, sql(column_query))
+```
+```
+count_query <- "SELECT genus, species, COUNT(*)
+                FROM surveys
+                JOIN species
+                ON surveys.species_id = species.species_id
+                GROUP BY genus, species"
+
+tbl(portaldb, sql(count_query))
 ```
 
 > Do [Exercise 1 - Source and Query]({{ site.baseurl }}/exercises/Dplyr-databases-source-and-query-R/).
