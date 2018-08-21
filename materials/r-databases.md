@@ -68,7 +68,10 @@ tbl(portaldb, sql(count_query))
 ### Write new information to database
 
 ```
+species_counts <- data.frame(tbl(portaldb, sql(count_query)))
 copy_to(portaldb, species_counts)
+portaldb = src_sqlite("portal_mammals.sqlite")
+portaldb
 ```
 
 > Show `species_counts` table *NOT* in `portal_mammals.sqlite`.
@@ -76,6 +79,8 @@ copy_to(portaldb, species_counts)
 ```
 copy_to(portaldb, species_counts, temporary=FALSE, 
         name="SpeciesCounts")
+portaldb = src_sqlite("portal_mammals.sqlite")
+portaldb
 ```
 
 > Show `SpeciesCounts` table in `portal_mammals.sqlite` with new name.
