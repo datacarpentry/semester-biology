@@ -30,7 +30,7 @@ tbl(portaldb, "plots")
 
 surveys <- tbl(portaldb, "surveys") %>% collect()
 surveys
-surveys$ops$vars
+colnames(surveys)
 ```
 
 ### Run queries review
