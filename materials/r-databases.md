@@ -8,7 +8,6 @@ language: R
 > Remember to
 >    
 > * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
-> * open `portal_mammals.sqlite` in SQLite Manager. 
 > * make sure the copy you are going to use in class does not have the `SpeciesCounts` table or view.
 
 * We've already seen briefly how to work with databases using `dplyr`.
@@ -50,8 +49,6 @@ species_counts <- tbl(portaldb, sql(query))
 
 
 ### Write new information to database
-
-> Show the original `portal_mammals.sqlite` in SQLite Manager.
 
 ```
 copy_to(portaldb, species_counts)
