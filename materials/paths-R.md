@@ -51,6 +51,8 @@ list.files()
 shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 ```
 
+* Download a file into working directory using `download.file()`
+
 * For data not in the working directory - two options
     * tell R where it is
     * change the working directory to where it is
@@ -75,8 +77,8 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 * Can switch between projects using `File` -> `Recent Projects` or `Open Project`
 * Keeps track the state of RStudio when you last worked with that project
 
-> Create a project for this assignment
-> Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
+> * Create a project for this assignment
+> * Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
 
 ### Assignments
 
