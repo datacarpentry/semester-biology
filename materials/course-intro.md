@@ -38,7 +38,6 @@ title: Course Introduction
     * Work on exercises in class
 	* Will require additional programming time after class
 	* Due end of the day on Monday
-	* 75% of grade
 
 * Projects
     * Designed to let you learn about bigger computing efforts
@@ -71,7 +70,6 @@ title: Course Introduction
 ### Office Hours
 
 * Monday: 2-3:15 in NZ 203
-* Wednesday: 11 in NZ 203
 
 ### Canvas
 
