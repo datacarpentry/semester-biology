@@ -5,6 +5,12 @@ title: Data Entry
 language: Excel
 ---
 
+### Plan
+
+* What's the first thing to do when you are ready to enter data?
+* Plan a data structure follows tidy data rules
+* Ideally plan before you collect data and match datasheets to entry format
+
 ### Where to enter data
 
 * Spreadsheet
@@ -20,7 +26,7 @@ protection against bad data being entered
 > Show posts/papers on dates and gene names
 >
 > * [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7)
-> * [https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/](https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/)
+> * [https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/)
 
 ### Quality Assurance
 
