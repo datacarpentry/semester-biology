@@ -6,11 +6,12 @@ language: R
 ---
 
 A built-in function is one that you don't need to install and load a package to
-use. To learn how to use a function use the `help()` function. `help()` takes
-one parameter, the name of the function that you want information about (*e.g.,*
-`help(abs)`).  Familiarize yourself with the built-in functions `abs()`,
-`round()`, `sqrt()`, `tolower()`, and `toupper()`.  Use these built-in functions
-to print the following items:
+use. To learn how to use a function you can use the `help()` function or the
+`Help` tab in RStudio. `help()` takes one parameter, the name of the function
+that you want information about (*e.g.,* `help(abs)`) or type the name into the
+search box on the `Help` tab.  Familiarize yourself with the built-in functions
+`abs()`, `round()`, `sqrt()`, `tolower()`, and `toupper()`.  Use these built-in
+functions to print the following items:
 
 1. The absolute value of -15.5.
 2. 4.483847 rounded to one decimal place. *The function `round()` takes two
@@ -24,6 +25,7 @@ to print the following items:
 6. Assign the value of the square root of 2.6 to a variable. Then round the
    variable you've created to 2 decimal places and assign it to another
    variable. Print out the rounded value.
-7. Do the same thing as task 6 (*immediately above*), but instead of creating
-   the intermediate variable, perform both the square root and the round on a
-   single line by putting the `sqrt()` call inside the `round()` call.
+
+*Challenge*: Do the same thing as task 6 (*immediately above*), but instead of
+creating the intermediate variable, perform both the square root and the round
+on a single line by putting the `sqrt()` call inside the `round()` call.

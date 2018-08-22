@@ -11,7 +11,7 @@ then prints out the resulting value.
 ```
 mass_kg <- 2.62
 mass_g <- mass_kg * 1000
-print(mass_g)
+mass_g
 ```
 
 Modify this code to create a variable that stores a body mass in pounds and

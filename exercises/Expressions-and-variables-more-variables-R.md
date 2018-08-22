@@ -15,7 +15,7 @@ of a single individual. An average individual weighs 250 grams.
 *Neotoma albigula*.
 3. Create a variable `number` and assign it the number of individuals.
 4. Create a variable `biomass` and assign it a value by multiplying
-the two variables together.
+the `grams` and `number` variables together.
 5. Convert the value of `biomass` into kilograms (there are 1000
 grams in a kilogram so divide by 1000) and assign this value to a new
 variable.
