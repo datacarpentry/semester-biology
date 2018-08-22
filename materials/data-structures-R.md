@@ -63,15 +63,6 @@ y <- matrix(1:3, ncol = 1)
 x %*% y
 ```
 
-### Projects
-
-* Problems with working directories
-* Turn folder into project
-* Creates .Rproj file
-    * Isn’t project itself
-    * Contains project info
-    * Don’t change manually
-
 ### Data frames
 
 * A list of equal length vectors grouped together
@@ -96,22 +87,9 @@ surveys <- data.frame(sites, density_ha, area_ha)
 ### Importing data
 
 * `read.csv()`
-* Download [the file]({{ site.baseurl }}/data/shrub-dimensions-labeled.csv) for the Shrub Volume Data Frame exercise
-* Move to new data subfolder
-* Load it
+* Main argument is the location of the data - url or path on computer
+* Go to `Datasets` page on site and copy `Shrub dimensions` url
 
 ```
-shrub_data <- read.csv('data/shrub-dimensions-labeled.csv')
+shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
 ```
-
-### File paths
-
-* Use relative path with projects
-* Project is self-contained unit
-* DO NOT USE setwd() FOR THIS CLASS
-    * Code doesn't work on different computers
-    * Even worse if collaborating with several people
-
-> Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
-
-> Assign remaining exercises. Submit as compressed main folder, see [Assignment Submission & Checklist]({{ site.baseurl }}/materials/turn-in-checklist)
