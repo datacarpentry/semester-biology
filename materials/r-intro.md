@@ -39,7 +39,7 @@ language: R
 4 * 2 / 3
 ```
 
-* Write code in text editor and the run either by line or all code
+* Write code in text editor and run either by line or all code
 
 ```
 2 + 5
@@ -107,7 +107,7 @@ volume
 ```
 > Create assignment script, put in new folder
 
-> Do [Exercise 1 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
+> Do [Exercise 1.1-1.3 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
 
 > Do [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
 
@@ -143,5 +143,18 @@ pi_approx <- round(3.14159, 2)
 pi_approx
 ```
 
-> Do [Exercise 4 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
+> Do [Exercise 4.1-4.3 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
 
+* If you don't save the output of a function then there is no way to access it
+
+```
+mass_kg <- 0.5163
+round(mass_kg, 2)
+```
+
+* It is common to forget this when dealing with variables and expect the
+  variable to have changed
+
+```
+mass_kg
+```
