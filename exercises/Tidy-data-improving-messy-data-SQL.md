@@ -15,11 +15,12 @@ spreadsheet.
 Think about what could be improved about this data. In a text file (*to be
 turned in as part of the assignment*):
 
-1-5\. Describe five things about this data that are not tidy and how you could
-      fix each of those issues.
+1.   Describe five things about this data that are not tidy and how you could
+     fix each of those issues.
 
-6\.   Could this data easily be imported into a database in its current form?
+2.   Could this data easily be imported into a programming language or a
+     database in its current form?
 
-7\.   Do you think it's a good idea to enter the data like this and clean it up
-      later, or to have a good data structure for analysis by the time data is
-      being entered? Why?
+3.   Do you think it's a good idea to enter the data like this and clean it up
+     later, or to have a good data structure for analysis by the time data is
+     being entered? Why?
