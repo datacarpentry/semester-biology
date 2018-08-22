@@ -1,11 +1,14 @@
 ---
 layout: page
 element: notes
-title: Make Sure Code Runs
+title: Basic Reproducibility
 language: R
 ---
 
-* Review important steps for making sure your code runs everywhere
+### Introduction to Reproducibility
+
+* Learn to structure our analysis so that it can be recreated with a single click
+* Make sure your code runs anywhere
 * Important for class - your code has to run the on graders computer
 * Important for science
     * next day (who has gotten code working & had it not work the next day?)
