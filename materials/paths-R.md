@@ -7,7 +7,7 @@ language: R
 
 ### Introduction to Paths
 
-* To use data that stored a computer need to tell R where it is
+* To use data stored on a computer we need to tell R where it is
 * This is done using paths
 * Paths can be absolute
 
