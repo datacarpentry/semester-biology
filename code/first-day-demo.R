@@ -2,13 +2,14 @@ library(dplyr)
 library(ggplot2)
 library(raster)
 library(rdataretriever)
+library(DBI)
 
 if (!file.exists('bbs.sqlite')){
   rdataretriever::get_updates()
   rdataretriever::install('breed-bird-survey', 'sqlite', 'bbs.sqlite')
 }
 
-bbs_db <- src_sqlite('bbs.sqlite')
+bbs_db <- dbConnect(RSQLite::SQLite(), 'bbs.sqlite')
 surveys <- tbl(bbs_db, "breed_bird_survey_counts")
 sites <- tbl(bbs_db, "breed_bird_survey_routes") %>%
   data.frame()
