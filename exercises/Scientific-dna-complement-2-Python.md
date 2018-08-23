@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Scientific
 title: DNA Complement 2
-language: Python
+topic: Python
 ---
 
 *The data for this problem is no longer available.*

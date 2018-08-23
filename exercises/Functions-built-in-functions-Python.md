@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Functions
 title: Built-in Functions
-language: Python
+topic: Python
 ---
 
 Use the built-in functions `abs()`, `round()`, `pow()`, `int()`, `float()`, and

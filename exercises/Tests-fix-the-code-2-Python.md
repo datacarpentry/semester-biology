@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Tests
 title: Fix the Code 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to [Fix the Code 1]({{ site.baseurl }}/exercises/Debugging-fix-the-code-1-Python).

@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Using Python to Interface with Databases
-language: Python
+topic: Python
 ---
 
 We will use [SQLite](http://sqlite.org/) to discuss how to use Python

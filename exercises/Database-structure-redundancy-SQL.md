@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Database Structure
 title: Redundancy
-language: SQL
+topic: SQL
 ---
 
 Here's where we tell you that you have been working with a simplified version of the Portal database. (*We're sure that you had suspicions that the data was too clean, anyway*). Download the original [`Plots` table]({{ site.baseurl }}/data/Portal-plots-original.csv) and follow the steps from [Importing Data]({{ site.baseurl }}/exercises/Database-control-importing-data-SQL). Name the `New Database` something like `portal_mammals_original.sqlite`. Then,

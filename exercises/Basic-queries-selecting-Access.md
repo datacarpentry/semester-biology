@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Basic Queries
 title: Selecting
-language: Access
+topic: Access
 ---
 
 For this and many of the following problems you will create queries that

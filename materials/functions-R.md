@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Functions
-language: R
+topic: R
 ---
 
 ### Understandable and reusable code

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Add and Revert Comment
-language: R
+topic: R
 ---
 
 Add a comment to the start of the `logistic_growth.R` file.

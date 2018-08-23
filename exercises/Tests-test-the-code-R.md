@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Tests
 title: Test the Code
-language: R
+topic: R
 ---
 
 This is a follow up to [Debug the Code]({{ site.baseurl }}/exercises/Debugging-debug-the-code-R).

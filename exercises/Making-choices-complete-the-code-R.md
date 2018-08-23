@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Making Choices
 title: Complete the Code
-language: R
+topic: R
 ---
 
 The following function is intended to check if two geographic points are close

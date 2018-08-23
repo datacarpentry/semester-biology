@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: For Loops
 title: Repeat Strings
-language: Python
+topic: Python
 ---
 
 [Microsatellite's](http://en.wikipedia.org/wiki/Microsatellite_%28genetics%29)

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Functions
 title: Nested Functions
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Use and Modify Functions problem]({{ site.baseurl }}/exercises/Functions-use-and-modify-Python).

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Making Choices
 title: Choice Operators
-language: R
+topic: R
 ---
 
 Create the following variables.

@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Problem Decomposition
-language: R
+topic: R
 ---
 
 ### Approaches to solving problems

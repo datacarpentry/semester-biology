@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Putting It All Together
 title: Size-biased Extinction
-language: R
+topic: R
 ---
 
 There were a relatively large number of extinctions of mammalian species

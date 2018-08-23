@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Data Frames
 title: Database CSV
-language: R
+topic: R
 ---
 
 Throughout this course we will slowly build on integrating database management

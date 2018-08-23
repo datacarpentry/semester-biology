@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Biopython Data Types & Methods
-language: Python
+topic: Python
 ---
 
 Sequence objects

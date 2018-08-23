@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Projects Structure
-language: R
+topic: R
 ---
 
 * [Project Structure]({{ site.baseurl }}/materials/project-structure)

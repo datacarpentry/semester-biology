@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Make Sure Code Runs
-language: R
+topic: R
 ---
 
 * Review important steps for making sure your code runs everywhere

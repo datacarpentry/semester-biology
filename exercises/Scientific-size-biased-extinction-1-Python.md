@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Scientific
 title: Size-biased Extinction 1
-language: Python
+topic: Python
 ---
 
 There were a relatively large number of [extinctions of mammalian

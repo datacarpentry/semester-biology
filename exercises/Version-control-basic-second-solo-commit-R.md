@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control Basic
 title: Second Solo Commit
-language: R
+topic: R
 ---
 
 This is a follow up to

@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Other Data Structures
-language: R
+topic: R
 ---
 
 > Remind students to [install Bioconductor](http://www.bioconductor.org/install/).

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Functions
 title: String Data
-language: R
+topic: R
 ---
 
 This is a follow up to [Strings from Data]({{ site.baseurl }}/exercises/Strings-strings-from-data-R/).

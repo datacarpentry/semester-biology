@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Expressions and Variables
 title: More Variables
-language: Python
+topic: Python
 ---
 
 Calculate a total biomass in grams for 3 White-throated Woodrats

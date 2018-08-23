@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Advanced Queries
 title: Joins 2
-language: Access
+topic: Access
 ---
 
 You are curious about what other kinds of animals get caught in the Sherman

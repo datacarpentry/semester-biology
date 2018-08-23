@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Introduction to Databases
-language: SQL
+topic: SQL
 ---
 
 > Remember to 

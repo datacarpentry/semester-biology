@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Data Entry
-language: Excel
+topic: Excel
 ---
 
 ### Where to enter data

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Richness Revert
-language: Python
+topic: Python
 ---
 
 This is a follow up question to [Predict Richness]({{ site.baseurl }}/exercises/Version-control-predict-richness-Python).

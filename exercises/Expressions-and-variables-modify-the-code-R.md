@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Expressions and Variables
 title: Modify the Code
-language: R
+topic: R
 ---
 
 The following code calculates the total net primary productivity (NPP)

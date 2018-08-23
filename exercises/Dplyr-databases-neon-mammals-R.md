@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: dplyr Databases
 title: NEON Mammals
-language: R
+topic: R
 ---
 
 The [National Ecological Observatory Network](http://www.neoninc.org) has entered into the construction phase of development and they are already making their [data available](http://data.neonscience.org/home)! NEON collects ecological and environmental data for representative regions of the United States at local to continental scales, including, *of course!*, small mammal [box trapping](https://en.wikipedia.org/wiki/Sherman_trap). We've retrieved NEON's existing small mammal data from [Ordway-Swisher Biological Station](http://ordway-swisher.ufl.edu/) [[NEON Data Use Policy](http://data.neonscience.org/data-policy)]. 

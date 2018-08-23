@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control Basic
 title: Pulling and Pushing
-language: R
+topic: R
 ---
 
 This is a follow up to

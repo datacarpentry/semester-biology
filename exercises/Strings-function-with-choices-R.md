@@ -2,7 +2,7 @@
 layout: exercise 
 exercise_type: Strings
 title: Function with Choices
-language: R
+topic: R
 ---
 
 Write a function that concatenates and prints:

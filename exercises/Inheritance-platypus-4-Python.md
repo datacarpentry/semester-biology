@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Inheritance
 title: Platypus 4
-language: Python
+topic: Python
 ---
 
 We just realized that in our first platypus experiment, some eggs were

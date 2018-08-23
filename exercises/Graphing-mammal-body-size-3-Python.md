@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Graphing
 title: Mammal Body Size 3
-language: Python
+topic: Python
 ---
 
 This is a follow up to [Mammal Body Size 2]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-2-Python).

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Aggregation
 title: SUM
-language: SQL
+topic: SQL
 ---
 
 Write a query that returns the number of individuals of each species

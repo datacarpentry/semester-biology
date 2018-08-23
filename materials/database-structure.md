@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Database Structure
-language: SQL
+topic: SQL
 ---
 
 ## Five basic rules of database structure

@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Exporting data from Python
-language: Python
+topic: Python
 ---
 
 #### List of lists into CSV file

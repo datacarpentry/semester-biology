@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Database Queries
-language: SQL
+topic: SQL
 ---
 
 * [Databases Intro](https://www.youtube.com/watch?v=kaKa6N9lEG8)

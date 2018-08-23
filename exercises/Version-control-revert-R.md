@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Revert
-language: R
+topic: R
 ---
 
 You're working late and you sit down to edit `logistic_growth.R`. You

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Lists
 title: Nested Lists 1
-language: Python
+topic: Python
 ---
 
 Use slices from the following list of lists that contains information

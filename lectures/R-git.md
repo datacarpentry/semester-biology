@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Version Control
-language: R
+topic: R
 ---
 
 * [Version Control]({{ site.baseurl }}/materials/version-control-R)

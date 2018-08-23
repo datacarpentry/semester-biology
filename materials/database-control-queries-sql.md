@@ -2,7 +2,7 @@
 layout: page
 element: notes 
 title: Database Control Queries
-language: SQL
+topic: SQL
 ---
 
 * This is an advanced treatment of [Database Control]({{ site.baseurl }}/materials/database-control-sql) using queries instead of SQLite Manager tabs.

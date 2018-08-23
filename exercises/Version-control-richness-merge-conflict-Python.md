@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Richness Merge Conflict
-language: Python
+topic: Python
 ---
 
 This is a follow up question to [Richness Revert]({{ site.baseurl }}/exercises/Version-control-richness-revert-Python).

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Lists
 title: DNA Complement 1
-language: Python
+topic: Python
 ---
 
 Write a function that returns the complement of an arbitrary DNA strand

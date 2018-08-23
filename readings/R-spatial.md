@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Working with Spatial Data
-language: R
+topic: R
 ---
 
 * Topics

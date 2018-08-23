@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Walkthrough R
-language: R
+topic: R
 ---
 
 ### Basic Workflow

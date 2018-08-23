@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Vectors
 title: Bird Banding
-language: R
+topic: R
 ---
 
 The number of birds banded at a series of sampling sites has been counted by

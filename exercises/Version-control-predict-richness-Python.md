@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Predict Richness
-language: Python
+topic: Python
 ---
 
 This is a follow up question to

@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Database Queries
-language: SQL
+topic: SQL
 ---
 
 

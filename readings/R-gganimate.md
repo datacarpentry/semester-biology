@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: gganimate
-language: R
+topic: R
 ---
 
 * Topics

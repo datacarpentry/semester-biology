@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Spatial Data Introduction
-language: R
+topic: R
 --- 
 
 > Remember to download and put into data subdirectory:

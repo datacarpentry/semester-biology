@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: dplyr
 title: Fix the Code
-language: R
+topic: R
 ---
 
 This is a follow-up to

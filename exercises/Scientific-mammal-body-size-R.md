@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Scientific
 title: Mammal Body Size
-language: R
+topic: R
 ---
 
 There were a relatively large number of extinctions of mammalian species

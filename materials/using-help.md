@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Using Python's built-in help
-language: Python
+topic: Python
 ---
 
 You can access Python's built-in help using the `help()` function with the name

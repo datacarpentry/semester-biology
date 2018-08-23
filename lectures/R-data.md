@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Working with Data
-language: R
+topic: R
 ---
 
 * [dplyr]({{ site.baseurl }}/materials/dplyr)

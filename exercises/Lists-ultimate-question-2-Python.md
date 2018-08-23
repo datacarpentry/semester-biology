@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Lists
 title: Ultimate Question 2
-language: Python
+topic: Python
 ---
 
 This is a follow up on the [Ultimate Question 1 problem]({{ site.baseurl }}/exercises/Strings-ultimate-question-1-Python).  Copy the

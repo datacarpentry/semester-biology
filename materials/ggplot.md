@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Graphing using ggplot
-language: R
+topic: R
 ---
  
 > Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys

@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Data Visualization
-language: R
+topic: R
 ---
 
 * Topics

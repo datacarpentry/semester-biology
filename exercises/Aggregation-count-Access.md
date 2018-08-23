@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Aggregation
 title: Count
-language: Access
+topic: Access
 ---
 
 Write a query that returns the number of individuals of all species

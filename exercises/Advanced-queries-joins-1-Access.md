@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Advanced Queries
 title: Joins 1
-language: Access
+topic: Access
 ---
 
 In a new database import the main table from the Portal database (remember that

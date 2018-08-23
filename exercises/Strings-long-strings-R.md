@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Strings
 title: Long Strings
-language: R
+topic: R
 ---
 
 For the DNA sequence below determine the following properties and print them to

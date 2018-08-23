@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Lists
 title: Bird Banding 3
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Bird Banding 1]({{ site.baseurl }}/exercises/Lists-bird-banding-1-Python) and [Bird Banding 2]({{ site.baseurl }}/exercises/Lists-bird-banding-2-Python) problems.

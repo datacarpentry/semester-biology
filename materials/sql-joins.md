@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Joins
-language: SQL
+topic: SQL
 ---
 
 > Remember to

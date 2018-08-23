@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Loops
 title: Multiple Files
-language: R
+topic: R
 ---
 
 This is a follow-up to [stringr]({{ site.baseurl }}/exercises/Loops-stringr-R).

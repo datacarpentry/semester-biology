@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Review and Challenge Exercises
-language: R
+topic: R
 exercises: ['Vector Review', 'Data Management Review', 'Unit Conversion Challenge', 'Tree Biomass Challenge']
 ---
 

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Expressions and Variables
 title: Basic Expressions
-language: Python
+topic: Python
 ---
 
 Think about what value each of the following expressions will return?

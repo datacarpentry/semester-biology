@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Conditionals
-language: R
+topic: R
 ---
 
 > INSTRUCTOR NOTE: Code examples should generally build up by modifying the

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Data Analysis
 title: Code Shuffle
-language: Python
+topic: Python
 ---
 
 We are interested in understanding the monthly variation in precipitation in

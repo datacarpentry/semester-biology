@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Strings
 title: Split Strings
-language: R
+topic: R
 ---
 
 You have a data file with a single `"taxonomy"` column in it. This column 

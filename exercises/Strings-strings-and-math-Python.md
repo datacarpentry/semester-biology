@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Strings
 title: Strings and Math
-language: Python
+topic: Python
 ---
 
 The length of an organism is typically strongly correlated with its body

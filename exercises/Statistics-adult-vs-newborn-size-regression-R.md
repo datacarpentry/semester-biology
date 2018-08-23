@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Statistics
 title: Adult vs Newborn Size Regression
-language: R
+topic: R
 ---
 
 This is a follow up to [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).

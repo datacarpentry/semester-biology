@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: gganimate
-language: R
+topic: R
 ---
 
 * [gganimate]({{ site.baseurl }}/materials/gganimate)

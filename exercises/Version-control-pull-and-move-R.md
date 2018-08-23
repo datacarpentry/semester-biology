@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Pull and Move
-language: R
+topic: R
 ---
 
 *Version control exercises 6-9 assume that you have an instructor adding and

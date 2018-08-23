@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Basic
 title: Data Management Review
-language: Python
+topic: Python
 ---
 
 Dr. Granger is interested in studying the relationship between the

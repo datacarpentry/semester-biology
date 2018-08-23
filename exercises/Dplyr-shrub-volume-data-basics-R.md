@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: dplyr
 title: Shrub Volume Data Basics
-language: R
+topic: R
 ---
 
 This is a follow-up to [Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).

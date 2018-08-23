@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Database Control
 title: Adding Records
-language: SQL
+topic: SQL
 ---
 
 Add the following note to the `field_notes` table in the Portal database

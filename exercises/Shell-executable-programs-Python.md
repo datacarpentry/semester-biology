@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Shell
 title: Executable Programs
-language: Python
+topic: Python
 ---
 
 This is a follow up on the [Finding Things problem]({{ site.baseurl }}/exercises/Shell-finding-things-Python).

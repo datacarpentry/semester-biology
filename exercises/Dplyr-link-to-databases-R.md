@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: dplyr
 title: Link to Databases
-language: R
+topic: R
 ---
 
 Let's access an SQL database directly from R using `dplyr`.

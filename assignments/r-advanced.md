@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Advanced Topics
-language: R
+topic: R
 exercises: ['Species Area Relationship', 'Find the Rodents', 'Debug the Code', 'Test the Code']
 ---
 

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Scientific
 title: Tree Biomass Challenge
-language: R
+topic: R
 ---
 
 Understanding the total amount of biomass (the total mass of all individuals) in 

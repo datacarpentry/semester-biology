@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: dplyr with Databases
-language: R
+topic: R
 ---
 
 > Remember to

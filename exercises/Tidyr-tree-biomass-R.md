@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Tidyr
 title: Tree Biomass
-language: R
+topic: R
 ---
 
 Estimating the total amount of biomass (*the total mass of all individuals*) 

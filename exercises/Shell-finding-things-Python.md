@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Shell
 title: Finding Things
-language: Python
+topic: Python
 ---
 
 This is a follow-up question to [Pipes and Filters]({{ site.baseurl }}/exercises/Shell-pipes-and-filters-Python).

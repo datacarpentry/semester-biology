@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Loops
 title: Use and Modify with Apply
-language: R
+topic: R
 ---
 
 This is a followup to [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).

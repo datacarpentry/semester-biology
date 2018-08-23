@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Data Structures
-language: R
+topic: R
 --- 
 
 ### Vectors

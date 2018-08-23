@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Advanced Queries
 title: Nested Queries
-language: Access
+topic: Access
 ---
 
 Using the Portal database write a query that returns the average number

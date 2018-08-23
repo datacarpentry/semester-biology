@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Loops
 title: stringr
-language: R
+topic: R
 ---
 
 A colleague has produced a file with one DNA sequence on each line. Download

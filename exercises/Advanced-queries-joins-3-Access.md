@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Advanced Queries
 title: Joins 3
-language: Access
+topic: Access
 ---
 
 We want to do an analysis comparing the size of individuals on the

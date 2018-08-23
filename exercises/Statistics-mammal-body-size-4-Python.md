@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Statistics
 title: Mammal Body Size 4
-language: Python
+topic: Python
 ---
 
 This is a follow up to [Mammal Body Size 1]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-1-Python) and [Mammal Body Size 3]({{ site.baseurl }}/exercises/Graphing-mammal-body-size-3-Python).

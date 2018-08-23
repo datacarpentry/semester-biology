@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: SQL Practice
 title: Basic Queries Review
-language: R
+topic: R
 ---
 
 This is a follow-up to [Introduction to Databases]({{ site.baseurl }}/assignments/sql-queries).

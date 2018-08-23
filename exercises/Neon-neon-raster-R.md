@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: NEON
 title: NEON Raster
-language: R
+topic: R
 ---
 
 Jane just got a job working to develop data products for [NEON](http://www.neonscience.org/). 

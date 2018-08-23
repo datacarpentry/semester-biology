@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Graphing
 title: Mammal Body Size Distribution
-language: R
+topic: R
 ---
 
 This is a follow up to [Mammal Body Size by Continent]({{ site.baseurl }}/exercises/Scientific-mammal-body-size-by-continent-R).

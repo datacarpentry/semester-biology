@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Merge Conflict
-language: R
+topic: R
 ---
 
 You decide to change the parameter values that are being used in

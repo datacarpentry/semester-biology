@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Shell from inside Python
-language: Python
+topic: Python
 ---
 
 Everything you can do in the shell you can do using Python.

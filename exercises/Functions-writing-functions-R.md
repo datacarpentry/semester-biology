@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Functions
 title: Writing Functions
-language: R
+topic: R
 ---
 
 Write a function that converts pounds to grams (*there are 453.592 grams in one

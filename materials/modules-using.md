@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Using Modules
-language: Python
+topic: Python
 ---
 
 ## Definition

@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Data Visualization
-language: R
+topic: R
 ---
 
 * [ggplot]({{ site.baseurl }}/materials/ggplot)

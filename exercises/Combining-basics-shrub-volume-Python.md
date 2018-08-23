@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Combining Basics
 title: Shrub Volume
-language: Python
+topic: Python
 ---
 
 Dr. Granger is interested in studying the factors controlling the size and

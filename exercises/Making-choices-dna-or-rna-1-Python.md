@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Making Choices
 title: DNA or RNA 1
-language: Python
+topic: Python
 ---
 
 Write a function, `dna_or_rna(sequence)`, that determines if a sequence

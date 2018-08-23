@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Database Control
 title: Creating Tables
-language: SQL
+topic: SQL
 ---
 
 Create a new table in the Portal Mammals database called `field_notes`. The 

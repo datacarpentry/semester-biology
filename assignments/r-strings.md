@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Unused String Exercises
-language: R
+topic: R
 exercises: ['Print Strings', 'stringr Functions', 'Strings and Math', 'Long Strings', 'Strings from Data', 'String Data', 'Improve Your Code', 'Split Strings']
 ---
 

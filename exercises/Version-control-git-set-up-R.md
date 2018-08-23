@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control
 title: Git Setup
-language: R
+topic: R
 ---
 
 1. `clone` your repository for the course (*or cd into it if you've already  

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Strings
 title: string Methods
-language: Python
+topic: Python
 ---
 
 Use string methods to print the following strings. Remember that methods work by

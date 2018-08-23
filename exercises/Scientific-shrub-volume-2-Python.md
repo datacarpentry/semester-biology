@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Scientific
 title: Shrub Volume 2
-language: Python
+topic: Python
 ---
 
 *This problem is related to [Shrub Volume]({{ site.baseurl }}/exercises/Combining-basics-shrub-volume-Python),

@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: R-SQL
 title: Connect and Query
-language: R
+topic: R
 ---
 
 This is a follow up to the [Basic Queries filtering problem]({{ site.baseurl }}/exercises/Basic-queries-where-SQL).

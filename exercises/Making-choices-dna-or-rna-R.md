@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Making Choices
 title: DNA or RNA
-language: R
+topic: R
 ---
 
 Write a function, `dna_or_rna(sequence)`, that determines if a sequence

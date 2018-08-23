@@ -34,7 +34,7 @@ title: Course Structure
  
 - `schedule.md` generates links for a list of `assignments:` for each of the major course `element:` `reading`, `lecture`, `assignments`    
 - These `element:` must share a `title:` that is inserted into the 
-`assignments:` list and `language:`  
+`assignments:` list and `topic:`  
 - `element:` may share a common file name, `language-short-description.md`. 
 - `assignments/` MUST have a `lower` case file name. 
 - `readings/` and `lectures/` have an `UPPER` first letter of the file name, for
@@ -46,7 +46,7 @@ proper inclusion in `assignments/`.
 layout: page         layout: page         layout: page
 element: reading     element: lecture     element: assignment
 title: Hello World   title: Hello World   title: Hello World 
-language: Foo        language: Foo        language: Foo
+topic: Foo        topic: Foo        topic: Foo
 ---                  ---                  exercises: ['Ba Ram', 'Ewe']
                                           ---
 ```
@@ -57,7 +57,7 @@ language: Foo        language: Foo        language: Foo
                      layout: page
                      element: notes
                      title: Hello Foos
-                     language: Foo
+                     topic: Foo
                      --- 
 ```
 
@@ -82,7 +82,7 @@ language: Foo        language: Foo        language: Foo
 layout: exercise
 exercise_type: Practice
 title: Ba Ram
-language: Foo
+topic: Foo
 ---
 ```
 

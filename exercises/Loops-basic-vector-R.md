@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Loops
 title: Basic Vector
-language: R
+topic: R
 ---
 
 The following code gets just the genus from strings that are scientific names and capitalizes the first letter of the genus name. The `str_extract` and `str_to_title` functions are from the [`stringr` package](https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html), which is great for working with strings. 

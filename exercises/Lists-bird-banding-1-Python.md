@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Lists
 title: Bird Banding 1
-language: Python
+topic: Python
 ---
 
 The number of birds banded at a series of sampling sites has been counted by

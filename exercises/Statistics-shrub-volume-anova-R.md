@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Statistics
 title: Shrub Volume ANOVA
-language: R
+topic: R
 ---
 
 This is a follow up to [Shrub Volume Carbon]({{ site.baseurl }}/exercises/Combining-basics-shrub-volume-carbon-R).

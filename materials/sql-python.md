@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Python + SQL
-language: Python
+topic: Python
 ---
 
 ## Connecting to the database

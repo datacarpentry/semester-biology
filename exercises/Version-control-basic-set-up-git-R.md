@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Version Control Basic
 title: Set Up Git
-language: R
+topic: R
 ---
 
 Let’s say that you’re working on analyzing fish scale size data one day. Unfortunately you weren't using version control and your cat jumped 

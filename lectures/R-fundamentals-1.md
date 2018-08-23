@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Programming Fundamentals 1
-language: R
+topic: R
 ---
 
 1. [Functions]({{ site.baseurl }}/materials/functions-R)

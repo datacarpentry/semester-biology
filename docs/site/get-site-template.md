@@ -11,7 +11,7 @@ title: Strip Course Content for Site Template
 software for [Jekyll](https://jekyllrb.com/) to render the website from `.HTML` 
 and `.MD` files. These files can be left AS IS for a 'computer programming' 
 template. Template developers may toggle object names for `element:` and 
-`language:` used to organize course materials.
+`topic:` used to organize course materials.
 - Follow the [course customization]({{ site.baseurl }}/docs/course/course-customization) guide to identify the files and values that need to be stripped 
 of content or replaced with a descriptive placeholder. 
 - For [`assignments/`, `code/`, `data/`, `exercises/`, `lectures/`, `materials/`, `readings/`]:

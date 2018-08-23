@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Introduction to R and RStudio
-language: R
+topic: R
 ---
    
 * Topics

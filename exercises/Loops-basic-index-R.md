@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Loops
 title: Basic Index
-language: R
+topic: R
 ---
 
 The following code prints the first five whole numbers one line at a time:

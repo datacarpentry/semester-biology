@@ -2,7 +2,7 @@
 layout: page
 element: notes 
 title: Database Control
-language: SQL
+topic: SQL
 ---
 
 > Open Excel spreadsheet. Fill in a couple of columns.

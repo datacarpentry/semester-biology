@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Projects Structure
-language: R
+topic: R
 exercises: ['Project Proposal']
 ---
 

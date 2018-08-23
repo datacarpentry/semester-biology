@@ -2,7 +2,7 @@
 layout: page 
 element: notes
 title: A brief introduction to matplotlib 
-language: Python
+topic: Python
 ---
 
 #### Import

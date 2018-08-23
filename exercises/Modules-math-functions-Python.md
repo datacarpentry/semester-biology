@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Modules
 title: math Functions
-language: Python
+topic: Python
 ---
 
 Use the `sqrt()` and `log()` functions from the `math` module, along with the

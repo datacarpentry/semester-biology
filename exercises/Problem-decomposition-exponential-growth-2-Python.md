@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Problem Decomposition
 title: Exponential Growth 2
-language: Python
+topic: Python
 ---
 
 *The data for this problem is no longer available.*

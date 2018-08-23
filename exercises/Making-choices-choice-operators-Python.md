@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Making Choices
 title: Choice Operators
-language: Python
+topic: Python
 ---
 
 Create the following variables:

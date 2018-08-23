@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Functions
 title: for Loop
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Nested Functions problem]({{ site.baseurl }}/exercises/Functions-nested-functions-Python).

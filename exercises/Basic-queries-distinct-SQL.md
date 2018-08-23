@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Basic Queries
 title: DISTINCT
-language: SQL
+topic: SQL
 ---
 
 Write a query that returns a list of the dates that mammal surveys took

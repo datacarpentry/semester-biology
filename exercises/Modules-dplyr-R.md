@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: Modules
 title: dplyr
-language: R
+topic: R
 ---
 
 Install and familiarize yourself with the `dplyr` package. The `library()` step(s) should always be located at the very top of a script.

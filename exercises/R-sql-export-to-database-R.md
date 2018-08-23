@@ -2,7 +2,7 @@
 layout: exercise
 exercise_type: R-SQL
 title: Export to Database
-language: R
+topic: R
 ---
 
 Dr. Undómiel has decided to focus on the change in size of a few target rodent 

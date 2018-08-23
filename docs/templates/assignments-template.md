@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Template                
-language: Access-Python-R-SQL
+topic: Access-Python-R-SQL
 exercises: ['Exercise Template', 'Exercise Template']
 ---
 
