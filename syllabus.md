@@ -92,7 +92,7 @@ biological problems. Class will typically consist of short introductions or
 question & answer sessions, followed by hands on computing exercises. The course
 will be taught using R and SQLite, but the concepts learned will easily apply to
 all programming languages and database management systems. No background in
-programming of databases is required.
+programming or databases is required.
 
 
 ### Prerequisite Knowledge and Skills
