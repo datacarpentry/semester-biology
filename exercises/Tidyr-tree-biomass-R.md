@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Tidyr
+exercise_type: Tidyr
 title: Tree Biomass
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr Databases
+exercise_type: dplyr Databases
 title: Manipulate Query
 language: R
 ---

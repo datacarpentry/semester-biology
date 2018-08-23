@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: For Loops
+exercise_type: For Loops
 title: Repeat Strings
 language: Python
 ---

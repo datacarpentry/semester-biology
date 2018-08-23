@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Expressions and Variables
+exercise_type: Expressions and Variables
 title: Basic Variables
 language: Python
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Making Choices
+exercise_type: Making Choices
 title: Simple If Statement
 language: R
 ---

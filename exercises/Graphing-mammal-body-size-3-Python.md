@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Graphing
+exercise_type: Graphing
 title: Mammal Body Size 3
 language: Python
 ---

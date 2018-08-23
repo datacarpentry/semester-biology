@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Graphing
+exercise_type: Graphing
 title: Sexual Dimorphism Data Manipulation
 language: R
 ---

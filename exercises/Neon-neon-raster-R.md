@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: NEON
+exercise_type: NEON
 title: NEON Raster
 language: R
 ---

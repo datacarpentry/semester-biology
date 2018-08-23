@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: R-SQL
+exercise_type: R-SQL
 title: Automate Query
 language: R
 ---

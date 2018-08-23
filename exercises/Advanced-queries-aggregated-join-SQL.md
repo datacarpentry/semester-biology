@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Advanced Queries
+exercise_type: Advanced Queries
 title: Aggregated Join
 language: SQL
 ---

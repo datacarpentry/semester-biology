@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Shell
+exercise_type: Shell
 title: Bird Counts 2
 language: Python
 ---

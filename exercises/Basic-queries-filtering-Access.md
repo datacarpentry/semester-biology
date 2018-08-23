@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Basic Queries
+exercise_type: Basic Queries
 title: Filtering
 language: Access
 ---

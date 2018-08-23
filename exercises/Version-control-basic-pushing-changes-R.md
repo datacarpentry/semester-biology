@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Version Control Basic
+exercise_type: Version Control Basic
 title: Pushing Changes
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Scientific
+exercise_type: Scientific
 title: Shrub Volume 2
 language: Python
 ---

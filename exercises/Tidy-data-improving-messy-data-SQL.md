@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Tidy Data
+exercise_type: Tidy Data
 title: Improving Messy Data
 language: SQL
 ---

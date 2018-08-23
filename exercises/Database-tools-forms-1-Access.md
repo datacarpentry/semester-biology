@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Database Tools
+exercise_type: Database Tools
 title: Forms 1
 language: Access
 ---

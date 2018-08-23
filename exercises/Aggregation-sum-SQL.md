@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Aggregation
+exercise_type: Aggregation
 title: SUM
 language: SQL
 ---

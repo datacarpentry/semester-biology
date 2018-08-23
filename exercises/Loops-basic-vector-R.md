@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Loops
+exercise_type: Loops
 title: Basic Vector
 language: R
 ---

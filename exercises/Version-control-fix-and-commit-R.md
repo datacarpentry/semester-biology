@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Version Control
+exercise_type: Version Control
 title: Fix and Commit
 language: R
 ---

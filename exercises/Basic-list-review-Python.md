@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Basic
+exercise_type: Basic
 title: List Review
 language: Python
 ---

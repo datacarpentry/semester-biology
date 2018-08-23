@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Functions
+exercise_type: Functions
 title: Use and Modify
 language: Python
 ---

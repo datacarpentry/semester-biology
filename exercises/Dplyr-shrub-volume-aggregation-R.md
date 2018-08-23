@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr
+exercise_type: dplyr
 title: Shrub Volume Aggregation
 language: R
 ---

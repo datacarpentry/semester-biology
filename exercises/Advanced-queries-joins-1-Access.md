@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Advanced Queries
+exercise_type: Advanced Queries
 title: Joins 1
 language: Access
 ---

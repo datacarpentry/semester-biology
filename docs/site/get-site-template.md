@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+exercise_type: Help
 title: Strip Course Content for Site Template
 ---
 

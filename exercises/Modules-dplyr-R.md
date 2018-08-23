@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Modules
+exercise_type: Modules
 title: dplyr
 language: R
 ---

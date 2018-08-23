@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Version Control
+exercise_type: Version Control
 title: Add and Revert Comment
 language: Python
 ---

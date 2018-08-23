@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Lists
+exercise_type: Lists
 title: DNA or RNA 2
 language: Python
 ---

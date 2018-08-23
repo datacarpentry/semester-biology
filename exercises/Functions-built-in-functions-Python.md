@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Functions
+exercise_type: Functions
 title: Built-in Functions
 language: Python
 ---

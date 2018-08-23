@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr
+exercise_type: dplyr
 title: Link to Databases
 language: R
 ---

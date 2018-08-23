@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Spatial Data
+exercise_type: Spatial Data
 title: Species Occurrences Elevation Histogram
 language: R
 ---

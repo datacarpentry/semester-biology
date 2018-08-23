@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Object Oriented Programming
+exercise_type: Object Oriented Programming
 title: Platypus 1
 language: Python
 ---

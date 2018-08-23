@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Functions
+exercise_type: Functions
 title: GC Content 2
 language: Python
 ---

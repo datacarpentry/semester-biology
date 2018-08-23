@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Good Style
+exercise_type: Good Style
 title: Format the Code
 language: R
 ---

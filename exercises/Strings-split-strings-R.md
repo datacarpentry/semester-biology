@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Strings
+exercise_type: Strings
 title: Split Strings
 language: R
 ---

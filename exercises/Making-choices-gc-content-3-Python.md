@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Making Choices
+exercise_type: Making Choices
 title: GC Content 3
 language: Python
 ---

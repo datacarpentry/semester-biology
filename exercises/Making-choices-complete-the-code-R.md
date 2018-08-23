@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Making Choices
+exercise_type: Making Choices
 title: Complete the Code
 language: R
 ---

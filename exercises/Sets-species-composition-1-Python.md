@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Sets
+exercise_type: Sets
 title: Species Composition 1
 language: Python
 ---

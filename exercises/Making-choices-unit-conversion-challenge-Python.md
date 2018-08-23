@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Making Choices
+exercise_type: Making Choices
 title: Unit Conversion Challenge
 language: Python
 ---

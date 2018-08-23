@@ -1,6 +1,6 @@
 ---
 layout: exercise 
-topic: Strings
+exercise_type: Strings
 title: Ultimate Question 1
 language: Python
 ---

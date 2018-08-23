@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Scientific
+exercise_type: Scientific
 title: Mammal Body Size
 language: R
 ---

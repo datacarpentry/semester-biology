@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Loops
+exercise_type: Loops
 title: stringr
 language: R
 ---

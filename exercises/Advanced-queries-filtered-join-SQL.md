@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Advanced Queries
+exercise_type: Advanced Queries
 title: Filtered Join
 language: SQL
 ---

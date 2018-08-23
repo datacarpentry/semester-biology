@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Strings
+exercise_type: Strings
 title: stringr Functions
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Dictionaries
+exercise_type: Dictionaries
 title: Species Composition 2
 language: Python
 ---

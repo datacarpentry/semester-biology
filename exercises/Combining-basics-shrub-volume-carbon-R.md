@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Combining Basics
+exercise_type: Combining Basics
 title: Shrub Volume Carbon
 language: R
 ---

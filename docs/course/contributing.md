@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+exercise_type: Help
 title: Providing Feedback and Contributing New Material
 ---
 

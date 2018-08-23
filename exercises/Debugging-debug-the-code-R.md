@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Debugging
+exercise_type: Debugging
 title: Debug the Code
 language: R
 ---

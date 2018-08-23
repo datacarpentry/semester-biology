@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Templates
+exercise_type: Templates
 title: Exercise Template
 language: Access-Python-R-SQL
 ---

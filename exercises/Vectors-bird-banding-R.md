@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Vectors
+exercise_type: Vectors
 title: Bird Banding
 language: R
 ---

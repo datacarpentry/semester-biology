@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+exercise_type: Help
 title: Course Structure
 ---
 
@@ -80,7 +80,7 @@ language: Foo        language: Foo        language: Foo
 ```
 ---
 layout: exercise
-topic: Practice
+exercise_type: Practice
 title: Ba Ram
 language: Foo
 ---

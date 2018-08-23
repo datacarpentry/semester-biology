@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr
+exercise_type: dplyr
 title: Collect from Databases
 language: R
 ---

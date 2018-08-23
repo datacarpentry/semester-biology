@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Data Frames
+exercise_type: Data Frames
 title: Database CSV
 language: R
 ---

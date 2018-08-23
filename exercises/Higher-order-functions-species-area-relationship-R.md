@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Higher Order Functions
+exercise_type: Higher Order Functions
 title: Species Area Relationship
 language: R
 ---

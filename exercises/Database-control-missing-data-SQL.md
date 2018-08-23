@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Database Control
+exercise_type: Database Control
 title: Missing Data
 language: SQL
 ---

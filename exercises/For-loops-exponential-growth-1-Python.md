@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: For Loops
+exercise_type: For Loops
 title: Exponential Growth 1
 language: Python
 ---
