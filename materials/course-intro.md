@@ -39,10 +39,7 @@ title: Course Introduction
 	* Will require additional programming time after class
 	* Due end of the day on Monday
 
-* Projects
-    * Designed to let you learn about bigger computing efforts
-	* Ideally related to your research
-	* Can related to any aspect of the class or involve many of them
+* No projects this year
 
 ### Website
 
