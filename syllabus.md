@@ -140,7 +140,7 @@ learning to program and work with data requires actively working on
 computers. Flipped classes work well for all kinds of content, but I think they
 work particularly well for computer oriented classes. If you're interested in
 knowing more take a look at this great
-[info-graphic](http://www.knewton.com/flipped-classroom-2/).
+[info-graphic](https://www.knewton.com/flipped-classroom-2/).
 
 
 ### Instructional Methods

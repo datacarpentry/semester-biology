@@ -22,6 +22,6 @@ beneficial. In some cases, multiple key topics are more effectively introduced
 separately, where a brief introduction to one of the key topics is followed by 
 the students completing an [`exercise`]({{ site.baseurl }}/exercises) on that topic. Depending on the length of the [`assignment`]({{ site.baseurl }}/assignments) and class session this could be repeated 2-3 times to cover that many key topics. Recommended structure for this strategy is included for R and SQL lessons in [`lectures/`]({{ site.baseurl }}/lectures) and [`materials/`]({{ site.baseurl }}/materials).
 
-[![Flipped Classroom](http://www.knewton.com/wp-content/uploads/flipped-classroom-1.jpg "Flipped Classroom")](http://www.knewton.com/flipped-classroom/)
+[![Flipped Classroom](https://www.knewton.com/wp-content/uploads/flipped-classroom-1.jpg "Flipped Classroom")](https://www.knewton.com/flipped-classroom/)
 
-Created by [Knewton](http://www.knewton.com/) and [Column Five Media](http://columnfivemedia.com/).
+Created by [Knewton](https://www.knewton.com/) and [Column Five Media](https://columnfivemedia.com/).
