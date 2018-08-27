@@ -1,0 +1,125 @@
+> # Code solution for Portal Data Joins
+
+> # 1.
+
+      record_id month day year plot_id species_id sex hindfoot_length weight            genus         species    taxa
+1             1     7  16 1977       2         NL   M              32     NA          Neotoma        albigula  Rodent
+2             2     7  16 1977       3         NL   M              33     NA          Neotoma        albigula  Rodent
+3             3     7  16 1977       2         DM   F              37     NA        Dipodomys        merriami  Rodent
+4             4     7  16 1977       7         DM   M              36     NA        Dipodomys        merriami  Rodent
+5             5     7  16 1977       3         DM   M              35     NA        Dipodomys        merriami  Rodent
+6             6     7  16 1977       1         PF   M              14     NA      Perognathus          flavus  Rodent
+7             7     7  16 1977       2         PE   F              NA     NA       Peromyscus        eremicus  Rodent
+8             8     7  16 1977       1         DM   M              37     NA        Dipodomys        merriami  Rodent
+9             9     7  16 1977       1         DM   F              34     NA        Dipodomys        merriami  Rodent
+10           10     7  16 1977       6         PF   F              20     NA      Perognathus          flavus  Rodent
+11           11     7  16 1977       5         DS   F              53     NA        Dipodomys     spectabilis  Rodent
+12           12     7  16 1977       7         DM   M              38     NA        Dipodomys        merriami  Rodent
+13           13     7  16 1977       3         DM   M              35     NA        Dipodomys        merriami  Rodent
+14           14     7  16 1977       8         DM                  NA     NA        Dipodomys        merriami  Rodent
+15           15     7  16 1977       6         DM   F              36     NA        Dipodomys        merriami  Rodent
+16           16     7  16 1977       4         DM   F              36     NA        Dipodomys        merriami  Rodent
+17           17     7  16 1977       3         DS   F              48     NA        Dipodomys     spectabilis  Rodent
+18           18     7  16 1977       2         PP   M              22     NA      Chaetodipus    penicillatus  Rodent
+19           19     7  16 1977       4         PF                  NA     NA      Perognathus          flavus  Rodent
+20           20     7  17 1977      11         DS   F              48     NA        Dipodomys     spectabilis  Rodent
+21           21     7  17 1977      14         DM   F              34     NA        Dipodomys        merriami  Rodent
+22           22     7  17 1977      15         NL   F              31     NA          Neotoma        albigula  Rodent
+23           23     7  17 1977      13         DM   M              36     NA        Dipodomys        merriami  Rodent
+24           24     7  17 1977      13         SH   M              21     NA         Sigmodon        hispidus  Rodent
+25           25     7  17 1977       9         DM   M              35     NA        Dipodomys        merriami  Rodent
+...
+ [ reached getOption("max.print") -- omitted 34703 rows ]
+
+> # 2.
+
+      record_id month day year plot_id species_id sex hindfoot_length weight            genus         species    taxa                 plot_type
+1             1     7  16 1977       2         NL   M              32     NA          Neotoma        albigula  Rodent                   Control
+2             2     7  16 1977       3         NL   M              33     NA          Neotoma        albigula  Rodent  Long-term Krat Exclosure
+3             3     7  16 1977       2         DM   F              37     NA        Dipodomys        merriami  Rodent                   Control
+4             4     7  16 1977       7         DM   M              36     NA        Dipodomys        merriami  Rodent          Rodent Exclosure
+5             5     7  16 1977       3         DM   M              35     NA        Dipodomys        merriami  Rodent  Long-term Krat Exclosure
+6             6     7  16 1977       1         PF   M              14     NA      Perognathus          flavus  Rodent         Spectab exclosure
+7             7     7  16 1977       2         PE   F              NA     NA       Peromyscus        eremicus  Rodent                   Control
+8             8     7  16 1977       1         DM   M              37     NA        Dipodomys        merriami  Rodent         Spectab exclosure
+9             9     7  16 1977       1         DM   F              34     NA        Dipodomys        merriami  Rodent         Spectab exclosure
+10           10     7  16 1977       6         PF   F              20     NA      Perognathus          flavus  Rodent Short-term Krat Exclosure
+11           11     7  16 1977       5         DS   F              53     NA        Dipodomys     spectabilis  Rodent          Rodent Exclosure
+12           12     7  16 1977       7         DM   M              38     NA        Dipodomys        merriami  Rodent          Rodent Exclosure
+13           13     7  16 1977       3         DM   M              35     NA        Dipodomys        merriami  Rodent  Long-term Krat Exclosure
+14           14     7  16 1977       8         DM                  NA     NA        Dipodomys        merriami  Rodent                   Control
+15           15     7  16 1977       6         DM   F              36     NA        Dipodomys        merriami  Rodent Short-term Krat Exclosure
+16           16     7  16 1977       4         DM   F              36     NA        Dipodomys        merriami  Rodent                   Control
+17           17     7  16 1977       3         DS   F              48     NA        Dipodomys     spectabilis  Rodent  Long-term Krat Exclosure
+18           18     7  16 1977       2         PP   M              22     NA      Chaetodipus    penicillatus  Rodent                   Control
+19           19     7  16 1977       4         PF                  NA     NA      Perognathus          flavus  Rodent                   Control
+20           20     7  17 1977      11         DS   F              48     NA        Dipodomys     spectabilis  Rodent                   Control
+21           21     7  17 1977      14         DM   F              34     NA        Dipodomys        merriami  Rodent                   Control
+22           22     7  17 1977      15         NL   F              31     NA          Neotoma        albigula  Rodent  Long-term Krat Exclosure
+23           23     7  17 1977      13         DM   M              36     NA        Dipodomys        merriami  Rodent Short-term Krat Exclosure
+24           24     7  17 1977      13         SH   M              21     NA         Sigmodon        hispidus  Rodent Short-term Krat Exclosure
+25           25     7  17 1977       9         DM   M              35     NA        Dipodomys        merriami  Rodent         Spectab exclosure
+...
+ [ reached getOption("max.print") -- omitted 34710 rows ]
+
+> # 3.
+
+      record_id month day year plot_id species_id sex hindfoot_length weight plot_type
+1             1     7  16 1977       2         NL   M              32     NA   Control
+2             3     7  16 1977       2         DM   F              37     NA   Control
+3             7     7  16 1977       2         PE   F              NA     NA   Control
+4            14     7  16 1977       8         DM                  NA     NA   Control
+5            16     7  16 1977       4         DM   F              36     NA   Control
+6            18     7  16 1977       2         PP   M              22     NA   Control
+7            19     7  16 1977       4         PF                  NA     NA   Control
+8            20     7  17 1977      11         DS   F              48     NA   Control
+9            21     7  17 1977      14         DM   F              34     NA   Control
+10           28     7  17 1977      11         DM   M              38     NA   Control
+11           29     7  17 1977      11         PP   M              NA     NA   Control
+12           33     7  17 1977      11         DM   F              36     NA   Control
+13           34     7  17 1977      17         DM                  NA     NA   Control
+14           37     7  17 1977      11         DM   F              35     NA   Control
+15           38     7  17 1977      17         NL   M              33     NA   Control
+16           39     7  17 1977      11         DM   F              36     NA   Control
+17           45     7  18 1977      22         DM   M              36     NA   Control
+18           49     7  18 1977      12         PP   F              17     NA   Control
+19           52     7  18 1977      12         DM   F              26     NA   Control
+20           53     7  18 1977      22         DM   M              36     NA   Control
+21           57     7  18 1977      22         DM                  NA     NA   Control
+22           58     7  18 1977      12         DS   M              45     NA   Control
+23           65     8  19 1977       4         DM   F              34     29   Control
+24           66     8  19 1977       4         DM   F              35     46   Control
+25           68     8  19 1977       8         DO   F              32     52   Control
+...
+ [ reached getOption("max.print") -- omitted 15560 rows ]
+
+> # 4. 
+
+      year           genus      species weight                plot_type
+37    1977       Dipodomys     merriami     40 Long-term Krat Exclosure
+38    1977       Dipodomys     merriami     29                  Control
+39    1977       Dipodomys     merriami     46                  Control
+40    1977       Dipodomys        ordii     52                  Control
+41    1977     Perognathus       flavus      8                  Control
+42    1977       Onychomys          sp.     22 Long-term Krat Exclosure
+45    1977     Perognathus       flavus      7                  Control
+46    1977       Dipodomys     merriami     22                  Control
+48    1977     Perognathus       flavus      8                  Control
+49    1977       Dipodomys     merriami     41                  Control
+50    1977       Dipodomys     merriami     43 Long-term Krat Exclosure
+51    1977     Chaetodipus penicillatus     15                  Control
+53    1977       Dipodomys     merriami     41                  Control
+54    1977       Dipodomys     merriami     45                  Control
+56    1977       Dipodomys     merriami     39 Long-term Krat Exclosure
+59    1977       Dipodomys     merriami     42                  Control
+86    1977       Dipodomys     merriami     48                  Control
+88    1977     Chaetodipus penicillatus     16                  Control
+89    1977       Dipodomys     merriami     36                  Control
+92    1977       Dipodomys     merriami     44                  Control
+94    1977     Perognathus       flavus      8                  Control
+95    1977       Dipodomys     merriami     40                  Control
+96    1977       Dipodomys     merriami     34                  Control
+97    1977       Dipodomys     merriami     40 Long-term Krat Exclosure
+99    1977       Dipodomys     merriami     44                  Control
+...
+ [ reached getOption("max.print") -- omitted 19144 rows ]
