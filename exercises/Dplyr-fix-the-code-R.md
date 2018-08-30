@@ -28,6 +28,3 @@ shrub_data %>%
 
 1. Fix the errors in the code so that it does what it's supposed to
 2. Add a comment to the top of the code explaining what it does
-3. In a text file, discuss how you know that your fixed version of the code is
-   right and how you would try to make sure it was right if the data file was
-   thousands of lines long
