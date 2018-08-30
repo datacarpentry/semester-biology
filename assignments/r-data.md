@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Working with Data
 language: R
-exercises: ['Shrub Volume Data Basics', 'Shrub Volume Aggregation', 'Shrub Volume Join', 'Fix the Code', 'Portal Data Manipulation', 'Portal Data Joins']
-points: [10, 10, 15, 15, 25, 25]
+exercises: ['Shrub Volume Data Basics', 'Shrub Volume Aggregation', 'Shrub Volume Join', 'Portal Data Manipulation', 'Fix the Code', 'Portal Data Joins']
+points: [10, 10, 15, 25, 15, 25]
 ---
 
 #### Learning Objectives

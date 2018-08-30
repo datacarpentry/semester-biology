@@ -3,16 +3,46 @@ layout: page
 element: notes
 title: Working with Tabular Data
 language: R
---- 
+time: 3
+---
 
-> Remember to
-> 
-> * download [`surveys.csv`](https://ndownloader.figshare.com/files/2292172).
-> * download [`species.csv`](https://ndownloader.figshare.com/files/3299483).
-> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
+> Remember to:
 >
 > * Consider removing the `dplyr` package so you can demonstrate installing it.
 >     * Linux users: you may not want to do this because the source install is slow
+
+### Introduction to tabular data
+
+* We will be working with data from the Portal Project.
+    * Long-term experimental study of small mammals in Arizona.
+    * Download `surveys`, `species`, and `plots` from `Datasets` into folder.
+    * Need to know where the data is: Right click -> `Save link as`.
+
+* Start/open a project (modeling good practice)
+
+* Dataset is composed of three tables.
+* Load these into `R` using `read.csv()`.
+
+```
+surveys <- read.csv("surveys.csv")
+species <- read.csv("species.csv")
+plots <- read.csv("plots.csv")
+```
+
+* Display data by clicking on it in `Environment`
+* Three tables
+    * `surveys` - main table, one row for each rodent captured, date on date,
+      location, species ID, sex, and size
+    * `species` - latin species names for each species ID + general taxon
+    * `plots` - information on the experimental manipulations at the site
+
+* Good tabular data structure
+    * One table per type of data
+        * Tables can be linked together to combine information.
+    * Each row contains a single record.
+        * A single observation or data point
+    * Each column or field contains a single attribute.
+        * A single type of information
 
 ### Packages
 
@@ -27,48 +57,120 @@ language: R
 ### Basic `dplyr`
 
 * Modern data manipulation library for R
-* Does a lot of the same things we've learned to do in SQL.
-
-> * Start a new project (modeling good practice)
 
 ```
 surveys <- read.csv("surveys.csv")
 ```
 
-* Select: 
-    * `select(surveys, year, month, day)`
-* Filter: 
-    * `filter(surveys, species_id == "DS")`
-    * `filter(surveys, species_id == "DS", year > 1995)`
-    * `filter(surveys, species_id == "DS" | species_id == "DM")`
-* Mutate: 
-    * `mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)`
+* Select a subset of columns.
 
-> Do [Exercise 2 - Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+```
+select(surveys, year, month, day)
+```
+
+* They can occur in any order.
+
+```
+select(surveys, month, day, year)
+```
+
+* Use `filter()` to get only the rows that meet certain criteria.
+    * Combine the data frame to be filtered with a series of conditional statements.
+    * Column, condition, value
+  
+```
+filter(surveys, species_id == "DS")
+filter(surveys, species_id == "DS", year > 1995)
+```
+
+* Commas indicate `and`, use `|` for `or`.
+
+```
+filter(surveys, species_id == "DS" | species_id == "DM")
+```
+
+* Add new columns with calculated values using `mutate()`
+
+```
+mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)
+```
+
+> Do [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 ### Aggregation
 
-* Group by: 
-    * `group_by(surveys, species_id)`
-    * Different looking kind of `data.frame` 
-        * Source, grouping, and data type information
+* Aggregation combines rows into groups based on one of more columns.
+* Calculates combined values for each group.
+* First, group the data frame.
+
+```
+group_by(surveys, species_id)
+```
+
+* Different looking kind of `data.frame`
+    * Source, grouping, and data type information
 
 ```
 surveys_by_species <- group_by(surveys, species_id)
 ```
 
-* Grouping with `summarize()`:
-    * `summarize(surveys_by_species, avg_weight = mean(weight))`
-    * Real data problem: 
-        * `mean(weight)` when `weight` has missing values (`NA`) 
-            * Returns `NA`
-            * `mean(weight, na.rm=TRUE)`
+* Use `summarize()` to calculate values for each group.
+* Count the number of rows for each group (individuals in each species).
 
-> Do [Exercise 3 - Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
+```
+summarize(surveys_by_species, abundance = n())
+```
+
+* Any function that returns a single value from a vector.
+* E.g., mean.
+
+```
+species_weight <- summarize(surveys_by_species, avg_weight = mean(weight))
+```
+
+### Null values
+
+* `mean(weight)` when `weight` has missing values (`NA`)
+* Returns `NA`
+* `mean(weight, na.rm=TRUE)`
+
+```
+species_weight <- summarize(surveys_by_species, avg_weight = mean(weight, na.rm = TRUE))
+```
+
+* `na.omit()` to remove `NA` from output
+
+```
+sp_weight_nonull <- na.omit(species_weight)
+```
+
+> Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
+
 
 ### Joins
 
-* `inner_join` in `dplyr` works like `JOIN` in SQL
+> Remember to:
+>
+> * display a fully joined version of the Portal data using:  
+> `portal_bigtable <- inner_join(inner_join(surveys, species), plots)`
+
+#### Why use multiple tables
+
+* Not efficient to include all information in a single table.
+* Redundant information makes it more difficult to update or revise data.
+    * Make changes in one place, not hundreds of places.
+* Use multiple tables
+* Each table contains a single kind of information
+    * `surveys`: information about individuals
+    * `species`: information about species
+    * `plots`: information about plots
+* If a species name changes we only need to change it in the `species` table
+* Connect tables using joins to describe relationships between tables
+
+#### Basic join
+
+* Joins combine two tables using one or more columns
+* `inner_join` keeps information from both tables that share a join field value
 
 ```
 species <- read.csv("species.csv")
@@ -76,95 +178,51 @@ combined <- inner_join(surveys, species, by = "species_id")
 head(combined)
 ```
 
-> Do [Exercise 4 - Shrub Volume Join]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R).
+* One way to think about this join is that it adds the information in
+  `species` to the `surveys` table
 
-### Pipes
+> Do [Shrub Volume Join]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R).
+
+#### Multi-table join
+
+* Use multiple joins to link multiple tables
+
+```
+portal_full <- inner_join(combined, plots, by = "plot_id")
+head(portal_full)
+```
+
+### Combining data manipulations
 
 * Combine a series of data manipulation actions
-* Intermediate variables
-    * Step-wise approach 
-    * Can get cumbersome with lots of variable objects in the environment
+* Do each action in sequential order
+
+#### Intermediate variables
+
+* Determine the mean weight of DS in each year
 
 ```
 surveys_DS <- filter(surveys, species_id == "DS")
 surveys_DS_by_yr <- group_by(surveys_DS, year)
-avg_weight_DS_by_yr <- summarize(surveys_DS_by_yr, 
+avg_weight_DS_by_yr <- summarize(surveys_DS_by_yr,
                                  avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-* Pipes:
-    * Operator: 
-        * `%>%`
-    * Operation:
-        * `%>%` takes the output of one command and passes it as input to the next command 
-        * `x %>% f(y)` translates to `f(x, y)`
-        * `surveys %>% filter(species_id == "DS")`
+> Do [Portal Data Manipulation Exercise 1-2]({{ site.baseurl }}/exercises/Portal-data-manip-R)
+
+#### Pipes
+
+* Intermediate variables can get cumbersome if their are lots of steps.
+* `%>%` ("pipe") takes the output of one command and passes it as input to the
+  next command
+* `x %>% f(y)` translates to `f(x, y)`
+* `surveys %>% filter(species_id == "DS")`
 
 ```
-surveys %>%
+avg_weight_DS_by_yr <- surveys %>%
   filter(species_id == "DS") %>%
   group_by(year) %>%
   summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-> Do [Exercise 5 - Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
-
-### Using `dplyr` with databases
-
-* We can also use `dplyr` to access data directly from a database.
-    * No need to export files from the database
-    * Lets the database do the heavy lifting
-        * Faster
-        * No RAM limits
-* Need to install the `dbplyr` package
-
-```
-library(DBI)
-portaldb <- dbConnect(RSQLite::SQLite(), "portal_mammals.sqlite")
-surveys <- tbl(portaldb, "surveys")
-surveys
-species <- tbl(portaldb, "species")
-portal_data <- inner_join(surveys, species, by = "species_id") %>%
-               select(year, month, day, genus, species)
-```
-
-* Can also extract data directly using SQL
-
-```
-query <- "SELECT year, month, day, genus, species
-          FROM surveys JOIN species
-          USING(species_id)"
-portal_data <- dbGetQuery(portaldb, query)
-```
-
-* Either of these runs the query in the database
-
-> Do [Exercise 6 - Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
-
-* Speed example using Breeding Bird Survey of North America data
-    * ~85 million cells (>250 MB)
-
-```
-# Loading from SQLite completes instantly
-bbs_sqlite <- dbConnect(RSQLite::SQLite(), "bbs.sqlite")
-bbs_counts <- tbl(bbs_sqlite, "breed_bird_survey_counts")
-bbs_counts
-
-# Loading from csv takes 30 seconds
-bbs_counts_csv <- read.csv("BBS_counts.csv")
-```
-
-* Queries and data manipulation functions return similar results with various 
-  headings (`Source: SQL`)
-* Number of rows is unknown as shown by `??`
-* Queries and data manipulation results will remain in the external database.
-* Use `collect()` to store results in a local data frame (`# A tibble`).
-
-```
-portal_data <- inner_join(surveys, species, by = "species_id") %>%
-               select(year, month, day, genus, species) %>%
-			   collect()
-```
-
-
-* If you want to store a table from R in the database use `copy_to()`
+> Do [Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
