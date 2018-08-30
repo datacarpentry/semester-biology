@@ -70,3 +70,64 @@ copy_to(portaldb, species_counts, temporary=FALSE,
 > Do [Exercise 3 - Copy to Database]({{ site.baseurl }}/exercises/Dplyr-databases-copy-to-database-R/).
 
 > Assign remaining exercises.
+
+
+### Using `dplyr` with databases
+
+* We can also use `dplyr` to access data directly from a database.
+    * No need to export files from the database
+    * Lets the database do the heavy lifting
+        * Faster
+        * No RAM limits
+* Need to install the `dbplyr` package
+
+```
+library(DBI)
+portaldb <- dbConnect(RSQLite::SQLite(), "portal_mammals.sqlite")
+surveys <- tbl(portaldb, "surveys")
+surveys
+species <- tbl(portaldb, "species")
+portal_data <- inner_join(surveys, species, by = "species_id") %>%
+               select(year, month, day, genus, species)
+```
+
+* Can also extract data directly using SQL
+
+```
+query <- "SELECT year, month, day, genus, species
+          FROM surveys JOIN species
+          USING(species_id)"
+portal_data <- dbGetQuery(portaldb, query)
+```
+
+* Either of these runs the query in the database
+
+> Do [Exercise 6 - Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
+
+* Speed example using Breeding Bird Survey of North America data
+    * ~85 million cells (>250 MB)
+
+```
+# Loading from SQLite completes instantly
+bbs_sqlite <- dbConnect(RSQLite::SQLite(), "bbs.sqlite")
+bbs_counts <- tbl(bbs_sqlite, "breed_bird_survey_counts")
+bbs_counts
+
+# Loading from csv takes 30 seconds
+bbs_counts_csv <- read.csv("BBS_counts.csv")
+```
+
+* Queries and data manipulation functions return similar results with various
+  headings (`Source: SQL`)
+* Number of rows is unknown as shown by `??`
+* Queries and data manipulation results will remain in the external database.
+* Use `collect()` to store results in a local data frame (`# A tibble`).
+
+```
+portal_data <- inner_join(surveys, species, by = "species_id") %>%
+               select(year, month, day, genus, species) %>%
+			   collect()
+```
+
+
+* If you want to store a table from R in the database use `copy_to()`
