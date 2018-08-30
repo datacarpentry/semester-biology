@@ -93,3 +93,19 @@ surveys <- data.frame(sites, density_ha, area_ha)
 ```
 shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
 ```
+
+### Factors
+
+```
+str(shrub_data)
+```
+
+* The `shrubID` column has type `Factor`
+* Special data type in R for categorical data
+* Useful for statistics, but can mess up some aspects of computation
+* Can eliminate during imports with `stringsAsFactors`
+
+```
+shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv', stringsAsFactors = FALSE)
+str(shrub_data)
+```
