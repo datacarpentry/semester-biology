@@ -26,6 +26,7 @@ sites <- c("a", "a", "b", “c”)
     * `sites[c(4, 1, 3)]`
         * You can use a vector to get any subset or order you want
 
+
 * Math functions:
 
 ```
@@ -36,7 +37,12 @@ min(density_ha)
 sum(density_ha)
 ```
 
+> Do [Bird Banding 1-4]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
+
+### Working with multiple vectors
+
 * Vector math combines values in the same position
+* Element-wise: operating on one element at a time
 
 ```
 density_ha <- c(2.8, 3.2, 1.5, 3.8)
@@ -50,7 +56,7 @@ total_number <- density_ha * area_ha
         * Not `=`. `=` is used for assignment.
         * `!=`, `<`, `>`
 
-> Do [Exercise 8 - Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
+> Do [Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
 
 
 ### Matrices (if linear algebra folks)
@@ -66,12 +72,19 @@ x %*% y
 ### Data frames
 
 * A list of equal length vectors grouped together
-* Assignment: 
-    * `data.frame()`
-    * `read.csv()`
+
+* `data.frame()`
 
 ```
 surveys <- data.frame(sites, density_ha, area_ha)
+```
+
+* `read.csv()`
+    * Main argument is the location of the data - url or path on computer
+    * Go to `Datasets` page on site and copy `Shrub dimensions` url
+  
+```
+shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
 ```
 
 * Useful commands: 
@@ -83,16 +96,6 @@ surveys <- data.frame(sites, density_ha, area_ha)
     * `surveys[c(“area_ha”, “sites”)]`
     * `surveys$area_ha`
     * `surveys[[“area_ha”]]`
-
-### Importing data
-
-* `read.csv()`
-* Main argument is the location of the data - url or path on computer
-* Go to `Datasets` page on site and copy `Shrub dimensions` url
-
-```
-shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
-```
 
 ### Factors
 
@@ -109,3 +112,5 @@ str(shrub_data)
 shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv', stringsAsFactors = FALSE)
 str(shrub_data)
 ```
+
+> Start [Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Shrub-volume-data-frame-R/), but just use the url instead of downloading the file.
