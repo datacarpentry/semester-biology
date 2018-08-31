@@ -3,9 +3,12 @@ layout: page
 title: Readings
 ---
 
+### Data
+
+* [Data Entry and Storage](DATA-data)
+
 ### SQL
 
-* [Data Entry and Storage](SQL-data)
 * [Database Queries](SQL-queries)
 
 ### R

@@ -2,7 +2,7 @@
 layout: exercise
 type: Templates
 title: Exercise Template
-topic: Access-Python-R-SQL
+topic: Access-Python-R-SQL-Data
 ---
 
 1. Determine the `type`, `title`, and `topic` from the [front matter](https://jekyllrb.com/docs/frontmatter/) of your new or modified exercise.

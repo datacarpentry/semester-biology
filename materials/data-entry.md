@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Data Entry
-topic: Excel
+topic: Data
 ---
 
 ### Plan

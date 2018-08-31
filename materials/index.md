@@ -2,7 +2,7 @@
 layout: page
 title: Lecture Materials
 ---
-<a href="#SQL">SQL</a> \| <a href="#R">R</a> \| <a href="#Python">Python</a> \|  <a href="#Access">Access</a>
+<a href="#Data">Data</a> \| <a href="#SQL">SQL</a> \| <a href="#R">R</a> \| <a href="#Python">Python</a> \| <a href="#Access">Access</a>
 
 ### General Programing Resources
 -   [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
@@ -10,6 +10,10 @@ title: Lecture Materials
 -   [Git in 30 minutes]({{ site.baseurl }}/materials/git-in-30-minutes)
 -   [Shell]({{ site.baseurl }}/materials/shell) \| [Shell Alternate]({{ site.baseurl }}/materials/shell2)
 -   [State in IDEs]({{ site.baseurl }}/materials/state-in-IDEs)
+
+### Data <a name="Data"></a>
+-   [Tidy Data]({{ site.baseurl }}/materials/tidy-data)
+-   [Data Entry]({{ site.baseurl }}/materials/data-entry)
 
 ### SQL <a name="SQL"></a>
 
@@ -19,8 +23,6 @@ title: Lecture Materials
 - [Basic Queries]({{ site.baseurl }}/materials/sql-basic-queries)
 - [Aggregation]({{ site.baseurl }}/materials/sql-aggregation)
 - [Joins]({{ site.baseurl }}/materials/sql-joins)
-- [Tidy Data]({{ site.baseurl }}/materials/tidy-data)
-- [Data Entry in Excel]({{ site.baseurl }}/materials/data-entry)
 - [Nested Queries]({{ site.baseurl }}/materials/sql-nested-queries)
 
 #### Extra Notes

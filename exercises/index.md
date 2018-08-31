@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Exercises
-topics: ['SQL', 'R', 'Python', 'Access']
+topics: ['Data', 'SQL', 'R', 'Python', 'Access']
 ---
-<a href="#SQL">SQL</a> \| <a href="#R">R</a> \| <a href="#Python">Python</a> \|  <a href="#Access">Access</a>
+<a href="#Data">Data</a> \| <a href="#SQL">SQL</a> \| <a href="#R">R</a> \| <a href="#Python">Python</a> \|  <a href="#Access">Access</a>
 
 {% for topic in page.topics %}
   <h3> {{ topic }} <a name="{{ topic }}"></a></h3>

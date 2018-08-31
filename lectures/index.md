@@ -3,9 +3,12 @@ layout: page
 title: Lectures
 ---
 
+### Data
+
+* [Introduction to Databases](DATA-data)
+
 ### SQL
 
-* [Introduction to Databases](SQL-data)
 * [Database Structure and Joins](SQL-queries)
 
 ### R

@@ -3,9 +3,12 @@ layout: page
 title: Assignments
 ---
 
+### Data
+
+* [Introduction to Databases](DATA-data)
+
 ### SQL
 
-* [Introduction to Databases](sql-data)
 * [Database Structure and Joins](sql-queries)
 
 ### R

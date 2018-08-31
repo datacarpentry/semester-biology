@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Data Entry and Storage
-topic: SQL
+topic: Data
 ---
 
 1. [Course Introduction]({{ site.baseurl }}/materials/course-intro)
