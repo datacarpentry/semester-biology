@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Database Tools
+type: Database Tools
 title: Reports
 language: Access
 ---

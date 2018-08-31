@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Statistics
+type: Statistics
 title: Mammal Body Size T-test
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Loops
+type: Loops
 title: Multiple Files
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Data Frames
+type: Data Frames
 title: Shrub Volume Data Frame
 language: R
 ---

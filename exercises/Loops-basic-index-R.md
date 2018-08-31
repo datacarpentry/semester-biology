@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Loops
+type: Loops
 title: Basic Index
 language: R
 ---

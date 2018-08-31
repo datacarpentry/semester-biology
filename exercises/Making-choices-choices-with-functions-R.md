@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Making Choices
+type: Making Choices
 title: Choices with Functions
 language: R
 ---

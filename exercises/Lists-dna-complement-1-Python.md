@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Lists
+type: Lists
 title: DNA Complement 1
 language: Python
 ---

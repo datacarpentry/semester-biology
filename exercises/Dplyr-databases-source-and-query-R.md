@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr Databases
+type: dplyr Databases
 title: Source and Query
 language: R
 ---

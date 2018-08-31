@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr
+type: dplyr
 title: Portal Data Manipulation
 language: R
 ---

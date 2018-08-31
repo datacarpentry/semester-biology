@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Basic
+type: Basic
 title: Vector Review
 language: R
 ---

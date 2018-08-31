@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Shell
+type: Shell
 title: Getting Started
 language: Python
 ---

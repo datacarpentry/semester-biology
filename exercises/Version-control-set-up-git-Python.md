@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Version Control
+type: Version Control
 title: Set Up Git
 language: Python
 ---

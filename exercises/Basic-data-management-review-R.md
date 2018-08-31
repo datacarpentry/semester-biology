@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Basic
+type: Basic
 title: Data Management Review
 language: R
 ---

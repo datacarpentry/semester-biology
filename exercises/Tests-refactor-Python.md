@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Tests
+type: Tests
 title: Refactor
 language: Python
 ---

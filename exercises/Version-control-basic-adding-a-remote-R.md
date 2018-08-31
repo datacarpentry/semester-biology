@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Version Control Basic
+type: Version Control Basic
 title: Adding a Remote
 language: R
 ---

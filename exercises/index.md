@@ -17,14 +17,14 @@ languages: ['SQL', 'R', 'Python', 'Access']
 
   <table>
     <tr>
-      <th>Topic</th>
+      <th>Type</th>
       <th>Title</th>
       <th>Output</th>
     </tr>
   {% for exercise in site.pages %}
     {% if exercise.layout == 'exercise' and exercise.language == language %}
      <tr>
-      <td nowrap>{{ exercise.topic | replace:'and','&'  }}</td>
+      <td nowrap>{{ exercise.type | replace:'and','&'  }}</td>
       <td nowrap><a href="{{ exercise.url | prepend: site.baseurl }}">
         {{ exercise.title }}</a></td>
       {% capture output_file %}{{ exercise.url | remove: 'exercises' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}

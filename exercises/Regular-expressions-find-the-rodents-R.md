@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Regular Expressions
+type: Regular Expressions
 title: Find the Rodents
 language: R
 ---

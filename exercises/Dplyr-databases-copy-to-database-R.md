@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr Databases
+type: dplyr Databases
 title: Copy to Database
 language: R
 ---

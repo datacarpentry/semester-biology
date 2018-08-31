@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Vectors
+type: Vectors
 title: Shrub Volume Vectors
 language: R
 ---

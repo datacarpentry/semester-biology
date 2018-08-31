@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Version Control
+type: Version Control
 title: Fix the Code
 language: Python
 ---

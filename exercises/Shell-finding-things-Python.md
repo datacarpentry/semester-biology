@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Shell
+type: Shell
 title: Finding Things
 language: Python
 ---

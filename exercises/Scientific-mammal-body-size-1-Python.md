@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Scientific
+type: Scientific
 title: Mammal Body Size 1
 language: Python
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Graphing
+type: Graphing
 title: Mammal Body Size Distribution
 language: R
 ---

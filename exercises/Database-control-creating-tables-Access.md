@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Database Control
+type: Database Control
 title: Creating Tables
 language: Access
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Libraries
+type: Libraries
 title: Species Area Relationship 2
 language: Python
 ---

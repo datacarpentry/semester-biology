@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Advanced Queries
+type: Advanced Queries
 title: Nesting Queries
 language: SQL
 ---

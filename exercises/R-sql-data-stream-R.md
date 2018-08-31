@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: R-SQL
+type: R-SQL
 title: Data Stream
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Statistics
+type: Statistics
 title: Adult vs Newborn Size Regression
 language: R
 ---

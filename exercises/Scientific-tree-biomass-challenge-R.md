@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Scientific
+type: Scientific
 title: Tree Biomass Challenge
 language: R
 ---

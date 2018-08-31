@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Tests
+type: Tests
 title: Test the Code
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Functions
+type: Functions
 title: for Loop
 language: Python
 ---

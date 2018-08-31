@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Debugging
+type: Debugging
 title: Fix the Code 1
 language: Python
 ---

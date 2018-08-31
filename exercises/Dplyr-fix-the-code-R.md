@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: dplyr
+type: dplyr
 title: Fix the Code
 language: R
 ---

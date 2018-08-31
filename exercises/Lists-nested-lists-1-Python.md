@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Lists
+type: Lists
 title: Nested Lists 1
 language: Python
 ---

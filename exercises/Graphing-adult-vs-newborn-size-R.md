@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Graphing
+type: Graphing
 title: Adult vs Newborn Size
 language: R
 ---

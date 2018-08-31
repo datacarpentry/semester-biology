@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Combining Basics
+type: Combining Basics
 title: Shrub Volume
 language: Python
 ---

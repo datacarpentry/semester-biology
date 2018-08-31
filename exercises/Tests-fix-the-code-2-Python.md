@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Tests
+type: Tests
 title: Fix the Code 2
 language: Python
 ---

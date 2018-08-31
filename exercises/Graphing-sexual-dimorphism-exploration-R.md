@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Graphing
+type: Graphing
 title: Sexual Dimorphism Exploration
 language: R
 ---

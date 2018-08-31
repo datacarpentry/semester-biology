@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Aggregation
+type: Aggregation
 title: COUNT
 language: SQL
 ---

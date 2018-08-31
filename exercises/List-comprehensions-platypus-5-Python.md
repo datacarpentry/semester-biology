@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: List Comprehensions
+type: List Comprehensions
 title: Platypus 5
 language: Python
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Scientific
+type: Scientific
 title: Size-biased Extinction 1
 language: Python
 ---

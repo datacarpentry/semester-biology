@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Statistics
+type: Statistics
 title: Shrub Volume ANOVA
 language: R
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Data Analysis
+type: Data Analysis
 title: Code Shuffle
 language: Python
 ---

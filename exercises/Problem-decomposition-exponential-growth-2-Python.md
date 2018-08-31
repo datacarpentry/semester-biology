@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Problem Decomposition
+type: Problem Decomposition
 title: Exponential Growth 2
 language: Python
 ---

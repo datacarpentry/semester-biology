@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Strings
+type: Strings
 title: Long Strings
 language: Python
 ---

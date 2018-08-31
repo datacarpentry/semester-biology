@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Basic Queries
+type: Basic Queries
 title: Selecting
 language: Access
 ---
