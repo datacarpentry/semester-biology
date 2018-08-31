@@ -116,13 +116,13 @@ and the standard YAML for a new exercise would look like this:
 layout: exercise
 type: Type of exercise
 title: Name of exercise
-language: [R, Python, SQL]
+topic: [R, Python, SQL]
 ---
 ```
 
 This is placed at the very beginning of the markdown file and provides
 information on what kind of content it is (e.g., exercise, page, etc.),
-the title of the page, and what language it applies to.
+the title of the page, and what topic it applies to.
 
 The page should then be available at a url based on where the file is located
 and what the file name is. So if you created a new exercise in the `exercises/`

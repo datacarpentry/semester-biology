@@ -34,19 +34,19 @@ Marked (`#`) files and directories are [course customization]({{ site.baseurl }}
 |                              | Course Materials
 ├── about                      #   Motivation and support documents
 ├── assignments                |   Assignments documents
-|   ├── language-descr.md      |     lower case file names
+|   ├── topic-descr.md         |     lower case file names
 |   └── ...                    |
 ├── code                       |   Code files used in exercises
 ├── data                       |   Data files used in exercises
 ├── docs                       |   Course & site help docs; Templates
 ├── exercises                  |   Exercise documents
-|   ├── Type-title-Language.md|     UPPER first letter of file name 
+|   ├── Type-title-Topic.md    |     UPPER first letter of file name 
 |   └── ...                    |     File name formatted from YAML 
 ├── lectures                   |   Lecture documents
-|   ├── LANGUAGE-descr.md      |     File name matches assignment
+|   ├── TOPIC-descr.md         |     File name matches assignment
 |   └── ...                    |
 ├── materials                  |   Lecture materials documents
-|   ├── language-descr.md      |     Unmanaged descriptive file name 
+|   ├── topic-descr.md         |     Unmanaged descriptive file name 
 |   └── ...                    |
 ├── nav                        | Site navigation pages
 ├── public                     |
@@ -54,10 +54,10 @@ Marked (`#`) files and directories are [course customization]({{ site.baseurl }}
 |   └── favicon.ico            | Browser tab icon file 
 |                              | Course Materials (Cont.)
 ├── readings                   |   Reading materials
-|   ├── LANGUAGE-descr.md      |     File name matches assignment
+|   ├── TOPIC-descr.md         |     File name matches assignment
 |   └── ...                    |
 └── solutions                  |   Solutions documents
-    ├── Type-tit...guage-1.txt|     File name matches exercise
-    ├── Type-tit...guage-2.jpg|     Number if multiple; any .ext
+    ├── Type-tit...topic-1.txt|     File name matches exercise
+    ├── Type-tit...topic-2.jpg|     Number if multiple; any .ext
     └── ...                    |
 ```
