@@ -2,7 +2,7 @@
 layout: exercise
 type: dplyr Databases
 title: Manipulate Query
-language: R
+topic: R
 ---
 
 This is a follow-up to [Source and Query]({{ site.baseurl }}/exercises/Dplyr-databases-source-and-query-R).

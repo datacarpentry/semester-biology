@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Basic Queries
-language: SQL
+topic: SQL
 ---
 
 > Remember to

@@ -2,7 +2,7 @@
 layout: exercise
 type: dplyr
 title: Collect from Databases
-language: R
+topic: R
 ---
 
 This is a follow-up to [Link to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).

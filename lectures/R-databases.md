@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Working with Databases
-language: R
+topic: R
 ---
 
 [dplyr with Databases]({{ site.baseurl }}/materials/r-databases)

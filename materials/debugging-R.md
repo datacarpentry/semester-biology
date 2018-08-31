@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Debugging
-language: R
+topic: R
 ---
 
 > Remember to

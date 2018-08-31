@@ -2,7 +2,7 @@
 layout: exercise 
 type: Strings
 title: Ultimate Question 1
-language: Python
+topic: Python
 ---
 
 Write a function that prints:

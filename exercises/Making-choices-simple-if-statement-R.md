@@ -2,7 +2,7 @@
 layout: exercise
 type: Making Choices
 title: Simple If Statement
-language: R
+topic: R
 ---
 
 To determine if a file named `thesis_data.csv` exists in your working directory

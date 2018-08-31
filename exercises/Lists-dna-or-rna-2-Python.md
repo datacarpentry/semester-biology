@@ -2,7 +2,7 @@
 layout: exercise
 type: Lists
 title: DNA or RNA 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to the

@@ -2,7 +2,7 @@
 layout: exercise
 type: Spatial Data
 title: Species Occurrences Elevation Histogram
-language: R
+topic: R
 ---
 
 A colleague of yours is working on a project on deer mice ([*Peromyscus maniculatus*](http://animaldiversity.org/accounts/Peromyscus_maniculatus/)) and is interested in what elevations these mice tend to occupy in the continental United States. You offer to help them out by getting some coordinates for specimens of this species and looking up the elevation of these coordinates. 

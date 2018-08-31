@@ -2,7 +2,7 @@
 layout: exercise
 type: Scientific
 title: Mammal Body Size 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to

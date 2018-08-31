@@ -2,7 +2,7 @@
 layout: exercise
 type: Data Frames
 title: Shrub Volume Data Frame
-language: R
+topic: R
 ---
 
 This is a follow up to [Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R).

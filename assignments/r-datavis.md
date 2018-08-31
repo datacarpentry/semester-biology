@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Data Visualization
-language: R
+topic: R
 exercises: ['Basic Queries Review', 'Mass vs Metabolism', 'Adult vs Newborn Size', 'Sexual Dimorphism Exploration', 'Sexual Dimorphism Data Manipulation']
 points: [10, 10, 25, 25, 30]
 ---

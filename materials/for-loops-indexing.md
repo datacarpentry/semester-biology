@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: For Loops
-language: Python
+topic: Python
 ---
 
 Using Range

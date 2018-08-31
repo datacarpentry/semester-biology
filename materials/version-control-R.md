@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Version Control
-language: R
+topic: R
 --- 
 
 > Before class

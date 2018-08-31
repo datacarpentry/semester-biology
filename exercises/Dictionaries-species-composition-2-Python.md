@@ -2,7 +2,7 @@
 layout: exercise
 type: Dictionaries
 title: Species Composition 2
-language: Python
+topic: Python
 ---
 
 Some measures of similarity, like the Jaccard index in

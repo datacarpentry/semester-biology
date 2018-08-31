@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic Queries
 title: Filtering
-language: Access
+topic: Access
 ---
 
 A population biologist (Dr. Undómiel) who studies the population

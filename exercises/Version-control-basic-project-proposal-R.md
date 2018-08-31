@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control Basic
 title: Project Proposal
-language: R
+topic: R
 ---
 
 Familiarize yourself with the [guidelines for the class project]({{ site.baseurl }}/materials/projects).

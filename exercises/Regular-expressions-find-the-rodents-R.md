@@ -2,7 +2,7 @@
 layout: exercise
 type: Regular Expressions
 title: Find the Rodents
-language: R
+topic: R
 ---
 
 There are many diverse sources of biological data in the modern world,

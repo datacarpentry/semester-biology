@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control
 title: Revert
-language: Python
+topic: Python
 ---
 
 You're working late and you sit down to edit `logistic_growth.py`. You

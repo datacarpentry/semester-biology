@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: SQL for Access Users
-language: SQL
+topic: SQL
 ---
 
 Side by Side Demonstrations

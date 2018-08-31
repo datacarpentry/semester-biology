@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control Basic
 title: Commit Multiple Files
-language: R
+topic: R
 ---
 
 This is a follow up to

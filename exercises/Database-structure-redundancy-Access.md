@@ -2,7 +2,7 @@
 layout: exercise
 type: Database Structure
 title: Redundancy
-language: Access
+topic: Access
 ---
 
 The Plots table in our version of the Portal database violates one of

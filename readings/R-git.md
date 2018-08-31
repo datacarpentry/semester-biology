@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Version Control
-language: R
+topic: R
 ---
 
 * [Git basics in RStudio](http://nicercode.github.io/git/rstudio.html)

@@ -2,7 +2,7 @@
 layout: exercise
 type: Database Control
 title: Creating Tables
-language: Access
+topic: Access
 ---
 
 ​a. Create a new MS Access database named `assignment2_yourname`

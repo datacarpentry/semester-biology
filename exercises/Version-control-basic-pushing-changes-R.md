@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control Basic
 title: Pushing Changes
-language: R
+topic: R
 ---
 
 Now that you've set up your GitHub repository for collaborating with your colleague

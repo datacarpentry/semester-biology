@@ -2,7 +2,7 @@
 layout: exercise
 type: Expressions and Variables
 title: Variable Reassignment
-language: Python
+topic: Python
 ---
 
 Using a single variable convert a temperature of 42 degrees Fahrenheit

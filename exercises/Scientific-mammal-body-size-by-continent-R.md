@@ -2,7 +2,7 @@
 layout: exercise
 type: Scientific
 title: Mammal Body Size by Continent
-language: R
+topic: R
 ---
 
 This is a follow up to

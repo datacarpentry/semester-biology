@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control
 title: Merge Conflict
-language: Python
+topic: Python
 ---
 
 You decide to change the parameter values that are being used in

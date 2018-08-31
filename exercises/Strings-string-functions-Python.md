@@ -2,7 +2,7 @@
 layout: exercise
 type: Strings
 title: string Functions
-language: Python
+topic: Python
 ---
 
 Use functions from the `string` module or from base Python to print the

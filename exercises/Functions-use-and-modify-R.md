@@ -2,7 +2,7 @@
 layout: exercise
 type: Functions
 title: Use and Modify
-language: R
+topic: R
 ---
 
 The length of an organism is typically strongly correlated with it's body

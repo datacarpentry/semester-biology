@@ -2,7 +2,7 @@
 layout: exercise
 type: Making Choices
 title: Choices with Functions
-language: R
+topic: R
 ---
 
 The [UHURU experiment](http://www.esapubs.org/archive/ecol/E095/064/metadata.php)

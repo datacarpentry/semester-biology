@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control Basic
 title: Create Project Repository
-language: R
+topic: R
 ---
 
 This is a follow up to [Project Proposal]({{ site.baseurl }}/exercises/Version-control-basic-project-proposal-R).

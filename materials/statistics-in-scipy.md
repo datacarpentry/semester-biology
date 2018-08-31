@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Statistics in Scipy
-language: Python
+topic: Python
 ---
 
 #### Import

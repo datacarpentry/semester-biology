@@ -2,7 +2,7 @@
 layout: exercise
 type: Making Choices
 title: Unit Conversion Challenge
-language: R
+topic: R
 ---
 
 Measures of the amount of energy used by biological processes are critical to 

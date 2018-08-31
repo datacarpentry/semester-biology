@@ -2,7 +2,7 @@
 layout: exercise
 type: Lists
 title: Nested Lists 2
-language: Python
+topic: Python
 ---
 
 One of your collaborators has posted [a comma-delimited text

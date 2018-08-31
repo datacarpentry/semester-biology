@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Nested Queries
-language: SQL
+topic: SQL
 ---
 
 ### Take Home Message

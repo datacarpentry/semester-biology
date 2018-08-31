@@ -2,7 +2,7 @@
 layout: exercise
 type: Object Oriented Programming
 title: Platypus 1
-language: Python
+topic: Python
 ---
 
 We're experimenting with platypus (platypi?). During the breeding

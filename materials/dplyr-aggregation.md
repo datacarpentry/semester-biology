@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: dplyr Aggregation
-language: R
+topic: R
 time: 30
 ---
 

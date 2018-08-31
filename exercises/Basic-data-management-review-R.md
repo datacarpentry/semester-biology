@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic
 title: Data Management Review
-language: R
+topic: R
 ---
 
 Dr. Granger is interested in studying the relationship between the

@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: tidyr
-language: R
+topic: R
 ---
 
 [tidyr]({{ site.baseurl }}/materials/tidyr)

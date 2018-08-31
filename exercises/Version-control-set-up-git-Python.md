@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control
 title: Set Up Git
-language: Python
+topic: Python
 ---
 
 1. Clone your repository for the course (or cd into it if you've already cloned

@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Programming Fundamentals 2
-language: R
+topic: R
 exercises: ['Use and Modify with Apply', 'Crown Volume Calculation', 'Basic Vector', 'Basic Index', 'stringr', 'Multiple Files', 'Species Occurrences Elevation Histogram']
 points: [10, 20, 15, 10, 20, 25]
 ---

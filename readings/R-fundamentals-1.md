@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Programming Fundamentals 1
-language: R
+topic: R
 ---
 
 * Topics

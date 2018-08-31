@@ -2,7 +2,7 @@
 layout: exercise
 type: Making Choices
 title: GC Content 3
-language: Python
+topic: Python
 ---
 
 As part of the [GC Content 2]({{ site.baseurl }}/exercises/Functions-gc-content-2-Python) problem you wrote a function to calculate the 

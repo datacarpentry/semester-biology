@@ -2,7 +2,7 @@
 layout: exercise
 type: Libraries
 title: Species Area Relationship 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Species Area Relationship]({{ site.baseurl }}/exercises/Higher-order-functions-species-area-relationship-1-Python) problem.

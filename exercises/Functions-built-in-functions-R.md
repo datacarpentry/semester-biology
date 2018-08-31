@@ -2,7 +2,7 @@
 layout: exercise
 type: Functions
 title: Built-in Functions
-language: R
+topic: R
 ---
 
 A built-in function is one that you don't need to install and load a package to

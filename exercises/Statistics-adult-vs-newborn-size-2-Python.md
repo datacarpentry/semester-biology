@@ -2,7 +2,7 @@
 layout: exercise
 type: Statistics
 title: Adult vs Newborn Size 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to [Adult vs Newborn Size 1]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-1-Python).

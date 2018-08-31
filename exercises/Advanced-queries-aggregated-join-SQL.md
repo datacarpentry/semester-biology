@@ -2,7 +2,7 @@
 layout: exercise
 type: Advanced Queries
 title: Aggregated Join
-language: SQL
+topic: SQL
 ---
 
 Write a query that displays the total number of rodent individuals sampled on

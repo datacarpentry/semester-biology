@@ -2,7 +2,7 @@
 layout: exercise
 type: Regular Expressions
 title: List the Rodents 1
-language: Python
+topic: Python
 ---
 
 There are many diverse sources of biological data in the modern world,

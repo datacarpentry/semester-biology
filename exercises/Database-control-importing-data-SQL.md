@@ -2,7 +2,7 @@
 layout: exercise
 type: Database Control
 title: Importing Data
-language: SQL
+topic: SQL
 ---
 
 This example will walk you through how to get data that already exists

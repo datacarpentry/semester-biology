@@ -3,7 +3,7 @@
 {% for exercise in page.exercises %}
   {% assign exercise_loop = forloop %}
   {% for otherpage in site.pages %}
-    {% if exercise == otherpage.title and page.language == otherpage.language and otherpage.layout == 'exercise' %}
+    {% if exercise == otherpage.title and page.topic == otherpage.topic and otherpage.layout == 'exercise' %}
       <li><h4><a href="{{ site.baseurl }}{{ otherpage.url }}">
         {% if page.points[exercise_loop.index0] %}
         <font color="000000">{{ otherpage.title | append: " (" }}{{page.points[exercise_loop.index0] | append: " pts)"}}</font></a></h4>

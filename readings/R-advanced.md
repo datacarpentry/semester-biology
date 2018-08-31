@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Advanced Topics
-language: R
+topic: R
 ---
 
 * Topics

@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic
 title: Vector Review
-language: R
+topic: R
 ---
 
 The number of birds banded at a series of sampling sites has been counted by

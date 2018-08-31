@@ -2,7 +2,7 @@
 layout: exercise
 type: Advanced Queries
 title: Basic Join
-language: SQL
+topic: SQL
 ---
 
 Write a query that returns the `year`, `month`, and `day` for each individual

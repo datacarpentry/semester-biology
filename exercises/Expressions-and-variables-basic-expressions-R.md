@@ -2,7 +2,7 @@
 layout: exercise
 type: Expressions and Variables
 title: Basic Expressions
-language: R
+topic: R
 ---
 
 Think about what value each of the following expressions will return?

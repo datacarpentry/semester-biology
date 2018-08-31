@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Aggregation
-language: SQL
+topic: SQL
 ---
 
 > Remember to

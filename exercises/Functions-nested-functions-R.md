@@ -2,7 +2,7 @@
 layout: exercise
 type: Functions
 title: Nested Functions
-language: R
+topic: R
 ---
 
 This is a follow up to [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).

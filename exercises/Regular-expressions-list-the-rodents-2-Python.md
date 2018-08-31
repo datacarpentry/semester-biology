@@ -2,7 +2,7 @@
 layout: exercise
 type: Regular Expressions
 title: List the Rodents 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [List the Rodents 1 problem]({{ site.baseurl }}/exercises/Regular-expressions-list-the-rodents-1-Python).

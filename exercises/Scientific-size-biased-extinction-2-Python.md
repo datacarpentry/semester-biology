@@ -2,7 +2,7 @@
 layout: exercise
 type: Scientific
 title: Size-biased Extinction 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to [Size-biased Extinction 1]({{ site.baseurl }}/exercises/Scientific-size-biased-extinction-1-Python).

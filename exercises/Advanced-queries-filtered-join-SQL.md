@@ -2,7 +2,7 @@
 layout: exercise
 type: Advanced Queries
 title: Filtered Join
-language: SQL
+topic: SQL
 ---
 
 You are curious about what other kinds of animals get caught in the Sherman

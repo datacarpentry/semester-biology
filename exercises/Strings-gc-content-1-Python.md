@@ -2,7 +2,7 @@
 layout: exercise
 type: Strings
 title: GC Content 1
-language: Python
+topic: Python
 ---
 
 A colleague has produced a file with one DNA sequence on each line. Download

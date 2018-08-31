@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Paths
-language: R
+topic: R
 ---
 
 ### Introduction to Paths

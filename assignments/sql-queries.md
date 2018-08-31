@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Database Queries
-language: SQL
+topic: SQL
 exercises: ['SELECT', 'WHERE', 'ORDER BY', 'DISTINCT', 'Missing Data', 'GROUP
 BY', 'COUNT', 'SUM', 'Basic Join', 'Multi-table Join', 'Filtered Join',
 'Detailed Join', 'Aggregated Join']

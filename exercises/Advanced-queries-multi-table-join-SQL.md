@@ -2,7 +2,7 @@
 layout: exercise
 type: Advanced Queries
 title: Multi-table Join
-language: SQL
+topic: SQL
 ---
 
 The `plots` table in the Portal database can be joined to the `surveys` table

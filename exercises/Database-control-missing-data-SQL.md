@@ -2,7 +2,7 @@
 layout: exercise
 type: Database Control
 title: Missing Data
-language: SQL
+topic: SQL
 ---
 
 Write a query that returns the `year`, `month`, `day`, `species_id`, and 

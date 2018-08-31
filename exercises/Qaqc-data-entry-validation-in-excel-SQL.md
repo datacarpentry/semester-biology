@@ -2,7 +2,7 @@
 layout: exercise
 type: QAQC
 title: Data entry validation in Excel
-language: SQL
+topic: SQL
 ---
 
 You're starting a new study of small mammals at the [NEON site at Ordway-Swisher](http://ordway-swisher.ufl.edu/NEON.aspx). 

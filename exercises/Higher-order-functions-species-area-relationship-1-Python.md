@@ -2,7 +2,7 @@
 layout: exercise
 type: Higher Order Functions
 title: Species Area Relationship 1
-language: Python
+topic: Python
 ---
 
 The species-area relationship characterizes the relationship between the

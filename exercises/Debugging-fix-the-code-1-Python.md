@@ -2,7 +2,7 @@
 layout: exercise
 type: Debugging
 title: Fix the Code 1
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-Python).

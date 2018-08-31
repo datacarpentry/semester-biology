@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Making Choices
-language: Python
+topic: Python
 ---
 
     number = -2

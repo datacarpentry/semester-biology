@@ -2,7 +2,7 @@
 layout: exercise
 type: Expressions and Variables
 title: Modify the Code 1
-language: Python
+topic: Python
 ---
 
 The following code calculates the total net primary productivity (NPP)

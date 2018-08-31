@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Basic Program Design
-language: Python
+topic: Python
 ---
 
     """module docstring"""

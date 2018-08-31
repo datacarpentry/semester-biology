@@ -2,7 +2,7 @@
 layout: exercise
 type: Shell
 title: Server
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Executable Programs]({{site.baseurl}}/exercises/Shell-executable-programs-Python).

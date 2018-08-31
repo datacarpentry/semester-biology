@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic Queries
 title: GROUP BY
-language: SQL
+topic: SQL
 ---
 
 Using GROUP BY, write a query that returns a list of dates on which individuals

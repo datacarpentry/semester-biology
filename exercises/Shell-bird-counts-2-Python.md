@@ -2,7 +2,7 @@
 layout: exercise
 type: Shell
 title: Bird Counts 2
-language: Python
+topic: Python
 ---
 
 We have data on bird communities that we've collected that we need to

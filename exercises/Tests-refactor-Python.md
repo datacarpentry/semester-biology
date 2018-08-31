@@ -2,7 +2,7 @@
 layout: exercise
 type: Tests
 title: Refactor
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Fix the Code 2 problem]({{ site.baseurl }}/exercises/Tests-fix-the-code-2-Python).

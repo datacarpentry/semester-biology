@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Exporting tables and queries from OpenOffice
-language: OpenOffice
+topic: OpenOffice
 ---
 
 #### Option 1 - Using Calc

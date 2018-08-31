@@ -2,7 +2,7 @@
 layout: exercise
 type: Graphing
 title: Sexual Dimorphism Data Manipulation
-language: R
+topic: R
 ---
 
 This is a follow up to [Sexual Dimorophism Exploration]({{ site.baseurl }}/exercises/Graphing-sexual-dimorphism-exploration-R).

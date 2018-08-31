@@ -2,7 +2,7 @@
 layout: exercise
 type: Strings
 title: Split Strings
-language: Python
+topic: Python
 ---
 
 You have a data file with a single `taxonomy` column in it. This column contains

@@ -2,7 +2,7 @@
 layout: exercise
 type: Database Structure 
 title: Split Cells
-language: Access
+topic: Access
 ---
 
 The Species table in the Portal database has a structural problem in

@@ -2,7 +2,7 @@
 layout: exercise
 type: Making Choices
 title: Modify the Code 2
-language: Python
+topic: Python
 ---
 
 The following function is intended to check if two geographic points are close

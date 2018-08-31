@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic Queries
 title: ORDER BY
-language: SQL
+topic: SQL
 ---
 
 The graduate students that work at the Portal site are hanging out late

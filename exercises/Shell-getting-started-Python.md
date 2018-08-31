@@ -2,7 +2,7 @@
 layout: exercise
 type: Shell
 title: Getting Started
-language: Python
+topic: Python
 ---
 
 Do the following using the Linux/Mac shell or GitBash on Windows:

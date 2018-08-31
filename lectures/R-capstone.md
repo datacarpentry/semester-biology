@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Putting It All Together
-language: R
+topic: R
 ---
 
 * [Debugging]({{ site.baseurl }}/materials/debugging-R)

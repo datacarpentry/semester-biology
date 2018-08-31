@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: gganimate
-language: R
+topic: R
 ---
 
 > * ImageMagick needs to be installed to save as gif (the default)

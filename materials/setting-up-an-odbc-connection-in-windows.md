@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Setting up an ODBC connection in Windows
-language: Access
+topic: Access
 ---
 
 ### Installing the MySQL ODBC driver (do this step once) {style="font-weight: bold; font-style: inherit; font-size: 15px; font-family: 'Segoe UI', 'Lucida Grande', Arial, sans-serif; vertical-align: baseline; line-height: 1.25em; color: #444444; padding: 0px; margin: 0px; border: 0px initial initial;"}

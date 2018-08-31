@@ -2,7 +2,7 @@
 layout: exercise
 type: Expressions and Variables
 title: Variable Reassignment
-language: R
+topic: R
 ---
 
 Using a single variable convert a temperature of 42 degrees Fahrenheit

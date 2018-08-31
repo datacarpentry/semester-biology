@@ -2,7 +2,7 @@
 layout: exercise
 type: For Loops
 title: Exponential Growth 1
-language: Python
+topic: Python
 ---
 
 The field of population biology is interested in how the number of

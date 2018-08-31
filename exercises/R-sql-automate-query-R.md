@@ -2,7 +2,7 @@
 layout: exercise
 type: R-SQL
 title: Automate Query
-language: R
+topic: R
 ---
 
 This is a follow-up to [Connect and Query]({{ site.baseurl }}/exercises/R-sql-connect-and-query-R).

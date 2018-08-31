@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Knitr
-language: R
+topic: R
 ---
 
 ### Literate programming

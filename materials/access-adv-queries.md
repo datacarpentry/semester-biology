@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Advanced Queries
-language: Access
+topic: Access
 ---
 
 So far we've learned about basic SELECT queries in Access,

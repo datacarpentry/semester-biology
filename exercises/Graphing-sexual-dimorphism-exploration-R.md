@@ -2,7 +2,7 @@
 layout: exercise
 type: Graphing
 title: Sexual Dimorphism Exploration
-language: R
+topic: R
 ---
 
 You are interested in understanding whether sexual size dimorphism is a general

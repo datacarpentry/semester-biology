@@ -2,7 +2,7 @@
 layout: exercise
 type: dplyr
 title: Portal Data Manipulation
-language: R
+topic: R
 ---
 
 Download a copy of the

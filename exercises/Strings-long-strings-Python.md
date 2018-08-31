@@ -2,7 +2,7 @@
 layout: exercise
 type: Strings
 title: Long Strings
-language: Python
+topic: Python
 ---
 
 For the DNA sequence below determine the following properties and print them to

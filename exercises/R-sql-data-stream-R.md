@@ -2,7 +2,7 @@
 layout: exercise
 type: R-SQL
 title: Data Stream
-language: R
+topic: R
 ---
 
 This is a follow-up to [Automate Query]({{ site.baseurl }}/exercises/R-sql-automate-query-R).

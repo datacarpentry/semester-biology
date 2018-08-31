@@ -2,7 +2,7 @@
 layout: exercise
 type: Shell
 title: Pipes and Filters
-language: Python
+topic: Python
 ---
 
 You're working on a large project trying to predict [diversity

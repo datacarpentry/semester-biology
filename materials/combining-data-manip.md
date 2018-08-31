@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Combining Data Manipulations in dplyr
-language: R
+topic: R
 time: 30
 ---
 

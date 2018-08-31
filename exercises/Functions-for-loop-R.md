@@ -2,7 +2,7 @@
 layout: exercise
 type: Functions
 title: for Loop
-language: R
+topic: R
 ---
 
 This is a follow up to [Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).

@@ -2,7 +2,7 @@
 layout: exercise
 type: Higher Order Functions
 title: Species Area Relationship
-language: R
+topic: R
 ---
 
 The species-area relationship characterizes the relationship between the number 

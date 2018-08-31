@@ -2,7 +2,7 @@
 layout: exercise
 type: Aggregation
 title: COUNT
-language: SQL
+topic: SQL
 ---
 
 Write a query that returns the number of individuals trapped in each year for

@@ -2,7 +2,7 @@
 layout: exercise
 type: Database Control
 title: Importing Tables
-language: Access
+topic: Access
 ---
 
 #### Import Data in MS Access

@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic Queries
 title: Grouping 2
-language: Access
+topic: Access
 ---
 
 Write a query that returns a list of dates on which individuals of the

@@ -2,7 +2,7 @@
 layout: exercise
 type: dplyr
 title: Portal Data Joins
-language: R
+topic: R
 ---
 
 Download copies of the following Portal Teaching Database tables:

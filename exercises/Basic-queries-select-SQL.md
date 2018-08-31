@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic Queries
 title: SELECT
-language: SQL
+topic: SQL
 ---
 
 For this and many of the following problems you will create queries that

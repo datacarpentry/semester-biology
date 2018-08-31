@@ -2,7 +2,7 @@
 layout: exercise
 type: Making Choices
 title: Unit Conversion Challenge
-language: Python
+topic: Python
 ---
 
 Measures of the amount of energy used by biological processes are

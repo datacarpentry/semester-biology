@@ -2,7 +2,7 @@
 layout: exercise
 type: List Comprehensions
 title: Platypus 5
-language: Python
+topic: Python
 ---
 
 Here's the platypus fecundity data from our first experiment (using the

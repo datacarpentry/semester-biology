@@ -2,7 +2,7 @@
 layout: exercise
 type: Database Structure
 title: Split Cells
-language: SQL
+topic: SQL
 ---
 
 The original Portal `Species` table is also messy. [Download it]({{ site.baseurl }}/data/Portal-species-original.csv)

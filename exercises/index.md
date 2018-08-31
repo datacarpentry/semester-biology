@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Exercises
-languages: ['SQL', 'R', 'Python', 'Access']
+topics: ['SQL', 'R', 'Python', 'Access']
 ---
 <a href="#SQL">SQL</a> \| <a href="#R">R</a> \| <a href="#Python">Python</a> \|  <a href="#Access">Access</a>
 
-{% for language in page.languages %}
-  <h3> {{ language }} <a name="{{ language }}"></a></h3>
+{% for topic in page.topics %}
+  <h3> {{ topic }} <a name="{{ topic }}"></a></h3>
 
-  {% if language == 'Python' or language == 'Access' %}
-  <i>{{ language }} exercises were used in 
+  {% if topic == 'Python' or topic == 'Access' %}
+  <i>{{ topic }} exercises were used in 
   <a href="http://www.programmingforbiologists.org/">previous iterations</a>
   of the course at Utah State University, but are no longer under active 
   development.</i>
@@ -22,7 +22,7 @@ languages: ['SQL', 'R', 'Python', 'Access']
       <th>Output</th>
     </tr>
   {% for exercise in site.pages %}
-    {% if exercise.layout == 'exercise' and exercise.language == language %}
+    {% if exercise.layout == 'exercise' and exercise.topic == topic %}
      <tr>
       <td nowrap>{{ exercise.type | replace:'and','&'  }}</td>
       <td nowrap><a href="{{ exercise.url | prepend: site.baseurl }}">

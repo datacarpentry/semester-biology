@@ -2,7 +2,7 @@
 layout: exercise
 type: Advanced Queries
 title: Detailed Join
-language: SQL
+topic: SQL
 ---
 
 We want to do an analysis comparing the size of individuals on the `Control`

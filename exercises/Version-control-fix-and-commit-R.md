@@ -2,7 +2,7 @@
 layout: exercise
 type: Version Control
 title: Fix and Commit
-language: R
+topic: R
 ---
 
 Growth of biological populations are often modeled using logistic

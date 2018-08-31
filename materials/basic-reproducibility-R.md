@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Basic Reproducibility
-language: R
+topic: R
 ---
 
 ### Introduction to Reproducibility

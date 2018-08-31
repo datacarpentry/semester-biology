@@ -2,7 +2,7 @@
 layout: exercise
 type: Strings
 title: stringr Functions
-language: R
+topic: R
 ---
 
 Use the character functions from the package [`stringr`](http://cran.r-project.org/web/packages/stringr/stringr.pdf) to print the following strings.

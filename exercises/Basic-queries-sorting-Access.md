@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic Queries 
 title: Sorting
-language: Access
+topic: Access
 ---
 
 The graduate students that work at the Portal site are hanging out late one

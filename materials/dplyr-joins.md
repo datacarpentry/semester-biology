@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: dplyr Joins
-language: R
+topic: R
 time: 30
 ---
 

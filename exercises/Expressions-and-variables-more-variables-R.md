@@ -2,7 +2,7 @@
 layout: exercise
 type: Expressions and Variables
 title: More Variables
-language: R
+topic: R
 ---
 
 Calculate a total biomass in grams for 3 white-throated woodrats

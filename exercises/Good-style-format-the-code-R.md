@@ -2,7 +2,7 @@
 layout: exercise
 type: Good Style
 title: Format the Code
-language: R
+topic: R
 ---
 
 Programming computers to do cool science is a major advantage for modern scientists. But, developing research programs that are transparent, collaborative and reproducible is a major advantage for science. All data scientists can contribute to this goal by writing their code in easily readable, well described, and well commented scripts.

@@ -2,7 +2,7 @@
 layout: exercise
 type: Strings
 title: Print Strings
-language: R
+topic: R
 ---
 
 1. Print the following: Post hoc ergo propter hoc

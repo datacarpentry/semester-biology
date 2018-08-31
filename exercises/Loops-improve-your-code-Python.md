@@ -2,7 +2,7 @@
 layout: exercise
 type: Loops
 title: Improve Your Code
-language: Python
+topic: Python
 ---
 
 This is a follow up to [GC Content 2]({{ site.baseurl }}/exercises/Functions-gc-content-2-Python/).

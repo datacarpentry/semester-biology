@@ -2,7 +2,7 @@
 layout: exercise
 type: Aggregation
 title: Sum
-language: Access
+topic: Access
 ---
 
 Write a query that returns the number of individuals of each species

@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Importing data
-language: Python
+topic: Python
 ---
 
 ### From files

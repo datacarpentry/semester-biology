@@ -2,7 +2,7 @@
 layout: exercise
 type: Advanced Queries
 title: Nesting Queries
-language: SQL
+topic: SQL
 ---
 
 Write a query that returns the average number of individuals sampled on each

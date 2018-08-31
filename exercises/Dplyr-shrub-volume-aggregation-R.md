@@ -2,7 +2,7 @@
 layout: exercise
 type: dplyr
 title: Shrub Volume Aggregation
-language: R
+topic: R
 ---
 
 This is a follow-up to [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).

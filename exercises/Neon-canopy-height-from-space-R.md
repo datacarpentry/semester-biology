@@ -2,7 +2,7 @@
 layout: exercise
 type: NEON
 title: Canopy Height from Space
-language: R
+topic: R
 ---
 
 The [National Ecological Observatory Network](http://www.neonscience.org) has invested in [high-resolution airborne imaging](http://www.neonscience.org/data-resources/get-data/airborne-data) of their field sites. 

@@ -2,7 +2,7 @@
 layout: exercise
 type: Loops
 title: Shrub Dimensions 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to [Shrub Dimensions 1]({{ site.baseurl }}/exercises/Loops-shrub-dimensions-1-Python)

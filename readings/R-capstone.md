@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Putting It All Together
-language: R
+topic: R
 ---
 
 * Topics

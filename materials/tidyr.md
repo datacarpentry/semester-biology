@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: tidyr
-language: SQL
+topic: SQL
 ---
 
 > Set up R console:

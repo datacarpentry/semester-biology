@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Putting It All Together
-language: R
+topic: R
 exercises: ['Size-biased Extinction']
 ---
 

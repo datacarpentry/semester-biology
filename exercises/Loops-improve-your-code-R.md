@@ -2,7 +2,7 @@
 layout: exercise
 type: Loops
 title: Improve Your Code
-language: R
+topic: R
 ---
 
 This is a follow up to [String Data]({{ site.baseurl }}/exercises/Functions-string-data-R/).

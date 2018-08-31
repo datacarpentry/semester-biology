@@ -2,7 +2,7 @@
 
   <tr>
     <th width="50">Week</th>
-    <th width="200">Language</th>
+    <th width="200">Topic</th>
     <th width="300">Lesson</th>
     <th width="50">Reading</th>
     <th width="50">Lecture</th>
@@ -13,23 +13,23 @@
 
     {% for otherpage in site.pages %}
       {% if otherpage.title == assignment and otherpage.element == 'assignment' %}
-        {% capture language %}{{ otherpage.language }}{% endcapture %}
+        {% capture topic %}{{ otherpage.topic }}{% endcapture %}
         {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
         {% break %}
       {% endif %}
-      {% assign language = nil %}
+      {% assign topic = nil %}
       {% assign assignment_link = nil %}
     {% endfor %}
 
     {% for lecturepage in site.pages %}
-      {% if language %}
-        {% if lecturepage.title == assignment and lecturepage.element == 'lecture' and lecturepage.language == language %}
+      {% if topic %}
+        {% if lecturepage.title == assignment and lecturepage.element == 'lecture' and lecturepage.topic == topic %}
           {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
           {% break %}
         {% endif %}
       {% else %}
         {% if lecturepage.title == assignment and lecturepage.element == 'lecture' %}
-          {% capture language %}{{ lecturepage.language }}{% endcapture %}
+          {% capture topic %}{{ lecturepage.topic }}{% endcapture %}
           {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
           {% break %}
         {% endif %}
@@ -38,14 +38,14 @@
     {% endfor %}
 
     {% for readingpage in site.pages %}
-      {% if language %}
-        {% if readingpage.title == assignment and readingpage.element == 'reading' and readingpage.language == language %}
+      {% if topic %}
+        {% if readingpage.title == assignment and readingpage.element == 'reading' and readingpage.topic == topic %}
           {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
           {% break %}
         {% endif %}
       {% else %}
         {% if readingpage.title == assignment and readingpage.element == 'reading' %}
-          {% capture language %}{{ readingpage.language }}{% endcapture %}
+          {% capture topic %}{{ readingpage.topic }}{% endcapture %}
           {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
           {% break %}
         {% endif %}
@@ -55,7 +55,7 @@
 
     <tr>
       <td align="right">{{ forloop.index }}</td>
-      <td>{{ language }}</td>
+      <td>{{ topic }}</td>
       <td>{{ assignment }}</td>
 
       {% if reading_link %}

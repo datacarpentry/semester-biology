@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Projects Information
-language: R
+topic: R
 ---
 
 ## Goals

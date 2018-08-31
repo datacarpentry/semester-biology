@@ -2,7 +2,7 @@
 layout: exercise
 type: Sets
 title: Species Composition 1
-language: Python
+topic: Python
 ---
 
 In ecology we are often interested in how similar two locations are with

@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: for loops
-language: R
+topic: R
 ---
 
 ### Apply functions

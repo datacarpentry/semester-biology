@@ -2,7 +2,7 @@
 layout: exercise
 type: Graphing
 title: Adult vs Newborn Size
-language: R
+topic: R
 ---
 
 It makes sense that larger organisms have larger offspring, but what the

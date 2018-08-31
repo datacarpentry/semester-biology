@@ -2,7 +2,7 @@
 layout: page
 element: assignment
 title: Data Entry and Storage
-language: SQL
+topic: SQL
 exercises: ['Improving Messy Data', 'Data entry validation in Excel']
 points: [50, 50]
 ---

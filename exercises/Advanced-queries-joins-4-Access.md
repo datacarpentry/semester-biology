@@ -2,7 +2,7 @@
 layout: exercise
 type: Advanced Queries
 title: Joins 4
-language: Access
+topic: Access
 ---
 
 Write a query that displays the total number of individuals sampled on each plot

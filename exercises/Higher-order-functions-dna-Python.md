@@ -2,7 +2,7 @@
 layout: exercise
 type: Higher Order Functions
 title: DNA
-language: Python
+topic: Python
 ---
 
 Write a function to determine the GC-content of a DNA sequence and another

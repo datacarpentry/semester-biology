@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Integrating R and SQL
-language: R
+topic: R
 ---
 
 * Topics

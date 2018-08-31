@@ -2,7 +2,7 @@
 layout: exercise
 type: Expressions and Variables
 title: Basic Variables
-language: Python
+topic: Python
 ---
 
 Here is a small program that converts a mass in kilograms to a mass in grams and

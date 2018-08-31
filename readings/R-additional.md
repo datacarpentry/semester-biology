@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Additional R Resources
-language: R
+topic: R
 ---
 
 ### Reference

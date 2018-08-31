@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Introduction to R
-language: R
+topic: R
 ---
 
 > Remind students to install R and RStudio.

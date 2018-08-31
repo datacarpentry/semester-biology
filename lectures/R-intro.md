@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Introduction to R and RStudio
-language: R
+topic: R
 ---
 
 1. [Introduction]({{ site.baseurl }}/materials/r-intro)

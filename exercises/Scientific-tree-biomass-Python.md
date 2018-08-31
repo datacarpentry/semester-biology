@@ -2,7 +2,7 @@
 layout: exercise
 type: Scientific
 title: Tree Biomass
-language: Python
+topic: Python
 ---
 
 Understanding the total amount of biomass (the total mass of all

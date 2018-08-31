@@ -2,7 +2,7 @@
 layout: exercise
 type: Graphing
 title: Mass vs Metabolism
-language: R
+topic: R
 ---
 
 The relationship between the body size of an organism and its metabolic

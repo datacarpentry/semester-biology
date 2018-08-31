@@ -2,7 +2,7 @@
 layout: exercise
 type: Tidy Data
 title: Improving Messy Data
-language: SQL
+topic: SQL
 ---
 
 A lot of real data isn't very tidy, mostly because most scientists aren't taught

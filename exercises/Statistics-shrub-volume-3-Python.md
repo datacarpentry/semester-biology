@@ -2,7 +2,7 @@
 layout: exercise
 type: Statistics
 title: Shrub Volume 3
-language: Python
+topic: Python
 ---
 
 This is a follow up to [Shrub Volume 2]({{ site.baseurl }}/exercises/Scientific-shrub-volume-2-Python).

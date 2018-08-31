@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: A brief introduction to Numpy
-language: Python
+topic: Python
 ---
 
 ### What is Numpy

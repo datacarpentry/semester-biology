@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Running BLAST
-language: Python
+topic: Python
 ---
 
 # Import the modules for interfacing with BLAST and parsing the output

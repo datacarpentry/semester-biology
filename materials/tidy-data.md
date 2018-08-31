@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: Tidy Data
-language: SQL
+topic: SQL
 ---
 
 The main goal of tidy data is making it easy for a computer to work with the

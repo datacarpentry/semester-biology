@@ -2,7 +2,7 @@
 layout: exercise
 type: Debugging
 title: Debug the Code
-language: R
+topic: R
 ---
 
 This is a follow up to [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R).

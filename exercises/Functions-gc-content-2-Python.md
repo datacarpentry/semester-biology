@@ -2,7 +2,7 @@
 layout: exercise
 type: Functions
 title: GC Content 2
-language: Python
+topic: Python
 ---
 
 This is a follow up to [GC Content 1]({{ site.baseurl }}/exercises/Strings-gc-content-1-Python/).

@@ -2,7 +2,7 @@
 layout: page
 element: notes
 title: 3-day Introduction to Databases
-language: SQL
+topic: SQL
 ---
 
 

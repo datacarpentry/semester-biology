@@ -2,7 +2,7 @@
 layout: exercise
 type: Basic Queries
 title: WHERE
-language: SQL
+topic: SQL
 ---
 
 A population biologist (Dr. Undomiel) who studies the population dynamics of

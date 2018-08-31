@@ -2,7 +2,7 @@
 layout: exercise
 type: Vectors
 title: Shrub Volume Vectors
-language: R
+topic: R
 ---
 
 You have data on the length, width, and height of the yew

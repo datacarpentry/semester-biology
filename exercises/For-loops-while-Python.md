@@ -2,7 +2,7 @@
 layout: exercise
 type: For Loops
 title: While
-language: Python
+topic: Python
 ---
 
 This is a follow up to the [Exponential Growth problem]({{ site.baseurl }}/exercises/For-loops-exponential-growth-1-Python).

@@ -2,7 +2,7 @@
 layout: exercise
 type: NEON
 title: Phenology from Space
-language: R
+topic: R
 ---
 
 The high-resolution images from [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R) 

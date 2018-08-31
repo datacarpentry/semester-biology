@@ -2,7 +2,7 @@
 layout: exercise
 type: Strings
 title: Print Strings
-language: Python
+topic: Python
 ---
 
 Write a series of print statements that returns the following (include a
