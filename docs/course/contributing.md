@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+type: Help
 title: Providing Feedback and Contributing New Material
 ---
 
@@ -70,7 +70,7 @@ GitHub to facilitate collaboration on developing this kind of material for
 university courses. The central component of a [flipped computing course]({{ site.baseurl }}/docs/course/course-delivery) is the 
 exercises, so one of the primary forms of contribution we expect will be adding 
 exercises to the existing set. Individual instructors can then select from a 
-rich pool of exercises the set that best fit the topics, languages, and 
+rich pool of exercises the set that best fit the focus, languages, and 
 scientific domains they want to cover in the course.
 
 There are lots of great resources for being introduced to the individual

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+type: Help
 title: Customizing the Course for Your Needs
 ---
 

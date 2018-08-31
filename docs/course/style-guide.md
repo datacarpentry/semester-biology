@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+type: Help
 title: Style Guide
 ---
 

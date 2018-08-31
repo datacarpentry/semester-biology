@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+type: Help
 title: Course Structure
 ---
 
@@ -80,14 +80,14 @@ language: Foo        language: Foo        language: Foo
 ```
 ---
 layout: exercise
-topic: Practice
+type: Practice
 title: Ba Ram
 language: Foo
 ---
 ```
 
 - `exercises/` file names share similar values to `exercises/` YAML in the form:
-`Topic-title-Language.md`. 
+`Type-title-Language.md`. 
   - From the above YAML: `Practice-ba-ram-Foo.md`
 - `exercises/` file names MUST start with an `UPPER` first letter.
 - `solutions`/ file names MUST match the `exercises/` file name and can use any extension. For example: `Practice-ba-ram-Foo.txt`

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+type: Help
 title: Forking the Course
 ---
 

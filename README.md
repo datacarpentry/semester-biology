@@ -51,7 +51,7 @@ developing this kind of material for university courses. The central component
 of a flipped computing course is the exercises, so one of the primary forms of
 contribution will be adding exercises to the pool of exercises. Individual
 instructors can then select from a rich pool of exercises the ones that fit the
-topics, languages, and scientific domains that best fit the material they want
+focus, languages, and scientific domains that best fit the material they want
 to cover in the course.
 
 There are lots of great resources for being introduced to the individual
@@ -114,7 +114,7 @@ and the standard YAML for a new exercise would look like this:
 ```
 ---
 layout: exercise
-topic: Topic group of exercise
+type: Type of exercise
 title: Name of exercise
 language: [R, Python, SQL]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Help
+type: Help
 title: Site Directory
 ---
 
@@ -40,7 +40,7 @@ Marked (`#`) files and directories are [course customization]({{ site.baseurl }}
 ├── data                       |   Data files used in exercises
 ├── docs                       |   Course & site help docs; Templates
 ├── exercises                  |   Exercise documents
-|   ├── Topic-title-Language.md|     UPPER first letter of file name 
+|   ├── Type-title-Language.md|     UPPER first letter of file name 
 |   └── ...                    |     File name formatted from YAML 
 ├── lectures                   |   Lecture documents
 |   ├── LANGUAGE-descr.md      |     File name matches assignment
@@ -57,7 +57,7 @@ Marked (`#`) files and directories are [course customization]({{ site.baseurl }}
 |   ├── LANGUAGE-descr.md      |     File name matches assignment
 |   └── ...                    |
 └── solutions                  |   Solutions documents
-    ├── Topic-tit...guage-1.txt|     File name matches exercise
-    ├── Topic-tit...guage-2.jpg|     Number if multiple; any .ext
+    ├── Type-tit...guage-1.txt|     File name matches exercise
+    ├── Type-tit...guage-2.jpg|     Number if multiple; any .ext
     └── ...                    |
 ```
