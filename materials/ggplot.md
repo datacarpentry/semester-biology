@@ -68,7 +68,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
        title = "Acacia Survey at UHURU")
 ```
 
-> Do [Exercise 2 - Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
+> Do [Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
 
 ### Grouping
 
@@ -185,33 +185,6 @@ ggplot(acacia, aes(x = CIRC)) +
   facet_wrap(~TREATMENT) +
   labs(x = "Circumference", y = "Number of Individuals")
 ```
-
-### Additional information
-
-* Geometric object
-    * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
-    * [`geom_line()`](http://docs.ggplot2.org/current/geom_path.html)
-* Statistical visualization
-    * [`geom_smooth()`](http://docs.ggplot2.org/current/geom_smooth.html)
-    * [`geom_bar()`](http://docs.ggplot2.org/current/geom_bar.html)
-    * [`geom_histogram()`](http://docs.ggplot2.org/current/geom_histogram.html)
-    * [`geom_boxplot()`](http://docs.ggplot2.org/current/geom_boxplot.html)
-* Dataset and aesthetic adjustments
-    * [`scale_continuous()`](http://docs.ggplot2.org/current/scale_continuous.html)
-    * [`scale_manual()`](http://docs.ggplot2.org/current/scale_manual.html)
-    * [`lims()`](http://docs.ggplot2.org/current/lims.html)
-    * [`labs()`](http://docs.ggplot2.org/current/labs.html)
-    * [`guide_legend()`](http://docs.ggplot2.org/current/guide_legend.html)
-    * [`theme()`](http://docs.ggplot2.org/current/theme.html), `theme_bw()`, `theme_classic()`
-* Grouping related data
-    * Same plot
-        * Assign grouping variables as default or layer `aes()`
-            * `group`
-            * `color`
-            * `shape`
-    * Multiple plots
-        * [`facet_grid()`](http://docs.ggplot2.org/current/facet_grid.html)
-        * [`facet_wrap()`](http://docs.ggplot2.org/current/facet_wrap.html)
 
 ### Saving plots as new files
 

@@ -12,3 +12,7 @@ language: R
 * Readings
 
   * [R for Data Science - Data visualisation](http://r4ds.had.co.nz/data-visualisation.html)
+
+* Additionl information
+
+  * [ggplot2 documentation](https://ggplot2.tidyverse.org/reference/)
