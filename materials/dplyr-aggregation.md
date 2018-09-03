@@ -43,13 +43,15 @@ species_weight <- summarize(surveys_by_species, avg_weight = mean(weight))
 
 * `mean(weight)` when `weight` has missing values (`NA`)
 * Returns `NA`
-* `mean(weight, na.rm=TRUE)`
+
+* Use `filter()` to remove the `NA`s
 
 ```
-species_weight <- summarize(surveys_by_species, avg_weight = mean(weight, na.rm = TRUE))
+surveys_by_species <- filter(surveys_by_species, !is.na(weight))
+species_weight <- summarize(surveys_by_species, avg_weight = mean(weight))
 ```
 
-* `na.omit()` to remove `NA` from output
+* `na.omit()` filters out rows with `NA` in any column
 
 ```
 sp_weight_nonull <- na.omit(species_weight)
