@@ -35,7 +35,7 @@ these are null values using the optional `read.csv()` argument,
    logarithmically, and the data points colored by order. Label the axes.
 4. Coloring the points was useful, but there are a lot of points and it's kind
    of hard to see what's going on with all of the orders. Use `facet_wrap` to
-   create subplot for each order.
+   create a subplot for each order.
 5. Now let's visualize the relationships between the variables using a simple
    linear model. Create a new graph like your faceted plot, but using
    `geom_smooth` to fit a linear model to each order. You can do this using the
