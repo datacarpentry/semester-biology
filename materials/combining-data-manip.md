@@ -41,4 +41,4 @@ avg_weight_DS_by_yr <- surveys %>%
   summarize(avg_weight = mean(weight))
 ```
 
-> Do [Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
+> Modify your answer to Task 2 in [Portal Data Manipulation]({{ site.baseurl }}/exercises/Portal-data-manip-R) to use pipes.
