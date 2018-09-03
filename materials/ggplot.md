@@ -14,7 +14,7 @@ language: R
 * Includes information on if the plant is dead in the HEIGHT column
 
 ```
-acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = "dead")
+acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
 ```
 
 ### Basics
