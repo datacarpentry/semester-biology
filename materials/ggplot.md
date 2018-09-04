@@ -7,6 +7,13 @@ language: R
  
 > Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
 
+### ggplot
+
+* Very popular plotting package
+* Good plots quickly
+* Declarative - describe what you want not how to build it
+* Constrasts w/Imperative - how to build it step by step
+
 ### Data
 
 * Data on acacia size in an experiment in Africa excluding large herbivores
