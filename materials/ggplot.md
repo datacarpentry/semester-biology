@@ -99,6 +99,8 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 > Do Tasks 3-4 in [Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
 
+> Assign Tasks 1-4 in [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
+
 ### Layers
 
 * Usage
@@ -207,3 +209,5 @@ ggsave(“acacia_by_treatment.jpg”)
 ```
 ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
 ```
+
+> Assign the rest of the exercises.
