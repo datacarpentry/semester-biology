@@ -13,8 +13,8 @@ language: R
 
 > Load the following into browser window:
 
-> * Projections figure from http://neondataskills.org/R/Introduction-to-Raster-Data-In-R/
-> * Canopy Height Model figure from http://neondataskills.org/R/Raster-Calculations-In-R/
+> * [Projections picture](https://media.opennews.org/cache/06/37/0637aa2541b31f526ad44f7cb2db7b6c.jpg)
+> * [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
 
 > Set-up R Console:
 
