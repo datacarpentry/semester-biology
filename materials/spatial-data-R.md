@@ -251,24 +251,23 @@ ggplot() +
 
 ### Map of point data
 
-* Can plot points on Google Map segment with `ggmap` package
+* `ggplot` generates maps using `maps` package
 
 ```
-library(ggmap)
+map = map_data("state", region = "massachusetts")
+ggplot() +
+  geom_polygon(data = map, 
+               aes(x = long, y = lat, group = group), 
+               fill = "grey")
 ```
 
-* Uses only dataframes, not spatial data
-* Generate map segment with csv coordinates
+* Add spatial data on top
 
 ```
-avg_long = mean(points_csv$long)
-avg_lat = mean(points_csv$lat)
-map = get_map(location = c(lon = avg_long, lat = avg_lat), zoom = 14)
-```
-
-* Plot original csv points
-
-```
-ggmap(map) +
-    geom_point(data = points_csv, aes(x = long, y = lat))
+ggplot() +
+  geom_polygon(data = map, 
+               aes(x = long, y = lat, group = group), 
+               fill = "grey") +
+  geom_point(data = points_spat_df, 
+             aes(x = long, y = lat))
 ```
