@@ -21,6 +21,7 @@ language: R
 ```
 library(raster)
 library(rgdal)
+library(ggplot2)
 ```
 
 ### `raster` structure, import, and plotting
@@ -51,16 +52,27 @@ crs(dsm_harv)
 ```
 
 * Plotting
-    * package modifies R basic `graphics`
+    * Change to dataframe for `ggplot`
+    * `coord_quickmap()` sets projection
 
 ```
-plot(dsm_harv)
+dsm_harv_df = as.data.frame(dsm_harv, xy = TRUE)
+head(dsm_harv_df)
+
+ggplot() +
+  geom_raster(data = dsm_harv_df, 
+              aes(x = x, y = y, fill = HARV_dsmCrop)) +
+  coord_quickmap()
+
 ```
 
 * Looking at raster values
 
 ```
-hist(dsm_harv)
+ggplot() +
+  geom_histogram(data = dsm_harv_df, 
+                 aes(x = HARV_dsmCrop))
+
 ```
 
 ### `raster` math
@@ -79,7 +91,7 @@ chm_harv <- dsm_harv - dtm_harv
 
 ### Import and reproject shapefiles
 
-* `vector` data can be added to `rasters` to provide reference information
+* `vector` data
     * `csv`
     * `shapefile`
         * set of multiple files
@@ -90,9 +102,23 @@ chm_harv <- dsm_harv - dtm_harv
                 * `file_name$site_id`
 
 ```
-plots_harv <- readOGR("data/NEON-airborne/plot_locations", "HARV_plots")
-plot(chm_harv)
-plot(plots_harv, add = TRUE, pch = 4, cex = 1.5)
+plots_harv <- readOGR("data/NEON-airborne/plot_locations", 
+                      "HARV_plots")
+```
+
+* Plot `vector` on top of `raster`
+
+```
+chm_harv_df = as.data.frame(chm_harv, xy = TRUE)
+plots_harv_df = as.data.frame(plots_harv)
+```
+
+```
+ggplot() +
+  geom_raster(data = chm_harv_df, 
+              aes(x = x, y = y, fill = layer)) +
+  geom_point(data = plots_harv_df, 
+             aes(x = coords.x1, y = coords.x2), color = "yellow")
 ```
 
 * Uh oh, nothing happened.
@@ -110,7 +136,15 @@ crs(plots_harv)
 
 ```
 plots_harv_utm <- spTransform(plots_harv, crs(chm_harv))
-plot(plots_harv_utm, add = TRUE, pch = 4, cex = 1.5)
+plots_harv_utm_df = as.data.frame(plots_harv_utm)
+```
+
+```
+ggplot() +
+  geom_raster(data = chm_harv_df, 
+              aes(x = x, y = y, fill = layer)) +
+  geom_point(data = plots_harv_utm_df, 
+             aes(x = coords.x1, y = coords.x2), color = "yellow")
 ```
 
 ### Extract raster data
@@ -156,11 +190,14 @@ ndvi_files = list.files("data/HARV_NDVI/",
 ndvi_rasters <- stack(ndvi_files)
 ```
 
-* Can visualize up to 16 layers using `plot()`
+* Plot one layer
 
 ```
-plot(ndvi_rasters)
-plot(ndvi_rasters, c(1, 3, 5, 7, 9, 11))
+ndvi_rasters_df = as.data.frame(ndvi_rasters, xy = TRUE)
+ggplot() +
+  geom_raster(data = ndvi_rasters_df, 
+              aes(x = x, y = y, alpha = HARV_NDVI_2015353)) +
+  coord_quickmap()
 ```
 
 * Calculate values across each raster using `cellStats()`
@@ -199,11 +236,14 @@ points_spat <- SpatialPointsDataFrame(
 	points_csv[c('long', 'lat')], 
 	points_csv, 
 	proj4string = points_crs)
+str(points_spat)
 ```
 
 ```
-str(points_spat)
-plot(points_spat)
+points_spat_df = as.data.frame(points_spat)
+ggplot() +
+  geom_point(data = points_spat_df, 
+             aes(x = long, y = lat))
 ```
 
 > Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
