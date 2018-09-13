@@ -26,21 +26,4 @@ A colleague of yours is working on a project on deer mice ([*Peromyscus manicula
 
 4. Turn the occurrences dataframe into a spatial dataframe, making sure that its projection matches that of the elevation dataset. 
 
-5. Extract the elevation values for all of the deer mouse occurrences and plot a histogram of them. 
-
-6. Write a function that creates a vector of elevation values for a given species name. This function should retrieve the data and put it into a dataframe, as in part 1. To limit how long this takes, add in the argument `limit = 50` in the `occ` line. Then rename the latitude and longitude columns and remove NA rows from these columns using the following code: 
-
-	```
-	colnames(mouse_df)[2] <- "longitude"
-	colnames(mouse_df)[3] <- "latitude"
-	mouse_df = mouse_df %>% filter(!is.na(longitude) & !is.na(latitude))
-	```
-
-	Turn the dataframe into a spatial object and extract the elevations for the points in the object. Test that your function works by putting in `"Peromyscus maniculatus"` as the argument.
-
-7. Run this function on the following vector of mouse species names using either a 
-loop to get a vector or an apply function to get a list of elevations for 50 occurrences of each of these 5 species. 
-
-	```
-	mouse_species = c("Peromyscus maniculatus", "Peromyscus leucopus", "Peromyscus eremicus", "Peromyscus merriami", "Peromyscus boylii")
-	```
+5. Extract the elevation values for all of the deer mouse occurrences, turn this into a dataframe, and plot a histogram of the elevations. 
