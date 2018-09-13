@@ -46,11 +46,6 @@ dsm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
 * `dsm_harv` is a `RasterLayerObject` and we can get individual pieces of it's
    metadata using appropriate functions
 
-```
-nbands(dsm_harv)
-crs(dsm_harv)
-```
-
 * Plotting
     * Change to dataframe for `ggplot`
     * `coord_quickmap()` sets projection
@@ -188,6 +183,13 @@ ndvi_files = list.files("data/HARV_NDVI/",
                          full.names = TRUE,
                          pattern = "HARV_NDVI.*.tif")
 ndvi_rasters <- stack(ndvi_files)
+```
+
+* Count number of layers
+
+```
+nlayers(dsm_harv)
+nlayers(ndvi_rasters)
 ```
 
 * Plot one layer
