@@ -103,11 +103,21 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 ### Layers
 
+* We've seen that ggplot makes graphs by combining information on
+  * Data
+  * Mapping of parts of that data to aspects of the plot
+  * A geometric object to represent the data
+
+```
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point()
+```
+
+* Many kinds of geometric object (type `geom_` and show completions)
+
 * Usage
     * `ggplot()` sets defaults for layers
-    * Combine layers with `ggplot()` using `+`
-    * Must have at least one layer to plot
-    * Add additional layers, as necessary
+    * Can combine multiple layers using `+`
         * Order matters
 
 * Combine different kinds of layers
@@ -125,29 +135,6 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
   geom_point() +
   geom_smooth(method = "lm")
-```
-
-* Combining different data sources
-* Add tree size data for context
-* Layers are plotted in the order they are added
-
-```
-trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
-                  sep="\t", na.strings = c("dead", "missing", "MISSING", "NA"))
-ggplot() +
-  geom_point(data = trees, aes(x = CIRC, y = HEIGHT), color = "gray") +
-  geom_point(data = acacia, aes(x = CIRC, y = HEIGHT), color = "red") +
-  labs(x = "Circumference [cm]", y = "Height [m]")
-```
-
-* Each layer will default to `ggplot()` mappings unless modified
-    * So, we don't have to specify the arguments that are the same
-
-```
-ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point(data = trees, color = "gray") +
-  geom_point(data = acacia, color = "red") +
-  labs(x = "Circumference [cm]", y = "Height [m]")
 ```
 
 > Do Task 5 in [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
@@ -194,6 +181,45 @@ ggplot(acacia, aes(x = CIRC)) +
   facet_wrap(~TREATMENT) +
   labs(x = "Circumference", y = "Number of Individuals")
 ```
+
+> Do Tasks 1-2 in [Sexual Dimorphism Exploration]({{ site.baseurl }}/exercises/Graphing-sexual-dimorphism-exploration-R).
+
+### Combining different data and aesthetics
+
+* Add tree size data for context
+* Layers are plotted in the order they are added
+
+```
+trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
+                  sep="\t", na.strings = c("dead", "missing", "MISSING", "NA"))
+ggplot() +
+  geom_point(data = trees, aes(x = CIRC, y = HEIGHT), color = "gray") +
+  geom_point(data = acacia, aes(x = CIRC, y = HEIGHT), color = "red") +
+  labs(x = "Circumference [cm]", y = "Height [m]")
+```
+
+* Each layer will default to `ggplot()` mappings unless modified
+    * So, we don't have to specify the arguments that are the same
+
+```
+ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(data = trees, color = "gray") +
+  geom_point(data = acacia, color = "red") +
+  labs(x = "Circumference [cm]", y = "Height [m]")
+```
+
+> Do Task 3 in [Sexual Dimorphism Exploration]({{ site.baseurl }}/exercises/Graphing-sexual-dimorphism-exploration-R).
+
+### Grammar of graphics
+
+* Geometric object(s)
+  * Data
+  * Mapping
+  * Statistical transformation
+  * Position
+* Coordinates
+* Facets
+* In combination uniquely describes any plot
 
 ### Saving plots as new files
 
