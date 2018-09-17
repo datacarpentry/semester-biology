@@ -49,14 +49,17 @@ dsm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
 * `dsm_harv` is a `RasterLayerObject` and we can get individual pieces of it's
    metadata using appropriate functions
 
-* Plotting
-    * Change to dataframe for `ggplot`
-    * `coord_quickmap()` sets projection
+* Change to dataframe for `ggplot`
+* `as.data.frame` is overloaded by `raster` to let it convert spatial data
 
 ```
 dsm_harv_df = as.data.frame(dsm_harv, xy = TRUE)
 head(dsm_harv_df)
+```
 
+* `coord_quickmap()` sets projection
+
+```
 ggplot() +
   geom_raster(data = dsm_harv_df, 
               aes(x = x, y = y, fill = HARV_dsmCrop)) +
@@ -75,27 +78,32 @@ ggplot() +
 
 ### `raster` math
 
-* Create Canopy Height Model
+> Show > * [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
+
+* The DSM data is a Digital Surface Model: elevation of top physical point
+* DTM is Digital Terrain Model: elevation of the ground
+* We can create a Canopy Height Model (CHM) by taking the difference between them
 
 ```
 dtm_harv <- raster("data/NEON-airborne/HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
+* Math happens on a cell by cell (elementise) basis
+
 > Do Tasks 1-2 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 
 ### Import and reproject shapefiles
 
-* `vector` data
-    * `csv`
-    * `shapefile`
-        * set of multiple files
-            * same name, different extensions
-        * `readOGR("directory", "file_name_without_extensions")`
-            * stores data in a single `data.frame`
-            * access 'attributes' similar to GIS software using `$`
-                * `file_name$site_id`
+* `vector` data includes points, lines, and polygons
+* `shapefiles` are one main format
+    * set of multiple files
+        * same name, different extensions
+    * `readOGR("directory", "file_name_without_extensions")`
+        * stores data in a single `data.frame`
+        * access 'attributes' similar to GIS software using `$`
+            * `file_name$site_id`
 
 ```
 plots_harv <- readOGR("data/NEON-airborne/plot_locations", 
@@ -244,9 +252,8 @@ str(points_spat)
 
 ```
 points_spat_df = as.data.frame(points_spat)
-ggplot() +
-  geom_point(data = points_spat_df, 
-             aes(x = long, y = lat))
+extract(chm_harv, points_spat_df, buffer = 10, fun = mean)
+
 ```
 
 > Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
@@ -254,8 +261,9 @@ ggplot() +
 
 ### Map of point data
 
-* `ggplot` generates maps using `maps` package
-
+* Maps are available in the `maps` package
+* Polygons, but already stored as data frames
+  
 ```
 map = map_data("state", region = "massachusetts")
 ggplot() +
@@ -273,4 +281,14 @@ ggplot() +
                fill = "grey") +
   geom_point(data = points_spat_df, 
              aes(x = long, y = lat))
+```
+
+* Can also retriever data for countries
+
+```
+usmap = map_data("usa")
+ggplot() +
+  geom_polygon(data = usmap, 
+               aes(x = long, y = lat, group = group), 
+               fill = "grey")
 ```
