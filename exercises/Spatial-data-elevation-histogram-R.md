@@ -5,25 +5,45 @@ title: Species Occurrences Elevation Histogram
 language: R
 ---
 
-A colleague of yours is working on a project on deer mice ([*Peromyscus maniculatus*](http://animaldiversity.org/accounts/Peromyscus_maniculatus/)) and is interested in what elevations these mice tend to occupy in the continental United States. You offer to help them out by getting some coordinates for specimens of this species and looking up the elevation of these coordinates. 
+A colleague of yours is working on a project on banner-tailed kangaroo rats ([*Dipodomys spectabilis*](https://animaldiversity.org/accounts/Dipodomys_spectabilis/)) and is interested in what elevations these mice tend to occupy in the continental United States. You offer to help them out by getting some coordinates for specimens of this species and looking up the elevation of these coordinates. 
 
-1. Get deer mouse occurrences from GBIF, the [Global Biodiversity Information Facility](https://www.gbif.org/), using the `spocc` R package, which is designed to retrieve species occurrence data from various openly available data resources. Use the following code to do so: 
+1. Get banner-tailed kangaroo rat occurrences from GBIF, the [Global Biodiversity Information Facility](https://www.gbif.org/), using the `spocc` R package, which is designed to retrieve species occurrence data from various openly available data resources. Use the following code to do so: 
 
 	```
-	mouse_df = occ(query = "Peromyscus maniculatus", 
-					from = "gbif")
-	mouse_df = data.frame(mouse_df$gbif$data)
+	dipo_df = occ(query = "Dipodomys spectabilis", 
+				from = "gbif",
+				limit = 1000,
+				has_coords = TRUE)
+	dipo_df = data.frame(dipo_df$gbif$data)
 	```
 
-2. With `dplyr`, rename the second and third columns of this dataset to `longitude` and `latitude`, and include only those specimens with a `basisOfRecord` that is `PRESERVED_SPECIMEN`. 
+2. Clean up the data by:
+	* Using the `rename` function from `dplyr` to rename the second and third columns of this dataset to `longitude` and `latitude`
+	* Filter the data to only include those specimens with `Dipodomys_spectabilis.basisOfRecord` that is `PRESERVED_SPECIMEN` and a `Dipodomys_spectabilis.countryCode` that is `US`.
+	* Remove points with values of `0` for `latitude` or `longitude`
+	* Use the `head()` function to show the top few rows of your cleaned up data
 
-3. The `raster` package comes with some datasets, including one of global elevations, that can be retrieved with the `getData` function as follows: 
+3. Map these points on to a us map by:
+	* Get a US map using `usmap = map_data("usa")`
+	* Plot it using `geom_polygon`. In the aesthetic use `group = group` to avoid weird lines cross your graph. Use `fill = "white"` and `color = "black"`.
+	* Plot the kangaroo rat locations
+	* Use `coord_quickmap()` to automatically use a reasonable spatial projection
+
+
+4. The `raster` package comes with some datasets, including one of global elevations, that can be retrieved with the `getData` function as follows: 
 
 	```
 	elevation = getData("alt", country = "US")
 	elevation = elevation[[1]]
 	```
 
-4. Turn the occurrences dataframe into a spatial dataframe, making sure that its projection matches that of the elevation dataset. 
+	Create a new version of the graph from Part 3 that shows the elevation data as well.
 
-5. Extract the elevation values for all of the deer mouse occurrences, turn this into a dataframe, and plot a histogram of the elevations. 
+5. Turn the `dipo_df` dataframe into a spatial dataframe, making sure that its projection matches that of the elevation dataset, and extract the elevation values for all of the kangaroo rat occurrences, turn this into a dataframe, and plot a histogram of the elevations. The name of the elevation variable is `USA1_msk_alt`.
+
+6. Part 5 showed us what the elevations where banner-tailed kangaroo rats occur, but without context it's hard to tell how important elevation is. Make a new graph that shows histograms for all elevations in the US in gray and the kangaroo rat elevations in red. Plot the kangaroo elevations on top of the full elevations and make them transparent so that you can see the overlap. To get the histograms on the same scale we need to plot the density of points instead of the total number of points. This can be done in `ggplot` using code like:
+
+    ```
+	ggplot() +
+      geom_histogram(data = elevations, aes(x = USA1_msk_alt, y = ..density..))
+	```
