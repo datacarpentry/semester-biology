@@ -19,12 +19,12 @@ A colleague of yours is working on a project on banner-tailed kangaroo rats ([*D
 
 2. Clean up the data by:
 	* Using the `rename` function from `dplyr` to rename the second and third columns of this dataset to `longitude` and `latitude`
-	* Filter the data to only include those specimens with `Dipodomys_spectabilis.basisOfRecord` that is `PRESERVED_SPECIMEN` and a `Dipodomys_spectabilis.countryCode` that is `US`.
+	* Filter the data to only include those specimens with `Dipodomys_spectabilis.basisOfRecord` that is `PRESERVED_SPECIMEN` and a `Dipodomys_spectabilis.countryCode` that is `US`
 	* Remove points with values of `0` for `latitude` or `longitude`
-	* Use the `head()` function to show the top few rows of your cleaned up data
+	* Use the `head()` function and the `$` operator to show the top few rows of the Dipodomys_spectabilis.key column
 
-3. Map these points on to a us map by:
-	* Get a US map using `usmap = map_data("usa")`
+3. Do the following to display the locations of these points on a map of the United States:
+	* Get data for a US map using `usmap = map_data("usa")`
 	* Plot it using `geom_polygon`. In the aesthetic use `group = group` to avoid weird lines cross your graph. Use `fill = "white"` and `color = "black"`.
 	* Plot the kangaroo rat locations
 	* Use `coord_quickmap()` to automatically use a reasonable spatial projection
@@ -37,9 +37,9 @@ A colleague of yours is working on a project on banner-tailed kangaroo rats ([*D
 	elevation = elevation[[1]]
 	```
 
-	Create a new version of the graph from Part 3 that shows the elevation data as well.
+	Create a new version of the graph from Part 3 that shows the elevation data as well. Plotting the elevation data may take a while because there are a lot of data points in the dataset. Pay attention to the order that the `geom_` objects are plotted in. The name of the elevation variable is `USA1_msk_alt`.
 
-5. Turn the `dipo_df` dataframe into a spatial dataframe, making sure that its projection matches that of the elevation dataset, and extract the elevation values for all of the kangaroo rat occurrences, turn this into a dataframe, and plot a histogram of the elevations. The name of the elevation variable is `USA1_msk_alt`.
+5. Turn the `dipo_df` dataframe into a `SpatialPointsDataframe`, making sure that its projection matches that of the elevation dataset, and extract the elevation values for all of the kangaroo rat occurrences. Turn this subset of elevation values into a dataframe and plot a histogram of the elevations. 
 
 6. Part 5 showed us what the elevations where banner-tailed kangaroo rats occur, but without context it's hard to tell how important elevation is. Make a new graph that shows histograms for all elevations in the US in gray and the kangaroo rat elevations in red. Plot the kangaroo elevations on top of the full elevations and make them transparent so that you can see the overlap. To get the histograms on the same scale we need to plot the density of points instead of the total number of points. This can be done in `ggplot` using code like:
 
