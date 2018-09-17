@@ -30,8 +30,11 @@ library(ggplot2)
     * gridded format (*like coordinates*)
     * each pixel is a value
 	* most remote sensing and environmental data
-
 * `raster()` import
+
+* DSM is Digital Surface Model: elevation of top physical point
+* See diagram
+* Later use with Digital Terrain Model (elevation of ground) to create Canopy Height Model
 
 ```
 dsm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
@@ -72,9 +75,7 @@ ggplot() +
 
 ### `raster` math
 
-* The DSM data is a Digital Surface Model: elevation of top physical point
-* DTM is Digital Terrain Model: elevation of the ground
-* We can create a Canopy Height Model (CHM) by taking the difference between them
+* Create Canopy Height Model
 
 ```
 dtm_harv <- raster("data/NEON-airborne/HARV_dtmCrop.tif")
