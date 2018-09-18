@@ -21,7 +21,8 @@ A colleague of yours is working on a project on banner-tailed kangaroo rats ([*D
 	* Using the `rename` function from `dplyr` to rename the second and third columns of this dataset to `longitude` and `latitude`
 	* Filter the data to only include those specimens with `Dipodomys_spectabilis.basisOfRecord` that is `PRESERVED_SPECIMEN` and a `Dipodomys_spectabilis.countryCode` that is `US`
 	* Remove points with values of `0` for `latitude` or `longitude`
-	* Use the `head()` function and the `$` operator to show the top few rows of the Dipodomys_spectabilis.key column
+	* Remove all of the columns from the dataset except `latitude` and `longitude` using `select`
+	* Use `head()` function to show the top few rows of this cleaned dataset
 
 3. Do the following to display the locations of these points on a map of the United States:
 	* Get data for a US map using `usmap = map_data("usa")`
