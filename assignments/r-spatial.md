@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Working with Spatial Data
 language: R
-exercises: ['Canopy Height from Space', 'Phenology from Space', 'Species Occurrences Elevation Histogram']
+exercises: ['Canopy Height from Space', 'Phenology from Space', 'Species Occurrences Map', 'Species Occurrences Elevation Histogram']
 points: [30, 30, 40]
 ---
 
