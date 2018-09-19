@@ -1,8 +1,10 @@
 ---
 layout: page
 element: lecture
-title: Projects Structure
+title: Computational Projects
 language: R
 ---
 
-* [Project Structure]({{ site.baseurl }}/materials/project-structure)
+* [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
+* [Computational Project Structure]({{ site.baseurl }}/materials/project-structure)
+* [Programming Style]({{ site.baseurl }}/materials/r-style)
