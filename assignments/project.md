@@ -1,9 +1,10 @@
 ---
 layout: page
 element: assignment
-title: Projects Structure
+title: Computational Projects
 language: R
-exercises: ['Project Proposal']
+exercises: ['Megafaunal Extinction']
+points: [60]
 ---
 
 #### Learning Objectives
@@ -11,6 +12,8 @@ exercises: ['Project Proposal']
 > Following this assignment students should be able to:
 >
 > - properly structure a computational project
+> - use good style
+> - start to build more complex computational tasks
 
 {% include reading.html %}
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 element: notes
-title: Project Structure
+title: Computational Project Structure
 language: R
 --- 
 
