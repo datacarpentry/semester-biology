@@ -194,21 +194,25 @@ ndvi_files = list.files("data/HARV_NDVI/",
 ndvi_rasters <- stack(ndvi_files)
 ```
 
-* Count number of layers
+* Plot all the layers
 
 ```
-nlayers(dsm_harv)
-nlayers(ndvi_rasters)
+plot(ndvi_rasters)
 ```
 
-* Plot one layer
+* Extract data from all rasters
 
 ```
-ndvi_rasters_df = as.data.frame(ndvi_rasters, xy = TRUE)
-ggplot() +
-  geom_raster(data = ndvi_rasters_df, 
-              aes(x = x, y = y, alpha = HARV_NDVI_2015353)) +
-  coord_quickmap()
+plots_harv <- readOGR("data/NEON-airborne/plot_locations", "HARV_plots")
+plots_harv_utm <- spTransform(plots_harv, crs(ndvi_rasters))
+plots_harv_ndvi <- extract(ndvi_rasters, plots_harv)
+```
+
+* Produces a `matrix`
+* Make it into the data frame we
+
+```
+as.data.frame(t(plots(harv_ndvi)))
 ```
 
 * Calculate values across each raster using `cellStats()`
@@ -220,14 +224,15 @@ avg_ndvi <- cellStats(ndvi_rasters, mean)
 * Store in data frame
 
 ```
-avg_ndvi_df <- data.frame(samp_period = 1:length(avg_ndvi), ndvi = avg_ndvi)
+samp_period <- 1:length(avg_ndvi)
+avg_ndvi_df <- data.frame(samp_period, avg_ndvi)
 ```
 
-* Get row names into column
+* Plot the results
 
 ```
-library(dplyr)
-avg_ndvi_df <- tibble::rownames_to_column(avg_ndvi_df, var = "name")
+ggplot(avg_ndvi_df, aes(x = samp_period, y = avg_ndvi)) +
+  geom_point()
 ```
 
 > Do [Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
@@ -251,13 +256,9 @@ str(points_spat)
 ```
 
 ```
-points_spat_df = as.data.frame(points_spat)
-extract(chm_harv, points_spat_df, buffer = 10, fun = mean)
-
+points_spat_utm <- spTransform(points_spat, crs(ndvi_rasters))
+extract(ndvi_rasters, points_spat_utm, buffer = 10, fun = mean)
 ```
-
-> Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R).
-
 
 ### Map of point data
 
@@ -275,6 +276,7 @@ ggplot() +
 * Add spatial data on top
 
 ```
+points_spat_df <- as.data.frame(points_spat)
 ggplot() +
   geom_polygon(data = map, 
                aes(x = long, y = lat, group = group), 
@@ -292,3 +294,5 @@ ggplot() +
                aes(x = long, y = lat, group = group), 
                fill = "grey")
 ```
+
+> Do [Species Occurrences Map]({{ site.baseurl }}/exercises/Spatial-data-map-R).
