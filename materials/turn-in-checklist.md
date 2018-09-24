@@ -14,6 +14,10 @@ title: Assignment Submission & Checklist
 
 # Code Checklist
 
+#### Make sure your code matches the provided answers
+
+- At the bottom of each exercise a set of answers are provided. For full credit your answers should match those provided. For example, if there are three separate plots your code should produce three separate plots.
+
 #### Clean up your code
 
 Code should be easy to read and understand.
