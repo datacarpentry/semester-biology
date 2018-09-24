@@ -12,6 +12,7 @@ language: R
     * Understand all project components
     * Work more efficiently
     * Easier for collaboration
+    * Including with your future self
 * Save a lot of time & frustration in long run, even if it’s time-consuming and frustrating to do it right initially
 
 ### Example project walk-through
@@ -19,7 +20,7 @@ Download [example project]({{ site.baseurl }}/data/example_project.zip).
 
 * Good file structure
     * All project files in one main folder
-    * Subfolders (data, scripts, etc.)
+    * Subfolders (data, R, etc.)
 * Main folder is R project
     * Self-contained project
     * Use relative instead of absolute paths
