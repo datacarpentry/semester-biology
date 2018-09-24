@@ -18,11 +18,11 @@ environmental factors influnece the species distribution.
 	elevation = elevation[[1]]
 	```
 
-	Create a new version of the graph from Part 3 that shows the elevation data as well. Plotting the elevation data may take a while because there are a lot of data points in the dataset. Pay attention to the order that the `geom_` objects are plotted in. The name of the elevation variable is `USA1_msk_alt`.
+	Create a new version of the map from [Species Occurrences Map]({{ site.baseurl }}/exercises/Spatial-data-map-R) that shows the elevation data as well. Plotting the elevation data may take a while because there are a lot of data points in the dataset. Pay attention to the order that the `geom_` objects are plotted in. The name of the elevation variable is `USA1_msk_alt`.
 
-2. Turn the `dipo_df` dataframe into a `SpatialPointsDataframe`, making sure that its projection matches that of the elevation dataset, and extract the elevation values for all of the kangaroo rat occurrences. Turn this subset of elevation values into a dataframe and plot a histogram of the elevations. 
+2. Turn the `dipo_df` dataframe from [Species Occurrences Map]({{ site.baseurl }}/exercises/Spatial-data-map-R) into a `SpatialPointsDataframe`, making sure that its projection matches that of the elevation dataset, and extract the elevation values for all of the kangaroo rat occurrences. Turn this subset of elevation values into a dataframe and plot a histogram of the elevations. 
 
-3. Part 2 showed us what the elevations where banner-tailed kangaroo rats occur, but without context it's hard to tell how important elevation is. Make a new graph that shows histograms for all elevations in the US in gray and the kangaroo rat elevations in red. Plot the kangaroo elevations on top of the full elevations and make them transparent so that you can see the overlap. To get the histograms on the same scale we need to plot the density of points instead of the total number of points. This can be done in `ggplot` using code like:
+3. Part 2 showed us the elevations where banner-tailed kangaroo rats occur, but without context it's hard to tell how important elevation is. Make a new graph that shows histograms for all elevations in the US in gray and the kangaroo rat elevations in red. Plot the kangaroo elevations on top of the full elevations and make them transparent so that you can see the overlap. To get the histograms on the same scale we need to plot the density of points instead of the total number of points. This can be done in `ggplot` using code like:
 
     ```
 	ggplot() +
