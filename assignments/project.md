@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Computational Projects
 language: R
-exercises: ['Species Occurrences Elevation Histogram', 'Climate Space', 'Megafaunal Extinction']
-points: [20, 35, 45]
+exercises: ['Climate Space', 'Megafaunal Extinction']
+points: [40, 60]
 ---
 
 #### Learning Objectives
