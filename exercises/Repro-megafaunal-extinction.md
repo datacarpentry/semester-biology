@@ -30,11 +30,17 @@ understand the structure of the data.
    should show the histograms for both groups. Don't include islands (`Insular`
    and `Oceanic` in the `continent column) and only include continents with
    species that went extinct in the pleistocene. Scale the x-axis
-   logarithmically and wtack the sub-plots vertically like in the original paper
+   logarithmically and stack the sub-plots vertically like in the original paper
    (but don't worry about the order of the subplots being the same). Use good
    axis labels.
 3. The 2nd figure in the original paper looks in more detail at two orders,
    *Xenarthra* and *Carnivora*, which showed extinctions in North and South
-   America. Create a figure similar to the one in Part 2, but that shows 4 sub-plots, one for each order on each of the two continents.
+   America. Create a figure similar to the one in Part 2, but that shows 4
+   sub-plots, one for each order on each of the two continents.
 4. The 3rd figure in the original paper explores Australia as a case study.
-   Australia is interesting because there is good data on both Pleistocene extinctions (`extinct` in the `status` column) and more modern extinctions occuring over the last 300 years (`historical` in the `status` column). Make a plot similar to the previous plots that compares these three different categories `extinct`, `extant`, and `historical`). Has the size pattern in exinctions changed for more modern extinctions?
+   Australia is interesting because there is good data on both Pleistocene
+   extinctions (`extinct` in the `status` column) and more modern extinctions
+   occuring over the last 300 years (`historical` in the `status` column). Make
+   a plot similar to the previous plots that compares these three different
+   categories `extinct`, `extant`, and `historical`). Has the size pattern in
+   exinctions changed for more modern extinctions?
