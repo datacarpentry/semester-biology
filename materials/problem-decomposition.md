@@ -3,8 +3,9 @@ layout: page
 title: Problem decomposition
 ---
 
-Real computational tasks are complicated. 
-To accomplish them you need to **think before you code**.
+* Take a break learning commands to talk about general approaches
+* Real computational tasks are complicated. To accomplish them you need to
+  **think before you code**.
 
 ## Problem decomposition steps
 
