@@ -5,8 +5,35 @@ title: Climate Space
 language: R
 ---
 
-Figuring out how particular factors influence species distribution can be aided by determining which areas of the available climate space they currently occupy. To do so, you're interested in showing how much and what part of the available global temperature and precipitation range is occupied by several common tree species. 
+Understanding how environmental factors influence species distributions can be aided by determining which areas of the available climate space a species currently occupies. You are interested in showing how much and what part of the available global temperature and precipitation range is occupied by some common tree species. Create three graphs, one each for *Quercus alba*, *Picea glauca*, and *Ceiba pentandra*. Each graph should show a scatterplot of the mean annual temperature and mean annual precipitation for points around the globe and highlight the values for 1000 locations of the plant species. Start by decomposing this exercise into small manageable pieces.
 
-1. Create a scatterplot of global mean annual temperature and mean annual precipitation. Get these data from the [WorldClim dataset](http://worldclim.org/version2) using `getData`, setting the resolution to 10 minutes and the variable to bio. You need only two of the 19 bioclim variables in a single dataframe, and will want to plot a random subset of 10,000 points (see `sample_n`) to limit the time it takes to generate. Choose good labels and make the points transparent to see their density. Why are the temperature values so large? Storing decimal values uses more space than integers, so the WorldClim creators provide temperature values multiplied by 10. For example, 19.5 is stored as 195. Display temperature on the plot correctly. See more information about WorldClim units [here](http://www.worldclim.org/formats1). 
+Here are some tips that will be helpful along the way:
 
-2. Plot the temperature-precipitation value for each of 1,000 occurrences onto this climate space for the following species: *Quercus alba*, *Picea glauca*, and *Ceiba pentandra*. Get a dataframe for each of the three species' occurrences from GBIF using `spocc`, then look up the corresponding climate values for each occurrence. In order to get climate values, the occurrences dataframe must contain only longitude and latitude columns. 
+* Climate data data is available from the [WorldClim
+  dataset](http://worldclim.org/version2). Using `getData('worldclim', var =
+  'bio', res = 10)` (from the `raster` package) will download all of the bioclim
+  variables. The two variables you need are `bio1` (temperature) and `bio12`
+  (precipitation).
+* There are over 500,000 global data points which can make plotting slow. You
+  can choose to plot a random subset of 10,000 points (e.g., using `sample_n`
+  from the `dplyr` package) to limit the time it takes to generate.
+* Choose good labels and make the points transparent to see their density.
+* You might notice that the temperature values seem large. Storing decimal
+  values uses more space than integers, so the WorldClim creators provide
+  temperature values multiplied by 10. For example, 19.5 is stored as 195. Make
+  sure to display the actual temperatures, not the raw values provided. See more
+  information about WorldClim units [here](http://www.worldclim.org/formats1).
+*  Species' occurrence data is available from [GBIF](https://www.gbif.org/)
+   using the `spocc` package. An example of how to get the data you need is
+   available in the
+   [Species Occurrences Map](http://datacarpentry.org/semester-biology/exercises/Spatial-data-map-R/)
+   exercise.
+*  To extract climate values for each occurrence from the climate data you will
+   need a dataframe of occurrences that only only contains longitude and
+   latitude columns.
+*  If the projections for WorldClim and the species occurrence data aren't the
+   same you will need a SpatialPointsDataframe.
+
+*Challenge (optional)*: If you want to challenge yourself trying making a single
+plot with all three species, either all on the same plot of split over three
+faceted subplots.
