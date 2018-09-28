@@ -56,7 +56,7 @@ calc_shrub_vol(0.8, 1.6, 2.0)
 shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
-* Walk through function execution
+* Walk through function execution (using debugger)
     * Call function
 	* Assign 0.8 to length, 1.6 to width, and 2.0 to height inside function
 	* Calculate volume
@@ -103,6 +103,28 @@ calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 >
 > * Discuss why passing `a` and `b` in is more useful than having them fixed*
 
+
+### Named vs unnamed arguments
+
+* When to use or not use argument names
+
+```
+calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
+```
+
+Or
+
+```
+calc_shrub_vol(2.0, 0.8, 1.6)
+```
+
+* You can always use names
+    * Value gets assigned to variable of that name
+* If not using names then order determines naming
+    * First value is `height`, second value is `length`...
+    * If order is hard to remember use names
+* In many cases there are *a lot* of optional arguments
+    * Convention to always name optional argument
 
 ### Combining Functions
 
