@@ -15,7 +15,7 @@ language: R
 * Learning how to search, read, and apply online help is a key skill
 * Requires
     * Vocabulary
-        * Looking for cheatsheets
+        * Look for cheatsheets
     * Careful reading
     * Understanding
     * Testing
