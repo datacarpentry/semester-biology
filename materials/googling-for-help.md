@@ -15,6 +15,7 @@ language: R
 * Learning how to search, read, and apply online help is a key skill
 * Requires
     * Vocabulary
+        * Looking for cheatsheets
     * Careful reading
     * Understanding
     * Testing
@@ -24,6 +25,14 @@ language: R
 
 * How to rename columns in dplyr
 * Search: `dplyr rename column`
+    * Name of package (if not in a distinctly name package include `r` or
+      `rstats`)
+    * The thing you want to do using technical terms
+    * Keep it simple
+    * Sometimes first searches show you how to ask the question
+* Check the date
+    * Older results might be out of date
+    * Can restrict to newer posts in search (but often more advanced)
 
 #### First hit
 
@@ -52,16 +61,26 @@ language: R
 
 > https://stackoverflow.com/questions/21502465/replacement-for-rename-in-dplyr
 
+* Question & Answer site
 * Want `rename` so this seems good.
 * Read question
 * Check date - possible out of date
 * Very clear statement of solution
 * Check comments - it's so clear because someone helped
 * Look at next answer - we could do this with select as well
-* Test and modify the example (but be careful)
+
+#### Testing and modifying answers
+
+* Test the example
+* Modify the example
+* But be careful
+    * Malicious code examples exist
+    * Do you trust the site
+    * Does it have a lot of upvotes
+    * Top of searches with lots of hits
 
 
-### Tips
+### Tips (not taught, but should be highlighted in example)
 
 #### Search
 
