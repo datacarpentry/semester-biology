@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Programming Fundamentals 1
 language: R
-exercises: ['Writing Functions', 'Use and Modify', 'Combining Functions', 'Choice Operators', 'Simple If Statement', 'Size Estimates by Name', 'DNA or RNA']
-points: [10, 10, 10, 10, 20, 20, 20]
+exercises: ['Writing Functions', 'Use and Modify', 'Combining Functions', 'Choice Operators', 'Simple If Statement', 'Size Estimates by Name', 'DNA or RNA', 'Climate Space Rewrite']
+points: [5, 10, 10, 10, 10, 20, 15, 20]
 ---
 
 #### Learning Objectives
