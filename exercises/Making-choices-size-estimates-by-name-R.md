@@ -24,4 +24,12 @@ following values and if so set `a` and `b` to the appropriate values.
 Once the function has assigned `a` and `b` have it run `get_mass_from_length()`
 with the appropriate values and return the estimated mass.
 
-If the name doesn't match any of these values have it return `NA`.
+Run the function for:
+
+1. A *Stegosauria* that is 10 meters long.
+2. A *Theropoda* that is 8 meters long.
+3. A *Sauropoda* that is 12 meters long.
+
+*Challenge (optional)*: If the name doesn't match any of these values have the
+function return `NA` and print out a message that it doesn't know how to convert
+that group.
