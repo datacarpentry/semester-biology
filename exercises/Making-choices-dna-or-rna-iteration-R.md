@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Making Choices
-title: DNA or RNA
+title: DNA or RNA Iteration
 language: R
 ---
 
