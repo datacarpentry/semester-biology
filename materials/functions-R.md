@@ -158,4 +158,4 @@ est_shrub_mass_dim <- function(length, width, height){
 est_shrub_mass_dim(0.8, 1.6, 2.0)
 ```
 
-> Do [Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).
+> Do [Combined Functions]({{ site.baseurl }}/exercises/Functions-combined-functions-R).

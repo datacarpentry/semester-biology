@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Functions
-title: Nested Functions
+title: Combining Functions
 language: R
 ---
 
