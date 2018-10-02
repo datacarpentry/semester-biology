@@ -28,7 +28,7 @@ language: R
 ### Reuse
 
 * Want to do the same thing repeatedly?
-    * Inefficient to copy code
+    * Inefficient & error prone to copy code
     * If it occurs in more than one place, it will eventually be wrong somewhere.
 * Functions are written to be reusable.
 
@@ -63,27 +63,17 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 	* Send the volume back as output
 	* Store it in `shrub_vol`
 
-> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
-
 * Treat functions like a black box.
     * Can't access a variable that was created in a function
-        * `> a`
-        * `Error: object 'a' not found`
+        * `> width`
+        * `Error: object 'width' not found`
     * 'Global' variables can influence function, but should not.
         * Very confusing and error prone to use a variable that isn't passed in
           as an argument
-    * Don't do this
 
-```
-length <- 1
-width <- 2
-height <- 3
+> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
 
-calc_shrub_vol <- function() {
-  volume <- length * width * height
-  return(volume)
-}
-```
+### Default arguments
 
 * Defaults can be set for common inputs.
 
@@ -98,11 +88,6 @@ calc_shrub_vol(width = 2)
 calc_shrub_vol(0.8, 1.6, 2.0)
 calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 ```
-
-> Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
->
-> * Discuss why passing `a` and `b` in is more useful than having them fixed*
-
 
 ### Named vs unnamed arguments
 
@@ -125,6 +110,10 @@ calc_shrub_vol(2.0, 0.8, 1.6)
     * If order is hard to remember use names
 * In many cases there are *a lot* of optional arguments
     * Convention to always name optional argument
+
+> Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
+>
+> * Discuss why passing `a` and `b` in is more useful than having them fixed*
 
 ### Combining Functions
 
