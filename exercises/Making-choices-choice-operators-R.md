@@ -21,7 +21,7 @@ Use them to print whether or not the following statements are
 `TRUE` or `FALSE`.
 
 1. `w` is greater than 10
-2. `w` + `x` is less than 15
+2. `"green"` is in `colors`
 3. `x` is greater than `y`
 4.  2 * `x` + 0.2 is equal to `y`
 5. `dna1` is the same as `dna2`

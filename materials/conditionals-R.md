@@ -18,11 +18,13 @@ language: R
     * `==`, `!=`
     * `<`, `>`
     * `<=`, `>=`
+    * `%in%`
 
 ```
 10 > 5
 "aang" == "aang"
 3 != 3
+"dog" %in% c("cat", "dog", "rabbit")
 ```
 
 * Combine:
@@ -39,7 +41,7 @@ language: R
     * `dplyr::filter()`
     * `if()`, `else`, `while()`
 
-> Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+> Do Tasks 1-4 in [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 > Discuss floating point with students.
 >
