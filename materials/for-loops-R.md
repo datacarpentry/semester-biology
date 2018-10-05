@@ -172,6 +172,7 @@ for (num in 100:150){
 
 > Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) tasks 1-2.
 
+> Do [DNA or RNA Iteration]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-iteration-R/). 
 
 #### Storing results
 
