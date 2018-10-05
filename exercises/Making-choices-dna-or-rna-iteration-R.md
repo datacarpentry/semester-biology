@@ -5,6 +5,8 @@ title: DNA or RNA Iteration
 language: R
 ---
 
+This is a follow-up to [DNA or RNA]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-R).
+
 Write a function, `dna_or_rna(sequence)`, that determines if a sequence
 of base pairs is DNA, RNA, or if it is not possible to tell given the
 sequence provided. Since all the function will know about the material is the
