@@ -1,15 +1,14 @@
 ---
 layout: page
 element: notes
-title: for loops
+title: Iteration in R
 language: R
 ---
 
-### Apply functions
+### Repetition
 
-#### sapply
-
-* Use function to find mass for one volume
+* Computers are great at doing things repeatedly
+* We've learned to use functions to find mass for one volume
 
 ```
 est_mass <- function(volume){
@@ -31,8 +30,34 @@ shrub_vol3 <- 3.1
 est_mass(shrub_vol3)
 ```
 
-* Typing this to get each shrub’s volume is tedious and error-prone
-* Use `apply()`-type functions instead
+* But, this is tedious, error-prone, and impossible for large n
+* Three ways to do something repeatedly in R
+  * Vectorize
+  * Apply/Map
+  * Loop
+
+### Vectorize
+
+* Write functions that take a list of values & return a list
+* Use only calculations that are vectorized
+* E.g., vector math
+* Our current function already works on a vector
+
+```
+est_mass <- function(volume){
+  mass <- 2.65 * volume ^ 0.9
+  return(mass)
+}
+
+est_mass(c(1.6, 5.6, 3.1))
+```
+
+### Apply/Map functions
+
+* Use `apply()` and `map()` functions are similar
+* Don't require calculations to work on vectors
+
+#### sapply
 
 ```
 shrub_vols <- c(1.6, 5.6, 3.1)
@@ -41,8 +66,6 @@ sapply(shrub_vols, est_mass)
 
 * Do same action on many things with single line of code! 
 * Easily scales up
-
-> Do Task 1 of [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
 
 #### Other apply functions
 
@@ -57,6 +80,8 @@ lapply(shrub_vols, est_mass)
 * `apply()` works on multi-dimensional data
 * `mapply()` for functions with multiple arguments
 
+* Vegetation type specific equations
+
 ```
 est_mass_type <- function(volume, veg_type){
   if (veg_type == "tree"){
@@ -70,34 +95,50 @@ est_mass_type <- function(volume, veg_type){
 est_mass_type(1.6, "tree")
 plant_vols <- c(1.6, 3, 8)
 plant_types <- c("tree", "grass", "tree")
+est_mass_type(plant_vols, plant_types) # Warning & wrong result
+```
+
+* Doesn't vectorize, but works with `mapply()`
+
+```
 mapply(est_mass_type, volume = plant_vols, veg_type = plant_types)
 ```
 
 * First argument is function, rest are function arguments
+* Use `map` functions from `purrr` package are similar to apply
 
-> Do Task 2 of [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
+> Do [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
 
-#### tidyverse version of apply
 
-* Use `map` function from `purrr` package
-* Similar to apply
-
-```
-library(purrr)
-map(plant_vols, est_mass)
-```
-
-* Use with pipes
+### Integrating with `dplyr`
 
 ```
-library(dplyr)
-plant_vols_df = data.frame(vols = plant_vols)
-plant_vols_df %>% 
-  filter(vols > 2) %>% 
-  map(est_mass)
+plant_data <- data.frame(volume = plant_vols, veg_type = plant_types)
+```
+
+* Directly use vectorized functions with `mutate`
+
+```
+mutate(plant_data, masses = est_mass(volume))
+```
+
+* Use apply functions and add the results as a new column
+
+```
+masses = mapply(est_mass_type, volume = plant_data$volume, veg_type = plant_data$veg_type)
+plant_data$masess = masses
+```
+
+* Use `rowwise`
+
+```
+plant_data %>%
+  rowwise() %>%
+  mutate(masses = est_mass_type(volume, veg_type))
 ```
 
 > Do [Crown Volume Calculation]({{ site.baseurl }}/exercises/Loops-crown-volume-calculation-R).
+
 
 ### For loops
 

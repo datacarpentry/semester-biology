@@ -3,9 +3,8 @@ layout: page
 element: assignment
 title: Programming Fundamentals 2
 language: R
-exercises: ['Use and Modify with Apply', 'Crown Volume Calculation', 'Basic Vector', 'Basic Index', 'DNA or RNA Iteration', 'stringr', 'Multiple Files', 'Species Occurrences Elevation Histogram']
-points: [5, 15, 5, 5, 15, 15, 20, 20]
-
+exercises: ['Use and Modify with Apply', 'Crown Volume Calculation', 'Basic Vector', 'Basic Index', 'DNA or RNA Iteration', 'stringr', 'Multiple Files']
+points: [5, 15, 5, 5, 15, 20, 20]
 ---
 
 #### Learning Objectives
