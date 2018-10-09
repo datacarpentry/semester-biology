@@ -16,18 +16,14 @@ est_mass <- function(volume){
   return(mass)
 }
 
-shrub_vol1 <- 1.6
-est_mass(shrub_vol1)
+est_mass(1.6)
 ```
 
 * Easy to find mass for other volumes
 
 ```
-shrub_vol2 <- 5.6
-est_mass(shrub_vol2)
-
-shrub_vol3 <- 3.1
-est_mass(shrub_vol3)
+est_mass(5.6)
+est_mass(3.1)
 ```
 
 * But, this is tedious, error-prone, and impossible for large n
@@ -54,14 +50,18 @@ est_mass(c(1.6, 5.6, 3.1))
 
 ### Apply/Map functions
 
-* Use `apply()` and `map()` functions are similar
+* Use `apply()` and `map()` functions
+* Take a function
+* Apply it to each item in a list
+* Return a list of the same size
 * Don't require calculations to work on vectors
+
 
 #### sapply
 
 ```
-shrub_vols <- c(1.6, 5.6, 3.1)
-sapply(shrub_vols, est_mass)
+plant_vols <- c(1.6, 5.6, 3.1)
+sapply(plant_vols, est_mass)
 ```
 
 * Do same action on many things with single line of code! 
@@ -74,7 +74,7 @@ sapply(shrub_vols, est_mass)
 * `lapply()`like `sapply()` but returns list
 
 ```
-lapply(shrub_vols, est_mass)
+lapply(plant_vols, est_mass)
 ```
 
 * `apply()` works on multi-dimensional data
@@ -93,7 +93,6 @@ est_mass_type <- function(volume, veg_type){
 }
 
 est_mass_type(1.6, "tree")
-plant_vols <- c(1.6, 3, 8)
 plant_types <- c("tree", "grass", "tree")
 est_mass_type(plant_vols, plant_types) # Warning & wrong result
 ```
@@ -125,7 +124,9 @@ mutate(plant_data, masses = est_mass(volume))
 * Use apply functions and add the results as a new column
 
 ```
-masses = mapply(est_mass_type, volume = plant_data$volume, veg_type = plant_data$veg_type)
+masses = mapply(est_mass_type,
+                volume = plant_data$volume,
+                veg_type = plant_data$veg_type)
 plant_data$masess = masses
 ```
 
