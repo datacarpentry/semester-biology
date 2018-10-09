@@ -1,15 +1,14 @@
 ---
 layout: page
 element: notes
-title: for loops
+title: Iteration in R
 language: R
 ---
 
-### Apply functions
+### Repetition
 
-#### sapply
-
-* Use function to find mass for one volume
+* Computers are great at doing things repeatedly
+* We've learned to use functions to find mass for one volume
 
 ```
 est_mass <- function(volume){
@@ -31,8 +30,34 @@ shrub_vol3 <- 3.1
 est_mass(shrub_vol3)
 ```
 
-* Typing this to get each shrub’s volume is tedious and error-prone
-* Use `apply()`-type functions instead
+* But, this is tedious, error-prone, and impossible for large n
+* Three ways to do something repeatedly in R
+  * Vectorize
+  * Apply/Map
+  * Loop
+
+### Vectorize
+
+* Write functions that take a list of values & return a list
+* Use only calculations that are vectorized
+* E.g., vector math
+* Our current function already works on a vector
+
+```
+est_mass <- function(volume){
+  mass <- 2.65 * volume ^ 0.9
+  return(mass)
+}
+
+est_mass(c(1.6, 5.6, 3.1))
+```
+
+### Apply/Map functions
+
+* Use `apply()` and `map()` functions are similar
+* Don't require calculations to work on vectors
+
+#### sapply
 
 ```
 shrub_vols <- c(1.6, 5.6, 3.1)
@@ -41,8 +66,6 @@ sapply(shrub_vols, est_mass)
 
 * Do same action on many things with single line of code! 
 * Easily scales up
-
-> Do Task 1 of [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
 
 #### Other apply functions
 
@@ -57,6 +80,8 @@ lapply(shrub_vols, est_mass)
 * `apply()` works on multi-dimensional data
 * `mapply()` for functions with multiple arguments
 
+* Vegetation type specific equations
+
 ```
 est_mass_type <- function(volume, veg_type){
   if (veg_type == "tree"){
@@ -70,34 +95,50 @@ est_mass_type <- function(volume, veg_type){
 est_mass_type(1.6, "tree")
 plant_vols <- c(1.6, 3, 8)
 plant_types <- c("tree", "grass", "tree")
+est_mass_type(plant_vols, plant_types) # Warning & wrong result
+```
+
+* Doesn't vectorize, but works with `mapply()`
+
+```
 mapply(est_mass_type, volume = plant_vols, veg_type = plant_types)
 ```
 
 * First argument is function, rest are function arguments
+* Use `map` functions from `purrr` package are similar to apply
 
-> Do Task 2 of [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
+> Do [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
 
-#### tidyverse version of apply
 
-* Use `map` function from `purrr` package
-* Similar to apply
-
-```
-library(purrr)
-map(plant_vols, est_mass)
-```
-
-* Use with pipes
+### Integrating with `dplyr`
 
 ```
-library(dplyr)
-plant_vols_df = data.frame(vols = plant_vols)
-plant_vols_df %>% 
-  filter(vols > 2) %>% 
-  map(est_mass)
+plant_data <- data.frame(volume = plant_vols, veg_type = plant_types)
+```
+
+* Directly use vectorized functions with `mutate`
+
+```
+mutate(plant_data, masses = est_mass(volume))
+```
+
+* Use apply functions and add the results as a new column
+
+```
+masses = mapply(est_mass_type, volume = plant_data$volume, veg_type = plant_data$veg_type)
+plant_data$masess = masses
+```
+
+* Use `rowwise`
+
+```
+plant_data %>%
+  rowwise() %>%
+  mutate(masses = est_mass_type(volume, veg_type))
 ```
 
 > Do [Crown Volume Calculation]({{ site.baseurl }}/exercises/Loops-crown-volume-calculation-R).
+
 
 ### For loops
 
@@ -110,21 +151,8 @@ library(dplyr)
 
 #### Basic `for` loop
 
+* Fundamental structure for repetition in programming
 * Do same action to each component of a list
-
-```
-waterbirds <- c("cygnus olor", "aix sponsa", "anas acuta")
-waterbird <- waterbirds[1]
-print(waterbird)
-waterbird <- waterbirds[2]
-print(waterbird)
-waterbird <- waterbirds[3]
-print(waterbird)
-```
-
-* This is tedious
-* Use for loop to do same action repeatedly
-* Easier & fewer errors
 
 ```
 for (item in list_of_items) {
@@ -135,134 +163,83 @@ for (item in list_of_items) {
 * Need `print()` to display values inside a loop, function, or conditional.
 
 ```
-for (waterbird in waterbirds){
-  print(waterbird)
+volumes = c(1.6, 3, 8)
+for (volume in volumes){
+  print(2.65 * volume^0.9)
 }
 ```
 
-* Do more actions
+* This does the same exact thing as
 
 ```
-for (waterbird in waterbirds){
-  waterbird_cap <- str_to_title(waterbird)
-  print(waterbird_cap)
-}
-```
-> Do [Basic Vector]({{ site.baseurl }}/exercises/Loops-basic-vector-R/).
-
-
-#### Numeric values in `for` loops
-
-* Do functions or math as actions within for loops
-* Variable can be given any name, then refer to with that name in loop
-
-```
-for (num in 100:150){
-  print(num * 10)
-}
+volume <- volumes[1]
+print(2.65 * volume ^ 0.9)
+volume <- volumes[2]
+print(2.65 * volume ^ 0.9)
+volume <- volumes[3]
+print(2.65 * volume ^ 0.9)
 ```
 
-* Use `paste()` to put together strings and variables
+* Can have many rows in a loop body
 
 ```
-for (num in 100:150){
-  print(paste("My favorite number is", num * 10))
+for (volume in volumes){
+   mass <- 2.65 * volume ^ 0.9
+   mass_lb <- mass * 2.2
+   print(mass_lb)
 }
 ```
 
-> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) tasks 1-2.
+> Do Task 1 in [Use and Modify with Loops]({{ site.baseurl }}/exercises/Loops-use-modify-loop-R/).
 
-> Do [DNA or RNA Iteration]({{ site.baseurl }}/exercises/Making-choices-dna-or-rna-iteration-R/). 
+
+#### Looping with an index
+
+* Loop over values only let's you access values from a single list
+* Loop over index let's you access values from multiple lists
+
+```
+for (i in seq_along(volumes)){
+   mass <- 2.65 * volumes[i] ^ 0.9
+   mass_lb <- mass * 2.2
+   print(mass_lb)
+}
+```
+
+* `seq_along()` generates a vector of numbers from 1 to `length(volumes)`
+* Use this "index" to get the values at that position
+* Can use the "index" for multiple vectors
+
+```
+b0 <- c(2.65, 1.28, 3.29)
+b1 <- c(0.9, 1.1, 1.2)
+for (i in seq_along(volumes)){
+   mass <- b0[i] * volumes[i] ^ b1[i]
+   mass_lb <- mass * 2.2
+   print(mass_lb)
+}
+```
 
 #### Storing results
 
-* Create an empty object.
+* Looping with an index also makes it easy to store results
+* First create an empty vector the length of the results
+* Then add each result in the right position
 
 ```
-output <- c()
-```
-
-* Iteratively add new values to object. 
-
-```
-output <- c(1, 2, 3)
-output <- c(output, 4)
-```
-* Use this method within a `for` loop to save outputs. 
-
-```
-waterbirds_cap_list <- c()
-for (waterbird in waterbirds){
-  waterbird_cap <- str_to_title(waterbird)
-  waterbirds_cap_list <- c(waterbirds_cap_list, waterbird_cap)
-  print(waterbirds_cap_list)
-}
-waterbirds_cap_list
-```
-
-> Do [Basic Index]({{ site.baseurl }}/exercises/Loops-basic-index-R/) task 3.
-
-#### Looping in data frames
-
-* Loops go over columns of dataframes
-
-```
-waterbirds <- data.frame(sci_name = c("cygnus olor", 
-                                      "aix sponsa", 
-                                      "anas acuta"), 
-                         common_name = c("mute swan", 
-                                         "wood duck", 
-                                         "pintail"))
-for (waterbird in waterbirds){
-  print("Start new loop")
-  print(waterbird)
+b0 <- c(2.65, 1.28, 3.29)
+b1 <- c(0.9, 1.1, 1.2)
+masses <- vector(mode="numeric", length=length(volumes))
+for (i in seq_along(volumes)){
+   mass <- b0[i] * volumes[i] ^ b1[i]
+   masses[i] <- mass
 }
 ```
 
-* Can loop over rows of data frames using index
+* Walk through iteration in debugger
 
-```
-for (i in 1:nrow(waterbirds)){
-  print(i)
-}
-```
+> Do Tasks 2-3 in [Use and Modify with Loops]({{ site.baseurl }}/exercises/Loops-use-modify-loop-R/).
 
-* Index can be any letter/word, i is convention
-
-```
-for (r in 1:nrow(waterbirds)){
-  print(r)
-}
-```
-
-```
-for (i in 1:nrow(waterbirds)){
-  print(waterbirds$sci_name[i])
-}
-```
-
-```
-for (i in 1:nrow(waterbirds)){
-  print(paste(waterbirds$sci_name[i], "is a", 
-              waterbirds$common_name[i]))
-}
-```
-
-* Less memory to create initial empty dataframe
-* Creates copy of dataframe when adding rows
-
-```
-waterbirds_2 <- data.frame(capital_name = character(3), 
-                           name_length = numeric(3), 
-                           stringsAsFactors = FALSE)
-for (i in 1:nrow(waterbirds)){
-  common_name_cap <- str_to_title(waterbirds$common_name[i])
-  sci_name_length <- str_length(waterbirds$sci_name[i])
-  waterbirds_2[i,] <- c(common_name_cap, sci_name_length)
-}
-```
-
-> Do [stringr]({{ site.baseurl }}/exercises/Loops-stringr-R/).
 
 #### Looping over files
 
@@ -278,39 +255,28 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 ```
 
 * Look at one of the files
+* Write a function to handle a single file
+* Use a loop to run the function for each file
 
-* Three ways to do same thing: get number of samples in each file
-
-1. With loop
-
-	```
-	numbers_vector_1 <- c()
-	for (data_file in collar_data_files){
-	  file <- read.csv(data_file)
-	  number <- nrow(file)
-	  numbers_vector_1 <- c(numbers_vector_1, number)
-	}
-	```
-
-2. With function and loop
+* Calculate the number of observations in each file
 
 	```
-	get_numbers <- function(data_file_name){
+	get_counts <- function(data_file_name){
 	  file <- read.csv(data_file_name)
-	  number <- nrow(file)
-	  return(number)
+	  count <- nrow(file)
+	  return(count)
 	}
 	
-	numbers_vector_2 <- c()
-	for (data_file in collar_data_files){
-	  numbers_vector_2 <- c(numbers_vector_2, get_numbers(data_file))
+	results <- vector(length = length(collar_data_files))
+	for (data_file in seq_along(collar_data_files){
+	  results[i] <- get_numbers(collar_data_files[i])
 	}
 	```
 
-3. With function and `apply`
+* With `apply`
 
 ```
-numbers_vector_3 <- unlist(lapply(collar_data_files, get_numbers))
+results <- unlist(lapply(collar_data_files, get_numbers))
 ```
 
 * How to choose when there are many ways to do the same thing? 
@@ -323,5 +289,3 @@ numbers_vector_3 <- unlist(lapply(collar_data_files, get_numbers))
 * There is no “right” way to do anything
 
 > Do [Multiple Files]({{ site.baseurl }}/exercises/Loops-multiple-files-R/).
-
-> Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R/).

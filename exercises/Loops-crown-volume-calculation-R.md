@@ -51,4 +51,4 @@ volume = 0.5 * HEIGHT^0.6 * pi * AXIS_1 * AXIS_2
 	`tree_volume_calc("Balanites", 2.2, 3.5, 1.12)`
 	`tree_volume_calc("Croton", 2.2, 3.5, 1.12)`
 
-3. Now get the canopy volumes for all the trees in the tree_data dataframe using `tree_volume_calc()` and `mapply()`. Add these as a new column to the dataframe. 
+3. Now get the canopy volumes for all the trees in the `tree_data` dataframe and add them as a new column to the data frame. You can do this using `tree_volume_calc()` and either `mapply()` or using `dplyr` with `rowwise` and `mutate`. 
