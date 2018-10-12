@@ -143,13 +143,6 @@ plant_data %>%
 
 ### For loops
 
-> Set up R console:
-
-```
-library(stringr)
-library(dplyr)
-```
-
 #### Basic `for` loop
 
 * Fundamental structure for repetition in programming
@@ -202,8 +195,7 @@ for (volume in volumes){
 ```
 for (i in seq_along(volumes)){
    mass <- 2.65 * volumes[i] ^ 0.9
-   mass_lb <- mass * 2.2
-   print(mass_lb)
+   print(mass)
 }
 ```
 
@@ -216,8 +208,7 @@ b0 <- c(2.65, 1.28, 3.29)
 b1 <- c(0.9, 1.1, 1.2)
 for (i in seq_along(volumes)){
    mass <- b0[i] * volumes[i] ^ b1[i]
-   mass_lb <- mass * 2.2
-   print(mass_lb)
+   print(mass)
 }
 ```
 
@@ -269,7 +260,7 @@ collar_data_files = list.files(pattern = "collar-data-.*.txt",
 	}
 	
 	results <- vector(length = length(collar_data_files))
-	for (data_file in seq_along(collar_data_files){
+	for (i in seq_along(collar_data_files){
 	  results[i] <- get_numbers(collar_data_files[i])
 	}
 	```
