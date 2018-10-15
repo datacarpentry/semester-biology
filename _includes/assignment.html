@@ -5,7 +5,9 @@
   {% for otherpage in site.pages %}
     {% if exercise == otherpage.title and page.language == otherpage.language and otherpage.layout == 'exercise' %}
       <li><h4><a href="{{ site.baseurl }}{{ otherpage.url }}">
-        {% if page.points[exercise_loop.index0] %}
+        {% if page.points[exercise_loop.index0] == 'optional' %}
+        <font color="000000">{{ otherpage.title | append: " (" }}{{page.points[exercise_loop.index0] | append: ")"}}</font></a></h4>
+        {% elsif page.points[exercise_loop.index0] %}
         <font color="000000">{{ otherpage.title | append: " (" }}{{page.points[exercise_loop.index0] | append: " pts)"}}</font></a></h4>
         {% else %}
         <font color="000000">{{ otherpage.title }}</font></a></h4>
