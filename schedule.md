@@ -4,7 +4,7 @@ title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Working with Data', 'Data Visualization', 'Working with Spatial Data',
 'Computational Projects', 'Programming Fundamentals 1',
-'Programming Fundamentals 2', 'Building Up Complex Programs',
+'Programming Fundamentals 2', 'Putting It All Together',
 'Projects Version Control and Structure', 'Getting Data', 'Knitr',
 'Working with Databases', 'Student Chosen Topic', 'Student Chosen Topic',
 'Student Chosen Topic']
