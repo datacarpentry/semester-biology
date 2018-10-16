@@ -3,7 +3,8 @@ layout: page
 element: assignment
 title: Putting It All Together
 language: R
-exercises: ['Size-biased Extinction']
+exercises: ['Format the Code', 'Dinosaur Size Distribution', 'Cocili Data Exploration', 'Length of Floods',]
+points: [20, 40, 40, 'optional']
 ---
 
 #### Learning Objectives
