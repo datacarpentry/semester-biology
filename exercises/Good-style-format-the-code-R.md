@@ -12,5 +12,5 @@ good style. *It works, but it's difficult to understand exactly what it is doing
 
 - Download [the script]({{ site.baseurl }}/code/bad-style-R.R). 
 - Take a minute to understand what is going on.
-- Modify the code so that it still does teh same thing, but is easier to read
+- Modify the code so that it still does the same thing, but is easier to read
   because it has better style.
