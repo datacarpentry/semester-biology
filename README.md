@@ -16,7 +16,7 @@ on exercises with the teacher answering questions and demoing the concepts.
 is available regarding the structure and function of the course and website
 materials for customized development and delivery of the course.
 
-We encourage collaborative development. This repository was used by 
+We always encourage collaborative development. This repository was used by 
 @ethanwhite to teach a version of this course (Fall 2016) at the University of
 Florida. The course remains under active development. We welcome contributions
 to all aspects of the course/site and are especially seeking exercises and
