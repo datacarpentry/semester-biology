@@ -151,33 +151,5 @@ est_mass(1.6, "shrub")
 
 > Do [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
 
-
-* Can use more complex conditions
-
-```
-est_mass <- function(volume, veg_type, age){
-  if (veg_type == "tree") {
-    if (age < 5) {
-	  mass <- 1.6 * volume^0.8
-	  } else {
-	  mass <- 2.65 * volume^0.9
-	}
-  } else if (veg_type == "grass" | veg_type == "shrub") {
-	mass <- 0.65 * volume^1.2
-  } else {
-	print("I don't know how to convert volume to mass for that vegetation type")
-	mass <- NA
-  }
-  return(mass)
-}
-
-est_mass(1.6, "tree", age = 2)
-est_mass(1.6, "shrub", age = 5)
-```
-
-* First checks if the vegetation type is "tree"
-* If it is checks to see if it is < 5 years old
-* If so does one calculation, if not does another
-* But nesting can be difficult to follow so try to minimize it
-
 > Assign the rest of the exercises.
+> 
