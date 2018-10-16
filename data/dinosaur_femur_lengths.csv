@@ -1,0 +1,330 @@
+Clade,Genus,Species,FL,Time,Formation
+Theropoda,Achillobator,giganticus,505,LC,NA
+Theropoda,Alxasaurus,elesitaiensis,555,LC,NA
+Theropoda,Anchiornis,huxleyi,74,MJ,NA
+Theropoda,Anserimimus,planinychus,435,LC,NA
+Theropoda,Archaeopteryx,lithographica,52.6,LJ,NA
+Theropoda,Austroraptor,cabazai,560,LC,NA
+Theropoda,Avimimus,portentosus,210,LC,Dinosaur Park
+Theropoda,Bambiraptor,feinbergi,118,LC,NA
+Theropoda,Beishanlog,grandis,501,LC,NA
+Theropoda,Buitriraptor,gonzalezorum,150,LC,NA
+Theropoda,Caudipteryx,dongi,149,EC,NA
+Theropoda,Caudipteryx,zhoui,149,EC,NA
+Theropoda,Deinonychus,antirrhopus,336,EC,NA
+Theropoda,Dromiceiomimus,brevitertius,454,LC,NA
+Theropoda,Epidendrosaurus,heilmanni,17,MJ,NA
+Theropoda,Epidexipteryx,hui,51,MJ,NA
+Theropoda,Gallimimus,bullatus,673,LC,NA
+Theropoda,Giganotosaurus,carolinii,1430,LC,NA
+Theropoda,Gigantoraptor,erlianensis,1100,LC,NA
+Theropoda,Haplocheirus,sollers,214,MJ,NA
+Theropoda,Harpymimus,okladnikovi,267,EC,NA
+Theropoda,Ingenia,yanshini,233,LC,NA
+Theropoda,Jinfengopteryx,elegans,70,EC,NA
+Theropoda,Linhenreptor,exquisitus,230,LC,NA
+Theropoda,Microraptor,gui,105.7,EC,NA
+Theropoda,Microraptor,zhaoianus,53,EC,NA
+Theropoda,Microvenator,celer,124,EC,NA
+Theropoda,Mononykus,olecranus,138.4,LC,NA
+Theropoda,Nomingia,gobiensis,285,LC,NA
+Theropoda,Ornithomimus,edmontonicus,435,LC,Dinosaur Park
+Theropoda,Oviraptor,philoceratops,303,LC,NA
+Theropoda,Protarchaeopteryx,robusta,122,EC,NA
+Theropoda,Rinchenia,philiceratops,305,LC,NA
+Theropoda,Saurornitholestes,langstoni,211,LC,Dinosaur Park
+Theropoda,Segisaurus,halli,145,EJ,NA
+Theropoda,Shuuvia,deserti,56,LC,NA
+Theropoda,Similicaudipteryx,yixianensis,220,EC,NA
+Theropoda,Sinornithoides,youngi,137,LC,NA
+Theropoda,Sinornithoides,youngi,140,LC,NA
+Theropoda,Sinornithomimus,dongi,323,EC,NA
+Theropoda,Sinornithosaurus,millenii,149,EC,NA
+Theropoda,Sinovenator ,changii,105,EC,NA
+Theropoda,Struthiomimus,altus,655,LC,Dinosaur Park
+Theropoda,Tianyuraptor,ostromi,210,EC,NA
+Theropoda,Troodon,formosus,320,LC,Dinosaur Park
+Theropoda,Unenlagia ,comahuensis,370,LC,NA
+Theropoda,Velociraptor,mongoliensis,187,LC,NA
+Theropoda,Xixianykus,zhangi,70,LC,NA
+Theropoda,Acrocanthosaurus,atokensis,1277,EC,NA
+Theropoda,Afrovenator,abakensis,760,EC,NA
+Theropoda,Albertosaurus,sarcophagus,1020,LC,NA
+Theropoda,Allosaurus,fragilis,742,LJ,Morrison
+Theropoda,Aucasaurus,garridoi,700,LC,NA
+Theropoda,Carnotaurus,sastrei,1030,LC,NA
+Theropoda,Ceratosaurus,dentisulcatus,759,LJ,Morrison
+Theropoda,Ceratosaurus,nasicornis,620,LJ,Morrison
+Theropoda,Chilantaisaurus,tashuikouensis,1190,EC,NA
+Theropoda,Coelophysis,bauri,245,LT,NA
+Theropoda,Compsognathus,corallestris,110,LJ,NA
+Theropoda,Compsognathus,longipes,71,LJ,NA
+Theropoda,Daspletosaurus,torosus,1065,LC,Dinosaur Park
+Theropoda,Deltadromeus,agilis,740,LC,NA
+Theropoda,Dilong,paradoxus,185,EC,NA
+Theropoda,Dilophosaurus,wetherilli,551,EJ,NA
+Theropoda,Dryptosaurus,aquilungius,813,LC,NA
+Theropoda,Elaphrosaurus,bambergi,529,LJ,NA
+Theropoda,Eoraptor,lunensis,154,LT,NA
+Theropoda,Eotyrannus,engi,508,EC,NA
+Theropoda,Eustreptospondylus,oxoniensis,520,MJ,NA
+Theropoda,Fukuiraptor,kitadaniensis,507,EC,NA
+Theropoda,Gasosaurus,constructus,465,MJ,NA
+Theropoda,Gorgosaurus,libratus,1030,LC,Dinosaur Park
+Theropoda,Guaibasaurus,candelariensis,270,LT,NA
+Theropoda,Guanlong,wucaii,408,MJ,NA
+Theropoda,Herrerasaurus,ischigualestensis,478,LT,NA
+Theropoda,Juravenator,starki,52,LJ,NA
+Theropoda,Limusaurus,inextricabalis,214,MJ,NA
+Theropoda,Mapusaurus rosei,rosei,1430,LC,NA
+Theropoda,Masiakasaurus,knopfleri,105,LC,NA
+Theropoda,Monolophosaurus,jiangi,595,MJ,NA
+Theropoda,Nanotyrannus,lancensis,720,LC,NA
+Theropoda,Nqwebasaurus,thwazi,118,"LJ,EC",NA
+Theropoda,Nqwebasaurus,thwazi,118,"LJ,EC",NA
+Theropoda,Ornitholestes,hermanni,207,LJ,Morrison
+Theropoda,Piatnitzkysaurus,floresi,590,MJ,NA
+Theropoda,Podokesaurus,holyokensis,86,EJ,NA
+Theropoda,Procompsognathus,triassicus,93.1,LT,NA
+Theropoda,Scipionyx,smaniticus,37.5,EC,NA
+Theropoda,Shanshanosaurus,houanyoshanensis,279,LC,NA
+Theropoda,Sinosauropteryx,prima,86.4,EC,NA
+Theropoda,Sinosauropteryx,sp.,235,EC,NA
+Theropoda,Sinosaurus,triassicus,545,NA,NA
+Theropoda,Sinraptor,dongi,884,MJ,NA
+Theropoda,Staurikosaurus,pricei,220,LT,NA
+Theropoda,Suchomimus,tenerensis,1075,EC,NA
+Theropoda,Syntarsus,rhodesiensis,208,EJ,NA
+Theropoda,Tanycolagreus,topwilsoni,356,LJ,NA
+Theropoda,Tarbosaurus,baatar,1120,LC,NA
+Theropoda,Tyrannosaurus,rex,1321,LC,NA
+Theropoda,Yunagchuanosaurus,hepingensis,980,LJ,NA
+Sauropodomorpha,Aegyptosaurus,baharijensis,1290,LC,NA
+Sauropodomorpha,Alamosaurus,sanjuanensis,1610,LC,NA
+Sauropodomorpha,Amargasaurus,cazaui,1050,EC,NA
+Sauropodomorpha,Ampelosaurus,atacis,802,LC,NA
+Sauropodomorpha,Amphicoelias,altus,1770,LJ,Morrison
+Sauropodomorpha,Andesaurus,delgadoi,1550,EC,NA
+Sauropodomorpha,Antarctosaurus,wichmannianus,1770,LC,NA
+Sauropodomorpha,Apatosaurus,ajax,2500,LJ,Morrison
+Sauropodomorpha,Apatosaurus,excelsus,1830,LJ,Morrison
+Sauropodomorpha,Apatosaurus,excelsus,1775,LJ,NA
+Sauropodomorpha,Apatosaurus,louisae,1785,LJ,Morrison
+Sauropodomorpha,Argyrosaurus,superbus,1910,LC,NA
+Sauropodomorpha,Atlasaurus,imelakei,640,MJ,NA
+Sauropodomorpha,Barapasaurus,tagorei,1365,EJ,NA
+Sauropodomorpha,Barosaurus,africanus,1361,LJ,NA
+Sauropodomorpha,Barosaurus,lentus,1440,LJ,Morrison
+Sauropodomorpha,Bellusaurus,sui,550,MJ,NA
+Sauropodomorpha,Bothriospondylus,madagascariensis,1460,LJ,NA
+Sauropodomorpha,Brachiosaurus,altithorax,2000,LJ,Morrison
+Sauropodomorpha,Camarasaurus,lentus,1470,LJ,Morrison
+Sauropodomorpha,Camarasaurus,lewisi,1525,LJ,NA
+Sauropodomorpha,Camarasaurus,supremus,1800,LJ,Morrison
+Sauropodomorpha,Cetiosauriscus,stewarti,1360,MJ,NA
+Sauropodomorpha,Cetiosaurus,oxoniensis,1660,MJ,NA
+Sauropodomorpha,Chubutisaurus,insignis,1715,EC,NA
+Sauropodomorpha,Datousaurus,bashanensis,1057,MJ,NA
+Sauropodomorpha,Dicraeosaurus,hansemanni,1220,LJ,NA
+Sauropodomorpha,Diplodocus,carnegeii,1542,LJ,Morrison
+Sauropodomorpha,Diplodocus,longus,1645,LJ,Morrison
+Sauropodomorpha,Euhelopus,zdanskyii,955,LJ,NA
+Sauropodomorpha,Giraffatitan,brancai,2028,LJ,NA
+Sauropodomorpha,Gongxianosaurus,shibeiensis,1164,EJ,NA
+Sauropodomorpha,Haplocanthosaurus,delfsi,1745,LJ,Morrison
+Sauropodomorpha,Haplocanthosaurus,priscus,1275,LJ,NA
+Sauropodomorpha,Isanosaurus,attavipachi,760,LT,NA
+Sauropodomorpha,Janenschia,robusta,1330,LJ,NA
+Sauropodomorpha,Jobaria,tiguidensis,1800,EC,NA
+Sauropodomorpha,Kotasaurus,yamanpalliensis,1130,EJ,NA
+Sauropodomorpha,Laplatasaurus,araukanicus,1000,LC,NA
+Sauropodomorpha,Lapparentosaurus,madagascariensis,1590,MJ,NA
+Sauropodomorpha,Lirainosaurus,astibiae,686,LC,NA
+Sauropodomorpha,Magyarosaurus,dacus,488,LC,NA
+Sauropodomorpha,Mamenchisaurus,constructus,1280,LJ,NA
+Sauropodomorpha,Mamenchisaurus,hochuanensis,1350,LJ,NA
+Sauropodomorpha,Neuquensaurus,australis,700,LC,NA
+Sauropodomorpha,Neuquensaurus,robustus,799,LC,NA
+Sauropodomorpha,Omeisaurus,tianfuensis,1310,MJ,NA
+Sauropodomorpha,Opisthocoelicaudia,skarzynskii,1395,LC,NA
+Sauropodomorpha,Patagosaurus,fariasi,1542,MJ,NA
+Sauropodomorpha,Phuwiangosaurus,sirinhornae,1250,EC,NA
+Sauropodomorpha,Rapetosaurus,krausei,687,LC,NA
+Sauropodomorpha,Rayososaurus,tessonei,1440,EC,NA
+Sauropodomorpha,Rocasaurus,muniozi,768,LC,NA
+Sauropodomorpha,Saltasaurus,loricatus,875,LC,NA
+Sauropodomorpha,Shunosaurus,lii,1250,MJ,NA
+Sauropodomorpha,Spinophorosaurus,nigerensis,1215,MJ,NA
+Sauropodomorpha,Tangvayosaurus,NA,1750,EC,NA
+Sauropodomorpha,Tazoudasaurus,naimi,1230,LC,NA
+Sauropodomorpha,Tehuelchesaurus,benitezii,1530,"MJ, LJ",NA
+Sauropodomorpha,Tehuelchesaurus,benitiezii,1580,"LJ, MJ",NA
+Sauropodomorpha,Titanosaurus,indicus,865,LC,NA
+Sauropodomorpha,Tornaria,africana,1340,LJ,NA
+Sauropodomorpha,Turiasaurus,riodevensis,2219,"EC, LJ",NA
+Sauropodomorpha,Volkheimeria,chubutensis,1156,MJ,NA
+Sauropodomorpha,Vulcanodon,karibaensis,1100,EJ,NA
+Sauropodomorpha,Yuanmousaurus jiangyiensis,jiangyiensis,1370,MJ,NA
+Sauropodomorpha,Aardonyx,celestae,681,EJ,NA
+Sauropodomorpha,Ammosaurus,major,221,"EJ,MJ",NA
+Sauropodomorpha,Anchisaurus,polyzelus,210,EJ,NA
+Sauropodomorpha,Camelotia,borealis,985.7,LT,NA
+Sauropodomorpha,Euskelosaurus,browni,590,LT,NA
+Sauropodomorpha,Gyposaurus,sinensis,235.5,EJ,NA
+Sauropodomorpha,Jingshanosaurus,xinwaensis,845,LT,NA
+Sauropodomorpha,Lufengosaurus,huenei,780,LT?,NA
+Sauropodomorpha,Massospondylus,carinatus,335,LT,NA
+Sauropodomorpha,Massospondylus,jachalensis,220,EJ,NA
+Sauropodomorpha,Melanorosaurus,readi,583.3,LT,NA
+Sauropodomorpha,Pantydraco,caducus,72,LT,NA
+Sauropodomorpha,Plateosaurus,engelhardti,750,LT,NA
+Sauropodomorpha,Plateosaurus,poligniensis,821,LT,NA
+Sauropodomorpha,Riojasaurus,incertus,608,LT,NA
+Sauropodomorpha,Saturnalia,tupiniquim,156,LT,NA
+Sauropodomorpha,Sellosaurus,gracilis,491,LT,NA
+Sauropodomorpha,Sellosaurus,gracilis,551,LT,NA
+Sauropodomorpha,Thecodontosaurus?,antiquus,280,LT,NA
+Sauropodomorpha,Yunnanosaurus,huangi,435,EJ,NA
+Ornithischia,Abrictosaurus,consors,77.1,EJ,NA
+Ornithischia,Achelousaurus,horneri,612,LC,NA
+Ornithischia,Amurosaurus,riabinini,560,LC,NA
+Ornithischia,Anatotitan,copei,1150,LC,NA
+Ornithischia,Avaceratops,lammersi,405,LC,NA
+Ornithischia,Bactrosaurus,johnsoni,800,LC,NA
+Ornithischia,Bagaceratops,rozhdestvenskyi,40.5,LC,NA
+Ornithischia,Camptosaurus,amplus,585,LJ,Morrison
+Ornithischia,Camptosaurus,aphanoectes,400,LJ,Morrison
+Ornithischia,Camptosaurus,dispar,640,LJ,Morrison
+Ornithischia,Camptosaurus,leedsi,311,LJ,NA
+Ornithischia,Centrosaurus,apertus,910,LC,Dinosaur Park
+Ornithischia,Centrosaurus,brinkmani,398,LC,NA
+Ornithischia,Cerasinops,hodgskissi,352,LC,NA
+Ornithischia,Chasmosaurus,belli,873.5,LC,Dinosaur Park
+Ornithischia,Chasmosaurus,russelli,716,LC,Dinosaur Park
+Ornithischia,Claosaurus,agilis,697,LC,NA
+Ornithischia,Corythosaurus,casuarius,1159,LC,Dinosaur Park
+Ornithischia,Dryosaurus,altus,490,LJ,Morrison
+Ornithischia,Dryosaurus,canaliculatus,140,LJ,NA
+Ornithischia,Dysolotosaurus,lettowvorbecki,343,LJ,NA
+Ornithischia,Edmontosaurus,annectens,1170,LC,NA
+Ornithischia,Edmontosaurus,regalis,1278.5,LC,NA
+Ornithischia,Einiosaurus,procurvicornis,644,LC,NA
+Ornithischia,Fulgurotherium,australe,186.5,EC,NA
+Ornithischia,Gasparinisaura,cincosaltensis,94.7,LC,NA
+Ornithischia,Gilmoreosaurus,mongoliensis,720,LC,NA
+Ornithischia,Graciliceratops,mongoliensis,95.8,LC,NA
+Ornithischia,Gryposaurus,incurvimanus,1053,LC,Dinosaur Park
+Ornithischia,Gryposaurus,notabilis,1215,LC,Dinosaur Park
+Ornithischia,Hadrosaurus,foulkii,1055,LC,NA
+Ornithischia,Hadrosaurus,minor,746,LC,NA
+Ornithischia,Homalocephale,calathocercos,218,LC,NA
+Ornithischia,Hypacrosaurus,altispinus,1074,LC,NA
+Ornithischia,Hypacrosaurus,stebingeri,1067,LC,NA
+Ornithischia,Hypacrosaurus,stebingeri,1190,LC,NA
+Ornithischia,Hypsilophodon,foxii,202,EC,NA
+Ornithischia,Hypsilophodon,wielandi,255,EC,NA
+Ornithischia,Iguanodon,anglicus,822,EC,NA
+Ornithischia,Iguanodon,atherfieldensis,840,EC,NA
+Ornithischia,Iguanodon,bernissartensis,1090,EC,NA
+Ornithischia,Iguanodon,hollingtonensis,815,EC,NA
+Ornithischia,Iguanodon,mantelli,670,EC,NA
+Ornithischia,Jaxartasaurus,aralensis,530,LC,NA
+Ornithischia,Jeholosaurus,shangyuanensis,90,EC,NA
+Ornithischia,Lambeosaurus,lambei,1117,LC,Dinosaur Park
+Ornithischia,Lambeosaurus,magnicristatus,1055,LC,Dinosaur Park
+Ornithischia,Leaellynasaura,amicagraphica,135,EC,NA
+Ornithischia,Leptoceratops,gracilis,286,LC,Dinosaur Park
+Ornithischia,Lophorhothon,atopus,635,LC,NA
+Ornithischia,Lurdusaurus,arenatus,910,EC,NA
+Ornithischia,Maiasaura,peeblesorum,1000,LC,NA
+Ornithischia,Mandschurosaurus,amurensis,1290,LC,NA
+Ornithischia,Microceratops,gobiensis,123,LC,NA
+Ornithischia,Micropachycephalosaurus,hongtuyanensis,125.8,LC,NA
+Ornithischia,Montanoceratops,cerorhynchus,346,LC,NA
+Ornithischia,Muttaburrasaurus,langdoni,1015,EC,NA
+Ornithischia,Nanyangosaurus,zhugeii,517,EC,NA
+Ornithischia,Nipponosaurus,sachalinensis,544,LC,NA
+Ornithischia,Orodromeus,makelai,166,LC,Dinosaur Park
+Ornithischia,Othnielia,rex,246,LJ,Morrison
+Ornithischia,Ouranosaurus,nigeriensis,850,EC,NA
+Ornithischia,Pachycephalosaurus,wyomingensis,441,LC,Dinosaur Park
+Ornithischia,Pachyrhinosaurus,canadensis,930,LC,NA
+Ornithischia,Pachyrhinosaurus,lakustai,676,LC,NA
+Ornithischia,Parasaurolophus,cyrtocristatus,1172,LC,NA
+Ornithischia,Parasaurolophus,walkeri,1059,LC,Dinosaur Park
+Ornithischia,Parksosaurus,warreni,270,LC,NA
+Ornithischia,Pentaceratops,sternbergii,1080,LC,NA
+Ornithischia,Probactrosaurus,gobiensis,565,EC,NA
+Ornithischia,Procheneosaurus,praeceps,590,LC,NA
+Ornithischia,Prosaurolophus,blackfeetensis,855,LC,NA
+Ornithischia,Prosaurolophus,maximus,1050,LC,Dinosaur Park
+Ornithischia,Protoceratops,andrewsi,248,LC,NA
+Ornithischia,Psittacosaurus,mongoliensis,178.85,EC,NA
+Ornithischia,Psittacosaurus,neimongoliensis,130,EC,NA
+Ornithischia,Psittacosaurus,sibiricus,223,EC,NA
+Ornithischia,Psittacosaurus,sinensis,100,EC,NA
+Ornithischia,Psittacosaurus,xinjiangensis,107,EC,NA
+Ornithischia,Rhabdodon,priscum,550,LC,NA
+Ornithischia,Saurolophus,angustirostris,1200,LC,NA
+Ornithischia,Saurolophus,osborni,1190,LC,NA
+Ornithischia,Shantungosaurus,giganteus,1650,LC,NA
+Ornithischia,Stegoceras,validum,225,LC,Dinosaur Park
+Ornithischia,Stenopelix,valdensis,144,EC,NA
+Ornithischia,Styracosaurus,albertensis,792,LC,Dinosaur Park
+Ornithischia,Tanius,sinensis,1050,LC,NA
+Ornithischia,Tenontosaurus,dossi,557,EC,NA
+Ornithischia,Tenontosaurus,tilletti,700,EC,NA
+Ornithischia,Tethyshadros,insularis,420,LC,NA
+Ornithischia,Thescelosaurus,neglectus,448,LC,NA
+Ornithischia,Torosaurus,utahensis,874,LC,NA
+Ornithischia,Triceratops,horridus,1033.5,LC,NA
+Ornithischia,Triceratops,prorsus,1140,LC,NA
+Ornithischia,Tsintaosaurus,spinorhinus,1000,LC,NA
+Ornithischia,Valdosaurus,nigeriensis,224,EC,NA
+Ornithischia,Wannanosaurus,yansiensis,90,LC,NA
+Ornithischia,Xiaosaurus,dashanpensis ,110,MJ,NA
+Ornithischia,Zalmoxes,shqiperorum,495,LC,NA
+Ornithischia,Aletopelta,coombsi,600,LC,NA
+Ornithischia,Animantarx,ramaljonesi,415,LC,NA
+Ornithischia,Ankylosaurus,magniventris,700,LC,NA
+Ornithischia,Chialingosaurus,kuani,690,LJ,NA
+Ornithischia,Chungkingosaurus,sp.,670,LJ,NA
+Ornithischia,Dacentrurus,armatus,1228.5,LJ,NA
+Ornithischia,Dyoplosaurus,acutosquameus,562,LC,NA
+Ornithischia,Edmontonia,longiceps,660,LC,Dinosaur Park
+Ornithischia,Eocursor,parvus,109,LT,NA
+Ornithischia,Euoplocephalus,tutus,600,LC,Dinosaur Park
+Ornithischia,Fabrosaurus,sp.,203.2,EJ,NA
+Ornithischia,Gargoyleosaurs ,parkpinorus,500,LJ,Morrison
+Ornithischia,Gastonia,burgei,590,EC,NA
+Ornithischia,Gigantspinosaurus,sicchuanensis,720,LJ,NA
+Ornithischia,Heterodontosaurus,tucki,113.2,EJ,NA
+Ornithischia,Hoplitosaurus,marshi,500,EC,NA
+Ornithischia,Huayangosaurus,taibaii,575,MJ,NA
+Ornithischia,Hungarosaurus,tormai,490,LC,NA
+Ornithischia,Kentrosaurus,aethiopicus,778,LJ,NA
+Ornithischia,Lesothosaurus,diagnosticus,103.6666667,EJ,NA
+Ornithischia,Lexovisaurus,durobrivensis,979,MJ,NA
+Ornithischia,Lexovisaurus,vetustus,695,MJ,NA
+Ornithischia,Loricatosaurus,durobrivensis,905,MJ,NA
+Ornithischia,Loricatosaurus,priscus,910,MJ,NA
+Ornithischia,Niobrarasaurus,coleii,540,LC,NA
+Ornithischia,Nodosaurus,textilis,609,"LC,EC",NA
+Ornithischia,Omosaurus,armatus,1232,LJ,NA
+Ornithischia,Omosaurus,durobrivensis,979,LJ,NA
+Ornithischia,Omosaurus,lennieri,880,LJ,NA
+Ornithischia,Pinacosaurus,grangeri,500,LC,NA
+Ornithischia,Pisanosaurus,mertii,170.3,LT,NA
+Ornithischia,Polacanthus,foxii,560,EC,NA
+Ornithischia,Sauropelta,edwardsi,770,EC,NA
+Ornithischia,Scelidosaurus,harrisonii,403,EJ,NA
+Ornithischia,Scuttelosaurus,lawleri,114,EJ,NA
+Ornithischia,Stegosaurus,armatus,1348,LJ,Morrison
+Ornithischia,Stegosaurus,mjosi,978,LJ,Morrison
+Ornithischia,Stegosaurus,stenops,883.3333333,LJ,Morrison
+Ornithischia,Stormbergia,dangershoeki,202,EJ,NA
+Ornithischia,Struthiosaurus,transylvanicus,300,LC,NA
+Ornithischia,Talarurus,plicatospineus,470,LC,NA
+Ornithischia,Tianyulong,confuciusi,51,EC,NA
+Ornithischia,Tuojiangosaurus,multispinus,875,LJ,NA
+Ornithischia,Zhejiangosaurus,lishuiensis,525,LC,NA
