@@ -28,11 +28,11 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
 > * Open the following links in a browser and zoom in to make the images fill
 >   the screen.
 >
-> > * [Like this?](http://www.phdcomics.com/comics/archive.php?comicid=1531)
-> > * [Or like this?](http://www.phdcomics.com/comics/archive.php?comicid=1323)
+> > * [http://www.phdcomics.com/comics/archive.php?comicid=1531](http://www.phdcomics.com/comics/archive.php?comicid=1531)
+> > * [http://www.phdcomics.com/comics/archive.php?comicid=1323](http://www.phdcomics.com/comics/archive.php?comicid=1323)
 
 > 
-> **Live coding demo parallels assignment.**
+> **Live coding demo and assignment are intertwined and designed to work in order.**
 
 ## Introduction
 
@@ -83,7 +83,8 @@ data files and code in a more manageable way.
 6. Click `Create Project`.
 7. Check to make sure you have a `Git` tab in the upper right window.
 
-> Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
+> That was [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
+> Have students confirm that this all worked and fix any issues.
 
 
 ### First commits
@@ -167,10 +168,10 @@ fish_data_cat = fish_data %>%
 
 #### Experiment with impunity
 
-```
+<pre>
 fish_data_cat = fish_data %>% 
-  mutate(length_cat = ifelse(length > 300, "large", "small"))
-```
+  mutate(length_cat = ifelse(length > 300, <b>"large"</b>, "small"))
+</pre>
 
 * `Save` and show changes are staged
 * <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
