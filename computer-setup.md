@@ -17,6 +17,11 @@ Download and install the [R base system](http://cran.rstudio.com/) and [RStudio]
 3. Once your instructor adds you to the course GitHub organization you will
    receive an email asking you to accept the invitation. Click on the link to
    accept.
+4. Check if this worked
+    1. Go to [https://github.com](https://github.com).
+    2. Sign in if necessary.
+    3. In the upper left corner click on the drop down with your name.
+    4. Confirm that the name name of the course GitHub organization is present
 
 ### Git
 
