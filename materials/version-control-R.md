@@ -7,11 +7,12 @@ language: R
 
 > Before class
 >
-> * Remind students to setup a GitHub account and email the instructor their
->   username. 
-> * Setup class organization at Github. 
-> * Add students' username to organization with "create repo" permissions and
->   respond with link to organization in email.
+> * Setup class organization at Github
+>     * Check the `Allow members to create repositories for this organization ` permission
+>     * Set the `Default permissions` for the organization to `None` if you want
+>       to avoid students accessing each others repositories
+> * Have students create a GitHub account and email their username to the instructor.
+> * Add students' username to organization.
 
 > For class
 > 
