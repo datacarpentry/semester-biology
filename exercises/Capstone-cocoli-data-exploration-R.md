@@ -23,10 +23,13 @@ and explore the following spatial properties.
    forest management and ecology. It is the sum of the cross-sectional areas of
    all of the trees occuring in some area and can be calculated as the sum of
    0.00007854 * DBH^2 over all of the trees. To look at how basal area varies
-   across the site into 100 m^2 sample regions (10 x 10 m cells) and determining
-   the total basal area in each region. You can do this using two "nested" for
-   loops to subset the data and calculate the basal area in that region. Make a
-   plot that shows how the basal area varies spatially. Since the calculation is
-   for a square region, plot it that way using `geom_tile()` with the center of
-   the tile at the center of the region where basal area was calculated. Have
-   the code save the plot in a `figures` folder in your project.
+   across the site divide the site into 100 m^2 sample regions (10 x 10 m cells)
+   and determining the total basal area in each region. I.e., take all of the
+   trees in a grid cell where x is between 0 and 10 and y is between 0 and 10
+   and determine their basal area. Do the same thing for x between 0 and 10 and
+   y between 10 and 20, and so on. You can do this using two "nested" for loops
+   to subset the data and calculate the basal area in that region. Make a plot
+   that shows how the basal area varies spatially. Since the calculation is for
+   a square region, plot it that way using `geom_tile()` with the center of the
+   tile at the center of the region where basal area was calculated. Have the
+   code save the plot in a `figures` folder in your project.
