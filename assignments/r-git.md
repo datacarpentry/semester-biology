@@ -3,7 +3,8 @@ layout: page
 element: assignment
 title: Version Control
 language: R
-exercises: ['Set Up Git', 'First Solo Commit', 'Second Solo Commit', 'Commit Multiple Files', 'Pushing Changes', 'Pulling and Pushing', 'Create Project Repository']
+exercises: ['Set Up Git', 'First Solo Commit', 'Second Solo Commit', 'Commit Multiple Files', 'Pushing Changes', 'Pulling and Pushing']
+points: [15, 15, 15, 15, 20, 20]
 ---
 
 #### Learning Objectives
