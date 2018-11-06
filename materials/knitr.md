@@ -195,3 +195,12 @@ summary(cars)
 * `Preview` in RStudio panel
 * Convert to `HTML`
     * `More` -> `View in Browser` or `Save As Web Page...`
+
+
+### Citations
+
+* Add source of citations to YAML
+
+```
+bibliography: bibliography.bib
+```
