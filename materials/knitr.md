@@ -199,8 +199,24 @@ summary(cars)
 
 ### Citations
 
-* Add source of citations to YAML
+* Create a bibtex file with citations
+* Get bibtex entries from Google Scholar
+    * Search reference
+    * Click on `"`
+    * Select `Bibtex`
+    * Copy text
+    * Paste into `.bib` file
+* Add this file as the source for citations in the YAML
 
 ```
 bibliography: bibliography.bib
 ```
+
+* Cite papers
+
+```
+[@white2018]
+```
+
+* When you knit in-text citations will be formated and the full references will
+  be displayed at the bottom of the document.
