@@ -36,8 +36,8 @@ to the mean annual temperature and the mean annaual precipitation.
    the following to you `ggplot` command:
 
    ```
-   scale_x_continuous(limits = c(min(routes$longitude), (routes$longitude))) +
-   scale_y_continuous(limits = c(min(routes$latitude), (routes$latitude)))
+   scale_x_continuous(limits = c(min(routes$longitude), max(routes$longitude))) +
+   scale_y_continuous(limits = c(min(routes$latitude), max(routes$latitude)))
    ```
 
 9. Use the `getData` function from the `raster` package to obtain the bioclim
