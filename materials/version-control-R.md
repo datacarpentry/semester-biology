@@ -17,14 +17,8 @@ language: R
 > For class
 > 
 > * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv).
-> * Arrange to have a teaching partner attend class and `push` the following
->   code for the 'Collaborating' demo.
-
-```
-ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
-```
-
+> * Either arrange to have a teaching partner to attend class or be logged into GitHub as another user in the browser for collaboration demos.
+>
 > * Open the following links in a browser and zoom in to make the images fill
 >   the screen.
 >
@@ -184,9 +178,12 @@ fish_data_cat = fish_data %>%
 
 * Get previous state of a file
     * `History` -> select commit -> `View file @ ...`
+    * Save file over current file
+    * Copy and paste relevant piece into current file
 
 #### Delete with impunity
 
+* Both of these also work for deleted files
 * Close the upper left window with the `fish-analysis.R`.
 * Choose the `File` tab in the lower right window.
 * Select `fish-analysis.R` -> `Delete` -> `Yes`
@@ -231,14 +228,17 @@ fish_data_cat = fish_data %>%
 > finished Pushing Changes
 >
 > The instructor should then commit the following code to their repo
-> with the commit message: `Plot histogram of scale length by fish categorical size`
+> with the commit message: `Plot histogram of scale length by categorical size`
 
 ```
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
 ```
 
-### Collaborating
+> Either you (logged in as another user) or your teaching partner should make
+> the same change to your respository
+
+### Pulling
 
 * Big advantage to remotes is easy collaboration
 * Avoids emailing files and shared folders where you are never sure if you
@@ -257,6 +257,76 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
 > Show updates to history following `Pull` and run code
 
 > Do Tasks 3-6 in [Exercise 6 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
+
+
+### Merges
+
+> Demo merges either with a partner or by logging into GitHub as another user in
+> the browser.
+
+* What happens if two people make changes at the same time?
+    * If they edit different parts of the code git will combine them automatically
+    * If they edit the same areas of the code this requires human intervention
+* Merges
+
+* You decide to change the number of histogram bins to 10
+
+<pre>
+geom_histogram(<b>bins = 10</b>)
+</pre>
+
+* Your collaborator reassesses the measurement device and decides it is accurate
+  down to 0.5 mm and pushes the change to the remote repository [make this
+  change in the remote]
+
+<pre>
+filter(scalelength >= <b>0.5</b>)
+</pre>
+
+* You try to push your change
+* Get an error that shows someone else has made a change & you need to
+  incorporate it to push
+* Pull
+* Merge happens automatically
+* You have both sets of changes
+* Remote still only has collaborators changes
+* Push to add the merged version to the remote
+
+### Merge conflicts
+
+* If both you and your collaborator edit the same location in the code git
+  doesn't know how to combine the changes.
+* A human has to make this kind of decision.
+
+* You decide to change `"big"` to `"large"`
+
+<pre>
+mutate(length_cat = ifelse(length > 300, <b>"large"</b>, "small"))
+</pre>
+
+* Your collaborator changes the size threshold and pushes to the remote
+
+<pre>
+mutate(length_cat = ifelse(length > 250, <b>"big"</b>, "small"))
+</pre>
+
+* You attempt to push your changes
+* Merge conflict when pulling collaborators changes
+* This shows as `U` for "unmerged" in RStudio
+* First block of code is your version
+* Second block is the version on the remote
+* Combine into a single block that includes everything
+
+```
+mutate(length_cat = ifelse(length > 250, "large", "small"))
+```
+
+* Click check box next to file
+* Commit indicating that it is a merge
+* Still not on remote yet
+* Push
+
+### Full GitHub flow
 
 * Collaborating on Github can get more complex with "forks" and "branches.
 
