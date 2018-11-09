@@ -151,12 +151,39 @@ ggplot(time_series, aes(x = year, y = count)) +
 ```
 </code></pre>
 
+
 ### Notebook
 
 * In RStudio run chunks using `Ctrl-Shift-Enter` or `Cmd-Shift-Enter`
 * Displays results in the editor
 * Notebook
 * `output: html_notebook` or File -> New File -> R Notebook
+* Resulting `.nb.html` file has interactive control of code blocks
+
+
+### Citations
+
+* Create a bibtex file with citations
+* Get bibtex entries from Google Scholar
+    * Search reference
+    * Click on `"`
+    * Select `Bibtex`
+    * Copy text
+    * Paste into `.bib` file
+* Add this file as the source for citations in the YAML
+
+```
+bibliography: bibliography.bib
+```
+
+* Cite papers
+
+```
+[@white2018]
+```
+
+* When you knit in-text citations will be formated and the full references will
+  be displayed at the bottom of the document.
 
 
 ### R Presentations
@@ -197,26 +224,3 @@ summary(cars)
     * `More` -> `View in Browser` or `Save As Web Page...`
 
 
-### Citations
-
-* Create a bibtex file with citations
-* Get bibtex entries from Google Scholar
-    * Search reference
-    * Click on `"`
-    * Select `Bibtex`
-    * Copy text
-    * Paste into `.bib` file
-* Add this file as the source for citations in the YAML
-
-```
-bibliography: bibliography.bib
-```
-
-* Cite papers
-
-```
-[@white2018]
-```
-
-* When you knit in-text citations will be formated and the full references will
-  be displayed at the bottom of the document.
