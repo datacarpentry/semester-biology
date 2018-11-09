@@ -197,25 +197,33 @@ bibliography: bibliography.bib
 <pre><code>
 Untitled
 ========================================================
-author: 
+author: Ethan P. White
 date: 
 autosize: true
 
 
-First Slide
+Outline
 ========================================================
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
+- Show making slides in R
+- Include code on slides
+- Includes graphs on slides
 
 Slide With Code
 ========================================================
 
 ```{r}
-summary(cars)
+data <- read.csv("https://ndownloader.figshare.com/files/2292172")
+```
+
+Histogram of Masses
+========================================================
+
+
+```{r, echo = FALSE}
+library(ggplot2)
+ggplot(data, aes(x = weight, color = species_id)) +
+geom_histogram()
 ```
 </code></pre>
 
