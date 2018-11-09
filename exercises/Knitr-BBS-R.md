@@ -43,13 +43,13 @@ to the mean annual temperature and the mean annaual precipitation.
 9. Use the `getData` function from the `raster` package to obtain the bioclim
    data (`getData('worldclim', var = 'bio', res = 10)`) and `extract` the values
    for each route. Convert resulting matrix into a data frame and `select` just
-   the mean annual temperature (bio1) and the mean annual precipitation (bio16).
+   the mean annual temperature (bio1) and the mean annual precipitation (bio1).
    Use `cbind` to combine these two predictor columns with the routes table.
 10. Determine the species richness at each route in 2015. To get unique routes
    you will need to group by by the `statenum` and `route` columns. Join this
    data with the predictor data you obtained in (7).Display the new table data.
 11. Make two graphs, one each showing the relationship between `bio1` and
-   `richness` and `bio16` and `richness`. Include the raw data points and a
+   `richness` and `bio12` and `richness`. Include the raw data points and a
    smooth line through them. (*optional*) Try doing this with a function if you
    want an extra challenge.
 12. Write a brief conclusions section providing your interpretation of the
