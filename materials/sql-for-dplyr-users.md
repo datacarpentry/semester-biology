@@ -58,7 +58,7 @@ FROM surveys;
 * Just like in `dplyr`
 
 ```
-SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
+SELECT species_id, ROUND(hindfoot_length/10, 1)
 FROM surveys;
 ```
 
