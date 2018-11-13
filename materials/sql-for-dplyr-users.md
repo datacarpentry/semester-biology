@@ -181,19 +181,20 @@ GROUP BY species_id, plot_id;
 
 ### Basic join
 
+* Find the unique dates that each plot type was sampled on
 * `inner_join` is `JOIN` or `INNER JOIN`
 * `USING` specifies the columns to join on if the tables share column names
 
 ```
 SELECT DISTINCT year, month, day, plot_type 
 FROM surveys
-JOIN species USING (species_id);
+JOIN plots USING (plot_id);
 ```
 
 * Unlike in `dplyr` you must specify the columns to join on (or things go badly)
 
     ```
-    SELECT DISTINCT year, month, day, plot_type
+    SELECT year, month, day, plot_type
     FROM surveys
     JOIN plots
     ```
@@ -206,8 +207,6 @@ FROM surveys
 JOIN species on surveys.species_id = species.species_id;
 ```
 
-> Do [Basic Join]({{ site.baseurl }}/exercises/Advanced-queries-basic-join-SQL/).
-
 ### Multi-table join
 
 * To join multiple tables do multiple joins
@@ -219,25 +218,6 @@ JOIN species USING (species_id)
 JOIN plots USING (plot_id)
 ```
 
-### Multi-table join with abbreviations
-
-* The previous `SELECT` statement works because each of the fields are uniquely named.
-* It is safer to write a query that links fields to their table. 
-
-```
-SELECT surveys.year, surveys.month, surveys.day, species.taxa, plots.plot_type
-FROM surveys
-JOIN species ON surveys.species_id = species.species_id
-JOIN plots ON surveys.plot_id = plots.plot_id;
-```
-
-* Use abbreviations to help with readability.
-
-```
-SELECT sv.year, sv.month, sv.day, sp.taxa, p.plot_type
-FROM surveys sv
-JOIN species sp  ON sv.species_id = sp.species_id
-JOIN plots p ON sv.plot_id = p.plot_id;
-```
-
+> Do [Basic Join]({{ site.baseurl }}/exercises/Advanced-queries-basic-join-SQL/).
+>
 > Do [Multi-table Join]({{ site.baseurl }}/exercises/Advanced-queries-multi-table-join-SQL/).
