@@ -2,7 +2,7 @@
 layout: page
 element: reading
 title: Working with Databases
-language: R
+language: SQL
 ---
 
 * Topics

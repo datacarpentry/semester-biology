@@ -2,7 +2,7 @@
 layout: page
 element: lecture
 title: Working with Databases
-language: R
+language: SQL
 ---
 
 * [SQL for dplyr users]({{ site.baseurl }}/materials/sql-for-dplyr-users)
