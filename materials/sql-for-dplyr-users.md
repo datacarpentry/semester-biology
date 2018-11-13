@@ -7,7 +7,7 @@ language: SQL
 
 > Remember to
 >
-> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
+> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/11188550).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
 
 ### Why Databases
