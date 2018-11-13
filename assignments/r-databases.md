@@ -2,8 +2,9 @@
 layout: page
 element: assignment
 title: Working with Databases
-language: R
-exercises: ['Source and Query', 'Manipulate Query', 'Copy to Database', 'NEON Mammals', 'Tree Biomass']
+language: SQL
+exercises: ['Simple WHERE', 'COUNT', 'Basic Join', 'Multi-table Join', 'Link to Databases', 'Copy to Database']
+points: [10, 10, 20, 20, 20, 20]
 ---
 
 #### Learning Objectives
