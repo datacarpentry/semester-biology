@@ -105,7 +105,8 @@ a query like this.
 ### Saving queries for future use
 
 * Views save queries to run again.
-* Create them by using `Create View` in the `View` menu
+* Create them by adding `CREATE VIEW name AS` to top of query
+* If you need to replace a view first run `DROP VIEW name`
 
 > Do the [Simple WHERE]({{ site.baseurl }}/exercises/Basic-queries-simple-where-SQL) exercise.
 
