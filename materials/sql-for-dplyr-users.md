@@ -10,6 +10,13 @@ language: SQL
 > * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
 
+### Why Databases
+
+* Good place to store data
+* Lots of existing data is stored in them (which you might want to use)
+* Support real-time collaboration on adding and updating data
+* Handle out of memory computation
+
 ### Database Queries
 
 * Data is separate from manipulations of the data
