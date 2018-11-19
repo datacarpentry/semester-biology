@@ -5,13 +5,7 @@ title: tidyr
 language: SQL
 ---
 
-> Set up R console:
-
-```
-library(tidyr)
-```
-
-### Remember the five basic rules of database structure
+### Remember the basic rules of tidy data structure
 
 1. Order doesn’t matter 
 2. No duplicate rows
@@ -19,101 +13,121 @@ library(tidyr)
 4. One column per type of information
 5. No redundant information
 
-### Restructure tables with messy data 
-
-* Cells with multiple values break rule #3.
-* Redundant column information or cross-tabulated data breaks rule #4.
-
-![How to restructure to keep no duplicate rows and one value per cell]({{ site.baseurl }}/materials/database-struct-multiple-habitat-values.png)
-
-* Here is another messy dataset.
+* Unfortunately lots of existing data doesn't follow these rules
+* Need to convert them to to this tidy structure for analysis
+* Use a package called `tidyr`
 
 ```
-scary_sightings <- data.frame(
-  animals = c("lions", "tigers", "bears"),
-  brick_road = c("1-Y", "0-N", "0-N"),
-  emerald_city = c("17-N", "8-Y", "64-N")
-)
+install.packages("tidyr")
+library(tidyr)
 ```
 
+### Gather
+
+* One common issue is data spread over multiple columns that should be in one
+
+> Copy link to Western Ghats tree data from datasets page
+
 ```
-> scary_sightings
-  animals brick_road emerald_city
-1   lions        1-Y         17-N
-2  tigers        0-N          8-Y
-3   bears        0-N         64-N
+raw_data = read.csv("http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt", sep = "\t")
 ```
 
-* What do the values in the table represent?
-    * `lions` and `tigers` and `bears` are names of `animals`
-    * `1-Y`, `17-N`, etc. represent: 
-        * Counts of animals sighted on the `brick_road` or in the `emerald_city`
-        * And, were the animal sightings scary? `Y` or `N`
+> View data
 
-> Ask students,
-> 
-> * "What makes `scary_sightings` messy?"
-> * "What are the variables in `scary_sightings`?"
+* Data on tree girth from the Western Ghats
+* When a tree had multiple stems the diameter of each stem was entered in a separate column
+* What would a better structure be?
 
-* Tidy variables in `scary_sightings`
-    * `animals` 
-        * `lions` and `tigers` and `bears`
-    * `site` 
-        * `brick_road` and `emerald_city`
-    * `sightings`
-        * count
-    * `scared`
-        * `Y` or `N`
+> Lead discussion to correct structure
 
-### `tidyr` helps restructure messy data
-
-* `gather()`
+* To get the data in this form we can use `gather`
     * Removes redundant columns
     * Arguments:
-        * Piped `data.frame`
+        * `data.frame`
         * Column name for grouping of old column headers
         * Column name for grouping of old column values
         * Column range for old columns with values
 
 ```
-less_scary <- scary_sightings %>%
-  gather(site, scary_counts, brick_road:emerald_city)
+clean_data <- raw_data %>%
+  gather(stem, girth, TreeGirth1:TreeGirth5)
 ```
 
-```
-> less_scary
+> View data
 
-  animals         site scary_counts
-1   lions   brick_road          1-Y
-2  tigers   brick_road          0-N
-3   bears   brick_road          0-N
-4   lions emerald_city         17-N
-5  tigers emerald_city          8-Y
-6   bears emerald_city         64-N
+### Extract
+
+* Want `stem` column to contain numbers 1-5 not `TreeGirth1`
+* `extract()`
+    * Extracts one or more values from a column
+    * Uses regular expressions
+    * Arguments:
+        * `data.frame`
+        * Column name
+        * Names of the new columns
+        * Regular expression
+
+```
+clean_data <- raw_data %>%
+  gather(stem, girth, TreeGirth1:TreeGirth5) %>%
+  extract(long_data, stem, 'stem', 'TreeGirth(.)')
 ```
 
+### Separate
+
+* Genus and species data are combined in a single column
 * `separate()`
     * Separates multiple values in single column
     * Arguments:
-        * Piped `data.frame`
+        * `data.frame`
         * Column name
         * New column names
-        * Separator value or character
+        * Separator value, character, or position
 
 ```
-sightings <- less_scary %>%
-  separate(scary_counts, c("count", "scary"), sep="-")
+clean_data <- raw_data %>%
+  gather(stem, girth, TreeGirth1:TreeGirth5) %>%
+  extract(stem, 'stem', 'TreeGirth(.)') %>%
+  separate(SpCode, c('genus', 'species'), 4)
 ```
 
+### Unite and Spread
+
+* Sometimes we need to go in the other direction
+* Count the number of stems of each species on each plot
+
 ```
-> sightings
-  animals         site count scary
-1   lions   brick_road     1     Y
-2  tigers   brick_road     0     N
-3   bears   brick_road     0     N
-4   lions emerald_city    17     N
-5  tigers emerald_city     8     Y
-6   bears emerald_city    64     N
+stem_counts <- clean_data %>% 
+  group_by(PlotID, genus, species) %>% 
+  summarize(count = n())
 ```
 
-> Do [Exercise 5 - Tree Biomass]({{ site.baseurl }}/exercises/Tidyr-tree-biomass-R).
+* Software for running analysis requires cross-tab (or wide) data
+* Site in rows, species in columns, counts in cells
+* First need a single species ID
+* `unite`
+    * Combine values from multiple columns into one
+    * Arguments:
+        * `data.frame`
+        * New column name
+        * Columns to combine
+
+```
+wide_data <- counts %>% 
+  unite(species_id, genus, species)
+```
+
+* Then make the data wide
+* `spread`
+    * Spread values across multiple columns
+    * Arguments:
+        * `data.frame`
+        * Name of column to use for wide columns
+        * Name of column containing the values for the cells
+        * Optional `fill` argument for what to put in empty cells
+
+```
+wide_data <- counts %>% 
+  unite(species_id, genus, species) %>% 
+  spread(species_id, count, fill = 0)
+```
