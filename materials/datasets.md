@@ -27,3 +27,4 @@ title: List of datasets
 | Collar locations | txt | <http://www.datacarpentry.org/semester-biology/data/collar-data-2016-01.zip> |
 | DNA sequences | txt | <http://www.datacarpentry.org/semester-biology/data/dna-sequences-1.txt> |
 | Archaea DNA sequences | fasta | <http://www.datacarpentry.org/semester-biology/data/archaea-dna.zip> |
+| Western Ghats tree data | tsv | <http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt> |
