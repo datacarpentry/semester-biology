@@ -7,11 +7,9 @@ language: SQL
 
 ### Remember the basic rules of tidy data structure
 
-1. Order doesn’t matter 
-2. No duplicate rows
-3. Every cell contains one value
-4. One column per type of information
-5. No redundant information
+1. One column per type of information
+2. One row per observation
+3. One value in each cell
 
 * Unfortunately lots of existing data doesn't follow these rules
 * Need to convert them to to this tidy structure for analysis
