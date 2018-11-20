@@ -20,6 +20,7 @@ language: SQL
 ```
 install.packages("tidyr")
 library(tidyr)
+library(dplyr)
 ```
 
 ### Gather
@@ -55,6 +56,14 @@ clean_data <- raw_data %>%
 
 > View data
 
+* Still has zeros for where there were no stems, so filter these out
+
+```
+clean_data <- raw_data %>%
+  gather(stem, girth, TreeGirth1:TreeGirth5) %>%
+  filter(girth != 0)
+```
+
 ### Extract
 
 * Want `stem` column to contain numbers 1-5 not `TreeGirth1`
@@ -70,7 +79,8 @@ clean_data <- raw_data %>%
 ```
 clean_data <- raw_data %>%
   gather(stem, girth, TreeGirth1:TreeGirth5) %>%
-  extract(long_data, stem, 'stem', 'TreeGirth(.)')
+  filter(girth != 0) %>%
+  extract(stem, 'stem', 'TreeGirth(.)')
 ```
 
 ### Separate
@@ -87,6 +97,7 @@ clean_data <- raw_data %>%
 ```
 clean_data <- raw_data %>%
   gather(stem, girth, TreeGirth1:TreeGirth5) %>%
+  filter(girth != 0) %>%
   extract(stem, 'stem', 'TreeGirth(.)') %>%
   separate(SpCode, c('genus', 'species'), 4)
 ```
@@ -113,7 +124,7 @@ stem_counts <- clean_data %>%
         * Columns to combine
 
 ```
-wide_data <- counts %>% 
+stem_counts_wide <- stem_counts %>% 
   unite(species_id, genus, species)
 ```
 
@@ -127,7 +138,7 @@ wide_data <- counts %>%
         * Optional `fill` argument for what to put in empty cells
 
 ```
-wide_data <- counts %>% 
+stem_counts_wide <- stem_counts %>% 
   unite(species_id, genus, species) %>% 
   spread(species_id, count, fill = 0)
 ```
