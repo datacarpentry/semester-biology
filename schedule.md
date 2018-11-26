@@ -6,7 +6,7 @@ assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Computational Projects', 'Programming Fundamentals 1',
 'Programming Fundamentals 2', 'Putting It All Together',
 'Version Control', 'Getting Data', 'Knitr',
-'Working with Databases', 'tidyr', 'Student Chosen Topic',
+'Working with Databases', 'tidyr', 'Image Processing and Analysis',
 'Student Chosen Topic']
 ---
 
