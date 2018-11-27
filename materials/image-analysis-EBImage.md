@@ -46,14 +46,6 @@ nuclei_img
     * y
     * frame
 
-* Just work with one image for simplicity
-* Get all rows and columns for a single frame
-
-```
-nuclei_img = nuclei_img[,,1]
-nuclei_img
-```
-
 ## Display
 
 * Can show image using `plot` or `display`
@@ -77,6 +69,14 @@ display(nuclei_img)
 ```
 nuclei_img_cropped <- nuclei_img[200:300, 300:400, 1]
 display(nuclei_img_cropped)
+```
+
+* Just work with one image for simplicity
+* Get all rows and columns for a single frame
+
+```
+nuclei_img = nuclei_img[,,1]
+nuclei_img
 ```
 
 ## Thresholding
