@@ -37,14 +37,6 @@ nuclei_img
     * Frames - 4 different images
     * Image - matrix of numbers
 
-* Just work with one image for simplicity
-* Get all rows and columns for a single frame
-
-```
-nuclei_img = nuclei_img[,,1]
-nuclei_img
-```
-
 * Images are encoded as numbers for each pixel
 * For grayscale: range from 0 (black) to 1 (white)
 
@@ -58,6 +50,14 @@ nuclei_img
 * If this was a single color image would have
     * `frames.total = 3` for red, green, blue
     * `frames.render = 1` for a single combined image
+
+* Just work with one image for simplicity
+* Get all rows and columns for a single frame
+
+```
+nuclei_img = nuclei_img[,,1]
+nuclei_img
+```
 
 ## Display
 
