@@ -67,7 +67,7 @@ display(nuclei_img)
 * Cropping is like subsetting a matrix
 
 ```
-nuclei_img_cropped <- nuclei_img[200:300, 300:400, 1]
+nuclei_img_cropped <- nuclei_img[200:300, 350:450, 1]
 display(nuclei_img_cropped)
 ```
 
