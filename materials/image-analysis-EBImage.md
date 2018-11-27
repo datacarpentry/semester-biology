@@ -130,8 +130,18 @@ display(nuclei_thresh)
 
 ```
 nuclei_segmented <- bwlabel(nuclei_thresh)
+```
+
+* Labels each distinct nuclei with a different number (class)
+
+```
 nuclei_segmented
 nuclei_segmented@.Data[1:15, 1:15]
+```
+
+* Can them display them with different colors
+  
+```
 display(colorLabels(nuclei_segmented))
 ```
 
