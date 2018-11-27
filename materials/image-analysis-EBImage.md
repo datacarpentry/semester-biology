@@ -32,24 +32,19 @@ nuclei_img
 ```
 
 * Image object includes information on
-    * Color mode - Gray scale
-    * Dimensions - 510 x 510 pixels
-    * Frames - 4 different images
-    * Image - matrix of numbers
-
+* Color mode - Gray scale
+* Dimensions - 510 x 510 pixels
+* Frame is like a layer in spatial data
+    * Can be frames in a movie, different images, or different color bands
+    * If this was a single color image would have
+        * `frames.total = 3` for red, green, blue
+        *  `frames.render = 1` for a single combined image
 * Images are encoded as numbers for each pixel
 * For grayscale: range from 0 (black) to 1 (white)
-
 * Data is stored in a 3D matrix
     * x
     * y
     * frame
-
-* Frame is like a layer in spatial data
-* Can be frames in a movie, different images, or different color bands
-* If this was a single color image would have
-    * `frames.total = 3` for red, green, blue
-    * `frames.render = 1` for a single combined image
 
 * Just work with one image for simplicity
 * Get all rows and columns for a single frame
