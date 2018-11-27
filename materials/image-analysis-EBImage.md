@@ -26,9 +26,9 @@ library(EBImage)
 * Let's look at some microscope images of cells
 
 ```
-cells_file <- system.file('images', 'cells.tif', package='EBImage')
-cells_img <- readImage(cells_file)
-cells_img
+nuclei_file <- system.file("images", "nuclei.tif", package="EBImage")
+nuclei_img <- readImage(nuclei_file)
+nuclei_img
 ```
 
 * Image object includes information on
@@ -41,8 +41,8 @@ cells_img
 * Get all rows and columns for a single frame
 
 ```
-cells_img = cells_img[,,1]
-cells_img
+nuclei_img = nuclei_img[,,1]
+nuclei_img
 ```
 
 * Images are encoded as numbers for each pixel
@@ -65,13 +65,13 @@ cells_img
 * `plot` makes a simple graph of the first frame
 
 ```
-plot(cells_img)
+plot(nuclei_img)
 ```
 
 * `display` allows interactive viewing
 
 ```
-display(cells_img)
+display(nuclei_img)
 ```
 
 ## Cropping
@@ -80,22 +80,13 @@ display(cells_img)
 * Cropping is like subsetting a matrix
 
 ```
-cells_img_cropped <- cells_img[200:300, 300:400, 1]
-display(cells_img_cropped)
+nuclei_img_cropped <- nuclei_img[200:300, 300:400, 1]
+display(nuclei_img_cropped)
 ```
 
 ## Thresholding
 
 * Distinguish between background and objects
-* Stained nuclei for the cells
-
-```
-nuclei_file <- system.file("images", "nuclei.tif", package="EBImage")
-nuclei_img <- readImage(nuclei_file)
-nuclei_img <- nuclei_img[,,1]
-display(nuclei_img)
-```
-
 * We can see which areas are nuclei and which aren't
 * But the computer just sees continuous numbers
 * Even in areas that appear clearly black the numbers aren't zero
