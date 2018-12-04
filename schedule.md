@@ -7,7 +7,7 @@ assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Programming Fundamentals 2', 'Putting It All Together',
 'Version Control', 'Getting Data', 'Knitr',
 'Working with Databases', 'tidyr', 'Image Processing and Analysis',
-'Student Chosen Topic']
+'Web Applications Using Shiny']
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
