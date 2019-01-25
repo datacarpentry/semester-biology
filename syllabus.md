@@ -16,11 +16,13 @@ TA: Andrew Marx
 TA_email: andrewjmarx@ufl.edu
 ---
 
-## {{ site.title }}
+## Course
+
+{{ site.title }}
 
 {{ page.catalog }}, {{ page.credits }} Credits, {{ page.semester }}
 
-### Professor
+### Instructor
 
 {{ page.professor }}
 
@@ -55,7 +57,7 @@ please try to schedule appointments as far in advance as possible. In general it
 will be very difficult to set up appointments less than 24 hours in advance.*
 
 
-### Course TA
+### Teaching Assistant
 
 {{ page.TA }}
 
@@ -78,6 +80,11 @@ Email: [{{ page.email }}](mailto:{{ page.email }})
 ### Required Texts
 
 There is no required text book for this class.
+
+All needed material is openly available on the course website. If you are
+interested in additional reading on the topics we are covering I highly
+recommend [R for Data Science](https://r4ds.had.co.nz/), which is freely
+available on the web.
 
 
 ### Course Description
@@ -110,7 +117,7 @@ databases. By learning how to get the computer to do your work for you, you will
 be able to do more science faster.
 
 
-### Course Goals and Objectives
+### Course Objectives and Goals
 
 Students completing this course will be able to:
 
@@ -172,6 +179,12 @@ material.
 There are no quizzes or exams in this course.
 
 
+### Attendance policy
+
+Attendance is not required but it is recommended that you attend class as often as
+possible to get the most out of the course.
+
+
 ### Make-up policy
 
 Life happens and therefore there is an automatic grace period of 48 hours for
@@ -179,6 +192,8 @@ the submission of late assignments with no need to request an extension.
 However, it is highly recommended that you submit assignments on time when
 possible because assignments build on one another and it can be hard to catch up
 if you fall behind. Reasonable requests for longer extensions will also be granted.
+Assignments turned in after the 48 hour grace period without an extension will be
+be graded with a 20% penalty.
 
 
 ### Assignment policy
@@ -198,19 +213,35 @@ please contact the instructor and they will do their best to provide you with
 one.
 
 
+### Materials and Supplies Fees
+
+There are no materials and supplies fees for this course.
+
+
 ## UF Policies
 
 
 ### University Policy on Accommodating Students with Disabilities
 
-Students requesting accommodation for disabilities must first register with the
-Dean of Students Office (http://www.dso.ufl.edu/drc/). The Dean of Students
-Office will provide documentation to the student who must then provide this
-documentation to the instructor when requesting accommodation. You must submit
-this documentation prior to submitting assignments or taking the quizzes or
-exams. Accommodations are not retroactive, therefore, students should contact
-the office as soon as possible in the term for which they are seeking
-accommodations.
+Students with disabilities requesting accommodations should first register with
+the Disability Resource Center (352-392-8565; http://www.dso.ufl.edu/drc/) by
+providing appropriate documentation. Once registered, students will receive an
+accommodation letter which must be presented to the instructor when requesting
+accommodation. Students with disabilities should follow this procedure as early
+as possible in the semester. 
+
+My policy: If you are in my class I want to help learn and will happily work
+with you to make the learning environment equitable for you and others.
+
+
+### University on Course Evaluations
+
+Students are expected to provide feedback on the quality of instruction in this
+course by completing online evaluations at https://evaluations.ufl.edu.
+Evaluations are typically open during the last two or three weeks of the
+semester, but students will be given specific times when they are open. Summary
+results of these assessments are available to students at
+https://evaluations.ufl.edu/results/.
 
 
 ### University Policy on Academic Misconduct
@@ -226,40 +257,34 @@ All members of the class are expected to follow rules of common
 courtesy in all email messages, threaded discussions and chats.
 
 
-## Getting Help
+### University Honesty Policy
 
-For issues with technical difficulties for E-learning in Canvas, please contact the UF Help Desk at:
+UF students are bound by The Honor Pledge which states, “We, the members of the University of Florida community, pledge to hold ourselves and our peers to the highest standards of honor and integrity by abiding by the Honor Code. On all work submitted for credit by students at the University of Florida, the following pledge is either required or implied: “On my honor, I have neither given nor received unauthorized aid in doing this assignment.” The Honor Code (https://www.dso.ufl.edu/sccr/process/student-conduct-honor-code/) specifies a number of behaviors that are in violation of this code and the possible sanctions. Furthermore, you are obligated to report any condition that facilitates academic misconduct to appropriate personnel. If you have any questions or concerns, please consult with the instructor or TAs in this class.
 
-* Learning-support@ufl.edu
-* (352) 392-HELP - select option 2
-* https://lss.at.ufl.edu/help.shtml
 
-Any requests for make-ups due to technical issues MUST be accompanied by the
-ticket number received from LSS when the problem was reported to them. The
-ticket number will document the time and date of the problem. You MUST e-mail
-your instructor within 24 hours of the technical difficulty if you wish to
-request a make-up.
+### Software Use
 
-Other resources are available at http://www.distance.ufl.edu/getting-help for:
+All faculty, staff, and students of the University are required and expected to
+obey the laws and legal agreements governing software use.  Failure to do so can
+lead to monetary damages and/or criminal penalties for the individual violator.
+Because such violations are also against University policies and rules,
+disciplinary action will be taken as appropriate.  We, the members of the
+University of Florida community, pledge to uphold ourselves and our peers to the
+highest standards of honesty and integrity.
 
-* Counseling and Wellness resources
-* Disability resources
-* Resources for handling student concerns and complaints
-* Library Help Desk support
 
-Should you have any complaints with your experience in this course please visit
-http://www.distance.ufl.edu/student-complaints to submit a complaint.
+### Student Privacy
 
-**Most importantly, if you are struggling for any reason please come talk to me
-and I will do my best to help.**
+There are federal laws protecting your privacy with regards to grades earned in
+courses and on individual assignments.  For more information, please see:
+http://registrar.ufl.edu/catalog0910/policies/regulationferpa.html
 
 
 ## Grading Policies
 
-Grading for this course is based on 13 equally weighted assignments. One problem
-from each assignment (selected at the instructors discretion after the
-assignments have been submitted) will receive a thorough code review and a
-detailed grade. Other problems will be graded as follows:
+Grading for this course is based on 13 equally weighted assignments.
+
+Exercises in assignments will be graded as follows:
 
 * Produces the correct answer using the requested approach: 100%
 * Generally uses the right approach, but a minor mistake results in an incorrect
@@ -268,8 +293,6 @@ detailed grade. Other problems will be graded as follows:
     50%
 * Answer demonstrates a lack of understanding of the core concept: 0%
 
-Independent projects may focus on databases, programming, or a combination or
-the two.
 
 ### Grading scale
 
@@ -286,13 +309,41 @@ the two.
 - **E <60**
 
 
+### UF grading policies for assigning grade points
+
+[https://catalog.ufl.edu/UGRD/academic-regulations/grades-grading-policies/](https://catalog.ufl.edu/UGRD/academic-regulations/grades-grading-policies/)
+
+
+## Campus Resources
+
+### Health and Wellness 
+
+U Matter, We Care: If you or a friend is in distress, please contact umatter@ufl.edu or 352 392-1575 so that a team member can reach out to the student. 
+
+Counseling and Wellness Center: http://www.counseling.ufl.edu/cwc, and  392-1575; and the University Police Department: 392-1111 or 9-1-1 for emergencies. 
+
+Sexual Assault Recovery Services (SARS): Student Health Care Center, 392-1161. 
+
+University Police Department: 392-1111 (or 9-1-1 for emergencies), or http://www.police.ufl.edu/. 
+
+### Academic Resources
+
+E-learning technical support: 352-392-4357 (select option 2) or e-mail to Learning-support@ufl.edu. https://lss.at.ufl.edu/help.shtml.
+
+Career Resource Center: Reitz Union, 392-1601.  Career assistance and counseling. https://www.crc.ufl.edu/.
+
+Library Support: http://cms.uflib.ufl.edu/ask. Various ways to receive assistance with respect to using the libraries or finding resources.
+
+Teaching Center: Broward Hall, 392-2010 or 392-6420. General study skills and tutoring. https://teachingcenter.ufl.edu/.
+
+Writing Studio: 302 Tigert Hall, 846-1138. Help brainstorming, formatting, and writing papers. https://writing.ufl.edu/writing-studio/.
+
+Student Complaints Campus: https://www.dso.ufl.edu/documents/UF_Complaints_policy.pdf.
+
+On-Line Students Complaints: http://www.distance.ufl.edu/student-complaint-process.
+
 ## Course Schedule
 
 The details course schedule is available on the course website at:
 [{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
 
-
-**Disclaimer:** This syllabus represents my current plans and objectives. As we
-go through the semester, those plans may need to change to enhance the class
-learning opportunity. Such changes will be communicated clearly both on the
-website and in class.
