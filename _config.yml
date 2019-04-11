@@ -11,7 +11,7 @@ permalink:        pretty
 # Setup
 title:            Ecology
 description:      'The science of how nature works'
-url:              https://kerkhoffa.github.io/semester-biology
+url:              https://kerkhoffa.github.io/Ecology-Course
 baseurl:          /semester-biology
 email:            kerkhoffa@kenyon.edu
 feedbackurl:      
@@ -20,5 +20,5 @@ author:
   url:            https://kerkhofflab.org
 
 github:
-  repo:           https://github.com/kerkhoffa/semester-biology
+  repo:           https://github.com/kerkhoffa/Ecology-Course
   #               Be sure the 'Issues' feature is activated in 'Settings'
