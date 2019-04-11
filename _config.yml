@@ -9,16 +9,16 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Data Carpentry for Biologists
-description:      'Teaching the tools to get computers to do cool science'
-url:              http://www.datacarpentry.org/semester-biology
+title:            Ecology
+description:      'The science of how nature works'
+url:              https://kerkhoffa.github.io/semester-biology
 baseurl:          /semester-biology
-email:            datacarpentrysemester@weecology.org
-feedbackurl:      polleverywhere.com/multiple_choice_polls/KznOEBvSAnahmt7
+email:            kerkhoffa@kenyon.edu
+feedbackurl:      
 author:
-  name:           'Ethan White'
-  url:            https://twitter.com/ethanwhite
+  name:           'Drew Kerkhoff'
+  url:            https://kerkhofflab.org
 
 github:
-  repo:           https://github.com/datacarpentry/semester-biology
+  repo:           https://github.com/kerkhoffa/semester-biology
   #               Be sure the 'Issues' feature is activated in 'Settings'
