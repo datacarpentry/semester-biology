@@ -5,7 +5,7 @@
 This is a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
 with data through programming, database management and computing more generally. 
 
-It was forked from [website](http://datacarpentry.org/semester-biology) 
+It was forked from Ethan White's [Data Carpentry for Biologists](http://datacarpentry.org/semester-biology) Course
 
 ## Where is everything
 
