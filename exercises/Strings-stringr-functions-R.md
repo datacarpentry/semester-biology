@@ -5,7 +5,7 @@ title: stringr Functions
 language: R
 ---
 
-Use the character functions from the package [`stringr`](http://cran.r-project.org/web/packages/stringr/stringr.pdf) to print the following strings.
+Use the character functions from the package [`stringr`](http://cran.r-project.org/package=stringr) to print the following strings.
 
 
 1.  `"atgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgc"`. 
