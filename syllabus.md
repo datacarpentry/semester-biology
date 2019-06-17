@@ -89,17 +89,11 @@ available on the web.
 
 ### Course Description
 
-Computers are increasingly essential to the study of all aspects of
-biology. Data management skills are needed for entering data without errors,
-storing it in a usable way, and extracting key aspects of the data for
-analysis. Basic programming is required for everything from accessing and
-managing data, to statistical analysis, to modeling. This course will provide an
-introduction to data management, manipulation, and analysis, with an emphasis on
-biological problems. Class will typically consist of short introductions or
-question & answer sessions, followed by hands on computing exercises. The course
-will be taught using R and SQLite, but the concepts learned will easily apply to
-all programming languages and database management systems. No background in
-programming or databases is required.
+An introduction to data management, manipulation, and analysis, with an emphasis
+on biological problems. Class consists of short introductions to new concepts
+followed by hands on computing exercises using R and SQLite, but the concepts
+apply to programming languages and databases more generally. No background in
+computing is required.
 
 
 ### Prerequisite Knowledge and Skills
@@ -179,12 +173,6 @@ material.
 There are no quizzes or exams in this course.
 
 
-### Attendance policy
-
-Attendance is not required but it is recommended that you attend class as often as
-possible to get the most out of the course.
-
-
 ### Make-up policy
 
 Life happens and therefore there is an automatic grace period of 48 hours for
@@ -223,25 +211,30 @@ There are no materials and supplies fees for this course.
 
 ### University Policy on Accommodating Students with Disabilities
 
-Students with disabilities requesting accommodations should first register with
-the Disability Resource Center (352-392-8565; http://www.dso.ufl.edu/drc/) by
-providing appropriate documentation. Once registered, students will receive an
-accommodation letter which must be presented to the instructor when requesting
-accommodation. Students with disabilities should follow this procedure as early
-as possible in the semester. 
+The Disability Resource Center coordinates the needed accommodations of students
+with disabilities. This includes registering disabilities, recommending academic
+accommodations within the classroom, accessing special adaptive computer
+equipment, providing interpretation services and mediating faculty-student
+disability related issues.Students requesting classroom accommodation must first
+register with the Dean of Students Office. The Dean of Students Office will
+provide documentation to the student who must then provide this documentation to
+the Instructor when requesting accommodation0001 Reid Hall, 352-392-8565,
+www.dso.ufl.edu/drc/
 
-My policy: If you are in my class I want to help learn and will happily work
+My policy: If you are in my class I want to help you learn and will happily work
 with you to make the learning environment equitable for you and others.
 
 
-### University on Course Evaluations
+### Online Course Evaluation Process
 
-Students are expected to provide feedback on the quality of instruction in this
-course by completing online evaluations at https://evaluations.ufl.edu.
-Evaluations are typically open during the last two or three weeks of the
-semester, but students will be given specific times when they are open. Summary
-results of these assessments are available to students at
-https://evaluations.ufl.edu/results/.
+Student assessment of instruction is an important part of efforts to improve
+teaching and learning. At the end of the semester, students are expectedto
+provide feedback on the quality of instruction in this course using a standard
+set of university and college criteria. These evaluations are conducted online
+at https://evaluations.ufl.edu. Evaluations are typically open for students to
+complete during the last two or three weeks of the semester; students will be
+notified of the specific times when they are open. Summary results of these
+assessments are available to students at https://evaluations.ufl.edu/results. 
 
 
 ### University Policy on Academic Misconduct
@@ -257,20 +250,37 @@ All members of the class are expected to follow rules of common
 courtesy in all email messages, threaded discussions and chats.
 
 
-### University Honesty Policy
+### Academic Honesty
 
-UF students are bound by The Honor Pledge which states, “We, the members of the University of Florida community, pledge to hold ourselves and our peers to the highest standards of honor and integrity by abiding by the Honor Code. On all work submitted for credit by students at the University of Florida, the following pledge is either required or implied: “On my honor, I have neither given nor received unauthorized aid in doing this assignment.” The Honor Code (https://www.dso.ufl.edu/sccr/process/student-conduct-honor-code/) specifies a number of behaviors that are in violation of this code and the possible sanctions. Furthermore, you are obligated to report any condition that facilitates academic misconduct to appropriate personnel. If you have any questions or concerns, please consult with the instructor or TAs in this class.
+As a student at the University of Florida, you have committed yourself to uphold
+the Honor Code, which includes the following pledge:“We, the members of the
+University of Florida community, pledge to hold ourselves and our peers to the
+highest standards of honesty and integrity.”You are expected to exhibit behavior
+consistent with this commitment to the UF academic community, and on all work
+submitted for credit at the University of Florida, the following pledge is
+either required or implied: "On my honor, I have neither given nor received
+unauthorized aid in doing this assignment."
+
+It is assumed that you will complete all work independently in each course
+unless the instructor provides explicit permission for you to collaborate on
+course tasks (e.g. assignments, papers, quizzes, exams). Furthermore, as part of
+your obligation to uphold the Honor Code, you should report any condition that
+facilitates academic misconduct to appropriate personnel. It is your individual
+responsibility to know and comply with all university policies and procedures
+regarding academic integrity and the Student Honor Code.Violations of the Honor
+Code at the University of Florida will not be tolerated. Violations will be
+reported to the Dean of Students Office for consideration of disciplinary
+action. For more information regarding the Student Honor Code, please see:
+http://www.dso.ufl.edu/sccr/process/student-conduct-honor-code
 
 
 ### Software Use
 
-All faculty, staff, and students of the University are required and expected to
-obey the laws and legal agreements governing software use.  Failure to do so can
+All faculty, staff and students of the university are required and expected to
+obey the laws and legal agreements governing software use. Failure to do so can
 lead to monetary damages and/or criminal penalties for the individual violator.
-Because such violations are also against University policies and rules,
-disciplinary action will be taken as appropriate.  We, the members of the
-University of Florida community, pledge to uphold ourselves and our peers to the
-highest standards of honesty and integrity.
+Because such violations are also against university policies and rules,
+disciplinary action will be taken as appropriate.
 
 
 ### Student Privacy
@@ -297,15 +307,15 @@ Exercises in assignments will be graded as follows:
 ### Grading scale
 
 - **A 93-100**
-- **A- 90-92**
-- **B+ 87-89**
-- **B 83-86**
-- **B- 80-82**
-- **C+ 77-79**
-- **C 73-76**
-- **C- 70-72**
-- **D+ 67-69**
-- **D 60-66**
+- **A- 90-92.9**
+- **B+ 87-89.9**
+- **B 83-86.9**
+- **B- 80-82.9**
+- **C+ 77-79.9**
+- **C 73-76.9**
+- **C- 70-72.9**
+- **D+ 67-69.9**
+- **D 60-66.9**
 - **E <60**
 
 
@@ -314,13 +324,20 @@ Exercises in assignments will be graded as follows:
 [https://catalog.ufl.edu/UGRD/academic-regulations/grades-grading-policies/](https://catalog.ufl.edu/UGRD/academic-regulations/grades-grading-policies/)
 
 
-## Campus Resources
+## Campus Helping Resources
+
+Students experiencing crises or personal problems that interfere with
+their general well-being are encouraged to utilize the university’s counseling
+resources. The Counseling& Wellness Center provides confidential counseling
+services at no cost for currently enrolled students. Resources are available on
+campus for students having personal problems or lacking clear career or academic
+goals, which interfere with their academic performance.
 
 ### Health and Wellness 
 
 U Matter, We Care: If you or a friend is in distress, please contact umatter@ufl.edu or 352 392-1575 so that a team member can reach out to the student. 
 
-Counseling and Wellness Center: http://www.counseling.ufl.edu/cwc, and  392-1575; and the University Police Department: 392-1111 or 9-1-1 for emergencies. 
+Counseling and Wellness Center: http://www.counseling.ufl.edu/cwc, 392-1575. 
 
 Sexual Assault Recovery Services (SARS): Student Health Care Center, 392-1161. 
 
@@ -330,13 +347,15 @@ University Police Department: 392-1111 (or 9-1-1 for emergencies), or http://www
 
 E-learning technical support: 352-392-4357 (select option 2) or e-mail to Learning-support@ufl.edu. https://lss.at.ufl.edu/help.shtml.
 
-Career Resource Center: Reitz Union, 392-1601.  Career assistance and counseling. https://www.crc.ufl.edu/.
+Career Connections Center: Reitz Union, 392-1601.  Career assistance and counseling. https://career.ufl.edu/.
 
 Library Support: http://cms.uflib.ufl.edu/ask. Various ways to receive assistance with respect to using the libraries or finding resources.
 
 Teaching Center: Broward Hall, 392-2010 or 392-6420. General study skills and tutoring. https://teachingcenter.ufl.edu/.
 
 Writing Studio: 302 Tigert Hall, 846-1138. Help brainstorming, formatting, and writing papers. https://writing.ufl.edu/writing-studio/.
+
+### Student Complaints
 
 Student Complaints Campus: https://www.dso.ufl.edu/documents/UF_Complaints_policy.pdf.
 
