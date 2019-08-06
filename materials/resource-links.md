@@ -26,6 +26,7 @@ systems
 - [Drinkwater, 2016, Systems Research for Agriculture](https://www.southernsare.org/Grants/Systems-Research/Systems-Research-for-Agriculture)
 - Rosset and Altieri, 2017, Agroecology: Science and Politics
 - Tully & Ryals, 2017, Nutrient cycling in agroecosystems: Balancing food and environmental objectives
+- Pretty, 2018, Intensification for redesigned and sustainable agricultural systems
 
 #### Online Resources
 
