@@ -20,6 +20,8 @@ systems
 - [National Research Council, 2010, Toward Sustainable Agriculture in the 21st Century](https://www.nap.edu/catalog/12832/toward-sustainable-agricultural-systems-in-the-21st-century)
 - Connor, Loomis, and Cassman, 2011, Crop Ecology
 - Vandermeer, 2011, The Ecology of Agroecosystems
+- Kate Tully & Rebecca Ryals, 2017, Nutrient cycling in agroecosystems:
+Balancing food and environmental objectives, Agroecology and Sustainable Food Systems
 - Dennison, 2012, Darwinian Agriculture
 - Shepard, 2013, Restoration Agriculture
 - [Rodale Institute, 2014, Regnerative Organic Agriculture and Climate Change](https://rodaleinstitute.org/assets/WhitePaper.pdf)
@@ -35,5 +37,3 @@ systems
 - [International Panel of Experts on Sustainable Food Systems](http://www.ipes-food.org/agroecology)
 - [Sociedad Cientifica Latinoamericana de Agroecologia](http://agroeco.org/)
 - [This Farm Cares Program](https://www.thisfarmcares.org)
-
-
