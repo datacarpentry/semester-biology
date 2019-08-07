@@ -27,6 +27,8 @@ systems
 - Rosset and Altieri, 2017, Agroecology: Science and Politics
 - Tully & Ryals, 2017, Nutrient cycling in agroecosystems: Balancing food and environmental objectives
 - Pretty, 2018, Intensification for redesigned and sustainable agricultural systems
+- Brodt, Fontana, and Archer, 2019, Feasibility and sustainability of agroforestry in temperate industrialized
+agriculture
 
 #### Online Resources
 
