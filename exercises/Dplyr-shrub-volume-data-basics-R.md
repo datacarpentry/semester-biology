@@ -5,8 +5,6 @@ title: Shrub Volume Data Basics
 language: R
 ---
 
-This is a follow-up to [Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
-
 Dr. Granger is interested in studying the factors controlling the size and
 carbon storage of shrubs. This research is part of a larger area of research
 trying to understand carbon storage by plants. She has conducted a small
