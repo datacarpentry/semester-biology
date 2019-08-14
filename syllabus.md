@@ -3,13 +3,13 @@ layout: page
 title: Syllabus
 catalog: WIS 6934
 credits: 3
-semester: Fall 2018
+semester: Fall 2019
 professor: Dr. Ethan White
 office: Room 1 in Building 150 (just north of Newins-Zeigler)
 email: ethanwhite@ufl.edu
 phone: 352-294-2081
-schedule: ['Tuesdays, 12:50-1:40', 'Fridays, 11:45-1:40']
-location: 219 Newins-Ziegler Hall
+schedule: ['Tuesdays, 3-3:50', 'Fridays, 11:45-1:40']
+location: 222 Newins-Ziegler Hall
 office_hours: Monday 2-3:15
 office_hours_location: Newins-Zeigler 203
 TA: Andrew Marx
@@ -98,7 +98,7 @@ computing is required.
 
 ### Prerequisite Knowledge and Skills
 
-Knowledge of basic biology.
+Knowledge of basic biology to provide context for exercises.
 
 
 ### Purpose of Course
@@ -117,7 +117,7 @@ Students completing this course will be able to:
 
 * Create well structured databases
 * Extract information from databases
-* Write simple computer programs in R
+* Write computer programs in R
 * Automate data analysis
 * Apply these tools to address biological questions
 * Apply general data management and analysis concepts to other programming
@@ -187,7 +187,7 @@ be graded with a 20% penalty.
 ### Assignment policy
 
 Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
-submitted via Canvas. This allows you to be finished with one week's material
+submitted via Canvas. This timing allows you to be finished with one week's material
 before starting the next week's material.
 
 
