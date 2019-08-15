@@ -19,6 +19,8 @@ systems
 - Gleissman, 2007, Agroecology: The ecology of sustainable food systems
 - [National Research Council, 2010, Toward Sustainable Agriculture in the 21st Century](https://www.nap.edu/catalog/12832/toward-sustainable-agricultural-systems-in-the-21st-century)
 - Connor, Loomis, and Cassman, 2011, Crop Ecology
+- Wang, Li, Alva, 2010, Growing Cover Crops To Improve Biomass Accumulation and Carbon Sequestration
+- Schmidt, Torn, et al. 2011, Persistence of soil organic matter as an ecosystem property 
 - Vandermeer, 2011, The Ecology of Agroecosystems
 - Dennison, 2012, Darwinian Agriculture
 - Shepard, 2013, Restoration Agriculture
