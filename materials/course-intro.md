@@ -29,6 +29,8 @@ title: Course Introduction
 * Peer instruction
     * Interact with each other during the we do and you do parts
 	* You are at least as likely to learn from your peers as from me
+    * If you already know some of the material and are getting ahead, see if
+      there's someone you can help
 	* Introduce yourself to one of your neighbors you don't know
 
 ### Course structure
@@ -38,8 +40,6 @@ title: Course Introduction
     * Work on exercises in class
 	* Will require additional programming time after class
 	* Due end of the day on Monday
-
-* No projects this year
 
 ### Website
 
