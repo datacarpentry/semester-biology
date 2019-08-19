@@ -5,9 +5,10 @@ title: Modify the Code
 language: R
 ---
 
-The following code calculates the total net primary productivity (NPP)
-per day for two sites based on the grams of carbon produced per square
-meter per day, and the total area of the sites, and prints them out.
+The following code estimates the total net primary productivity (NPP) per day
+for two sites. It does this by multiplying the grams of carbon produced in a
+single square meter per day by the total area of the site. It then prints the
+daily NPP for each site.
 
 ```
 site1_g_carbon_m2_day <- 5
@@ -20,11 +21,12 @@ site1_npp_day
 site2_npp_day
 ```
 
-Modify the code to produce the following items and print them out in
-order:
+Modify the code to produce the following items and print them out after the
+daily NPP values (the ones currently printed by the code):
 
 1.  The sum of the total daily NPP for the two sites combined.
-2.  The difference between the total daily NPP for the two sites. We only want
+2.  The difference between the daily NPP for the two sites. We only want
     an absolute difference, so use abs() function to make sure the
     number is positive.
-3.  The total NPP over a year for the two sites combined.
+3.  The total NPP over a year for the two sites combined (the sum of the total
+    daily NPP values multiplied by 365).
