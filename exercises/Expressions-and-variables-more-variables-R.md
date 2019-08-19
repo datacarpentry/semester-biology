@@ -21,15 +21,13 @@ grams in a kilogram so divide by 1000) and assign this value to a new
 variable.
 6. Print the final answer to the screen.
 
-*Are the variable names `grams`, `number`, and `biomass` the best
-choice? If we came back to the code for this assignment in two weeks
-(without the assignment itself in hand) would we be able to remember
-what these variables were referring to and therefore what was going on
-in the code? The variable name `biomass` is also kind of long. If we
-had to type it many times it would be faster just to type `b`. We
-could also use really descriptive alternatives like
-`individual_mass_in_grams`. Or we would compromise and abbreviate
-this or leave out some of the words to make it shorter (e.g.,
+*Are the variable names `grams`, `number`, and `biomass` the best choice? If we
+came back to the code for this assignment in two weeks would we be able to
+remember what these variables were referring to and therefore what was going on
+in the code? The variable name `biomass` is also kind of long. If we had to type
+it many times it would be faster just to type `b`. We could also use really
+descriptive alternatives like `individual_mass_in_grams`. Or we would compromise
+and abbreviate this or leave out some of the words to make it shorter (e.g.,
 `indiv_mass_g`).* 
 
 Think about good variable names and then rename the variables in your program to
