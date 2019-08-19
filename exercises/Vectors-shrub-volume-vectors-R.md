@@ -5,7 +5,7 @@ title: Shrub Volume Vectors
 language: R
 ---
 
-You have data on the length, width, and height of the yew
+You have data on the length, width, and height of 10 individuals of the yew
 [*Taxus baccata*](https://en.wikipedia.org/wiki/Taxus_baccata) stored in the
 following vectors:
 
@@ -20,3 +20,9 @@ Copy these vectors into an R script and then determine the following:
 1. The volume of each shrub (i.e., the length times the width times the height).
 2. The total volume of all of the shrubs.
 3. A vector of the height of shrubs with lengths greater than 2.5.
+4. A vector of the volume of shrubs with volumes greater than 20.
+5. A vector of the heights of the first 5 shrubs.
+6. A vector of the volumes of the first 3 shrubs.
+
+*Challenge*: A vector of the volumes of the last 5 shrubs with the code written
+so that it will return the last 5 values regardless of the length of the vector (i.e., it will give the last 5 values if their are 10, 20, or 50 individuals).
