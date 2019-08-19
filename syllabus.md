@@ -4,7 +4,7 @@ title: Syllabus
 catalog: WIS 6934
 credits: 3
 semester: Fall 2019
-professor: Dr. Ethan White
+professor: Dr. Ethan White (he/him)
 office: Room 1 in Building 150 (just north of Newins-Zeigler)
 email: ethanwhite@ufl.edu
 phone: 352-294-2081
