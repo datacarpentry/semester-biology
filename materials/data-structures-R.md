@@ -56,18 +56,7 @@ total_number <- density_ha * area_ha
         * Not `=`. `=` is used for assignment.
         * `!=`, `<`, `>`
 
-> Do [Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
-
-
-### Matrices (if linear algebra folks)
-
-* A two-dimensional set of values with a single data type
-
-```
-x <- matrix(1:6, 2)
-y <- matrix(1:3, ncol = 1)
-x %*% y
-```
+> Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
 
 ### Data frames
 
