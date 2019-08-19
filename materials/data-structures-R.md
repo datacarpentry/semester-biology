@@ -11,7 +11,7 @@ language: R
 * Create using `c()`, which stands for "combine"
 
 ```
-sites <- c("a", "a", "b", “c”)
+sites <- c("a", "a", "b", "c")
 ```
 
 * Functions:
@@ -37,7 +37,7 @@ min(density_ha)
 sum(density_ha)
 ```
 
-> Do [Bird Banding 1-4]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
+> Do [Bird Banding 1-4]({{ site.baseurl }}/exercises/Vectors-bird-banding-R/).
 
 ### Working with multiple vectors
 
@@ -113,4 +113,4 @@ shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-di
 str(shrub_data)
 ```
 
-> Start [Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Shrub-volume-data-frame-R/), but just use the url instead of downloading the file.
+> Start [Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R/), but just use the url instead of downloading the file.
