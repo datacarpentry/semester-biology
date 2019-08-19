@@ -7,7 +7,7 @@ language: R
 
 The number of birds banded at a series of sampling sites has been counted by
 your field crew and entered into the following vector. Counts are entered in 
-order and sites are numbered starting at one. Cut and paste the list into your
+order and sites are numbered starting at one. Cut and paste the vector into your
 assignment and then answer the following questions by printing them to the
 screen. Some R functions that will come in handy include `length()`, `max()`,
 `min()`, `sum()`, and `mean()`.
@@ -26,6 +26,8 @@ number_of_birds <- c(28, 32, 1, 0, 10, 22, 30, 19, 145, 27,
 4. What is the smallest number of birds counted?
 5. What is the largest number of birds counted?
 6. What is the average number of birds seen at a site?
-7. How many birds were counted at the last site? Have the computer
-   choose the last site automatically in some way, not by manually
-   entering its position.
+7. How many birds were counted at the last site? Have the computer choose the
+   last site automatically in some way, not by manually entering its position.
+   Do you know a function that will give you the position of the last value?
+   (since positions start at 1 the position of the last value in a vector is the
+   same as its length).
