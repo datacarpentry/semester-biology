@@ -41,6 +41,13 @@ title: Course Introduction
 	* Will require additional programming time after class
 	* Due end of the day on Monday
 
+### Expected background
+
+* Assumes no background in R or any of the other things we'll learn
+* If you're already good at R it's worth spending some time with the website
+  (which we're about to look at) to see if this a good fit for you
+* Information on more advanced options
+
 ### Website
 
 *Walk through the website showing the following items*
@@ -56,7 +63,6 @@ title: Course Introduction
 	* May not match lecture precisely
 * Assignments
     * Answers provided
-
 
 ### Syllabus
 
