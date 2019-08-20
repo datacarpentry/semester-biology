@@ -31,6 +31,7 @@ systems
 - Pretty, 2018, Intensification for redesigned and sustainable agricultural systems
 - Brodt, Fontana, and Archer, 2019, Feasibility and sustainability of agroforestry in temperate industrialized
 agriculture
+- Martin, et al. 2019, Ecology Letters, The interplay of landscape composition and configuration
 
 #### Online Resources
 
