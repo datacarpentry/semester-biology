@@ -61,6 +61,7 @@ language: R
 
 ```
 weight_g <- 50
+weight_g = 50
 ```
 
 * It works just like the value itself
@@ -68,7 +69,7 @@ weight_g <- 50
 ```
 weight_g / 1000
 weight_g / 1000 * 2.2
-weight_lb = weight_g / 1000 * 2.2
+weight_lb <- weight_g / 1000 * 2.2
 ```
 
 * It won't change unless you assign a new value to it directly
