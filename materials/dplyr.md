@@ -84,10 +84,13 @@ filter(surveys, species_id == "DS", year > 1995)
 ```
 
 * Commas indicate `and`, use `|` for `or`.
+* Say we wanted data on all of the non-*Dipodomys* species.
 
 ```
-filter(surveys, species_id == "DS" | species_id == "DM")
+filter(surveys, species_id != "DS" | species_id != "DM" | species_id != "DO")
 ```
+
+* The `!` stands for "not" and reverses the the condition
 
 * Add new columns with calculated values using `mutate()`
 
