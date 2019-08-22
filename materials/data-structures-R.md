@@ -39,6 +39,24 @@ sum(density_ha)
 
 > Do [Bird Banding 1-4]({{ site.baseurl }}/exercises/Vectors-bird-banding-R/).
 
+### Null values
+
+* So far we've worked with data with no missing values
+* How many of you have missing values in your data?
+
+```
+density_ha <- c(2.8, 3.2, 1.5, NA)
+mean(density_ha)
+```
+* Why did we get `NA`?
+    * Hard to say what a calculation including `NA` should be
+    * So most calculations return `NA` when `NA` is in the data
+* Can tell many functions to remove the `NA` before calculating
+
+```
+mean(density_ha, na.rm = TRUE)
+```
+
 ### Working with multiple vectors
 
 * Vector math combines values in the same position
@@ -50,11 +68,35 @@ area_ha <- c(3, 5, 1.9, 2.7)
 total_number <- density_ha * area_ha
 ```
 
-* Subsetting:
-    * `total_number[sites == 'a']`
-        * `==` means "equal to" in most languages. 
-        * Not `=`. `=` is used for assignment.
-        * `!=`, `<`, `>`
+* Subsetting is done using `[]`, like slicing
+* In general `[]` in R means, "give me a piece of something"
+
+```r
+area[sites == 'a']
+```
+
+* `==` means "equal to" in most languages.
+* Not `=`. `=` is used for assignment.
+
+* Can also do "not equal to"
+
+```r
+area[sites != 'a']
+```
+
+* Greater or less than
+
+```r
+sites[area_ha > 3]
+sites[area_ha >= 3]
+sites[area_ha < 3]
+```
+
+* And we can subset a vector based on itself
+
+```r
+sites[sites != 'a']
+```
 
 > Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
 
