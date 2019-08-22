@@ -12,7 +12,8 @@ experiments. Make sure you have her [shrub dimensions data]({{ site.baseurl }}/d
 
 This code calculates the average height of a plant at each site:
 
-```
+```r
+shrub_dims <- read.csv('data/shrub-volume-data.csv')
 by_site <- group_by(shrub_dims, site)
 avg_height <- summarize(by_site, avg_height = mean(height))
 ```
