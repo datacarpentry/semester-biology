@@ -10,6 +10,8 @@ time: 30
 > 
 > * Load `surveys.csv` data into `surveys`
 
+### Basic aggregation
+
 * Aggregation combines rows into groups based on one of more columns.
 * Calculates combined values for each group.
 * First, group the data frame.
@@ -39,22 +41,20 @@ summarize(surveys_by_species, abundance = n())
 species_weight <- summarize(surveys_by_species, avg_weight = mean(weight))
 ```
 
-### Null values
-
-* `mean(weight)` when `weight` has missing values (`NA`)
-* Returns `NA`
-
-* Use `filter()` to remove the `NA`s
+* Why did we get `NA`?
+    * `mean(weight)` returns `NA` when `weight` has missing values (`NA`)
+* Can fix using `mean(weight, na.rm = TRUE)
 
 ```
-surveys_by_species <- filter(surveys_by_species, !is.na(weight))
-species_weight <- summarize(surveys_by_species, avg_weight = mean(weight))
+species_weight <- summarize(surveys_by_species,
+                            avg_weight = mean(weight, na.rm = TRUE))
 ```
 
+* Can also use `dplyr` to remove `NA`
 * `na.omit()` filters out rows with `NA` in any column
 
 ```
-sp_weight_nonull <- na.omit(species_weight)
+na.omit(surveys_by_species)
 ```
 
 > Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
