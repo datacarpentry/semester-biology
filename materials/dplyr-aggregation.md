@@ -35,7 +35,11 @@ summarize(surveys_by_species, abundance = n())
 ```
 
 * Any function that returns a single value from a vector.
-* E.g., mean.
+* E.g., mean, max, min
+
+> Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
+
+### Nulls
 
 ```
 species_weight <- summarize(surveys_by_species, avg_weight = mean(weight))
@@ -57,4 +61,4 @@ species_weight <- summarize(surveys_by_species,
 na.omit(surveys_by_species)
 ```
 
-> Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
+> You will see this in the Portal Data Manipulation exercise
