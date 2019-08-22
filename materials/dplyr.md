@@ -98,4 +98,21 @@ filter(surveys, species_id != "DS" | species_id != "DM" | species_id != "DO")
 mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)
 ```
 
+* If we look at `surveys` now will it contain the new column?
+* *Open `surveys`*
+* All of these commands produce new values, data frames in this case
+* To store them for later use we need to assign them to a variable
+
+```
+surveys_plus <- mutate(surveys,
+                       hindfoot_length_cm = hindfoot_length / 10)
+```
+
+* Or we could overwrite the existing variable if we don't need it
+
+```
+surveys <- mutate(surveys,
+                  hindfoot_length_cm = hindfoot_length / 10)
+```
+
 > Do [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
