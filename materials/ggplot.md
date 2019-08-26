@@ -12,7 +12,7 @@ language: R
 * Very popular plotting package
 * Good plots quickly
 * Declarative - describe what you want not how to build it
-* Constrasts w/Imperative - how to build it step by step
+* Contrasts w/Imperative - how to build it step by step
 
 ### Data
 
@@ -30,16 +30,22 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
 library(ggplot2)
 ```
 
-* [`ggplot()`](http://docs.ggplot2.org/current/ggplot.html) arguments:
-    * default dataset - what data are we working with
-    * set of mappings
-        * 'Aesthetics' from variables
-		* what columns should we use for different aspects of the plot
-    * `ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))`
+* `ggplot()` creates a base ggplot object that we can then add things to
+* Like a blank canvas
+* We also add information in here that can be shared across different components
+  of the plot including
+  * default dataset - what data are we working with
+  * set of mappings or 'Aesthetics' that describe which columns are used for
+      different aspects of the plot
 
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))
+```
+
+* This doesn't create a figure yet, it's just a blank canvas and some
+  information on default values for data and mapping columns to pieces of the
+  plot
 * Add components of figures with layers
-    * [`geom_point()`](http://docs.ggplot2.org/current/geom_point.html)
-
 * Scatter plot showing branch circumference and height
 
 ```
@@ -55,7 +61,6 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 ```
 
 * Rescale axes
-    * [`scale_continuous()`](http://docs.ggplot2.org/current/scale_continuous.html)
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
@@ -186,15 +191,53 @@ ggplot(acacia, aes(x = CIRC)) +
 
 ### Combining different data and aesthetics
 
+* We can also plot data from different columns or even data frames on the same graph
+* To do this we need to better understand how layers and defaults work
+* So far we've put all of the information on data and aesthetic mapping into `ggplot()`
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point()
+```
+
+* This sets the default data frame and aesthetic, which is then used by
+  `geom_point()`
+* Alternatively instead of setting the default we could just give these values
+  directly to `geom_point()`
+
+```r
+ggplot() +
+  geom_point(data = acacia,
+             mapping = aes(x = CIRC, y = HEIGHT))
+```
+
+* We can see that this information is no longer shared with other geoms since it
+  is no longer the default
+
+```r
+ggplot() +
+  geom_point(data = acacia,
+             mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_smooth()
+```
+
+* *Check if this makes sense to everyone*
+
+* We can use this to plot data from different sources together
 * Add tree size data for context
 * Layers are plotted in the order they are added
 
-```
+```r
 trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
-                  sep="\t", na.strings = c("dead", "missing", "MISSING", "NA"))
+                  sep="\t",
+                  na.strings = c("dead", "missing", "MISSING", "NA"))
 ggplot() +
-  geom_point(data = trees, aes(x = CIRC, y = HEIGHT), color = "gray") +
-  geom_point(data = acacia, aes(x = CIRC, y = HEIGHT), color = "red") +
+  geom_point(data = trees,
+             aes(x = CIRC, y = HEIGHT),
+             color = "gray") +
+  geom_point(data = acacia,
+             aes(x = CIRC, y = HEIGHT),
+             color = "red") +
   labs(x = "Circumference [cm]", y = "Height [m]")
 ```
 
