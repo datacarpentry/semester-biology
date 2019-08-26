@@ -5,9 +5,8 @@ title: Adult vs Newborn Size
 language: R
 ---
 
-It makes sense that larger organisms have larger offspring, but what the
-mathematical form of this relationship should be is unclear. Let's look at the
-problem empirically for mammals.
+Larger organisms have larger offspring. We want to explore the form of this
+relationship in mammals.
 
 Download some
 [mammal life history data](http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
@@ -19,7 +18,7 @@ how we indicate a tab character to R (and most other programming languages).
 
 When you import the data there are some extra blank lines at
 the end of this file. Get rid of them by using the optional `read.csv()`
-argument `nrows = 1440` to select the valid 1440 rows.
+argument `nrows = 1440` to import only the first 1440 rows.
 
 Missing data in this file is specified by `-999` and `-999.00`. Tell R that
 these are null values using the optional `read.csv()` argument,
