@@ -2,96 +2,59 @@
 > 
 > # 1.
 
-      year month day species_id
-1     1977     7  16         NL
-2     1977     7  16         NL
-3     1977     7  16         DM
-4     1977     7  16         DM
-5     1977     7  16         DM
-6     1977     7  16         PF
-7     1977     7  16         PE
-8     1977     7  16         DM
-9     1977     7  16         DM
-10    1977     7  16         PF
-11    1977     7  16         DS
-12    1977     7  16         DM
-13    1977     7  16         DM
-14    1977     7  16         DM
-15    1977     7  16         DM
-16    1977     7  16         DM
-17    1977     7  16         DS
-18    1977     7  16         PP
-19    1977     7  16         PF
-20    1977     7  17         DS
-21    1977     7  17         DM
-22    1977     7  17         NL
-23    1977     7  17         DM
-24    1977     7  17         SH
-25    1977     7  17         DM
-...
- [ reached getOption("max.print") -- omitted 35299 rows ]
+   year month day species_id
+1  1977     7  16         NL
+2  1977     7  16         NL
+3  1977     7  16         DM
+4  1977     7  16         DM
+5  1977     7  16         DM
+6  1977     7  16         PF
+7  1977     7  16         PE
+8  1977     7  16         DM
+9  1977     7  16         DM
+10 1977     7  16         PF
+11 1977     7  16         DS
+12 1977     7  16         DM
+13 1977     7  16         DM
+14 1977     7  16         DM
+15 1977     7  16         DM
+ [ reached 'max' / getOption("max.print") -- omitted 35534 rows ]
 
 > # 2.
 
-      year species_id wgt_kg
-63    1977         DM  0.040
-64    1977         DM  0.048
-65    1977         DM  0.029
-66    1977         DM  0.046
-67    1977         DM  0.036
-68    1977         DO  0.052
-69    1977         PF  0.008
-70    1977         OX  0.022
-71    1977         DM  0.035
-74    1977         PF  0.007
-75    1977         DM  0.022
-78    1977         PF  0.009
-79    1977         DM  0.042
-81    1977         PF  0.008
-82    1977         DM  0.041
-83    1977         DM  0.037
-84    1977         DM  0.043
-85    1977         DM  0.041
-86    1977         DM  0.040
-87    1977         PF  0.009
-88    1977         DM  0.045
-89    1977         PP  0.015
-90    1977         DM  0.029
-92    1977         DM  0.039
-93    1977         DM  0.042
-...
-[ reached getOption("max.print") -- omitted 31950 rows ]
+   year species_id wgt_kg
+63 1977         DM  0.040
+64 1977         DM  0.048
+65 1977         DM  0.029
+66 1977         DM  0.046
+67 1977         DM  0.036
+68 1977         DO  0.052
+69 1977         PF  0.008
+70 1977         OX  0.022
+71 1977         DM  0.035
+74 1977         PF  0.007
+75 1977         DM  0.022
+78 1977         PF  0.009
+79 1977         DM  0.042
+81 1977         PF  0.008
+82 1977         DM  0.041
+83 1977         DM  0.037
+84 1977         DM  0.043
+85 1977         DM  0.041
+86 1977         DM  0.040
+87 1977         PF  0.009
+ [ reached 'max' / getOption("max.print") -- omitted 32263 rows ]
 
 > # 3.
 
-    record_id month day year plot_id species_id sex hindfoot_length weight
-1          24     7  17 1977      13         SH   M              21     NA
-2        1435    11   4 1978      17         SH   M              29     89
-3        5847     5  21 1982      12         SH   M              28    106
-4        6080     6  29 1982      12         SH   F              NA     52
-5        7506     3  14 1983      21         SH                  NA     NA
-6        7681     4  16 1983      21         SH                  NA     NA
-7       11896    10   4 1986      21         SH   M              28     55
-8       13156     7  26 1987      11         SH   M              NA     77
-9       13255     8  26 1987       3         SH   F              30     78
-10      13491    10  24 1987      17         SH   F              31    104
-11      13602    10  25 1987      11         SH   F              30     58
-12      13660    11  21 1987      24         SH   M              31     52
-13      13850     1  23 1988      24         SH   F              27     60
-14      13939     1  24 1988      11         SH   F              27     51
-15      14094     2  21 1988      19         SH   F              NA     39
-16      14097     2  22 1988       3         SH   F              30     57
-17      14128     2  22 1988      11         SH   F              NA     51
-18      14207     3  20 1988      21         SH   F              27     60
-19      14263     3  21 1988       3         SH   F              32     70
-20      14373     4  18 1988      15         SH   M              27     72
-21      14406     4  19 1988       3         SH   F              30    103
-22      14421     4  19 1988      11         SH   M              28     68
-23      14456     5  14 1988      21         SH   F              25     75
-24      14476     5  14 1988      17         SH   M              26     96
-25      14488     5  15 1988       3         SH   F              27    108
-...
- [ reached getOption("max.print") -- omitted 36 rows ]
+  record_id month day year plot_id species_id sex hindfoot_length weight
+1        24     7  17 1977      13         SH   M              21     NA
+2      1435    11   4 1978      17         SH   M              29     89
+3      5847     5  21 1982      12         SH   M              28    106
+4      6080     6  29 1982      12         SH   F              NA     52
+5      7506     3  14 1983      21         SH                  NA     NA
+6      7681     4  16 1983      21         SH                  NA     NA
+ [ reached 'max' / getOption("max.print") -- omitted 141 rows ]
 
 > # 4.
 
@@ -108,12 +71,12 @@
  8 CQ            16
  9 CS             1
 10 CT             1
-# ... with 39 more rows
+# … with 39 more rows
 
 > # 5.
 
 # A tibble: 535 x 3
-# Groups:   species_id [?]
+# Groups:   species_id [49]
    species_id  year count
    <fct>      <int> <int>
  1 ""          1977    16
@@ -126,7 +89,7 @@
  8 ""          1984    30
  9 ""          1985    22
 10 ""          1986    20
-# ... with 525 more rows
+# … with 525 more rows
 
 > # 6.
 
@@ -143,4 +106,4 @@
  8  1984      48.4
  9  1985      48.0
 10  1986      49.4
-# ... with 16 more rows
+# … with 16 more rows
