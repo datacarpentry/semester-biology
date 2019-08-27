@@ -9,6 +9,8 @@ Download a copy of the
 [Portal Teaching Database surveys table](https://ndownloader.figshare.com/files/2292172)
 and load it into R using `read.csv()`.
 
+***Do not use pipes for this exercise.***
+
 1. Use `select()` to create a new data frame with just the `year`, `month`,
    `day`, and `species_id` columns in that order.
 2. Use `mutate()`, `select()`, and `na.omit()` to create a new data frame with

@@ -41,4 +41,4 @@ avg_weight_DS_by_yr <- surveys %>%
   summarize(avg_weight = mean(weight))
 ```
 
-> Modify your answer to Task 2 in [Portal Data Manipulation]({{ site.baseurl }}/exercises/Portal-data-manip-R) to use pipes.
+> Do [Portal Data Manipulation Pipes 1-2]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
