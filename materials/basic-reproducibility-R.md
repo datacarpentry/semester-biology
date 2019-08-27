@@ -5,6 +5,9 @@ title: Basic Reproducibility
 language: R
 ---
 
+> Make sure that `Tools` -> `Global Options` -> `General` ->
+> `Save workspace to ~/.RData on exit` is set to the default `Ask`
+
 ### Introduction to Reproducibility
 
 * Goal - rerun full analysis with a single click (or command)
@@ -31,6 +34,16 @@ language: R
   * Useful for making sure everything works
 * Run entire file using `Source` button or `Ctrl-Shift-S`
 * Makes sure that the code runs fully and produces desired result
+
+* Stop R from storing the state of the environment
+* When you close RStudio it will often ask if you want to save your workspace
+* *Start to close RStudio*
+* *Show Save dialog*
+* If you do this is will get reloaded when you start R, even when you restart it
+  as described above
+* Stop this by `Tools` -> `Global Options` -> `General` ->
+  `Save workspace to ~/.RData on exit` -> `Never`
+* Unclick `Restore .RData into workspace at startup` 
 
 ### Make sure code works on other computers
 
