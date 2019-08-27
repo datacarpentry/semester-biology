@@ -14,8 +14,8 @@ the console on the line marked `>` and pressing enter.
 3. 9 / 2
 4. 5 - 3 \* 2
 5. (5 - 3) \* 2
-6. 4 \*\* 2
-7. 8 / 2 \*\* 2
+6. 4 ^ 2
+7. 8 / 2 ^ 2
 
 Did any of the results surprise you? If so, then might have run in to some order
 of operations confusion. The order of operators for math in R are the same as
