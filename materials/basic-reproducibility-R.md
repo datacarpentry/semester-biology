@@ -23,8 +23,12 @@ language: R
 * Looks like it still works
 * Only works because of something you did earlier in the same session
 
-* Good: Clear R environment using the broom icon on the `Environment` tab.
-* Better: Restart R to get a clean environment: `Session` -> `Restart R`
+* Clear R environment using the broom icon on the `Environment` tab.
+  * Doesn't unload packages
+  * Useful when developing code
+* Restart R to get a clean environment: `Session` -> `Restart R`
+  * Does unload packages
+  * Useful for making sure everything works
 * Run entire file using `Source` button or `Ctrl-Shift-S`
 * Makes sure that the code runs fully and produces desired result
 
@@ -45,6 +49,13 @@ language: R
 * Use the `print` function to print out text you want the person running your
   code to see
 * Print out the answers to each homework exercise
+
+### Clean up extra code
+
+* Remove experiments from your code
+* Remove `install.packages()` lines from your code
+  * Avoid reinstalling packages on other peoples computers
+  * If you really want to keep it comment it out
 
 ### Checklist
 
