@@ -23,8 +23,9 @@ language: R
 * Looks like it still works
 * Only works because of something you did earlier in the same session
 
-* Clear R environment using the broom icon on the `Environment` tab.
-* Run entire file using `Source` button or `Ctrl-Shift-Enter`
+* Good: Clear R environment using the broom icon on the `Environment` tab.
+* Better: Restart R to get a clean environment: `Session` -> `Restart R`
+* Run entire file using `Source` button or `Ctrl-Shift-S`
 * Makes sure that the code runs fully and produces desired result
 
 ### Make sure code works on other computers
@@ -36,6 +37,14 @@ language: R
     * Assume case specificity
 	    * Filenames in code should match actual names exactly, including capitalization
 	* Use `/` instead of `\` or `\\` in paths
+
+### Use print to show things you want the program to show
+
+* Depending on how your code is run it may show different things
+* `Source` without echo will hide most things
+* Use the `print` function to print out text you want the person running your
+  code to see
+* Print out the answers to each homework exercise
 
 ### Checklist
 

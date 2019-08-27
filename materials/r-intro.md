@@ -138,6 +138,19 @@ sqrt(0.11)
     * Arguments that the function requires to calculate the value it returns.
     * `sqrt()` is the name of the function, and `0.11` is the argument.
 
+* Another function that we'll use a lot is `print()`
+* It lets us explicitly print things out
+* One argument - the thing you want to print
+
+```
+print(weight_lb)
+```
+
+* When we run the whole file using `Source` this value gets printed
+* *Source w/o echo*
+* Use this for output we want the program to produce
+* Use this in your assignments to print out the answers
+
 * Functions can take multiple arguments.
     * Round `weight_lb` to one decimal place
     * Typing `round()` shows arguments
