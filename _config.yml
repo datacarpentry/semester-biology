@@ -14,7 +14,7 @@ description:      'Teaching the tools to get computers to do cool science'
 url:              http://www.datacarpentry.org/semester-biology
 baseurl:          /semester-biology
 email:            datacarpentrysemester@weecology.org
-feedbackurl:      polleverywhere.com/multiple_choice_polls/KznOEBvSAnahmt7
+feedbackurl:      docs.google.com/forms/d/1y35uJukuZ9MPKQWWqw0Y8R4VOiaOtFJezDY_t_kJfTs/
 author:
   name:           'Ethan White'
   url:            https://twitter.com/ethanwhite
