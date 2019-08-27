@@ -116,6 +116,18 @@ volume
 ```
 > Create assignment script, put in new folder
 
+* Now we're going to work on some exercises to get a feel for this
+* In class we will often only do part of an exercise and save the rest for later
+* I use an in-class feedback system to get a feel for when most folks are done
+  and how well folks understand the material
+* When you are done with the part of the exersise we are doing for class, click
+  on the `In class feedback` link and fill out the poll
+* Two sections
+  * 1-5 rating for how well you understand what we just covered
+  * A text box to describe anything confusing you if you can describe it
+  * 4 and 5's indicate that you're following things and we can move on
+  * 3's and below suggest we need to chat more 
+
 > Do [Exercise 1.1-1.3 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
 
 > Do [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
