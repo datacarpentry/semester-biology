@@ -7,7 +7,7 @@ title: Assignment Submission & Checklist
 
 - What files to submit: 
     - **Week 1** - one text form, one .xlsx file
-    - **Weeks 2-9** - a zip file containing one .R file & any data files needed to run it
+    - **Weeks 2-9** - a zip file containing one .R file, one .Rproj file, & any data files needed to run it
     - **Week 10** - a link to a GitHub repository
     - **Weeks 11-13** - either a zip file containing one .R file & any data files needed to run it or a link to a GitHub repository containing the .R file and any data files needed to run it
 
