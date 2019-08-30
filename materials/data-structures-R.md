@@ -14,11 +14,11 @@ language: R
 sites <- c("a", "a", "b", "c")
 ```
 
-* Functions:
-    * `str(sites)` 
-    * `length(sites)`
+* `str(sites)` 
 	
 * Slicing:
+    * Use `[]`
+    * In general `[]` in R means, "give me a piece of something"
     * `sites[1]` 
     * `sites[1:3]`
         * `1:3` makes a vector. So, this is the same as
@@ -30,6 +30,7 @@ sites <- c("a", "a", "b", "c")
 * Math functions:
 
 ```
+length(sites)
 density_ha <- c(2.8, 3.2, 1.5, 3.8)
 mean(density_ha)
 max(density_ha)
@@ -69,7 +70,6 @@ total_number <- density_ha * area_ha
 ```
 
 * Subsetting is done using `[]`, like slicing
-* In general `[]` in R means, "give me a piece of something"
 
 ```r
 area[sites == 'a']
@@ -110,6 +110,23 @@ sites[sites != 'a']
 surveys <- data.frame(sites, density_ha, area_ha)
 ```
 
+* Useful commands: 
+    * `str(surveys)`
+    * `length(surveys)`
+    * `nrow(surveys)`, `ncol(surveys)`
+* Subsetting:
+    * [row, column]
+    * `surveys[1, 2]`
+    * `surveys[1:2, 2:3]`
+    * `surveys[, 3]`
+    * `surveys[“area_ha”]`
+    * `surveys[c(“area_ha”, “sites”)]`
+    * `surveys$area_ha`
+    * `surveys[[“area_ha”]]`
+
+
+### Reading in external data
+
 * `read.csv()`
     * Main argument is the location of the data - url or path on computer
     * Go to `Datasets` page on site and copy `Shrub dimensions` url
@@ -117,16 +134,6 @@ surveys <- data.frame(sites, density_ha, area_ha)
 ```
 shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
 ```
-
-* Useful commands: 
-    * `str(surveys)`
-    * `length(surveys)`
-    * `nrow(surveys)`, `ncol(surveys)`
-* Subsetting columns:
-    * `surveys[“area_ha”]`
-    * `surveys[c(“area_ha”, “sites”)]`
-    * `surveys$area_ha`
-    * `surveys[[“area_ha”]]`
 
 ### Factors
 
