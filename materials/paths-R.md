@@ -9,22 +9,25 @@ language: R
 
 * To use data stored on a computer we need to tell R where it is
 * This is done using paths
+* *Go to data page and download shrub dimensions data to a datacarp directory*
 * Paths can be absolute
 
 ```
-shrub_data <- read.csv('/home/ethan/datacarp/data/shrub-dimensions-labeled.csv') # OSX/Linux
-shrub_data <- read.csv('/Users/datacarp/data/shrub-dimensions-labeled.csv') # Windows
+'/home/ethan/datacarp/shrub-dimensions-labeled.csv' # OSX/Linux
+'/Users/ethan/datacarp/shrub-dimensions-labeled.csv' # Windows
 ```
 
 * Folders/Directories are separate by `/` with the file name at the end
+* Include the file extension (the part after the `.`)
+
 * Paths can also be relative
 
 ```
-shrub_data <- read.csv('data/shrub-dimensions-labeled.csv')
+'datacarp/shrub-dimensions-labeled.csv'
 ```
 
-* "From where I am open the shrub-dimensions file from the data subdirectory"
-* Absolute & relative paths are the same if R thinks it's in `/home/ethan/datacarp`
+* "From where I am the shrub-dimensions file is in the Desktop subdirectory"
+* Absolute & relative paths are the same if R thinks it's in `/home/ethan/`
 
 ### Find out where you are
 
@@ -35,13 +38,7 @@ getwd()
 ```
 
 * "get working directory"
-* The "working directory is where the program starts from
-
-* See what is in the working directory using `list.files()`
-
-```
-list.files()
-```
+* The "working directory" is where the program starts from
 
 ### Loading data
 
