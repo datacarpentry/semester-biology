@@ -2,10 +2,10 @@
 layout: page
 title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
-'Working with Data', 'Data Visualization', 'Working with Spatial Data',
-'Computational Projects', 'Data Visualization 2', 'Functions',
-'Making Choices', 'Repeating things', 'Loops', 'Version Control',
-'Working with Databases', 'Knitr', 'tidyr', 'Web Applications Using Shiny']
+'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
+'Working with Spatial Data', 'Computational Projects', 'Data Visualization 2',
+'Functions', 'Making Choices', 'Repeating things', 'Loops', 'Version Control',
+'Working with Databases', 'Knitr', 'tidyr']
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
