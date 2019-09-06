@@ -26,6 +26,29 @@ language: R
 * Looks like it still works
 * Only works because of something you did earlier in the same session
 
+> * Start new project
+> * Create data subdirectory
+> * Use `Right Click` -> `Save Link As` to download Portal surveys & species data
+
+```r
+data_mammals <- read.csv('data/surveys.csv')
+avg_mass <- mean(data_mammals$weight, rm.na = TRUE)
+```
+
+* You then go to add the species data and realize that `data` probably isn't
+  descriptive enough
+
+```r
+data_surveys <- read.csv('data/surveys.csv')
+avg_mass <- mean(data_mammals$weight, rm.na = TRUE)
+data_species <- read.csv('data/species.csv')
+```
+
+* And you rerun all of your code and everything works
+* But will it work after I restart R?
+  * No, because the code doesn't create `data` anymore
+  * Read through code
+
 * Clear R environment using the broom icon on the `Environment` tab.
   * Doesn't unload packages
   * Useful when developing code
