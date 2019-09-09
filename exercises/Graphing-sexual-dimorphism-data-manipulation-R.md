@@ -17,7 +17,7 @@ questions you want to answer.
    you created a plot of the histograms of female and male masses by family. This
    resulted in a lot of plots, but many of them had low sample sizes.
 
-   Use `dplyr` to filter out null values for mass, group the the data by family,
+   Use `dplyr` to filter out null values for mass, group the data by family,
    and then filter the grouped data to return data only for families with more
    than 25 species. Add a comment to the top of the block of code describing
    what it does.
@@ -38,7 +38,8 @@ questions you want to answer.
    `(F_mass - M_mass) / F_mass`
 
    and then make a single histogram that shows all of the species-level
-   differences. Add a vertical line at 0 difference for reference.
+   differences. Using `geom_vline` add a vertical line at 0 difference for
+   reference.
 
 3. Combine the two other tasks to produce histograms of the relative size
    difference for each family, only including families with more than 25
