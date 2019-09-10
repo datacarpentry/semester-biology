@@ -23,7 +23,7 @@ group_by(surveys, species_id)
 * Different looking kind of `data.frame`
     * Source, grouping, and data type information
 
-```
+```r
 surveys_by_species <- group_by(surveys, species_id)
 ```
 
@@ -35,14 +35,20 @@ summarize(surveys_by_species, abundance = n())
 ```
 
 * Can group by multiple columns
+
+```r
+surveys_by_species_plot <- group_by(surveys, species_id, plot_id)
+summarize(surveys_by_species, abundance = n())
+```
+
 * Use any function that returns a single value from a vector.
 * E.g., mean, max, min
 
 ```r
-surveys_by_species_plot <- group_by(surveys, species_id, plot_id)
-summarize(surveys_by_species_plot, avg_weight = mean(weight))
+species_weight <- summarize(surveys_by_species_plot, avg_weight = mean(weight))
 ```
 
+* *Open table*
 * Why did we get `NA`?
     * `mean(weight)` returns `NA` when `weight` has missing values (`NA`)
 * Can fix using `mean(weight, na.rm = TRUE)`
@@ -52,10 +58,11 @@ species_weight <- summarize(surveys_by_species,
                             avg_weight = mean(weight, na.rm = TRUE))
 ```
 
-* Or us `na.omit()` to drop rows with `NA` in any column
+* Still has `NaN` for species that have never been weighed
+* Can use `na.omit()` to drop rows with `NA` or `NaN` in any column
 
 ```
-na.omit(surveys_by_species)
+na.omit(surveys_weight)
 ```
 
 > Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
