@@ -59,18 +59,3 @@ na.omit(surveys_by_species)
 ```
 
 > Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
-
-### Filtering by aggregated properties
-
-* You can also filter based on aggregated values
-* If we wanted to estimate species weights only for species with > 100 individuals
-
-```r
-filter(surveys_by_species, n() > 100)
-```
-
-```r
-surveys_by_species_100plus <- filter(surveys_by_species, n() > 100)
-species_weight <- summarize(surveys_by_species_100plus,
-                            avg_weight = mean(weight, na.rm = TRUE))
-```

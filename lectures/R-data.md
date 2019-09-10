@@ -9,3 +9,4 @@ language: R
 * [dplyr Aggregation]({{ site.baseurl }}/materials/dplyr-aggregation)
 * [Combining Data Manipulations]({{ site.baseurl }}/materials/combining-data-manip)
 * [dplyr Joins]({{ site.baseurl }}/materials/dplyr-joins)
+* [Advanced Filtering]({{ site.baseurl }})/materials/dplyr-adv-filter)

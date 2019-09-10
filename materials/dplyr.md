@@ -80,14 +80,6 @@ select(surveys, month, day, year)
   
 ```
 filter(surveys, species_id == "DS")
-filter(surveys, species_id == "DS", year > 1995)
-```
-
-* Commas indicate `and`, use `|` for `or`.
-* Say we wanted data on all of the *Dipodomys* species.
-
-```
-filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 ```
 
 * Add new columns with calculated values using `mutate()`
