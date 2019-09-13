@@ -37,11 +37,8 @@ filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 * If we wanted to estimate species weights only for species with > 100 individuals
 
 ```r
-filter(surveys_by_species, n() > 100)
-```
-
-```r
-surveys_by_species_100plus <- filter(surveys_by_species, n() > 100)
-species_weight <- summarize(surveys_by_species_100plus,
-                            avg_weight = mean(weight, na.rm = TRUE))
+species_weights <- surveys %>%
+  group_by(species) %>%
+  filter(n() > 100) %>%
+  summarize(avg_weight = mean(weight, na.rm = TRUE))
 ```
