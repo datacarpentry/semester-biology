@@ -1,0 +1,14 @@
+# A tibble: 7,292 x 4
+   SURVEY  YEAR SITE  canopy_area
+    <dbl> <dbl> <chr>       <dbl>
+ 1      1  2009 SOUTH       30.5 
+ 2      2  2010 SOUTH       69.7 
+ 3      3  2011 SOUTH       79.6 
+ 4      4  2012 SOUTH       39.0 
+ 5      5  2013 SOUTH       40.8 
+ 6      1  2009 SOUTH        6.16
+ 7      2  2010 SOUTH        7.29
+ 8      3  2011 SOUTH       12.5 
+ 9      5  2013 SOUTH        9.62
+10      1  2009 SOUTH       20.4 
+# … with 7,282 more rows

@@ -16,7 +16,7 @@ language: R
 
 ### Data
 
-* Data on acacia size in an experiment in Africa excluding large herbivores
+* Data on acacia size in an experiment in Kenya excluding large herbivores
 * Data is tab separated
 * Includes information on if the plant is dead in the HEIGHT column
 
@@ -32,7 +32,7 @@ library(ggplot2)
 
 * `ggplot()` creates a base ggplot object that we can then add things to
 * Like a blank canvas
-* We also add information in here that can be shared across different components
+* Optional arguments for information to be shared across different components
   of the plot including
   * default dataset - what data are we working with
   * set of mappings or 'Aesthetics' that describe which columns are used for
@@ -42,28 +42,27 @@ library(ggplot2)
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))
 ```
 
-* This doesn't create a figure yet, it's just a blank canvas and some
-  information on default values for data and mapping columns to pieces of the
-  plot
+* This doesn't create a figure, it's just a blank canvas and some information on
+  default values for data and mapping columns to pieces of the plot
 * Add components of figures with layers
 * Scatter plot showing branch circumference and height
 
-```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point()
 ```
 
 * To change things about the layer pass arguments to the geom
 
-```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5)
 ```
 
 * Rescale axes
 
-```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5) +
   scale_y_log10() +
   scale_x_log10()
@@ -73,14 +72,14 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 * Add Labels (documentation for your graphs!)
 
-```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5) +
   labs(x = "Circumference [cm]", y = "Height [m]",
        title = "Acacia Survey at UHURU")
 ```
 
-> Do Tasks 1-2 in [Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
+> Do Task 1 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Grouping
 
@@ -102,9 +101,9 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 * Where are all the acacia in the open plots? (eaten?)
 
-> Do Tasks 3-4 in [Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R).
+> Do Tasks 2-3 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
-> Assign Tasks 1-4 in [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
+> Assign [Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R) and Tasks 1-4 in [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
 
 ### Layers
 
@@ -142,7 +141,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
   geom_smooth(method = "lm")
 ```
 
-> Do Task 5 in [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
+> Do Task 4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Statistical transformations
 
@@ -169,7 +168,7 @@ ggplot(acacia, aes(x = TREATMENT)) +
 
 ```
 ggplot(acacia, aes(x = CIRC)) +
-  geom_histogram()
+  geom_histogram(fill = "red")
 ```
 
 * Uses `stat_bins()` for data transformation
@@ -187,7 +186,7 @@ ggplot(acacia, aes(x = CIRC)) +
   labs(x = "Circumference", y = "Number of Individuals")
 ```
 
-> Do Tasks 1-2 in [Sexual Dimorphism Exploration]({{ site.baseurl }}/exercises/Graphing-sexual-dimorphism-exploration-R).
+> Do Tasks 1-2 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
 ### Combining different data and aesthetics
 
@@ -230,7 +229,8 @@ ggplot() +
 ```r
 trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
                   sep="\t",
-                  na.strings = c("dead", "missing", "MISSING", "NA"))
+                  na.strings = c("dead", "missing", "MISSING", "NA", "?"),
+                  stringsAsFactors = FALSE)
 ggplot() +
   geom_point(data = trees,
              aes(x = CIRC, y = HEIGHT),
@@ -251,7 +251,7 @@ ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
   labs(x = "Circumference [cm]", y = "Height [m]")
 ```
 
-> Do Task 3 in [Sexual Dimorphism Exploration]({{ site.baseurl }}/exercises/Graphing-sexual-dimorphism-exploration-R).
+> Do Task 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
 ### Grammar of graphics
 

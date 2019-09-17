@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Data Visualization
 language: R
-exercises: ['Mass vs Metabolism', 'Adult vs Newborn Size', 'Sexual Dimorphism Exploration', 'Sexual Dimorphism Data Manipulation']
-points: [20, 25, 25, 30]
+exercises: ['Acacia and Ants', 'Mass vs Metabolism', 'Adult vs Newborn Size', 'Acacia and Ants Histograms', 'Acacia and Ants Data Manipulation']
+points: [15, 15, 20, 20, 30]
 ---
 
 #### Learning Objectives

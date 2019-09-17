@@ -1,0 +1,15 @@
+# A tibble: 30 x 3
+# Groups:   YEAR [5]
+    YEAR SPECIES              abundance
+   <dbl> <chr>                    <int>
+ 1  2009 Acacia_brevispica          354
+ 2  2009 Acacia_drepanolobium        47
+ 3  2009 Acacia_etbaica             324
+ 4  2009 Acacia_mellifera           360
+ 5  2009 Balanites                  110
+ 6  2009 Croton                     302
+ 7  2010 Acacia_brevispica          352
+ 8  2010 Acacia_drepanolobium        47
+ 9  2010 Acacia_etbaica             324
+10  2010 Acacia_mellifera           345
+# … with 20 more rows
