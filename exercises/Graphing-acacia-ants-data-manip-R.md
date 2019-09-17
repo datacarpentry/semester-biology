@@ -28,8 +28,9 @@ trees <- read_tsv("data/TREE_SURVEYS.txt")
    big for a real Acacia, so filter the data to remove any values for `AXIS_1`
    and `AXIS_2` that are over 20 and remake the graph.
 4. Find out how the abundance of each species has been changing through time.
-   Use `group_by`, `summarize`, and `n` to make a data frame with the number of
-   individuals in each species in each year. Print out this data frame.
+   Use `group_by`, `summarize`, and `n` to make a data frame with `YEAR`,
+   `SPECIES`, and an `abundance` column that has the number of individuals in
+   each species in each year. Print out this data frame.
 5. Make a line plot with points (by using `geom_line` in addition to
    `geom_point`) with `YEAR` on the x axis and `abundance` on the y axis with
    one subplot per species. To let you seen each trend clearly let the scale for
