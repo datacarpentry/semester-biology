@@ -226,11 +226,12 @@ ggplot() +
 * Add tree size data for context
 * Layers are plotted in the order they are added
 
+* Use the `readr` package to read in this data
+* It has a lot of issues and `readr` fixes many of them automatically
+
 ```r
-trees <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
-                  sep="\t",
-                  na.strings = c("dead", "missing", "MISSING", "NA", "?"),
-                  stringsAsFactors = FALSE)
+library(readr)
+trees <- read_tsv("data/TREE_SURVEYS.txt")
 ggplot() +
   geom_point(data = trees,
              aes(x = CIRC, y = HEIGHT),
