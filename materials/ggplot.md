@@ -13,10 +13,12 @@ language: R
 * Good plots quickly
 * Declarative - describe what you want not how to build it
 * Contrasts w/Imperative - how to build it step by step
+* Install `ggplot2` using `install.packages`
 
 ### Data
 
 * Data on acacia size in an experiment in Kenya excluding large herbivores
+* *Download both UHURU datasets into new project*
 * Data is tab separated
 * Includes information on if the plant is dead in the HEIGHT column
 
@@ -24,6 +26,8 @@ language: R
 acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
 ```
 
+* *Show data and talk through treatments, sizes, and ants*
+  
 ### Basics
 
 ```
@@ -59,17 +63,6 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5)
 ```
 
-* Rescale axes
-
-```r
-ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point(size = 3, color = "blue", alpha = 0.5) +
-  scale_y_log10() +
-  scale_x_log10()
-```
-
-* Not changing the data itself, just the presentation of it
-
 * Add Labels (documentation for your graphs!)
 
 ```r
@@ -102,6 +95,17 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 * Where are all the acacia in the open plots? (eaten?)
 
 > Do Tasks 2-3 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+
+### Rescaling axes
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, color = "blue", alpha = 0.5) +
+  scale_y_log10() +
+  scale_x_log10()
+```
+
+* Not changing the data itself, just the presentation of it
 
 > Assign [Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R) and Tasks 1-4 in [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
 
