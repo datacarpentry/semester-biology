@@ -26,7 +26,7 @@ trees <- read_tsv("data/TREE_SURVEYS.txt")
    (m)" and the y axis "Height (m)". Make the point size 2.
 3. That's a big outlier in the plot from (2). 50 by 50 meters is a little too
    big for a real Acacia, so filter the data to remove any values for `AXIS_1`
-   and `AXIS_2` that are over 20 and remake the graph.
+   and `AXIS_2` that are over 20 and update the data frame. Then remake the graph.
 4. Find out how the abundance of each species has been changing through time.
    Use `group_by`, `summarize`, and `n` to make a data frame with `YEAR`,
    `SPECIES`, and an `abundance` column that has the number of individuals in
