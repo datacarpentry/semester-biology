@@ -137,11 +137,25 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_smooth(method = "lm")
 ```
 
+* Both the `geom_point` layer and the `geom_smooth` layer use the defaults form
+  `ggplot`
+* Both use `acacia` for data and `x = CIRC, y = HEIGHT` for the aesthetic
+
 * Do this by treatment
 
 ```
 ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
   geom_point() +
+  geom_smooth(method = "lm")
+```
+
+* One set of points and one model for each treatment
+* Can make a single model across all treatments while still coloring points
+* Instead of setting the `color` mapping in the default, set it in the point layer
+
+```
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(mapping = aes(color = TREATMENT)) +
   geom_smooth(method = "lm")
 ```
 
