@@ -150,14 +150,6 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 ```
 
 * One set of points and one model for each treatment
-* Can make a single model across all treatments while still coloring points
-* Instead of setting the `color` mapping in the default, set it in the point layer
-
-```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
-  geom_point(mapping = aes(color = TREATMENT)) +
-  geom_smooth(method = "lm")
-```
 
 > Do Task 4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
@@ -191,22 +183,23 @@ ggplot(acacia, aes(x = CIRC)) +
 
 * Uses `stat_bins()` for data transformation
     * Splits circumferences into bins and counts rows in each bin
-* Uses `bins` argument to split data into groups
-    * Defaults to `bins = 30`
-
-* These can be combined with all of the other `ggplot2` features we've learned
+* Set number of `bins` or `binwidth`
 
 ```
 ggplot(acacia, aes(x = CIRC)) +
-  geom_histogram(bins = 15) +
-  scale_x_log10() +
-  facet_wrap(~TREATMENT) +
-  labs(x = "Circumference", y = "Number of Individuals")
+  geom_histogram(fill = "red", bins = 15)
 ```
+
+```
+ggplot(acacia, aes(x = CIRC)) +
+  geom_histogram(fill = "red", binwidth = 5)
+```
+
+* These can be combined with all of the other `ggplot2` features we've learned
 
 > Do Tasks 1-2 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
-### Combining different data and aesthetics
+### Changing values across layers
 
 * We can also plot data from different columns or even data frames on the same graph
 * To do this we need to better understand how layers and defaults work
@@ -225,7 +218,8 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 ```r
 ggplot() +
   geom_point(data = acacia,
-             mapping = aes(x = CIRC, y = HEIGHT))
+             mapping = aes(x = CIRC, y = HEIGHT,
+                           color = TREATMENT))
 ```
 
 * We can see that this information is no longer shared with other geoms since it
@@ -235,10 +229,62 @@ ggplot() +
 ggplot() +
   geom_point(data = acacia,
              mapping = aes(x = CIRC, y = HEIGHT)) +
+                           color = TREATMENT))
   geom_smooth()
 ```
 
+* Can use this combine different aesthetics
+* Make a single model across all treatments while still coloring points
+
+```r
+ggplot() +
+  geom_point(data = acacia,
+             mapping = aes(x = CIRC, y = HEIGHT,
+                           color = TREATMENT)) +
+  geom_smooth(data = acacia,
+              mapping = aes(x = CIRC, y = HEIGHT))
+```
+
+* `color` is only set in the aesthethic for the point layer
+* So the smooth layer is made across all x and y values
+
 * *Check if this makes sense to everyone*
+
+* This same sort of change can be used to plot different columns on the same
+  plot by changing the values of x or y
+
+> Do Task 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
+
+### Grammar of graphics
+
+* Geometric object(s)
+  * Data
+  * Mapping
+  * Statistical transformation
+  * Position (allows you to shift objects, e.g., spread out overlapping data points)
+* Facets
+* Coordinates (coordinate systems other than cartesian, also allows zooming)
+* In combination uniquely describes any plot
+
+### Saving plots as new files
+
+```
+ggsave(“acacia_by_treatment.jpg”)
+```
+
+* Lots of optional arguments
+    * Location
+    * Type
+    * Size
+
+```
+ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
+```
+
+> Assign the rest of the exercises.
+
+
+### Combining different datasets (time allowing)
 
 * We can use this to plot data from different sources together
 * Add tree size data for context
@@ -269,33 +315,3 @@ ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(data = acacia, color = "red") +
   labs(x = "Circumference [cm]", y = "Height [m]")
 ```
-
-> Do Task 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
-
-### Grammar of graphics
-
-* Geometric object(s)
-  * Data
-  * Mapping
-  * Statistical transformation
-  * Position
-* Coordinates
-* Facets
-* In combination uniquely describes any plot
-
-### Saving plots as new files
-
-```
-ggsave(“acacia_by_treatment.jpg”)
-```
-
-* Lots of optional arguments
-    * Location
-    * Type
-    * Size
-
-```
-ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
-```
-
-> Assign the rest of the exercises.
