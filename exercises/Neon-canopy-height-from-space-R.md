@@ -15,10 +15,8 @@ Often, plots within a site are used as representative samples of the larger site
 and act as reference areas to obtain more detailed information and ensure 
 accuracy of satellite imagery (*i.e., ground truth*).
 
-1. Create two [Canopy Height Models](https://datacarpentry.org/r-raster-vector-geospatial/04-raster-calculations-in-r/index.html) using simple `raster` math (`chm = dsm - dtm`), one for the `HARV` site (which was done during the lecture) and another for the `SJER` site. 
-
-2. Create plots and histograms of canopy heights for both of the sites using `ggplot`. 
-
-3. Add corresponding points from `plot_locations` folder to each site plot. 
-
-4. Create a single dataframe with two columns, one of the maximum canopy heights for each point at the `HARV` site and one for the `SJER` points’ maximum canopy heights. When extracting the canopy height values, use a buffer of 10.  
+1. Map the digital surface model for `SJER`.
+2. Create and map the [Canopy Height Model](https://datacarpentry.org/r-raster-vector-geospatial/04-raster-calculations-in-r/index.html) using `raster` math (`chm = dsm - dtm`) for `SJER` site.
+3. Creat a map that combines the Canopy Height Model from 3 with the corresponding plot locations from the `plot_locations` folder.
+4. Extract the canopy heights at each plot location for `SJER` and display the values.
+5. Extract the maximum canopy heights in a buffer of 10 for each point at the `HARV` site and `SJER` plots. Create a single dataframe with two columns, one holding the values for each site.d
