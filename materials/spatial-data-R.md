@@ -66,13 +66,11 @@ ggplot() +
 ```
 
 * This just uses raw x and y values
-* Can use `coord_quickmap()` to set a projection
 
 ```
 ggplot() +
   geom_raster(data = dsm_harv_df, 
-              aes(x = x, y = y, fill = HARV_dsmCrop)) +
-  coord_quickmap()
+              aes(x = x, y = y, fill = HARV_dsmCrop))
 ```
 
 * Because this is a data frame we can treat raster values like they are part of
@@ -108,8 +106,7 @@ chm_harv <- dsm_harv - dtm_harv
 chm_harv_df = as.data.frame(chm_harv, xy = TRUE)
 ggplot() +
   geom_raster(data = _harv_df, 
-              aes(x = x, y = y, fill = layer)) +
-  coord_quickmap()
+              aes(x = x, y = y, fill = layer))
 ```
 
 
@@ -294,9 +291,11 @@ map = map_data("state", region = "massachusetts")
 ggplot() +
   geom_polygon(data = map, 
                aes(x = long, y = lat, group = group), 
-               fill = "grey")
+               fill = "grey") +
+  coord_quickmap()
 ```
 
+* `coord_quickmap` gives us a reasonable projection
 * Add spatial data on top
 
 ```
@@ -306,7 +305,8 @@ ggplot() +
                aes(x = long, y = lat, group = group), 
                fill = "grey") +
   geom_point(data = points_spat_df, 
-             aes(x = long, y = lat))
+             aes(x = long, y = lat)) +
+  coord_quickmap()
 ```
 
 * Can also retriever data for countries
@@ -316,7 +316,8 @@ usmap = map_data("usa")
 ggplot() +
   geom_polygon(data = usmap, 
                aes(x = long, y = lat, group = group), 
-               fill = "grey")
+               fill = "grey") +
+  coord_quickmap()
 ```
 
 > Do [Species Occurrences Map]({{ site.baseurl }}/exercises/Spatial-data-map-R).
