@@ -197,68 +197,6 @@ plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fu
 
 > Do Tasks 3-4 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
-
-### Stacks of rasters
-
-* Sets of rasters in the same location often analyzed together
-* `Raster stack`
-* Can be stored in one or multiple files
-* To load all layers use `stack()` on a single multi-band file or multiple files
-* We'll load a time-series of NDVI data from Harvard Forest into a raster stack
-    * NDVI is a remotely sensed vegetation index that measures greenness
-	* Provides information on plant phenology and productivity
-
-```
-ndvi_files = list.files("data/HARV_NDVI/",
-                         full.names = TRUE,
-                         pattern = "HARV_NDVI.*.tif")
-ndvi_rasters <- stack(ndvi_files)
-```
-
-* Plot all the layers
-
-```
-plot(ndvi_rasters)
-```
-
-* Extract data from all rasters
-
-```
-plots_harv <- readOGR("data/NEON-airborne/plot_locations", "HARV_plots")
-plots_harv_utm <- spTransform(plots_harv, crs(ndvi_rasters))
-plots_harv_ndvi <- extract(ndvi_rasters, plots_harv)
-```
-
-* Produces a `matrix`
-* Make it into the data frame we
-
-```
-as.data.frame(t(plots(harv_ndvi)))
-```
-
-* Calculate values across each raster using `cellStats()`
-
-```
-avg_ndvi <- cellStats(ndvi_rasters, mean)
-```
-
-* Store in data frame
-
-```
-samp_period <- 1:length(avg_ndvi)
-avg_ndvi_df <- data.frame(samp_period, avg_ndvi)
-```
-
-* Plot the results
-
-```
-ggplot(avg_ndvi_df, aes(x = samp_period, y = avg_ndvi)) +
-  geom_point()
-```
-
-> Do [Phenology from Space]({{ site.baseurl }}/exercises/Neon-phenology-from-space-R).
-
-
 ### Making your own point data
 
 * Make spatial data from `csv` file with latitudes and longitudes
@@ -321,3 +259,5 @@ ggplot() +
 ```
 
 > Do [Species Occurrences Map]({{ site.baseurl }}/exercises/Spatial-data-map-R).
+
+> Assign Species Occurrences Elevation Histogram
