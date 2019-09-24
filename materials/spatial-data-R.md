@@ -57,24 +57,34 @@ dsm_harv_df = as.data.frame(dsm_harv, xy = TRUE)
 head(dsm_harv_df)
 ```
 
-* `coord_quickmap()` sets projection
+* Can then plot using `geom_raster`
+
+```
+ggplot() +
+  geom_raster(data = dsm_harv_df, 
+              aes(x = x, y = y, fill = HARV_dsmCrop))
+```
+
+* This just uses raw x and y values
+* Can use `coord_quickmap()` to set a projection
 
 ```
 ggplot() +
   geom_raster(data = dsm_harv_df, 
               aes(x = x, y = y, fill = HARV_dsmCrop)) +
   coord_quickmap()
-
 ```
 
-* Looking at raster values
+* Because this is a data frame we can treat raster values like they are part of
+  a normal table
 
 ```
 ggplot() +
   geom_histogram(data = dsm_harv_df, 
                  aes(x = HARV_dsmCrop))
-
 ```
+
+> Do Task 1 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 ### `raster` math
 
@@ -89,9 +99,21 @@ dtm_harv <- raster("data/NEON-airborne/HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
-* Math happens on a cell by cell (elementise) basis
+* Math happens on a cell by cell (elementwise) basis
+* Can then graph this new raster by
+  * Converting to data frame
+  * Graphing using ggplot
 
-> Do Tasks 1-2 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+```
+chm_harv_df = as.data.frame(chm_harv, xy = TRUE)
+ggplot() +
+  geom_raster(data = _harv_df, 
+              aes(x = x, y = y, fill = layer)) +
+  coord_quickmap()
+```
+
+
+> Do Task 2 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 
 ### Import and reproject shapefiles
@@ -150,6 +172,8 @@ ggplot() +
   geom_point(data = plots_harv_utm_df, 
              aes(x = coords.x1, y = coords.x2), color = "yellow")
 ```
+
+> Do Task 3 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 ### Extract raster data
 
