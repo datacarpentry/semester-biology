@@ -8,23 +8,21 @@ language: R
 > Remember to download and put into data subdirectory:
 >
 > * [LiDAR rasters and plot locations]({{ site.baseurl }}/data/NEON-airborne.zip)
-> * [Harvard Forest NDVI]({{ site.baseurl }}/data/HARV-NDVI.zip) 
-> * [San Joaquin Experimental Range NDVI]({{ site.baseurl }}/data/SJER-NDVI.zip)
 
 > Load the following into browser window:
 
-> * [Projections picture](https://media.opennews.org/cache/06/37/0637aa2541b31f526ad44f7cb2db7b6c.jpg)
+> * [Raster description](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
 > * [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
+> * [Projections picture](https://media.opennews.org/cache/06/37/0637aa2541b31f526ad44f7cb2db7b6c.jpg)
 
 > Set-up R Console:
 
 ```
 library(raster)
-library(rgdal)
 library(ggplot2)
 ```
 
-### `raster` structure, import, and plotting
+### `raster` import and structure
 
 * Spatial data is often organized in a `raster`.
     * gridded format (*like coordinates*)
@@ -34,7 +32,6 @@ library(ggplot2)
 
 * DSM is Digital Surface Model: elevation of top physical point
 * See diagram
-* Later use with Digital Terrain Model (elevation of ground) to create Canopy Height Model
 
 ```
 dsm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
@@ -46,11 +43,18 @@ dsm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
     * `units`
     * `min`, `max`, `mean`
 
-* `dsm_harv` is a `RasterLayerObject` and we can get individual pieces of it's
-   metadata using appropriate functions
+### Plotting spatial data with ggplot
 
-* Change to dataframe for `ggplot`
-* `as.data.frame` is overloaded by `raster` to let it convert spatial data
+* Continue using what we've been learning
+* Useful for making nice maps combined with other figures
+
+Three steps (write on board):
+
+1. Do Spatial Work (just importing so far)
+2. Convert to Data Frame (this is what ggplot works with)
+3. Make Plots
+
+* Convert using `as.data.frame` (*overloaded by `raster` to convert spatial data*)
 
 ```
 dsm_harv_df = as.data.frame(dsm_harv, xy = TRUE)
@@ -58,14 +62,6 @@ head(dsm_harv_df)
 ```
 
 * Can then plot using `geom_raster`
-
-```
-ggplot() +
-  geom_raster(data = dsm_harv_df, 
-              aes(x = x, y = y, fill = HARV_dsmCrop))
-```
-
-* This just uses raw x and y values
 
 ```
 ggplot() +
@@ -98,17 +94,21 @@ chm_harv <- dsm_harv - dtm_harv
 ```
 
 * Math happens on a cell by cell (elementwise) basis
-* Can then graph this new raster by
-  * Converting to data frame
-  * Graphing using ggplot
+* Can then graph this new raster by following the three rules
+* 1. Already did spatial work
+* 2. Convert to data frame
 
 ```
 chm_harv_df = as.data.frame(chm_harv, xy = TRUE)
+```
+
+* 3. Make plot
+
+```
 ggplot() +
   geom_raster(data = _harv_df, 
               aes(x = x, y = y, fill = layer))
 ```
-
 
 > Do Task 2 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
@@ -125,6 +125,8 @@ ggplot() +
             * `file_name$site_id`
 
 ```
+library(rgdal)
+
 plots_harv <- readOGR("data/NEON-airborne/plot_locations", 
                       "HARV_plots")
 ```
