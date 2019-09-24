@@ -22,16 +22,16 @@ implicitly by sampling period for analysis.
    through time using different colors for the two sites. To do this:
    * Load the files for each site as a raster stack
    * Use `cellStats()` to calculate the mean values for each raster in the stack. Call the outputs `harv_avg` and `sjer_avg`
-   * Create a vector of sampling periods for each site: e.g., `samp_period = c(1:length(harv_avg), 1:length(sjer_avg))`
-   * Create a vector of site names for each site: e.g., `site_name = c(rep("harv", length(harv_avg)), rep("sjer", length(sjer_avg)))`
-   * Make a data frame that includes columns for site name, sampling period, and the average NDVI values (concatenate the two vectors using `c()`).
-   * Graph the trends through time using `ggplot`
+   * Create a vector of sampling periods for each site: e.g., `samp_period_harv = 1:length(harv_avg)`
+   * Make a data frame that includes the sampling period column and the average
+     NDVI values
+   * Make a plot with NDVI on the y axis and sampling period on the x axis.
+     Since you have two different data frames you'll need to include each data
+     frame in a different `geom_point` layer.
 
 2. Extract the NDVI values from all rasters for the `HARV_plots` and
    `SJER_plots`in `NEON-airborne/plot_locations`. Running `extract()` on a
    raster stack results in a matrix with one column per raster and one row per
    point. To more easily work with this data, we want to have one column with
    the raster names and one column per point, which you can do by transposing
-   the matrix with the `t()` function. Then make this into a dataframe and turn
-   the rownames into a column using `tibble::rownames_to_column(your_matrix, var
-   = "date")`. Do this for both `HARV` and `SJER`. 
+   the matrix with the `t()` function. Do this for both `HARV` and `SJER`. 
