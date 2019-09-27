@@ -274,6 +274,25 @@ ggplot() +
 
 > Do [Species Occurrences Map]({{ site.baseurl }}/exercises/Spatial-data-map-R).
 
+### Namespacing
+
+```
+library(dplyr)
+library(raster)
+```
+
+* `raster`'s `select` function overwrites `dplyr`'s `select` function
+* *Demo error*
+
+```r
+select(do_data, Dipodomys_ordii.latitude)
+```
+
+* To use `dplyr`'s function
+
+```r
+dply::select(do_data, Dipodomys_ordii.latitude)
+```
 
 ### Making your own vector data
 
