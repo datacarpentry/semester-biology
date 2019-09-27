@@ -248,16 +248,27 @@ ggplot() +
 ```
 
 * Add other data on top
-* E.g., US cities
+* Data on species occurances using the `spocc` package
+* Gets data from multiple sources include GBIF
+
+```
+library(spocc)
+
+do_gbif = occ(query = "Dipodomys ordii", 
+              from = "gbif", 
+              limit = 1000, 
+              has_coords = TRUE)
+do_data = data.frame(dipo_df$gbif$data)
+```
 
 ```r
-data(us.cities)
 ggplot() +
   geom_polygon(data = us_map, 
                aes(x = long, y = lat, group = group), 
                fill = "grey") +
-  geom_point(data = us.cities, 
-             aes(x = long, y = lat)) +
+  geom_point(data = do_data, 
+             aes(x = Dipodomys_ordii.longitude,
+                 y = Dipodomys_ordii.latitude)) +
   coord_quickmap()
 ```
 
@@ -266,24 +277,22 @@ ggplot() +
 
 ### Making your own vector data
 
-* Make spatial data from `csv` file with latitudes and longitudes
+* Make spatial data from from non-spatial data with latitudes and longitudes
 * Do to combine with other spatial data
 * Need to know the `proj4string` for standard latitude/longitude data
 * `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`
 
 ```
-points_csv <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
 points_crs <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
-points_spat <- SpatialPointsDataFrame(
-	points_csv[c('long', 'lat')], 
-	points_csv, 
+do_data_spat <- SpatialPointsDataFrame(
+	do_data[c('Dipodomys_ordii.longitude', 'Dipodomys_ordii.latitude')], 
+	do_data, 
 	proj4string = points_crs)
-str(points_spat)
+str(do_data_spat)
 ```
 
-```
-points_spat_utm <- spTransform(points_spat, crs(ndvi_rasters))
-extract(ndvi_rasters, points_spat_utm, buffer = 10, fun = mean)
-```
+* `do_data` was a regular data frame, so do the same thing with your down data
+  after loading it using `read.csv`
+* Now you can do things like reproject and `extract` values from rasters 
 
-> Assign Species Occurrences Elevation Histogram
+> Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-map-elevation-histogram-R)
