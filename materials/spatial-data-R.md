@@ -216,39 +216,48 @@ extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 ### Map of point data
 
 * Maps are available in the `maps` package
-* Polygons, but already stored as data frames
+* Maps are typically vector data
   
 ```
-map = map_data("state", region = "massachusetts")
+library(maps)
+us_map = map_data("usa")
+```
+
+* *Open `map`*
+* Polygons, but already stored as data frames (already done as.data.frame)
+* Coordinates + Group + Order
+* Group identifies unique polygons
+* Order identifies how the points in each polygon are connected
+* *Draw a polygon illustrating points, edges, & order*
+
+```r
 ggplot() +
-  geom_polygon(data = map, 
+  geom_polygon(data = us_map, 
                aes(x = long, y = lat, group = group), 
-               fill = "grey") +
-  coord_quickmap()
+               fill = "grey")
 ```
 
 * `coord_quickmap` gives us a reasonable projection
-* Add spatial data on top
 
-```
-points_spat_df <- as.data.frame(points_spat)
+```r
 ggplot() +
-  geom_polygon(data = map, 
+  geom_polygon(data = us_map, 
                aes(x = long, y = lat, group = group), 
                fill = "grey") +
-  geom_point(data = points_spat_df, 
-             aes(x = long, y = lat)) +
   coord_quickmap()
 ```
 
-* Can also retriever data for countries
+* Add other data on top
+* E.g., US cities
 
-```
-usmap = map_data("usa")
+```r
+data(us.cities)
 ggplot() +
-  geom_polygon(data = usmap, 
+  geom_polygon(data = us_map, 
                aes(x = long, y = lat, group = group), 
                fill = "grey") +
+  geom_point(data = us.cities, 
+             aes(x = long, y = lat)) +
   coord_quickmap()
 ```
 
