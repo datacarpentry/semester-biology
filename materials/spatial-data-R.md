@@ -201,6 +201,8 @@ extract(chm_harv, plots_harv_utm, buffer = 10)
 ```
 
 * This returns one value for each pixel within the buffer region
+* Also what output is like for line and polygon data
+* One value for each cell intersected by a line or each cell inside a polygon
 
 * Could keep all of this data, or calculate a value from it
 * Often want an average
