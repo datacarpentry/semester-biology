@@ -191,13 +191,25 @@ plots_harv_utm$plot_id
 plots_chm <- data.frame(plot_num = plots_harv_utm$plot_id, plot_value = plots_chm)
 ```
 
-* To get an average of the values in a nearby region use `buffer`
+* Often want values surrounding a point, not just the single pixel that the
+  point lands in
+* Do this using `buffer` to get the values for all pixels within some buffer
+  distance from the point
 
 ```
-plots_chm$plot_buffer_value <- extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
+extract(chm_harv, plots_harv_utm, buffer = 10)
 ```
 
-> Do Tasks 3-4 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+* This returns one value for each pixel within the buffer region
+
+* Could keep all of this data, or calculate a value from it
+* Often want an average
+
+```
+extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
+```
+
+> Do Tasks 4-5 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 ### Making your own point data
 
