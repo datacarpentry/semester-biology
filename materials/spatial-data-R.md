@@ -213,28 +213,6 @@ extract(chm_harv, plots_harv_utm, buffer = 10, fun = mean)
 
 > Do Tasks 4-5 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
-### Making your own point data
-
-* Make spatial data from `csv` file with latitudes and longitudes
-* Do to combine with other spatial data
-* Need to know the `proj4string` for standard latitude/longitude data
-* `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`
-
-```
-points_csv <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
-points_crs <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
-points_spat <- SpatialPointsDataFrame(
-	points_csv[c('long', 'lat')], 
-	points_csv, 
-	proj4string = points_crs)
-str(points_spat)
-```
-
-```
-points_spat_utm <- spTransform(points_spat, crs(ndvi_rasters))
-extract(ndvi_rasters, points_spat_utm, buffer = 10, fun = mean)
-```
-
 ### Map of point data
 
 * Maps are available in the `maps` package
@@ -275,5 +253,28 @@ ggplot() +
 ```
 
 > Do [Species Occurrences Map]({{ site.baseurl }}/exercises/Spatial-data-map-R).
+
+
+### Making your own vector data
+
+* Make spatial data from `csv` file with latitudes and longitudes
+* Do to combine with other spatial data
+* Need to know the `proj4string` for standard latitude/longitude data
+* `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`
+
+```
+points_csv <- read.csv("data/NEON-airborne/plot_locations/HARV_PlotLocations.csv")
+points_crs <- crs("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+points_spat <- SpatialPointsDataFrame(
+	points_csv[c('long', 'lat')], 
+	points_csv, 
+	proj4string = points_crs)
+str(points_spat)
+```
+
+```
+points_spat_utm <- spTransform(points_spat, crs(ndvi_rasters))
+extract(ndvi_rasters, points_spat_utm, buffer = 10, fun = mean)
+```
 
 > Assign Species Occurrences Elevation Histogram
