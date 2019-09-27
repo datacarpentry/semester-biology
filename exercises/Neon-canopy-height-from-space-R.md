@@ -19,4 +19,4 @@ accuracy of satellite imagery (*i.e., ground truth*).
 2. Create and map the [Canopy Height Model](https://datacarpentry.org/r-raster-vector-geospatial/04-raster-calculations-in-r/index.html) using `raster` math (`chm = dsm - dtm`) for `SJER` site.
 3. Creat a map that combines the Canopy Height Model from 3 with the corresponding plot locations from the `plot_locations` folder.
 4. Extract the canopy heights at each plot location for `SJER` and display the values.
-5. Extract the maximum canopy heights in a buffer of 10 for each point at the `HARV` site and `SJER` plots. Create a single dataframe with two columns, one holding the values for each site.d
+5. Extract the maximum canopy heights (using `fun = max`) in a buffer of 10 for each point at the `HARV` site and `SJER` plots. Create a single dataframe with two columns, one holding the maximum height values for each site at each `plot_id`.
