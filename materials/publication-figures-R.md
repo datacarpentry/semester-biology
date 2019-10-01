@@ -117,6 +117,17 @@ ggsave("species_scaling.jpg", species_scaling)
 
 * Often want to combine multiple distinct plots into a single figure
 * Two popular packages for this, `patchwork` and `cowplot`
+
+* `patchwork` is not on CRAN so install using `devtools`
+* `devtools` lets us install packages from a variety of sources, including
+  GitHub, one of the major hubs of software development
+
+```r
+install.packages('devtools')
+library(devtools)
+install_github('thomasp85/patchwork')
+```
+
 * `patchwork` works by "adding" plots to one another
 
 ```r
