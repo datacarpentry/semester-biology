@@ -166,8 +166,6 @@ species_scaling + height_dist +
   small amount of code
 
 ```r
-species_scaling <- species_scaling
-
 height_dist <- height_dist +
   theme_void() +
   theme(legend.position='none')
