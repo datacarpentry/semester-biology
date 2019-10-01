@@ -85,6 +85,21 @@ ggplot(trees, aes(x = HEIGHT, y = CIRC, color = HEIGHT)) +
   scale_color_viridis_c(option = "magma")
 ```
 
+### Themes
+
+* Can customize every aspect of plots in `ggplot`
+* Themes are an easy way to change the overall look of figures 
+* These can be used to make coordinated changes to groups of options
+
+```r
+ggplot(trees, aes(x = HEIGHT, y = CIRC, color = SPECIES)) +
+  geom_point() +
+  scale_color_viridis_c() +
+  theme_classic()
+```
+
+* Show theme examples at https://ggplot2.tidyverse.org/reference/ggtheme.html
+
 ### Saving and exporting multiple plots
 
 * To save plots to work with later assign them to a variable
@@ -97,18 +112,6 @@ species_scaling <- ggplot(trees, aes(x = HEIGHT, y = CIRC, color = SPECIES)) +
 species_scaling
 ggsave("species_scaling.jpg", species_scaling)
 ```
-
-### Themes
-
-* Can customize every aspect of plots in `ggplot`
-* Themes are an easy way to change the overall look of figures 
-* These can be used to make coordinated changes to groups of options
-
-```r
-species_scaling + theme_classic()
-```
-
-* Show theme examples at https://ggplot2.tidyverse.org/reference/ggtheme.html
 
 ### Combining multiple plots
 
