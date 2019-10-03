@@ -23,9 +23,17 @@ language: R
 * 2 space indents
 
 ```
-for (i in 1:10){
-  do_things()
-}
+stuff <- data %>%
+filter() %>%
+select()
+things <- 2
+```
+
+```
+stuff <- data %>%
+  filter() %>%
+  select()
+things <- 2
 ```
 
 * Spaces after commas and around operators
@@ -37,15 +45,6 @@ range(x, x + 10)
 ### Naming
 
 * snake_case
-
-### Documentation & Comments
-
-* Documentation
-    * How to use code
-    * Use Roxygen comments for functions
-* Comments
-    * Why & how code works
-    * Only if it code is confusing to read
 
 ### Long lines
 

@@ -148,3 +148,12 @@ est_shrub_mass_dim(0.8, 1.6, 2.0)
 ```
 
 > Do [Combining Functions]({{ site.baseurl }}/exercises/Functions-combining-functions-R).
+
+### Documentation & Comments
+
+* Documentation
+    * How to use code
+    * Use Roxygen comments for functions
+* Comments
+    * Why & how code works
+    * Only if it code is confusing to read

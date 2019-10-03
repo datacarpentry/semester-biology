@@ -6,9 +6,9 @@ language: R
 ---
 
 > Check that top Google results haven't change and adjust as needed
-> Current top 3 hits:
-> 1. https://blog.exploratory.io/selecting-columns-809bdd1ef615
-> 2. https://dplyr.tidyverse.org/reference/select.html
+> Current top hits 1, 2, and 5:
+> 1. https://dplyr.tidyverse.org/reference/select.html
+> 2. https://blog.exploratory.io/selecting-columns-809bdd1ef615
 > 3. https://stackoverflow.com/questions/21502465/replacement-for-rename-in-dplyr
 
 * Professional programmers use Google regularly
@@ -36,6 +36,17 @@ language: R
 
 #### First hit
 
+> https://dplyr.tidyverse.org/reference/select.html
+
+* Documentation
+* Start reading from top
+* Not super clear
+* Focus on examples
+* `Ctrl-F`
+* `petal_length` is in output, so it is the new name and `Petal.Length` is the old value
+
+#### Second hit
+
 > https://blog.exploratory.io/selecting-columns-809bdd1ef615
 
 * Blog post
@@ -46,18 +57,7 @@ language: R
 * Scroll up and look at column names
 * `assignee.login` is in the orginal setup, so that is the variable we are changing, `developer` is new name
 
-#### Second hit
-
-> https://dplyr.tidyverse.org/reference/select.html
-
-* Documentation
-* Start reading from top
-* Not super clear
-* Focus on examples
-* `Ctrl-F`
-* `petal_length` is in output, so it is the new name and `Petal.Length` is the old value
-
-#### Third hit
+#### Fifth hit
 
 > https://stackoverflow.com/questions/21502465/replacement-for-rename-in-dplyr
 

@@ -24,12 +24,11 @@ title: Problem decomposition
     2. Write the code.
     3. Test it... on it's own.
     4. Fix any problems.
-5. One way to do this is to identify functions.
 
 ### Example
 
-> Build this example up piece by piece. First do then top level, then breakdown
-> one bullet, etc.
+> Lead students through building this example up piece by piece. First do then
+> top level, then breakdown one bullet, etc.
 
 Make a graph of the relationship between diameter and height in trees and
 highlight the relationship for a single species.
