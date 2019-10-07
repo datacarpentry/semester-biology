@@ -13,7 +13,10 @@ Here are some tips that will be helpful along the way:
   dataset](http://worldclim.org/version2). Using `getData('worldclim', var =
   'bio', res = 10)` (from the `raster` package) will download all of the bioclim
   variables. The two variables you need are `bio1` (temperature) and `bio12`
-  (precipitation).
+  (precipitation). *If the website is down you can download a copy from the course
+  site by downloading <http://www.datacarpentry.org/semester-biology/data/wc10.zip>
+  and unzipping it into your home directory (`/home/username` on Mac and Linux,
+  `C:\Users\username\Documents` on Windows).*
 * There are over 500,000 global data points which can make plotting slow. You
   can choose to plot a random subset of 10,000 points (e.g., using `sample_n`
   from the `dplyr` package) to limit the time it takes to generate.
