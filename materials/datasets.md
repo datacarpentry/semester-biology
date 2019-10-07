@@ -28,3 +28,4 @@ title: List of datasets
 | DNA sequences | txt | <http://www.datacarpentry.org/semester-biology/data/dna-sequences-1.txt> |
 | Archaea DNA sequences | fasta | <http://www.datacarpentry.org/semester-biology/data/archaea-dna.zip> |
 | Western Ghats tree data | tsv | <http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt> |
+| Backup Bioclim Data | zip | <http://www.datacarpentry.org/semester-biology/data/wc10.zip>
