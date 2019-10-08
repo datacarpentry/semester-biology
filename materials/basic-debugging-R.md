@@ -3,6 +3,7 @@ layout: page
 element: notes
 title: Basic Debugging
 language: R
+time: 20 minutes
 ---
 
 > * Copy and paste the example broken script into R

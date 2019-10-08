@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Problem decomposition
+time: 30 minutes
 ---
 
 * Take a break learning commands to talk about general approaches
 * Real computational tasks are complicated. To accomplish them you need to
   **think before you code**.
 
-## Problem decomposition steps
+## Problem decomposition steps (10 minutes)
 
 1.  Understand the problem
     1. Restate the problem in your own words.
@@ -15,40 +16,25 @@ title: Problem decomposition
     3. Ask questions for clarification (in class these questions might be to
        your instructor, but most of the time they will be asking either yourself
        or your collaborators).
-2.  Break the problem down into a few large pieces. Write these down, either on
-    paper or as comments in a file.
-3.  Break complicated pieces down into smaller pieces. Keep doing this until all
-    of the pieces are small.
-4.  Code one small piece at a time.
+2.  Break the problem down
+    1.  Into a few large pieces.
+    2.  Write down, either on paper or as comments in a file.
+    3.  Break complicated pieces down into smaller pieces.
+    4.  Keep doing this until all of the pieces are small.
+3.  Code one small piece at a time.
     1. Think about how to implement it.
     2. Write the code.
-    3. Test it... on it's own.
-    4. Fix any problems.
+    3. Test it on it's own and fix any problems.
 
-### Example
+## Exercises (15 minutes)
 
-> Lead students through building this example up piece by piece. First do then
-> top level, then breakdown one bullet, etc.
+* This week we will be working on more complex exercises
+* Show end result of first exercise
+* Take time now in class to understand and break down the problem
+* Spend 15 minutes working these first two steps
+* Only start coding if you've full understood and broken down the problem
 
-Make a graph of the relationship between diameter and height in trees and
-highlight the relationship for a single species.
-
-1. Prepare data on diameter and height
-    1. Download data
-    2. Import data
-    3. Clean data
-        1. Filter nulls
-2. Make plot
-    1. Plot diameter vs height for all species
-        1. Basic plot
-        2. Good labels
-        3. Transformation?
-        4. Colors?
-    2. Add points for highlighted species
-    3. Clean up plot
-3. Reproducibility check
-
-## Make a simpler version first
+## Make a simpler version first (5 minutes)
 
 If you aren't sure how to do something, make a simpler version that you do know
 how to do first. 
