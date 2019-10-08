@@ -5,11 +5,7 @@ title: Basic Debugging
 language: R
 ---
 
-> Remember to
->
-> * download [`debugging-example-unfixed.R`]({{ site.baseurl }}/code/debugging-example-unfixed.R) and [`debugging-example-fixed.R`]({{ site.baseurl }}/code/debugging-example-fixed.R).
-> * send `debugging-example-unfixed.R` to students so they can follow along.
-> * set up a new `Git` project that includes `debugging-example-unfixed.R`.
+> * Copy and paste the example broken script into R
 
 ## Basic Manual Debugging Strategy
 
@@ -18,21 +14,54 @@ language: R
         * Hypothesize about what is wrong.
         * Make one change that is expected to fix error.
         * Check if change worked/fixed error.
-    * Read the error message.
-    * Talk through the code.
-        * Observe what the code is doing.
-        * [Rubber duck programming](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
     * **Do not change something without a reason.**
+    * Developing hypotheses (observe)
+      * See where the code failed.
+      * Read the error message.
+      * Observe what the code is doing.
+        * Look at the current state of the environment (snapshot of what's going on)
+        * Talk through the code.
+        * [Rubber duck programming](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+    * Run the code line by line checking each step.
 
-### Observe
+### Example
 
-> Run `debugging-example-unfixed.R`.
+> * Creat a file with the following code in it
+> * Run it
+> * Work through debugging the code
 
-* Read the error message and try to fix it.
-* Where did code fail? 
-    * Traceback
-    * `options(error = tamper::tamper)` helps with pipes (`%>%`)
-* Read the code.
-* Look at the current state of the environment.
-    * This gives us a snapshot of what's going on in the code.
-* Run the code line by line checking each step.
+```r
+library(dplyr)
+library(ggplot)
+
+surveys <- read.csv('https://ndownloader.figshare.com/files/2292172')
+
+do_counts_by_year <- surveys %>%
+  filter(species == "DO") %>%
+  group_by(year)
+  summarize(count = n())
+
+ggplot(do_counts_by_year, aes(x = year, y = count)) +
+  geom_point() +
+  geom_line() +
+  labels(x = "Year", y = "Count")
+```
+
+### Debugged version of example
+
+```r
+library(dplyr)
+library(ggplot2)
+
+surveys <- read.csv('https://ndownloader.figshare.com/files/2292172')
+
+do_counts_by_year <- surveys %>%
+  filter(species_id == "DO") %>%
+  group_by(year) %>%
+  summarize(count = n())
+
+ggplot(do_counts_by_year, aes(x = year, y = count)) +
+  geom_point() +
+  geom_line() +
+  labs(x = "Year", y = "Count")
+```
