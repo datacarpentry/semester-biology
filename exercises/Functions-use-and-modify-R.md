@@ -29,12 +29,11 @@ get_mass_from_length_theropoda <- function(length){
 
 1. Add a comment to this function so that you know what it does.
 2. Use this function to print out the mass of a Spinosaurus that is 16 m long
-based on its reassembled skeleton. *Spinosaurus is a predator that is bigger,
-and therefore, by definition, cooler, than that stupid Tyrannosaurus that
-everyone likes so much.*
+   based on its reassembled skeleton.
 3. Create a new version of this function called `get_mass_from_length()` that
-estimates the mass of an organism in kg based on its length in meters by taking
-length, a, and b as parameters. To be clear we want to pass the function all 3
-values that it needs to estimate a mass as parameters. This makes it much easier
-to reuse for all of the non-theropod species. Use this new function to estimate
-the mass of a Sauropoda (`a = 214.44`, `b = 1.46`) that is 26 m long.
+   estimates the mass of an organism in kg based on its length in meters by
+   taking `length`, `a`, and `b` as parameters. This lets us pass the function
+   all 3 values that it needs to estimate a mass as parameters, which makes it
+   much easier to reuse for all of the non-theropod species. Use this new
+   function to estimate the mass of a Sauropoda (`a = 214.44`, `b = 1.46`) that
+   is 26 m long.
