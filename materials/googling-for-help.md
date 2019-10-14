@@ -23,13 +23,14 @@ language: R
 
 ### Example
 
-* How to rename columns in dplyr
-* Search: `dplyr rename column`
+* How to change the name of columns in dplyr
+* Search: `dplyr change name column`
     * Name of package (if not in a distinctly name package include `r` or
       `rstats`)
     * The thing you want to do using technical terms
     * Keep it simple
     * Sometimes first searches show you how to ask the question
+* Switch to `dplyr rename column`
 * Check the date
     * Older results might be out of date
     * Can restrict to newer posts in search (but often more advanced)
