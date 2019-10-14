@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Functions
 language: R
-exercises: ['Writing Functions', 'Use and Modify', 'Combining Functions', 'Climate Space Rewrite']
-points: [15, 15, 30, 40]
+exercises: ['Writing Functions', 'Use and Modify', 'Default Arguments', 'Combining Functions', 'Climate Space Rewrite']
+points: [20, 20, 20, 20, 20]
 ---
 
 #### Learning Objectives
