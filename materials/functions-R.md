@@ -41,6 +41,19 @@ function_name <- function(inputs) {
 }
 ```
 
+* The braces indicate that the lines of code are a group that gets run together
+
+```r
+{a = 2
+b = 3
+a + b}
+```
+
+* Pressing run anywhere in this group runs all the lines in that group
+* A function runs all of the lines of code in the braces
+* Using the arguments provided
+* And then returns the output
+
 ```
 calc_shrub_vol <- function(length, width, height) {
   volume <- length * width * height
@@ -51,8 +64,13 @@ calc_shrub_vol <- function(length, width, height) {
 * Creating a function doesn't run it.
 * Call the function with some arguments.
 
-```
+```r
 calc_shrub_vol(0.8, 1.6, 2.0)
+```
+
+* Store the output to use it later in the program
+
+```r
 shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
@@ -71,7 +89,8 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
         * Very confusing and error prone to use a variable that isn't passed in
           as an argument
 
-> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R).
+> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R) and
+> [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
 
 ### Default arguments
 
@@ -88,6 +107,10 @@ calc_shrub_vol(width = 2)
 calc_shrub_vol(0.8, 1.6, 2.0)
 calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 ```
+
+> Do [Default Arguments]({{ site.baseurl }}/exercises/Functions-default-arguments-R).
+
+> *Discuss why passing `a` and `b` in is more useful than having them fixed*
 
 ### Named vs unnamed arguments
 
@@ -111,10 +134,6 @@ calc_shrub_vol(2.0, 0.8, 1.6)
 * In many cases there are *a lot* of optional arguments
     * Convention to always name optional argument
 
-> Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
->
-> * Discuss why passing `a` and `b` in is more useful than having them fixed*
-
 ### Combining Functions
 
 * Each function should be single conceptual chunk of code
@@ -122,19 +141,34 @@ calc_shrub_vol(2.0, 0.8, 1.6)
 
 * Calling multiple functions in a row
 
-```
+```r
 est_shrub_mass <- function(volume){
   mass <- 2.65 * volume^0.9
 }
 
-shrub_mass <- est_shrub_mass(calc_shrub_vol(0.8, 1.6, 2.0))
+shrub_volume <- calc_shrub_vol(0.8, 1.6, 2.0)
+shrub_mass <- est_shrub_mass(shrub_volume)
+```
 
+* We can also use pipes with our own functions
+* The output from the first function becomes the first argument for the second function
+
+```r
 library(dplyr)
 shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) %>%
   est_shrub_mass()
 ```
 
-* Calling functions from inside other functions
+* We can nest functions
+
+```r
+shrub_mass <- est_shrub_mass(calc_shrub_vol(0.8, 1.6, 2.0))
+```
+
+* But we careful with this because it can make code difficult to read
+* Don't nest more than two functions
+
+* Can also call functions from inside other functions
 * Allows organizing function calls into logical groups
 
 ```
@@ -146,6 +180,9 @@ est_shrub_mass_dim <- function(length, width, height){
 
 est_shrub_mass_dim(0.8, 1.6, 2.0)
 ```
+
+* We ***don't*** need to pass the function name into the function
+* That's the one violation of the black box rule
 
 > Do [Combining Functions]({{ site.baseurl }}/exercises/Functions-combining-functions-R).
 
