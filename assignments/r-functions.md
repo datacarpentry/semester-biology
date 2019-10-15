@@ -13,8 +13,6 @@ points: [20, 20, 20, 20, 20]
 >
 > - use, modify, and write custom functions
 > - use the output of one function as the input of another
-> - understand and use the basic relational operators
-> - use an `if` statement to evaluate conditionals
 
 {% include reading.html %}
 
