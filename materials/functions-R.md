@@ -8,13 +8,7 @@ language: R
 ### Understandable and reusable code
 
 * Write code in understandable chunks.
-    * Clear variable names
-    * Consistent indentation and line spacing
-    * Good commenting
-    * Functions
 * Write reusable code.
-    * Concise and modular script
-    * Functions with general structure 
 
 ### Understandable chunks
 
@@ -74,6 +68,8 @@ calc_shrub_vol(0.8, 1.6, 2.0)
 shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
+> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R)
+
 * Walk through function execution (using debugger)
     * Call function
 	* Assign 0.8 to length, 1.6 to width, and 2.0 to height inside function
@@ -89,8 +85,7 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
         * Very confusing and error prone to use a variable that isn't passed in
           as an argument
 
-> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R) and
-> [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
+> Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
 
 ### Default arguments
 
