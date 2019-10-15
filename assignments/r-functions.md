@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Functions
 language: R
-exercises: ['Writing Functions', 'Use and Modify', 'Default Arguments', 'Combining Functions', 'Climate Space Rewrite']
+exercises: ['Writing Functions', 'Use and Modify', 'Default Arguments', 'Combining Functions', 'Tree Biomass Challenge']
 points: [20, 20, 20, 20, 20]
 ---
 
