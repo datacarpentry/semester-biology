@@ -70,6 +70,12 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 
 > Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R)
 
+* Treat functions like a black box
+  * *Draw a box on board showing inputs->function->outputs*
+  * The only things the function knows about are the inputs we pass it
+  * The only thing the program knows about the function is the output it
+    produces
+
 * Walk through function execution (using debugger)
     * Call function
 	* Assign 0.8 to length, 1.6 to width, and 2.0 to height inside function
@@ -79,6 +85,9 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 
 * Treat functions like a black box.
     * Can't access a variable that was created in a function
+        * `> volume`
+        * `Error: object 'width' not found`
+    * Or an argument by name
         * `> width`
         * `Error: object 'width' not found`
     * 'Global' variables can influence function, but should not.
