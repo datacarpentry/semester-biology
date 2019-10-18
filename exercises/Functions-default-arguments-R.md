@@ -15,4 +15,4 @@ Set default values for `a` and `b` of `a = 39.9` and `b = 2.6` (the average valu
    is 22 m long (by setting `a` and `b` when calling the function).
 2. Use this function to estimate the mass of a dinosaur from an unknown
    taxonomic group that is 16m long (by not setting `a` and `b` so that the
-   default values are usedN).
+   default values are used).
