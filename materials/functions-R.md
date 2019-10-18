@@ -95,6 +95,7 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
           as an argument
 
 > Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
+> End of 1 hour class
 
 ### Default arguments
 
@@ -121,7 +122,7 @@ calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 * When to use or not use argument names
 
 ```
-calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
+calc_shrub_vol(length = 2.0, width = 0.8, height = 1.6)
 ```
 
 Or
@@ -133,7 +134,7 @@ calc_shrub_vol(2.0, 0.8, 1.6)
 * You can always use names
     * Value gets assigned to variable of that name
 * If not using names then order determines naming
-    * First value is `height`, second value is `length`...
+    * First value is `length`, second value is `width`, third value is `height`
     * If order is hard to remember use names
 * In many cases there are *a lot* of optional arguments
     * Convention to always name optional argument
@@ -163,6 +164,8 @@ shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) %>%
   est_shrub_mass()
 ```
 
+> Do [Combining Functions]({{ site.baseurl }}/exercises/Functions-combining-functions-R).
+
 * We can nest functions
 
 ```r
@@ -188,8 +191,6 @@ est_shrub_mass_dim(0.8, 1.6, 2.0)
 * We ***don't*** need to pass the function name into the function
 * That's the one violation of the black box rule
 
-> Do [Combining Functions]({{ site.baseurl }}/exercises/Functions-combining-functions-R).
-
 ### Documentation & Comments
 
 * Documentation
@@ -198,3 +199,12 @@ est_shrub_mass_dim(0.8, 1.6, 2.0)
 * Comments
     * Why & how code works
     * Only if it code is confusing to read
+
+### Working with functions in RStudio
+
+* It is possible to find and jump between functions
+* Click on list of functions at bottom of editor and select
+
+* Can be helpful to clearly see what is a function
+* Can have RStudio highlight them
+*  Global Options -> Code -> Display -> Highlight R function calls
