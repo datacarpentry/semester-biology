@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Functions
 language: R
-exercises: ['Writing Functions', 'Use and Modify', 'Default Arguments', 'Combining Functions', 'Tree Biomass Challenge']
-points: [20, 20, 20, 20, 20]
+exercises: ['Writing Functions', 'Use and Modify', 'Default Arguments', 'Combining Functions', 'Tree Biomass Challenge', 'Climate Space Rewrite']
+points: [20, 20, 20, 20, 20, "optional"]
 ---
 
 #### Learning Objectives
