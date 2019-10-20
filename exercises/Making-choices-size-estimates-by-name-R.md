@@ -30,6 +30,12 @@ Run the function for:
 2. A *Theropoda* that is 8 meters long.
 3. A *Sauropoda* that is 12 meters long.
 
-*Challenge (optional)*: If the name doesn't match any of these values have the
+*Challenge (**optional**)*: If the name doesn't match any of these values have the
 function return `NA` and print out a message that it doesn't know how to convert
-that group.
+that group. Run the function for a *Ankylosauria* that is 13 meters long.
+
+*Challenge (**optional**)*: Change your function so that it uses two different
+values of `a` and `b` for *Stegosauria*. When *Stegosauria* is greater than 8
+meters long use the equation above. When it is less than 8 meters long use `a` =
+`8.5` and `b` = `2.8`. Run the function for a *Stegosauria* that is 6 meters
+long.

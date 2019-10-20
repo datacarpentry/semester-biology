@@ -19,7 +19,7 @@ language: R
 
 ### Whitespace
 
-* Indentation what the brain reconizes, use it regardless of language (and braces)
+* Indentation what the brain recognizes, use it regardless of language (and braces)
 * 2 space indents
 
 ```

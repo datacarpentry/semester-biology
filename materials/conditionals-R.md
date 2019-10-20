@@ -20,7 +20,7 @@ language: R
     * `<=`, `>=`
     * `%in%`
 
-```
+```r
 10 > 5
 "aang" == "aang"
 3 != 3
@@ -31,59 +31,47 @@ language: R
     * `and`, `&` 
     * `or`, `|`
 
-```
+```r
 5 > 2 & 6 >=10
 5 > 2 | 6 >=10
 ```
 
-* Appearances:
-    * `subset()`
-    * `dplyr::filter()`
-    * `if()`, `else`, `while()`
+* Vectors of values compared to a single value return one logical per value
+
+```r
+c(1, 1, 2, 3, 1) == 1
+```
+
+* Checks each value to see if equal to 1
+* This is what subsetting approaches use to subset
+* They keep the values where the condition is `TRUE`
+
+```r
+site = c('a', 'b', 'c', 'd')
+state = c('FL', 'FL', 'GA', 'AL')
+state == 'FL'
+site[state == 'FL']
+site[c(TRUE, TRUE, FALSE, FALSE)]
+```
+
+* Used in `dplyr::filter()` and other methods for subsetting data
 
 > Do Tasks 1-4 in [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
-> Discuss floating point with students.
->
-> * Did you notice anything weird while you were doing the exercise?
-> * Take a closer look at item 4.
-
-### Floating point
-
-```
-> x <- 1.3
-> y <- 2.8
->  x * 2 + 0.2 == y
-[1] FALSE
-> 1.3 * 2 + 0.2
-[1] 2.8
-```
-
-* What's going on?
-    * Unexpected result from computer arithmetic
-    * Numbers combine to include very small trailing digit  
-        * See this more easily in Python
-
-```
->>> 1.3 * 2 + 0.2 == 2.8
-False
->>> 1.3 * 2 + 0.2
-2.8000000000000003
-```
-
-* Avoid floating point problems.
-    * `round(x * 2 + 0.2, 1) == y`
-    * `all.equal(x * 2 + 0.2, y)`
-
 ### `if` statements
 
-* Conditional statements generate `"logical"` to filter inputs.
-* `if` statements use conditional statements to control flow of program processing.
-* `if (the conditional statement is TRUE ) { do something }`
+* Conditional statements generate logical values to filter inputs.
+* `if` statements use conditional statements to control flow of the program.
+
+```r
+if (the conditional statement is TRUE ) {
+  do something
+}
+```
 
 * Different mass calculations for different vegetation types
 
-```
+```r
 veg_type <- "tree"
 volume <- 16.08
 if (veg_type == "tree") {
@@ -92,13 +80,13 @@ if (veg_type == "tree") {
 print(mass)
 ```
 
-```
+```r
 veg_type <- "shrub"
 ```
 
 * `} else { do something else }`
 
-```
+```r
 if (veg_type == "tree") {
   mass <- 2.65 * volume^0.9
 } else {
@@ -111,7 +99,7 @@ print(mass)
 * `} else if ( a different conditional statement is TRUE ) {` 
     * do something else
 
-```
+```r
 if (veg_type == "tree") {
   mass <- 2.65 * volume^0.9
 } else if (veg_type == "grass") {
@@ -123,7 +111,7 @@ if (veg_type == "tree") {
 print(mass)
 ```
 
-```
+```r
 veg_type = "liana"
 ```
 
@@ -131,15 +119,15 @@ veg_type = "liana"
 
 ## Convert to function
 
-```
+```r
 est_mass <- function(volume, veg_type){
   if (veg_type == "tree") {
-	mass <- 2.65 * volume^0.9
+    mass <- 2.65 * volume^0.9
   } else if (veg_type == "grass") {
-	mass <- 0.65 * volume^1.2
+    mass <- 0.65 * volume^1.2
   } else {
-	print("I don't know how to convert volume to mass for that vegetation type")
-	mass <- NA
+    print("I don't know how to convert volume to mass for that vegetation type")
+    mass <- NA
   }
   return(mass)
 }
@@ -151,5 +139,35 @@ est_mass(1.6, "shrub")
 
 > Do [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
 
+### Nested conditionals
+
+* Sometimes decisions are more complicated
+* Can "nest" conditionals inside of one another
+
+```r
+est_mass <- function(volume, veg_type, age){
+  if (veg_type == "tree") {
+    if (age < 5) {
+      mass <- 1.6 * volume^0.8
+    } else {
+      mass <- 2.65 * volume^0.9
+  }
+  } else if (veg_type == "grass" | veg_type == "shrub") {
+    mass <- 0.65 * volume^1.2
+  } else {
+    print("I don't know how to convert volume to mass for that vegetation type")
+    mass <- NA
+  }
+  return(mass)
+}
+
+est_mass(1.6, "tree", age = 2)
+est_mass(1.6, "shrub", age = 5)
+```
+
+* First checks if the vegetation type is "tree"
+* If it is checks to see if it is < 5 years old
+* If so does one calculation, if not does another
+* But nesting can be difficult to follow so try to minimize it
+
 > Assign the rest of the exercises.
-> 
