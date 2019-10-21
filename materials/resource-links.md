@@ -42,3 +42,7 @@ agriculture
 - [International Panel of Experts on Sustainable Food Systems](http://www.ipes-food.org/agroecology)
 - [Sociedad Cientifica Latinoamericana de Agroecologia](http://agroeco.org/)
 - [This Farm Cares Program](https://www.thisfarmcares.org)
+- [Villages Landscaping](http://sfyl.ifas.ufl.edu/media/sfylifasufledu/lake/docs/nursery-amp-greenhouse/Final-Native-Landscape-Plans.pdf)
+- [Florida Friendly Landscaping](https://ffl.ifas.ufl.edu/homeowners/nine_principles.htm)
+- [Buck Island Archbold Research Station](https://www.archbold-station.org/html/research/agro/agroovw.html)
+- [Map: US Food Deserts](https://www.ers.usda.gov/amber-waves/2011/december/data-feature-mapping-food-deserts-in-the-us/)
