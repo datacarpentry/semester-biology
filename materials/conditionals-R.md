@@ -171,7 +171,7 @@ if (x > 2){
 }
 ```
 
-## Convert to function
+### Convert to function
 
 ```r
 est_mass <- function(volume, veg_type){
@@ -193,7 +193,7 @@ est_mass(1.6, "shrub")
 
 > Do [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
 
-## Automatically extracting functions
+### Automatically extracting functions
 
 * Can pull code out into functions
 * Highlight the code
