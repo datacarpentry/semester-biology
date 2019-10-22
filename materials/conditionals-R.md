@@ -124,7 +124,7 @@ print(mass)
 veg_type = "liana"
 ```
 
-> Do [Simple If Statement]({{ site.baseurl }}/exercises/Making-choices-simple-if-statement-R).
+> Do Tasks 1-3 in [Basic If Statement]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
 ## Convert to function
 
