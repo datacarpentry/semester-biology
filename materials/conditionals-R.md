@@ -74,9 +74,25 @@ if (the conditional statement is TRUE ) {
 ```r
 x = 6
 if (x > 5){
-  2 * x
+  x = x^2
 }
+x
 ```
+
+* `x > 5` is `TRUE`, so the code in the `if` runs
+* `x` is now 6^2 or 36
+* Change `x` to 4
+
+```r
+x = 4
+if (x > 5){
+  x = x^2
+}
+x
+```
+
+* `x > 5` is `FALSE`, so the code in the `if` doesn't run
+* `x` is still 4
 
 * Different mass calculations for different vegetation types
 
