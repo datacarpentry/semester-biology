@@ -119,7 +119,7 @@ if (veg_type == "tree") {
   mass <- 2.65 * volume^0.9
 } else if (veg_type == "grass") {
   mass <- 0.65 * volume^1.2
-  }
+}
 mass
 ```
 
@@ -192,6 +192,13 @@ est_mass(1.6, "shrub")
 ```
 
 > Do [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
+
+## Automatically extracting functions
+
+* Can pull code out into functions
+* Highlight the code
+* Code -> Extract Function
+* Provide a name for the function
 
 ### Nested conditionals
 
