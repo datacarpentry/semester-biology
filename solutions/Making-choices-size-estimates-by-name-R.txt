@@ -4,8 +4,12 @@
 
 [1] 8070.685
 
+[1] NA
+
 Challenge Answers:
 
+(modified answer to 4)
+[1] "No known estimation for  Ankylosauria"
 [1] NA
 
 [1] 1283.047
