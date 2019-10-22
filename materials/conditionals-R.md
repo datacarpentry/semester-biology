@@ -142,11 +142,34 @@ if (veg_type == "tree") {
 mass
 ```
 
+> Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+
+### Multiple ifs vs else if
+
+* Multiple ifs check each conditional separately
+* Executes code of all conditions that are `TRUE`
+
 ```r
-veg_type = "liana"
+x <- 5
+if (x > 2){
+  x * 2
+}
+if (x > 4){
+  x * 4
+}
 ```
 
-> Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+* `else if` checks each condition sequentially
+* Executes code for the first condition that is `TRUE`
+
+```r
+x <- 5
+if (x > 2){
+  x * 2
+} else if (x > 4){
+  x * 4
+}
+```
 
 ## Convert to function
 
