@@ -6,10 +6,10 @@ language: R
 ---
 
 1\. Complete (i.e., copy into your code and them modify) the following `if`
-   statement so that if `age_class` is equal to "sappling" it sets `y <- 10`.
+   statement so that if `age_class` is equal to "sapling" it sets `y <- 10`.
 
 ```r
-age_class = "sappling"
+age_class = "sapling"
 if (){
   
 }
@@ -17,7 +17,7 @@ y
 ```
 
 2\. Complete the following `if` statement so that if `age_class` is equal to
-   "sappling" it sets `y <- 10` and if `age_class` is equal to "seedling" it
+   "sapling" it sets `y <- 10` and if `age_class` is equal to "seedling" it
    sets `y <- 5`.
 
 ```r
@@ -29,7 +29,7 @@ y
 ```
 
 3\. Complete the following `if` statement so that if `age_class` is equal to
-   "sappling" it sets `y <- 10` and if `age_class` is equal to "seedling" it
+   "sapling" it sets `y <- 10` and if `age_class` is equal to "seedling" it
    sets `y <- 5` and if `age_class` is something else then it sets the value of
    `y <- 0`.
 
