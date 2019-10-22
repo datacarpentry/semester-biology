@@ -107,17 +107,28 @@ if (veg_type == "tree") {
 mass
 ```
 
+> Do Task 1 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+
+* If `veg_type == "tree"` run code, if not do nothing
+* But in this case our code would error
+* **broom environment** then run
+ 
 ```r
 veg_type <- "shrub"
+volume <- 16.08
+if (veg_type == "tree") {
+  mass <- 2.65 * volume^0.9
+  }
+mass
 ```
 
+* Use `else` to specific what to do if conditional is not `TRUE`
 * `} else { do something else }`
 
 ```r
 if (veg_type == "tree") {
   mass <- 2.65 * volume^0.9
 } else {
-  print("I don't know how to convert volume to mass for that vegetation type")
   mass <- NA
 }
 mass
@@ -132,7 +143,6 @@ if (veg_type == "tree") {
 } else if (veg_type == "grass") {
   mass <- 0.65 * volume^1.2
 } else {
-  print("I don't know how to convert volume to mass for that vegetation type")
   mass <- NA
 }
 mass
@@ -142,7 +152,7 @@ mass
 veg_type = "liana"
 ```
 
-> Do Tasks 1-3 in [Basic If Statement]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
 ## Convert to function
 
