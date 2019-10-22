@@ -69,6 +69,15 @@ if (the conditional statement is TRUE ) {
 }
 ```
 
+* Example
+
+```r
+x = 6
+if (x > 5){
+  2 * x
+}
+```
+
 * Different mass calculations for different vegetation types
 
 ```r
