@@ -109,35 +109,29 @@ mass
 
 > Do Task 1 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
-* If `veg_type == "tree"` run code, if not do nothing
-* But in this case our code would error
-* **broom environment** then run
+* Often want to chose one of several options
+* Can add more conditions and associated actions with `else if`
  
 ```r
-veg_type <- "shrub"
+veg_type <- "grass"
 volume <- 16.08
 if (veg_type == "tree") {
   mass <- 2.65 * volume^0.9
+} else if (veg_type == "grass") {
+  mass <- 0.65 * volume^1.2
   }
 mass
 ```
 
-* Use `else` to specific what to do if conditional is not `TRUE`
-* `} else { do something else }`
+* Checks the first condition
+* If `TRUE` runs that condition's code and skips the rest
+* If not it checks the next one until it runs out of conditions
+
+* Can specify what to do if none of the conditions is `TRUE` using `else` on its own
 
 ```r
-if (veg_type == "tree") {
-  mass <- 2.65 * volume^0.9
-} else {
-  mass <- NA
-}
-mass
-```
-
-* `} else if ( a different conditional statement is TRUE ) {` 
-    * do something else
-
-```r
+veg_type <- "shrub"
+volume <- 16.08
 if (veg_type == "tree") {
   mass <- 2.65 * volume^0.9
 } else if (veg_type == "grass") {
