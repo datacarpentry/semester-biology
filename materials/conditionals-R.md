@@ -93,6 +93,8 @@ x
 
 * `x > 5` is `FALSE`, so the code in the `if` doesn't run
 * `x` is still 4
+* This is *not* a function, so everything that happens in the if statement
+  influences the global environment
 
 * Different mass calculations for different vegetation types
 
@@ -102,7 +104,7 @@ volume <- 16.08
 if (veg_type == "tree") {
   mass <- 2.65 * volume^0.9
   }
-print(mass)
+mass
 ```
 
 ```r
@@ -118,7 +120,7 @@ if (veg_type == "tree") {
   print("I don't know how to convert volume to mass for that vegetation type")
   mass <- NA
 }
-print(mass)
+mass
 ```
 
 * `} else if ( a different conditional statement is TRUE ) {` 
@@ -133,7 +135,7 @@ if (veg_type == "tree") {
   print("I don't know how to convert volume to mass for that vegetation type")
   mass <- NA
 }
-print(mass)
+mass
 ```
 
 ```r
