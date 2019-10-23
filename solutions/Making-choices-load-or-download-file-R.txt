@@ -1,0 +1,15 @@
+  record_id month day year plot_id species_id sex hindfoot_length weight
+1         1     7  16 1977       2         NL   M              32     NA
+2         2     7  16 1977       3         NL   M              33     NA
+3         3     7  16 1977       2         DM   F              37     NA
+4         4     7  16 1977       7         DM   M              36     NA
+5         5     7  16 1977       3         DM   M              35     NA
+6         6     7  16 1977       1         PF   M              14     NA
+
+  species_id            genus         species   taxa
+1         AB       Amphispiza       bilineata   Bird
+2         AH Ammospermophilus         harrisi Rodent
+3         AS       Ammodramus      savannarum   Bird
+4         BA          Baiomys         taylori Rodent
+5         CB  Campylorhynchus brunneicapillus   Bird
+6         CM      Calamospiza     melanocorys   Bird
