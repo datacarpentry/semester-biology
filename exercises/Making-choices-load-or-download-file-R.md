@@ -14,7 +14,7 @@ the file at a `url` to a specific `filename`.
 
 1. Write a conditional statement that checks if `surveys.csv` exists in the
    working directory, downloads it from
-   "<https://ndownloader.figshare.com/files/2292172>" using if it is not, loads the file
+   <https://ndownloader.figshare.com/files/2292172> using if it is not, loads the file
    into a data frame and displays the first few rows using the `head()`
    function.
 
@@ -23,5 +23,5 @@ the file at a `url` to a specific `filename`.
    is the second argument. The function should return the resulting data frame.
    Add some documentation to the top of the function describing what it does.
    Call this function using "species.csv" as the file name and
-   "<https://ndownloader.figshare.com/files/3299483>" as the link. Print the first
+   <https://ndownloader.figshare.com/files/3299483> as the link. Print the first
    few rows of the resulting data frame using `head()`.
