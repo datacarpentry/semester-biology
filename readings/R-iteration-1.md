@@ -8,8 +8,9 @@ language: R
 * Topics
 
   * Iteration
-  * Problem decomposition
+  * Style
 
 * Readings
 
-  * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R/)
+  * [Introduction to apply, lapply, sapply, and tapply](https://www.guru99.com/r-apply-sapply-tapply.html)
+  * [Hadley Wickham's Style Guide](http://adv-r.had.co.nz/Style.html)
