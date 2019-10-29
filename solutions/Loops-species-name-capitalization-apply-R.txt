@@ -1,0 +1,13 @@
+  CYGNUS OLOR    AIX SPONSA    ANAS ACUTA 
+"Cygnus olor"  "Aix sponsa"  "Anas acuta" 
+
+[[1]]
+[1] "Cygnus olor"
+
+[[2]]
+[1] "Aix sponsa"
+
+[[3]]
+[1] "Anas acuta"
+
+[1] "Cygnus olor" "Aix sponsa"  "Anas acuta"
