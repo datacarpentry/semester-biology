@@ -1,1 +1,6 @@
-[1] "cygnus" "aix"    "anas"
+[1] "cygnus" "aix"    "anas"  
+
+      species  genus
+1 cygnus olor cygnus
+2  aix sponsa    aix
+3  anas acuta   anas
