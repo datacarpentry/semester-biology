@@ -46,24 +46,27 @@ est_mass <- function(volume){
   return(mass)
 }
 
-est_mass(c(1.6, 5.6, 3.1))
+volumes = c(1.6, 5.6, 3.1)
+est_mass(volumes)
 ```
 
 * Many functions in R are vectorized
 
 ```r
 library(stringr)
-str_to_upper(c('katherine johnson', 'mary jackson', 'dorothy vaughan'))
+
+str_to_upper("tree")
+plant_types <- c("tree", "grass", "tree")
+str_to_upper(plant_types)
 ```
 
 * Work on vectors or lists (sometimes columns of data frames)
 
 ```r
-nasa_scientists <- data.frame(name = c('katherine johnson', 'mary jackson', 'dorothy vaughan'),
-                              job = c('mathematician', 'engineer', 'mathematician'))
-toupper(nasa_scientists["name"])
-toupper(nasa_scientists$name)
-nasa_scientists$names_upper = toupper(nasa_scientists$name)
+plant_data <- data.frame(volumes, plant_types)
+toupper(nasa_scientists["plant_types"])
+toupper(nasa_scientists$plant_types)
+plant_data$veg_type_upper = toupper(plant_data$plant_types)
 ```
 
 > Do [Vectorized Genus Extraction]({{ site.baseurl }}/exercises/Loops-vectorized-genus-extraction-R).
@@ -81,14 +84,13 @@ nasa_scientists$names_upper = toupper(nasa_scientists$name)
 * Work on a single vector or list
 
 ```r
-plant_vols <- c(1.6, 5.6, 3.1)
-sapply(X = plant_vols, FUN = est_mass)
+sapply(X = volumes, FUN = est_mass)
 ```
 
 * Same as
 
 ```r
-c(est_mass(plant_vols[1]), est_mass(plant_vols[2]), est_mass(plant_vols[3]))
+c(est_mass(volumes[1]), est_mass(volumes[2]), est_mass(volumes[3]))
 ```
 
 * Do same action on many things with single line of code
@@ -98,7 +100,7 @@ c(est_mass(plant_vols[1]), est_mass(plant_vols[2]), est_mass(plant_vols[3]))
 * `lapply` returns a "list"
 
 ```r
-lapply(X = plant_vols, FUN = est_mass)
+lapply(X = volumes, FUN = est_mass)
 ```
 
 > Do [Vectorized Genus Extraction]({{ site.baseurl }}/exercises/Loops-species-name-capitalization-apply-R).
@@ -134,40 +136,44 @@ est_mass_type <- function(volume, veg_type){
 }
 
 est_mass_type(1.6, "tree")
-plant_types <- c("tree", "grass", "tree")
-est_mass_type(plant_vols, plant_types) # Warning & wrong result
+est_mass_type(volumes, plant_types) # Warning & wrong result
 ```
 
-* Doesn't vectorize, but works with `mapply()`
+* Doesn't vectorize, due to conditionals
+* Use an `apply` function instead
+* `mapply()` because "multiple" inputs
 
 ```r
-mapply(FUN = est_mass_type, volume = plant_vols, veg_type = plant_types)
+mapply(FUN = est_mass_type, volume = volumes, veg_type = plant_types)
 ```
 
-* First argument is function, rest are function arguments
-* Use `map` functions from `purrr` package are similar to apply
+* First argument is function
+* All other arguments are named arguments for the function
 
 > Do [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
 
+* `map` functions from `purrr` package are similar to apply
 
 ### Integrating with `dplyr`
 
+* Remember our data frame
+
 ```r
-plant_data <- data.frame(volume = plant_vols, veg_type = plant_types)
+plant_data
 ```
 
 * Directly use vectorized functions with `mutate`
 
 ```r
-mutate(plant_data, masses = est_mass(volume))
+mutate(plant_data, masses = est_mass(volumes))
 ```
 
 * Use apply functions and add the results as a new column
 
 ```r
 masses = mapply(est_mass_type,
-                volume = plant_data$volume,
-                veg_type = plant_data$veg_type)
+                volume = plant_data$volumes,
+                veg_type = plant_data$plant_types)
 plant_data$masess = masses
 ```
 
@@ -176,7 +182,10 @@ plant_data$masess = masses
 ```r
 plant_data %>%
   rowwise() %>%
-  mutate(masses = est_mass_type(volume, veg_type))
+  mutate(masses = est_mass_type(volumes, plant_types))
 ```
 
 > Do [Crown Volume Calculation]({{ site.baseurl }}/exercises/Loops-crown-volume-calculation-R).
+
+* Custom summarizing functions also work with `dplyr`
+* Need to take a vector as input and return a single value as output
