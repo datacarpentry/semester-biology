@@ -4,7 +4,7 @@ element: assignment
 title: Repeating Things 1
 language: R
 exercises: ['Vectorized Genus Extraction', 'Species Name Capitalization with Apply', 'Size Estimates Vectorized', 'Size Estimates By Name Apply', 'Tree Biomass Challenge', 'Crown Volume Calculation', 'Climate Space Iteration']
-points: [20, 20, 30, 30, optional, optional]
+points: [15, 15, 20, 20, 30, optional, optional]
 ---
 
 #### Learning Objectives
