@@ -64,8 +64,8 @@ str_to_upper(plant_types)
 
 ```r
 plant_data <- data.frame(volumes, plant_types)
-toupper(nasa_scientists["plant_types"])
-toupper(nasa_scientists$plant_types)
+str_to_upper(plant_data["plant_types"])
+str_to_upper(plant_data$plant_types)
 plant_data$veg_type_upper = toupper(plant_data$plant_types)
 ```
 
