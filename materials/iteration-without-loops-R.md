@@ -150,11 +150,13 @@ mapply(FUN = est_mass_type, volume = volumes, veg_type = plant_types)
 * First argument is function
 * All other arguments are named arguments for the function
 
-> Do [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
+> Do [Size Estimates Vectorized 1-2]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R/).
 
 * `map` functions from `purrr` package are similar to apply
 
 ### Integrating with `dplyr`
+
+#### One result per row
 
 * Remember our data frame
 
@@ -168,15 +170,6 @@ plant_data
 mutate(plant_data, masses = est_mass(volumes))
 ```
 
-* Use apply functions and add the results as a new column
-
-```r
-masses = mapply(est_mass_type,
-                volume = plant_data$volumes,
-                veg_type = plant_data$plant_types)
-plant_data$masess = masses
-```
-
 * Use `rowwise`
 
 ```r
@@ -185,7 +178,21 @@ plant_data %>%
   mutate(masses = est_mass_type(volumes, plant_types))
 ```
 
-> Do [Crown Volume Calculation]({{ site.baseurl }}/exercises/Loops-crown-volume-calculation-R).
+#### One result per group
 
 * Custom summarizing functions also work with `dplyr`
 * Need to take a vector as input and return a single value as output
+
+```r
+get_biomass <- function(volumes){
+  masses <- est_mass(volumes)
+  biomass <- sum(volumes)
+  return(biomass)
+}
+
+plant_data %>%
+  group_by(plant_types) %>%
+  summarize(biomass = biomass)
+```
+
+> Do [Size Estimates By Name]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
