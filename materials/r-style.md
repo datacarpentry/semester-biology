@@ -45,6 +45,9 @@ range(x, x + 10)
 ### Naming
 
 * snake_case
+* Descriptive: `estimate_biomass`
+* Not too long: `estimate_biomass_using_hanson_method`
+* Use whole words for accessibility
 
 ### Long lines
 
