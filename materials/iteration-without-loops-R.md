@@ -110,18 +110,6 @@ lapply(X = volumes, FUN = est_mass)
 * Handful of similar functions in `apply()` family
 * Differ depending on type of input and output data
 
-* `apply()` works on multi-dimensional data
-* Set `MARGIN` to tell it which dimension to calculate along
-* `1` for rows
-* `2` for columns
-
-```r
-counts = data.frame(sp1 = c(5, 4, 7, 6), sp2 = c(6, 2, 6, 9), sp3 = c(8, 16, 1, 0))
-counts
-apply(X = counts, MARGIN = 1, FUN = sum)
-apply(X = counts, MARGIN = 2, FUN = sum)
-```
-
 * `mapply()` for functions with multiple arguments
 * Vegetation type specific equations
 
@@ -153,6 +141,20 @@ mapply(FUN = est_mass_type, volume = volumes, veg_type = plant_types)
 > Do [Size Estimates Vectorized 1-2]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R/).
 
 * `map` functions from `purrr` package are similar to apply
+
+#### apply (**optional**)
+
+* `apply()` works on multi-dimensional data
+* Set `MARGIN` to tell it which dimension to calculate along
+* `1` for rows
+* `2` for columns
+
+```r
+counts = data.frame(sp1 = c(5, 4, 7, 6), sp2 = c(6, 2, 6, 9), sp3 = c(8, 16, 1, 0))
+counts
+apply(X = counts, MARGIN = 1, FUN = sum)
+apply(X = counts, MARGIN = 2, FUN = sum)
+```
 
 ### Integrating with `dplyr`
 
@@ -186,7 +188,7 @@ plant_data %>%
 ```r
 get_biomass <- function(volumes){
   masses <- est_mass(volumes)
-  biomass <- sum(volumes)
+  biomass <- sum(masses)
   return(biomass)
 }
 
