@@ -21,4 +21,4 @@ If the name is not any of these values set `a` and `b` to `NA`.
 
 2. Using `dplyr` add a new `masses` column to the data frame (using `rowwise`, `mutate` and your function).
 
-3. Make a histogram of of dinosaur lengths with one subplot for each species (using `facet_wrap`).
+3. Make a histogram of of dinosaur masses with one subplot for each species (using `facet_wrap`).
