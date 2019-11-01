@@ -15,7 +15,10 @@ language: R
     MYnameIS          ETHAN................... I_AM_36 years
                  OLD
 
-* Using the same style as others is helpful
+* Follow basic rules that make things readable
+* Using the same style consistently
+* Use the same style as others
+* Style Guide
 
 ### Whitespace
 
