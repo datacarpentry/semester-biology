@@ -180,6 +180,8 @@ plant_data %>%
   mutate(masses = est_mass_type(volumes, plant_types))
 ```
 
+> Do [Size Estimates By Name]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
+
 #### One result per group
 
 * Custom summarizing functions also work with `dplyr`
@@ -194,7 +196,5 @@ get_biomass <- function(volumes){
 
 plant_data %>%
   group_by(plant_types) %>%
-  summarize(biomass = biomass)
+  summarize(biomass = get_biomass(volumes))
 ```
-
-> Do [Size Estimates By Name]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
