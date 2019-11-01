@@ -82,3 +82,18 @@
 [487]  41805.513  20113.277  24071.440         NA         NA   8489.727
 [493]  24349.181         NA         NA  44921.367  26262.993  16883.382
 [499]  14444.693         NA
+
+# A tibble: 500 x 3
+   species      lengths masses
+   <fct>          <dbl>  <dbl>
+ 1 Stegosauria     18.5 24342.
+ 2 Ankylosauria    16.4    NA 
+ 3 Ankylosauria    23.7    NA 
+ 4 Sauropoda       23.9 22114.
+ 5 Ankylosauria    21.7    NA 
+ 6 Ankylosauria    21.4    NA 
+ 7 Theropoda       22.3 57349.
+ 8 Theropoda       15.2 14160.
+ 9 Theropoda       21.4 49678.
+10 Stegosauria     22.8 42106.
+# … with 490 more rows
