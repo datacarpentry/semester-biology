@@ -1,0 +1,17 @@
+[1] 24341.68 27017.90 67453.38 22114.19 53884.76 52026.34
+
+       species  lengths   masses
+1  Stegosauria 18.52588 24341.68
+2 Ankylosauria 16.43598 27017.90
+3 Ankylosauria 23.73421 67453.38
+4    Sauropoda 23.93411 22114.19
+5 Ankylosauria 21.68718 53884.76
+6 Ankylosauria 21.38363 52026.34
+
+# A tibble: 4 x 2
+  species      avg_mass
+  <fct>           <dbl>
+1 Ankylosauria   46819.
+2 Sauropoda      16104.
+3 Stegosauria    31924.
+4 Theropoda      45572.
