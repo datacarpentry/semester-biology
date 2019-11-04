@@ -17,8 +17,10 @@
         {% for solution in site.static_files %}
           {% assign solution_path = solution.path | split: '.' | first %}
           {% assign size = solution_path | size | minus: 2 %}
+          {% assign longer_size = solution_path | size | minus: 3 %}
           {% assign trunced_path = solution_path | slice: 0, size %}
-          {% if solution_path == output_file or trunced_path == output_file %}
+          {% assign longer_trunced_path = solution_path | slice: 0, longer_size %}
+          {% if solution_path == output_file or trunced_path == output_file or longer_trunced_path == output_file %}
             <font size="-1">[<a href="{{ solution.path | prepend: site.baseurl }}">click here for output</a>]</font>
           {% endif %}
         {% endfor %}
