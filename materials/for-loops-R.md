@@ -48,36 +48,46 @@ for (volume in volumes){
 
 > Do Tasks 1 & 2 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
 
-### Looping with an index
+### Looping with an index & storing results
 
-* Loop over values only let's you access values from a single list
-* Loop over index let's you access values from multiple lists
+* Loops over integers and uses these integers to access the vector the associated positions
 
 ```r
-for (i in seq_along(volumes)){
+for (i in 1:length(volumes)){
    mass <- 2.65 * volumes[i] ^ 0.9
    print(mass)
 }
 ```
 
-* `seq_along()` generates a vector of numbers from 1 to `length(volumes)`
 * Use this "index" to get the values at that position
 * Can use the "index" for multiple vectors
 
+* Looping with an index allows us to store results calculated in the loop
+* First create an empty vector the length of the results
+* `mode` is the type of data we are going to store
+* `length` is the length of the vector
+
 ```r
-b0 <- c(2.65, 1.28, 3.29)
-b1 <- c(0.9, 1.1, 1.2)
-for (i in seq_along(volumes)){
-   mass <- b0[i] * volumes[i] ^ b1[i]
-   print(mass)
-}
+masses <- vector(mode = "numeric", length = length(volumes))
+masses
 ```
 
-### Storing results
-
-* Looping with an index also makes it easy to store results
-* First create an empty vector the length of the results
 * Then add each result in the right position
+* For each trip through the loop put the output into the empty vector at the ith position
+
+```r
+for (i in 1:length(volumes)){
+   masses[i] <- 2.65 * volumes[i] ^ 0.9
+}
+masses
+```
+
+* Walk through iteration in debugger
+
+> Do Tasks 3-4 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
+
+* Looping with an index also allows us to access values from multiple vectors
+
 
 ```r
 b0 <- c(2.65, 1.28, 3.29)
@@ -88,10 +98,6 @@ for (i in seq_along(volumes)){
    masses[i] <- mass
 }
 ```
-
-* Walk through iteration in debugger
-
-> Do Tasks 3-4 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
 
 ### Looping over files
 
@@ -185,3 +191,5 @@ for (x in 1:max(x)) {
 ```
 
 ### Sequence along
+
+* `seq_along()` generates a vector of numbers from 1 to `length(volumes)`
