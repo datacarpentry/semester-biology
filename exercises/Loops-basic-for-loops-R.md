@@ -30,14 +30,15 @@ for (i in 1:length(_________)){
 }
 ```
 
-4\. Complete the cdoe below so that it 
+4\. Complete the code below so that it stores one area for each radius.
 
 ```r
-radius <- (1.3, 2.1, 3.5)
+radius <- c(1.3, 2.1, 3.5)
 areas <- vector(_____ = "numeric", length = ______)
 for (__ in 1:length(________)){
   areas[__] <- pi * radius[i] ^ 2
 }
+areas
 ```
 
 5\. Complete the code below to calculate an area for each pair of `lengths` and `widths`, store the areas in a vector, and after they are all calculated print them out: 
