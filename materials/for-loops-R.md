@@ -77,7 +77,8 @@ masses
 
 ```r
 for (i in 1:length(volumes)){
-   masses[i] <- 2.65 * volumes[i] ^ 0.9
+   mass <- 2.65 * volumes[i] ^ 0.9
+   masses[i] <- mass
 }
 masses
 ```
