@@ -49,5 +49,5 @@ areas <- vector(length = __________)
 for (i in _____) {
   areas[__] <- lengths[__] * widths[__]
 }
-masses
+areas
 ```
