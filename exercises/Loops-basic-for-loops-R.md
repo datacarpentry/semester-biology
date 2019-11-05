@@ -30,13 +30,24 @@ for (i in 1:length(_________)){
 }
 ```
 
-4\. Complete the code below to calculate a mass for each volume in `volumes`, store them in a vector, and then print them out: 
+4\. Complete the cdoe below so that it 
 
 ```r
-volumes = c(16.8, 26.2, 42.0, 6.2, 19)
-masses <- vector(length = __________)
+radius <- (1.3, 2.1, 3.5)
+areas <- vector(_____ = "numeric", length = ______)
+for (__ in 1:length(________)){
+  areas[__] <- pi * radius[i] ^ 2
+}
+```
+
+5\. Complete the code below to calculate an area for each pair of `lengths` and `widths`, store the areas in a vector, and after they are all calculated print them out: 
+
+```r
+lengths = c(1.1, 2.2, 1.6)
+widths = c(3.5, 2.4, 2.8)
+areas <- vector(length = __________)
 for (i in _____) {
-  masses[__] <- 0.8 * volumes[i] ^ 1.6
+  areas[__] <- lengths[__] * widths[__]
 }
 masses
 ```
