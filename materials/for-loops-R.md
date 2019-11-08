@@ -113,10 +113,6 @@ data_files = list.files(pattern = "collar-data-.*.txt",
                         full.names = TRUE)
 ```
 
-* Look at one of the files
-* Write a function to handle a single file
-* Use a loop to run the function for each file
-
 * Calculate the number of observations in each file
 
 ```r
@@ -143,6 +139,7 @@ for (i in 1:length(data_files){
 ```
 
 > Do [Multiple-file Analysis]({{ site.baseurl }}/exercises/Loops-multi-file-analysis-R/).
+> **Exercise uses different collar data**
 
 * With `apply`
 
@@ -167,30 +164,100 @@ results <- unlist(lapply(collar_data_files, get_counts))
 
 ### Subsetting Data (optional)
 
-* 
+* Loops can subset in ways that are difficult with things like `group_by`
+* Look at some data on trees from the National Ecological Observatory Network
 
 ```r
-window_size = 1
-for (x in 1:max(x)) {
-  data_in_window = filter(data, xs >= x, xs < x + 2)
+library(ggplot2)
+library(dplyr)
+
+neon_trees <- read.csv('data/HARV_034subplt.csv')
+ggplot(neon_trees, aes(x = easting, y = northing)) +
+  geom_point()
+```
+
+* Look at a north-south gradient in number of trees
+* Need to know number of trees in each band of y values
+* Start by defining the size of the window we want to use
+  * Use the grid lines which are 2.5 m
+
+```r
+window_size <- 2.5
+```
+
+* Then figure out the edges for each window
+
+```r
+south_edges <- seq(4713095, 4713117.5, by = window_size)
+north_edges <- south_edges + window_size
+```
+
+* But we don't want to go all the way to the far edge
+
+```r
+south_edges <- seq(4713095, 4713117.5 - window_size, by = window_size)
+north_edges <- south_edges + window_size
+```
+
+* Set up an empty data frame to store the output
+
+```r
+output <- vector(mode = "numeric", length = length(left_edges))
+```
+
+* Look over the left edges and subset the data occuring within each window
+
+```r
+for (i in 1:length(left_edges)) {
+  data_in_window <- filter(neon_trees, easting >= left_edges[i], easting < right_edges[i])
+  output[i] <- nrow(data_in_window)
 }
+output
 ```
 
 ### Nested Loops (optional)
 
 * Sometimes need to loop over multiple things in a coordinate fashion
 * Pass a window over some spatial data
-* Calculate a value in each window
+* Look at full spatial pattern not just east-west gradient
+
+* Basic nested loops work by putting one loop inside another one
 
 ```r
-window_size = 1
-for (x in 1:max(x)) {
-  for (y in 1:max(y)) {
-    data_in_window = filter(data, xs >= x, xs < x + 2, ys >= y, ys < y + 2)
+for (i in 1:10) {
+  for (j in 1:5) {
+    print(paste("i = " , i, "; j = ", j))
   }
 }
 ```
 
-### Sequence along
+* Loop over x and y coordinates to create boxes
+* Need top and bottom edges
+
+```r
+east_edges <- seq(731752.5, 731772.5 - window_size, by = window_size)
+west_edges <- east_edges + window_size
+
+```
+
+* Redefine out storage
+
+```r
+output <- matrix(nrow = length(south_edges), ncol = length(east_edges))
+```
+
+```r
+for (i in 1:length(south_edges)) {
+  for (j in 1:length(east_edges)) {
+    data_in_window <- filter(neon_trees,
+                            northing >= south_edges[i], northing < north_edges[i],
+                            easting >= left_edges[j], easting < right_edges[j],)
+    output[i, j] <- nrow(data_in_window)
+  }
+}
+output
+```
+
+### Sequence along (optional)
 
 * `seq_along()` generates a vector of numbers from 1 to `length(volumes)`
