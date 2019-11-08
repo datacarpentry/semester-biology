@@ -13,7 +13,7 @@ Start your solution by:
 * Unziping it using `unzip`
 * Obtaining a list of all of the files with file names matching the pattern `"collar-data-.*.txt"`
 
-1. Use a loop to load each of these files into R and make a line plot (using `geom_line`) for each file with `long` on the `x` axis and `lat` on the `y` axis.
+1. Use a loop to load each of these files into R and make a line plot (using `geom_path`) for each file with `long` on the `x` axis and `lat` on the `y` axis.
 Graphs, like other types of output, won't display inside a loop unless you explicitly display them, so you need put your `ggplot` command inside a `print` statement.
 Include the name of the file in the graph as the graph title using `labs`.
 
