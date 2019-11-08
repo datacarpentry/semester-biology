@@ -21,4 +21,4 @@ Include the name of the file in the graph as the graph title using `labs`.
 When you create the empty data frame you'll need to include `stringsAsFactors = FALSE` to prevent the `character` column for the file name becoming a `factor`.
 Show the data frame as output.
 
-If you're interested in seeing another application of for loops, [check out the code]({{ site.baseurl }}/code/../../../code/Data-simulation-for-loops-multi-file-analysis) used to simulate the data for this exercise using for loops. 
+If you're interested in seeing another application of for loops, [check out the code]({{ site.baseurl }}/code/Data-simulation-for-loops-multi-file-analysis) used to simulate the data for this exercise using for loops. 
