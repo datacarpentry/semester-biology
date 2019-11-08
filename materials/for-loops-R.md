@@ -106,10 +106,10 @@ for (i in seq_along(volumes)){
 * Get names of satellite collar location files
 
 ```r
-download.file("http://www.datacarpentry.org/semester-biology/data/collar-data-2016-01.zip", 
-              "collar_data.zip")
-unzip("collar_data.zip")
-data_files = list.files(pattern = "collar-data-.*.txt", 
+download.file("http://www.datacarpentry.org/semester-biology/data/locations-2016-01.zip", 
+              "locations.zip")
+unzip("locations.zip")
+data_files = list.files(pattern = "locations-.*.txt", 
                         full.names = TRUE)
 ```
 
