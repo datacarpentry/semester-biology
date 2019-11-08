@@ -24,8 +24,9 @@ title: List of datasets
 | LiDAR rasters and plot locations | multiple | <http://www.datacarpentry.org/semester-biology/data/NEON-airborne.zip> |
 | Harvard Forest NDVI | tif | <http://www.datacarpentry.org/semester-biology/data/HARV-NDVI.zip> |
 | San Joaquin Experimental Range NDVI | tif | <http://www.datacarpentry.org/semester-biology/data/SJER-NDVI.zip> |
-| Collar locations by date| txt | <http://www.datacarpentry.org/semester-biology/data/locations-2016-01.zip> |
-| Collar locations by individual | txt | <http://www.datacarpentry.org/semester-biology/data/individual_collar_data.zip> |
+| Collar locations by date| zip | <http://www.datacarpentry.org/semester-biology/data/locations-2016-01.zip> |
+| Collar locations by individual | zip | <http://www.datacarpentry.org/semester-biology/data/individual_collar_data.zip> |
+| NEON tree location data | csv | <http://www.datacarpentry.org/semester-biology/data/HARV_034subplt.csv> |
 | DNA sequences | txt | <http://www.datacarpentry.org/semester-biology/data/dna-sequences-1.txt> |
 | Archaea DNA sequences | fasta | <http://www.datacarpentry.org/semester-biology/data/archaea-dna.zip> |
 | Western Ghats tree data | tsv | <http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt> |
