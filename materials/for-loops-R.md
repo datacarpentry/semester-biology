@@ -116,7 +116,7 @@ data_files = list.files(pattern = "locations-.*.txt",
 * Calculate the number of observations in each file
 
 ```r
-results <- vector(length = length(data_files))
+results <- vector(mode = "integer", length = length(data_files))
 for (i in 1:length(data_files){
   data <- read.csv(data_files[i])
   count <- nrow(data)
@@ -128,7 +128,7 @@ for (i in 1:length(data_files){
 * Associate the file name with the count
 
 ```r
-results <- data.frame(file_name = numeric(length(cdata_files))
+results <- data.frame(file_name = charcter(length(data_files))
                       count = integer(length(data_files)))
 for (i in 1:length(data_files){
   data <- read.csv(data_files[i])
