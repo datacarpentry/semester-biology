@@ -129,13 +129,15 @@ for (i in 1:length(data_files){
 
 ```r
 results <- data.frame(file_name = charcter(length(data_files))
-                      count = integer(length(data_files)))
+                      count = integer(length(data_files)),
+                      stringsAsFactors = FALSE)
 for (i in 1:length(data_files){
   data <- read.csv(data_files[i])
   count <- nrow(data)
   results$file_name[i] <- data_files[i]
   results$count[i] <- count
 }
+results
 ```
 
 > Do [Multiple-file Analysis]({{ site.baseurl }}/exercises/Loops-multi-file-analysis-R/).
