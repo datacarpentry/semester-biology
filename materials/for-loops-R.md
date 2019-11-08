@@ -204,17 +204,17 @@ north_edges <- south_edges + window_size
 * Set up an empty data frame to store the output
 
 ```r
-output <- vector(mode = "numeric", length = length(left_edges))
+counts <- vector(mode = "numeric", length = length(left_edges))
 ```
 
 * Look over the left edges and subset the data occuring within each window
 
 ```r
-for (i in 1:length(left_edges)) {
-  data_in_window <- filter(neon_trees, easting >= left_edges[i], easting < right_edges[i])
-  output[i] <- nrow(data_in_window)
+for (i in 1:length(south_edges)) {
+  data_in_window <- filter(neon_trees, northing >= south_edges[i], northing < north_edges[i])
+  counts[i] <- nrow(data_in_window)
 }
-output
+counts
 ```
 
 ### Nested Loops (optional)
