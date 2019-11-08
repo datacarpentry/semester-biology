@@ -10,8 +10,7 @@ This is a followup to [Size Estimates by Name]({{ site.baseurl }}/exercises/Func
 Download and import [data on dinosaur lengths with species names]({{ site.baseurl }}/data/dinosaur_lengths.csv).
 
 Write a function `mass_from_length()` that uses the equation `mass <- a * length^b` to estimate the size of a dinosaur from its length.
-This function should take two arguments, `length` and `species`. It should use the following values of `a` and `b` that depend on `species` for the calculation.
-If `species` is none of these values `NA` should be returned.
+This function should take two arguments, `length` and `species`. It should use the following values of `a` and `b` that depend on `species` for the calculation:
 
 * For `species` = `Stegosauria`:  `a` = `10.95` and `b` = `2.64` ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
 * For `species` = `Theropoda`:  `a` = `0.73` and `b` = `3.63` ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
