@@ -13,7 +13,7 @@ Download and install the [R base system](http://cran.rstudio.com/) and [RStudio]
 
 1. Create an account on GitHub (https://github.com) using the `Sign up for
    GitHub` form on the right side of the page.
-2. Email your username to your instructor.
+2. Send your username to your instructor.
 3. Once your instructor adds you to the course GitHub organization you will
    receive an email asking you to accept the invitation. Click on the link to
    accept.
@@ -92,6 +92,7 @@ and for Fedora run `sudo yum install git`.
 ### SQL
 
 Download and install [DB Browser for SQLite](http://sqlitebrowser.org/)
+
 ### Python
 
 *Python installation is not required for WIS 6934. Python materials on this site
