@@ -132,7 +132,7 @@ fish_data = read.csv("Gaeta_etal_CLC_data.csv")
 
 ```
 library(dplyr)
-fish_data = fish_data %>% 
+fish_data_cat = fish_data %>% 
   mutate(length_cat = ifelse(length > 200, "big", "small"))
 ```
 
@@ -152,7 +152,7 @@ fish_data = fish_data %>%
     * Change category cut-off size
 
 ```
-fish_data = fish_data %>% 
+fish_data_cat = fish_data %>% 
   mutate(length_cat = ifelse(length > 300, "big", "small"))
 ```
 
@@ -167,29 +167,38 @@ fish_data = fish_data %>%
 > Do [Exercise 2 - First Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-solo-commit-R/) and
 > [Exercise 3 - Second Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-second-solo-commit-R/)
 
+> **Instructor also do exercises**
+
+
 ### Committing multiple files
 
 * Commits can include multiple files at once
-* 
-After talking to a colleague, you realize that
-`Gaeta_etal_CLC_data.csv` is only the first in a series of similar files that you will receive. To help keep track of files, you decide to number them. Rename the `Gaeta_etal_CLC_data.csv` file to `Gaeta_etal_CLC_data_1.csv` manually, using the Files tab in RStudio. You’ll also need to change the first line of `fish-analysis.R` so that the script will still work. 
+* Let's move our data file into a `data` subdirectory
+* `New Folder` -> `data`
+* Checkbox `Gaeta_etal_CLC_data.csv` -> `More` -> `Move`
+* Change code to read from new subdirectory
 
-To include all of these changes in a single commit, stage both data files and the saved R script and then commit with a good commit message. 
+```r
+fish_data = read.csv("data/Gaeta_etal_CLC_data.csv")
+```
 
-*Git will initially think you've deleted `Gaeta_etal_CLC_data.csv` and
-created a new file `Gaeta_etal_CLC_data_1.csv`. But once you click on
-both the old and new files to stage them, git will recognize this by making the two files into one and marking this with an `R`.*
+* Changes to R script indicated by M
+* Original datafile has a red D next to it which indicates "deleted"
+* New, untracked, data directory
+* git initially thinks we've deleted `Gaeta_etal_CLC_data.csv` and created a new `Gaeta_etal_CLC_data.csv` file in a new directory.
+* Click on both the old and new files to stage them
+* git then recognizes that we have moved (or renamed) the file by making the two files into one and marking this with an `R` for "rename".
 
-> and [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
+> Do [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
-> Instructor also do exercises
+> **Instructor also do exercise**
 
 ### Git as a time machine
 
 #### Experiment with impunity
 
 <pre>
-fish_data = fish_data %>% 
+fish_data_cat = fish_data %>% 
   mutate(length_cat = ifelse(length > 300, <b>"large"</b>, "small"))
 </pre>
 
@@ -251,7 +260,7 @@ fish_data = fish_data %>%
 > with the commit message: `Plot histogram of scale length by categorical size`
 
 ```
-ggplot(fish_data, aes(x = scalelength, fill = length_cat)) +
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
 ```
 
