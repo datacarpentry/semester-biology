@@ -92,6 +92,12 @@ data files and code in a more manageable way.
 #### Commit data
 
 * Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv) to your project directory.
+* Add the data file to version control
+* Two step process:
+
+1. Add the data file (checkbox)
+2. Commit it
+
 * Git -> Select `Gaeta_etal_CLC_data.csv`.
 * Commit with message. 
     * `Add fish size and growth rate data`
@@ -126,7 +132,7 @@ fish_data = read.csv("Gaeta_etal_CLC_data.csv")
 
 ```
 library(dplyr)
-fish_data_cat = fish_data %>% 
+fish_data = fish_data %>% 
   mutate(length_cat = ifelse(length > 200, "big", "small"))
 ```
 
@@ -146,7 +152,7 @@ fish_data_cat = fish_data %>%
     * Change category cut-off size
 
 ```
-fish_data_cat = fish_data %>% 
+fish_data = fish_data %>% 
   mutate(length_cat = ifelse(length > 300, "big", "small"))
 ```
 
@@ -158,8 +164,22 @@ fish_data_cat = fish_data %>%
         * The new version of the line is shown as added.
 
 
-> Do [Exercise 2 - First Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-solo-commit-R/),
-> [Exercise 3 - Second Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-second-solo-commit-R/),
+> Do [Exercise 2 - First Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-solo-commit-R/) and
+> [Exercise 3 - Second Solo Commit]({{ site.baseurl }}/exercises/Version-control-basic-second-solo-commit-R/)
+
+### Committing multiple files
+
+* Commits can include multiple files at once
+* 
+After talking to a colleague, you realize that
+`Gaeta_etal_CLC_data.csv` is only the first in a series of similar files that you will receive. To help keep track of files, you decide to number them. Rename the `Gaeta_etal_CLC_data.csv` file to `Gaeta_etal_CLC_data_1.csv` manually, using the Files tab in RStudio. You’ll also need to change the first line of `fish-analysis.R` so that the script will still work. 
+
+To include all of these changes in a single commit, stage both data files and the saved R script and then commit with a good commit message. 
+
+*Git will initially think you've deleted `Gaeta_etal_CLC_data.csv` and
+created a new file `Gaeta_etal_CLC_data_1.csv`. But once you click on
+both the old and new files to stage them, git will recognize this by making the two files into one and marking this with an `R`.*
+
 > and [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
 > Instructor also do exercises
@@ -169,7 +189,7 @@ fish_data_cat = fish_data %>%
 #### Experiment with impunity
 
 <pre>
-fish_data_cat = fish_data %>% 
+fish_data = fish_data %>% 
   mutate(length_cat = ifelse(length > 300, <b>"large"</b>, "small"))
 </pre>
 
@@ -231,7 +251,7 @@ fish_data_cat = fish_data %>%
 > with the commit message: `Plot histogram of scale length by categorical size`
 
 ```
-ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+ggplot(fish_data, aes(x = scalelength, fill = length_cat)) +
   geom_histogram()
 ```
 
