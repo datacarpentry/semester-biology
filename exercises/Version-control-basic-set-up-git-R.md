@@ -5,21 +5,6 @@ title: Set Up Git
 language: R
 ---
 
-Let’s say that you’re working on analyzing fish scale size data one day. Unfortunately you weren't using version control and your cat jumped 
-all over your keyboard and managed to replace your analysis code with:
-
-```
-asd;fljkzbvc;iobv;iojre,nmnmbveaq389320pr9c9cd
-
-ds8
-a
-d8of8pp
-```
-before somehow hitting `Ctrl-s` and overwriting all of your hard word. 
-
-Determined to not let this happen again you've committed to using `git` for
-version control.
-
 Install `Git` for your operating system following the
 [setup instructions](http://www.datacarpentry.org/semester-biology/computer-setup/). Then
 create a new repo at the Github organization for the class:
