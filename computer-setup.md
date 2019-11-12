@@ -42,9 +42,25 @@ Download and install the [R base system](http://cran.rstudio.com/) and [RStudio]
     7. Click on "Install".
     8. Click on "Finish".
 3. Check if the installation is working:
-    1. Open RStudio
-    2. File -> New Project -> Version Control -> Git
-    3. If you reach a page called `Clone Git Repository` with some fields to fill out everything is working
+    1. Send your username to your instructor. Once you have received a GitHub invite to the class organization accept it and only then proceed.
+    2. Open RStudio
+    3. File -> New Project -> Version Control -> Git
+    4. On the page called `Clone Git Repository` paste <https://github.com/dcsemester/install-test.git> into the "Repository URL:" box.
+    5. Click "Create Project"
+    6. Enter your GitHub username and password when prompted
+    7. If you see no errors and a file named `SUCCESS.txt` in your Files tab then everything is setup correctly.
+
+If git and RStudio aren't talking to each other (i.e., you don't get the expected
+result from when you check the installation), try the following:
+
+1. Open RStudio
+2. Select the `Tools` menu -> `Global Options` -> `Git/SVN`
+3. Next to `Git executable` click `Browse`
+4. Navigate to `C:\Program Files\Git\bin\` and double click on `git` (this should change
+   the value in `Git executable` to `C:\Program Files\Git\bin\git`)
+5. Click `OK`
+
+**Do not change the git executable to `C:\Program Files\Git\mingwXX\bin\git` as this will fail on some systems with an error message including "rpostback-askpass".**
 
 #### Mac OS X
 
@@ -57,10 +73,13 @@ Download and install the [R base system](http://cran.rstudio.com/) and [RStudio]
    information will come up, including a list of common commands. If this
    doesn't work see additional instructions below.
 6. Check if git and RStudio are talking to each other:
-    1. Open RStudio
-    2. File -> New Project -> Version Control -> Git
-    3. If you reach a page called `Clone Git Repository` with some fields to
-       fill out everything is working
+    1. Send your username to your instructor. Once you have received a GitHub invite to the class organization accept it and only then proceed.
+    2. Open RStudio
+    3. File -> New Project -> Version Control -> Git
+    4. On the page called `Clone Git Repository` paste <https://github.com/dcsemester/install-test.git> into the "Repository URL:" box.
+    5. Click "Create Project"
+    6. Enter your GitHub username and password when prompted
+    7. If you see no errors and a file named `SUCCESS.txt` in your Files tab then everything is setup correctly.
 
 If the git installation didn't work (i.e., you don't get the expect result from
 Step 5), try the following:
