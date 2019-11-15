@@ -189,6 +189,8 @@ fish_data = read.csv("data/Gaeta_etal_CLC_data.csv")
 * Click on both the old and new files to stage them
 * git then recognizes that we have moved (or renamed) the file by making the two files into one and marking this with an `R` for "rename".
 
+* Commit: `Move data file into subdirectory`
+
 > Do [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
 > **Instructor also do exercise**
