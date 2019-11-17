@@ -40,7 +40,7 @@ language: SQL
 * Choose which columns using `SELECT`
 * Just like `dplyr`, but with different formatting
 
-```
+```sql
 SELECT year, month, day
 FROM surveys;
 ```
@@ -48,14 +48,14 @@ FROM surveys;
 * If we want to get all of the columns we can use `*`, which is a wildcard that
 means "all".
 
-```
+```sql
 SELECT *
 FROM surveys;
 ```
 
 * For unique values use `DISTINCT`.
 
-```
+```sql
 SELECT DISTINCT year, month, day
 FROM surveys;
 ```
@@ -63,7 +63,7 @@ FROM surveys;
 * We can also do calculations and use functions
 * Just like in `dplyr`
 
-```
+```sql
 SELECT species_id, ROUND(hindfoot_length/10, 1)
 FROM surveys;
 ```
@@ -71,10 +71,10 @@ FROM surveys;
 ### Filtering
 
 * The equivalent of `filter` in SQL is `WHERE`
-    * Follow `WHERE` with a conditional statement
-    * Unlike in R `=` not `==` for equality
+  * Follow `WHERE` with a conditional statement
+  * Unlike in R `=` not `==` for equality
 
-```
+```sql
 SELECT hindfoot_length
 FROM surveys
 WHERE species_id = 'DS';
@@ -82,7 +82,7 @@ WHERE species_id = 'DS';
 
 * To combine two or more conditions use `AND` and `OR`.
 
-```
+```sql
 SELECT year, month, day, species_id, hindfoot_length
 FROM surveys
 WHERE species_id = 'DS' AND year > 1990;
@@ -92,7 +92,7 @@ WHERE species_id = 'DS' AND year > 1990;
   measure was taken. We can use `WHERE` to remove them by asking SQL to only
   give us non-NULL values.
 
-```
+```sql
 SELECT year, month, day, species_id, hindfoot_length
 FROM surveys
 WHERE species_id = 'DS' AND year > 1990 
@@ -104,9 +104,9 @@ WHERE species_id = 'DS' AND year > 1990
 * SQL generally doesn't care about capitalization or line breaks. So it will run
 a query like this.
 * To make the code readable follow style rules for writing SQL code
-    * Capitalize SQL commands
-    * Lowercase variable names
-	* One clause/line
+  * Capitalize SQL commands
+  * Lowercase variable names
+  * One clause/line
 
 ### Saving queries for future use
 
@@ -116,13 +116,12 @@ a query like this.
 
 > Do the [Simple WHERE]({{ site.baseurl }}/exercises/Basic-queries-simple-where-SQL) exercise.
 
-
 ### Sorting
 
 * Use `ORDER BY` to sort data.
 * Equivalent of `arrange` in `dplyr` is `ORDER BY`.
 
-```
+```sql
 SELECT genus, species
 FROM species
 ORDER BY genus;
@@ -130,7 +129,7 @@ ORDER BY genus;
 
 * Use `DESC` to sort in descending order.
 
-```
+```sql
 SELECT genus, species
 FROM species
 ORDER BY genus DESC;
@@ -138,18 +137,17 @@ ORDER BY genus DESC;
 
 * Use a list to sort by multiple columns.
 
-```
+```sql
 SELECT genus, species
 FROM species
 ORDER BY taxa, genus, species;
 ```
 
-
 ### Aggregation
 
 * Like in `dplyr` we use `GROUP BY` to calculate values for different groups.
 
-```
+```sql
 SELECT species_id, AVG(weight), COUNT(species_id)
 FROM surveys
 GROUP BY species_id;
@@ -184,14 +182,13 @@ GROUP BY species_id, plot_id;
 
 > Do the [COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL) exercise.
 
-
 ### Basic join
 
 * Find the unique dates that each plot type was sampled on
 * `inner_join` is `JOIN` or `INNER JOIN`
 * `USING` specifies the columns to join on if the tables share column names
 
-```
+```sql
 SELECT DISTINCT year, month, day, plot_type 
 FROM surveys
 JOIN plots USING (plot_id);
@@ -199,15 +196,15 @@ JOIN plots USING (plot_id);
 
 * Unlike in `dplyr` you must specify the columns to join on (or things go badly)
 
-    ```
-    SELECT year, month, day, plot_type
-    FROM surveys
-    JOIN plots
-    ```
+```sql
+SELECT year, month, day, plot_type
+FROM surveys
+JOIN plots
+```
 
 * If the column names don't match between tables use `ON`
 
-```
+```sql
 SELECT DISTINCT year, month, day, plot_type 
 FROM surveys
 JOIN species on surveys.species_id = species.species_id;
@@ -217,7 +214,7 @@ JOIN species on surveys.species_id = species.species_id;
 
 * To join multiple tables do multiple joins
 
-```
+```sql
 SELECT year, month, day, taxa, plot_type
 FROM surveys
 JOIN species USING (species_id)
