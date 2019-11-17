@@ -95,8 +95,7 @@ WHERE species_id = 'DS' AND year > 1990;
 ```sql
 SELECT year, month, day, species_id, hindfoot_length
 FROM surveys
-WHERE species_id = 'DS' AND year > 1990 
-  AND hindfoot_length IS NOT NULL;
+WHERE species_id = 'DS' AND year > 1990 AND hindfoot_length IS NOT NULL;
 ```
 
 ### Style
@@ -181,6 +180,17 @@ GROUP BY species_id, plot_id;
 </pre>
 
 > Do the [COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL) exercise.
+
+### Order matters
+
+> Nemonic from: https://twitter.com/statsnam/status/1149431249511075840
+
+Select - So  
+From - Few  
+Where - Workers  
+Group by - Go  
+Having - Home  
+Order by - On time
 
 ### Basic join
 
