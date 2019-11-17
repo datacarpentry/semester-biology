@@ -110,8 +110,8 @@ a query like this.
 ### Saving queries for future use
 
 * Views save queries to run again.
-* Create them by adding `CREATE VIEW name AS` to top of query
-* If you need to replace a view first run `DROP VIEW name`
+* Create them by clicking button next to log and selecting `Save as view`
+* If you need to replace a view first do `Database Structure` -> Right click on view -> `Delete View`
 
 > Do the [Simple WHERE]({{ site.baseurl }}/exercises/Basic-queries-simple-where-SQL) exercise.
 
@@ -196,7 +196,7 @@ Order by - On time
 
 * Find the unique dates that each plot type was sampled on
 * `inner_join` is `JOIN` or `INNER JOIN`
-* `USING` specifies the columns to join on if the tables share column names
+* `USING` specifies the columns to join on if the tables share column names (like `by` in `dplyr`)
 
 ```sql
 SELECT DISTINCT year, month, day, plot_type 
@@ -215,7 +215,7 @@ JOIN plots
 * If the column names don't match between tables use `ON`
 
 ```sql
-SELECT DISTINCT year, month, day, plot_type 
+SELECT DISTINCT year, month, day, plot_type
 FROM surveys
 JOIN species on surveys.species_id = species.species_id;
 ```

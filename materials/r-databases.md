@@ -5,34 +5,32 @@ title: dplyr with Databases
 language: R
 ---
 
-> Remember to
->    
-> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
-> * make sure the copy you are going to use in class does not have the `SpeciesCounts` table or view.
+> * Download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
+> * Make sure the copy you are going to use in class does not have the `SpeciesCounts` table or view.
 
 * Can use `dplyr` to access data directly from a database.
-    * No need to export files from the database
-    * Lets the database do the heavy lifting
-        * Faster
-        * No RAM limits
+  * No need to export files from the database
+  * Lets the database do the heavy lifting
+    * Faster
+    * No RAM limits
 * Need to install the `dbplyr` package
 
 ### Installation
 
-```
+```r
 install.packages(c("DBI", "dbplyr", "RSQLite"))
 ```
 
 ### Connect
 
-```
+```r
 library(dplyr)
 portaldb <- src_sqlite("portal_mammals.sqlite")
 ```
 
 ### Check out database structure
 
-```
+```r
 portaldb
 src_tbls(portaldb)
 tbl(portaldb, "plots")
@@ -46,7 +44,7 @@ colnames(surveys)
 
 * Write a query to extract counts of each genus and species
 
-```
+```r
 count_query <- "SELECT genus, species, COUNT(*)
                 FROM surveys
                 JOIN species
@@ -60,16 +58,14 @@ tbl(portaldb, sql(count_query))
   headings (`Source: SQL`)
 * Number of rows is unknown as shown by `??`
 
-> Do [Exercise 1 - Source and Query]({{ site.baseurl }}/exercises/Dplyr-databases-source-and-query-R/).
-
-> Do [Exercise 2 - Manipulate Query]({{ site.baseurl }}/exercises/Dplyr-databases-manipulate-query-R/).
-
+> Do [Exercise 1 - Source and Query]({{ site.baseurl }}/exercises/Dplyr-databases-source-and-query-R/) and
+> [Exercise 2 - Manipulate Query]({{ site.baseurl }}/exercises/Dplyr-databases-manipulate-query-R/).
 
 ### Using `dplyr` with databases
 
 * Can also use `dplyr` commands directly on databases 
 
-```
+```r
 surveys <- tbl(portaldb, "surveys")
 surveys
 species <- tbl(portaldb, "species")
@@ -89,7 +85,7 @@ species_counts <- inner_join(surveys, species, by = "species_id") %>%
 * Some calculations can't be done in the database.
 * Use `collect()` to load the results into R in a local data frame (tibble).
 
-```
+```r
 species_counts <- inner_join(surveys, species, by = "species_id") %>%
                group_by(genus, species) %>%
                summarize(count = n()) %>%
@@ -102,12 +98,11 @@ species_counts <- inner_join(surveys, species, by = "species_id") %>%
 
 > Show `species_counts` table *NOT* in `portal_mammals.sqlite`.
 
-```
+```r
 copy_to(portaldb, species_counts, temporary=FALSE, 
         name="SpeciesCounts")
 portaldb
 ```
 
-> Show `SpeciesCounts` table in `portal_mammals.sqlite` with new name.
-
-> Do [Copy to Database]({{ site.baseurl }}/exercises/Dplyr-databases-copy-to-database-R/).
+> * Show `SpeciesCounts` table in `portal_mammals.sqlite` with new name.
+> * Do [Copy to Database]({{ site.baseurl }}/exercises/Dplyr-databases-copy-to-database-R/).
