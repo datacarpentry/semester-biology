@@ -7,8 +7,12 @@ language: SQL
 
 > Remember to
 >
-> * download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/11188550).
-> * connect `portal_mammals.sqlite` to SQLite Manager.
+> * Install DB Browser
+> * Set font sizes to larger values under:
+> * Preferences -> Data Browers -> Font size
+> * Preferences -> SQL -> SQL editor font size & SQL log font size
+> * Download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/11188550).
+> * Open `portal_mammals.sqlite` in DB Browser.
 
 ### Why Databases
 
