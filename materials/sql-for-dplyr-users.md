@@ -26,12 +26,14 @@ language: SQL
 * Data is separate from manipulations of the data
 * Tables - store the data
 * Queries - store questions about the data
-    * If we update the data, the query asks the same question of the new data.
+  * If we update the data, the query asks the same question of the new data.
 
 ### Using DB Browser
 
-* Use `Execute SQL` tab
-* Run SQL w/ keyboard shortcut `command` + `;`
+* `Database Structure` - what is in this database
+* `Browse Data` - use dropbox to view data in tables + filter for data checks
+* `Execute SQL` - where we write queries
+* Run SQL using play button (or w/ `Ctrl/command` + `Enter`)
 
 ### Selecting columns
 
