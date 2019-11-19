@@ -38,18 +38,19 @@ language: SQL
 ### Selecting columns
 
 * Choose which columns using `SELECT`
-* Just like `dplyr`, but with different formatting
-
-```sql
-SELECT year, month, day
-FROM surveys;
-```
-
 * If we want to get all of the columns we can use `*`, which is a wildcard that
 means "all".
 
 ```sql
 SELECT *
+FROM surveys;
+```
+
+* To select specific columns we list them by name
+* Just like `dplyr`, but with different formatting
+
+```sql
+SELECT year, month, day
 FROM surveys;
 ```
 
@@ -64,7 +65,12 @@ FROM surveys;
 * Just like in `dplyr`
 
 ```sql
-SELECT species_id, ROUND(hindfoot_length/10, 1)
+SELECT year, month, day, species_id, hindfoot_length/10
+FROM surveys;
+```
+
+```sql
+SELECT year, month, day, species_id, ROUND(hindfoot_length/10)
 FROM surveys;
 ```
 
@@ -75,7 +81,7 @@ FROM surveys;
   * Unlike in R `=` not `==` for equality
 
 ```sql
-SELECT hindfoot_length
+SELECT year, month, day, species_id, ROUND(hindfoot_length/10)
 FROM surveys
 WHERE species_id = 'DS';
 ```
@@ -83,7 +89,7 @@ WHERE species_id = 'DS';
 * To combine two or more conditions use `AND` and `OR`.
 
 ```sql
-SELECT year, month, day, species_id, hindfoot_length
+SELECT year, month, day, species_id, ROUND(hindfoot_length/10)
 FROM surveys
 WHERE species_id = 'DS' AND year > 1990;
 ```
@@ -93,7 +99,7 @@ WHERE species_id = 'DS' AND year > 1990;
   give us non-NULL values.
 
 ```sql
-SELECT year, month, day, species_id, hindfoot_length
+SELECT year, month, day, species_id, ROUND(hindfoot_length/10)
 FROM surveys
 WHERE species_id = 'DS' AND year > 1990 AND hindfoot_length IS NOT NULL;
 ```
