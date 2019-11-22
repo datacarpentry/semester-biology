@@ -58,9 +58,6 @@ tbl(portaldb, sql(count_query))
   headings (`Source: SQL`)
 * Number of rows is unknown as shown by `??`
 
-> Do [Exercise 1 - Source and Query]({{ site.baseurl }}/exercises/Dplyr-databases-source-and-query-R/) and
-> [Exercise 2 - Manipulate Query]({{ site.baseurl }}/exercises/Dplyr-databases-manipulate-query-R/).
-
 ### Using `dplyr` with databases
 
 * Can also use `dplyr` commands directly on databases 
