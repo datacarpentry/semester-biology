@@ -32,3 +32,4 @@ title: List of datasets
 | Western Ghats tree data | tsv | <http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt> |
 | Backup Bioclim Data | zip | <https://www.datacarpentry.org/semester-biology/data/wc10.zip>
 | Backup US Elevation Data | zip | <https://www.datacarpentry.org/semester-biology/data/wc10.zip>
+| Gappy Data | csv | <https://www.datacarpentry.org/semester-biology/data/gappy-data.csv>
