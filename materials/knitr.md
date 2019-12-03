@@ -14,7 +14,11 @@ language: R
 
 ### Getting started
 
-* `install.packages("rmarkdown")` in console for permanence
+```r
+install.packages(c("rmarkdown", "knitr", "tinytex"))
+tinytex::install_tinytex()
+```
+
 * `File` -> `New File` -> `R Markdown`
     * Enter a title and author(s).
     * Choose 'Default Output Format' as `HTML`.
@@ -129,10 +133,7 @@ Get the time-series of counts for all species.
 time_series <-
   data %>%
   group_by(species_id, year) %>%
-  summarize(count = n()) %>%
-  filter(species_id %in% c('DM', 'DO', 'DS')) %>%
-  na.omit()
-
+  summarize(count = n())
 head(time_series)
 ```
 </code></pre>
@@ -144,22 +145,10 @@ head(time_series)
 
 ```{r, message=FALSE, echo=FALSE, cache=TRUE}
 ggplot(time_series, aes(x = year, y = count)) +
-  geom_point() +
   geom_line() +
-  geom_smooth() +
   facet_wrap(~species_id)
 ```
 </code></pre>
-
-
-### Notebook
-
-* In RStudio run chunks using `Ctrl-Shift-Enter` or `Cmd-Shift-Enter`
-* Displays results in the editor
-* Notebook
-* `output: html_notebook` or File -> New File -> R Notebook
-* Resulting `.nb.html` file has interactive control of code blocks
-
 
 ### Citations
 
@@ -185,6 +174,13 @@ bibliography: bibliography.bib
 * When you knit in-text citations will be formated and the full references will
   be displayed at the bottom of the document.
 
+### Notebook
+
+* In RStudio run chunks using `Ctrl-Shift-Enter` or `Cmd-Shift-Enter`
+* Displays results in the editor
+* Notebook
+* `output: html_notebook` or File -> New File -> R Notebook
+* Resulting `.nb.html` file has interactive control of code blocks
 
 ### R Presentations
 
