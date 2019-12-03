@@ -4,7 +4,7 @@ element: assignment
 title: Knitr
 language: R
 exercises: ['Reproducible Breeding Bird Survey Analysis']
-points: [100]
+points: [optional]
 ---
 
 #### Learning Objectives
