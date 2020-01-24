@@ -32,6 +32,8 @@ systems
 - Brodt, Fontana, and Archer, 2019, Feasibility and sustainability of agroforestry in temperate industrialized
 agriculture
 - Martin, et al. 2019, Ecology Letters, The interplay of landscape composition and configuration
+- Fuqua, Winn, Packwood & Hollings, 1983. The Federal Role in Fostering University.
+- Paulo Freire,1970. Pedagogy of the Oppressed.
 
 #### Online Resources
 
@@ -46,3 +48,4 @@ agriculture
 - [Florida Friendly Landscaping](https://ffl.ifas.ufl.edu/homeowners/nine_principles.htm)
 - [Buck Island Archbold Research Station](https://www.archbold-station.org/html/research/agro/agroovw.html)
 - [Map: US Food Deserts](https://www.ers.usda.gov/amber-waves/2011/december/data-feature-mapping-food-deserts-in-the-us/)
+- [Campesino a Campesino](https://viacampesina.org/en/)
