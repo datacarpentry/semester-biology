@@ -34,6 +34,7 @@ agriculture
 - Martin, et al. 2019, Ecology Letters, The interplay of landscape composition and configuration
 - Fuqua, Winn, Packwood & Hollings, 1983. The Federal Role in Fostering University.
 - Paulo Freire,1970. Pedagogy of the Oppressed.
+- Rosset and Altieri. 2017. Agroecology: Science and Politics.
 
 #### Online Resources
 
