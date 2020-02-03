@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 element: notes
 title: Brief History
@@ -8,48 +8,48 @@ language: Intro
 ### Agronomy and Ecology
 
 Early agriculture developments
-- defined by fertilizer limitation
-- Sprengel and Leibig, 1840, Law of the minimum
-- Rudolf Steiner, 1924, biodynamic
-- Sir Albert Howard, 1943, soil fertility
+- Defined by fertilizer limitation
+  - 1840; Sprengel and Leibig, Law of the minimum
+  - 1924; Rudolf Steiner, Biodynamic
+  - 1943; Sir Albert Howard, Soil fertility
 
-Ecology = study of natural systems (pure science)
+Ecology = The study of natural systems (pure science)
 
-Agronomy = study of agriculture (applied science)
+Agronomy = The study of agriculture (applied science)
 
 Earliest combination 
-- "crop ecology" (1920s)
-- where crops were grown and their optimal 
-ecological conditions
-– 1928; K.Klages; “Crop ecology & geography”
-- 1930; Bensin: "Agroecology" 
-– 1939; H.Hanson; “Ecology in agriculture’
+- "Crop ecology" (1920s)
+- Where crops were grown and their optimal 
+ecological conditions 
+ - 1928; K.Klages; “Crop ecology & geography”
+ - 1930; Bensin: "Agroecology" 
+ - 1939; H.Hanson; “Ecology in agriculture’
 
 
 ### Agriculture and Ecology Diverges
 
-- WWII happens and a new process emerges for making explosives
-- The Haber-Bosch process also happens to be good for fertilizer
-– Ecology moved more into pure science direction
-– Agronomy moved into mechanization and chemicals development
+- WWII (1939) happens and a new process emerges for making explosives
+- The Haber-Bosch process (1913) also happens to be good for fertilizer
+- Ecology moved more into pure science direction
+- Agronomy moved into mechanization and chemicals development
 
 ### Recombination
 
 - Late 1950s; Maturing of the ecosystem concept in ecology prompted renewed
 interest in crop ecology and a framework for examining agriculture
-– 1956; G.Azzi; “Agricultural ecology” 
+   - 1956; G.Azzi; “Agricultural ecology” 
 - 1960s and 1970s; environmental awareness
-   - population & community ecology -> systems research 
-   - 1962; R. Carson; Silent Spring
-   - 1965; W. Tishcler; “Agrarokologie” (Agroecology)
-   - 1973; D.H. Janzen; “Tropical agroecosystems”
-   - 1977; O.L. Loucks; “Emergence of research on agroecosystems” 
-   - 1979; G.Cox & M.Atkins; “Agricultural ecology"
+   - Population & community ecology -> systems research 
+      - 1962; R. Carson; Silent Spring
+      - 1965; W. Tishcler; “Agrarokologie” (Agroecology)
+      - 1973; D.H. Janzen; “Tropical agroecosystems”
+      - 1977; O.L. Loucks; “Emergence of research on agroecosystems” 
+      - 1979; G.Cox & M.Atkins; “Agricultural ecology"
 
 ### Agroecology as a Science, Movement, and Practice
 
-- Agroecology simultaneously remerged as a 
-   - distinct methodology for the study of agroecosystems
+- Agroecology simultaneously remerged as a:
+   - Distinct methodology for the study of agroecosystems
       - 1983; M. Alteri; “Agroecology”
       - 1984; R. Lowrance, et.al.; “Agricultural ecosystems: unifying concepts”
       - 1990; S. Gliessman; “Agroecology: researching the ecological basis for
@@ -59,7 +59,7 @@ interest in crop ecology and a framework for examining agriculture
       systems”
       - 1998; S. Gliessman; Agroecology: Ecological Processes in Sustainable
       Agriculture
-   - social and political movement for food sovereighty
+   - Social and political movement for food sovereighty
       - 2002;  T. Dalgaard, et.al.; “Agroecology, scaling, and 
       interdisciplinarity”
       - 2003; C. Francis, et.al.; “Agroecology: the ecology of food systems”
