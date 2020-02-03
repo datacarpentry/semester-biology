@@ -7,7 +7,7 @@ Program', 'Recap and Assessment']
 
 {% include assignments.html %}
 
-You can see the full list of [activities]({{ site.baseurl }}/assignments/), 
+You can see the full list of [activities](https://trec-agroecology.github.io/introducing-agroecology/activities/), 
 which may be useful if you're using this material outside of an organized 
 course.
 
