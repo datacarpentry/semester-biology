@@ -26,6 +26,6 @@ language: R
 
 * [Introduction to R](http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
 
-### Starting with Data
+#### Starting with Data
 
 * [Starting with data (**only through "Inspecting data.frame Objects"**)](http://www.datacarpentry.org/R-ecology-lesson/02-starting-with-data.html)
