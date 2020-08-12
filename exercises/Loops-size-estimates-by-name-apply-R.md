@@ -5,7 +5,7 @@ title: Size Estimates By Name Apply
 language: R
 ---
 
-This is a followup to [Size Estimates by Name]({{ site.baseurl }}/exercises/Functions-size-estimtates-by-name-R).
+This is a followup to [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
 
 Download and import [data on dinosaur lengths with species names]({{ site.baseurl }}/data/dinosaur_lengths.csv).
 

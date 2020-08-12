@@ -53,7 +53,7 @@ fork the repository, add or change material, and submit a pull request.
 - From GitHub.com
    1. Click on the `Fork` button at the top right corner of the [`datacarpentry/semester-biology` repository on GitHub](https://github.com/datacarpentry/semester-biology).
    2. Navigate to your forked repository at `https://yourusername.github.io/semester-biology/`
-   3. Navigate to the file or directory you want to change (*like [`contributing.md`](https://github.com/datacarpentry/semester-biology/blob/master/docs/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
+   3. Navigate to the file or directory you want to change (*like [`contributing.md`](https://github.com/datacarpentry/semester-biology/blob/master/docs/course/contributing.md)*) and click on the <i class="fa fa-pencil"></i> button to edit. 
    4. Make changes to the file.
    5. Commit the changes using the form at the bottom of the `edit` page. If you are working on your own forked version of the course, you can choose 'Commit directly to the `master` branch'. The other option ('Create a **new branch**') is used for a work flow with [Pull Requests](https://help.github.com/articles/using-pull-requests), which is our preferred way of receiving collaborative contributions.
 

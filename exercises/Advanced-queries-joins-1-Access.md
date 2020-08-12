@@ -7,8 +7,8 @@ language: Access
 
 In a new database import the main table from the Portal database (remember that
 wgt and hfl need to have their types changes to integer). Now download and
-import the [Plots table]({{ site.baseurl }}/data/PortalMammals_plots.csv) and the
-[Species table]({{ site.baseurl }}/data/PortalMammals_species.csv) (if you don't remember how to
+import the [Plots table]({{ site.baseurl }}/data/Portal-plots.csv) and the
+[Species table]({{ site.baseurl }}/data/Portal-species.csv) (if you don't remember how to
 import tables see the details in the
 [Importing Tables problem]({{ site.baseurl }}/exercises/Database-control-importing-tables-Access). We will use this
 database for all of the exercises on joins, database structure, and nested
