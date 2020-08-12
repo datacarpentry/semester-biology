@@ -5,7 +5,7 @@ title: for Loop
 language: R
 ---
 
-This is a follow up to [Nested Functions]({{ site.baseurl }}/exercises/Functions-nested-functions-R).
+This is a follow up to [Nested Functions]({{ site.baseurl }}/exercises/Functions-combining-functions-R).
 
 1.  Now that you've impressed Grandma, it's time to do some serious science.
     Take the following vector of Stegosaur lengths

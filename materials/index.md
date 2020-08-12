@@ -125,7 +125,7 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Rainfall Example](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/master/materials/rainfall.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/master/materials/rainfall.ipynb))
 -   [Regular Expressions]({{ site.baseurl }}/materials/regexp)
 -   [Requests](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/master/materials/requests.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/master/materials/requests.ipynb))
--   [Running Blast]({{ site.baseurl }}/materials/running-blast-from-pythons)
+-   [Running Blast]({{ site.baseurl }}/materials/running-blast-from-python)
 -   [Shell in Python]({{ site.baseurl }}/materials/shell-in-python)
 -   [SQL in Python]({{ site.baseurl }}/materials/sql-python) \| [Alternate SQL in Python]({{ site.baseurl }}/materials/using-python-to-interface-with-databases)
 -   [Statistics in Scipy]({{ site.baseurl }}/materials/statistics-in-scipy)
