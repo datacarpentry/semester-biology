@@ -2,8 +2,9 @@
 
   <tr>
     <th width="50">Week</th>
-    <th width="300">Lesson</th>
+    <th width="300">Topic</th>
     <th width="50">Reading</th>
+    <th width="50">Lesson</th>
     <th width="50">Lecture</th>
     <th width="50">Assignment</th>
   </tr>
@@ -52,6 +53,22 @@
       {% assign reading_link = nil %}
     {% endfor %}
 
+    {% for lessonpage in site.pages %}
+    {% if language %}
+      {% if lessonpage.title == assignment and lessonpage.element == 'lesson' and lessonpage.language == language %}
+        {% capture lesson_link %}{{ lessonpage.url | prepend: site.baseurl }}{% endcapture %}
+        {% break %}
+      {% endif %}
+    {% else %}
+      {% if lessonpage.title == assignment and lessonpage.element == 'lesson' %}
+        {% capture language %}{{ lessonpage.language }}{% endcapture %}
+        {% capture lesson_link %}{{ lessonpage.url | prepend: site.baseurl }}{% endcapture %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+    {% assign lesson_link = nil %}
+  {% endfor %}
+
     <tr>
       <td align="right">{{ forloop.index }}</td>
       <td>{{ assignment }}</td>
@@ -63,6 +80,14 @@
         <td align="center"><font color="f1f1f1">
           <i class="fa fa-book fa-lg"></i></font></td>
       {% endif %}
+
+      {% if lesson_link %}
+        <td align="center"><a href="{{ lesson_link }}">
+          <i class="fa fa-play-circle fa-lg"></i></a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-play-circle fa-lg"></i></font></td>
+      {% endif %}      
 
       {% if lecture_link %}
         <td align="center"><a href="{{ lecture_link }}">
