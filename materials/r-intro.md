@@ -1,4 +1,5 @@
 ---
+
 layout: page
 element: notes
 title: Introduction to R
@@ -80,6 +81,13 @@ weight_g * 2
 weight_g
 weight_g <- 26
 weight_g
+```
+
+* All values and therefore all variables have types
+
+```
+str(weight_g)
+str('hello world')
 ```
 
 ### Comments
@@ -180,8 +188,6 @@ weight_rounded <- round(weight_lb, 1)
 weight_rounded
 ```
 
-> Do [Exercise 4.1-4.3 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
-
 * If you don't save the output of a function then there is no way to access it
 
 ```
@@ -196,11 +202,4 @@ round(mass_kg, 2)
 mass_kg
 ```
 
-### Types
-
-* All values have types
-
-```
-str(weight_lb)
-str('hello world')
-```
+> Do [Exercise 4.1-4.3 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
