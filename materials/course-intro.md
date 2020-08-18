@@ -6,7 +6,7 @@ title: Course Introduction
 
 ### Welcome
 
-* Introduce yourself
+* Introduce yourself (include your pronouns)
 * Introduce co-instructors/TAs
 * Depending on class size have students introduce themselves
 
@@ -14,13 +14,15 @@ title: Course Introduction
 
 * Data and how to work with it
 * Data entry -> Data storage -> Data manipulation -> Data visualization
-* Not statistics
+* Not statistics or machine learning
 
 ### Teaching methods
 
 * Flipped classroom
     * You don't learn how ride a bike just by listening to someone talk about it
       and the same is true for computing
+    * So we use a fair bit of class time for working on exercises, asking questions, and getting help
+* In a normal year we would
 * Reading or videos before class
 * I do, we do, you do
     * I will demo an idea using live coding
@@ -32,6 +34,32 @@ title: Course Introduction
     * If you already know some of the material and are getting ahead, see if
       there's someone you can help
 	* Introduce yourself to one of your neighbors you don't know
+
+### How to do this online (for 2020)
+
+* But, it's 2020, and nothing is normal
+* It has been a long, exhausting, year and it will continue to be so for many of us.
+* My goal is to help you learn as much as you can, while recognizing that most of you have more limitations and less energy than usual.
+
+* The course is being taught online for the first time due to the pandemic.
+* Videos in place live demos
+* Still short presentations interspersed with exercises
+* Class time will start with time for group Q&A focused on general questions about how things work
+* The rest of class will be reserved for working on exercises and getting help
+* To provide maximum flexibility the course material can be engaged with in three ways:
+    1. Fully synchronous: Attend class during the scheduled class periods. Follow each lesson, which combine video lectures and exercises, during the class periods and ask for help as you run into questions. This is the closest approximation to how the course normally runs in-person.
+    2. Synchronous Q&A: Follow each lesson before class, watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods and ask for help on challenges you encountered.
+    3. Asynchronous: Follow the lessons online and ask for help via Piazza. This is the least ideal approach because the course is generally based around the benefits of direct student-instructor interaction to work through misunderstandings, but we'll do our best to make it work for you.
+
+* We have flexible deadline policies to support learning under these difficult circumstances.
+There is an automatic (no request needed) 48 hour extension on all assignments for those who need it and if you need more time just let me know.
+You never need to disclose personal information to me to get an extension. Just let me know how long you need.
+
+* That said, I encourage you to keep up with deadlines to the extent possible.
+Each step of the course builds on the last step and students who get behind often have a hard time catching up.
+
+Class sessions will not be recorded to improve student privacy.
+
 
 ### Course structure
 
@@ -57,6 +85,9 @@ title: Course Introduction
 * Readings
     * Read before relevant class
     * No need to do any challenges or exercises in readings
+* Lessons
+    * Alternating short videos (to introduce idea) and exercise (to start using that idea)
+    * Whether you are treating the class as synchronous or asynchronous alternating between video and exercise will be most effective for most of you
 * Lectures
     * Lectures notes used in class
 	* Not expected to read in advance; may be useful for review
