@@ -166,7 +166,7 @@ It has been a long, exhausting, year and it will continue to be so for many of u
 My goal is to help you learn as much as you can, while recognizing that most people have more limitations and less energy than usual.
 
 The course is being taught online for the first time due to the pandemic.
-to provide maximum flexibility the course material can be engaged with in three ways:
+To provide maximum flexibility the course material can be engaged with in three ways:
 
 1. Fully synchronous: Attend class during the scheduled class periods. Follow each lesson, which combine video lectures and exercises, during the class periods and ask for help as you run into questions. This is the closest approximation to how the course normally runs in-person.
 2. Synchronous Q&A: Follow each lesson before class, watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods and ask for help on challenges you encountered.
