@@ -33,7 +33,15 @@ language: R
 
 ### Basic expressions
 
-* Write code directly in the interpreter
+* Write code directly in the text editor
+
+```
+2 + 2
+```
+
+* This is called an expression
+* A set of commands that returns a value
+
 * Kangaroo rat weight (g -> lb)
 
 ```
@@ -42,21 +50,16 @@ language: R
 50 / 1000 * 2.2
 ```
 
-* Write code in text editor and run either by line or all code
+* Run line
+* Run selection
+* `Source` & `Source with Echo`
 
-```
-50
-50 / 1000
-50 / 1000 * 2.2
-```
-
-* `Source` vs `Source with Echo`
-
-> Create notes R script, put in new folder
+* Save as `krat_weight_analysis.R`
 
 
 ### Variables
 
+* To save the values we calculate for later use we use variables 
 * A variable is a name that has a value associated with it
     * Assign using `<-` or `=`
 
@@ -83,12 +86,6 @@ weight_g <- 26
 weight_g
 ```
 
-* All values and therefore all variables have types
-
-```
-str(weight_g)
-str('hello world')
-```
 
 ### Comments
 
@@ -158,18 +155,15 @@ sqrt(0.11)
     * Arguments that the function requires to calculate the value it returns.
     * `sqrt()` is the name of the function, and `0.11` is the argument.
 
-* Another function that we'll use a lot is `print()`
-* It lets us explicitly print things out
-* One argument - the thing you want to print
+* Another function that we'll use a lot is `str()`
+* All values and therefore all variables have types
+* `str`, short for "structure", lets us look at them
 
 ```
-print(weight_lb)
+str(weight_lb)
+str(10)
+str('hello world')
 ```
-
-* When we run the whole file using `Source` this value gets printed
-* *Source w/o echo*
-* Use this for output we want the program to produce
-* Use this in your assignments to print out the answers
 
 * Functions can take multiple arguments.
     * Round `weight_lb` to one decimal place
