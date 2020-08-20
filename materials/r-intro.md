@@ -167,7 +167,7 @@ str('hello world')
 
 * Functions can take multiple arguments.
     * Round `weight_lb` to one decimal place
-    * Typing `round()` shows arguments
+    * Typing `round()` shows there are two arguments
     * Number to be rounded and number of digits
 
 ```
@@ -175,25 +175,21 @@ round(0.11, 1)
 round(weight_lb, 1)
 ```
 
-* Save the output of a function by assigning it to a variable
+* Arguments return values, so as with other values, if we don't save the output of a function then there is no way to access it later
+* It is common to forget this when dealing with functions and expect the
+  function to have changed the value of the variable
+* But looking at `mass_lb` we see that it hasn't been rounded
+
+```
+mass_lb
+```
+
+* To save the output of a function we assign it to a variable.
 
 ```
 weight_rounded <- round(weight_lb, 1)
 weight_rounded
 ```
 
-* If you don't save the output of a function then there is no way to access it
-
-```
-mass_kg <- 0.5163
-round(mass_kg, 2)
-```
-
-* It is common to forget this when dealing with variables and expect the
-  variable to have changed
-
-```
-mass_kg
-```
 
 > Do [Exercise 4.1-4.3 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
