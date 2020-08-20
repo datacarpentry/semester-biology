@@ -5,34 +5,42 @@ title: Vectors
 language: R
 --- 
 
-### Vectors
+### Vectors Basics
 
 * Remember that all values in R have a type
-* A vector is a sequence of values with the same type
-* Create using `c()`, which stands for "combine"
+* A vector is a sequence of values that all have the same type
+* Create using the `c()` function, which stands for "combine"
 
 ```
 sites <- c("a", "a", "b", "c")
 ```
 
-* `str(sites)` shows that this is a vector of characters
-	
+* Using the `str` function we learned last time shows that this is a vector of 4 character strings 
+
+```
+str(sites)
+```
+
 * Select pieces of a vector by slicing the vector (like slicing a pizza)
 * Use square brackets `[]`
 * In general `[]` in R means, "give me a piece of something"
-* `sites[1]` 
-* `sites[1:3]`
-    * `1:3` makes a vector. So, this is the same as
-* `sites[c(1, 2, 3)]` 
-* `sites[c(4, 1, 3)]`
-    * You can use a vector to get any subset or order you want
-
+* `sites[1]` gives us the first value in the vector
+* `sites[1:3]` gives us the first through the third values
+* `1:3` works by makeing a vector of the whole numbers 1 through 3.
+* So, this is the same as `sites[1:3]` is the same as `sites[c(1, 2, 3)]` 
+* You can use a vector to get any subset or order you want `sites[c(4, 1, 3)]`
 
 * Many functions in R take a vector as input and return a value
-* E.g., we can calculate summary statistics for a vector of densities
+* This includes the function `length` which determines how many items are in a vector
 
 ```
 length(sites)
+```
+
+* We can also calculate common summary statistics
+* For example, if we have a vector of population densities
+
+```
 density <- c(2.8, 3.2, 1.5, 3.8)
 mean(density)
 max(density)
