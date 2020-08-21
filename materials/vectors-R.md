@@ -84,50 +84,65 @@ mean(density, na.rm = TRUE)
 
 ### Working with multiple vectors
 
+* Build on example where we have information on sites and population densities by adding areas
+
+```
+sites <- c("a", "a", "b", "c")
+density <- c(2.8, 3.2, 1.5, 3.8)
+area <- c(3, 5, 1.9, 2.7)
+```
+
 #### Vector math
 
 * Vector math combines values in the same position
 * Element-wise: operating on one element at a time
 
+* We can multiple the density and area vectors together to get a vector of the number of individuals we expect in that area
+
 ```
-density <- c(2.8, 3.2, 1.5, 3.8)
-area <- c(3, 5, 1.9, 2.7)
-total_number <- density * area
+number <- density * area
 ```
+
+* This works because when we multiply vectors, R multiples the first values in each vector, then multiplies the second values in each vector, and so on
 
 #### Filtering
 
-* Subsetting or "filtering" is done using `[]`, like slicing
-* The `[]` say "give me a piece of something"
+* Subsetting or "filtering" is done using `[]`
+* Like with slicing, the `[]` say "give me a piece of something"
 * Selects parts of vectors based on "conditions" not position
-* Get the area values for site a
+* Get the density values in site a
 
 ```r
-area[sites == 'a']
+density[sites == 'a']
 ```
 
-* `==` means "equal to" in most languages.
+* `==` is how we indicate "equal to" in most programming languages.
 * Not `=`. `=` is used for assignment.
 
 * Can also do "not equal to"
 
 ```r
-area[sites != 'a']
+density[sites != 'a']
 ```
 
 * Numerical comparisons like greater or less than
-* Select sites that meet some area condition
+* Select sites that meet with some restrictions on density
 
 ```r
-sites[area > 3]
-sites[area >= 3]
-sites[area < 3]
+sites[density > 3]
+sites[density < 3]
+sites[density <= 3]
 ```
 
 * Can subset a vector based on itself
+* If we want to look at the densities greater than 3
+* `density` is both the vector being subset and part of the condition
 
 ```r
-sites[sites != 'a']
+density[density > 3]
 ```
+
+* Multiple vectors can be used together to perform element-wise math, where we do the same calculation for each position in the vectors
+* We can also filter the values in vector based on the values in another vector or itself
 
 > Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
