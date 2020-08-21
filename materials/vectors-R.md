@@ -52,23 +52,33 @@ sum(density)
 
 ### Null values
 
-* So far we've worked with data with no missing values
-* How many of you have missing values in your data?
-* Missing or "null" values written in R as `NA`
+* So far we've worked with vectors that contain no missing values
+* But most real world data has values that are missing for a variety of reasons
+* For example, kangaroo rats don't like being caught by humans and are pretty good at escaping before you've finished measuring them
+* Missing values, known as "null" values, are written in R as `NA` with no quotes
+* So a vector of 4 population densities with the third value missing would look like
 
 ```
-density <- c(2.8, 3.2, 1.5, NA)
+density <- c(2.8, 3.2, NA, 3.8)
+```
+
+* If we try to take the mean of this vector we get `NA`?
+
+```
 mean(density)
 ```
 
-* Why did we get `NA`?
-    * Hard to say what a calculation including `NA` should be
-    * So most calculations return `NA` when `NA` is in the data
+* Hard to say what a calculation including `NA` should be
+* So most calculations return `NA` when `NA` is in the data
 * Can tell many functions to remove the `NA` before calculating
 
 ```
 mean(density, na.rm = TRUE)
 ```
+
+* Null values are how we indicate missing data in R
+* We write nulls using `NA`
+* Can remove them in many calculations using the optional argument `na.rm = TRUE`
 
 > Do [Nulls in Vectors]({{ site.baseurl }}/exercises/Vectors-nulls-in-vectors-R/).
 
