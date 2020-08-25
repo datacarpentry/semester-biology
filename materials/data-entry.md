@@ -32,19 +32,40 @@ protection against bad data being entered
 
 * Stopping bad data from ever being entered
 * Set rules about what values can be entered into a column
+* Let's create a data table with information on the Plot being sampled, and Species ID and mass of each individual small mammal that we catch.
+* Header row: `Plot`, `SpeciesID`, `Mass`
 
-* Select an area of cells, most often a column
+* To setup a quality assurance rule let's select the Plots column
 * `Data -> Data Validation`
-* Choose the data type: `Whole numbers` (only that type can be entered)
+* Plot numbers are integers so choose the data type: `Whole numbers` (only that type can be entered)
 * Set limitations
     * Use `Data` to set the type of limitation: `between` 
-    * Then use additional boxes to provide specifics: `1` and `10`
+    * There are 24 plots so use boxes to provide limit the possible values to between `1` and `24`
 * Add a message to explain what goes in a cell in `Input Message`
+    * "Valid plot numbers are 1-24"
 * Add a useful error message using `Error Alert`
+    * "Plot numbers must be whole numbers 1-24"
 
-* Make lists of choices
-    * `Allow` = `List`
-    * Enter list values in `Sources`: DM, DO, DS, PP, PM
+* Now enter some plot data
+* The numbers 1-24 are entered normally
+* If we try to enter an invalid number, e.g., 222, we get an error
+* If we hover over a cell we see the description of what is valid
+
+* We can also limit decimal numbers
+* Select `Mass` column
+* `Data -> Data Validation` -> `Allow` = `Decimal`
+* Masses have to be positive, so set `Minimum` = 0
+* The largest mammal that can fit in the small traps used in this study is 300 g, so set `Maximum` = 300
+
+
+* Limit entries to a list of choices
+* This allows us to control data entry for fields like Species ID
+* Select `SpeciesID` column
+* `Data -> Data Validation` -> `Allow` = `List`
+* Enter list values in `Sources`: DM, DO, DS, PP, PM
+* Trying to enter a value not on the list results in an error
+* This also generates a drop-down menu, so we can select the SpeciesID instead of typing it in
+
 
 > Demo a data entry form in Excel or Google Forms
 
