@@ -5,21 +5,16 @@ title: Data entry validation in Excel
 language: SQL
 ---
 
-You're starting a new study of small mammals at the [NEON site at Ordway-Swisher](http://ordway-swisher.ufl.edu/NEON.aspx). 
-Create a spreadsheet in Excel for data entry. It should have four columns: Year, Site, Species, and Mass.
+Create a spreadsheet in Excel for data entry. It should have five columns: Date, Site, Species, Mass, and Length.
 
-Set the following data validation criteria to prevent any obviously wrong data
-from getting entered:
+Set the following data validation criteria to prevent invalid data from getting entered:
 
-1. Year must be an integer between 2015 and 2025.
-2. Site should be one of the following `A1`, `A2`, `B1`, `B2`.
-3. Species should be one of the following `Dipodomys spectabilis`, `Dipodomys
-   ordii`, `Dipodomys merriami`.
-4. Mass should be a decimal greater than or equal to zero but less than or equal
-   to 500 since mass is measured in grams in this study and nothing bigger than
-   half a kilogram will possibly fit into your
-   [Sherman traps](https://en.wikipedia.org/wiki/Sherman_trap). Change the error
-   message on this validation criteria to explain why data is invalid and what
-   the valid values are.
+1. The Date column should be set so that it doesn't convert dates to other formats.
+2. Use data validation so that Site can only be one of the following `A1`, `A2`, `B1`, `B2`. Set the error message on this validation criteria to provide information on what the valid values are.
+3. Use data validation so that Species can only be one of the following `Dipodomys spectabilis`, `Dipodomys ordii`, `Dipodomys merriami`. Set the error message on this validation criteria to provide information on what the valid values are.
+4. Use data validation so that Mass can only be a decimal greater than or equal to zero but less than or equal to 500. Set the error message on this validation criteria to provide information on what the valid values are.
+5. Length should be an integer (i.e., a whole number) between 1 and 10. Set the error message on this validation criteria to provide information on what the valid values are.
 
-Save this file as `yourname_ordway_mammal_data.xlsx`.
+Check that the validation rules and data formating are working, but do not include any entered data in the final file.
+ 
+Save this file as `data_entry_form.xlsx`.
