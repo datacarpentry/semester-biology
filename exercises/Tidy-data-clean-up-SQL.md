@@ -8,8 +8,8 @@ language: SQL
 A lot of real data isn't very tidy, mostly because most scientists aren't taught
 about how to structure their data in a way that is easy to analyze.
 
-[Download a messy version](https://ndownloader.figshare.com/files/2252083)
-of some of the Portal Project data. Note that there are multiple sheets/tabs in this
-spreadsheet.
+[Download an untidy version](https://ndownloader.figshare.com/files/24469424)
+of some of the Portal Project data, which includes information on the data, species
+identification, weight and sampling plot for some small mammals. 
 
-Convert the data on the first sheets/tabs into a more tidy format.
+Convert the data into a more tidy format.

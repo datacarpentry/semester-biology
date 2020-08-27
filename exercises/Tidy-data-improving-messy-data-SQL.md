@@ -8,12 +8,11 @@ language: SQL
 A lot of real data isn't very tidy, mostly because most scientists aren't taught
 about how to structure their data in a way that is easy to analyze.
 
-[Download a messy version](https://ndownloader.figshare.com/files/2252083)
-of some of the Portal Project data. Note that there are multiple tabs in this
-spreadsheet.
+[Download an untidy version](https://ndownloader.figshare.com/files/24469424)
+of some of the Portal Project data, which includes information on the site, date,
+species identification, weight and sampling plot (within the site) for some small mammals. 
 
-Think about what could be improved about this data. In a text file (*to be
-turned in as part of the assignment*):
+Think about what could be improved about this data and write down answers to the following questions:
 
 1.   Describe five things about this data that are not tidy and how you could
      fix each of those issues.
