@@ -72,6 +72,7 @@ language: R
 * When you open RStudio Cloud click on the three lines in the top corner and select `Data Carpentry` from `Spaces`
 * Select the appropriate week
 * This is your own copy of the assignment, which should include everything you need to both follow along with the lessons and complete the assignment.
+* If you want to start a separate project, not for class, just click on `New Project` instead
 
 ### Basic expressions
 
