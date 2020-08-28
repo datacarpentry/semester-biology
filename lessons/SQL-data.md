@@ -5,6 +5,10 @@ title: Data Entry and Storage
 language: SQL
 ---
 
+*Optional*. If you don't have Microsoft Excel on your computer watch the video on how to use it online:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ePrGRj9o7sU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 1\. Watch the Tidy Data video:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KggGgrVsOK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
