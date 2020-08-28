@@ -6,30 +6,72 @@ title: Introduction to R
 language: R
 ---
 
-> Remind students to install R and RStudio.
+> Remind students to install R and RStudio or setup access to RStudio Cloud/Server
 
 > Have students open RStudio and check to see if console "sees" R.
+
+### Logging into RStudio Cloud
+
+* Open a browser
+* Go to https://rstudio.cloud/
+* ...
+
 
 ### R
 
 * Programming language
-* Statistics and data analysis environment
-
+* Started as a statistics and data analysis environment
+* But can also build websites, run simulations, and lots of other things
+* R is what runs all of the code we will write this semester
+* Separate from RStudio
 
 ### RStudio
 
 * IDE - Integrated Development Environment
-    * Interpreter/Console
-    * Text editor
-        * object highlighting 
-        * information about problems with code
-        * `tab` key autocompletes
-            * Let the computer do repetitious work. 
-            * It's easier and with fewer mistakes.
-    * Environment/History
-    * Project management
+* Makes developing code in R easier
+* It includes a number of different aspects of code development in one place
+* Interpreter/Console is where R is actually running
+    * Can work in here "interactively"
+    * Run a single command and see the result
+    * `2 + 2`
+    * This is also where RStudio will run code written in the text dditor
+* Text editor
+    * Where we write code we want to keep and potentially reuse later
+    * Creates a plain text file that stores the code we've written
+    * Does a number of things to make writing clean code easier including
+        * Object highlighting to makes it easier to see different things in the code
+        * Automatically pairing `""` and `{}`
+        * Automatically indenting code
+        * Flagging issues with code
+        * Autocompleting function and variable names
+    * `tab` key autocompletes
+        * Let the computer do repetitious work. 
+        * It's easier and with fewer mistakes.
+* It provides information on the variables that currently exist and their values under Environment
+* And a history of the commands you've run under `History` in case you forgot to write something down
+* Project management
+    * Create, delete, and rename files & folders
+    * Projects to help code know where other files like data files are located
 
 > Create new folder for scripts
+
+### RStudio Cloud
+
+* An online version of RStudio that runs in your browser
+* We are going to try using this this year for four reasons
+  1. Everything should work for everyone, there shouldn't be installation issues or other complexities that come from differences between computers
+  2. Code is automatically shared with instructors so we can help you figure out why things aren't working. This is the closest approximation to working side by side with you in the classroom that I've been able to find.
+  3. We can leave some of the complexities of working with R until after we've learned the basics
+  4. Works on tablets as well as computers
+* Folks with limited internet access, please checkout the video on working with RStudio installed on your own computer
+
+#### RStudio Cloud in Class
+
+* All work for this class will be done in a class workspace
+* To join this space follow the link provided via Canvas and sign in using your UF email address
+* When you open RStudio Cloud click on the three lines in the top corner and select `Data Carpentry` from `Spaces`
+* Select the appropriate week
+* This is your own copy of the assignment, which should include everything you need to both follow along with the lessons and complete the assignment.
 
 ### Basic expressions
 
