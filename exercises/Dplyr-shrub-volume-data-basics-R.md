@@ -13,17 +13,14 @@ has placed the data file on the web for you to download:
 * [Shrub dimensions data]({{ site.baseurl }}/data/shrub-volume-data.csv)
 
 Download this into your `data` folder and get familiar with the data by
-importing it using `read.csv()` and then:
+importing it using `read.csv()` and use `dplyr` to complete the following tasks.
 
-1. Check the column names in the data using the function `names()`.
-2. Use `str()` to show the structure of the data frame and its individual 
-   columns.
-3. Print out the first few rows of the data using the function `head()`.
-
-   *Use `dplyr` to complete the remaining tasks.*
-4. Select the data from the length column and print it out.
-5. Select the data from the site and experiment columns and print it out.
-6. Filter the data for all of the plants with heights greater than 5 and
-   print out the result.
-7. Create a new data frame called `shrub_data_w_vols` that includes all of the
-   original data and a new column containing the volumes, and display it.
+1. Select the data from the length column and print it out (using `select`).
+2. Select the data from the site and experiment columns and print it out (using `select`).
+3. Add a new column named `area` containing the of the shrub, which is the width times the height (using `mutate`).
+4. Sort the data by length (using `arrange`).
+5. Filter the data to include only plants with heights greater than 5 (using `filter`).
+6. Filter the data to include only plants with heights greater than 4 and widths greater than 2 (using `,` or `&` to include two conditions).
+7. Filter the data to include only plants from Experiment 1 or Experiment 3 (using `|` for "or").
+8. Filter the data to remove null values from the `height` column (using `!is.na`)
+9. Create a new data frame called `shrub_volumes` that includes all of the original data and a new column containing the volumes (length * width * height), and display it.
