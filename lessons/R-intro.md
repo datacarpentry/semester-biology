@@ -5,31 +5,48 @@ title: Introduction to R and RStudio
 language: R
 ---
 
-Introduction to R, RStudio, & RStudio Cloud Video
+1\. Watch the Introduction to R and RStudio Video:
 
-* Make sure you have RStudio installed or access to RStudio Cloud
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zqUQL8OOtMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+2\. Watch the Introduction RStudio Cloud Video:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5eJ5sdKKi9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+3\. Make sure you have RStudio installed or access to RStudio Cloud
+
+4\. Watch the Expresssions and Variables in R video:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BFVX0CKY67g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Assignment format video
+5\. Watch the Assignment Format video:
 
-* Do [Exercise 1.1-1.3 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
-* Do [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Inuvup-g090" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+6\. Do [Exercise 1.1-1.3 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/) and [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
+
+7\. Watch the Using Functions video:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5QEAMY6mGC8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* Do [Exercise 4.1-4.3 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
+8\. Do [Exercise 4.1-4.3 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
+
+9\. Watch the Basic Vectors video:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QjcV_eMu-PI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* Do [Basic Vectors]({{ site.baseurl }}/exercises/Vectors-basic-vectors-R/).
+10\. Do [Basic Vectors]({{ site.baseurl }}/exercises/Vectors-basic-vectors-R/).
+
+11\. Watch the Null Values in R video:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6fx0YJ-isZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* Do [Nulls in Vectors]({{ site.baseurl }}/exercises/Vectors-nulls-in-vectors-R/).
+12\. Do [Nulls in Vectors]({{ site.baseurl }}/exercises/Vectors-nulls-in-vectors-R/).
+
+13\. Watch the Working with Multiple Vectors in R video:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PBGTApIB5I4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
+14\. Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
 
-Code Executation Video
+15\. Finish the [Introduction to R and RStudio assignment]({{ site.baseurl }}/assignments/r-intro/).
