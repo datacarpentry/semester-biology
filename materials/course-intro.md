@@ -55,7 +55,7 @@ title: Course Introduction
     2. Synchronous Q&A: Follow each lesson before class, watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods and ask for help on challenges you encountered.
     3. Asynchronous: Follow the lessons online and ask for help via Piazza. This is the least ideal approach because the course is generally based around the benefits of direct student-instructor interaction to work through misunderstandings, but we'll do our best to make it work for you.
 
-* Piazza
+* For peer instruction and getting help from instructors outside of class we're using: Piazza
 
 * We have flexible deadline policies to support learning under these difficult circumstances.
 There is an automatic (no request needed) 48 hour extension on all assignments for those who need it and if you need more time just let me know.

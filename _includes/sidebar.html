@@ -1,21 +1,21 @@
-<div class="sidebar">
-  <div class="container sidebar">
-    <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}/">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description }}</p>
-    </div>
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == '/nav/getting-started/' %} active{% endif %}" href="{{ site.baseurl }}/nav/getting-started"><i class="fa fa-play fa-fw"></i> Getting Started</a>
-      <a class="sidebar-nav-item{% if page.url == '/nav/course-materials/' %} active{% endif %}" href="{{ site.baseurl }}/nav/course-materials"><i class="fa fa-briefcase fa-fw"></i> Course Materials</a>
-      <a class="sidebar-nav-item{% if page.url == '/schedule/' %} active{% endif %}" href="{{ site.baseurl }}/schedule"><i class="fa fa-calendar fa-fw"></i> Schedule</a>
-      <a class="sidebar-nav-item{% if page.url == '/nav/about/' %} active{% endif %}" href="{{ site.baseurl }}/nav/about"><i class="fa fa-user fa-fw"></i> About / Contact Us</a>
-      <a class="sidebar-nav-item{% if page.url == '/in-class-feedback/' %} active{% endif %}" href="{{ site.baseurl }}/in-class-feedback"><i class="fa fa-bullhorn fa-fw"></i> In-class Feedback</a>
-    </nav>
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
 
-    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ site.baseurl }}/public/cc-by-80x15.png" /></a></p>
-  </div>
-</div>
+     <!-- Toggleable sidebar -->
+     <div class="sidebar" id="sidebar">
+       <div class="sidebar-item">
+         <p>{{ site.description }}</p>
+       </div>
+     
+       <nav class="sidebar-nav">
+        <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}"><i class="fa fa-home fa-fw"></i>Home</a>
+        <a class="sidebar-nav-item{% if page.url == '/nav/getting-started/' %} active{% endif %}" href="{{ site.baseurl }}/nav/getting-started"><i class="fa fa-play fa-fw"></i> Getting Started</a>
+        <a class="sidebar-nav-item{% if page.url == '/nav/course-materials/' %} active{% endif %}" href="{{ site.baseurl }}/nav/course-materials"><i class="fa fa-briefcase fa-fw"></i> Course Materials</a>
+        <a class="sidebar-nav-item{% if page.url == '/schedule/' %} active{% endif %}" href="{{ site.baseurl }}/schedule"><i class="fa fa-calendar fa-fw"></i> Schedule</a>
+        <a class="sidebar-nav-item{% if page.url == '/nav/about/' %} active{% endif %}" href="{{ site.baseurl }}/nav/about"><i class="fa fa-user fa-fw"></i> About / Contact Us</a>
+        <a class="sidebar-nav-item{% if page.url == '/in-class-feedback/' %} active{% endif %}" href="{{ site.baseurl }}/in-class-feedback"><i class="fa fa-bullhorn fa-fw"></i> In-class Feedback</a>
+        <a class="sidebar-nav-item{% if page.url == '/in-class-feedback/' %} active{% endif %}" href="https://creativecommons.org/licenses/by/4.0/"><i class="fa fa-unlock fa-fw"></i> Open Educational Resource</a>
+      </nav>
+  
+     </div>
