@@ -3,7 +3,7 @@ layout: page
 title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
-'Basics of Reproducibility', 'Spatial Data 1', 'Spatial Data 2', 
+'Review + Reproducibility', 'Spatial Data 1', 'Spatial Data 2', 
 'Functions', 'Making Choices', 'Repeating Things 1', 'Repeating Things 2',
 'tidyr', 'Version Control', 'Knitr']
 ---
