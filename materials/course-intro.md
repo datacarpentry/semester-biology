@@ -16,13 +16,12 @@ title: Course Introduction
 * Data entry -> Data storage -> Data manipulation -> Data visualization
 * Not statistics or machine learning
 
-### Teaching methods
+### Teaching methods (normal year)
 
 * Flipped classroom
     * You don't learn how ride a bike just by listening to someone talk about it
       and the same is true for computing
     * So we use a fair bit of class time for working on exercises, asking questions, and getting help
-* In a normal year we would
 * Reading or videos before class
 * I do, we do, you do
     * I will demo an idea using live coding
@@ -42,14 +41,21 @@ title: Course Introduction
 * My goal is to help you learn as much as you can, while recognizing that most of you have more limitations and less energy than usual.
 
 * The course is being taught online for the first time due to the pandemic.
-* Videos in place live demos
+* Building the race car as it drives around the track.
+* Videos in place live demos, which means they can also replace advanced readings/videos
 * Still short presentations interspersed with exercises
 * Class time will start with time for group Q&A focused on general questions about how things work
 * The rest of class will be reserved for working on exercises and getting help
+* To participate in class
+    * Join the appropriate Zoom meeting (there a different Zoom links for Tuesdays and Fridays)
+    * Ask questions via chat or by raising your hand during group Q&A
+    * After group Q&A Andrew & I will use breakout rooms to meet with individual students or groups of students
 * To provide maximum flexibility the course material can be engaged with in three ways:
     1. Fully synchronous: Attend class during the scheduled class periods. Follow each lesson, which combine video lectures and exercises, during the class periods and ask for help as you run into questions. This is the closest approximation to how the course normally runs in-person.
     2. Synchronous Q&A: Follow each lesson before class, watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods and ask for help on challenges you encountered.
     3. Asynchronous: Follow the lessons online and ask for help via Piazza. This is the least ideal approach because the course is generally based around the benefits of direct student-instructor interaction to work through misunderstandings, but we'll do our best to make it work for you.
+
+* Piazza
 
 * We have flexible deadline policies to support learning under these difficult circumstances.
 There is an automatic (no request needed) 48 hour extension on all assignments for those who need it and if you need more time just let me know.
@@ -60,6 +66,9 @@ Each step of the course builds on the last step and students who get behind ofte
 
 Class sessions will not be recorded to improve student privacy.
 
+* If you have decent internet access the course is designed so that you can do it entirely in a browswer without any local software installation
+* There are alternative approaches for folks with limited internet access
+* Aid-a-Gator can also be used to help cover the cost of internet access
 
 ### Course structure
 
@@ -98,16 +107,19 @@ Class sessions will not be recorded to improve student privacy.
 ### Syllabus
 
 * Grading
-    * 100/90/50/0
+    * Produces the correct answer using the requested approach: 100%
+    * Generally uses the right approach, but a minor mistake results in an incorrect answer: 90%
+    * Attempts to solve the problem and makes some progress using the core concept: 50%
+    * No answer or answer lacking basic understanding of core concept: 0%
 * Give it a read and let me know if you have any questions
 
 ### Office Hours
 
-* Monday: 2-3:15 in NZ 203
+* Tuesday & Wednesday: 2-3 pm
 
 ### Canvas
 
-* Handle assignment submission and grading through Canvas
+* Handle grading and assignment submission through Canvas
 * Chat
 
 ### First day demo
