@@ -177,8 +177,9 @@ There is an automatic (no request needed) 48 hour extension on all assignments f
 If you need more time just let me know.
 You never need to disclose personal information to me to get an extension. Just let me know how long you need.
 
-Class sessions will not be recorded to improve student privacy.
+### Class Recording
 
+Our class sessions may be audio visually recorded for students in the class to refer back and for enrolled students who are unable to attend live. Students who participate with their camera engaged or utilize a profile image are agreeing to have their video or image recorded.  If you are unwilling to consent to have your profile or video image recorded, be sure to keep your camera off and do not use a profile image. Likewise, students who un-mute during class and participate orally are agreeing to have their voices recorded.  If you are not willing to consent to have your voice recorded during class, you will need to keep your mute button activated and communicate exclusively using the "chat" feature, which allows students to type questions and comments live. The chat will not be recorded or shared. As in all courses, unauthorized recording and unauthorized sharing of recorded materials is prohibited.
 
 ### Attendance Policy
 
