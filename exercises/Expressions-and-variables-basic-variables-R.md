@@ -14,10 +14,8 @@ mass_g <- mass_kg * 1000
 mass_g
 ```
 
-Modify this code to create a variable that stores a body mass in pounds and
-assign it a value of 3.5 (about the right size for a
-[Desert Cottontail Rabbit – *Sylvilagus audubonii*](https://en.wikipedia.org/wiki/Desert_Cottontail)).
-Convert this value to kilograms. There are approximately 2.2046 lbs in a
-kilogram, so divide the variable storing the weight in pounds by 2.2046 and
-store this value in a new variable for storing mass in kilograms. Print the
-value of the new variable to the screen.
+1. Create a variable to store a body mass in pounds. Assign this variable a value of 3.5 (about the right size for a [Desert Cottontail Rabbit – *Sylvilagus audubonii*](https://en.wikipedia.org/wiki/Desert_Cottontail)).
+2. Convert the variable from body mass in pounds to body mass in kilograms and assign it to a new variable.
+Tip: You can do this by dividing the variable storing the weight in pounds by 2.20462. 
+3. Print the value of the new variable to the screen.
+
