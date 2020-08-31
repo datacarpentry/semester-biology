@@ -1,13 +1,14 @@
 ---
 layout: page
 element: reading
-title: Data in Tables
+title: Grouping & Joining Data
 language: R
 ---
 
 ### Readings
 
-* [R for Data Science - Data transformation 5.1-5.6](http://r4ds.had.co.nz/transform.html)
+* [R for Data Science - Data transformation 5.6](http://r4ds.had.co.nz/transform.html)
+* [R for Data Science - Relational Data 13.1-13.4](http://r4ds.had.co.nz/relational-data.html)
 
 ### Optional Resources:
  

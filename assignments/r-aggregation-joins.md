@@ -1,11 +1,13 @@
 ---
 layout: page
 element: assignment
-title: Data in Tables
+title: Grouping & Joining Data
 language: R
-exercises: ['Shrub Volume Data Basics', 'Code Shuffle', 'Portal Data Manipulation', 'Portal Data Manipulation Pipes']
+exercises: ['Shrub Volume Aggregation', 'Shrub Volume Join', 'Portal Data Aggregation', 'Fix the Code', 'Portal Data Joins']
 points: [10, 10, 15, 15, 15, 15, 20]
 ---
+
+#### Learning Objectives
 
 > Following this assignment students should be able to:
 >

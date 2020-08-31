@@ -19,9 +19,3 @@ and load it into R using `read.csv()`.
    need to divide it by 1000.
 3. Use the `filter()` function to get all of the rows in the data frame for the
    species ID `SH`.
-4. Use the `group_by()` and `summarize()` functions to get a count of the number
-   of individuals in each species ID.
-5. Use the `group_by()` and `summarize()` functions to get a count of the number
-   of individuals in each species ID in each year.
-6. Use the `filter()`, `group_by()`, and `summarize()` functions to get the mean
-   mass of species `DO` in each year.

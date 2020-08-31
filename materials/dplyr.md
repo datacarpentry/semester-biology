@@ -8,22 +8,32 @@ time: 1
 
 > Remember to:
 >
+> * If teaching with RStudio Cloud or RStudio Server pre-load `surveys.csv`, `species.csv`, and `plots.csv` into the student's working directory
 > * Consider removing the `dplyr` package so you can demonstrate installing it.
 >     * Linux users: you may not want to do this because the source install is slow
 
 ### Introduction to tabular data
 
 * We will be working with data from the Portal Project.
-    * Long-term experimental study of small mammals in Arizona.
-    * Download `surveys`, `species`, and `plots` from `Datasets` into folder.
-    * Need to know where the data is: Right click -> `Save link as`.
+* Long-term experimental study of small mammals in Arizona.
 
+#### Setup local RStudio
+
+* Download `surveys`, `species`, and `plots` from `Datasets` into folder.
+* Need to know where the data is: Right click -> `Save link as`.
 * Start/open a project (modeling good practice)
+
+#### Setup RStudio Clould
+
+* Go to the class space on RStudio Cloud
+* Click on this weeks assignment
+
+#### Loading and viewing the dataset
 
 * Dataset is composed of three tables.
 * Load these into `R` using `read.csv()`.
 
-```
+```r
 surveys <- read.csv("surveys.csv")
 species <- read.csv("species.csv")
 plots <- read.csv("plots.csv")
@@ -58,33 +68,31 @@ plots <- read.csv("plots.csv")
 
 * Modern data manipulation library for R
 
-```
+```r
 surveys <- read.csv("surveys.csv")
 ```
 
+#### Select
+
 * Select a subset of columns.
 
-```
+```r
 select(surveys, year, month, day)
 ```
 
 * They can occur in any order.
 
-```
+```r
 select(surveys, month, day, year)
 ```
 
-* Use `filter()` to get only the rows that meet certain criteria.
-    * Combine the data frame to be filtered with a series of conditional statements.
-    * Column, condition, value
-  
-```
-filter(surveys, species_id == "DS")
-```
+> Do [Shrub Volume Data Basics 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+
+#### Mutate
 
 * Add new columns with calculated values using `mutate()`
 
-```
+```r
 mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)
 ```
 
@@ -93,16 +101,125 @@ mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)
 * All of these commands produce new values, data frames in this case
 * To store them for later use we need to assign them to a variable
 
-```
+```r
 surveys_plus <- mutate(surveys,
                        hindfoot_length_cm = hindfoot_length / 10)
 ```
 
 * Or we could overwrite the existing variable if we don't need it
 
-```
+```r
 surveys <- mutate(surveys,
                   hindfoot_length_cm = hindfoot_length / 10)
 ```
 
+> Do [Shrub Volume Data Basics 3]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+
+#### Arrange
+
+* We can sort the data in the table using `arrange`
+* To sort the surveys table by by weight
+
+```r
+arrange(surveys, weight)
+```
+
+* We can reverse the order of the sort by "wrapping" `weight` in another function, `desc` for "descending
+
+```r
+arrange(surveys, desc(weight))
+```
+
+* We can also sort by multiple columns, so if we wanted to sort first by `plot` and then by date
+
+```r
+arrange(surveys, plot, year, month, day)
+```
+
+> Do [Shrub Volume Data Basics 4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+
+#### Filter 
+
+* Use `filter()` to get only the rows that meet certain criteria.
+* Combine the data frame to be filtered with a series of conditional statements.
+* Column, condition, value
+* To filter the data frame to only keep the data on species `DS`
+    * Type the name of the function, `filter`
+    * Parentheses
+    * The name of the data frame we want to filter, `surveys`
+    * The column the want to filter on, `species_id`
+    * The condition, which is `==` for "is equal to"
+    * And then the value, `"DS"`
+    * `DS` here is a string, not a variable or a column name, so we enclose it in quotation marks
+  
+```r
+filter(surveys, species_id == "DS")
+```
+
+* Like with vectors we can have a condition that is "not equal to" using "!="
+* So if we wanted the data for all species except "DS
+
+```r
+filter(surveys, species_id != "DS")
+```
+
+* We can also filter on multiple conditions at once
+* In computing we combine conditions in two ways "and" & "or"
+* "and" means that all of the conditions must be true
+* Do this in `dplyr` using additional comma separate arguments
+* So, to get the data on species "DS" for the year 1995:
+
+```r
+filter(surveys, species_id == "DS", year > 1995)
+```
+
+* Alternatively we can use the `&` symbol, which stands for "and"
+
+```r
+filter(surveys, species_id == "DS" & year > 1995)
+```
+
+* This approach is mostly useful for building more complex conditions
+
+* "or" means that one or more of the conditions must be true
+* Do this using `|`
+* To get data on all of the *Dipodomys* species
+
+```r
+filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
+```
+
 > Do [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+
+
+### Filtering null values
+
+* We can also use `filter` to remove null values from our data
+* 
+
+```r
+filter(surveys_by_species, weight != NA)
+```
+
+* Why didn't that work?
+* Null values like `NA` are special
+* We don't want to accidentally say that two "missing" things are the same
+    * We don't know if they are
+* So use special commands
+* `is.na()` checks if the value is `NA`
+* Combine this with `!` for "not"
+
+```
+filter(surveys_by_species, !is.na(weight))
+```
+
+* So `!is.na(weight)` is conceptually the same as "weight != NA"
+
+```
+surveys_by_species_nonull <- filter(surveys_by_species,
+                                    !is.na(weight))
+species_weight <- summarize(surveys_by_species_nonull,
+                            avg_weight = mean(weight))
+```
+
+> Do [Portal Data Manipulation 4-6]({{ site.baseurl }}/exercises/Portal-data-manip-R/).
