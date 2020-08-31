@@ -70,8 +70,9 @@ language: R
 * All work for this class will be done in a class workspace
 * To join this space follow the link provided via Canvas and sign in using your UF email address
 * When you open RStudio Cloud click on the three lines in the top corner and select `Data Carpentry` from `Spaces`
-* Select the appropriate week
-* This is your own copy of the assignment, which should include everything you need to both follow along with the lessons and complete the assignment.
+* Click on the appropriate week, which should say `Start` by it the first time you open it
+* This is your own copy of the assignment, which should include everything you need to both follow along with the lessons and complete the assignment
+* This is also where we can come look at your code to help if you get stuck
 * If you want to start a separate project, not for class, just click on `New Project` instead
 
 ### Basic expressions
