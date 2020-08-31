@@ -2,14 +2,9 @@
 layout: default
 ---
 
-This website hosts introductory material for teaching biologists how to interact
-with data including: data structure, database management systems, and
-programming for data manipulation, analysis, and visualization. It is designed
-to be used as a flipped university course and also to be useful for self-guided
-students. Instructors are welcome to modify and use the material for your own 
-courses. We encourage collaborative development and contributions by 
-instructors, with the hopes that this will lead to better training and resources 
-for everyone. 
+An introduction to working with data for biologists including: data structure, data manipulation, visualization, basic programming, and databases.
+Designed to be used as a flipped university course and also for self-guided
+students.
 
 For Students
 : <a href="{{ site.baseurl}}/syllabus">
@@ -38,3 +33,7 @@ For Instructors
   <i class="fa fa-magic fa-fw"></i> Exercises</a>
 : <a href="{{ site.baseurl}}/docs">
   <i class="fa fa-question-circle fa-fw"></i> Course Development Help</a>
+
+The material is designed to be modify and remixed to create your own 
+courses. Collaborative development and contributions by 
+are welcome. 
