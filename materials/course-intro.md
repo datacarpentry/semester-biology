@@ -115,6 +115,7 @@ Each step of the course builds on the last step and students who get behind ofte
 
 ### Syllabus
 
+* Inclusivity & accessibility
 * Grading
     * Produces the correct answer using the requested approach: 100%
     * Generally uses the right approach, but a minor mistake results in an incorrect answer: 90%
@@ -129,8 +130,10 @@ Each step of the course builds on the last step and students who get behind ofte
 
 ### Canvas
 
-* Handle assignment submission, grading, and annoucements through Canvas
-* Chat
+* Show Canvas
+* Will publish modules as soon as the material is ready to be worked on
+* First thing Monday at the latest, but hopefully much earlier
+* Handle assignment submission, grading, and announcements through Canvas
 
 ### First day demo
 
