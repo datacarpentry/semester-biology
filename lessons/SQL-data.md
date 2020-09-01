@@ -25,4 +25,8 @@ language: SQL
 
 6\. Read the [How to Post a Question](https://support.piazza.com/support/solutions/articles/48000574396-students-post-a-question) guide for Piazza and check out any additional information you're interested in on the [Piazza Q&A page](https://support.piazza.com/support/solutions/folders/48000404468)
 
-7\. Finish the [Data Entry and Storage Assignment]({{ site.baseurl }}/assignments/sql-data/)
+7\. Finish the [Data Entry and Storage Assignment]({{ site.baseurl }}/assignments/sql-data/).
+
+> * Submit the answer to Exercise 1 in the Canvas text box.
+> * Submit the answer to Exercise 2 as an Excel file uploaded to Canvas.
+> * If you do the optional Exercise 3 also submit it was an Excel file to Canvas.
