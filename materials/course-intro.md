@@ -47,15 +47,16 @@ title: Course Introduction
 * Class time will start with time for group Q&A focused on general questions about how things work
 * The rest of class will be reserved for working on exercises and getting help
 * To participate in class
-    * Join the appropriate Zoom meeting (there a different Zoom links for Tuesdays and Fridays)
+    * Join the appropriate Zoom meeting (there are different Zoom links for Tuesdays and Fridays)
     * Ask questions via chat or by raising your hand during group Q&A
     * After group Q&A Andrew & I will use breakout rooms to meet with individual students or groups of students
-* To provide maximum flexibility the course material can be engaged with in three ways:
-    1. Fully synchronous: Attend class during the scheduled class periods. Follow each lesson, which combine video lectures and exercises, during the class periods and ask for help as you run into questions. This is the closest approximation to how the course normally runs in-person.
-    2. Synchronous Q&A: Follow each lesson before class, watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods and ask for help on challenges you encountered.
-    3. Asynchronous: Follow the lessons online and ask for help via Piazza. This is the least ideal approach because the course is generally based around the benefits of direct student-instructor interaction to work through misunderstandings, but we'll do our best to make it work for you.
 
 * For peer instruction and getting help from instructors outside of class we're using: Piazza
+    * Piazza is a 
+
+* To provide maximum flexibility the course material can be engaged with in two ways:
+    1. Synchronous Q&A: Follow each lesson before class (1st half by Tuesday, 2nd half by Friday), watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods. Ask general questions during the opening Q&A period and work 1:1 afterwards for things you still don't understand or that won't work.
+    2. Asynchronous: Follow the lessons online and ask for help via Piazza. This is less ideal because of the benefits of direct in-person student-instructor interaction for working through misunderstandings, but it should still be effective. Opening class Q&A sessions will be recorded and posted to Canvas.
 
 * We have flexible deadline policies to support learning under these difficult circumstances.
 There is an automatic (no request needed) 48 hour extension on all assignments for those who need it and if you need more time just let me know.
@@ -63,8 +64,6 @@ You never need to disclose personal information to me to get an extension. Just 
 
 * That said, I encourage you to keep up with deadlines to the extent possible.
 Each step of the course builds on the last step and students who get behind often have a hard time catching up.
-
-Class sessions will not be recorded to improve student privacy.
 
 * If you have decent internet access the course is designed so that you can do it entirely in a browswer without any local software installation
 * There are alternative approaches for folks with limited internet access
