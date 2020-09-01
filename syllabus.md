@@ -10,7 +10,7 @@ email: ethanwhite@ufl.edu
 phone: 
 schedule: ['Tuesdays, 3-3:50 pm ET', 'Fridays, 11:45-1:40 pm ET']
 location: Zoom
-office_hours: "Tuesday & Wednesday 2-3 pm ET"
+office_hours: "Wednesday & Thursday 2-3 pm ET"
 office_hours_location: Zoom
 TA: Andrew Marx
 TA_email: andrewjmarx@ufl.edu
