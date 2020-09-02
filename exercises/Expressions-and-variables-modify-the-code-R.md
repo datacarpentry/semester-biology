@@ -21,12 +21,12 @@ site1_npp_day
 site2_npp_day
 ```
 
-Modify the code to produce the following items and print them out after the
+Copy this code into your assignment and then add additional lines of code to do the following steps and print them out after the
 daily NPP values (the ones currently printed by the code):
 
-1.  The sum of the total daily NPP for the two sites combined.
+1.  The sum of the total daily NPP for the two sites.
 2.  The difference between the daily NPP for the two sites. We only want
     an absolute difference, so use abs() function to make sure the
     number is positive.
 3.  The total NPP over a year for the two sites combined (the sum of the total
-    daily NPP values multiplied by 365).
+    daily NPP values from part (1) multiplied by 365).

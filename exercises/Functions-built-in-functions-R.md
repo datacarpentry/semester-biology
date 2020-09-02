@@ -6,16 +6,18 @@ language: R
 ---
 
 A built-in function is one that you don't need to install and load a package to
-use. To learn how to use a function you can use the `help()` function or the
-`Help` tab in RStudio. `help()` takes one parameter, the name of the function
-that you want information about (*e.g.,* `help(abs)`) or type the name into the
-search box on the `Help` tab.  Familiarize yourself with the built-in functions
-`abs()`, `round()`, `sqrt()`, `tolower()`, and `toupper()`.  Use these built-in
-functions to print the following items:
+use. Some examples include:
+
+* `abs()` returns the absolute value of a number (e.g., `abs(-2`))
+* `round()`, rounds a number (the first argument) to a given number of decimal places (the second argument) (e.g., `round(12.1123, 2)`)
+* `sqrt()`, takes the square root of a number (e.g., `sqrt(4)`)
+* `tolower()`, makes a string all lower case (e.g., `tolower("HELLO")`)
+* `toupper()`, makes a string all upper case (e.g., `toupper("hello")`)
+
+Use these built-in functions to print the following items:
 
 1. The absolute value of -15.5.
-2. 4.483847 rounded to one decimal place. *The function `round()` takes two
-   arguments, the number to be rounded and the number of decimal places.*
+2. 4.483847 rounded to one decimal place.
 3. 3.8 rounded to the nearest integer. *You don't have to specify the number of
    decimal places in this case if you don't want to, because `round()` will
    default to using `0` if the second argument is not provided. Look at
@@ -26,6 +28,6 @@ functions to print the following items:
    variable you've created to 2 decimal places and assign it to another
    variable. Print out the rounded value.
 
-*Challenge*: Do the same thing as task 6 (*immediately above*), but instead of
+*Optional Challenge*: Do the same thing as task 6 (*immediately above*), but instead of
 creating the intermediate variable, perform both the square root and the round
 on a single line by putting the `sqrt()` call inside the `round()` call.

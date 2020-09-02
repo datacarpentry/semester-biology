@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Data in Tables
 language: R
-exercises: ['Shrub Volume Data Basics', 'Code Shuffle', 'Portal Data Manipulation', 'Portal Data Manipulation Pipes']
+exercises: ['Shrub Volume Data Basics', 'Code Shuffle', 'Bird Banding', 'Portal Data Manipulation', 'Portal Data Manipulation Pipes']
 points: [10, 10, 15, 15, 15, 15, 20]
 ---
 
