@@ -27,6 +27,6 @@ language: SQL
 
 7\. Finish the [Data Entry and Storage Assignment]({{ site.baseurl }}/assignments/sql-data/).
 
-> * Submit the answer to Exercise 1 in the Canvas text box.
+> * Submit the answer to Exercise 1 as a Word doc or text file.
 > * Submit the answer to Exercise 2 as an Excel file uploaded to Canvas.
 > * If you do the optional Exercise 3 also submit it was an Excel file to Canvas.
