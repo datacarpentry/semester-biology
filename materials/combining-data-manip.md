@@ -16,10 +16,10 @@ time: 30
 * Use that variable later in the code
 * Repeat
 
-* Determine the mean weight of DS in each year
+* Obtain the data for only DS, sorted by year, with only the year and and weight columns
 
 ```
-ds_data <- filter(surveys, species_id == "DS")
+ds_data <- filter(surveys, species_id == "DS", !is.na(weight))
 ds_data_by_year <- arrange(ds_data, year)
 ds_weight_by_year <- select(ds_data_by_year, year, weight)
 ```
@@ -63,7 +63,7 @@ surveys %>%
 
 ```
 ds_weight_by_year <- surveys %>%
-  filter(species_id == "DS") %>%
+  filter(species_id == "DS", !is.na(weight)) %>%
   arrange(year) %>%
   select(year, weight)
 ```
