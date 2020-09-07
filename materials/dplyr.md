@@ -194,11 +194,11 @@ filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 
 ### Filtering null values
 
-* We can also use `filter` to remove null values from our data
-* 
+* One of the common tasks we use `filter` for is removing null values from data
+* Based on what we learned before it's natural to think that we do this by using the condition `weight != NA`
 
 ```r
-filter(surveys_by_species, weight != NA)
+filter(surveys, weight != NA)
 ```
 
 * Why didn't that work?
@@ -207,19 +207,26 @@ filter(surveys_by_species, weight != NA)
     * We don't know if they are
 * So use special commands
 * `is.na()` checks if the value is `NA`
-* Combine this with `!` for "not"
+* So if we wanted all of the data where the weigh is `NA`
 
+```r
+filter(surveys, is.na(weight))
 ```
-filter(surveys_by_species, !is.na(weight))
+
+* We'll learn more about why this works in the same way as the other conditional statements when we study conditionals in detail later in the course
+
+* To remove null values we combine this with `!` for "not"
+
+```r
+filter(surveys, !is.na(weight))
 ```
 
 * So `!is.na(weight)` is conceptually the same as "weight != NA"
+* It is common to combine a null filter with other conditions using "and"
+* For example we might want all of the data on a species that contains weights
 
-```
-surveys_by_species_nonull <- filter(surveys_by_species,
-                                    !is.na(weight))
-species_weight <- summarize(surveys_by_species_nonull,
-                            avg_weight = mean(weight))
+```r
+filter(surveys, species_id == "DS", !is.na(weight))
 ```
 
 > Do [Portal Data Manipulation 4-6]({{ site.baseurl }}/exercises/Portal-data-manip-R/).
