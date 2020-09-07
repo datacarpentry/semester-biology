@@ -4,7 +4,7 @@ element: assignment
 title: Data in Tables
 language: R
 exercises: ['Shrub Volume Data Basics', 'Code Shuffle', 'Bird Banding', 'Portal Data Manipulation', 'Portal Data Manipulation Pipes']
-points: [10, 10, 15, 15, 15, 15, 20]
+points: [20, 20, 20, 20, 20]
 ---
 
 > Following this assignment students should be able to:
