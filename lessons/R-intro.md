@@ -28,9 +28,11 @@ language: R
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BFVX0CKY67g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-6\. Watch the Assignment Format video:
+6\. Watch the two videos on formatting and submitting assignments:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Inuvup-g090" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sv5J1FKMVLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 7\. Do [Exercise 1.1-1.3 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/) and [Exercise 2 - Basic Variables]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-variables-R/)
 
