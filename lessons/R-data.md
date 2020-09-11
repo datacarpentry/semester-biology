@@ -61,4 +61,4 @@ language: R
 
 18\. Do [Portal Data Manipulation Pipes 1]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
 
-19\. Finish the [Data in Tables Assignment]({{ site.baseurl }}/assignments/r-data)
+19\. Finish the [Data in Tables Assignment]({{ site.baseurl }}/assignments/r-data)z
