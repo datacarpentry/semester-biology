@@ -1,4 +1,3 @@
-Joining, by = "experiment"
    site experiment length width height manipulation
 1     1          1    2.2   1.3    9.6      control
 2     1          2    2.1   2.2    7.6         burn
@@ -12,3 +11,17 @@ Joining, by = "experiment"
 10    4          1    2.9   2.7    3.2      control
 11    4          2    4.5   4.8    6.5         burn
 12    4          3    1.2   1.8    2.7      rainout
+
+   site experiment length width height manipulation latitude longitude elevation
+1     1          1    2.2   1.3    9.6      control    29.65    -82.32        54
+2     1          2    2.1   2.2    7.6         burn    29.65    -82.32        54
+3     1          3    2.7   1.5    2.2      rainout    29.65    -82.32        54
+4     2          1    3.0   4.5    1.5      control    29.26    -82.42        50
+5     2          2    3.1   3.1    4.0         burn    29.26    -82.42        50
+6     2          3    2.5   2.8    3.0      rainout    29.26    -82.42        50
+7     3          1    1.9   1.8    4.5      control    29.80    -82.15        57
+8     3          2    1.1   0.5    2.3         burn    29.80    -82.15        57
+9     3          3    3.5   2.0    7.5      rainout    29.80    -82.15        57
+10    4          1    2.9   2.7    3.2      control    29.99    -82.62        62
+11    4          2    4.5   4.8    6.5         burn    29.99    -82.62        62
+12    4          3    1.2   1.8    2.7      rainout    29.99    -82.62        62
