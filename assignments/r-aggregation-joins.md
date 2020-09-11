@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Grouping & Joining Data
 language: R
-exercises: ['Shrub Volume Aggregation', 'Shrub Volume Join', 'Portal Data Aggregation', 'Fix the Code', 'Portal Data Joins']
+exercises: ['Shrub Volume Aggregation', 'Shrub Volume Join', 'Portal Data Aggregation', 'Fix the Code', 'Portal Data Joins', 'REVIEW EXERCISE']
 points: [10, 10, 15, 15, 15, 15, 20]
 ---
 
