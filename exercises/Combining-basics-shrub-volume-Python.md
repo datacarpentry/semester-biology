@@ -14,7 +14,7 @@ analysis of these data to include in a grant proposal and she would like you to
 conduct the analysis for her (she might be a world renowned expert in carbon
 storage in plants, but she sure doesn't know much about computers). She has
 placed a data file on the web for you to
-[download]({{ site.baseurl }}/data/shrub-volume-experiments-table.csv).
+[download]({{ site.baseurl }}/data/shrub-volume-experiments.csv).
 
 You might be able to do this analysis by hand in Excel, but Dr. Granger seems to
 always get funded meaning that you'll be doing this again soon with a much
