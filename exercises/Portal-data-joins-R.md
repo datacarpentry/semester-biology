@@ -5,11 +5,11 @@ title: Portal Data Joins
 language: R
 ---
 
-Download copies of the following Portal Teaching Database tables:
+If `surveys.csv`, `species.csv`, and `plots.csv` are not available in your workspace download them:
 
-* [surveys](https://ndownloader.figshare.com/files/2292172)
-* [species](https://ndownloader.figshare.com/files/3299483)
-* [plots](https://ndownloader.figshare.com/files/3299474)
+* [`surveys.csv`](https://ndownloader.figshare.com/files/2292172)
+* [`species.csv`](https://ndownloader.figshare.com/files/3299483)
+* [`plots.csv`](https://ndownloader.figshare.com/files/3299474)
 
 Load them into R using `read.csv()`.
 
