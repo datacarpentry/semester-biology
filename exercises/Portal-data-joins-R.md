@@ -19,9 +19,3 @@ Load them into R using `read.csv()`.
    all three tables.
 3. Use `inner_join()` and `filter()` to get a data frame with the information
    from the `surveys` and `plots` tables where the `plot_type` is `Control`.
-4. We want to do an analysis comparing the size of individuals on the `Control`
-   plots to the `Long-term Krat Exclosures`. Create a data frame with the
-   `year`, `genus`, `species`, `weight` and `plot_type` for all cases where the
-   plot type is either `Control` or `Long-term Krat Exclosure`. Only include
-   cases where `Taxa` is `Rodent`. Remove any records where the `weight` is
-   missing.
