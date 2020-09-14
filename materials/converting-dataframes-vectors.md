@@ -70,6 +70,18 @@ density_data <- data.frame(sites, density)
 
 * If we look in the `Global Environment` we can see that there is a new data frame called `density_data` and it has our two vectors as columns
 
+* We can also add columns to the data from that only include a single value without first creating a vector
+* We do this by providing a name for the new column, an equals sign, and the value that we want to occur in every row
+* For example, if all of this data was collected in the same year and we wanted to add that year as a column in our data frame we could do it like this
+
+```r
+density_data_year <- data.frame(year = 2000, sites, density)
+```
+
+* `year =` sets the name of the column in the data frame
+* And 2000 is that value that will occur on every row of that column
+* If we run this and look at the `density_data_year` data frame we'll see that it includes the year column with `2000` in every row 
+
 ### Summary
 
 * So, that's the basic idea behind how vectors and data frames are related and how to convert between them.
