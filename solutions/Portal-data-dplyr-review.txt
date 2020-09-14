@@ -1,0 +1,28 @@
+      year           genus      species weight                plot_type
+37    1977       Dipodomys     merriami     40 Long-term Krat Exclosure
+38    1977       Dipodomys     merriami     29                  Control
+39    1977       Dipodomys     merriami     46                  Control
+40    1977       Dipodomys        ordii     52                  Control
+41    1977     Perognathus       flavus      8                  Control
+42    1977       Onychomys          sp.     22 Long-term Krat Exclosure
+45    1977     Perognathus       flavus      7                  Control
+46    1977       Dipodomys     merriami     22                  Control
+48    1977     Perognathus       flavus      8                  Control
+49    1977       Dipodomys     merriami     41                  Control
+50    1977       Dipodomys     merriami     43 Long-term Krat Exclosure
+51    1977     Chaetodipus penicillatus     15                  Control
+53    1977       Dipodomys     merriami     41                  Control
+54    1977       Dipodomys     merriami     45                  Control
+56    1977       Dipodomys     merriami     39 Long-term Krat Exclosure
+59    1977       Dipodomys     merriami     42                  Control
+86    1977       Dipodomys     merriami     48                  Control
+88    1977     Chaetodipus penicillatus     16                  Control
+89    1977       Dipodomys     merriami     36                  Control
+92    1977       Dipodomys     merriami     44                  Control
+94    1977     Perognathus       flavus      8                  Control
+95    1977       Dipodomys     merriami     40                  Control
+96    1977       Dipodomys     merriami     34                  Control
+97    1977       Dipodomys     merriami     40 Long-term Krat Exclosure
+99    1977       Dipodomys     merriami     44                  Control
+...
+ [ reached getOption("max.print") -- omitted 19144 rows ]
