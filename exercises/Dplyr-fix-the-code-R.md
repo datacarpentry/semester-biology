@@ -13,7 +13,7 @@ The following code is supposed to import the shrub volume data and calculate the
 average shrub volume for each site and, separately, for each experiment.
 
 ```
-read.csv("data/shrub-volume-data.csv")
+read.csv("shrub-volume-data.csv")
 shrub_data %>%
   mutate(volume = length * width * height) %>%
   group_by(site) %>%
