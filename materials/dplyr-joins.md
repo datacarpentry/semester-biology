@@ -102,4 +102,4 @@ combined <- inner_join(surveys, species, by = "species_id")
 portal_full <- inner_join(combined, plots, by = "plot_id")
 ```
 
-> Do [Shrub Volume Join 2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R). ADD SECOND TABLE WITH DESCRIPTIONS OF SITES 
+> Do [Shrub Volume Join 2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R). 
