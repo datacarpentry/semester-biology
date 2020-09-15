@@ -17,4 +17,10 @@ points: [10, 10, 10, 15, 15, 20, 10, 10]
 
 {% include reading.html %}
 
+Place this code at the start of the assignment to load all the required packages.
+
+```r
+library(dplyr)
+```
+
 {% include assignment.html %}
