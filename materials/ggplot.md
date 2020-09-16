@@ -5,7 +5,59 @@ title: Graphing using ggplot
 language: R
 ---
  
-> Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
+> * Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
+> * [UHURU Acacia Experiment Data](https://ndownloader.figshare.com/files/5629542)
+> * [UHURU Tree Survey Data](https://ndownloader.figshare.com/files/5629536)
+
+### Introduction to the UHURU dataset
+
+### Data
+
+* For the next set of lessons we'll be working with data on acacia size from an experiment in Kenya
+* The experiment is designed to understand the influence of herbivores on vegetation by excluding different sized herbivores
+* There are 3 different treatments:
+  * The top-left image shows Megaherbivore exclosures, which use wires 2m high to keep elephants
+  * The top-right image shows Mesoherbivore exclosures, which use fenses starting 1/3m off the ground to exclude things like impalla
+  * The bottom-left image shows full exclosures, which use fenses all the way to the ground to keep out all mammalian herbivores
+  * And the bottom-right image shows control plots
+
+![Pictures of 4 experimental treatments. (A) Megaherbivore fences consist of two parallel wires starting 2-m above ground level. (B) Mesoherbivore fences consist of 11 parallel wires starting ~0.3 m above ground level and continuing to 2.4-m above ground level. (C) Total-exclusion fences consist of 14 wires up to 2.4-m above ground level, with a 1-m high chain-link barrier at ground level. (D) Open control plots are unfenced, with boundaries demarcated by short wooden posts at 10-m intervals.](http://www.esapubs.org/archive/ecol/E095/064/images/Fig2.png)
+
+* So far we've been working with datasets that are separated by commas
+* *Click on surveys.csv to show csv format*
+* But if we look at this new dataset it looks different
+* * *Click on Acacia Dataset to Open in Text Editor*
+* This data is tab separated, so we'll need to treat it differently when we import it
+* To do this we manually set the character separating each column using the optional `sep` argument
+* So we'll call our data frame `acacia` and assign it the output from `read.csv`
+* We still give it the name of the file in quotes as the first argument
+* Then we add a comma and `sep = "\t"`
+* `\t` is who we indicate a Tab character in programming
+
+```r
+acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t")
+```
+
+* We can also see that it includes information on whether or not the plant is dead in the HEIGHT column
+* Is that good data structure?
+* If you said "No", you're right, information on if the tree is dead should be stored in a separate column
+* For now, we'll just treat the "dead" entries as null values
+* We can do this by using another optional argument `na.strings`
+* So let's modify our `read.csv` statement by adding `na.strings = c("dead")`.
+* This will replace the string `"dead"` with `NA`
+* It gets passed as a vector because this allows multiple different values to be set as nulls
+
+```r
+acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+```
+
+* If we open the resulting table we can see that it includes information on:
+  * the time and location of the sampling
+  * the experimental treatment
+  * the size of each Acacia including a height, the canopy diameter measured in the direction (or axis) or the largest diameter and the diameter of the axis perpendicular to that, and the circumference of the shrub
+  * information on the number of flowers, buds, and fruits
+  * And finally information on the species of ant associated with the shrub because there is a very interesting ant-acacia mutualism where the Acacia special structures that serve as houses for the ants and the ants swarm herbivores that try to eat the acacia
+
 
 ### ggplot
 
@@ -14,19 +66,6 @@ language: R
 * Declarative - describe what you want not how to build it
 * Contrasts w/Imperative - how to build it step by step
 * Install `ggplot2` using `install.packages`
-
-### Data
-
-* Data on acacia size in an experiment in Kenya excluding large herbivores
-* *Download both UHURU datasets into new project*
-* Data is tab separated
-* Includes information on if the plant is dead in the HEIGHT column
-
-```
-acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
-```
-
-* *Show data and talk through treatments, sizes, and ants*
   
 ### Basics
 
