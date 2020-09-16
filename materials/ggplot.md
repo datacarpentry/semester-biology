@@ -48,7 +48,7 @@ acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t")
 * It gets passed as a vector because this allows multiple different values to be set as nulls
 
 ```r
-acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
 ```
 
 * If we open the resulting table we can see that it includes information on:
@@ -69,40 +69,64 @@ acacia <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOL
   
 ### Basics
 
-```
+* We load the `ggplot2` package just like we loaded `dplyr` 
+
+```r
 library(ggplot2)
+```
+
+* We'll also load the UHURU like we discussed in the video on the dataset
+
+```r
+acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+```
+
+* To build a plot using `ggplot` we start with the `ggplot()` function
+
+```r
+ggplot()
 ```
 
 * `ggplot()` creates a base ggplot object that we can then add things to
 * Like a blank canvas
-* Optional arguments for information to be shared across different components
-  of the plot including
-  * default dataset - what data are we working with
-  * set of mappings or 'Aesthetics' that describe which columns are used for
-      different aspects of the plot
+  
+* We can also add optional arguments for information to be shared across different components of the plot
+* The two main arguments we typically use here are 
+* `data` - which is the name of the data frame we are working with, so `acacia`
+* `mapping` - which describes which columns of the data are used for different aspects of the plot
+* We create a `mapping` by using the `aes` function, which stands for "aesthetic", and then linking columns to pieces of the plot
+* We'll start with telling ggplot what value should be on the x and y axes
+* Let's plot the relationship betwen the circumference of an acacia and its height
 
 ```r
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))
 ```
 
-* This doesn't create a figure, it's just a blank canvas and some information on
+* This still doesn't create a figure, it's just a blank canvas and some information on
   default values for data and mapping columns to pieces of the plot
-* Add components of figures with layers
-* Scatter plot showing branch circumference and height
+* We can add data to the plot using layers
+* We do this by adding a `+` after the the `ggplot` function and then adding something called a `geom`, which stands for `geometry`
+* To make a scatter plot we use `geom_point`
 
 ```r
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point()
 ```
 
-* To change things about the layer pass arguments to the geom
+* It is standard to hit `Enter` after the plus so that each layer shows up on its own line
+  
+* To change things about the layer we can pass additional arguments to the `geom`
+* We can do things like change
+  * the `size` of the points, we'll set it to `3`
+  * the `color` of the points, we'll set it to `"blue"`
+  * the transparency of the points, which is called `alpha`, we'll set it to 0.5
 
 ```r
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, color = "blue", alpha = 0.5)
 ```
 
-* Add Labels (documentation for your graphs!)
+* To add labels (like documentation for your graphs!) we use the `labs` function
 
 ```r
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
@@ -118,14 +142,14 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 * Group on a single graph
 * Look at influence of experimental treatment
 
-```
+```r
 ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
   geom_point(size = 3, alpha = 0.5)
 ```
 
 * Facet specification
 
-```
+```r
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, alpha = 0.5) +
   facet_wrap(~TREATMENT)
@@ -155,7 +179,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   * Mapping of parts of that data to aspects of the plot
   * A geometric object to represent the data
 
-```
+```r
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point()
 ```
@@ -170,7 +194,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 * Combine different kinds of layers
 * Add a linear model
 
-```
+```r
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   geom_smooth(method = "lm")
@@ -204,7 +228,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 * To look at the number of acacia in each treatment use a bar plot
     * [`geom_bar()`](http://docs.ggplot2.org/current/geom_bar.html)
 
-```
+```r
 ggplot(acacia, aes(x = TREATMENT)) +
   geom_bar()
 ```
@@ -215,7 +239,7 @@ ggplot(acacia, aes(x = TREATMENT)) +
 * To look at the distribution of circumferences in the dataset use a histogram
     * [`geom_histogram()`](http://docs.ggplot2.org/current/geom_histogram.html)
 
-```
+```r
 ggplot(acacia, aes(x = CIRC)) +
   geom_histogram(fill = "red")
 ```
@@ -224,12 +248,12 @@ ggplot(acacia, aes(x = CIRC)) +
     * Splits circumferences into bins and counts rows in each bin
 * Set number of `bins` or `binwidth`
 
-```
+```r
 ggplot(acacia, aes(x = CIRC)) +
   geom_histogram(fill = "red", bins = 15)
 ```
 
-```
+```r
 ggplot(acacia, aes(x = CIRC)) +
   geom_histogram(fill = "red", binwidth = 5)
 ```
@@ -307,7 +331,7 @@ ggplot() +
 
 ### Saving plots as new files
 
-```
+```r
 ggsave(“acacia_by_treatment.jpg”)
 ```
 
@@ -316,7 +340,7 @@ ggsave(“acacia_by_treatment.jpg”)
     * Type
     * Size
 
-```
+```r
 ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
 ```
 
@@ -348,7 +372,7 @@ ggplot() +
 * Each layer will default to `ggplot()` mappings unless modified
     * So, we don't have to specify the arguments that are the same
 
-```
+```r
 ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(data = trees, color = "gray") +
   geom_point(data = acacia, color = "red") +
