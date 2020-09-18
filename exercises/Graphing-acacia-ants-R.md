@@ -18,6 +18,7 @@ acacia <- read.csv("data/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings 
 1. Make a scatter plot with `CIRC` on the x axis and `AXIS1` (the maximum canopy
    width) on the y axis. Label the x axis "Circumference" and the y axis "Canopy
    Diameter".
-2. The same plot as (1), but with points colored based on the `ANT` column (the species of ant symbiont living with the acacia)
-3. The same plot as (2), but instead of different colors show different species of ant (values of `ANT`) each in a separate subplot.
-4. The same plot as (3) but including a simple model by adding `geom_smooth`.
+2. The same plot as (1), but with both axes scaled logarithmically (using `log10`).
+3. The same plot as (1), but with points colored based on the `ANT` column (the species of ant symbiont living with the acacia)
+4. The same plot as (2), but instead of different colors show different species of ant (values of `ANT`) each in a separate subplot.
+5. The same plot as (3) but including a simple model by adding `geom_smooth`.
