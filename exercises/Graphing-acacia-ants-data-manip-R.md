@@ -7,19 +7,19 @@ language: R
 
 An experiment in Kenya has been exploring the influence of large herbivores on plants.
 
-Download the data on [Trees for the
-experiment](http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt)
-into a `data` subdirectory. There are a number of problematic entries in this data so use the `readr` package to import it:
+Check to see if `TREE_SURVEYS.txt` is in your workspace.
+If not, [download `TREE_SURVEYS.txt`](https://ndownloader.figshare.com/files/5629536).
+Install the `readr` package and use `read_tsv` to read in the data using the following commands:
 
 ```r
 library(readr)
-trees <- read_tsv("data/TREE_SURVEYS.txt")
+trees <- read_tsv("TREE_SURVEYS.txt")
 ```
 
 1. Add a new column to the `trees` data frame named `canopy_area` that contains
    the estimated canopy area calculated as the value in the `AXIS_1` column
-   times the value in the `AXIS_2` column. Print out the `SURVEY`, `YEAR`,
-   `SITE`, and `canopy_area` columns from data frame.
+   times the value in the `AXIS_2` column.
+   Create and show a data frame with the `SURVEY`, `YEAR`, `SITE`, and `canopy_area` columns.
 2. Make a scatter plot with `canopy_area` on the x axis and `HEIGHT` on the y
    axis. Color the points by `TREATMENT` and plot the points for each value in
    the `SPECIES` column in a separate subplot. Label the x axis "Canopy Area
