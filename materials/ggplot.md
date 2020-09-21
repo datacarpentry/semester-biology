@@ -137,6 +137,19 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 
 > Do Task 1 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
+### Rescaling axes
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, color = "blue", alpha = 0.5) +
+  scale_y_log10() +
+  scale_x_log10()
+```
+
+* Not changing the data itself, just the presentation of it
+
+> Do Task 2 in [Acacia and ants] ({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+
 ### Grouping
 
 * Group on a single graph
@@ -157,20 +170,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 * Where are all the acacia in the open plots? (eaten?)
 
-> Do Tasks 2-3 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
-
-### Rescaling axes
-
-```r
-ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point(size = 3, color = "blue", alpha = 0.5) +
-  scale_y_log10() +
-  scale_x_log10()
-```
-
-* Not changing the data itself, just the presentation of it
-
-> Assign [Mass vs Metabolism]({{ site.baseurl }}/exercises/Graphing-mass-vs-metabolism-R) and Tasks 1-4 in [Adult vs Newborn Size]({{ site.baseurl }}/exercises/Graphing-adult-vs-newborn-size-R).
+> Do Tasks 3-4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Layers
 
@@ -214,7 +214,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 
 * One set of points and one model for each treatment
 
-> Do Task 4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do Task 5 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Statistical transformations
 
