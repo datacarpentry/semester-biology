@@ -345,36 +345,3 @@ ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
 ```
 
 > Assign the rest of the exercises.
-
-
-### Combining different datasets (time allowing)
-
-* We can use this to plot data from different sources together
-* Add tree size data for context
-* Layers are plotted in the order they are added
-
-* Use the `readr` package to read in this data
-* It has a lot of issues and `readr` fixes many of them automatically
-
-```r
-library(readr)
-trees <- read_tsv("data/TREE_SURVEYS.txt")
-ggplot() +
-  geom_point(data = trees,
-             aes(x = CIRC, y = HEIGHT),
-             color = "gray") +
-  geom_point(data = acacia,
-             aes(x = CIRC, y = HEIGHT),
-             color = "red") +
-  labs(x = "Circumference [cm]", y = "Height [m]")
-```
-
-* Each layer will default to `ggplot()` mappings unless modified
-    * So, we don't have to specify the arguments that are the same
-
-```r
-ggplot(mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point(data = trees, color = "gray") +
-  geom_point(data = acacia, color = "red") +
-  labs(x = "Circumference [cm]", y = "Height [m]")
-```
