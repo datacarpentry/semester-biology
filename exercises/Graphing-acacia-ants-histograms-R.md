@@ -1,4 +1,5 @@
 ---
+
 layout: exercise
 topic: Graphing
 title: Acacia and Ants Histograms
@@ -7,15 +8,15 @@ language: R
 
 An experiment in Kenya has been exploring the influence of large herbivores on plants.
 
-Download the data on [Acacia for the
-experiment](http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt)
-into a `data` subdirectory for you project read it into R using the following command:
+Check to see if `ACACIA_DREPANOLOBIUM_SURVEY.txt` is in your workspace.
+If not, [download it](http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt).
+Read it into R using the following command:
 
 ```r
 acacia <- read.csv("data/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
 ```
 
-1. Make a bar plot of the number of acacia with different ant mutualists.
+1. Make a bar plot of the number of acacia with each mutualist ant species (using the `ANT` column).
 2. Make a histogram of the height of acacia (using the `HEIGHT` column). Label
    the x axis "Height (m)" and the y axis "Number of Acacia".
 3. Make a plot that shows histograms of both `AXIS1` and `AXIS2`. Due to the way
