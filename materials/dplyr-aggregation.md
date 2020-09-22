@@ -51,7 +51,7 @@ summarize(surveys_by_species, abundance = n())
 
 ```r
 surveys_by_species_plot <- group_by(surveys, species_id, plot_id)
-summarize(surveys_by_species, abundance = n())
+species_plot_counts <- summarize(surveys_by_species_plot, abundance = n())
 ```
 
 * Use any function that returns a single value from a vector.
@@ -76,8 +76,7 @@ species_weight <- summarize(surveys_by_species,
 * Can filter using `!is.na`
 
 ```
-filter(surveys_weight, !is.na(weight))
+filter(species_weight, !is.na(avg_weight))
 ```
 
 > Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
-

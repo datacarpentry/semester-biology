@@ -93,13 +93,13 @@ combined <- left_join(surveys, species, by = "species_id")
 * So, for Portal, we could start by joining the `surveys` and the `species` tables 
 
 ```r
-combined <- inner_join(surveys, species, by = "species_id")
+survey_species <- inner_join(surveys, species, by = "species_id")
 ```
 
 * And then join this `combined` table and the `plots` table
 
 ```r
-portal_full <- inner_join(combined, plots, by = "plot_id")
+portal_full <- inner_join(survey_species, plots, by = "plot_id")
 ```
 
 > Do [Shrub Volume Join 2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R). 
