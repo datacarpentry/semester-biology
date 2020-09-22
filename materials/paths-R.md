@@ -5,6 +5,12 @@ title: Paths
 language: R
 ---
 
+### (optional) If Using RStudio Cloud
+
+* So far in this course we've been using RStudio Cloud and placing data files where R knows to find them for you
+* Working with data files on your own computer is a little more complicated
+* But in this lesson we'll learn how to do this effectively
+
 ### Introduction to Paths
 
 * To use data stored on a computer we need to tell R where it is
@@ -48,9 +54,11 @@ getwd()
 shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 ```
 
-* Download a file into working directory using `download.file()`
+* This is a relative path, because the file is in the working directory the only remaining piece is the name
 
-* For data not in the working directory - two options
+* One way to ensure that a file is in the working directory is to download it using `download.file()`
+
+* For data not in the working directory there are two options
     * tell R where it is
     * change the working directory to where it is
 * Changing the working directory is common
@@ -58,13 +66,19 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
     * Does that ever cause any issues?
         * Working on a different computer?
         * Working with someone else's files?
-* Have working directory automatically set to a common place and use relative paths
+* In general, using `setwd` means that your code will only work on a single computer
+* That's bad, so we want to have the working directory automatically and use relative paths
 
 ### Projects
 
-* Think of each project as a self-contained unit in a single folder/directory
+* The simplest way to do this is using RStudio Projects
+
+* (RStudio Cloud) In fact we've already been using them
+* (RStudio Cloud) Every time you click on an assignment or click `New Project` this creates a new project
+
+* Each project is a self-contained unit of work in a single folder/directory
 * Treat all locations as relative to that single directory
-* To do this in RStudio we use projects
+* To do this in regular RStudio we use projects
 * `File` -> `New Project` -> `New Directory` -> `New Project` -> datacarp
 * Or use `Existing Directory` to choose an existing directory
 * Creates .Rproj file
@@ -74,14 +88,8 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 * Can switch between projects using `File` -> `Recent Projects` or `Open Project`
 * Keeps track the state of RStudio when you last worked with that project
 
-> * Create a project for this assignment
-> * Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
-
-### Assignments
+### Sharing code
 
 * This idea of projects as folders is also important for how we share code
-* To turn in assignments you will submit a compressed version of the folder for that assignment
-* Demo compressing a folder
-* Version control also treats projects as folders
-
-> Assign remaining exercises. Submit as compressed main folder, see [Assignment Submission & Checklist]({{ site.baseurl }}/materials/turn-in-checklist)
+* Version control, which we'll have the opportunity to learn about later, works with the projects as folder structure
+* We can also zip a the project folder and send it to someone else and they can work with it
