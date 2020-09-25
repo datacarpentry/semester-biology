@@ -1,0 +1,102 @@
+    year month day species_id weight
+1   1977     8  19         DO     52
+2   1977    10  17         DO     33
+3   1977    10  17         DO     50
+4   1977    10  17         DO     48
+5   1977    10  17         DO     31
+6   1977    10  18         DO     41
+7   1977    11  12         DO     44
+8   1977    11  12         DO     48
+9   1977    11  14         DO     39
+10  1977    12  10         DO     40
+11  1977    12  10         DO     45
+12  1977    12  11         DO     41
+13  1978     1   8         DO     42
+14  1978     3  13         DO     57
+15  1978     4   9         DO     55
+16  1978     5  18         DO     18
+17  1978     5  19         DO     54
+18  1978     5  19         DO     37
+19  1978     6   8         DO     55
+20  1978     6   8         DO     55
+21  1978     6   8         DO     23
+22  1978     6   9         DO     38
+23  1978     7   7         DO     51
+24  1978     7   7         DO     33
+25  1978     8   4         DO     38
+...
+[] reached 'max' / getOption("max.print") -- omitted 2827 rows ]
+
+    year species_id hindfoot_length
+1   1977         PP              22
+2   1977         PP              17
+3   1977         PP              20
+4   1977         PP              21
+5   1977         PP              21
+6   1977         PP              19
+7   1978         PP              21
+8   1978         PP              20
+9   1978         PP              21
+10  1978         PP              23
+11  1978         PP              22
+12  1978         PP              21
+13  1978         PP              23
+14  1978         PP              23
+15  1978         PP              22
+16  1978         PP              22
+17  1978         PP              19
+18  1978         PP              21
+19  1978         PP              23
+20  1978         PP              22
+21  1978         PP              22
+22  1978         PP              22
+23  1978         PP              21
+24  1978         PP              20
+25  1978         PP              21
+...
+ [ reached 'max' / getOption("max.print") -- omitted 5558 rows ]
+
+# A tibble: 340 x 3
+# Groups:   species_id [25]
+   species_id  year `mean(hindfoot_length)`
+   <chr>      <int>                   <dbl>
+ 1 AH          1999                    35  
+ 2 AH          2000                    31  
+ 3 BA          1989                    13  
+ 4 BA          1990                    13.8
+ 5 BA          1991                    12.9
+ 6 BA          1992                    12  
+ 7 DM          1977                    35.7
+ 8 DM          1978                    36.1
+ 9 DM          1979                    35.9
+10 DM          1980                    35.8
+# … with 330 more rows
+
+    year     genus     species weight                 plot_type
+1   1977 Dipodomys    merriami     NA                   Control
+2   1977 Dipodomys    merriami     NA          Rodent Exclosure
+3   1977 Dipodomys    merriami     NA  Long-term Krat Exclosure
+4   1977 Dipodomys    merriami     NA         Spectab exclosure
+5   1977 Dipodomys    merriami     NA         Spectab exclosure
+6   1977 Dipodomys spectabilis     NA          Rodent Exclosure
+7   1977 Dipodomys    merriami     NA          Rodent Exclosure
+8   1977 Dipodomys    merriami     NA  Long-term Krat Exclosure
+9   1977 Dipodomys    merriami     NA                   Control
+10  1977 Dipodomys    merriami     NA Short-term Krat Exclosure
+11  1977 Dipodomys    merriami     NA                   Control
+12  1977 Dipodomys spectabilis     NA  Long-term Krat Exclosure
+13  1977 Dipodomys spectabilis     NA                   Control
+14  1977 Dipodomys    merriami     NA                   Control
+15  1977 Dipodomys    merriami     NA Short-term Krat Exclosure
+16  1977 Dipodomys    merriami     NA         Spectab exclosure
+17  1977 Dipodomys    merriami     NA  Long-term Krat Exclosure
+18  1977 Dipodomys    merriami     NA  Long-term Krat Exclosure
+19  1977 Dipodomys    merriami     NA                   Control
+20  1977 Dipodomys spectabilis     NA          Rodent Exclosure
+21  1977 Dipodomys    merriami     NA  Long-term Krat Exclosure
+22  1977 Dipodomys    merriami     NA          Rodent Exclosure
+23  1977 Dipodomys    merriami     NA                   Control
+24  1977 Dipodomys    merriami     NA                   Control
+25  1977 Dipodomys    merriami     NA Short-term Krat Exclosure
+...
+ [ reached 'max' / getOption("max.print") -- omitted 15967 rows ]
