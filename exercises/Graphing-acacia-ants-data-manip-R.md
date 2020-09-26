@@ -9,10 +9,9 @@ An experiment in Kenya has been exploring the influence of large herbivores on p
 
 Check to see if `TREE_SURVEYS.txt` is in your workspace.
 If not, [download `TREE_SURVEYS.txt`](https://ndownloader.figshare.com/files/5629536).
-Install the `readr` package and use `read_tsv` to read in the data using the following commands:
+Use `read_tsv` from the `readr` package to read in the data using the following command:
 
 ```r
-library(readr)
 trees <- read_tsv("TREE_SURVEYS.txt")
 ```
 
