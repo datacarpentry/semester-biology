@@ -17,4 +17,12 @@ points: [25, 25, 25, 25, optional, optional]
 
 {% include reading.html %}
 
+Place this code at the start of the assignment to load all the required packages.
+
+```r
+library(dplyr)
+library(ggplot2)
+library(readr)
+```
+
 {% include assignment.html %}

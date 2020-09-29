@@ -9,17 +9,16 @@ An experiment in Kenya has been exploring the influence of large herbivores on p
 
 Check to see if `TREE_SURVEYS.txt` is in your workspace.
 If not, [download `TREE_SURVEYS.txt`](https://ndownloader.figshare.com/files/5629536).
-Install the `readr` package and use `read_tsv` to read in the data using the following commands:
+Use `read_tsv` from the `readr` package to read in the data using the following command:
 
 ```r
-library(readr)
 trees <- read_tsv("TREE_SURVEYS.txt")
 ```
 
-1. Add a new column to the `trees` data frame named `canopy_area` that contains
+1. Update the `trees` data frame with a new column named `canopy_area` that contains
    the estimated canopy area calculated as the value in the `AXIS_1` column
    times the value in the `AXIS_2` column.
-   Create and show a data frame with the `SURVEY`, `YEAR`, `SITE`, and `canopy_area` columns.
+   Show output of the `trees` data frame with just the `SURVEY`, `YEAR`, `SITE`, and `canopy_area` columns.
 2. Make a scatter plot with `canopy_area` on the x axis and `HEIGHT` on the y
    axis. Color the points by `TREATMENT` and plot the points for each value in
    the `SPECIES` column in a separate subplot. Label the x axis "Canopy Area
