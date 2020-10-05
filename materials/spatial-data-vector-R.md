@@ -31,7 +31,7 @@ library(ggplot2)
 
 ```r
 library(sf)
-plots_harv <- st_read("plot_locations/HARV_plots.shp")
+plots_harv <- st_read("data/HARV/harv_plots.shp")
 ```
 
 * When read read the data in we see information about it including
@@ -74,7 +74,7 @@ ggplot() +
 * So let's load another vector object that shows the boundary of the research site
 
 ```r
-boundary_harv <- st_read("plot_locations/HARV_boundary.shp")
+boundary_harv <- st_read("data/HARV/harv_boundary.shp")
 ```
 
 * We can plot them together by adding two `geom_sf` layers in `ggplot`
