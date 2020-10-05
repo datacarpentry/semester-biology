@@ -47,7 +47,7 @@ A brown line along the top of the terrain indicates the Digital Terrain Model]({
 
 ```r
 library(stars)
-dtm_harv <- st_read("data/HARV/HARV_dtmCrop.tif")
+dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
 ```
 
 * Looking at this object provides information on the data it contains
