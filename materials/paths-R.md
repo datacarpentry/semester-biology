@@ -15,12 +15,43 @@ language: R
 
 * To use data stored on a computer we need to tell R where it is
 * This is done using paths
-* *Go to data page and download shrub dimensions data to a datacarp directory*
-* Paths can be absolute
+* This is a description of the directories where our files are stored
+* Let's go to the course website and download some data
+* https://datacarpentry.org/semester-biology/materials/datasets
+* This page contains all of the data we use in class
+* Download Shrub Dimensions data
+* If we click on this link it will download, but where did it download to
+* Click on the arrow to 'Show in Folder'
+* The details will look different depending on the operating system
+* But, generally, across the top you'll see the folder that things are stored in
 
+* Go back to RStudio
+* If we try to load this data just using it's filename it won't work
+
+```r
+data = read.csv("shrub-dimensions-labeled.csv")
 ```
-'/home/ethan/datacarp/shrub-dimensions-labeled.csv' # OSX/Linux
-'/Users/ethan/datacarp/shrub-dimensions-labeled.csv' # Windows
+
+* Returns the error "Cannot open file", "No such file or directory"
+* That's because it can't find the file where we've tried to load it from
+
+
+* Paths can be either relative or absolute
+* We'll start with absolute, which always describes exactly where something is on the computer
+* Data file is stored in the `Downloads` subdirectory of our `Home` directory
+* `Home` directory varies by operating system
+* On mac and Linux it is `/home/username`
+* Within that is the `Downloads` directory
+
+```r
+data = read.csv('/home/ethan/datacarp/shrub-dimensions-labeled.csv') # OSX/Linux
+```
+
+* This successfully loads the data because we've told it exactly where the file is
+* On Windows change `home` to `Users`
+
+```r
+data = read.csv('/Users/ethan/datacarp/shrub-dimensions-labeled.csv') # Windows
 ```
 
 * Folders/Directories are separate by `/` with the file name at the end
