@@ -21,6 +21,11 @@ do_data_spat <- SpatialPointsDataFrame(
 str(do_data_spat)
 ```
 
+```r
+library(sf)
+st_read("./pts.csv", options=c("X_POSSIBLE_NAMES=x","Y_POSSIBLE_NAMES=y"))
+```
+
 * `do_data` was a regular data frame, so do the same thing with your down data
   after loading it using `read.csv`
 * Now you can do things like reproject and `extract` values from rasters 

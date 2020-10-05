@@ -20,26 +20,20 @@ Panel 4: Equation: DSM (Digital Surface Model) - DTM (Digital Terrain Model) = C
 * In forested areas we can combine these to create a Canopy Height Model (CHM)
 * Do this by subtracting the DTM from the DSM
 
-```
-dsm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
+```r
+library(stars)
+
+dtm_harv <- st_read("data/HARV_dtmCrop.tif")
+dsm_harv <- st_read("data/HARV_dsmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
 * Math happens on a cell by cell (elementwise) basis
-* Can then graph this new raster by following the three rules
-* 1. Already did spatial work
-* 2. Convert to data frame
-
-```
-chm_harv_df = as.data.frame(chm_harv, xy = TRUE)
-```
-
-* 3. Make plot
+* Can then graph this new raster
 
 ```
 ggplot() +
-  geom_raster(data = chm_harv_df, 
-              aes(x = x, y = y, fill = layer))
+  geom_stars(data = chm_harv)
 ```
 
 * This lets us see where there are the tallest trees on the landscape and where there are none

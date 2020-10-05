@@ -38,7 +38,7 @@ The matrix is then shown as green pixels again to represent plotting the raster.
 
 ### Importing and exploring
 
-* We import raster data using the `raster()` function
+* We import raster data using the `st_read()` function from the `stars` package
 * We'll start by importing some elevation data collected from an airplane using an instrument called LIDAR
 * One of the values that LIDAR can generate is a Digital Terrain Model or DTM, which is the elevation of the ground
 
@@ -46,7 +46,8 @@ The matrix is then shown as green pixels again to represent plotting the raster.
 A brown line along the top of the terrain indicates the Digital Terrain Model]({{ site.baseurl }}/materials/digital-terrain-model.png)
 
 ```r
-dtm_harv <- raster("data/NEON-airborne/HARV_dsmCrop.tif")
+library(stars)
+dtm_harv <- st_read("data/HARV_dtmCrop.tif")
 ```
 
 * Looking at this object provides information on the data it contains
@@ -57,8 +58,7 @@ dtm_harv
 
 * This is "metadata" or "data about "data"
 * It is is important because it provides the context of spatial data this raster matrix so that R knows how to work with it
-    * `bands`
-    * `projection`
+    * `refsys`
     * `units`
     * `min`, `max`, `mean`
 
@@ -69,38 +69,29 @@ dtm_harv
 * We'll use `ggplot` since that's the data visualization tool we're using for this course
 * Useful for making nice maps combined with other figures
 
-Making spatial plots with ggplot requires three steps (write on board):
+* There is a special geom for plotting `stars` raster data `geom_stars`
+* Since it is raster data it doesn't require an aesthetic
 
-1. Do Spatial Work (just importing so far)
-2. Convert to Data Frame (this is what ggplot works with)
-3. Make Plots
-
-* For Step 2 we convert using the `as.data.frame` function
-* This function is overloaded by `raster` to convert spatial data into spatial data frames
-* We tell R we want to keep the spatial coordinates with the optional argument `xy = TRUE`
-
-```
-dtm_harm_df = as.data.frame(dsm_harv, xy = TRUE)
-```
-
-* *View dtm_harm_df*
-* Once we've converted the raster object to a data frame we can plot it using `geom_raster`
-* For the aesthetic we use `x = x` and `y = y` for the coordinates and `fill = HARV_dtmCrop` to indicate the column with the elevation values to color by
-* We use `fill` instead of `color` because we are changing the fill color of each cell, like with bar plots or histograms
-
-```
+```r
 ggplot() +
-  geom_raster(data = dtm_harm_df, 
-              aes(x = x, y = y, fill = HARV_dtmCrop))
+  geom_stars(data = dtm_harm_df)
 ```
 
-* Because this is a data frame we can also treat raster values like they are part of
-  a normal table
+* For spatial data we're going to put the data in the geom calls instead of `ggplot()` because we are often trying to combine data of different types from different objects into a single map
 
-```
+* We can change the color ramp by using `scale` functions
+* This is equivalent to when we used `scale` to change the axes, but now we're changing the color ramp instead
+* One good color ramp is "viridis"
+* To use this color ramp we add `scale_fill_viridis_c() to our ggplot object
+* We use `fill` because we are coloring the inside of each raster pixel (like the inside of a bar plot or histogram)
+* The `_c` at the end indicates that it is a "continuous" scale
+
+```r
 ggplot() +
-  geom_histogram(data = dtm_harm_df, 
-                 aes(x = HARV_dsmCrop))
+  geom_stars(data = dtm_harm_df) +
+  scale_fill_viridis_c()
 ```
+
+* If we had discrete data, e.g., on soil types, we would use `_d` instead
 
 > Do Task 1 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
