@@ -21,13 +21,24 @@ library(ggplot2)
 
 ### Introduction to Vector Data
 
-* `vector` data includes points, lines, and polygons
-* `shapefiles` are one main format
-* set of multiple files with the same name, but different extensions
+* Vector data includes points, lines, and polygons
+* Examples include geopolitical boundaries, the location of field observations, and roads
+
+![Diagram of different types of vector data.
+Points: Shows 4 points each associated with a pair of x,y values
+Lines: Shows two lines composed on connected sets of x,y points
+Polygons: Shows two polygons composed of connected sets of x,y points where the last point is connected to the first point making the polygons "closed"]({{ site.baseurl }}/materials/vector_data.png)
+
+* Vector data comes in a variety of formats
+* shapefiles are are one of the most common
+* They set of multiple files with the same name, but with different extensions
+* We can see this by looking at the data in `data/HARV`
+* This data includes data on some field plots at that Harvard Forest NEON site we've been working with
+* It is stored in the `plots_harv` files and we can see there are four of them with different extensions
 
 * Work with vector data using the `sf` package
 * We can read this data into R using `st_read`
-* Let's load in some data on some field plots at that Harvard Forest NEON site we've been working with
+* Let's load in the plot data we just look at 
 
 ```r
 library(sf)
