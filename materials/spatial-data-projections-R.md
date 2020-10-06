@@ -61,6 +61,11 @@ ggplot() +
 * The axes on the raster plot are much different, with values in the hundreds of thousands
 * These differences are because the two sets of data have different "coordinate reference systems" or "projections"
 * Since the earth is round we have to stretch geospatial data to present it on flat maps
+* There is no one best way to do this so there are different projects, which result in different representations of the world, and different units for locations
+* Here are examples of a few common ones including two we'll be working with WGS 84, which is latitude & longitude, and UTM
+
+![]({{ site.baseurl }}/materials/projections.jpg)
+
 * The "coordinate reference system" or "CRS" indicates how this is done
 * Coordinate Reference System (*`crs` or `projection`*) is different from `raster`.
 
