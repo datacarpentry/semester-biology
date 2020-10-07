@@ -16,7 +16,7 @@ accuracy of satellite imagery (*i.e., ground truth*).
 
 1. Map the digital terrain model for `SJER` using the `viridis` color ramp.
 2. Create and map the canopy height model for `SJER` using `raster` math (`chm = dsm - dtm`) and the `viridis` color ramp.
-3. Create a map that shows the `SJER` boundary and the plot locations colored by plot type.
+3. Create a map that shows the `SJER` boundary and the plot locations colored by `plot_type`.
 4. Transform the plot data to have the same CRS as the CHM and create a map that shows the canopy height model from (3) with the plot locations on top.
 5. Extract the mean canopy heights at each plot location for `SJER` and display the values.
 6. Add the canopy height values from (5) to the spatial data frame you created for the plots and display the full data frame.
