@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Spatial Data 1
 language: R
-exercises: ['Canopy Height from Space', 'NDVI EXERCISE']
-points: [50, 50]
+exercises: ['Canopy Height from Space']
+points: [100]
 ---
 
 #### Learning Objectives

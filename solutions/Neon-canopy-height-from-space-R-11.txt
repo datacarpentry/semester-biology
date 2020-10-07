@@ -1,0 +1,10 @@
+Simple feature collection with 2 features and 3 fields
+geometry type:  MULTIPOINT
+dimension:      XY
+bbox:           xmin: 256238.5 ymin: 4110088 xmax: 257465.5 ymax: 4111372
+projected CRS:  WGS 84 / UTM zone 11N
+# A tibble: 2 x 4
+  plot_type  elevation canopy_height                                    geometry
+  <fct>          <dbl>         <dbl>                            <MULTIPOINT [m]>
+1 Distribut…      382.          11.5 ((256254.5 4110088), (256737.7 4110949), (…
+2 Tower           385.          18.1 ((256238.5 4110270), (256798.3 4110296), (…
