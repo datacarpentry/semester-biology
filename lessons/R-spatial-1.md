@@ -35,4 +35,4 @@ language: R
 
 10\. Do Tasks 5 and 6 of [Canopy Height From Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
-11\. Finish the [Spatial Data 1 Assignment]({{ site.baseurl }})/assignments/r-spatial-1/)
+11\. Finish the [Spatial Data 1 Assignment]({{ site.baseurl }}/assignments/r-spatial-1/)
