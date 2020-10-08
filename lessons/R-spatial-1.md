@@ -25,7 +25,7 @@ language: R
 
 7\. Watch the Introductions to Projections Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pG8I5mUA3qs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/42prUS2SNGo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 8\. Do Task 4 of [Canopy Height From Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
