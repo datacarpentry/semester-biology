@@ -8,14 +8,12 @@ language: R
 The [National Ecological Observatory Network](http://www.neonscience.org) has invested in [high-resolution airborne imaging](http://www.neonscience.org/data-resources/get-data/airborne-data) of their field sites. 
 Elevation models generated from [LiDAR](http://neondataskills.org/self-paced-tutorial/1_About-LiDAR-Data-Light-Detection-and-Ranging_Activity1/) can be used to map the topography and vegetation structure at the sites.
 
-[Download]({{ site.baseurl }}/data/NEON-airborne.zip) the elevation models for the [Harvard Forest](http://harvardforest.fas.harvard.edu/) (`HARV`) and [San Joaquin Experimental Range](http://www.fs.fed.us/psw/ef/san_joaquin/) (`SJER`) 
-and the plot locations for each of these sites. 
-Often, plots within a site are used as representative samples of the larger site 
-and act as reference areas to obtain more detailed information and ensure 
-accuracy of satellite imagery (*i.e., ground truth*).
+Check to see if there is a `data` directory in your workspace with an `SJER` subdirectory in it.
+If not, [Download the data]({{ site.baseurl }}/data/neon-geospatial-data.zip) and extract it into your working directory.
+The `SJER` directory contains raster data for a digital terrain model (`SJER_dtmCrop.tif`) and a digital surface model (`SJER_dsmCrop.tif`), and vector data on plot locations (`sjer_plots.shp`) and the site boundary (`sjer_boundar.shp`) for the [San Joaquin Experimental Range](http://www.fs.fed.us/psw/ef/san_joaquin/). 
 
 1. Map the digital terrain model for `SJER` using the `viridis` color ramp.
-2. Create and map the canopy height model for `SJER` using `raster` math (`chm = dsm - dtm`) and the `viridis` color ramp.
+2. Create and map the canopy height model for `SJER` using the `viridis` color ramp. To do this subtract the values in the digital terrain model from the values in the digital surface model using `raster` math (`chm = dsm - dtm`).
 3. Create a map that shows the `SJER` boundary and the plot locations colored by `plot_type`.
 4. Transform the plot data to have the same CRS as the CHM and create a map that shows the canopy height model from (3) with the plot locations on top.
 5. Extract the mean canopy heights at each plot location for `SJER` and display the values.
