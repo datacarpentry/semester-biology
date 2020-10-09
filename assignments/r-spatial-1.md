@@ -13,9 +13,18 @@ points: [100]
 >
 > - import, view properties, and plot a `raster` 
 > - perform simple `raster` math
+> - import, view properties, and plot vector data
 > - extract points from a `raster` using a shapefile
-> - evaluate a time series of `raster` 
 
 {% include reading.html %}
+
+Place this code at the start of the assignment to load all the required packages.
+
+```r
+library(stars)
+library(sf)
+library(ggplot2)
+library(dplyr)
+```
 
 {% include assignment.html %}
