@@ -74,7 +74,7 @@ dtm_harv
 
 ```r
 ggplot() +
-  geom_stars(data = dtm_harm_df)
+  geom_stars(data = dtm_harm)
 ```
 
 * For spatial data we're going to put the data in the geom calls instead of `ggplot()` because we are often trying to combine data of different types from different objects into a single map
@@ -88,7 +88,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = dtm_harm_df) +
+  geom_stars(data = dtm_harm) +
   scale_fill_viridis_c()
 ```
 
