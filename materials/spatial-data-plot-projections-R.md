@@ -54,7 +54,7 @@ ggplot() +
 ggplot() +
   geom_stars(data = harv_dtm) +
   geom_sf(data = harv_soils, alpha = 0) +
-  coord_sf(crs = st_crs(harv_dtm))
+  coord_sf(datum = st_crs(harv_dtm))
 ```
 
 * We could also use the numeric code for the CRS instead if we want to
