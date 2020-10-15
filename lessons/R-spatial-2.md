@@ -25,7 +25,7 @@ language: R
 
 7\. Watch the Creating Vector Point Data From Tabular Data Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xjNYHsBeJdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PYcN7r4MT7g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 8\. Do Tasks 1 and 2 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
 
