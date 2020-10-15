@@ -11,4 +11,3 @@ language: R
 * [Cropping and Masking Spatial Data]({{ site.baseurl }}/materials/spatial-data-cropping-R)
 * [Saving Spatial Data From R]({{ site.baseurl }}/materials/spatial-data-saving-R)
 * [Creating vector data from csv]({{ site.baseurl }}/materials/spatial-data-create-vector-data-R)
-* Different packages and converting between spatial object types
