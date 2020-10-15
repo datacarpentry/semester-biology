@@ -1,0 +1,39 @@
+Simple feature collection with 246 features and 6 fields
+geometry type:  POLYGON
+dimension:      XY
+bbox:           xmin: 730421.1 ymin: 4712096 xmax: 732532.4 ymax: 4714961
+projected CRS:  WGS 84 / UTM zone 18N
+First 10 features:
+   TYPE_ NOTES                                      SIMMONS_SO
+1     Bf  <NA>                           Gloucester stony loam
+2      G  <NA>                Gloucester stony fine sandy loam
+3    Wvs  <NA>                    Whitman very stony silt loam
+4     Sf  <NA>                                Acton stony loam
+5      G  <NA>                Gloucester stony fine sandy loam
+6     Gx  <NA> Gloucester stony fine sandy loam- shallow phase
+7      G  <NA>                Gloucester stony fine sandy loam
+8      G  <NA>                Gloucester stony fine sandy loam
+9     Sf  <NA>                                Acton stony loam
+10     G  <NA>                Gloucester stony fine sandy loam
+                      MESIC_SOIL                     DRAINAGE_C
+1                    Canton loam                   well drained
+2        Montauk fine sandy loam                   well drained
+3  Whitman loam- extremely stony            very poorly drained
+4                  Scituate loam moderately well drained (SFSL)
+5        Montauk fine sandy loam                   well drained
+6         Hollis fine sandy loam   somewhat excessively drained
+7        Montauk fine sandy loam                   well drained
+8        Montauk fine sandy loam                   well drained
+9                  Scituate loam moderately well drained (SFSL)
+10       Montauk fine sandy loam                   well drained
+                         geometry max_elevations
+1  POLYGON ((732280.3 4714932,...       407.3725
+2  POLYGON ((732251.1 4714949,...       393.5893
+3  POLYGON ((732276.4 4714955,...       393.1937
+4  POLYGON ((732224.3 4714943,...       390.8960
+5  POLYGON ((732197 4714939, 7...             NA
+6  POLYGON ((732121.7 4714871,...       402.7060
+7  POLYGON ((732156.6 4714931,...       390.1273
+8  POLYGON ((732086.3 4714905,...       392.1573
+9  POLYGON ((732080.6 4714903,...       395.9839
+10 POLYGON ((732051.2 4714881,...       397.1992

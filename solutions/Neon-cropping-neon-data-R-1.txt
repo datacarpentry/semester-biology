@@ -1,0 +1,27 @@
+Simple feature collection with 7 features and 4 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -119.7432 ymin: 37.10542 xmax: -119.7298 ymax: 37.11729
+geographic CRS: WGS 84
+  plot_id   plot_type longitude latitude                   geometry
+1       1       Tower -119.7298 37.11729 POINT (-119.7298 37.11729)
+2       2       Tower -119.7432 37.10705 POINT (-119.7432 37.10705)
+3       3       Tower -119.7369 37.10743 POINT (-119.7369 37.10743)
+4       4 Distributed -119.7378 37.11330  POINT (-119.7378 37.1133)
+5       5 Distributed -119.7307 37.10896 POINT (-119.7307 37.10896)
+6       6 Distributed -119.7430 37.10542  POINT (-119.743 37.10542)
+7       7 Distributed -119.7374 37.10722 POINT (-119.7374 37.10722)
+
+Simple feature collection with 7 features and 4 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 256238.5 ymin: 4110088 xmax: 257465.5 ymax: 4111372
+projected CRS:  WGS 84 / UTM zone 11N
+  plot_id   plot_type longitude latitude                 geometry
+1       1       Tower -119.7298 37.11729 POINT (257465.5 4111372)
+2       2       Tower -119.7432 37.10705 POINT (256238.5 4110270)
+3       3       Tower -119.7369 37.10743 POINT (256798.3 4110296)
+4       4 Distributed -119.7378 37.11330 POINT (256737.7 4110949)
+5       5 Distributed -119.7307 37.10896 POINT (257358.5 4110450)
+6       6 Distributed -119.7430 37.10542 POINT (256254.5 4110088)
+7       7 Distributed -119.7374 37.10722 POINT (256754.5 4110274)

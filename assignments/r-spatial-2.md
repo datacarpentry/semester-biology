@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Spatial Data 2
 language: R
-exercises: ['']
-points: [100]
+exercises: ['Harvard Forest Soils Analysis', 'Cropping NEON Data']
+points: [50, 50]
 ---
 
 {% include reading.html %}
