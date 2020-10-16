@@ -107,7 +107,7 @@ ggplot() +
   geom_stars(data = harv_dtm_cropped) +
   scale_fill_viridis_c(na.value = "transparent") +
   geom_sf(data = harv_boundary, alpha = 0) +
-  coord_sf(datum = st_crs(dtm_harv))
+  coord_sf(datum = st_crs(harv_dtm))
 ```
 
 * We create a bounding box using the `st_bbox` function
@@ -118,7 +118,7 @@ ggplot() +
 * And we also need to provide the CRS
 
 ```r
-bbox <- st_bbox(c(xmin = 731000, ymin = 4713000, xmax = 732000, ymax = 4714000), crs = st_crs(dtm_harv))
+bbox <- st_bbox(c(xmin = 731000, ymin = 4713000, xmax = 732000, ymax = 4714000), crs = st_crs(harv_dtm))
 ```
 
 * So let's crop a square in this region here
