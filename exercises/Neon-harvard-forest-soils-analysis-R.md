@@ -13,7 +13,7 @@ If not, [Download the data]({{ site.baseurl }}/data/neon-geospatial-data.zip) an
 The `HARV` directory contains spatial data for Harvard Forest including raster data for a digital terrain model (`HARV_dtmFull.tif`) and a digital surface model (`HARV_dsmFull.tif`), and polygon data for the site boundary (`harv_boundary.shp`) and the soil types (`harv_soils.shp`).
 
 1. Make a map of the `harv_soils` data with the polygons colored based on `DRAINAGE_C` column. Use the viridis color ramp.
-2. Make a map of the `harv_soils` data with one facet (i.e., subplot) for each category in the `DRAINAGE_C` column. Use the viridis color map.
+2. Make a map of the `harv_soils` data with one facet (i.e., subplot) for each category in the `DRAINAGE_C` column.
 3. Using the `HARV_dtmFull.tif` data extract the maximum elevation (i.e., the DTM value) within each soils polygon. To get the maximum elevation instead of the mean value use the `max` function instead of `mean`. Display a vector of the resulting elevations.
 4. Add the vector of elevations from (3) to the original `sf` object and display the resulting data frame.
 5. Make a map of the soil polygons colored based on their maximum elevation. Use the viridis color ramp.
