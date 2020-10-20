@@ -28,7 +28,7 @@ language: R
 
 ### Function basics
 
-```
+```r
 function_name <- function(inputs) {
   output_value <- do_something(inputs)
   return(output_value)
@@ -50,7 +50,8 @@ a + b}
 
 ```
 calc_shrub_vol <- function(length, width, height) {
-  volume <- length * width * height
+  area <- length * width
+  volume <- area * height
   return(volume)
 }
 ```
@@ -79,8 +80,9 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 * Walk through function execution (using debugger)
     * Call function
 	* Assign 0.8 to length, 1.6 to width, and 2.0 to height inside function
-	* Calculate volume
-	* Send the volume back as output
+	* Calculate the area and assign it to `area`
+	* Calculate volume and assign it to `volume`
+	* Send `volume` back as output
 	* Store it in `shrub_vol`
 
 * Treat functions like a black box.
@@ -100,17 +102,19 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ### Default arguments
 
 * Defaults can be set for common inputs.
+* For example, many of our shrubs are the same height so for those shrubs we only measure the `length` and `width`.
+* So we want a default value for the `height` for cases where we don't measure it
 
-```
-calc_shrub_vol <- function(length = 1, width = 1, height = 1) {
-  volume <- length * width * height
+```r
+calc_shrub_vol <- function(length, width, height = 1) {
+  area <- length * width
+  volume <- area * height
   return(volume)
 }
 
-calc_shrub_vol()
-calc_shrub_vol(width = 2)
+calc_shrub_vol(0.8, 1.6)
 calc_shrub_vol(0.8, 1.6, 2.0)
-calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
+calc_shrub_vol(length = 0.8, width = 1.6, height = 2.0)
 ```
 
 > Do [Default Arguments]({{ site.baseurl }}/exercises/Functions-default-arguments-R).
@@ -121,14 +125,14 @@ calc_shrub_vol(height = 2.0, length = 0.8, width = 1.6)
 
 * When to use or not use argument names
 
-```
-calc_shrub_vol(length = 2.0, width = 0.8, height = 1.6)
+```r
+calc_shrub_vol(length = 0.8, width = 1.6, height = 2.0)
 ```
 
 Or
 
-```
-calc_shrub_vol(2.0, 0.8, 1.6)
+```r
+calc_shrub_vol(0.8, 1.6, 2.0)
 ```
 
 * You can always use names
@@ -138,6 +142,11 @@ calc_shrub_vol(2.0, 0.8, 1.6)
     * If order is hard to remember use names
 * In many cases there are *a lot* of optional arguments
     * Convention to always name optional argument
+* So, in our case, the most common approach would be
+
+```r
+calc_shrub_vol(0.8, 1.6, height = 2.0)
+```
 
 ### Combining Functions
 
@@ -178,7 +187,7 @@ shrub_mass <- est_shrub_mass(calc_shrub_vol(0.8, 1.6, 2.0))
 * Can also call functions from inside other functions
 * Allows organizing function calls into logical groups
 
-```
+```r
 est_shrub_mass_dim <- function(length, width, height){
   volume = calc_shrub_vol(length, width, height)
   mass <- est_shrub_mass(volume)
