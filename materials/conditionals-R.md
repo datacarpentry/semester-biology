@@ -171,7 +171,12 @@ if (x > 2){
 }
 ```
 
-### Convert to function
+### Using Conditionals Inside Functions
+
+* We've used a conditional to estimate mass differently for different types of vegetation
+* This is the kind of code we are going to want to reuse, so let's move it into a function
+* We do this by placing the same code inside of a function
+* And making sure that the function takes all required variables as input
 
 ```r
 est_mass <- function(volume, veg_type){
@@ -180,16 +185,27 @@ est_mass <- function(volume, veg_type){
   } else if (veg_type == "grass") {
     mass <- 0.65 * volume^1.2
   } else {
-    print("I don't know how to convert volume to mass for that vegetation type")
     mass <- NA
   }
   return(mass)
 }
+```
 
+* We can then run this function with different vegetation types and get different estimates for mass
+
+```r
 est_mass(1.6, "tree")
 est_mass(1.6, "grass")
 est_mass(1.6, "shrub")
 ```
+
+* Let's walk through how this code executes using the debugger
+* When we call the function the first thing that happens is that 1.6 gets assigned to `volume` and `"shrub"` gets assigned to `veg_type`
+* The code then checks to see if `veg_type` is equal to `"tree"`
+* It isn't so the code then checks to see if `veg_type` is equal to `"grass"`
+* It is so the code then hits the `else` statement and executes the code in the `else` block
+* It assigns `NA` to mass
+* It then finishes the if/else if/else statement and returns the value for `mass`, which is `NA` to the global environment
 
 > Do [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
 
@@ -203,6 +219,7 @@ est_mass(1.6, "shrub")
 ### Nested conditionals
 
 * Sometimes decisions are more complicated
+* For example we might have different equations for some vegetation types based on the age of the plant
 * Can "nest" conditionals inside of one another
 
 ```r
@@ -216,7 +233,6 @@ est_mass <- function(volume, veg_type, age){
   } else if (veg_type == "grass" | veg_type == "shrub") {
     mass <- 0.65 * volume^1.2
   } else {
-    print("I don't know how to convert volume to mass for that vegetation type")
     mass <- NA
   }
   return(mass)
