@@ -10,29 +10,51 @@ language: R
 
 ### Conditionals
 
-* Usage: 
-    * Generate `"logical"`:
-        * `TRUE` if the condition is satisfied 
-        * `FALSE` if the condition is not satisfied
-* Operators:
-    * `==`, `!=`
-    * `<`, `>`
-    * `<=`, `>=`
-    * `%in%`
+* Conditional statements are when we check to see if some condition is true or not
+* We used these for filtering data in `dplyr`
 
 ```r
-10 > 5
-"aang" == "aang"
-3 != 3
-"dog" %in% c("cat", "dog", "rabbit")
+weight > 50
+species == "DM"
 ```
 
-* Combine:
-    * `and`, `&` 
-    * `or`, `|`
+* These statements generate a value is of type `"logical"`
+* The value is `TRUE` if the condition is satisfied 
+* The value is `FALSE` if the condition is not satisfied
+* These aren't the strings "TRUE" and "FALSE"
+* They are a special type of value
+  
+* Conditional statements are made with a range of operators
+* We've seen
+  * `==` for equals
+  * `!=` for no equals
+  * `<`, `>` for less than and greater than
+  * `<=`, `>=` for less than or equal to and greater than or equal to
+  * `is.na()` for is this value null
+* There are others, including `%in%`, which checks to see if a value is present in a vector of possible values
+
+```r
+"aang" == "aang"
+"aang" != "kora"
+10 < 5
+10 >= 5
+is.na("toph")
+"zuko" %in% c("aang", "toph", "katara")
+```
+
+* We can combine conditions using "and" and "or"
+* We use the `&` for "and"
+* Which means if both conditions are `TRUE` return `TRUE` 
+* If one of the contions is `FALSE` then return `FALSE`
 
 ```r
 5 > 2 & 6 >=10
+```
+
+* We use the `|` for "or"
+* Which means if either or both of the conditions are `TRUE` return `TRUE`
+
+```r
 5 > 2 | 6 >=10
 ```
 
@@ -44,17 +66,34 @@ c(1, 1, 2, 3, 1) == 1
 
 * Checks each value to see if equal to 1
 * This is what subsetting approaches use to subset
-* They keep the values where the condition is `TRUE`
+* They keep the values where the value in this condition vector is equal to `TRUE`
+* Let's look at an example where we have a vector of sites and a vector the the states they occur in
 
 ```r
 site = c('a', 'b', 'c', 'd')
 state = c('FL', 'FL', 'GA', 'AL')
+```
+
+* A conditional statement checking if the state is `'FL'` returns a vector of `TRUE`'s and `FALSE`s
+
+```r
 state == 'FL'
+```
+
+* So when we filter the `site` vector to only return values where the `state` is equal to `'FL'`
+
+```r
 site[state == 'FL']
+```
+
+* It is the same as pass a vector of `TRUE` and `FALSE` values inside the square brackets
+
+```r
 site[c(TRUE, TRUE, FALSE, FALSE)]
 ```
 
-* Used in `dplyr::filter()` and other methods for subsetting data
+* This keeps the first and second values in `site` because the values in the vector are `TRUE`
+* This is how `dplyr::filter()` and other methods for subsetting data work
 
 > Do Tasks 1-4 in [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
