@@ -34,7 +34,7 @@ Run the function for:
 4. A *Ankylosauria* that is 13 meters long.
 
 *Challenge (**optional**)*:  If the name is not one of values that have `a` and
-`b` values print out a message that it doesn't know how to convert that group that includes that groups name in a message like "No known estimation for Ankylosauria". (the function `paste` will be helpful here). Doing this successfully will modify your answer to (4).
+`b` values print out a message that it doesn't know how to convert that group that includes that groups name in a message like "No known estimation for Ankylosauria". (the function `paste()` will be helpful here). Doing this successfully will modify your answer to (4), which is fine
 
 *Challenge (**optional**)*: Change your function so that it uses two different
 values of `a` and `b` for *Stegosauria*. When *Stegosauria* is greater than 8
