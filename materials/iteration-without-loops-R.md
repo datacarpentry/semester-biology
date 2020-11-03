@@ -111,9 +111,15 @@ combine_genus_species(data$genus, data$species)
 
 ### Apply/Map functions
 
+* Not all functions in R are vectorized
+* So we need a way to repeatedly run these non-vectorized functions 
 * Use `apply()` and `map()` functions
-* Take a function
-* Apply it to each item in a list of items
+* We'll learn the `apply` family of functions since they are very common, but `map` is a very similiar tidyverse option
+
+* These functions take two arguments
+* The first is a vector of values that we want to run a function on
+* The second is the function that we want to run on each value in the vector
+* The `apply` functions then "apply" the function each item in the vector
 * Return a list of the same size
 * Doesn't require calculations to work on vectors
 
@@ -140,15 +146,15 @@ est_mass(volumes)
 
 #### sapply & lapply
 
-* We'll start with `sapply()` and `lapply()`
-* These functions take two arguments
-* The first is a single vector (or list)
+* We'll start with `sapply()`
+* This function take two arguments
+* The first is a single vector
 * The second is the function that we want to "apply" to each element of that vector (or list)
 * So if we use our `volumes` vector and our new `est_mass()` function
-* The `sapply()` will run the `est_mass` function on each value in `volumes`, one value at a time
+* `sapply()` will run the `est_mass` function on each value in `volumes`, one value at a time
 
 ```r
-sapply(X = volumes, FUN = est_mass)
+sapply(volumes, est_mass)
 ```
 
 * Under the surface this is that same as running our `est_mass()` function on the first item in `volumes`
@@ -166,10 +172,11 @@ c(est_mass(volumes[1]), est_mass(volumes[2]), est_mass(volumes[3]))
 * `lapply` returns a "list"
 
 ```r
-lapply(X = volumes, FUN = est_mass)
+lapply(volumes, est_mass)
 ```
 
 * This is a more complicated, but also more flexible, data structure that we don't see much in this class, but it's useful to know the difference between `lapply` and `sapply`.
+* Both of these functions can also take a list as input allowing you to accomplish more complicated things
 
 > SOMETHING SIMPLER THAT DOESN'T REQUIRE USING REGEX HERE Do [Vectorized Genus Extraction]({{ site.baseurl }}/exercises/Loops-species-name-capitalization-apply-R).
 
