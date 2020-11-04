@@ -199,6 +199,7 @@ est_mass_type <- function(volume, veg_type){
 }
 
 est_mass_type(1.6, "tree")
+plant_types = c("shrub", "tree", "tree")
 est_mass_type(volumes, plant_types) # Warning & wrong result
 ```
 
@@ -233,21 +234,34 @@ apply(X = counts, MARGIN = 2, FUN = sum)
 
 ### Integrating with `dplyr`
 
-#### One result per row
-
-* Remember our data frame
+* We can also integrate both our vectorized and non-vectorized functions with `dplyr`
+* This lets us use them to repeat calculations either for each row in a data from or each group using `group_by`
+* Let's convert our `volume` and `plant_type` vectors into a data frame
 
 ```r
-plant_data
+plant_data = data.frame(volumes, plant_type)
 ```
 
-* Directly use vectorized functions with `mutate`
+#### One result per row
+
+* To apply vectorized functions to each row in a table we can use `mutate`
 
 ```r
 mutate(plant_data, masses = est_mass(volumes))
 ```
 
-* Use `rowwise`
+* This is just like we've seen using other R functions, but it works with the vectorized functions we write as well
+* This won't work with non-vectorized functions
+
+```r
+plant_data %>%
+  mutate(masses = est_mass_type(volumes, plant_types))
+```
+
+* In our case this is because the conditional attempts to evaluate if the entire column is equal to "tree"
+* That doesn't really make sense the `if` statement just checks the first value and returns `NA`
+* To get around this we add the function `rowwise` to our `dplyr` pipeline
+* This tells `dplyr` to work with the data one row at a time, like an `apply` function
 
 ```r
 plant_data %>%
@@ -259,8 +273,9 @@ plant_data %>%
 
 #### One result per group
 
-* Custom summarizing functions also work with `dplyr`
-* Need to take a vector as input and return a single value as output
+* We can also combine functions with `group_by` and `summarize` to repeat a calculation for each group 
+* These functions need to take a vector as input and return a single value as output
+* So, let's write a function that calculates the biomass (the sum of the individual masses) for each plant type
 
 ```r
 get_biomass <- function(volumes){
@@ -268,7 +283,13 @@ get_biomass <- function(volumes){
   biomass <- sum(masses)
   return(biomass)
 }
+```
 
+* This function takes a vector of volumes as input and returns a single value, the biomass
+* We can then group our data by `plant_types`
+* And summarize by our function to calculate the biomass for each group
+
+```r
 plant_data %>%
   group_by(plant_types) %>%
   summarize(biomass = get_biomass(volumes))
