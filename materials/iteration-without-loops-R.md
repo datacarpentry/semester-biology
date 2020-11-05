@@ -107,7 +107,7 @@ data <- data.frame(genus, species)
 combine_genus_species(data$genus, data$species)
 ```
 
-> Do [Vectorized Genus Extraction]({{ site.baseurl }}/exercises/Loops-vectorized-genus-extraction-R).
+> Do [Size Estimates Vectorized]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
 
 ### Apply/Map functions
 
@@ -178,7 +178,7 @@ lapply(volumes, est_mass)
 * This is a more complicated, but also more flexible, data structure that we don't see much in this class, but it's useful to know the difference between `lapply` and `sapply`.
 * Both of these functions can also take a list as input allowing you to accomplish more complicated things
 
-> SOMETHING SIMPLER THAT DOESN'T REQUIRE USING REGEX HERE Do [Vectorized Genus Extraction]({{ site.baseurl }}/exercises/Loops-species-name-capitalization-apply-R).
+> Do [Size Estimates With Maximum]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
 
 #### Other apply functions
 
@@ -214,7 +214,7 @@ mapply(FUN = est_mass_type, volume = volumes, veg_type = plant_types)
 * First argument is function
 * All other arguments are named arguments for the function
 
-> Do [Size Estimates Vectorized 1-2]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R/).
+> Do Task 1 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
 
 * `map` functions from `purrr` package are similar to apply
 
@@ -269,7 +269,7 @@ plant_data %>%
   mutate(masses = est_mass_type(volumes, plant_types))
 ```
 
-> Do [Size Estimates By Name]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
+> Do Task 2 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
 
 #### One result per group
 
