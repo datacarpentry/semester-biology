@@ -56,20 +56,31 @@ for (volume in volumes){
 
 ### Looping with an index & storing results
 
-* Loops over integers and uses these integers to access the vector the associated positions
+* In the last video we saw that in R loops iterate over a series of values in a vector or other list like object
+* When we use that value directly this is called looping by value
+* But there is another way to loop, which is called looping by index
+* Looping by index loops over a list of integer index values, typically starting at 1
+* These integers are then used to access values in one or more vectors at the position inicated by the index
+* If we modified our previous loop to use an index it would look like this
+* We often use `i` to stand for "index" as the variable we update with each step through the loop
+* We then create a vector of position values starting at 1 (for the first value) and ending with the length of the object we are looping over
+* Then inside the loop instead of doing the calculation on the index (which is just a number between 1 and 3 in our case)
+* We use square brackets and the index to get the appropriate value out of our vector
 
 ```r
+volumes = c(1.6, 3, 8)
 for (i in 1:length(volumes)){
    mass <- 2.65 * volumes[i] ^ 0.9
    print(mass)
 }
 ```
 
-* Use this "index" to get the values at that position
-* Can use the "index" for multiple vectors
-
-* Looping with an index allows us to store results calculated in the loop
-* First create an empty vector the length of the results
+* This gives us the same result, but it's more complicated to understand
+* So why would we loop by index?
+* The advantage to looping by index is that it lets us do more complicated things
+* One of the most common things we use this for are storing the results we calculated in the loop
+* To do this we start by creating an empty object the same length as the results will be
+* To store results in a vector we use the function `vector` to create an empty vector of the right length
 * `mode` is the type of data we are going to store
 * `length` is the length of the vector
 
@@ -78,8 +89,8 @@ masses <- vector(mode = "numeric", length = length(volumes))
 masses
 ```
 
-* Then add each result in the right position
-* For each trip through the loop put the output into the empty vector at the ith position
+* Then add each result in the right position in this vector
+* For each trip through the loop put the output into the empty vector at the `i`th position
 
 ```r
 for (i in 1:length(volumes)){
@@ -92,6 +103,9 @@ masses
 * Walk through iteration in debugger
 
 > Do Tasks 3-4 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
+
+
+### Looping over multiple values
 
 * Looping with an index also allows us to access values from multiple vectors
 
