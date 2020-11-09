@@ -7,8 +7,8 @@ language: R
 
 ### Basic `for` loop
 
-* Fundamental structure for repetition in programming
-* Do same action to each item in a list of things
+* Loops are the fundamental structure for repetition in programming
+* `for` loops perform the same action for each item in a list of things
 
 ```r
 for (item in list_of_items) {
@@ -16,7 +16,8 @@ for (item in list_of_items) {
 }
 ```
 
-* Need `print()` to display values inside a loop or function.
+* To see an example of this let's calculate masses from volumes using a loop
+* Need `print()` to display values inside a loop or function
 
 ```r
 volumes = c(1.6, 3, 8)
@@ -25,7 +26,10 @@ for (volume in volumes){
 }
 ```
 
-* This does the same exact thing as
+* Code takes the first value from `volumes` and assigns it to `volume` and does the calculation and prints it
+* Then it takes the second value from `volumes` and assigns it to `volume` and does the calculation and prints it
+* And so on
+* So, this loop does the same exact thing as
 
 ```r
 volume <- volumes[1]
@@ -36,7 +40,9 @@ volume <- volumes[3]
 print(2.65 * volume ^ 0.9)
 ```
 
-* Can have many rows in a loop body
+* Like with functions and conditionals loops can have many rows of code
+* Everything between the curly brackets is executed each time through the loop
+* Let's expand our look so that it first estimates the mass, then converts it from kilograms to pounds, and then prints out the value
 
 ```r
 for (volume in volumes){
