@@ -113,6 +113,7 @@ masses
 ```r
 b0 <- c(2.65, 1.28, 3.29)
 b1 <- c(0.9, 1.1, 1.2)
+volumes = c(1.6, 3, 8)
 masses <- vector(mode="numeric", length=length(volumes))
 for (i in seq_along(volumes)){
    mass <- b0[i] * volumes[i] ^ b1[i]
@@ -120,59 +121,41 @@ for (i in seq_along(volumes)){
 }
 ```
 
-### Looping over files
+### Looping with functions
 
-* Repeat same actions on many similar files
-* Get names of satellite collar location files
+* It is common to combine loops with with functions by calling one or more functions as a step in our loop
+* For example, let's take the non-vectorized version of our `est_mass` function that returns an estimated mass if the `volume > 5` and `NA` if it's not.
 
 ```r
-download.file("http://www.datacarpentry.org/semester-biology/data/locations-2016-01.zip", 
-              "locations.zip")
-unzip("locations.zip")
-data_files = list.files(pattern = "locations-.*.txt", 
-                        full.names = TRUE)
+est_mass <- function(volume){
+  if (volume > 5) {
+    mass <- 2.65 * volume ^ 0.9
+  } else {
+    mass <- NA
+  }
+  return(mass)
+}
+
+volumes = c(1.6, 3, 8)
 ```
 
-* Calculate the number of observations in each file
+* We can't pass the vector to the function and get back a vector of results because of the `if` statements
+* So let's loop over the values
+* First we'll create an empty vector to store the results
+* And them loop by index, callling the function for each value of `volumes`
 
 ```r
-results <- vector(mode = "integer", length = length(data_files))
-for (i in 1:length(data_files){
-  data <- read.csv(data_files[i])
-  count <- nrow(data)
-  results[i] <- count
+masses <- vector(mode="numeric", length=length(volumes))
+for (i in length(volumes)){
+   mass <- est_mass(volumes[i])
+   masses[i] <- mass
 }
 ```
 
-* Store output in a data frame instead of a vector
-* Associate the file name with the count
+* This is the for loop equivalent of an `sapply` statement we used in a previous lesson
 
 ```r
-results <- data.frame(file_name = charcter(length(data_files))
-                      count = integer(length(data_files)),
-                      stringsAsFactors = FALSE)
-for (i in 1:length(data_files){
-  data <- read.csv(data_files[i])
-  count <- nrow(data)
-  results$file_name[i] <- data_files[i]
-  results$count[i] <- count
-}
-results
-```
-
-> Do [Multiple-file Analysis]({{ site.baseurl }}/exercises/Loops-multi-file-analysis-R/).
-> **Exercise uses different collar data**
-
-* With `apply`
-
-```r
-get_counts <- function(data_file_name){
-  file <- read.csv(data_file_name)
-  count <- nrow(file)
-  return(count)
-}
-
-results <- unlist(lapply(collar_data_files, get_counts))
+masses_apply <- sapply(volumes, est_mass)
 ```
 
 * How to choose when there are many ways to do the same thing?
@@ -182,7 +165,98 @@ results <- unlist(lapply(collar_data_files, get_counts))
   * Readability
     * Easy to understand
   * Personal preference
-* There is no “right” way to do anything
+* There is single best choice
+
+### Looping over files
+
+* Repeat same actions on many similar files
+* Let's download some simulated satellite collar data
+
+```r
+download.file("http://www.datacarpentry.org/semester-biology/data/locations.zip",
+              "locations.zip")
+unzip("locations.zip")
+```
+
+* Now we need to get the names of each of the files we want to loop over
+* We do this using `list.files()`
+* If we run it without arguments it will give us the names of all files in the directory
+
+```r
+list.files()
+```
+
+* But we just want the data files so we'll add the optional `pattern` argument to only get the files that start with `"locations-"`
+* The `*` is a wild card, so this means "starts with locations- and includes anything afterwards"
+
+
+```r
+data_files = list.files(pattern = "locations-*", 
+                        full.names = TRUE)
+```
+
+* Once we have this list we can loop over it count the number of observations in each file
+* First create an empty vector to store those counts
+
+```r
+results <- vector(mode = "integer", length = length(data_files))
+```
+
+* Then write our loop
+
+```r
+for (i in 1:length(data_files){
+  data <- read.csv(data_files[i])
+  count <- nrow(data)
+  results[i] <- count
+}
+```
+
+> Do Task 1 of [Multiple-file Analysis]({{ site.baseurl }}/exercises/Loops-multi-file-analysis-R/).
+> **Exercise uses different collar data**
+
+### Storing loop results in a data frame
+
+* We often want to calculate multiple pieces of information in a loop making it useful to store results in things other than vectors
+* We can store them in a data frame instead by creating an empty data frame and storing the results in the `i`th row of the appropriate column
+* Associate the file name with the count
+* Start by creating an empty data frame
+* Use the `data.frame` function
+* Provide one argument for each column
+* "Column Name" = "an empty vector of the correct type"
+
+```r
+results <- data.frame(file_name = vector(mode = "character", length = length(data_files)))
+                      count = vector(mode = "integer", length = length(data_files)))
+```
+
+* Now let's modify our loop from last time
+* Instead of storing `count` in `results[i]` we need to first specify the `count` column using the `$`: `results$count[i]`
+* We also want to store the filename, which is `data_files[i]`
+
+```r
+for (i in 1:length(data_files){
+  data <- read.csv(data_files[i])
+  count <- nrow(data)
+  results$file_name[i] <- data_files[i]
+  results$count[i] <- count
+}
+```
+
+* We could also rewrite this a little to make it easier to understand by getting the file name at the begging
+
+```r
+for (i in 1:length(data_files){
+  filename <- data_files[i]
+  data <- read.csv(filename)
+  count <- nrow(data)
+  results$file_name[i] <- filename
+  results$count[i] <- count
+}
+```
+
+> Do Task 2 [Multiple-file Analysis]({{ site.baseurl }}/exercises/Loops-multi-file-analysis-R/).
+> **Exercise uses different collar data**
 
 ### Subsetting Data (optional)
 
