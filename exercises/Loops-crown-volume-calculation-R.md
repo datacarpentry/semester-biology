@@ -17,8 +17,7 @@ and `AXIS_2`). Read these data in using the following code:
 tree_data <- read.csv("https://ndownloader.figshare.com/files/5629536",
                  sep = '\t',
                  na.strings = c("dead", "missing", "MISSING",
-                                "NA", "?", "3.3."),
-                 stringsAsFactors = FALSE)
+                                "NA", "?", "3.3."))
 ```
 
 

@@ -27,8 +27,7 @@ this dataset is tab delimited. Use the argument `sep = "\t"` in `read.csv()` to
 properly format the data. There is no header row, so use `head = FALSE`. The
 unknown value used in the dataset is `-999`. R assumes your unknown value is
 `NA`, but `"NA"` in the data is the code for North America.  Use the additional
-arguments `stringsAsFactors = FALSE, na.strings = "-999"` in `read.csv()` to get
-R to keep `"NA"` as a string and transform `-999` to `NA`.
+argument `na.strings = "-999"` in `read.csv()` to get R to transform `-999` to `NA`.
 
 It's probably a good idea to add column names to help identify columns:
  
