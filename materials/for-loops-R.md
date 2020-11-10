@@ -121,6 +121,8 @@ for (i in seq_along(volumes)){
 }
 ```
 
+> Do Task 5 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
+
 ### Looping with functions
 
 * It is common to combine loops with with functions by calling one or more functions as a step in our loop
@@ -166,6 +168,8 @@ masses_apply <- sapply(volumes, est_mass)
     * Easy to understand
   * Personal preference
 * There is single best choice
+
+> Do [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
 
 ### Looping over files
 
