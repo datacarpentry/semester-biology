@@ -34,7 +34,7 @@ library(ggplot2)
 * See diagram
 
 ```
-dsm_harv <- raster("data/neon-airborne/HARV_dsmCrop.tif")
+dsm_harv <- raster("data/neon-airborne/harv_dsmCrop.tif")
 ```
 
 * Metadata is important to describe the context of spatial data.
@@ -89,7 +89,7 @@ ggplot() +
 * We can create a Canopy Height Model (CHM) by taking the difference between them
 
 ```
-dtm_harv <- raster("data/neon-airborne/HARV_dtmCrop.tif")
+dtm_harv <- raster("data/neon-airborne/harv_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
