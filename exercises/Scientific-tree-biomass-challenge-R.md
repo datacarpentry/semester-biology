@@ -16,7 +16,7 @@ like M = 0.124 * D<sup>2.53</sup>.
 1\. Estimate tree biomass for each species in a 96 hectare area of the Western Ghats
 in India using the following steps.
 
-  * [Download the data]({{ site.baseurl }}/data/Ramesh2010-macroplots.csv) and
+  * [Download the data]({{ site.baseurl }}/data/ramesh2010-macroplots.csv) and
     load the data into R.
   * Write a function that takes a vector of tree diameters as an argument and 
     returns a vector of tree masses.
