@@ -10,7 +10,7 @@ Elevation models generated from [LiDAR](http://neondataskills.org/self-paced-tut
 
 Check to see if there is a `data` directory in your workspace with an `SJER` subdirectory in it.
 If not, [Download the data]({{ site.baseurl }}/data/neon-geospatial-data.zip) and extract it into your working directory.
-The `SJER` directory contains raster data for a digital terrain model (`SJER_dtmCrop.tif`) and a digital surface model (`SJER_dsmCrop.tif`), and vector data on plot locations (`sjer_plots.shp`) and the site boundary (`sjer_boundar.shp`) for the [San Joaquin Experimental Range](http://www.fs.fed.us/psw/ef/san_joaquin/). 
+The `SJER` directory contains raster data for a digital terrain model (`sjer_dtmCrop.tif`) and a digital surface model (`sjer_dsmcrop.tif`), and vector data on plot locations (`sjer_plots.shp`) and the site boundary (`sjer_boundar.shp`) for the [San Joaquin Experimental Range](http://www.fs.fed.us/psw/ef/san_joaquin/). 
 
 1. Map the digital terrain model for `SJER` using the `viridis` color ramp.
 2. Create and map the canopy height model for `SJER` using the `viridis` color ramp. To do this subtract the values in the digital terrain model from the values in the digital surface model using `raster` math (`chm = dsm - dtm`).

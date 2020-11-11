@@ -22,11 +22,11 @@ title: List of datasets
 | Example project | zip | <http://www.datacarpentry.org/semester-biology/data/example_project.zip> |
 | Fish scale length | csv | <https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv> |
 | LiDAR rasters and plot locations | multiple | <http://www.datacarpentry.org/semester-biology/data/neon-airborne.zip> |
-| Harvard Forest NDVI | tif | <http://www.datacarpentry.org/semester-biology/data/HARV-ndvi.zip> |
+| Harvard Forest NDVI | tif | <http://www.datacarpentry.org/semester-biology/data/harv-ndvi.zip> |
 | San Joaquin Experimental Range NDVI | tif | <http://www.datacarpentry.org/semester-biology/data/sjer-ndvi.zip> |
 | Collar locations by date| zip | <http://www.datacarpentry.org/semester-biology/data/locations-2016-01.zip> |
 | Collar locations by individual | zip | <http://www.datacarpentry.org/semester-biology/data/individual_collar_data.zip> |
-| NEON tree location data | csv | <http://www.datacarpentry.org/semester-biology/data/HARV_034subplt.csv> |
+| NEON tree location data | csv | <http://www.datacarpentry.org/semester-biology/data/harv_034subplt.csv> |
 | DNA sequences | txt | <http://www.datacarpentry.org/semester-biology/data/dna-sequences-1.txt> |
 | Archaea DNA sequences | fasta | <http://www.datacarpentry.org/semester-biology/data/archaea-dna.zip> |
 | Western Ghats tree data | tsv | <http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt> |
