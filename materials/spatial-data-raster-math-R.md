@@ -23,8 +23,8 @@ Panel 4: Equation: DSM (Digital Surface Model) - DTM (Digital Terrain Model) = C
 ```r
 library(stars)
 
-dtm_harv <- read_stars("data/harv/HARV_dtmCrop.tif")
-dsm_harv <- read_stars("data/harv/HARV_dsmCrop.tif")
+dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
+dsm_harv <- read_stars("data/HARV/HARV_dsmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 

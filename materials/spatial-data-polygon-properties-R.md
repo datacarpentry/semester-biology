@@ -12,7 +12,7 @@ language: R
 ```r
 library(sf)
 
-harv_soils <- st_read("data/harv/harv_soils.shp")
+harv_soils <- st_read("data/HARV/harv_soils.shp")
 
 ggplot() +
   geom_sf(data = harv_soils)

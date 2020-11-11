@@ -27,7 +27,7 @@ library(stars)
 * For raster data we've loaded it using `read_stars` and plotted it with `geom_stars`
 
 ```r
-dtm_harv <- read_stars("data/harv/HARV_dtmCrop.tif")
+dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
 ggplot() +
   geom_stars(data = dtm_harv)
 ```
@@ -35,7 +35,7 @@ ggplot() +
 * For vector data we've loaded it using `st_read` and plotted it with `geom_sf`
 
 ```r
-plots_harv <- st_read("data/harv/harv_plots.shp")
+plots_harv <- st_read("data/HARV/harv_plots.shp")
 ggplot() +
   geom_sf(data = plots_harv)
 ```

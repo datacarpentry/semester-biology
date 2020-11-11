@@ -17,8 +17,8 @@ library(stars)
 library(sf)
 library(ggplot2)
 
-harv_boundary <- st_read("data/harv/harv_boundary.shp")
-harv_dtm <- read_stars("data/harv/HARV_dtmFull.tif")
+harv_boundary <- st_read("data/HARV/harv_boundary.shp")
+harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
 
 ```
 
@@ -132,7 +132,7 @@ harv_dtm_small <- st_crop(harv_dtm, bbox)
 * Let's load and then crop our soils data
 
 ```r
-harv_soils <- st_read("data/harv/harv_soils.shp")
+harv_soils <- st_read("data/HARV/harv_soils.shp")
 harv_soils_small <- st_crop(harv_soils, bbox)
 ```
 

@@ -271,7 +271,7 @@ for (i in 1:length(data_files){
 library(ggplot2)
 library(dplyr)
 
-neon_trees <- read.csv('data/harv_034subplt.csv')
+neon_trees <- read.csv('data/HARV_034subplt.csv')
 ggplot(neon_trees, aes(x = easting, y = northing)) +
   geom_point()
 ```
