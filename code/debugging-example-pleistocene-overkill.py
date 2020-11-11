@@ -5,7 +5,7 @@ def mean_mass(masses):
     mean_mass = np.mean(masses)
     return mean_mass
 
-all_data = np.genfromtxt('MOMv3.3.txt', delimiter='\t', dtype=None,
+all_data = np.genfromtxt('momv3.3.txt', delimiter='\t', dtype=None,
                           names=['continent', 'status', 'order', 'family',
                                  'genus', 'species', 'log10mass', 'mass', 'ref'])
 

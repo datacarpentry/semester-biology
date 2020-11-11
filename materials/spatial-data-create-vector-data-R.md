@@ -24,7 +24,7 @@ library(sf)
 * The first argument is still the name of the file we are going to read
 
 ```r
-harv_plots <- st_read("data/HARV/harv_plots.csv")
+harv_plots <- st_read("data/harv/harv_plots.csv")
 ```
 
 * But now we also need to tell it which columns the spatial data is located in
@@ -33,7 +33,7 @@ harv_plots <- st_read("data/HARV/harv_plots.csv")
 * In our case those column names are `longitude` and `latitude`
 
 ```r
-harv_plots <- st_read("data/HARV/harv_plots.csv",
+harv_plots <- st_read("data/harv/harv_plots.csv",
                       options = c("X_POSSIBLE_NAMES=longitude", "Y_POSSIBLE_NAMES=latitude"))
 ```
 
@@ -41,7 +41,7 @@ harv_plots <- st_read("data/HARV/harv_plots.csv",
 * If it's lat/long data this is `4326`
 
 ```r
-harv_plots <- st_read("data/HARV/harv_plots.csv",
+harv_plots <- st_read("data/harv/harv_plots.csv",
                       options = c("X_POSSIBLE_NAMES=longitude", "Y_POSSIBLE_NAMES=latitude"),
                       crs = 4326)
 ```

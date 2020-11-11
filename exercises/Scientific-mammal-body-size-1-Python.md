@@ -14,7 +14,7 @@ whole programming thing let's stop messing around with made up datasets
 and do some serious analysis.
 
 Download the
-[largest dataset on mammalian body size in the world](http://www.esapubs.org/archive/ecol/E084/094/MOMv3.3.txt).
+[largest dataset on mammalian body size in the world](http://www.esapubs.org/archive/ecol/E084/094/momv3.3.txt).
 Fortunately this dataset has data on the mass of recently extinct mammals as
 well as extant mammals (i.e., those that are still alive today). Take a look at
 the [metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
