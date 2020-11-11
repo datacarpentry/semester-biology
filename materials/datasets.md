@@ -21,7 +21,7 @@ title: List of datasets
 | Bird size | tsv | <http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt> |
 | Example project | zip | <http://www.datacarpentry.org/semester-biology/data/example_project.zip> |
 | Fish scale length | csv | <https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv> |
-| LiDAR rasters and plot locations | multiple | <http://www.datacarpentry.org/semester-biology/data/neol-airborne.zip> |
+| LiDAR rasters and plot locations | multiple | <http://www.datacarpentry.org/semester-biology/data/neon-airborne.zip> |
 | Harvard Forest NDVI | tif | <http://www.datacarpentry.org/semester-biology/data/harv-ndvi.zip> |
 | San Joaquin Experimental Range NDVI | tif | <http://www.datacarpentry.org/semester-biology/data/sjer-ndvi.zip> |
 | Collar locations by date| zip | <http://www.datacarpentry.org/semester-biology/data/locations-2016-01.zip> |

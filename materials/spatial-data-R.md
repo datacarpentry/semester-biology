@@ -7,7 +7,7 @@ language: R
 
 > Remember to download and put into data subdirectory:
 >
-> * [LiDAR rasters and plot locations]({{ site.baseurl }}/data/neol-airborne.zip)
+> * [LiDAR rasters and plot locations]({{ site.baseurl }}/data/neon-airborne.zip)
 
 > Load the following into browser window:
 
@@ -34,7 +34,7 @@ library(ggplot2)
 * See diagram
 
 ```
-dsm_harv <- raster("data/neol-airborne/HARV_dsmCrop.tif")
+dsm_harv <- raster("data/neon-airborne/HARV_dsmCrop.tif")
 ```
 
 * Metadata is important to describe the context of spatial data.
@@ -89,7 +89,7 @@ ggplot() +
 * We can create a Canopy Height Model (CHM) by taking the difference between them
 
 ```
-dtm_harv <- raster("data/neol-airborne/HARV_dtmCrop.tif")
+dtm_harv <- raster("data/neon-airborne/HARV_dtmCrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
@@ -127,8 +127,8 @@ ggplot() +
 ```
 library(rgdal)
 
-plots_harv <- readOGR("data/neol-airborne/plot_locations", 
-                      "HARV_plots")
+plots_harv <- readOGR("data/neon-airborne/plot_locations", 
+                      "harv_plots")
 ```
 
 * Plot `vector` on top of `raster`

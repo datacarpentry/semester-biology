@@ -30,7 +30,7 @@ implicitly by sampling period for analysis.
      frame in a different `geom_point` layer.
 
 2. Extract the NDVI values from all rasters for the `HARV_plots` and
-   `sjer_plots`in `neol-airborne/plot_locations`. Running `extract()` on a
+   `sjer_plots`in `neon-airborne/plot_locations`. Running `extract()` on a
    raster stack results in a matrix with one column per raster and one row per
    point. To more easily work with this data, we want to have one column with
    the raster names and one column per point, which you can do by transposing

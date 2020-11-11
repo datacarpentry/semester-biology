@@ -7,7 +7,7 @@ language: R
 
 > Remember to download and put into data subdirectory:
 >
-> * [LiDAR rasters and plot locations]({{ site.baseurl }}/data/neol-airborne.zip)
+> * [LiDAR rasters and plot locations]({{ site.baseurl }}/data/neon-airborne.zip)
 
 > Load the following into browser window:
 

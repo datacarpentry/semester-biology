@@ -26,7 +26,7 @@ language: R
 library(ggplot2)
 library(raster)
 
-dtm_harv <- raster("data/neol-airborne/HARV_dtmCrop.tif")
+dtm_harv <- raster("data/neon-airborne/HARV_dtmCrop.tif")
 dtm_harv_cropped <- crop(dtm_harv, extent(dtm_harv, 731500, 732000, 4713200, 4713500))
 dtm_harv_df = as.data.frame(dtm_harv_cropped, xy = TRUE)
 
