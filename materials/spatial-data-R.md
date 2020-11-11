@@ -89,7 +89,7 @@ ggplot() +
 * We can create a Canopy Height Model (CHM) by taking the difference between them
 
 ```
-dtm_harv <- raster("data/neon-airborne/harv_dtmCrop.tif")
+dtm_harv <- raster("data/neon-airborne/harv_dtmcrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
