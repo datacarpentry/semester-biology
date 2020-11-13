@@ -21,7 +21,7 @@ language: SQL
 
 4\. Do the [Data Entry Validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/) exercise.
 
-5\. Sign up for Piazza by clicking [this signup link](piazza.com/ufl/fall2020/wis6934) and following the [Enroll in a Class](https://support.piazza.com/support/solutions/articles/48000574382-student-enroll-in-a-class) instructions.
+5\. Sign up for Piazza by clicking [this signup link](https://piazza.com/ufl/fall2020/wis6934) and following the [Enroll in a Class](https://support.piazza.com/support/solutions/articles/48000574382-student-enroll-in-a-class) instructions.
 
 6\. Read the [How to Post a Question](https://support.piazza.com/support/solutions/articles/48000574396-students-post-a-question) guide for Piazza and check out any additional information you're interested in on the [Piazza Q&A page](https://support.piazza.com/support/solutions/folders/48000404468)
 
