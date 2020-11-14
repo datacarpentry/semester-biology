@@ -4,7 +4,7 @@ element: assignment
 title: Repeating Things 2
 language: R
 exercises: ['Basic For Loops', 'Size Estimates By Name Loop','Multi-file Analysis', 'DNA or RNA Iteration', 'Cocili Data Exploration', 'Length of Floods']
-points: [25, 25, 25, optional, optional, optional]
+points: [30, 30, 40, optional, optional, optional]
 ---
 
 #### Learning Objectives
