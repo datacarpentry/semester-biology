@@ -17,6 +17,6 @@ This function should take two arguments, `length` and `species`. For each of the
 * For `Sauropoda`:  `a` = `214.44` and `b = 1.46` ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
 * For any other value of `species`: `a = 25.37` and `b = 2.49`.
 
-1. Use this function and a for loop to calculate the estimated mass for each dinosaur, store the masses in a vector, and after all of the calculations are complete show the first few items in the vector using `head`.
-2. Add the results in the vector back to the original data frame. Show the first few rows of the data frame using `head`.
+1. Use this function and a for loop to calculate the estimated mass for each dinosaur, store the masses in a vector, and after all of the calculations are complete show the first few items in the vector using `head()`.
+2. Add the results in the vector back to the original data frame. Show the first few rows of the data frame using `head()`.
 3. Calculate the mean mass for each `species` using `dplyr`.
