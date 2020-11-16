@@ -6,7 +6,7 @@ language: R
 ---
 
 You have a satellite collars on a number of different individuals and want to be able to quickly look at all of their recent movements at once.
-The data is posted daily to a [url as a zip file]({{ site.baseurl }}/data/individual_collar_data.zip) that contains one csv file for each individual: [{{ site.baseurl }}/data/individual_collar_data.zip]({{ site.baseurl }}/data/individual_collar_data.zip)
+The data is posted daily to a [url as a zip file]({{ site.baseurl }}/data/individual_collar_data.zip) that contains one csv file for each individual: [{{ site.url }}/data/individual_collar_data.zip]({{ site.baseurl }}/data/individual_collar_data.zip)
 Start your solution by:
 
 * Downloading the zip file using `download.file()`
