@@ -52,7 +52,7 @@ clean_data <- raw_data %>%
   pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth")
 ```
 
-* The colon specifies all columns staring at `TreeGirth1` and ending at `TreeGirth2`
+* The colon specifies all columns starting at `TreeGirth1` and ending at `TreeGirth5`
 * Could also specify the columns to *not* pivot
 
 ```r
