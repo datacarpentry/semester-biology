@@ -12,7 +12,7 @@ language: SQL
 3. One value in each cell
 
 * Unfortunately lots of existing data doesn't follow these rules
-* Need to convert them to to this tidy structure for analysis
+* Need to convert them to this tidy structure for analysis
 * Use a package called `tidyr`
 
 ```
@@ -28,7 +28,7 @@ library(dplyr)
 > Copy link to Western Ghats tree data from datasets page
 
 ```
-raw_data = read.csv("http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt", sep = "\t")
+raw_data = read.csv("http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt", sep = "\t")
 ```
 
 > View data

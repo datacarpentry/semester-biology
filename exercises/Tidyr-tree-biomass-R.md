@@ -23,14 +23,10 @@ where `Mass` is measured in kg of dry above-ground biomass and
 
 We're going to estimate the total tree biomass for trees in a 96
 hectare area of the Western Ghats in India.
-[The raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt)
-is available on
-[Ecological Archives](http://esapubs.org/Archive/).
+[The raw data](https://retriever.readthedocs.io/en/latest/).
 Unfortunately, the data is stored in a poor database structure and
 using all of the tree stems would be difficult without first tidying
-up the data. You can have a look at
-[the metadata](http://esapubs.org/archive/ecol/E091/216/metadata.htm)
-to get familiar with the data structure.
+up the data.
 
 1. Use `tidyr` to `gather()` the raw data into rows for each measured stem. 
 2. Write a function that takes a vector of tree diameters as an argument and   

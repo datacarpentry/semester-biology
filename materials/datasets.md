@@ -29,7 +29,7 @@ title: List of datasets
 | NEON tree location data | csv | <http://www.datacarpentry.org/semester-biology/data/HARV_034subplt.csv> |
 | DNA sequences | txt | <http://www.datacarpentry.org/semester-biology/data/dna-sequences-1.txt> |
 | Archaea DNA sequences | fasta | <http://www.datacarpentry.org/semester-biology/data/archaea-dna.zip> |
-| Western Ghats tree data | tsv | <http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt> |
+| Western Ghats tree data | tsv | <http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt> |
 | Backup Bioclim Data | zip | <https://www.datacarpentry.org/semester-biology/data/wc10.zip>
 | Backup US Elevation Data | zip | <https://www.datacarpentry.org/semester-biology/data/wc10.zip>
 | Gappy Data | csv | <https://www.datacarpentry.org/semester-biology/data/gappy-data.csv>
