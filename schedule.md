@@ -5,7 +5,7 @@ assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
 'Review + Reproducibility', 'Spatial Data 1', 'Spatial Data 2', 
 'Functions', 'Making Choices', 'Repeating Things 1', 'Repeating Things 2',
-'tidyr', 'Version Control', 'Knitr']
+'Cleaning Messy Data', 'Version Control', 'Knitr']
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
