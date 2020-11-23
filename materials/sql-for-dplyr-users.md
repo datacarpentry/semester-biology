@@ -42,12 +42,19 @@ language: SQL
 * We'll start by doing this directly to learn SQL
 * Then we'll learn how to work with databases inside our R scripts
 
-* First let's download the SQLite database we're going to work with
+* First let's install some packages that RStudio needs
+
+```r
+install.packages(c('DBI', 'RSQLite'))
+```
+
+* Then download the SQLite database we're going to work with
 
 ```r
 download.file("https://ndownloader.figshare.com/files/11188550", "portal.sqlite")
 ```
 
+* Finally connect to the database so that we can work with it
 * `New File` -> `SQL Script`
 * The special comment on Line 1 is RStudio's way of connecting to the database
 * Add `, dbname = "portal.sqlite"` to get
