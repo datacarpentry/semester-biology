@@ -137,12 +137,6 @@ a query like this.
   * Lowercase variable names
   * One clause/line
 
-### Saving queries for future use
-
-* Views save queries to run again.
-* Create them by clicking button next to log and selecting `Save as view`
-* If you need to replace a view first do `Database Structure` -> Right click on view -> `Delete View`
-
 > Do the [Simple WHERE]({{ site.baseurl }}/exercises/Basic-queries-simple-where-SQL) exercise.
 
 ### Sorting
