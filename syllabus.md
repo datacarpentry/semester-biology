@@ -246,14 +246,7 @@ with you to make the learning environment equitable for you and others.
 
 ### Online Course Evaluation Process
 
-Student assessment of instruction is an important part of efforts to improve
-teaching and learning. At the end of the semester, students are expectedto
-provide feedback on the quality of instruction in this course using a standard
-set of university and college criteria. These evaluations are conducted online
-at https://evaluations.ufl.edu. Evaluations are typically open for students to
-complete during the last two or three weeks of the semester; students will be
-notified of the specific times when they are open. Summary results of these
-assessments are available to students at https://evaluations.ufl.edu/results. 
+Students are expected to provide professional and respectful feedback on the quality of instruction in this course by completing course evaluations online via GatorEvals. Guidance on how to give feedback in a professional and respectful manner is available at https://gatorevals.aa.ufl.edu/students/. Students will be notified when the evaluation period opens, and can complete evaluations through the email they receive from GatorEvals, in their Canvas course menu under GatorEvals, or via https://ufl.bluera.com/ufl/. Summaries of course evaluation results are available to students at https://gatorevals.aa.ufl.edu/public-results/.
 
 
 ### University Policy on Academic Misconduct
