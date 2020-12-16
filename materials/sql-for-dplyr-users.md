@@ -51,9 +51,12 @@ install.packages(c('DBI', 'RSQLite'))
 * Then download the SQLite database we're going to work with
 
 ```r
-download.file("https://ndownloader.figshare.com/files/11188550", "portal.sqlite")
+download.file("https://ndownloader.figshare.com/files/11188550",
+              "portal.sqlite",
+              mode = "wb")
 ```
 
+* The `mode = "wb"` makes sure that this binary file downloads properly on all operating systems
 * Finally connect to the database so that we can work with it
 * `New File` -> `SQL Script`
 * The special comment on Line 1 is RStudio's way of connecting to the database
