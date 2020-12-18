@@ -29,8 +29,14 @@ in a 96 hectare area of the Western Ghats in India.
     [Data Retriever](https://retriever.readthedocs.io/en/latest/) and use it to download and
     cleanup this data automatically (using the command line interface the
     command would be `retriever install csv Ramesh2010` and the data will be
+<<<<<<< HEAD
     stored in `Ramesh2010-macroplots.csv`) and import it into Python.
 3.  If you look at the file
+=======
+    stored in `ramesh2010-macroplots.csv`) and import it into Python.
+3.  If you look at the file or [the
+    metadata](http://esapubs.org/archive/ecol/E091/216/metadata.htm)
+>>>>>>> lowercase-file-names
     carefully you'll notice that the data is actually in girth (i.e.,
     circumference, which is equal to pi * diameter) rather than
     diameter. Write a function to take an array/Series of circumferences as an

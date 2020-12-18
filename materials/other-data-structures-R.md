@@ -67,7 +67,7 @@ for working with genomic data in R.
         * Format stores nucleotide sequences
 
 ```
-reads <- readFasta("data/archaea_dna/T-pendens.fasta")
+reads <- readFasta("data/archaea_dna/t-pendens.fasta")
 ```
 
 * `reads` is a special kind of object class, `ShortRead`.

@@ -17,7 +17,7 @@ the following code to load a single sequence and caculate it's GC content.
 library(ShortRead)
 library(Biostrings)
 
-reads <- readFasta("archaea-dna/A-saccharovorans.fasta")
+reads <- readFasta("archaea-dna/a-saccharovorans.fasta")
 seq <- sread(reads)
 base_freq <- alphabetFrequency(seq)
 gc_content <- (base_freq[1, "G"] + base_freq[1, "C"]) / sum(base_freq) * 100
@@ -43,7 +43,7 @@ file:
 
 ```
 library(ShortRead)
-reads <- readFasta("archaea-dna/A-saccharovorans.fasta")
+reads <- readFasta("archaea-dna/a-saccharovorans.fasta")
 seq <- sread(reads)
 ```
 
