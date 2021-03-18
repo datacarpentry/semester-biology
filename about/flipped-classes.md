@@ -11,7 +11,7 @@ think they work particularly well for computer oriented classes. If
 you're interested in knowing more take a look at this great
 info-graphic:
 
-[![Flipped Classroom](https://www.knewton.com/wp-content/uploads/flipped-classroom-1.jpg "Flipped Classroom")](https://www.knewton.com/flipped-classroom/)
+[![Flipped Classroom](https://assignmentbro.com/wp-content/uploads/2021/02/flipped-classroom-infographics-scaled.jpg "Flipped Classroom")](https://assignmentbro.com/blog/flipped-classroom-infographics)
 
 Created by [Knewton](https://www.knewton.com/) and [Column Five
 Media](http://columnfivemedia.com/)
