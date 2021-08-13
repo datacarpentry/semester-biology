@@ -25,10 +25,19 @@ available as templates for contributions of new materials and other materials
 that are specific to the course (e.g., the syllabus) are developed in a way to
 facilitate easy customization. 
 
-- Here are some examples of customized courses:
-  - [Introduction to Ecology](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/)
-  - [Data Science for Agriculture](https://palderman.github.io/DataSciAg/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman)
+Here are some examples of courses using the infrastructure and material from this course:
 
+* [Data Science for Biologists](https://catherinehulshof.github.io/Fall2020-biology/) at Virginia Commonwealth University
+* [Data Science for Agriculture](https://palderman.github.io/DataSciAg/) at Oklahoma State University
+* [Data Visualization for Plant Pathologists](https://ufvegpathology.github.io/phyto-data-viz/) at the University of Florida
+* [Data Science for SAFS](https://sr320.github.io/course-fish497-2018/) at the University of Washington
+* [Data Carpentry for Pharmacists](https://ory-data-science.github.io/semester-pharmacy/) at the University of Health Sciences and Pharmacy in St. Louis
+* [R Programming for Biologists](https://www.stonehill.edu/summer-courses-2021/undergraduate-courses/bio316a/) at Stonehill College
+* [Data Carpentry for Ecologists](https://mvevans89.github.io/ECOL-8030/) at the University of Georgia
+* [Introduction to Data Analysis for Aquatic Sciences](https://sr320.github.io/course-fish274-2019/) at the University of Washington
+* [Data Science in Omics Introduction](https://hoytpr.github.io/bioinformatics-semester/) at Oklahoma State University
+* [Introducing Agroecology: The Basics of Agroecology for Practitioners](https://trec-agroecology.github.io/introducing-agroecology/) at the University of Florida
+* [Data Science with R](https://datasciencer.tychen.us/)
 
 ## Where is everything
 
