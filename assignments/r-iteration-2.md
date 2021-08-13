@@ -7,7 +7,7 @@ exercises: ['Basic For Loops', 'Size Estimates By Name Loop','Multi-file Analysi
 points: [30, 30, 40, optional, optional, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

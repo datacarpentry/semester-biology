@@ -7,7 +7,7 @@ exercises: []
 points: []
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

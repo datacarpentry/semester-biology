@@ -9,7 +9,7 @@ BY', 'COUNT', 'SUM', 'Basic Join', 'Multi-table Join', 'Filtered Join',
 points: [5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10, 10]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

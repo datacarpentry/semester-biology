@@ -7,7 +7,7 @@ exercises: ['Canopy Height from Space', 'Species Occurrences Map', 'Species Occu
 points: [30, 40, 30]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

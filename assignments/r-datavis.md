@@ -7,7 +7,7 @@ exercises: ['Acacia and Ants', 'Mass vs Metabolism', 'Acacia and Ants Histograms
 points: [25, 25, 25, 25, optional, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

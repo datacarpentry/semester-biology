@@ -7,7 +7,7 @@ exercises: ['Reproducible Breeding Bird Survey Analysis']
 points: [optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >
