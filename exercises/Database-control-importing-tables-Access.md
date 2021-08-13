@@ -5,8 +5,6 @@ title: Importing Tables
 language: Access
 ---
 
-#### Import Data in MS Access
-
 Hand entering data is great if you're collecting your own data and need
 to enter it yourself, but it's a pretty terrible way to use already
 available data, especially if it's more than a few dozen lines long.
