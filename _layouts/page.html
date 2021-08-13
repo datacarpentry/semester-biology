@@ -4,7 +4,9 @@ layout: default
 
 <div class="page-header">
   <h1 class="page-title">{{ page.title }}</h1>
-  <h2 class="page-subtitle">{{ page.element | capitalize }}</h2>
+  {% if page.element %}
+    <h2 class="page-subtitle">{{ page.element | capitalize }}</h2>
+  {% endif %}
   <hr width="75%">
 </div>
 

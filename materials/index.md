@@ -4,16 +4,16 @@ title: Lecture Materials
 ---
 <a href="#SQL">SQL</a> \| <a href="#R">R</a> \| <a href="#Python">Python</a> \|  <a href="#Access">Access</a>
 
-### General Programing Resources
+## General Programing Resources
 -   [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
 -   [Git Collaboration]({{ site.baseurl }}/materials/git-collaboration-example)
 -   [Git in 30 minutes]({{ site.baseurl }}/materials/git-in-30-minutes)
 -   [Shell]({{ site.baseurl }}/materials/shell) \| [Shell Alternate]({{ site.baseurl }}/materials/shell2)
 -   [State in IDEs]({{ site.baseurl }}/materials/state-in-IDEs)
 
-### SQL <a name="SQL"></a>
+## SQL <a name="SQL"></a>
 
-#### Course Notes
+### Course Notes
 
 - [Introduction to Databases]({{ site.baseurl }}/materials/databases-intro-sql)
 - [Basic Queries]({{ site.baseurl }}/materials/sql-basic-queries)
@@ -23,7 +23,7 @@ title: Lecture Materials
 - [Data Entry in Excel]({{ site.baseurl }}/materials/data-entry)
 - [Nested Queries]({{ site.baseurl }}/materials/sql-nested-queries)
 
-#### Extra Notes
+### Extra Notes
 
 - [Database Control - SQLite Manager]({{ site.baseurl }}/materials/database-control-sql)
 - [Database Control - Queries]({{ site.baseurl }}/materials/database-control-queries-sql)
@@ -32,7 +32,7 @@ title: Lecture Materials
 - [Exporting from OpenOffice]({{ site.baseurl }}/materials/exporting-tables-and-queries-from-openoffice-base-to-csv)
 - [SQL for Access Users]({{ site.baseurl }}/materials/sql-for-access-users)
 
-#### Database Structure Image Files
+### Database Structure Image Files
 
 - [Basic Structure]({{ site.baseurl }}/materials/databases-basic-table-structure.png)
 - [Cross-tabulated Table]({{ site.baseurl }}/materials/databases-crosstab-table.png)
@@ -46,7 +46,7 @@ title: Lecture Materials
 - [Redundant Table]({{ site.baseurl }}/materials/databases-redundant-table.png)
 - [Redundant Table Restructure]({{ site.baseurl }}/materials/databases-redundant-table-restructure.png)
 
-### R <a name="R"></a>
+## R <a name="R"></a>
 
 - [Introduction]({{ site.baseurl }}/materials/r-intro)
 - [Data Structures]({{ site.baseurl }}/materials/data-structures-R)
@@ -68,7 +68,7 @@ title: Lecture Materials
 - [R Cheat Sheet]({{ site.baseurl }}/materials/Walkthrough-R)
 - [Projects]({{ site.baseurl }}/materials/projects)
 
-### Python <a name="Python"></a>
+## Python <a name="Python"></a>
 *Python materials were used in [previous iterations](http://www.programmingforbiologists.org/) of the course at Utah State University, but
 are no longer under active development. Most of the material is presented as
 [IPython notebooks](http://nbviewer.ipython.org/urls/raw.github.com/ethanwhite/progbio/master/ipynbs/ipython-notebook.ipynb).
@@ -76,7 +76,7 @@ The main links will take you to a nicely formatted text version of the notebook
 displayed in the browser. You can also download the raw notebook to interact
 with it on your computer by changing the code and seeing what happens.*
 
-#### Course Notes
+### Course Notes
 
 -   [Expressions, Types, Variables, and Errors]({{ site.baseurl }}/materials/expressions-types-variables-errors)
 -   [Expressions](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/expressions.ipynb) ([notebook](https://raw.github.com/ethanwhite/progbio/master/ipynbs/expressions.ipynb))
@@ -105,7 +105,7 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Python & R]({{ site.baseurl }}/materials/R-and-python.pdf) ([notebook](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/master/materials/python-R.ipynb) \| [raw](https://raw.github.com/datacarpentry/semester-biology/master/materials/python-R.ipynb))
 -   [Rpy2](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/master/materials/rpy2-demo.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/master/materials/rpy2-demo.ipynb))
 
-#### Extra Notes
+### Extra Notes
 
 -   [Aliasing](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/master/materials/aliasing.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/master/materials/aliasing.ipynb))
 -   [Beautiful Soup](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/master/materials/beautiful-soup.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/master/materials/beautiful-soup.ipynb))
@@ -133,7 +133,7 @@ with it on your computer by changing the code and seeing what happens.*
 -   [Testing](http://nbviewer.ipython.org/urls/github.com/datacarpentry/semester-biology/raw/master/materials/testing-in-ipynb.ipynb) ([notebook](https://raw.github.com/datacarpentry/semester-biology/master/materials/testing-in-ipynb.ipynb))
 -   [Using Help]({{ site.baseurl }}/materials/using-help)
 
-### Access <a name="Access"></a>
+## Access <a name="Access"></a>
 
 *Access materials were used in [previous iterations](http://www.programmingforbiologists.org/) of the course at Utah State University, but
 are no longer under active development.*

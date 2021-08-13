@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# Data Carpentry for Biologists Course
+
 An introduction to working with data for biologists including: data structure, data manipulation, visualization, basic programming, and databases.
 Designed to be used as a flipped university course and also for self-guided
 students.

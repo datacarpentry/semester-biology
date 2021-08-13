@@ -5,11 +5,11 @@ title: Computer Setup
 
 ***WIS 6934 students will need their own laptops set up with R by week 2, Git by week 10, and SQL by week 13.***
 
-### R
+## R
 
 Download and install the [R base system](http://cran.rstudio.com/) and [RStudio](http://www.rstudio.com/products/rstudio/download/). Both are needed. Installing RStudio will not automatically install R.
 
-### GitHub
+## GitHub
 
 1. Create an account on GitHub (https://github.com) using the `Sign up for
    GitHub` form on the right side of the page.
@@ -23,9 +23,9 @@ Download and install the [R base system](http://cran.rstudio.com/) and [RStudio]
     3. In the upper left corner click on the drop down with your name.
     4. Confirm that the name name of the course GitHub organization is present
 
-### Git
+## Git
 
-#### Windows
+### Windows
 
 1.  Download the Git for Windows
     [installer](https://git-for-windows.github.io/).
@@ -62,7 +62,7 @@ result from when you check the installation), try the following:
 
 **Do not change the git executable to `C:\Program Files\Git\mingwXX\bin\git` as this will fail on some systems with an error message including "rpostback-askpass".**
 
-#### Mac OS X
+### Mac OS X
 
 1. Open up the Terminal, type in "git" and press enter.
 2. This should cause a pop-up window to appear. It will have several options;
@@ -102,17 +102,17 @@ result from Step 6), try the following:
    the value in `Git executable` from `/usr/bin/git` to `/usr/local/bin/git`)
 5. Click `OK`
 
-#### Linux
+### Linux
 
 Git is probably already installed. If it is not already available install it via
 your distro's package manager. For Debian/Ubuntu run `sudo apt-get install git`
 and for Fedora run `sudo yum install git`.
 
-### SQL
+## SQL
 
 Download and install [DB Browser for SQLite](http://sqlitebrowser.org/)
 
-### Python
+## Python
 
 *Python installation is not required for WIS 6934. Python materials on this site
 are no longer under active development.*

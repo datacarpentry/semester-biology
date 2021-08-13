@@ -3,12 +3,12 @@ layout: page
 title: Lectures
 ---
 
-### SQL
+## SQL
 
 * [Introduction to Databases](SQL-data)
 * [Database Structure and Joins](SQL-queries)
 
-### R
+## R
 
 * [Introduction to R and RStudio](R-intro)
 * [Working with Data](R-data)
@@ -21,7 +21,7 @@ title: Lectures
 * [Version Control Basics](R-git)
 * [Putting It All Together](R-capstone)
 
-### Git
+## Git
 
 * [Git with R](R-git)
 
