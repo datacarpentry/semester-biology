@@ -3,9 +3,7 @@ layout: default
 ---
 
 <div class="page">
-  <h2 class="page-topic">{{ page.topic }}</h2>
-  <h1 class="page-title">{{ page.title }}</h1>
-  <br>
+  <h1>{{ page.title }} ({{ page.topic }})</h1>
   {{ content }}
   {% capture output_file %}{{ page.url | remove: 'exercises' | remove: 'docs/templates' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
   <em>Expected outputs for {{ page.title }}: </em>
