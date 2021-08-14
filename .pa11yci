@@ -1,7 +1,9 @@
 {
   "defaults": {
-    "concurrency": 4,
+    "concurrency": 1,
     "standard": "WCAG2AA",
-    "runners": ["axe"]
+    "runners": ["axe"],
+    "timeout": 5000,
+    "wait": 2000
   }
 }
