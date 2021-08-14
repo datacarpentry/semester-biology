@@ -7,7 +7,7 @@ exercises: ['Improving Messy Data', 'Data entry validation in Excel', 'Clean Up 
 points: [50, 50, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

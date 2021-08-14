@@ -6,10 +6,12 @@ language: R
 time: 30
 ---
 
+### Introduction
+
 * Combine a series of data manipulation actions
 * Do each action in sequential order
 
-#### Intermediate variables
+### Intermediate variables
 
 * Run a command
 * Store the output in a variable
@@ -26,7 +28,7 @@ ds_weight_by_year <- select(ds_data_by_year, year, weight)
 
 > Do [Portal Data Manipulation Exercise 1-2]({{ site.baseurl }}/exercises/Portal-data-manip-R)
 
-#### Pipes
+### Pipes
 
 * Intermediate variables can get cumbersome if their are lots of steps.
 * `%>%` ("pipe") takes the output of one command and passes it as input to the

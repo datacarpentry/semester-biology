@@ -3,14 +3,14 @@ layout: page
 title: Code Navigation in RStudio
 ---
 
-### Find in files
+## Find in files
 
 * Searches for strings anywhere in directory/project
     * Edit menu
     * Ctrl+Shift+F
 
 
-### Go to file/function
+## Go to file/function
 
 * Jump to a particular file or function in a project using its name
 * Within a file use menu at bottom of editor
@@ -19,11 +19,9 @@ title: Code Navigation in RStudio
     * Ctrl+.
 
 
-### Go to function definition
+## Go to function definition
 
 * Handy for looking at the details of a function that is being called
 * Place cursor on function name
     * Magic wand -> Go To Function Definition
 	* F2
-
-

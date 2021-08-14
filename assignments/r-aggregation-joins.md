@@ -7,7 +7,7 @@ exercises: ['Shrub Volume Aggregation', 'Shrub Volume Join', 'Portal Data Aggreg
 points: [10, 10, 10, 15, 15, 20, 10, 10]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

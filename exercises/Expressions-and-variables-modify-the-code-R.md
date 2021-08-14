@@ -10,7 +10,7 @@ for two sites. It does this by multiplying the grams of carbon produced in a
 single square meter per day by the total area of the site. It then prints the
 daily NPP for each site.
 
-```
+```r
 site1_g_carbon_m2_day <- 5
 site2_g_carbon_m2_day <- 2.3
 site1_area_m2 <- 200

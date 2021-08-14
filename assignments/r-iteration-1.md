@@ -7,7 +7,7 @@ exercises: ['Size Estimates Vectorized', 'Size Estimates With Maximum', 'Size Es
 points: [30, 30, 40, optional, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

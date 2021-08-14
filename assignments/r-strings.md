@@ -6,7 +6,7 @@ language: R
 exercises: ['Print Strings', 'stringr Functions', 'Strings and Math', 'Long Strings', 'Strings from Data', 'String Data', 'Improve Your Code', 'Split Strings']
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

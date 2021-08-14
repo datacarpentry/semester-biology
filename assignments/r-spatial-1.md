@@ -7,7 +7,7 @@ exercises: ['Canopy Height from Space']
 points: [100]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

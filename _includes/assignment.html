@@ -1,4 +1,4 @@
-<h4> Exercises </h4>
+<h3> Exercises </h3>
 <ol>
 {% for exercise in page.exercises %}
   {% assign exercise_loop = forloop %}
@@ -14,6 +14,8 @@
         {% endif %}
         {{ otherpage.content }}
         {% capture output_file %}{{ otherpage.url | remove: 'exercises' | remove: 'docs/templates'| remove: '/' | prepend: '/solutions/' }}{% endcapture %}
+        {% assign loop_count = 0 %}
+        <em><font size="-0.5">Expected outputs for {{ otherpage.title }}: </font></em>
         {% for solution in site.static_files %}
           {% assign solution_path = solution.path | split: '.' | first %}
           {% assign size = solution_path | size | minus: 2 %}
@@ -21,7 +23,8 @@
           {% assign trunced_path = solution_path | slice: 0, size %}
           {% assign longer_trunced_path = solution_path | slice: 0, longer_size %}
           {% if solution_path == output_file or trunced_path == output_file or longer_trunced_path == output_file %}
-            <font size="-1">[<a href="{{ solution.path | prepend: site.baseurl }}">click here for output</a>]</font>
+            {% assign loop_count = loop_count | plus:1 %}
+            <font size="-0.5"><em><a href="{{ solution.path | prepend: site.baseurl }}" aria-label="Expected output {{ loop_count }} for {{otherpage.title}}">{{ loop_count }}</a></em></font>
           {% endif %}
         {% endfor %}
       </li>

@@ -7,7 +7,7 @@ exercises: ['Writing Functions', 'Use and Modify', 'Default Arguments', 'Combini
 points: [25, 25, 25, 25]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

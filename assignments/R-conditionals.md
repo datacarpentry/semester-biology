@@ -7,7 +7,7 @@ exercises: ['Choice Operators', 'Basic If Statements', 'Size Estimates by Name',
 points: [30, 30, 40, optional, optional, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

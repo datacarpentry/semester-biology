@@ -3,19 +3,19 @@ layout: page
 title: Database Resources
 ---
 
-### OpenOffice Base
+## OpenOffice Base
 
 [Download OpenOffice](http://download.openoffice.org/)
 
 [Data types in
 Base](http://wiki.services.openoffice.org/wiki/Base/Data_Types)
 
-### ODBC Drivers
+## ODBC Drivers
 
 -   [MySQL](http://dev.mysql.com/downloads/connector/odbc/5.1.html)
 -   [SQLite](http://www.ch-werner.de/sqliteodbc/)
 
-### General database information
+## General database information
 
 [Lectures on databases using
 SQLite](https://www.youtube.com/playlist?list=PL3416DE5D2419D0D1) - Excellent video

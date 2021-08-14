@@ -6,7 +6,7 @@ language: R
 exercises: ['Vector Review', 'Data Management Review', 'Unit Conversion Challenge', 'Tree Biomass Challenge']
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

@@ -7,7 +7,7 @@ exercises: ['Writing Functions', 'Use and Modify', 'Combining Functions', 'Choic
 points: [5, 10, 10, 10, 10, 20, 15, 20]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

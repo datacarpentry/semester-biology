@@ -4,7 +4,7 @@ topic: Help
 title: Teaching Strategies and Course Delivery
 ---
 
-### Flipped Classroom
+## Flipped Classroom
 
 In a Flipped Classroom, students are assigned [`readings/`]({{ site.baseurl }}/readings) prior to class with a focus on [`exercises/`]({{ site.baseurl }}/exercises) and [`assignments/`]({{ site.baseurl }}/assignments) in class. [`lectures/`]({{ site.baseurl }}/lectures) are  brief and serve to motivate the 
 activity for the class. This course uses a flipped, learner-centered, approach 
@@ -14,7 +14,7 @@ work particularly well for computer oriented classes. *Take a look at the great
 info-graphic below for more about the Flipped Classroom approach.* 
 
 
-### Workshop In-class Format
+## Workshop In-class Format
 
 While this course is designed as a flipped classroom, some motivation and re-
 exposure to the ideas from the [`readings/`]({{ site.baseurl }}/readings) is 

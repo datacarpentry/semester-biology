@@ -7,6 +7,8 @@ exercises: ['Shrub Volume Data Basics', 'Code Shuffle', 'Bird Banding', 'Portal 
 points: [20, 20, 20, 20, 20, optional]
 ---
 
+### Learning Objectives
+
 > Following this assignment students should be able to:
 >
 > - install and load an R package

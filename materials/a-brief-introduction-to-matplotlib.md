@@ -5,11 +5,11 @@ title: A brief introduction to matplotlib
 language: Python
 ---
 
-#### Import
+### Import
 
 import matplotlib.pyplot as p
 
-#### Basic plots of two variables
+### Basic plots of two variables
 
 p.plot(x, y, color_symbol_info)
 
@@ -19,41 +19,31 @@ p.loglog(x, y)
 
 p.semilogx(x, y)
 
-####  
-
-#### Histograms
+### Histograms
 
 p.hist(x, numberofbins)
 
- 
-
-#### Labeling the axes
+### Labeling the axes
 
 p.xlabel('My x-axis name')
 
 p.ylabel('My y-axis name')
 
-####  
-
-#### Changing the axis limits
+### Changing the axis limits
 
 p.axis([xmin, xmax, ymin, ymax])
 
-####  
-
-#### Plotting multiple sets of data together
+### Plotting multiple sets of data together
 
 p.hold(True)
 
 p.hold(False)
 
-####  
-
-#### Subplots
+### Subplots
 
 p.subplot(number_of_rows_of_plots, number_of_cols_of_plots, position)
 
-#### Multiple Figures
+### Multiple Figures
 
 To start a new figure:
 

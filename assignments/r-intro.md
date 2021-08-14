@@ -8,7 +8,7 @@ exercises: ['Basic Expressions', 'Basic Variables', 'More Variables', 'Built-in 
 points: [10, 10, 10, 10, 15, 15, 15, 15, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

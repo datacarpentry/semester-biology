@@ -8,7 +8,7 @@ exercises: ["Bird Banding Multiple Vectors", "Portal Data Review"]
 points: [optional, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

@@ -4,7 +4,8 @@ topic: Help
 title: Providing Feedback and Contributing New Material
 ---
 
-### Providing feedback and getting help
+## Providing feedback and getting help
+
 {% if site.github.repo == 'https://github.com/datacarpentry/semester-biology' %}
 - [Open a new issue]({{ site.github.repo }}/issues/new) at the `{{ site.github.repo | remove: 'https://github.com/' }}` repository on [GitHub](http://github.com) (*You'll have to be logged into GitHub*).
 - Provide a clear description of your question, comment, or proposed change in 
@@ -16,7 +17,9 @@ OR
 - You can also email us at [{{ site.email }}](mailto:{{ site.email }}). (*Though we prefer organizing comments and issues on GitHub, we want to hear from you and we want it to be easy.*)
 
 {% else %}
-#### Have an issue about the course material?
+
+## Have an issue about the course material?
+
 - [Open a new issue]({{ site.github.repo }}/issues/new) at the `{{ site.github.repo | remove: 'https://github.com/' }}` repository on [GitHub](http://github.com) (*You'll have to be logged into GitHub*).
 - Provide a clear description of your question, comment, or proposed change in 
 the `Title` section and use the `Leave a comment` section for further detail or discussion. 
@@ -26,7 +29,8 @@ OR
 
 - You can email us at [{{ site.email }}](mailto:{{ site.email }}). (*Though we prefer organizing comments and issues on GitHub, we want to hear from you and we want it to be easy.*)
 
-#### Have an issue with the course website?
+## Have an issue with the course website?
+
 - [Open a new issue](https://github.com/datacarpentry/semester-biology/issues/new) at the `datacarpentry/semester-biology` main repository on [GitHub](http://github.com) (*You'll have to be logged into GitHub*).
 - Provide a clear description of your question, comment, or proposed change in 
 the `Title` section and use the `Leave a comment` section for further detail or discussion. 
@@ -37,7 +41,7 @@ OR
 - You can email us at [datacarpentrysemester@weecology.org](mailto:datacarpentrysemester@weecology.org). (*Though we prefer organizing comments and issues on GitHub, we want to hear from you and we want it to be easy.*)
 {% endif %}
 
-### Contributing New Material
+## Contributing New Material
 
 We use standard [GitHub flow](https://guides.github.com/introduction/flow/):
 fork the repository, add or change material, and submit a pull request.
@@ -60,8 +64,7 @@ fork the repository, add or change material, and submit a pull request.
 - If it is easier for you to send your changes to us some other way, please 
 email us at [datacarpentrysemester@weecology.org](mailto:datacarpentrysemester@weecology.org). Given a choice between you creating content or wrestling with Git, we'd rather have you doing the former.
 
-
-### Philosophy
+## Philosophy
 
 Data Carpentry for Biologists is an open source project, and we welcome 
 contributions of all kinds: new and improved lessons, bug reports, and small 
@@ -83,5 +86,3 @@ materials. However, in cases where the necessary material doesn't exist
 elsewhere it can certainly be added to `materials/`.
 
 By contributing, you are agreeing that your work is [licensed using a combination of CC-BY and MIT licenses]({{ site.baseurl }}/LICENSE) and may be openly used, modified, and distributed by others.
-
-

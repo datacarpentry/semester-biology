@@ -64,7 +64,7 @@ ggplot() +
 * There is no one best way to do this so there are different projects, which result in different representations of the world, and different units for locations
 * Here are examples of a few common ones including two we'll be working with WGS 84, which is latitude & longitude, and UTM
 
-![]({{ site.baseurl }}/materials/projections.jpg)
+![Map of the United States in four projections. Mercator, U.S. National Atlas Equal Area, UTM Zone 11N, and WGS 84. The maps all appear different.]({{ site.baseurl }}/materials/projections.jpg)
 
 * The "coordinate reference system" or "CRS" indicates how this is done
 * Coordinate Reference System (*`crs` or `projection`*) is different from `raster`.

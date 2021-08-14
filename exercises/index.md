@@ -6,7 +6,7 @@ languages: ['SQL', 'R', 'Python', 'Access']
 <a href="#SQL">SQL</a> \| <a href="#R">R</a> \| <a href="#Python">Python</a> \|  <a href="#Access">Access</a>
 
 {% for language in page.languages %}
-  <h3> {{ language }} <a name="{{ language }}"></a></h3>
+  <h2> {{ language }} <a name="{{ language }}"></a></h2>
 
   {% if language == 'Python' or language == 'Access' %}
   <i>{{ language }} exercises were used in 
