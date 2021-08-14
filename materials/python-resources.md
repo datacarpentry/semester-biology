@@ -3,7 +3,7 @@ layout: page
 title: Programming Resources
 ---
 
-### Install Python on your own computer
+## Install Python on your own computer
 
 -   [Download page for Python](http://www.python.org/download/)
 -   [Download page for Numpy
@@ -17,7 +17,7 @@ title: Programming Resources
     IDE](http://wingide.com/downloads/wingide-101/) (go to the bottom of
     the page for the free version - Wing IDE 101)
 
-### Programming in Python
+## Programming in Python
 
 -   [Online Python Tutor](http://people.csail.mit.edu/pgbovine/python/)
     - see how Python is executing your program line by line 
@@ -43,7 +43,7 @@ title: Programming Resources
 
 [](http://code.google.com/edu/languages/google-python-class/)
 
-### Scientific Tools in Python
+## Scientific Tools in Python
 
 -   [SciPy](http://www.scipy.org/)
 -   [NumPy](http://numpy.scipy.org/)
@@ -52,8 +52,7 @@ title: Programming Resources
     relatedness and measuring landscape
     connectivity](http://www3.interscience.wiley.com/journal/123579635/abstract?CRETRY=1&SRETRY=0)
 
-### Phylogenetic Tools in Python
+## Phylogenetic Tools in Python
 
 -   [Biopython's Phylo module](http://www.biopython.org/wiki/Phylo)
 -   [DendroPy](http://packages.python.org/DendroPy/index.html)
-

@@ -4,11 +4,11 @@ title: Walkthrough R
 language: R
 ---
 
-### Basic Workflow
+## Basic Workflow
 
 The R environment is broken up into two main windows, the console and the script. The console window is the place where R is waiting for you to tell it what to do, and where it will show the results of a command. `>` mark that R is ready to take a command. `+` means the command is not complete, like you are missing a `)` or `}`. You can type commands directly into the console, but they will be forgotten when you close the session.The script is a simple text (.R) file that stores your code. The point of a well constructed script is not just to "do stuff" but to do it in a way that maintains a complete record of your work so anyone can easily and exactly replicate your workflow and results.
 
-### Basic Operation
+## Basic Operation
 
 - `# this is a comment in R`
 - Use `x <- 3` to assign a value, `3`,  to a variable, `x`
@@ -31,7 +31,7 @@ The R environment is broken up into two main windows, the console and the script
   - `data.frame()`
 
 
-### Control Flow
+## Control Flow
 
 - Create a conditional using `if`, `else if`, and `else`
 
@@ -64,7 +64,7 @@ This will print:
 - `X & Y` is `TRUE` is both X and Y are true
 - `X | Y` is `TRUE` if either X or Y, or both are true
 
-### Functions
+## Functions
 
 - Defining a function:
 
@@ -95,14 +95,14 @@ In R, the last executed line of a function is automatically returned, otherwise 
    of each column in `dat`
 
 
-### Packages
+## Packages
 
 - Install package by using `install.packages("package-name")`
 - Update packages by using `update.packages("package-name")`
 - Load packages by using `library("package-name")`
 
 
-### Math
+## Math
 
 Do math by simply typing or pasting in the console.
 
@@ -115,14 +115,14 @@ mean(vector)
 round(vector, decimal_places)
 ```
 
-### Scientific Commands
+## Scientific Commands
 
 - Import data using `read.csv(file, header = TRUE, sep = ",", …)`
 - Check out what you imported with `names()`, `head()`, and `str()`
 - Export results using `write.csv(x, file, …)` 
 - Many statistical functions are available (`t.test()`, `lm(y~x)`)
 
-### Finding Help
+## Finding Help
 
 Don’t be defeated by a coding problem, semantics confusion, or error messages. 
 Find help:
@@ -132,9 +132,9 @@ Find help:
 You can also check out the resources below or run a general engine search (i.e., [r split character string](https://duckduckgo.com/?q=r+split+character+string&t=ffsb&ia=qa)).
 The hardest part here is finding the right keywords to use.
 
-### General Resources
+## General Resources
 
-#### Manual Directories
+### Manual Directories
 
 - [R-project Intro](http://cran.r-project.org/doc/manuals/R-intro.html)
 - [R-project Manual](http://stat.ethz.ch/R-manual/R-devel/library/)
@@ -142,7 +142,7 @@ The hardest part here is finding the right keywords to use.
 - [graphics functions](http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/) 
 - [statistics functions](http://stat.ethz.ch/R-manual/R-devel/library/statistics/html)
 
-#### R Community Forums
+### R Community Forums
 
 - [R-project.org](http://www.r-project.org/)
 - [statmethods.net](http://www.statmethods.net/)
@@ -151,11 +151,11 @@ The hardest part here is finding the right keywords to use.
 - [Programiz](http://www.programiz.com/r-programming)
 - [Stackoverflow.com](http://stackoverflow.com/)
 
-#### *[How to ask for help](http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html)*
+### *[How to ask for help](http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html)*
 
 
-###Style Guides
+## Style Guides
 - [Hadley Wickham](http://r-pkgs.had.co.nz/style.html)
 - [Google](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
 
-#### *This document benefited greatly by the inclusion of Data Carpentry materials ([Before we start](http://www.datacarpentry.org/R-ecology-lesson/00-before-we-start.html), [Introduction to R](http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-R.html)) and Software Carpentry's ([Programming with R Reference](http://swcarpentry.github.io/r-novice-inflammation/reference/))*
+*This document benefited greatly by the inclusion of Data Carpentry materials ([Before we start](http://www.datacarpentry.org/R-ecology-lesson/00-before-we-start.html), [Introduction to R](http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-R.html)) and Software Carpentry's ([Programming with R Reference](http://swcarpentry.github.io/r-novice-inflammation/reference/))*
