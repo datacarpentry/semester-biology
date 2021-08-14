@@ -64,7 +64,11 @@ combined <- inner_join(surveys, species, by = "species_id")
 * Inner joins keep information from both tables when both tables have a matching value in the join column
 * Here's a visualization of what an inner join looks like:
 
-![]({{ site.baseurl }}/materials/inner-join.gif)
+![Illustration of an inner join showing two tables being joined.
+First table has 1, 2, 3 in column 1 and x1, x2, x3 in column 2.
+Second table has 1, 2, 4, in column 1 and y1, y2, y4 in column 2.
+Combined table has 1 and 2 in column 1, x1 and x2 in column 2, and y1 and y2 in column 3.
+]({{ site.baseurl }}/materials/inner-join.gif)
 
 * Any rows in either table that don't have a matching value in the other table are dropped
 * So when we did our join all of the rows with missing `species_id` values were dropped
