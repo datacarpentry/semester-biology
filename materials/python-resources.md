@@ -39,10 +39,6 @@ title: Programming Resources
 -   [BioPython Tutorial and
     Cookbook](http://www.biopython.org/DIST/docs/tutorial/Tutorial.html)
 
-[](http://www.pasteur.fr/formation/infobio/python/)
-
-[](http://code.google.com/edu/languages/google-python-class/)
-
 ## Scientific Tools in Python
 
 -   [SciPy](http://www.scipy.org/)
