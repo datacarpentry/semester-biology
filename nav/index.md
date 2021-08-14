@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+title: Site Navigation
 ---
 
 <a href="{{ site.baseurl}}/nav/getting-started">
