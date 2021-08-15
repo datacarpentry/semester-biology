@@ -6,8 +6,8 @@ language: R
 ---
 
 Dr. Undómiel has decided to focus on the change in size of a few target rodent 
-species over the course of the experiment(1977-2002). She has chosen *Dipodymys 
-spectabilis*, *Onychomys torridus*, *Perymiscus erimicus*, *Chaetodipus
+species over the course of the experiment(1977-2002). She has chosen *Dipodomys 
+spectabilis*, *Onychomys torridus*, *Peromyscus erimicus*, *Chaetodipus
 penicillatus*. 
 
 Write a script that uses `dplyr` to: 
