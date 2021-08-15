@@ -1,0 +1,57 @@
+{
+    "creators": [
+        {
+            "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida",
+            "name": "Ethan P. White",
+            "orcid": "0000-0001-6728-7745"
+        },
+        {
+          "affiliation": "Tropical Research and Education Center, Department of Agronomy, University of Florida",
+          "name": "Zachary T. Brym",
+          "orcid": "0000-0002-0659-2938"
+        },
+        {
+            "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida",
+            "name": "Andrew J. Marx",
+            "orcid": "0000-0002-7456-1631"
+        },
+        {
+            "affiliation": "College of Agriculture and Life Sciences, University of Arizona",
+            "name": "Kristina Riemer",
+            "orcid": "0000-0003-3802-3331"
+        },
+        {
+            "affiliation": "School of Forest Resources & Conservation, University of Florida",
+            "name": "Sergio Marconi",
+            "orcid": "0000-0002-8096-754X"
+        },
+        {
+            "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida",
+            "name": "David J. Harris",
+            "orcid": "0000-0003-3332-9307"
+        },
+        {
+            "affiliation": "School of Natural Resources and Environment, University of Florida",
+            "name": "Virnaliz Cruz",
+            "orcid": "0000-0001-6783-2651"
+        },
+        {
+          "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida",
+          "name": "S. K. Morgan Ernest",
+          "orcid": "0000-0002-6026-8530"
+        }
+    ],
+    "keywords": [
+      "open educational resources",
+      "oer",
+      "data carpentry",
+      "R",
+      "data management",
+      "programming",
+      "data science",
+      "data analysis"
+    ],
+    "license": "cc-by",
+    "upload_type": "lesson"
+  }
+  
