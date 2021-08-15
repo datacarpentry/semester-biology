@@ -72,6 +72,11 @@ same content. In particularly we actively use
 materials. However, in cases where the necessary material doesn't exist
 elsewhere it can certainly be added here.
 
+## Accessibility
+
+New pull requests to this site are scanned using [pa11y](https://github.com/pa11y/pa11y) and [pa11y-ci](https://github.com/pa11y/pa11y-ci) to ensure that additions to the site follow best practices for accessibility.
+If you discover any accessibility issues with the site please open an issue and we'll get them fixed.
+
 
 ## Using Jekyll to build your own course website
 
