@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start-detached": "bundle exec jekyll serve --detach",
-    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/semester-biology/sitemap.xml --sitemap-exclude \"/*.pdf|Knitr-BBS-R.html\""
+    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/semester-biology/sitemap.xml --sitemap-exclude \"/*.pdf|Knitr-BBS-R.html|paper.*\""
   },
   "devDependencies": {
     "pa11y-ci": "^2.4.2"
