@@ -111,7 +111,7 @@ The course material and infrastructure is and has been used for a number of coll
 
 ## Accessibility
 
-The online materials for the course are designed to be accessible to all learners. The site has been reviewed using Web Accessibility Evaluation Tool (WAVE; https://wave.webaim.org/) and all videos have been manually captioned by the instructor presenting the material.
+The online materials for the course are designed to be accessible to all learners. The site has been reviewed using the [Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org/) and [pa11y](https://pa11y.org/) and all videos have been manually captioned by the instructor presenting the material. In order to ensure that accessibility is maintained as the site is continuously updated we use and [pa11y-ci](https://github.com/pa11y/pa11y-ci) and continuous integration (GitHub Actions) to automatically scan all pull requests for accessibility.
 
 # Acknowledgements
 
