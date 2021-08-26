@@ -11,7 +11,7 @@ tags:
   - geospatial data
 authors:
   - name: Ethan P. White
-    orcid: 0000-0001-6728-774
+    orcid: 0000-0001-6728-7745
     affiliation: "1, 2, 3"
   - name: Zachary T. Brym
     orcid: 0000-0002-0659-2938
