@@ -19,4 +19,4 @@ avg_height <- summarize(by_site, avg_height = mean(height))
 ```
  
 1.  Modifique el código para calcular e imprimir la altura promedio de una planta en cada experimento.
-2.  Utilice max () para determinar la altura máxima de una planta en cada sitio de estudio.
+2.  Utilice `max ()` para determinar la altura máxima de una planta en cada sitio de estudio.
