@@ -4,7 +4,7 @@ topic: Vectors
 title: Nulls in Vectors
 language: R
 translation: es
-titulo: Valores nulos en vectores
+título: Valores nulos en vectores
 ---
 Corte y pegue el siguiente vector en su tarea y luego use código para imprimir los valores solicitados en la pantalla.
 Use `na.rm = TRUE` para ignorar los valores nulos.
