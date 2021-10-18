@@ -3,9 +3,8 @@ layout: exercise
 topic: Vectors
 title: Shrub Volume Vectors
 language: R
-
 translation: es
-titulo: Vectores de volumen de arbustos
+título: Vectores de volumen de arbustos
 ---
 Los siguientes vectores contienen datos individuales sobre el largo, ancho y alto de 10 tejos.
 [* Taxus baccata *] (https://es.wikipedia.org/wiki/Taxus_baccata):
