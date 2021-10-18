@@ -4,7 +4,7 @@ topic: Vectors
 title: Basic Vectors
 language: R
 translation: es
-titulo: Vectores basicos
+título: Vectores básicos
 ---
 Corte y pegue el siguiente vector en su tarea y luego use `print()` para
 imprimir los valores solicitados en la pantalla.
