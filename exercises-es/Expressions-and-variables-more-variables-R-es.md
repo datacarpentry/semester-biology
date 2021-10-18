@@ -1,5 +1,12 @@
-Calcule la biomasa total en gramos para 3 white-throated woodrats
-([* Neotoma albigula *] (https://en.wikipedia.org/wiki/White-throated_woodrat)) y
+---
+layout: exercise
+topic: Expressions and Variables
+title: More Variables
+language: R
+translation: es
+título: Más variables
+---
+Calcule la biomasa total en gramos para 3 ([* Neotoma albigula *] (https://en.wikipedia.org/wiki/White-throated_woodrat)) y
 luego convierta la biomasa a kilogramos. La biomasa total es tres veces el peso promedio 
 de un solo individuo. Un individuo promedio pesa 250 gramos.
 

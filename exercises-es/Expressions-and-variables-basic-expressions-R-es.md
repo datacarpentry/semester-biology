@@ -1,3 +1,11 @@
+---
+layout: exercise
+topic: Expressions and Variables
+title: Basic Expressions
+language: R
+translation: es
+título: Expresiones Básicas
+---
 Escriba los siguientes cálculos en el editor de texto.
 
 1. 2 - 10

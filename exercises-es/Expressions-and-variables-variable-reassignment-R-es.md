@@ -1,3 +1,11 @@
+---
+layout: exercise
+topic: Expressions and Variables
+title: Variable Reassignment
+language: R
+translation: es
+título: Reasignando valores de variables existentes
+---
 Usando una sola variable, convierta una temperatura de 42 grados Fahrenheit
 a Celsius. Para hacer esto, siga los siguientes pasos:
 

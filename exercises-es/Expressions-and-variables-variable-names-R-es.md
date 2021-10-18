@@ -1,3 +1,11 @@
+---
+layout: exercise
+topic: Expressions and Variables
+title: Variable Names
+language: R
+translation: es
+título: Nombres de variables
+---
 En el ejercicio [Más sobre variables] ({{site.baseurl}} / ejercicios-es / Expressions-and-variables-more-variables-R-es) usamos los nombres de las variables `grams` (gramos),` number`(número) y `biomass` (biomasa) para describir la masa individual, número de individuos y biomasa total de algunas ratas de bosque de garganta blanca.
 Pero, ¿son estos nombres de variables la mejor opción?
 Si volviéramos al código para esta asignación en dos semanas, ¿recordariamos a qué se referían estas variables y, por lo tanto, qué estaba pasando en el código?

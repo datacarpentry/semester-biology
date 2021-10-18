@@ -1,3 +1,11 @@
+---
+layout: exercise
+topic: Expressions and Variables
+title: Modify the Code
+language: R
+translation: es
+título: Modificando código
+---
 El siguiente código estima la productividad primaria neta total (NPP; PPB en español) por día
 para dos sitios. Lo hace multiplicando los gramos de carbono producidos en un
 solo metro cuadrado por día por el área total del sitio. Luego imprime el
