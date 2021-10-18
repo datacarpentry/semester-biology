@@ -4,7 +4,7 @@ topic: Vectors
 title: Bird Banding
 language: R
 translation: es
-titulo: Anillamiento de aves
+título: Anillamiento de aves
 ---
 El número de aves anilladas en unos sitios de muestreo ha sido contado por
 su equipo de campo e ingresado en el siguiente vector. Los conteos se ingresan en el orden pertinente al sitio de muestreo, es decir, la posición 1 del vector corresponde a los pájaros contados en el sitio de conteo 1. Corte y pegue el vector en su
