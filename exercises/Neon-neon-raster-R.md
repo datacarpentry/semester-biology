@@ -9,7 +9,7 @@ Jane just got a job working to develop data products for [NEON](http://www.neons
 She's got to familiarize herself with working with LiDAR data and seeks out the 
 great 'Work with Data' [tutorial for raster data](https://www.neonscience.org/resources/learning-hub/workshops/work-lidar-derived-rasters-r). 
 Help Jane take the next step and develop a few additional products from the 
-[LiDAR Dataset](http://www.neonhighered.org/Data/LidarActivity/CHM_InSitu_Data.zip)
+[LiDAR Dataset](https://figshare.com/articles/dataset/Week_4_Earth_Analytics_teaching_data_subset_-_lidar_and_insitu_for_California/4620268)
 
 1. Modify the code provided in the tutorial to add the average and minimum
 values from the Canopy Height Model to the plot centroids data with the maximum 
