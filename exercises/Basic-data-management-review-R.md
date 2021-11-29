@@ -42,9 +42,8 @@ Use functions to break the code up into manageable pieces. Remember to document
 your code well.
 
 There are several different specific approaches you could take to doing
-calculations for each row of data. One is to use `dplyr` using the `rowwise()`
-function
-([here's an example](http://www.expressivecode.org/2014/12/17/mutating-using-functions-in-dplyr/)).
+calculations for each row of data. One is to use `dplyr` using the [`rowwise()`
+function](https://dplyr.tidyverse.org/articles/rowwise.html).
 Another is to loop over the rows in the data.frame using
 
 `for (row in 1:nrow(data)){...}`

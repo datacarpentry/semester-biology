@@ -19,6 +19,6 @@ effectively. Think about what the best structure would be for this table. It
 might include splitting the table into two separate tables (*wink, wink, nudge,
 nudge*). Restructure the database and store the new species table as
 `PortalMammal_species`(*i.e., the same name it has now; you may need to learn
-about the [DROP TABLE](http://www.w3schools.com/sql/sql_drop.asp) command in
+about the [DROP TABLE](https://www.w3schools.com/sql/sql_drop_table.asp) command in
 order to do this*) and naming any new tables you create with easy to understand
 names.

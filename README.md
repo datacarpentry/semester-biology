@@ -87,7 +87,7 @@ If you discover any accessibility issues with the site please open an issue and 
 The website is setup to be easy to run automatically through GitHub:
 
 1. [Fork](https://github.com/datacarpentry/semester-biology#fork-destination-box)
-   or [import](https://import.github.com/) the repository to 
+   or [import](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the repository to 
    `https://github.com/yourusername/semester-biology`.
 2. Update `# Setup` information in `_config.yml` in the main directory for
    proper site rendering.

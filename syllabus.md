@@ -129,7 +129,7 @@ Students completing this course will be able to:
 This course contributes to the 'Quantitative Skills' and 'Conducting and
 Analyzing Independent/Original Research' Student Learning Outcomes specified in
 the
-[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](http://assessment.aa.ufl.edu/Data/Sites/22/media/2013-14gaap/cals/2013-14-cals-wildlife-ecol-and-consvn-phd-aap.pdf),
+[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](https://fora.aa.ufl.edu/docs/1//16Apr13//CALS_WIE_PHD_GAAP_2012-2013_final.pdf),
 by providing students the skills and knowledge they need to manage and analyze
 the data used in research.
 
@@ -141,7 +141,7 @@ learning to program and work with data requires actively working on
 computers. Flipped classes work well for all kinds of content, but I think they
 work particularly well for computer oriented classes. If you're interested in
 knowing more take a look at this great
-[info-graphic](https://www.knewton.com/flipped-classroom-2/).
+[flipped classroom info-graphic](https://assignmentbro.com/wp-content/uploads/2021/02/flipped-classroom-infographics-scaled.jpg).
 
 
 ### Instructional Methods

@@ -17,7 +17,7 @@ to Celsius. To do this you'll need to:
 5.  Print the temperature in degrees Celsius
 
 The answer should be 5.55555. If it isn't then that pesky [integer
-division](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/raw/master/ipynbs/integer-division.ipynb)
+division](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/blob/main/ipynbs/integer-division.ipynb)
 problem is probably tripping you up.
 
 Now do the same thing again, but this time using combined operators, and

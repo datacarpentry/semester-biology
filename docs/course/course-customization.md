@@ -36,7 +36,7 @@ The website is setup to be easy to run automatically through [GitHub](http://git
 Check out some examples of customized courses:
 
 - [Introduction to Ecology](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/)
-- [Introduction to Scientific Computing](https://palderman.github.io/IntroSciComp/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman/alderman)
+- [Introduction to Scientific Computing](https://palderman.github.io/DataSciAg/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman/alderman)
 
    *Please, let us know if you have developed a customized version of the course
    so we can list it here.*
