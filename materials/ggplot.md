@@ -226,7 +226,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 * Occur as defaults in associated Geoms
 
 * To look at the number of acacia in each treatment use a bar plot
-    * [`geom_bar()`](http://docs.ggplot2.org/current/geom_bar.html)
+    * [`geom_bar()`](https://ggplot2.tidyverse.org/reference/geom_bar.html)
 
 ```r
 ggplot(acacia, aes(x = TREATMENT)) +
@@ -237,7 +237,7 @@ ggplot(acacia, aes(x = TREATMENT)) +
     * Counts the number of rows for each treatment
 
 * To look at the distribution of circumferences in the dataset use a histogram
-    * [`geom_histogram()`](http://docs.ggplot2.org/current/geom_histogram.html)
+    * [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html)
 
 ```r
 ggplot(acacia, aes(x = CIRC)) +
