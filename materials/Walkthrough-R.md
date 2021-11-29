@@ -155,7 +155,7 @@ The hardest part here is finding the right keywords to use.
 
 
 ## Style Guides
-- [Hadley Wickham](http://r-pkgs.had.co.nz/style.html)
+- [Hadley Wickham](http://adv-r.had.co.nz/Style.html)
 - [Google](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
 
 *This document benefited greatly by the inclusion of Data Carpentry materials ([Before we start](http://www.datacarpentry.org/R-ecology-lesson/00-before-we-start.html), [Introduction to R](http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-R.html)) and Software Carpentry's ([Programming with R Reference](http://swcarpentry.github.io/r-novice-inflammation/reference/))*
