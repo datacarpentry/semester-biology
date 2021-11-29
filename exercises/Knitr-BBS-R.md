@@ -21,7 +21,7 @@ to the mean annual temperature and the mean annaual precipitation.
 6. Add a code chunk to download the Breeding Bird Survey data using the
    `rdataretriever` package. Instructions for installing this package and the
    associated Python package are available on the
-   [Data Retriever website](https://www.data-retriever.org/). It will take a
+   [Data Retriever website](https://retriever.readthedocs.io). It will take a
    long time to download and convert this data into a set of useable CSV files
    (~30 minutes), so add a conditional statement that checks to see if the
    necessary files have already been created and only install they data if they
