@@ -1,5 +1,5 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Customizing the Course for Your Needs
 ---

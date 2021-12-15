@@ -1,5 +1,5 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Manage Course Files
 ---
