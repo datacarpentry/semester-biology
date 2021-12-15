@@ -1,5 +1,5 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Providing Feedback and Contributing New Material
 ---
