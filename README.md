@@ -87,7 +87,7 @@ If you discover any accessibility issues with the site please open an issue and 
 The website is setup to be easy to run automatically through GitHub:
 
 1. [Fork](https://github.com/datacarpentry/semester-biology#fork-destination-box)
-   or [import](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the repository to 
+   or [import](https://import.github.com/) the repository to 
    `https://github.com/yourusername/semester-biology`.
 2. Update `# Setup` information in `_config.yml` in the main directory for
    proper site rendering.
@@ -149,6 +149,28 @@ Locally: `http://localhost:4000/exercises/my_awesome_exercise`
 After pushing to GitHub:
 `https://yourusername.github.io/semester-biology/exercises/my_awesome_exercise`
 
+
+## Dependencies
+
+Building the site locally requires a local Ruby installation with 3 packages (gems):
+
+* jekyll
+* github-pages
+* jekyll-sitemap
+
+For help with installation see:
+
+* [Installing Ruby Documentation](https://www.ruby-lang.org/en/documentation/installation/)
+* [Installing Jekyll Documention](https://jekyllrb.com/docs/installation/)
+* [Using GitHub Pages with Jekyll Documenation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
+
+One you have installed Ruby and the jekyll gem go to the root of the site repository and run:
+
+```bash
+bundle install
+```
+
+to install the rest of the dependencies.
 
 ## Acknowledgements
 
