@@ -26,7 +26,7 @@ jobs:
       - run: bundle exec jekyll build
       - uses: nick-invision/retry@v2
         with:
-          max_attempts: 3
-          timeout_minutes: 10
+          max_attempts: 1
+          timeout_minutes: 5
           retry_on: error
-          command: htmlproofer --assume-extension ./_site
+          command: htmlproofer --assume-extension ./_site --url-swap '^/semester-biology/:/'
