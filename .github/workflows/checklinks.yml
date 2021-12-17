@@ -1,6 +1,12 @@
 name: CheckLinks
+
 on:
-  [pull_request]
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     # Every Sunday at 00:00:00
     - cron: '0 0 * * 6'
