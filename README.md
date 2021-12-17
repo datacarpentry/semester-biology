@@ -176,7 +176,7 @@ to install the rest of the dependencies.
 
 Development of this material is funded by [the Gordon and Betty Moore
 Foundation's Data-Driven Discovery
-Initiative](http://www.moore.org/programs/science/data-driven-discovery) through
+Initiative](http://www.moore.org/programs/science/data-driven-discoveryasdfasfdas) through
 [Grant GBMF4563](http://www.moore.org/grants/list/GBMF4563) to Ethan White and
 the [National Science Foundation](http://nsf.gov/) as part of a [CAREER award to
 Ethan White](http://nsf.gov/awardsearch/showAward.do?AwardNumber=0953694).
