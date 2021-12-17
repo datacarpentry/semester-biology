@@ -172,7 +172,7 @@ bundle install
 
 to install the rest of the dependencies.
 
-## Acknowledgements
+## Acknowledgement
 
 Development of this material is funded by [the Gordon and Betty Moore
 Foundation's Data-Driven Discovery
