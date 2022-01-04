@@ -15,28 +15,14 @@ jobs:
   checklinks:
     name: Linux
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
     steps:
       - uses: actions/checkout@v2
-      - name: Ruby
-        uses: actions/setup-ruby@v1
+      - uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
-      - name: Setup Rubygems, Bundler, jekyll
-        run: | 
-          gem update --system --no-document
-          gem update bundler --no-document
-          gem install jekyll bundler
+      - run: |
           bundle install
-      - name: Build jekyll website with drafts
-        run: bundle exec jekyll build --drafts
-      - name: Check for broken links
-        run: |
-          bundle exec htmlproofer --log-level :debug ./_site &> links.log
+          gem install html-proofer
+      - run: bundle exec jekyll build
+      - run: htmlproofer --assume-extension ./_site --url-swap '^/semester-biology/:/'
         continue-on-error: true
-      - name: Archive log links
-        uses: actions/upload-artifact@v1
-        with:
-          name: links-check.log
-          path: links.log
