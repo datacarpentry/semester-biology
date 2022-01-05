@@ -10,7 +10,7 @@ Understanding how environmental factors influence species distributions can be a
 Here are some tips that will be helpful along the way:
 
 * Climate data data is available from the [WorldClim
-  dataset](http://worldclim.org/version2). Using
+  dataset](https://worldclim.org). Using
   `climate <- getData('worldclim', var ='bio', res = 10)`
   (from the `raster` package) will download all of the bioclim variables. The
   two variables you need are `bio1` (temperature) and `bio12` (precipitation).
@@ -25,8 +25,7 @@ Here are some tips that will be helpful along the way:
 * You might notice that the temperature values seem large. Storing decimal
   values uses more space than integers, so the WorldClim creators provide
   temperature values multiplied by 10. For example, 19.5 is stored as 195. Make
-  sure to display the actual temperatures, not the raw values provided. See more
-  information about WorldClim units [here](http://www.worldclim.org/formats1).
+  sure to display the actual temperatures, not the raw values provided.
 *  Species' occurrence data is available from [GBIF](https://www.gbif.org/)
    using the `spocc` package. An example of how to get the data you need is
    available in the

@@ -1,5 +1,5 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Strip Course Content for Site Template
 ---

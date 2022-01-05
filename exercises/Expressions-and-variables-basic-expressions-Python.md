@@ -21,7 +21,7 @@ the interpreter and pressing enter.
 
 Did any of the results surprise you? If so, then you've probably run
 into a common point of confusion in Python 2 - [Integer
-Division](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/raw/master/ipynbs/integer-division.ipynb).
+Division](http://nbviewer.ipython.org/urls/github.com/ethanwhite/progbio/blob/main/ipynbs/integer-division.ipynb).
 
 Now turn this set of expressions into a program that you can save by
 using the editor. For each expression add one line to the editor as part

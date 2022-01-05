@@ -118,5 +118,5 @@ Download and install [DB Browser for SQLite](http://sqlitebrowser.org/)
 are no longer under active development.*
 
 Download and install the
-[Anaconda Scientific Python Distribution](http://continuum.io/downloads).
+[Anaconda Scientific Python Distribution](https://anaconda.org/anaconda/python).
 I recommend you use a special editor like the [Wing Intelligent Development Environment - 101](http://wingware.com/downloads/wingide-101).

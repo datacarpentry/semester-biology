@@ -6,7 +6,7 @@ title: Graphing in Python
 # Graphing
 
 Most of the necessary information for learning how to make basic plots in Python
-is in the [IPython notebook](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/raw/master/ipynbs/matplotlib.ipynb),
+is in the [IPython notebook](http://nbviewer.ipython.org/urls/github.com/weecology/progbio/blob/main/ipynbs/matplotlib.ipynb),
 but there are a few tips and tricks that are worth mentioning.
 
 
