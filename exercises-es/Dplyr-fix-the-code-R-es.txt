@@ -1,0 +1,22 @@
+Este ejercicio es una continuación de 
+[Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
+Si aún no tiene [shrub volume data]({{ site.baseurl }}/data/shrub-volume-data.csv) en su directorio de trabajo, descárguelo.
+
+Se supone que el siguiente código importa los datos del volumen de arbustos y calcula la media del
+volumen de arbustos para cada area de estudio y, por separado, para cada experimento.
+
+```r
+read.csv("shrub-volume-data.csv")
+shrub_data %>%
+  mutate(volume = length * width * height) %>%
+  group_by(site) %>%
+  summarize(mean_volume = max(volume))
+shrub_data %>%
+  mutate(volume = length * width * height)
+  group_by(experiment) %>%
+  summarize(mean_volume = mean(volume))
+```
+
+
+1. Corrija los errores en el código para que el código haga lo que debería hacer.
+2. Agregue un comentario en la parte superior del código que explique lo que hace.
