@@ -1,3 +1,10 @@
+
+---
+layout: exercise
+topic: dplyr
+title: Extracting vectors from data frames
+language: R
+---
 Usando la tabla de `surveys` (estudios) de datos de Portal:
 
 1. Use `$` para extraer la columna de `weight` en un vector

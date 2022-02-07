@@ -1,3 +1,9 @@
+---
+layout: exercise
+topic: dplyr
+title: Shrub Volume Join
+language: R
+---
 En adición a la tabla de datos principal de dimensiones de arbustos, la Dra. Granger tiene dos tablas de datos adicionales.
 La primera describe la manipulación de cada experimento.
 La segunda contiene información sobre los diferentes sitios de estudio.

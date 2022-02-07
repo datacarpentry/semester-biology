@@ -1,3 +1,9 @@
+---
+layout: exercise
+topic: dplyr
+title: Portal Data Joins
+language: R
+---
 Si `survey.csv`,` species.csv` y `plots.csv` no están disponibles en su espacio de trabajo, descárguelos:
 
 * [`survey.csv`] (https://ndownloader.figshare.com/files/2292172)

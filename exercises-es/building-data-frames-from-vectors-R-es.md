@@ -1,3 +1,9 @@
+---
+layout: exercise
+topic: dplyr
+title: Building data frames from vectors
+language: R
+---
 Los siguientes vectores contienen datos individuales sobre el largo, ancho y alto de 10 tejos.
 [* Taxus baccata *] (https://es.wikipedia.org/wiki/Taxus_baccata):
 ```

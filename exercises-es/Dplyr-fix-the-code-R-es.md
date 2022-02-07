@@ -1,3 +1,9 @@
+---
+layout: exercise
+topic: dplyr
+title: Fix the Code
+language: R
+---
 Este ejercicio es una continuación de 
 [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
 Si aún no tiene [shrub volume data]({{ site.baseurl }}/data/shrub-volume-data.csv) en su directorio de trabajo, descárguelo.

@@ -1,3 +1,9 @@
+---
+layout: exercise
+topic: dplyr
+title: Portal Data Aggregation
+language: R
+---
 Descargue una copia de la [Tabla de datos de estudios de la base de datos educativa de Portal] (https://ndownloader.figshare.com/files/2292172)
 e impórtela a R usando la función `read.csv ()`.
 

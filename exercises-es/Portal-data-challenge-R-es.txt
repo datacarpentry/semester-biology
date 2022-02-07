@@ -1,5 +1,0 @@
-Cree un pipeline para manipular los datos en la tabla `surveys` de Portal que produzca una tabla de datos para las tres especies de Dipodomys ("DM", "DO", "DS").
-ID de especie debe presentarse en minúsculas, no en mayúsculas.
-La tabla debe contener información sobre la fecha, identificación de especie, peso y longitud del hindfoot (retropié).
-Los datos no deben incluir valores nulos para el peso o para la longitud del retropié.
-La tabla debe estar ordenada primero por especies (de modo que cada especie esté agrupada) y luego por peso, con los pesos más grandes en la parte superior.
