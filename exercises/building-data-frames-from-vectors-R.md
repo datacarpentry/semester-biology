@@ -13,4 +13,4 @@ width <- c(1.3, 2.2, 1.5, 4.5, 3.1, NA, 1.8, 0.5, 2.0, 2.7)
 height <- c(9.6, 7.6, 2.2, 1.5, 4.0, 3.0, 4.5, 2.3, 7.5, 3.2)
 ```
 
-Make a data frame that contains these three vectos as columns along with a `genus` column containing the name *Taxus* on all rows and a `species` column containing the work *baccata* on all rows.
+Make a data frame that contains these three vectors as columns along with a `genus` column containing the name *Taxus* on all rows and a `species` column containing the word *baccata* on all rows.
