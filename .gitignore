@@ -6,3 +6,4 @@ Gemfile.lock
 *.Rhistory
 .jekyll-metadata
 node_modules/
+.DS_store
