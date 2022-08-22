@@ -24,13 +24,12 @@ title: Course Introduction
 * Information on more advanced options
 
  
-### Teaching methods (normal year)
+### Teaching methods
 
 * Flipped classroom
     * You don't learn how ride a bike just by listening to someone talk about it
       and the same is true for computing
     * So we use a fair bit of class time for working on exercises, asking questions, and getting help
-* Reading or videos before class
 * I do, we do, you do
     * I will demo an idea using live coding
 	* We will work on an associated exercise together in class
@@ -41,45 +40,7 @@ title: Course Introduction
     * If you already know some of the material and are getting ahead, see if
       there's someone you can help
 	* Introduce yourself to one of your neighbors you don't know
-
-
-### How to do this online (for 2020)
-
-* But, it's 2020, and nothing is normal
-* It has been a long, exhausting, year and it will continue to be so for many of us.
-* Most folks have more responsibilities, more limitations, and less energy than usual.
-* My goal is to help you learn as much as you can, while recognizing that most of us aren't operating at 100%.
-* And that many of us need flexibility in how we're learning and working right now.
-
-* The course is being taught online for the first time due to the pandemic.
-* Building the race car as it drives around the track.
-
-* Videos in place live demos
-* This means they can also replace advanced readings/videos
-* Still short presentations interspersed with exercises
-* Class time will start with time for group Q&A focused on general questions about how things work
-* The rest of class will be reserved for working on exercises and getting help
-* To participate in class
-    * Join the appropriate Zoom meeting (there are different Zoom links for Tuesdays and Fridays)
-    * Ask questions via chat or by raising your hand during group Q&A
-    * After group Q&A Andrew & I will use breakout rooms to meet with individual students or groups of students
-* For peer instruction and getting help from instructors outside of class we're using: Piazza
-    * Piazza is a course specific Q&A that works well with code
-    * If you have questions outside of class you can post to Piazza and other students or instructors can help
-
-* To provide maximum flexibility the course material can be engaged with in two ways:
-    1. Synchronous Q&A: Follow each lesson before class (1st half by Tuesday, 2nd half by Friday), watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods. Ask general questions during the opening Q&A period and work 1:1 afterwards for things you still don't understand or that won't work.
-    2. Asynchronous: Follow the lessons online and ask for help via Piazza. This is less ideal because of the benefits of direct face-to-face student-instructor interaction for working through misunderstandings, but it should still be effective. Opening class Q&A sessions will be recorded and posted to Canvas.
-
-* If you have decent internet access the course is designed so that you can do it entirely in a browser without any local software installation
-* There are alternative approaches for folks with limited internet access
-* Aid-a-Gator can also be used to help cover the cost of internet access
-
-* We have flexible deadline policies to support learning under these difficult circumstances.
-There is an automatic (no request needed) 48 hour extension on all assignments for those who need it and if you need more time just let me know.
-You never need to disclose personal information to me to get an extension. Just let me know how long you need.
-* That said, I encourage you to keep up with deadlines to the extent possible.
-Each step of the course builds on the last step and students who get behind often have a hard time catching up.
+* If you can't make it to class, this workflow is replicated on the website on the Lessons tab for each week, with a combination of short video lessons and exercises to reinforce what you just learned
 
 ### Course structure
 
@@ -87,12 +48,14 @@ Each step of the course builds on the last step and students who get behind ofte
 
 * Lessons integrated with weekly assignments
 * Practice is really important for learning skills like this
-* Work through video lessons and exercises before class
-* Class sessions will have both full class Q&A w/live codeing and 1:1 help
 * All exercises are part of the assignments.
 * Work on them until you get stuck and then ask for help, don't struggle for hours on online help sites
 * Assignments for the first 12 weeks of class and then optional ungraded content though the end of the semester
-* Assignments due end of the day on Monday, but with an automatic 48 hour extension if you need it
+* Assignments due end of the day on Monday
+* I encourage you to keep up with deadlines whenever possible.
+Each step of the course builds on the last step and students who get behind often have a hard time catching up.
+* That said, life happens, so there is an automatic 48 hour extension if you need it. You don't need to ask, you can just turn things in up to 48 hours late.
+* If you need a longer extension just ask. You don't need to disclose personal information to me to get an extension. Just let me know how long you need.
 
 ### Website
 
@@ -105,7 +68,7 @@ Each step of the course builds on the last step and students who get behind ofte
     * No need to do any challenges or exercises in readings
 * Lessons
     * Alternating short videos (to introduce idea) and exercise (to start using that idea)
-    * Whether you are treating the class as synchronous or asynchronous alternating between video and exercise will be most effective for most of you
+    * Alternating between video and exercise will be most effective for most folks
 * Lectures
     * Lectures notes used in class
 	* Not expected to read in advance; may be useful for review
@@ -125,7 +88,7 @@ Each step of the course builds on the last step and students who get behind ofte
 ### Office Hours
 
 * Tuesday & Wednesday: 2-3 pm
-* Zoom link in Canvas
+
 
 ### Canvas
 
