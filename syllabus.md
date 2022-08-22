@@ -3,17 +3,17 @@ layout: page
 title: Syllabus
 catalog: WIS 6934
 credits: 3
-semester: Fall 2020
+semester: Fall 2022
 professor: Dr. Ethan White (he/him)
 office: Zoom
 email: ethanwhite@ufl.edu
 phone: 
-schedule: ['Tuesdays, 3-3:50 pm ET', 'Fridays, 11:45-1:40 pm ET']
-location: Zoom
-office_hours: "Wednesday & Thursday 2-3 pm ET"
-office_hours_location: Zoom
-TA: Andrew Marx
-TA_email: andrewjmarx@ufl.edu
+schedule: ['Tuesdays, 12:50-1:40 pm ET', 'Fridays, 11:45-1:40 pm ET']
+location: Newins-Ziegler Hall (NZH) 222
+office_hours: "TBD"
+office_hours_location: TBD
+TA: Virnaliz Cruz
+TA_email: virnaliz.cruzher@ufl.edu
 ---
 
 ## Course
@@ -74,6 +74,7 @@ periodically for updates.
 
 ### Course Communications
 
+Canvas: Messages in canvas are the preferred method for course communication
 Email: [{{ page.email }}](mailto:{{ page.email }})
 
 
@@ -160,32 +161,10 @@ minute demonstrations on the concepts followed by time to work on exercises.
 
 ## Course Policies
 
-### Special Policies for 2020
-
-It has been a long, exhausting, year and it will continue to be so for many of us.
-My goal is to help you learn as much as you can, while recognizing that most people have more limitations and less energy than usual.
-
-The course is being taught online for the first time due to the pandemic.
-To provide maximum flexibility the course material can be engaged with in three ways:
-
-1. Fully synchronous: Attend class during the scheduled class periods. Follow each lesson, which combine video lectures and exercises, during the class periods and ask for help as you run into questions. This is the closest approximation to how the course normally runs in-person.
-2. Synchronous Q&A: Follow each lesson before class, watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods and ask for help on challenges you encountered.
-3. Asynchronous: Follow the lessons online and ask for help via Piazza. This is the least ideal approach because the course is generally based around the benefits of direct student-instructor interaction to work through misunderstandings, but we'll do our best to make it work for you.
-
-The course always has flexible deadline policies (see below) and will continue to do so to support students learning under these difficult circumstances.
-There is an automatic (no request needed) 48 hour extension on all assignments for those who need it.
-If you need more time just let me know.
-You never need to disclose personal information to me to get an extension. Just let me know how long you need.
-
-### Class Recording
-
-Our class sessions may be audio visually recorded for students in the class to refer back and for enrolled students who are unable to attend live. Students who participate with their camera engaged or utilize a profile image are agreeing to have their video or image recorded.  If you are unwilling to consent to have your profile or video image recorded, be sure to keep your camera off and do not use a profile image. Likewise, students who un-mute during class and participate orally are agreeing to have their voices recorded.  If you are not willing to consent to have your voice recorded during class, you will need to keep your mute button activated and communicate exclusively using the "chat" feature, which allows students to type questions and comments live. The chat will not be recorded or shared. As in all courses, unauthorized recording and unauthorized sharing of recorded materials is prohibited.
-
 ### Attendance Policy
 
 Attendance will not be taken or factor into the grades for this class. However,
-experience suggests that students who regularly miss class often struggle to learn the
-material.
+experience suggests that students who regularly miss class often struggle to learn the material.
 
 
 ### Quiz/Exam Policy
@@ -304,7 +283,7 @@ http://registrar.ufl.edu/catalog0910/policies/regulationferpa.html
 
 ## Grading Policies
 
-Grading for this course is based on 13 equally weighted assignments.
+Grading for this course is based on 12 equally weighted assignments.
 
 Exercises in assignments will be graded as follows:
 
