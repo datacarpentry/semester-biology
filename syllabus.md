@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Syllabus
-catalog: WIS 6934
+catalog: ALS 6501
 credits: 3
 semester: Fall 2022
 professor: Dr. Ethan White (he/him)
-office: Zoom
+office: Room 1 Building 150
 email: ethanwhite@ufl.edu
-phone: 
+phone: 352-294-2081
 schedule: ['Tuesdays, 12:50-1:40 pm ET', 'Fridays, 11:45-1:40 pm ET']
 location: Newins-Ziegler Hall (NZH) 222
 office_hours: "TBD"
-office_hours_location: TBD
+office_hours_location: "TBD"
 TA: Virnaliz Cruz
 TA_email: virnaliz.cruzher@ufl.edu
 ---
