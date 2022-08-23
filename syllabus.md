@@ -75,6 +75,7 @@ periodically for updates.
 ### Course Communications
 
 Canvas: Messages in canvas are the preferred method for course communication
+
 Email: [{{ page.email }}](mailto:{{ page.email }})
 
 
