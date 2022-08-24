@@ -11,7 +11,7 @@ If we came back to the code for this assignment in two weeks would we be able to
 The variable name `biomass` is also kind of long.
 If we had to type it many times it would be faster just to type `b`.
 We could also use really descriptive alternatives like `individual_mass_in_grams`.
-Or we would compromise and abbreviate this or leave out some of the words to make it shorter (e.g., `indiv_mass_g`).* 
+Or we would compromise and abbreviate this or leave out some of the words to make it shorter (e.g., `indiv_mass_g`).
 
 Think about good variable names and then create a new version of this code with the variables renamed to be most useful.
 Make sure your code still runs properly with the name changes.
