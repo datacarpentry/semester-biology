@@ -1,0 +1,12 @@
+
+---
+layout: exercise
+topic: dplyr
+title: Extracting vectors from data frames
+language: R
+---
+Usando la tabla de `surveys` (estudios) de datos de Portal:
+
+1. Use `$` para extraer la columna de `weight` en un vector
+2. Utilice `[]` para extraer la columna `month` en un vector
+3. Extraiga la columna `hindfoot_length`, guárdela en un vector y calcule la longitud media de hindfoot (retropié) ignorando los valores nulos.
