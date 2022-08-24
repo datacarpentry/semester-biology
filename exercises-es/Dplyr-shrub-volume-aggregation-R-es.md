@@ -3,6 +3,7 @@ layout: exercise
 topic: dplyr
 title: Agregando volúmenes de arbustos
 language: R
+translation: es
 ---
 
 Este ejercicio es una continuación de [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R)
