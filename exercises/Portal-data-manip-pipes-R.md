@@ -5,11 +5,11 @@ title: Portal Data Manipulation Pipes
 language: R
 ---
 
-Download a copy of the
-[Portal Teaching Database surveys table](https://ndownloader.figshare.com/files/2292172)
-and load it into R using `read.csv()`.
+If the file [`surveys.csv`](https://ndownloader.figshare.com/files/2292172) is not already in your working directory then download a copy.
 
-Use pipes (`%>%`) to combine the following operations to manipulate the data.
+Load the file into R using `read.csv()`.
+
+Use pipes (either `|>` or `%>%`) to combine the following operations to manipulate the data.
 
 1. Use `mutate()`, `select()`, and `filter()` with `is.na()` to create a new data frame with
    the `year`, `species_id`, and weight **in kilograms** of each individual,

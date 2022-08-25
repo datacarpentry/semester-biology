@@ -5,9 +5,9 @@ title: Portal Data Manipulation
 language: R
 ---
 
-Download a copy of the
-[Portal Teaching Database surveys table](https://ndownloader.figshare.com/files/2292172) (*If you are using RStudio Cloud in a class it may have already been added to your workspace for you*)
-and load it into R using `read.csv()`.
+If the file [`surveys.csv`](https://ndownloader.figshare.com/files/2292172) is not already in your working directory then download a copy.
+
+Load the file into R using `read.csv()`.
 
 ***Do not use pipes for this exercise.***
 
