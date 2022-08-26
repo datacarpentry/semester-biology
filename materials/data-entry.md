@@ -33,7 +33,7 @@ protection against bad data being entered
 * Stopping bad data from ever being entered
 * Set rules about what values can be entered into a column
 * Let's create a data table with information on the date of sampling, the plot being sampled, and Species ID and mass of each individual small mammal that we catch.
-* Header row: `Plot`, `SpeciesID`, `Mass`
+* Header row: `Date`, `Plot`, `SpeciesID`, `Mass`
 
 * To setup a quality assurance rule let's select the Plots column
 * `Data -> Data Validation`
