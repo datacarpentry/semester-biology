@@ -21,12 +21,6 @@ language: Excel
 * All of these are reasonable options
 * When used properly spreadsheets or forms for databases can provide additional
 protection against bad data being entered
-* Be careful of data conversion issues from spreadsheets
-
-> Show posts/papers on dates and gene names
->
-> * [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7)
-> * [https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/)
 
 ### Quality Assurance
 
@@ -63,9 +57,19 @@ protection against bad data being entered
 * Trying to enter a value not on the list results in an error
 * This also generates a drop-down menu, so we can select the SpeciesID instead of typing it in
 
+
+### Care with Spreadsheets
+
+* Be careful of data conversion issues from spreadsheets
+
+> Show posts/papers on dates and gene names
+>
+> * [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7)
+> * [https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/)
+
+
 ### Entering Dates
 
-* As I mentioned at the beginning dates (and things that look like dates) can get changed by Excel
 * E.g., if we enter the date 2020-02-26 and hit Enter it will get converted to 2/26/2020
 * One solution to this is to tell Excel that the dates are text
 * Select the Date column
@@ -82,3 +86,4 @@ protection against bad data being entered
 * Sort
 * Graph
 * Check for realistic ranges of values
+
