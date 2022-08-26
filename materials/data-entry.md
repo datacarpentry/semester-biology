@@ -41,15 +41,12 @@ protection against bad data being entered
 * Set limitations
     * Use `Data` to set the type of limitation: `between` 
     * There are 24 plots so use boxes to provide limit the possible values to between `1` and `24`
-* Add a message to explain what goes in a cell in `Input Message`
-    * "Valid plot numbers are 1-24"
 * Add a useful error message using `Error Alert`
     * "Plot numbers must be whole numbers 1-24"
 
 * Now enter some plot data
 * The numbers 1-24 are entered normally
 * If we try to enter an invalid number, e.g., 222, we get an error
-* If we hover over a cell we see the description of what is valid
 
 * We can also limit decimal numbers
 * Select `Mass` column
