@@ -13,7 +13,8 @@ title: Course Introduction
 ### Course goals
 
 * Data and how to work with it
-* Data entry -> Data storage -> Data manipulation -> Data visualization
+* Data entry & storage -> Import -> Manipulate -> Visualize -> Model -> Evaluate
+* This class focuses on  the first 4
 * Not statistics or machine learning
 
 ### Expected background
@@ -21,15 +22,13 @@ title: Course Introduction
 * Assumes no background in R or any of the other things we'll learn
 * If you're already good at R it's worth spending some time with the website
   (which we're about to look at) to see if this a good fit for you
-* Information on more advanced options
 
  
 ### Teaching methods
 
-* Flipped classroom
-    * You don't learn how ride a bike just by listening to someone talk about it
-      and the same is true for computing
-    * So we use a fair bit of class time for working on exercises, asking questions, and getting help
+* You don't learn how ride a bike just by listening to someone talk about it and the same is true for computing
+* So we use a fair bit of class time for working on exercises, asking questions, and getting help
+* But just trying to learn the concepts behind computing is also tricky, so we don't use a fully flipped class approach 
 * I do, we do, you do
     * I will demo an idea using live coding
 	* We will work on an associated exercise together in class
@@ -87,7 +86,7 @@ Each step of the course builds on the last step and students who get behind ofte
 
 ### Office Hours
 
-* Tuesday & Wednesday: 2-3 pm
+* Wednesday: 10-11 am
 
 
 ### Canvas
