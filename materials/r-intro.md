@@ -28,41 +28,24 @@ language: R
 ### RStudio
 
 * IDE - Integrated Development Environment
-* Makes developing code in R easier
-* It includes a number of different aspects of code development in one place
+* Makes developing code in R easier by including a number of tools in one place
 * Interpreter/Console is where R is actually running
     * Can work in here "interactively"
     * Run a single command and see the result
     * `2 + 2`
-    * This is also where RStudio will run code written in the text dditor
+    * This is also where RStudio will run code written in the text editor
 * Text editor
     * Where we write code we want to keep and potentially reuse later
     * Creates a plain text file that stores the code we've written
-    * Does a number of things to make writing clean code easier including
-        * Object highlighting to makes it easier to see different things in the code
-        * Automatically pairing `""` and `{}`
-        * Automatically indenting code
-        * Flagging issues with code
-        * Autocompleting function and variable names
-    * `tab` key autocompletes
-        * Let the computer do repetitious work. 
-        * It's easier and with fewer mistakes.
-* It provides information on the variables that currently exist and their values under Environment
-* And a history of the commands you've run under `History` in case you forgot to write something down
-* Project management
-    * Create, delete, and rename files & folders
-    * Projects to help code know where other files like data files are located
-
-> Create new folder for scripts
+    * We can open it by clicking the `New File` button or using the `Ctrl-Shift-N` keyboard shortcut (`Cmd-Shift-N`) on Mac
 
 ### RStudio Cloud
 
 * An online version of RStudio that runs in your browser
-* We are going to try using this this year for four reasons
-  1. Everything should work for everyone, there shouldn't be installation issues or other complexities that come from differences between computers
-  2. Code is automatically shared with instructors so we can help you figure out why things aren't working. This is the closest approximation to working side by side with you in the classroom that I've been able to find.
-  3. We can leave some of the complexities of working with R until after we've learned the basics
-  4. Works on tablets as well as computers
+* We're using it because it:
+  1. Avoids installation difficulties
+  2. Makes sharing code with instructors for debugging easier
+  3. Let's us leave some of the complexities of working with R until after we've learned the basics
 * Folks with limited internet access, please checkout the video on working with RStudio installed on your own computer
 
 #### RStudio Cloud in Class
@@ -77,29 +60,23 @@ language: R
 
 ### Basic expressions
 
-* Write code directly in the text editor
+* _Write code directly in the text editor_
+* Kangaroo rat weight (g -> lb)
 
-```
-2 + 2
+```R
+50 / 1000 * 2.2
 ```
 
 * This is called an expression
 * A set of commands that returns a value
-
-* Kangaroo rat weight (g -> lb)
-
-```
-50
-50 / 1000
-50 / 1000 * 2.2
-```
 
 * Run line
 * Run selection
 * `Source` & `Source with Echo`
 
 * Save as `krat_weight_analysis.R`
-
+* Can see in the `Files` tab that we've created this file 
+* We can also use this tab to create, delete, and rename files & folders
 
 ### Variables
 
@@ -111,6 +88,8 @@ language: R
 weight_g <- 50
 weight_g = 50
 ```
+
+* We can see that this variable has been created by looking in the Environment tab
 
 * It works just like the value itself
 
@@ -130,6 +109,13 @@ weight_g <- 26
 weight_g
 ```
 
+### RStudio tips
+
+* `tab` key autocompletes
+    * _Type `wei` and then tab_
+    * Let the computer do repetitious work. 
+    * It's easier and with fewer mistakes.
+* And a history of the commands you've run under `History` in case you forgot to write something down
 
 ### Comments
 
