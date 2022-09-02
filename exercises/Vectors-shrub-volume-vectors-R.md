@@ -25,4 +25,4 @@ Copy these vectors into an R script and then determine the following:
 5. A vector of the heights of the first 5 shrubs (using `[]`).
 6. A vector of the volumes of the first 3 shrubs (using `[]`).
 
-*Optional Challenge*: A vector of the volumes of the last 5 shrubs with the code written so that it will return the last 5 values regardless of the length of the vector (i.e., it will give the last 5 values if their are 10, 20, or 50 individuals).
+*Optional Challenge*: A vector of the volumes of the last 5 shrubs with the code written so that it will return the last 5 values regardless of the length of the vector (i.e., it will give the last 5 values if there are 10, 20, or 50 individuals).
