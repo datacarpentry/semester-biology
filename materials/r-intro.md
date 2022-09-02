@@ -163,27 +163,41 @@ volume
 
 * A function is a complicated expression.
 * Command that returns a value
-* Hides the details of how that value is determined.
-* Useful - don't want to know how numbers are rounded
 
 ```
-sqrt(weight_lb)
-sqrt(0.11)
+sqrt(49)
 ```
 
 * A function call is composed of two parts.
     * Name of the function
     * Arguments that the function requires to calculate the value it returns.
-    * `sqrt()` is the name of the function, and `0.11` is the argument.
+    * `sqrt()` is the name of the function, and `49` is the argument.
+* We can also pass variables as the argument
+
+```r
+weight_lb <- 0.11
+sqrt(weight_lb)
+```
 
 * Another function that we'll use a lot is `str()`
 * All values and therefore all variables have types
 * `str`, short for "structure", lets us look at them
 
-```
+```r
 str(weight_lb)
-str(10)
-str('hello world')
+```
+
+* Another data type is for text data
+* We right text inside of quotation makes
+
+```r
+"hello world"
+```
+
+* If we look at the structure of some text we see that it is type character
+
+```r
+str("hello world")
 ```
 
 * Functions can take multiple arguments.
@@ -191,23 +205,22 @@ str('hello world')
     * Typing `round()` shows there are two arguments
     * Number to be rounded and number of digits
 
-```
-round(0.11, 1)
+```r
 round(weight_lb, 1)
 ```
 
-* Arguments return values, so as with other values, if we don't save the output of a function then there is no way to access it later
+* Functions return values, so as with other values and expressions, if we don't save the output of a function then there is no way to access it later
 * It is common to forget this when dealing with functions and expect the
   function to have changed the value of the variable
-* But looking at `mass_lb` we see that it hasn't been rounded
+* But looking at `weight_lb` we see that it hasn't been rounded
 
-```
-mass_lb
+```r
+weight_lb
 ```
 
 * To save the output of a function we assign it to a variable.
 
-```
+```r
 weight_rounded <- round(weight_lb, 1)
 weight_rounded
 ```
