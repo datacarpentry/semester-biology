@@ -23,14 +23,26 @@ time: 1
 * Need to know where the data is: Right click -> `Save link as`.
 * Start/open a project (modeling good practice)
 
-#### Setup RStudio Clould
+#### Setup RStudio Cloud
 
 * Go to the class space on RStudio Cloud
 * Click on this weeks assignment
 
+#### Dataset
+
+* The dataset is composed of three tables
+* Each table is stored in a `csv` file
+* `csv` stands for "comma separated values"
+* This is common way of storing data that can be used across programming and data management software
+* _Click on species.csv and View File_
+* If we look at one of these files we can see that
+    * It is plain text, so any program can read it
+    * The first row is the header row, with different column headers separated by commas
+    * All of the other rows are the data, again with different columns separated by commas
+    * And so each of the values is separated by commas, hence "comma separated values"
+
 #### Loading and viewing the dataset
 
-* Dataset is composed of three tables.
 * Load these into `R` using `read.csv()`.
 
 ```r
