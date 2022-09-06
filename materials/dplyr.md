@@ -145,10 +145,10 @@ arrange(surveys, weight)
 arrange(surveys, desc(weight))
 ```
 
-* We can also sort by multiple columns, so if we wanted to sort first by `plot` and then by date
+* We can also sort by multiple columns, so if we wanted to sort first by `plot_id` and then by date
 
 ```r
-arrange(surveys, plot, year, month, day)
+arrange(surveys, plot_id, year, month, day)
 ```
 
 > Do [Shrub Volume Data Basics 4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
