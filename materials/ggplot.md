@@ -332,7 +332,7 @@ ggplot() +
 ### Saving plots as new files
 
 ```r
-ggsave(“acacia_by_treatment.jpg”)
+ggsave("acacia_by_treatment.jpg")
 ```
 
 * Lots of optional arguments
@@ -341,7 +341,7 @@ ggsave(“acacia_by_treatment.jpg”)
     * Size
 
 ```r
-ggsave(“figures/acacia_by_treatment.pdf”, height = 5, width = 5)
+ggsave("figures/acacia_by_treatment.pdf", height = 5, width = 5)
 ```
 
 > Assign the rest of the exercises.

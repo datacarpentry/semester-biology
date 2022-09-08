@@ -245,9 +245,9 @@ courtesy in all email messages, threaded discussions and chats.
 ### Academic Honesty
 
 As a student at the University of Florida, you have committed yourself to uphold
-the Honor Code, which includes the following pledge:“We, the members of the
+the Honor Code, which includes the following pledge:"We, the members of the
 University of Florida community, pledge to hold ourselves and our peers to the
-highest standards of honesty and integrity.”You are expected to exhibit behavior
+highest standards of honesty and integrity. "You are expected to exhibit behavior
 consistent with this commitment to the UF academic community, and on all work
 submitted for credit at the University of Florida, the following pledge is
 either required or implied: "On my honor, I have neither given nor received

@@ -119,10 +119,10 @@ surveys <- data.frame(sites, density_ha, area_ha)
     * `surveys[1, 2]`
     * `surveys[1:2, 2:3]`
     * `surveys[, 3]`
-    * `surveys[“area_ha”]`
-    * `surveys[c(“area_ha”, “sites”)]`
+    * `surveys["area_ha"]`
+    * `surveys[c("area_ha", "sites")]`
     * `surveys$area_ha`
-    * `surveys[[“area_ha”]]`
+    * `surveys[["area_ha"]]`
 
 
 ### Reading in external data

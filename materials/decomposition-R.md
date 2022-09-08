@@ -52,7 +52,7 @@ get_size_class()
 * Start with if statement
 * Pseudocode
     * Write code in English
-    * “If weight value is bigger than 50, return large; otherwise return small”
+    * "If weight value is bigger than 50, return large; otherwise return small"
 
 ```
 if(weight > 50){
