@@ -58,12 +58,6 @@ x |> mean(na.rm = TRUE)
 
 * *Questions?*
 
-* You will also see another type of pipe character `%>%`
-* This is the original pipe in R and you had to load the magrittr package to use it (this gets loaded automatically by dplyr)
-* Either pipe is fine for this class
-    * `|>` will work everywhere as long as you have a new enough version of R
-    * magrittr has some fancier functionality that may be useful in some cases
-
 ```
 surveys |>
   filter(species_id == "DS", !is.na(weight))
@@ -81,6 +75,14 @@ ds_weight_by_year <- surveys |>
     * Tools -> Global Options -> Code -> Use native pipe operator
 
 > Do [Portal Data Manipulation Pipes 1]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
+
+### The magrittr pipe
+
+* You will also see another type of pipe character `%>%`
+* This is the original pipe in R and you had to load the magrittr package to use it (this gets loaded automatically by dplyr)
+* Either pipe is fine for this class
+    * `|>` will work everywhere as long as you have a new enough version of R
+    * magrittr has some fancier functionality that may be useful in some cases
 
 ### What if I want to pipe to an argument other than the first argument
 
