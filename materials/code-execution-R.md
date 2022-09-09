@@ -13,22 +13,22 @@ language: R
 * Write code to calculate a total number from density and area
 
 ```r
-density <- count / area
-count <- c(9, 16, 3, 10)
+density <- number / area
+number <- c(9, 16, 3, 10)
 area <- c(3, 5, 1.9, 2.7)
 ```
 
-* Returns an error because neither `count` or `area` exists yet
+* Returns an error because neither `number` or `area` exists yet
 * Code executes starting on the right side
-* Looks up the value for `count`
+* Looks up the value for `number `
 * Can't find the variable and so errors
 
 * Rearrange the code so that all variables are created before they are used
 
 ```r
-count <- c(9, 16, 3, 10)
+number <- c(9, 16, 3, 10)
 area <- c(3, 5, 1.9, 2.7)
-density <- count / area
+density <- number / area
 ```
 
 * This executes in the following sequence
