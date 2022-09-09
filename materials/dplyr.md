@@ -204,7 +204,7 @@ filter(surveys, species_id == "DS" & year > 1995)
 filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 ```
 
-> Do [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Shrub Volume Data Basics 5-7]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 
 ### Filtering null values
@@ -244,4 +244,4 @@ filter(surveys, !is.na(weight))
 filter(surveys, species_id == "DS", !is.na(weight))
 ```
 
-> Do [Portal Data Manipulation 4-6]({{ site.baseurl }}/exercises/Portal-data-manip-R/).
+> Do [Shrub Volume Data Basics 8]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
