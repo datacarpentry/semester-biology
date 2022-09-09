@@ -70,10 +70,6 @@ ds_weight_by_year <- surveys |>
   select(year, weight)
 ```
 
-* Shortcut: Ctrl-Shift-m
-* You can change this to give the base R pipe
-    * Tools -> Global Options -> Code -> Use native pipe operator
-
 > Do [Portal Data Manipulation Pipes 1]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
 
 ### The magrittr pipe
@@ -83,6 +79,12 @@ ds_weight_by_year <- surveys |>
 * Either pipe is fine for this class
     * `|>` will work everywhere as long as you have a new enough version of R
     * magrittr has some fancier functionality that may be useful in some cases
+
+### Keyboard Shortcut
+
+* Shortcut: Ctrl-Shift-m
+* You can change this to give the base R pipe
+    * Tools -> Global Options -> Code -> Use native pipe operator
 
 ### What if I want to pipe to an argument other than the first argument
 
