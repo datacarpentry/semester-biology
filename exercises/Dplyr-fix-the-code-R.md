@@ -14,13 +14,13 @@ average shrub volume for each site and, separately, for each experiment.
 
 ```r
 read.csv("shrub-volume-data.csv")
-shrub_data %>%
-  mutate(volume = length * width * height) %>%
-  group_by(site) %>%
+shrub_data |>
+  mutate(volume = length * width * height) |>
+  group_by(site) |>
   summarize(mean_volume = max(volume))
-shrub_data %>%
+shrub_data |>
   mutate(volume = length * width * height)
-  group_by(experiment) %>%
+  group_by(experiment) |>
   summarize(mean_volume = mean(volume))
 ```
 
