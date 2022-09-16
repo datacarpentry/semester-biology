@@ -23,32 +23,34 @@ language: R
 surveys <- read.csv("surveys.csv")
 ```
 
-* One common approach to extracting a column into a vector is to use the `$`
-* The `$` in R means "give me a named piece of something"
+* One common approach to extracting a column into a vector is to use the `[]`
+* Remember that `[]` also mean "give me a piece of something"
+* Let's get the `species_id` column
+* `"species_id"` has to be in quotes because we we aren't using `dplyr`
+
+```r
+surveys["species_id"]
+```
+
+* This actually returns a one column data frame, not a vector
+* To extract a single column as a vector we use two sets of `[]`
+* Think of the second set of `[]` as getting the single vector from inside the one column data frame
+
+```r
+surveys[["species_id"]]
+```
+
+* We can also do this using `$`
+* The `$` in R is short hand for `[[]]` in cases where the piece we want to get has a name
 * So, we start with the object we want a part of, our `surveys` data frame
 * Then the `$` with no spaces around it
-* The the name of the piece that we want, in our case, the column name
-* Let's get the `species_id` column 
+* and then the name of the `species_id` column (without quotes, just to be confusing)
 
 ```r
 surveys$species_id
 ```
 
-* We can also do this using `[]`
-* Remember that `[]` also mean "give me a piece of something"
-* To extract a column as a vector we use two sets of `[]`
-* So to extract the `species_id` column
-
-```r
-surveys[["species_id"]]
-```
-
-* "species_id" has to be in quotes because we we aren't using `dplyr`
-* We have to use two sets of square brackets because one set gives us the column back as a data frame with one column
-
-```r
-surveys[["species_id"]]
-```
+> Do [Extracting vectors from data frames]({{ site.baseurl }}/exercises/extracting-vectors-from-data-frames-R/).
 
 ### Combining vectors to make a data frame
 
