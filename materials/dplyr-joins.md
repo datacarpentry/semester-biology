@@ -16,26 +16,9 @@ time: 30
 #### Why use multiple tables
 
 * When we talked about data structure we discussed splitting data into multiple tables.
-* This is because it is not efficient to include all information in a single table.
-* Redundant information makes it more difficult to update or revise data.
-* Using multiple tables allows us to make changes in one place, not hundreds of places.
-* For example, if the taxonomy changes for a species in our study and we worked with one big table, we would need rather change the name hundreds or thousands of times. 
-* We avoid redundancy by using multiple tables
+* This lets us avoid redundant information, like listing the full taxonomy for every individual of a species, which makes storage more efficient and allows us to make changes in one place, not hundreds of places.
 * Each table contains a single kind of information
-* In the Portal dataset we've been using
-    * `surveys`: information about individuals
-    * `species`: information about species
-    * `plots`: information about plots
-* If a species name changes we only need to change it in the `species` table
-* Connect tables using joins to describe relationships between tables
-* To enable us to make these connections the tables need one or more columns that link them together
-* In the case of the Portal data there is one column that links the `surveys` and `species` tables, `species_id`
-* There is also one column that links the `surveys` and `plots` tables, `plot_id`
-
-#### Basic join
-
-* Joins combine two tables using one or more columns
-* Let's start by loading the data from all three tables in the Portal dataset
+* Let's look at this in the Portal dataset
 
 ```r
 library(dplyr)
@@ -45,8 +28,20 @@ species <- read.csv("species.csv")
 plots <- read.csv("plots.csv")
 ```
 
-* Now let's join the surveys and the species tables together
-* We'll use an "inner join"
+* In the Portal dataset
+    * `surveys`: information about individuals
+    * `species`: information about species
+    * `plots`: information about plots
+* If a species name changes we only need to change it in the `species` table
+
+#### Basic join
+
+* Connect tables using joins
+* To enable us to make these connections the tables need one or more columns that link them together
+* In the case of the Portal data there is one column that links the `surveys` and `species` tables, `species_id`
+* There is also one column that links the `surveys` and `plots` tables, `plot_id`
+
+* Let's join the surveys and the species tables together using an "inner join"
 * To do this we use the `inner_join` function
 * It takes three arguments:
   * The first of the two tables we want to join
