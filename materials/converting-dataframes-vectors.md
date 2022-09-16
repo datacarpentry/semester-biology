@@ -55,34 +55,39 @@ surveys$species_id
 ### Combining vectors to make a data frame
 
 * We can also combine vectors to make a data frame
-* We'll use an example with vectors that contain data on sites and population densities
+* We can make a data frame using the `data.frame` function
+* It takes one argument for each column in the data frame
+* The argument includes the name of the column we want in the data frame, `=`, and the name of the vector whose values we want in that column
+* Just like `mutate` and `summarize`
+* So we give it the arguments `sites`, and `density`
+
+ ```r
+density_data <- data.frame(sites = c("a", "a", "b", "c"), density = c(2.8, 3.2, 1.5, 3.8))
+```
+
+* If we look in the `Global Environment` we can see that there is a new data frame called `density_data` and it has our two vectors as columns
+
+* We could also make this directory using the vectors that are already stored in variables
 
 ```r
 sites <- c("a", "a", "b", "c")
 density <- c(2.8, 3.2, 1.5, 3.8)
+density_data <- data.frame(sites = sites, density = density)
 ```
-
-* We can make a data frame using the `data.frame` function
-* It takes one argument for each column in the data frame
-* So we give it the arguments `sites`, and `density`
-
-```r
-density_data <- data.frame(sites, density)
-```
-
-* If we look in the `Global Environment` we can see that there is a new data frame called `density_data` and it has our two vectors as columns
 
 * We can also add columns to the data from that only include a single value without first creating a vector
 * We do this by providing a name for the new column, an equals sign, and the value that we want to occur in every row
 * For example, if all of this data was collected in the same year and we wanted to add that year as a column in our data frame we could do it like this
 
 ```r
-density_data_year <- data.frame(year = 2000, sites, density)
+density_data_year <- data.frame(year = 2000, sites = sites, density = density)
 ```
 
 * `year =` sets the name of the column in the data frame
 * And 2000 is that value that will occur on every row of that column
-* If we run this and look at the `density_data_year` data frame we'll see that it includes the year column with `2000` in every row 
+* If we run this and look at the `density_data_year` data frame we'll see that it includes the year column with `2000` in every row
+
+> Do [Building data frames from vectors]({{ site.baseurl }}/exercises/building-data-frames-from-vectors-R/).
 
 ### Summary
 
