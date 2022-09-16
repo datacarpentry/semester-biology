@@ -79,26 +79,18 @@ combined <- left_join(surveys, species, by = "species_id")
 * And outer joins, which keep all rows from both tables
 * For our exercises we'll focus on using inner joins
 
-> Do [Shrub Volume Join 1]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R).
-
-
 #### Multi-table join
 
 * In our last video we learned about how to join two tables together
 * But we often need to combine more than two tables
-* In the case of the Portal data we might need information from both the `species` and `plots` tables to be combined with the `surveys` table
 * To join more than two tables we start by joining two tables
 * And then join the resulting table to a third table, and so on
-* So, for Portal, we could start by joining the `surveys` and the `species` tables 
+* So, for Portal, we could start by joining the `surveys` and the `species` tables and then combine the resulting table with the `plots` table
 
 ```r
-survey_species <- inner_join(surveys, species, by = "species_id")
+combined <- surveys |>
+  inner_join(species, by = "species_id") |>
+  inner_join(plots, by = "plot_id")
 ```
 
-* And then join this `combined` table and the `plots` table
-
-```r
-portal_full <- inner_join(survey_species, plots, by = "plot_id")
-```
-
-> Do [Shrub Volume Join 2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R). 
+> Do [Shrub Volume Join 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R). 
