@@ -9,7 +9,7 @@ You are interested in understanding whether sexual size dimorphism is a general
 pattern in birds.
 
 Download and import a
-[large publicly available dataset of bird size measures](http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt)
+[large publicly available dataset of bird size measures](https://esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt)
 created by [Lislevand et al. 2007](https://doi.org/10.1890/06-2054).
 
 Import the data into R. It is tab delimited so you'll want to use `sep = "\t"`

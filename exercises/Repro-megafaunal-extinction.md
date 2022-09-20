@@ -13,10 +13,10 @@ three main figures from one of the major papers on this topic [Lyons et al.
 2004](http://www.evolutionary-ecology.com/issues/v06n03/ddar1499.pdf).
 
 You will do this using a 
-[large dataset of mammalian body sizes](http://www.esapubs.org/archive/ecol/E084/094/#data)
+[large dataset of mammalian body sizes](https://esapubs.org/archive/ecol/E084/094/#data)
 that has data on the mass of recently extinct mammals as well as extant mammals
 (i.e., those that are still alive today). Take a look at the
-[metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
+[metadata](https://esapubs.org/archive/ecol/E084/094/metadata.htm) to
 understand the structure of the data.
 
 1. Import the data into R. As with most real world data there are a number of

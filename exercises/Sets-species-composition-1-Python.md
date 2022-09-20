@@ -31,9 +31,9 @@ union of the two species lists.
 
 Determine the Jaccard similarity for all pairs of sites in a tallgrass
 prairie from Oklahoma published by [McGlinn et al.
-2010](http://www.esapubs.org/archive/ecol/E091/124/default.htm). The
+2010](https://esapubs.org/archive/ecol/E091/124/default.htm). The
 data you will need is in the [species presence
-table](http://www.esapubs.org/archive/ecol/E091/124/TGPP_pres.csv).This
+table](https://esapubs.org/archive/ecol/E091/124/TGPP_pres.csv).This
 dataset includes information on the scales at which species were present
 and their location within each plot (the Corner and Scale columns), but
 for the purposes of this analysis we are only interested in whether or

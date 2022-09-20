@@ -18,7 +18,7 @@ title: List of datasets
 | Mammal masses | tsv | <https://ndownloader.figshare.com/files/5593343> |
 | SQL practice | SQLite | <http://www.datacarpentry.org/semester-biology/data/sql-practice.sqlite> |
 | Mammal life history | tsv | <http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt> |
-| Bird size | tsv | <http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt> |
+| Bird size | tsv | <https://esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt> |
 | Example project | zip | <http://www.datacarpentry.org/semester-biology/data/example_project.zip> |
 | Fish scale length | csv | <https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv> |
 | LiDAR rasters and plot locations | multiple | <http://www.datacarpentry.org/semester-biology/data/neon-airborne.zip> |

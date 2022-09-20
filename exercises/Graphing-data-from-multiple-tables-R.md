@@ -8,7 +8,7 @@ language: R
 An experiment in Kenya has been exploring the influence of large herbivores on plants.
 
 Check to see if `ACACIA_DREPANOLOBIUM_SURVEY.txt` and `TREE_SURVEYS.txt` is in your workspace.
-If not, download [`ACACIA_DREPANOLOBIUM_SURVEY.txt`](http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt) and [`TREE_SURVEYS.txt`](https://ndownloader.figshare.com/files/5629536)
+If not, download [`ACACIA_DREPANOLOBIUM_SURVEY.txt`](https://esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt) and [`TREE_SURVEYS.txt`](https://ndownloader.figshare.com/files/5629536)
 Install the `readr` package and use `read_tsv` to read in the data using the following commands:
 
 ```r

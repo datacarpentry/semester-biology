@@ -4,8 +4,8 @@ fraction<-sum(sub_list)/sum(total_list)
 percent<-round(fraction,3)*100
 return(percent)
 }
-trees<-read.csv("http://www.esapubs.org/archive/ecol/E090/251/datafiles/swamp_all_modern.txt", sep = '\t')
-species<-read.csv("http://www.esapubs.org/archive/ecol/E090/251/datafiles/species_codes.txt", sep = '\t')
+trees<-read.csv("https://esapubs.org/archive/ecol/E090/251/datafiles/swamp_all_modern.txt", sep = '\t')
+species<-read.csv("https://esapubs.org/archive/ecol/E090/251/datafiles/species_codes.txt", sep = '\t')
 library(dplyr)
 trees<-mutate(trees, Mass = 0.124*DBH**2.53)
 trees_grouped<-group_by(trees, Year, Plot, Species)

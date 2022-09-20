@@ -22,7 +22,7 @@ the total abundance of all species at the site.
 Use the data from McGlinn et al. 2010. We need some information on the
 relative prevalence of the different species at the different sites so
 this time download the [Cover
-table](http://www.esapubs.org/archive/ecol/E091/124/TGPP_cover.csv). Use
+table](https://esapubs.org/archive/ecol/E091/124/TGPP_cover.csv). Use
 the `cover` column as the measure of N (we often work with cover instead of
 number of individuals in plant communities). For this analysis we decide
 that instead of keeping the years in the analysis separate we want to

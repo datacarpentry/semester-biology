@@ -12,10 +12,10 @@ differences in the body size of those species that went extinct and
 those that did not.
 
 To address this question we can use the
-[largest dataset on mammalian body size in the world](http://www.esapubs.org/archive/ecol/E084/094/#data),
+[largest dataset on mammalian body size in the world](https://esapubs.org/archive/ecol/E084/094/#data),
 which has data on the mass of recently extinct mammals as well as extant mammals
 (*i.e., those that are still alive today*). Take a look at the
-[metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
+[metadata](https://esapubs.org/archive/ecol/E084/094/metadata.htm) to
 understand the structure of the data. One key thing to remember is that species
 can occur on more than one continent, and if they do then they will occur more
 than once in this dataset. Also let's ignore species that went extinct in the

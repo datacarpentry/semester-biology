@@ -5,7 +5,7 @@ title: Graphing using ggplot
 language: R
 ---
  
-> * Get familiarized with [metadata](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
+> * Get familiarized with [metadata](https://esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
 > * [UHURU Acacia Experiment Data](https://ndownloader.figshare.com/files/5629542)
 > * [UHURU Tree Survey Data](https://ndownloader.figshare.com/files/5629536)
 
@@ -21,7 +21,7 @@ language: R
   * The bottom-left image shows full exclosures, which use fenses all the way to the ground to keep out all mammalian herbivores
   * And the bottom-right image shows control plots
 
-![Pictures of 4 experimental treatments. (A) Megaherbivore fences consist of two parallel wires starting 2-m above ground level. (B) Mesoherbivore fences consist of 11 parallel wires starting ~0.3 m above ground level and continuing to 2.4-m above ground level. (C) Total-exclusion fences consist of 14 wires up to 2.4-m above ground level, with a 1-m high chain-link barrier at ground level. (D) Open control plots are unfenced, with boundaries demarcated by short wooden posts at 10-m intervals.](http://www.esapubs.org/archive/ecol/E095/064/images/Fig2.png)
+![Pictures of 4 experimental treatments. (A) Megaherbivore fences consist of two parallel wires starting 2-m above ground level. (B) Mesoherbivore fences consist of 11 parallel wires starting ~0.3 m above ground level and continuing to 2.4-m above ground level. (C) Total-exclusion fences consist of 14 wires up to 2.4-m above ground level, with a 1-m high chain-link barrier at ground level. (D) Open control plots are unfenced, with boundaries demarcated by short wooden posts at 10-m intervals.](https://esapubs.org/archive/ecol/E095/064/images/Fig2.png)
 
 * So far we've been working with datasets that are separated by commas
 * *Click on surveys.csv to show csv format*
