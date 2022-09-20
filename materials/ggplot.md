@@ -291,8 +291,8 @@ ggplot() +
 ```r
 ggplot() +
   geom_point(data = acacia,
-             mapping = aes(x = CIRC, y = HEIGHT)) +
-                           color = TREATMENT))
+             mapping = aes(x = CIRC, y = HEIGHT,
+                           color = TREATMENT)) +
   geom_smooth()
 ```
 
