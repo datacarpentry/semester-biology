@@ -12,7 +12,9 @@ If not, [download `TREE_SURVEYS.txt`](https://ndownloader.figshare.com/files/562
 Use `read_tsv` from the `readr` package to read in the data using the following command:
 
 ```r
-trees <- read_tsv("TREE_SURVEYS.txt")
+trees <- read_tsv("TREE_SURVEYS.txt",
+                  col_types = list(HEIGHT = col_double(),
+                                   AXIS_2 = col_double()))
 ```
 
 1. Update the `trees` data frame with a new column named `canopy_area` that contains
