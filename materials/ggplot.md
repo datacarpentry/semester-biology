@@ -135,8 +135,6 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
        title = "Acacia Survey at UHURU")
 ```
 
-> Do Task 1 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
-
 ### Rescaling axes
 
 ```r
@@ -148,7 +146,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 
 * Not changing the data itself, just the presentation of it
 
-> Do Task 2 in [Acacia and ants] ({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do Tasks 1-2 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Grouping
 
