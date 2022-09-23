@@ -21,4 +21,4 @@ Save the results as a `csv` file named `"size_comparison_results.csv"`, where
 the first column is the name of the continent, the second column is the average 
 mass for the extant species, the third column is the average mass for the 
 extinct species, and the fourth column is the p-value for whether or not they 
-sare different.
+are different.
