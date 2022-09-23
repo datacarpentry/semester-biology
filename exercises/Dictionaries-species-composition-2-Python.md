@@ -17,19 +17,19 @@ N2_i)^2))`, where `N1_i` is the relative abundance of species `i` at site 1 and
 zeros). Relative abundance is the number of individuals of a species divided by
 the total abundance of all species at the site.
 
-#### Data
+## Data
 
 Use the data from McGlinn et al. 2010. We need some information on the
 relative prevalence of the different species at the different sites so
 this time download the [Cover
-table](http://www.esapubs.org/archive/ecol/E091/124/TGPP_cover.csv). Use
+table](https://esapubs.org/archive/ecol/E091/124/TGPP_cover.csv). Use
 the `cover` column as the measure of N (we often work with cover instead of
 number of individuals in plant communities). For this analysis we decide
 that instead of keeping the years in the analysis separate we want to
 combine the data from all of the years to get a longer time-scale
 picture.
 
-#### Using dictionaries
+## Using dictionaries
 
 Write a function that calculates the Euclidean distance for two sites
 when passed two dictionaries as arguments. Each dictionary should hold

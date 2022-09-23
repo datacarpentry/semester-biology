@@ -6,7 +6,7 @@ language: Access-Python-R-SQL
 exercises: ['Exercise Template', 'Exercise Template']
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

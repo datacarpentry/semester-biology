@@ -1,0 +1,45 @@
+# A tibble: 49 x 2
+   species_id count
+   <fct>      <int>
+ 1 ""           763
+ 2 "AB"         303
+ 3 "AH"         437
+ 4 "AS"           2
+ 5 "BA"          46
+ 6 "CB"          50
+ 7 "CM"          13
+ 8 "CQ"          16
+ 9 "CS"           1
+10 "CT"           1
+# … with 39 more rows
+
+# A tibble: 535 x 3
+# Groups:   species_id [49]
+   species_id  year count
+   <fct>      <int> <int>
+ 1 ""          1977    16
+ 2 ""          1978    56
+ 3 ""          1979    61
+ 4 ""          1980    40
+ 5 ""          1981    55
+ 6 ""          1982    14
+ 7 ""          1983    21
+ 8 ""          1984    30
+ 9 ""          1985    22
+10 ""          1986    20
+# … with 525 more rows
+
+# A tibble: 26 x 2
+    year avg_mass
+   <int>    <dbl>
+ 1  1977     42.7
+ 2  1978     45  
+ 3  1979     45.9
+ 4  1980     48.1
+ 5  1981     49.1
+ 6  1982     47.9
+ 7  1983     47.2
+ 8  1984     48.4
+ 9  1985     48.0
+10  1986     49.4
+# … with 16 more rows

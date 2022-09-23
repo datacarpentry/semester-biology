@@ -28,41 +28,24 @@ language: R
 ### RStudio
 
 * IDE - Integrated Development Environment
-* Makes developing code in R easier
-* It includes a number of different aspects of code development in one place
+* Makes developing code in R easier by including a number of tools in one place
 * Interpreter/Console is where R is actually running
     * Can work in here "interactively"
     * Run a single command and see the result
     * `2 + 2`
-    * This is also where RStudio will run code written in the text dditor
+    * This is also where RStudio will run code written in the text editor
 * Text editor
     * Where we write code we want to keep and potentially reuse later
     * Creates a plain text file that stores the code we've written
-    * Does a number of things to make writing clean code easier including
-        * Object highlighting to makes it easier to see different things in the code
-        * Automatically pairing `""` and `{}`
-        * Automatically indenting code
-        * Flagging issues with code
-        * Autocompleting function and variable names
-    * `tab` key autocompletes
-        * Let the computer do repetitious work. 
-        * It's easier and with fewer mistakes.
-* It provides information on the variables that currently exist and their values under Environment
-* And a history of the commands you've run under `History` in case you forgot to write something down
-* Project management
-    * Create, delete, and rename files & folders
-    * Projects to help code know where other files like data files are located
-
-> Create new folder for scripts
+    * We can open it by clicking the `New File` button or using the `Ctrl-Shift-N` keyboard shortcut (`Cmd-Shift-N`) on Mac
 
 ### RStudio Cloud
 
 * An online version of RStudio that runs in your browser
-* We are going to try using this this year for four reasons
-  1. Everything should work for everyone, there shouldn't be installation issues or other complexities that come from differences between computers
-  2. Code is automatically shared with instructors so we can help you figure out why things aren't working. This is the closest approximation to working side by side with you in the classroom that I've been able to find.
-  3. We can leave some of the complexities of working with R until after we've learned the basics
-  4. Works on tablets as well as computers
+* We're using it because it:
+  1. Avoids installation difficulties
+  2. Makes sharing code with instructors for debugging easier
+  3. Let's us leave some of the complexities of working with R until after we've learned the basics
 * Folks with limited internet access, please checkout the video on working with RStudio installed on your own computer
 
 #### RStudio Cloud in Class
@@ -77,29 +60,23 @@ language: R
 
 ### Basic expressions
 
-* Write code directly in the text editor
+* _Write code directly in the text editor_
+* Kangaroo rat weight (g -> lb)
 
-```
-2 + 2
+```R
+50 / 1000 * 2.2
 ```
 
 * This is called an expression
 * A set of commands that returns a value
-
-* Kangaroo rat weight (g -> lb)
-
-```
-50
-50 / 1000
-50 / 1000 * 2.2
-```
 
 * Run line
 * Run selection
 * `Source` & `Source with Echo`
 
 * Save as `krat_weight_analysis.R`
-
+* Can see in the `Files` tab that we've created this file 
+* We can also use this tab to create, delete, and rename files & folders
 
 ### Variables
 
@@ -111,6 +88,8 @@ language: R
 weight_g <- 50
 weight_g = 50
 ```
+
+* We can see that this variable has been created by looking in the Environment tab
 
 * It works just like the value itself
 
@@ -130,6 +109,13 @@ weight_g <- 26
 weight_g
 ```
 
+### RStudio tips
+
+* `tab` key autocompletes
+    * _Type `wei` and then tab_
+    * Let the computer do repetitious work. 
+    * It's easier and with fewer mistakes.
+* And a history of the commands you've run under `History` in case you forgot to write something down
 
 ### Comments
 
@@ -167,15 +153,6 @@ volume
 
 * Now we're going to work on some exercises to get a feel for this
 * In class we will often only do part of an exercise and save the rest for later
-* I use an in-class feedback system to get a feel for when most folks are done
-  and how well folks understand the material
-* When you are done with the part of the exersise we are doing for class, click
-  on the `In class feedback` link and fill out the poll
-* Two sections
-  * 1-5 rating for how well you understand what we just covered
-  * A text box to describe anything confusing you if you can describe it
-  * 4 and 5's indicate that you're following things and we can move on
-  * 3's and below suggest we need to chat more 
 
 > Do [Exercise 1.1-1.3 - Basic Expressions]({{ site.baseurl }}/exercises/Expressions-and-variables-basic-expressions-R/)
 
@@ -186,27 +163,41 @@ volume
 
 * A function is a complicated expression.
 * Command that returns a value
-* Hides the details of how that value is determined.
-* Useful - don't want to know how numbers are rounded
 
 ```
-sqrt(weight_lb)
-sqrt(0.11)
+sqrt(49)
 ```
 
 * A function call is composed of two parts.
     * Name of the function
     * Arguments that the function requires to calculate the value it returns.
-    * `sqrt()` is the name of the function, and `0.11` is the argument.
+    * `sqrt()` is the name of the function, and `49` is the argument.
+* We can also pass variables as the argument
+
+```r
+weight_lb <- 0.11
+sqrt(weight_lb)
+```
 
 * Another function that we'll use a lot is `str()`
 * All values and therefore all variables have types
 * `str`, short for "structure", lets us look at them
 
-```
+```r
 str(weight_lb)
-str(10)
-str('hello world')
+```
+
+* Another data type is for text data
+* We right text inside of quotation makes
+
+```r
+"hello world"
+```
+
+* If we look at the structure of some text we see that it is type character
+
+```r
+str("hello world")
 ```
 
 * Functions can take multiple arguments.
@@ -214,23 +205,22 @@ str('hello world')
     * Typing `round()` shows there are two arguments
     * Number to be rounded and number of digits
 
-```
-round(0.11, 1)
+```r
 round(weight_lb, 1)
 ```
 
-* Arguments return values, so as with other values, if we don't save the output of a function then there is no way to access it later
+* Functions return values, so as with other values and expressions, if we don't save the output of a function then there is no way to access it later
 * It is common to forget this when dealing with functions and expect the
   function to have changed the value of the variable
-* But looking at `mass_lb` we see that it hasn't been rounded
+* But looking at `weight_lb` we see that it hasn't been rounded
 
-```
-mass_lb
+```r
+weight_lb
 ```
 
 * To save the output of a function we assign it to a variable.
 
-```
+```r
 weight_rounded <- round(weight_lb, 1)
 weight_rounded
 ```

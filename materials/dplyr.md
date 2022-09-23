@@ -23,14 +23,26 @@ time: 1
 * Need to know where the data is: Right click -> `Save link as`.
 * Start/open a project (modeling good practice)
 
-#### Setup RStudio Clould
+#### Setup RStudio Cloud
 
 * Go to the class space on RStudio Cloud
 * Click on this weeks assignment
 
+#### Dataset
+
+* The dataset is composed of three tables
+* Each table is stored in a `csv` file
+* `csv` stands for "comma separated values"
+* This is common way of storing data that can be used across programming and data management software
+* _Click on species.csv and View File_
+* If we look at one of these files we can see that
+    * It is plain text, so any program can read it
+    * The first row is the header row, with different column headers separated by commas
+    * All of the other rows are the data, again with different columns separated by commas
+    * And so each of the values is separated by commas, hence "comma separated values"
+
 #### Loading and viewing the dataset
 
-* Dataset is composed of three tables.
 * Load these into `R` using `read.csv()`.
 
 ```r
@@ -61,6 +73,9 @@ plots <- read.csv("plots.csv")
 * R has a rich ecosystem of packages for data manipulation & analysis
 * Download and install packages with the R console:
     * `install.packages("dplyr")`
+* Even if we've installed a package it is automatically available to do analysis with
+* This because different packages may have functions with the same names
+* So don't want to have to worry about all of the packages we've installed every time we right a piece of code
 * Using a package:
     * Load all of the functions in the package: `library("dplyr")`
 
@@ -130,10 +145,10 @@ arrange(surveys, weight)
 arrange(surveys, desc(weight))
 ```
 
-* We can also sort by multiple columns, so if we wanted to sort first by `plot` and then by date
+* We can also sort by multiple columns, so if we wanted to sort first by `plot_id` and then by date
 
 ```r
-arrange(surveys, plot, year, month, day)
+arrange(surveys, plot_id, year, month, day)
 ```
 
 > Do [Shrub Volume Data Basics 4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
@@ -189,16 +204,16 @@ filter(surveys, species_id == "DS" & year > 1995)
 filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 ```
 
-> Do [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Shrub Volume Data Basics 5-7]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 
 ### Filtering null values
 
-* We can also use `filter` to remove null values from our data
-* 
+* One of the common tasks we use `filter` for is removing null values from data
+* Based on what we learned before it's natural to think that we do this by using the condition `weight != NA`
 
 ```r
-filter(surveys_by_species, weight != NA)
+filter(surveys, weight != NA)
 ```
 
 * Why didn't that work?
@@ -207,19 +222,26 @@ filter(surveys_by_species, weight != NA)
     * We don't know if they are
 * So use special commands
 * `is.na()` checks if the value is `NA`
-* Combine this with `!` for "not"
+* So if we wanted all of the data where the weigh is `NA`
 
+```r
+filter(surveys, is.na(weight))
 ```
-filter(surveys_by_species, !is.na(weight))
+
+* We'll learn more about why this works in the same way as the other conditional statements when we study conditionals in detail later in the course
+
+* To remove null values we combine this with `!` for "not"
+
+```r
+filter(surveys, !is.na(weight))
 ```
 
 * So `!is.na(weight)` is conceptually the same as "weight != NA"
+* It is common to combine a null filter with other conditions using "and"
+* For example we might want all of the data on a species that contains weights
 
-```
-surveys_by_species_nonull <- filter(surveys_by_species,
-                                    !is.na(weight))
-species_weight <- summarize(surveys_by_species_nonull,
-                            avg_weight = mean(weight))
+```r
+filter(surveys, species_id == "DS", !is.na(weight))
 ```
 
-> Do [Portal Data Manipulation 4-6]({{ site.baseurl }}/exercises/Portal-data-manip-R/).
+> Do [Shrub Volume Data Basics 8]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).

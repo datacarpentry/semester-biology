@@ -1,23 +1,23 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Style Guide
 ---
 
-### File Content
+## File Content
 
 - All web content files are written in [Markdown](http://daringfireball.net/projects/markdown/basics) and start with [YAML front matter](https://jekyllrb.com/docs/frontmatter/). Any `.MD` file in the course can be modified for content using plain text in [Markdown](http://daringfireball.net/projects/markdown/basics), HTML, or [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers). 
 - File names and front matter must be revised carefully according to the [course structure]({{ site.baseurl }}/docs/site/course-structure) and [file templates]({{ site.baseurl }}/docs/). 
 - [Add and modify files]({{ site.baseurl }}/docs/course/manage-files) from your local machine or online using [GitHub]({{ site.github.repo }}).
 
-### Page Layout
+## Page Layout
 
 - Do not leave extra whitespace, unless required to properly format the markdown rendering. Include one blank line following the YAML front matter.
 
 - Wrap lines at 80 characters, but don't break urls or markdown rendering.
 
 
-### General Syntax 
+## General Syntax 
 
 - Use leading `#` for headers (`# Heading 1`). Most headers in the website content will be `###` or `####`.
 
@@ -26,7 +26,7 @@ title: Style Guide
 - Encase any hint, note, or () statement with \* to italicize text (*like this*).
 
 
-### Including Code Chunks
+## Including Code Chunks
 
 - Use ` to denote code and objects according to their structure:
    - `packages`, `objects` and `lists`

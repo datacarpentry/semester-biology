@@ -5,7 +5,13 @@ title: Writing Functions
 language: R
 ---
 
-Write a function that converts pounds to grams (*there are 453.592 grams in one
-pound*). It should take a value in pounds as the input and return the equivalent
-value in grams (i.e., the number of pounds times 453.592). Use that function to
-calculate how many grams there are in 3.75 pounds.
+Copy the following function into your assignment and replace the `________` with variables names for the input and output.
+
+```r
+convert_pounds_to_grams <- function(________) {
+    grams = 453.6 * pounds
+    return(________)
+}
+```
+
+Use the function to calculate how many grams there are in 3.75 pounds.

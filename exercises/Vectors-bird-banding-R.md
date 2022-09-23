@@ -8,9 +8,9 @@ language: R
 The number of birds banded at a series of sampling sites has been counted by
 your field crew and entered into the following vector. Counts are entered in 
 order and sites are numbered starting at one. Cut and paste the vector into your
-assignment and then answer the following questions by printing them to the
-screen. Some R functions that will come in handy include `length()`, `max()`,
-`min()`, `sum()`, and `mean()`.
+assignment and then answer the following questions by using code and printing the
+result to the screen. Some R functions that will come in handy include `length()`,
+`max()`, `min()`, `sum()`, and `mean()`.
 
 ```
 number_of_birds <- c(28, 32, 1, 0, 10, 22, 30, 19, 145, 27, 

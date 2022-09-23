@@ -1,0 +1,28 @@
+name: CheckLinks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # Every Sunday at 00:00:00
+    - cron: '0 0 * * 6'
+
+jobs:
+  checklinks:
+    name: Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+      - run: |
+          bundle install
+          gem install html-proofer
+      - run: bundle exec jekyll build
+      - run: htmlproofer --assume-extension ./_site --url-swap '^/semester-biology/:/'
+        continue-on-error: true

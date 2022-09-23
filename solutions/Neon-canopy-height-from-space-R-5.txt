@@ -1,0 +1,32 @@
+# Task 5
+
+[1] 18.913757 23.948151  1.986877  2.183136 28.985016  3.506866  2.201233
+
+# Task 6 
+
+Simple feature collection with 7 features and 3 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 256238.5 ymin: 4110088 xmax: 257465.5 ymax: 4111372
+projected CRS:  WGS 84 / UTM zone 11N
+  plot_id   plot_type                 geometry canopy_heights
+1       1       Tower POINT (257465.5 4111372)      18.913757
+2       2       Tower POINT (256238.5 4110270)      23.948151
+3       3       Tower POINT (256798.3 4110296)       1.986877
+4       4 Distributed POINT (256737.7 4110949)       2.183136
+5       5 Distributed POINT (257358.5 4110450)      28.985016
+6       6 Distributed POINT (256254.5 4110088)       3.506866
+7       7 Distributed POINT (256754.5 4110274)       2.201233
+
+# Task 10
+
+Simple feature collection with 2 features and 3 fields
+geometry type:  MULTIPOINT
+dimension:      XY
+bbox:           xmin: 256238.5 ymin: 4110088 xmax: 257465.5 ymax: 4111372
+projected CRS:  WGS 84 / UTM zone 11N
+# A tibble: 2 x 4
+  plot_type   elevation canopy_height                                              geometry
+  <fct>           <dbl>         <dbl>                                      <MULTIPOINT [m]>
+1 Distributed      382.          9.22 ((256254.5 4110088), (256737.7 4110949), (256754.5 4…
+2 Tower            385.         14.9  ((256238.5 4110270), (256798.3 4110296), (257465.5 4…

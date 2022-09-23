@@ -16,8 +16,7 @@ string in the `sequence` variable has the base `u`.
 
 Name the function `dna_or_rna()` and have it take `sequence` as an argument.
 Have the function return one of three outputs: `"DNA"`, `"RNA"`, or `"UNKNOWN"`.
-Add documentation describing what the function does. Call the function on each
-of the following sequences.
+Call the function on each of the following sequences.
 
 ```
 seq1 <- "ttgaatgccttacaactgatcattacacaggcggcatgaagcaaaaatatactgtgaaccaatgcaggcg"
@@ -26,4 +25,4 @@ seq3 <- "gaaagcaagaaaaggcaggcgaggaagggaagaagggggggaaacc"
 ```
 
 *Challenge (**optional**)*: Figure out how to make your function work with both
-upper and lower case letters, or even strings with mixed capitalization*
+upper and lower case letters, or even strings with mixed capitalization.

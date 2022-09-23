@@ -7,7 +7,7 @@ exercises: ['Format the Code', 'Dinosaur Size Distribution', 'Cocili Data Explor
 points: [20, 40, 40, 'optional']
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

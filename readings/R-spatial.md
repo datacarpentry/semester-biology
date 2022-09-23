@@ -20,7 +20,8 @@ language: R
   * [Projections](https://datacarpentry.org/organization-geospatial/03-crs/index.html)
 
 * Additional information
-
+  
+  * [Overview of Coordinate Reference Systems (CRS) in R](https://www.nceas.ucsb.edu/sites/default/files/2020-04/OverviewCoordinateReferenceSystems.pdf)
   * [Rasters in R](https://datacarpentry.org/r-raster-vector-geospatial/01-raster-structure/index.html)
   * Vectors in R 
     * [Part I](https://datacarpentry.org/r-raster-vector-geospatial/06-vector-open-shapefile-in-r/index.html)

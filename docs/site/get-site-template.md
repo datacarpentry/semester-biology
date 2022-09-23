@@ -1,10 +1,10 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Strip Course Content for Site Template
 ---
 
-### From most up-to-date course version on [GitHub]({{ site.github.repo }})...
+## From most up-to-date course version on [GitHub]({{ site.github.repo }})...
 
 - Familiarize yourself with the [site]({{ site.baseurl }}/docs/site/site-directory) and [course]({{ site.baseurl }}/docs/site/course-structure) structure.
   - `_includes/`, `_layouts/`, `nav/`, and `public` contain essential site 
@@ -23,7 +23,7 @@ of content or replaced with a descriptive placeholder.
 - For [`README.md`, `START-for-self-guided-students.md`]:
   - Revise for general template language.
 
-### OR, `pull` a well out-dated, but largely generated, template...
+## OR, `pull` a well out-dated, but largely generated, template...
 
 ```
 git checkout -b make-template master

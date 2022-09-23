@@ -1,19 +1,19 @@
 ---
 layout: page
 title: Syllabus
-catalog: WIS 6934
+catalog: ALS 6501
 credits: 3
-semester: Fall 2020
+semester: Fall 2022
 professor: Dr. Ethan White (he/him)
-office: Zoom
+office: Room 1 Building 150
 email: ethanwhite@ufl.edu
-phone: 
-schedule: ['Tuesdays, 3-3:50 pm ET', 'Fridays, 11:45-1:40 pm ET']
-location: Zoom
-office_hours: "Tuesday & Wednesday 2-3 pm ET"
-office_hours_location: Zoom
-TA: Andrew Marx
-TA_email: andrewjmarx@ufl.edu
+phone: 352-294-2081
+schedule: ['Tuesdays, 12:50-1:40 pm ET', 'Fridays, 11:45-1:40 pm ET']
+location: Newins-Ziegler Hall (NZH) 222
+office_hours: "TBD"
+office_hours_location: "TBD"
+TA: Virnaliz Cruz
+TA_email: virnaliz.cruzher@ufl.edu
 ---
 
 ## Course
@@ -74,6 +74,8 @@ periodically for updates.
 
 ### Course Communications
 
+Canvas: Messages in canvas are the preferred method for course communication
+
 Email: [{{ page.email }}](mailto:{{ page.email }})
 
 
@@ -129,7 +131,7 @@ Students completing this course will be able to:
 This course contributes to the 'Quantitative Skills' and 'Conducting and
 Analyzing Independent/Original Research' Student Learning Outcomes specified in
 the
-[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](http://assessment.aa.ufl.edu/Data/Sites/22/media/2013-14gaap/cals/2013-14-cals-wildlife-ecol-and-consvn-phd-aap.pdf),
+[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](https://fora.aa.ufl.edu/docs/1//16Apr13//CALS_WIE_PHD_GAAP_2012-2013_final.pdf),
 by providing students the skills and knowledge they need to manage and analyze
 the data used in research.
 
@@ -141,7 +143,7 @@ learning to program and work with data requires actively working on
 computers. Flipped classes work well for all kinds of content, but I think they
 work particularly well for computer oriented classes. If you're interested in
 knowing more take a look at this great
-[info-graphic](https://www.knewton.com/flipped-classroom-2/).
+[flipped classroom info-graphic](https://assignmentbro.com/wp-content/uploads/2021/02/flipped-classroom-infographics-scaled.jpg).
 
 
 ### Instructional Methods
@@ -160,31 +162,10 @@ minute demonstrations on the concepts followed by time to work on exercises.
 
 ## Course Policies
 
-### Special Policies for 2020
-
-It has been a long, exhausting, year and it will continue to be so for many of us.
-My goal is to help you learn as much as you can, while recognizing that most people have more limitations and less energy than usual.
-
-The course is being taught online for the first time due to the pandemic.
-To provide maximum flexibility the course material can be engaged with in three ways:
-
-1. Fully synchronous: Attend class during the scheduled class periods. Follow each lesson, which combine video lectures and exercises, during the class periods and ask for help as you run into questions. This is the closest approximation to how the course normally runs in-person.
-2. Synchronous Q&A: Follow each lesson before class, watching the videos and doing the exercises you can. Stop if you get confused. Come to class during the class periods and ask for help on challenges you encountered.
-3. Asynchronous: Follow the lessons online and ask for help via Piazza. This is the least ideal approach because the course is generally based around the benefits of direct student-instructor interaction to work through misunderstandings, but we'll do our best to make it work for you.
-
-The course always has flexible deadline policies (see below) and will continue to do so to support students learning under these difficult circumstances.
-There is an automatic (no request needed) 48 hour extension on all assignments for those who need it.
-If you need more time just let me know.
-You never need to disclose personal information to me to get an extension. Just let me know how long you need.
-
-Class sessions will not be recorded to improve student privacy.
-
-
 ### Attendance Policy
 
 Attendance will not be taken or factor into the grades for this class. However,
-experience suggests that students who regularly miss class often struggle to learn the
-material.
+experience suggests that students who regularly miss class often struggle to learn the material.
 
 
 ### Quiz/Exam Policy
@@ -245,14 +226,7 @@ with you to make the learning environment equitable for you and others.
 
 ### Online Course Evaluation Process
 
-Student assessment of instruction is an important part of efforts to improve
-teaching and learning. At the end of the semester, students are expectedto
-provide feedback on the quality of instruction in this course using a standard
-set of university and college criteria. These evaluations are conducted online
-at https://evaluations.ufl.edu. Evaluations are typically open for students to
-complete during the last two or three weeks of the semester; students will be
-notified of the specific times when they are open. Summary results of these
-assessments are available to students at https://evaluations.ufl.edu/results. 
+Students are expected to provide professional and respectful feedback on the quality of instruction in this course by completing course evaluations online via GatorEvals. Guidance on how to give feedback in a professional and respectful manner is available at https://gatorevals.aa.ufl.edu/students/. Students will be notified when the evaluation period opens, and can complete evaluations through the email they receive from GatorEvals, in their Canvas course menu under GatorEvals, or via https://ufl.bluera.com/ufl/. Summaries of course evaluation results are available to students at https://gatorevals.aa.ufl.edu/public-results/.
 
 
 ### University Policy on Academic Misconduct
@@ -271,9 +245,9 @@ courtesy in all email messages, threaded discussions and chats.
 ### Academic Honesty
 
 As a student at the University of Florida, you have committed yourself to uphold
-the Honor Code, which includes the following pledge:“We, the members of the
+the Honor Code, which includes the following pledge:"We, the members of the
 University of Florida community, pledge to hold ourselves and our peers to the
-highest standards of honesty and integrity.”You are expected to exhibit behavior
+highest standards of honesty and integrity. "You are expected to exhibit behavior
 consistent with this commitment to the UF academic community, and on all work
 submitted for credit at the University of Florida, the following pledge is
 either required or implied: "On my honor, I have neither given nor received
@@ -310,7 +284,7 @@ http://registrar.ufl.edu/catalog0910/policies/regulationferpa.html
 
 ## Grading Policies
 
-Grading for this course is based on 13 equally weighted assignments.
+Grading for this course is based on 12 equally weighted assignments.
 
 Exercises in assignments will be graded as follows:
 

@@ -3,7 +3,7 @@ layout: page
 title: Licenses
 ---
 
-### Instructional Material
+## Instructional Material
 
 All instructional material is made available under the [Creative Commons
 Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/). You are
@@ -34,7 +34,7 @@ With the understanding that:
 For the full legal text of this license, please see
 [http://creativecommons.org/licenses/by/4.0/legalcode](http://creativecommons.org/licenses/by/4.0/legalcode).
 
-### Software
+## Software
 
 Except where otherwise noted, the example programs and other software provided
 are made available under the [OSI](http://opensource.org)-approved [MIT
@@ -59,7 +59,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Using the "Data Carpentry" trademark
+## Using the "Data Carpentry" trademark
 
 As detailed in the Instructional Material and Software sections, everyone is
 free to use the materials provided here for running courses as long as they

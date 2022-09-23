@@ -14,7 +14,7 @@ Multi-band satellite imagery can be processed to provide a vegetation index of g
 NDVI values range from `-1.0` to `1.0`, where negative values indicate clouds, 
 snow, and water; bare soil returns values from `0.1` to `0.2`; and green vegetation returns values greater than `0.3`.
 
-Download [HARV_NDVI]({{ site.baseurl }}/data/HARV-NDVI.zip) and [SJER_NDVI]({{ site.baseurl }}/data/SJER-NDVI.zip) and place them in a folder with the NEON airborne data. The `zip` contains folders with a year's worth of NDVI sampling 
+Download [HARV_NDVI]({{ site.baseurl }}/data/harv-ndvi.zip) and [SJER_NDVI]({{ site.baseurl }}/data/sjer-ndvi.zip) and place them in a folder with the NEON airborne data. The `zip` contains folders with a year's worth of NDVI sampling 
 from MODIS. The files are in order (*and named*) by date and can be organized 
 implicitly by sampling period for analysis.
 
@@ -30,7 +30,7 @@ implicitly by sampling period for analysis.
      frame in a different `geom_point` layer.
 
 2. Extract the NDVI values from all rasters for the `HARV_plots` and
-   `SJER_plots`in `NEON-airborne/plot_locations`. Running `extract()` on a
+   `sjer_plots`in `neon-airborne/plot_locations`. Running `extract()` on a
    raster stack results in a matrix with one column per raster and one row per
    point. To more easily work with this data, we want to have one column with
    the raster names and one column per point, which you can do by transposing

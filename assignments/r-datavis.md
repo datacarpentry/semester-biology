@@ -3,11 +3,11 @@ layout: page
 element: assignment
 title: Data Visualization
 language: R
-exercises: ['Acacia and Ants', 'Mass vs Metabolism', 'Adult vs Newborn Size', 'Acacia and Ants Histograms', 'Acacia and Ants Data Manipulation']
-points: [15, 15, 20, 20, 30]
+exercises: ['Acacia and Ants', 'Mass vs Metabolism', 'Acacia and Ants Histograms', 'Acacia and Ants Data Manipulation', 'Graphing Data From Multiple Tables', 'Adult vs Newborn Size']
+points: [20, 20, 20, 20, 20, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >
@@ -16,5 +16,13 @@ points: [15, 15, 20, 20, 30]
 > - execute and visualize a regression analysis
 
 {% include reading.html %}
+
+Place this code at the start of the assignment to load all the required packages.
+
+```r
+library(dplyr)
+library(ggplot2)
+library(readr)
+```
 
 {% include assignment.html %}

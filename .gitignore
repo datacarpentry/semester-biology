@@ -5,3 +5,4 @@ Gemfile.lock
 #*
 *.Rhistory
 .jekyll-metadata
+node_modules/

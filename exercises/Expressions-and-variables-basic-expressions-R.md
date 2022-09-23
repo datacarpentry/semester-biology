@@ -15,11 +15,13 @@ Write the following calculations in the text editor.
 6. 4 ^ 2
 7. 8 / 2 ^ 2
 
-Run them to see the output in the console.
-To run them either click the `Run` button in the top-right corner of the editor or use Ctrl+Enter
-(Windows & Linux) or Command+Enter (Mac) to run the line or selection of code
-directly from your script. You can run the entire script by clicking the arrow
-next to `Source` and selecting `Source with Echo` or by using Ctrl+Shift+Enter
+Run them by either clicking the `Run` button in the top-right corner of the editor or press Ctrl+Enter
+(Windows & Linux) or Command+Enter (Mac) to run code and print the results in the console.
+
+If no code is highlighted/selected this will run the line the cursor is on.
+If you highlighted/selected a block of code it will run that entire group of lines.
+
+You can also run the entire script by clicking the arrow next to `Source` and selecting `Source with Echo` or by using Ctrl+Shift+Enter
 (Windows & Linux) or Command+Shift+Enter (Mac).
 
 To tell someone reading the code what this section of the code is about,
@@ -32,7 +34,7 @@ run. So, the start of your program should look something like:
 # Exercise 1
 
 #1.1
-2-10
+2 - 10
 
 #1.2
 3 * 5

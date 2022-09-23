@@ -7,22 +7,20 @@ language: R
 
 This is a follow-up to
 [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
-If you haven't already downloaded the
-[shrub volume data]({{ site.baseurl }}/data/shrub-volume-data.csv)
-do so now and store it in your `data` directory.
+If you don't already have the [shrub volume data]({{ site.baseurl }}/data/shrub-volume-data.csv) in your working directory download it.
 
 The following code is supposed to import the shrub volume data and calculate the
-average shrub volume for each site and, separately, for each experiment
+average shrub volume for each site and, separately, for each experiment.
 
-```
-read.csv("data/shrub-volume-data.csv")
-shrub_data %>%
-  mutate(volume = length * width * height) %>%
-  group_by(site) %>%
+```r
+read.csv("shrub-volume-data.csv")
+shrub_data |>
+  mutate(volume = length * width * height) |>
+  group_by(site) |>
   summarize(mean_volume = max(volume))
-shrub_data %>%
+shrub_data |>
   mutate(volume = length * width * height)
-  group_by(experiment) %>%
+  group_by(experiment) |>
   summarize(mean_volume = mean(volume))
 ```
 

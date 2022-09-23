@@ -1,6 +1,7 @@
 # Data Carpentry for Biologists - Semester Course
 
-[![DOI](https://zenodo.org/badge/31911336.svg)](https://zenodo.org/badge/latestdoi/31911336)
+[![JOSE DOI](https://jose.theoj.org/papers/10.21105/jose.00139/status.svg)](https://doi.org/10.21105/jose.00139)
+[![Zenodo DOI](https://zenodo.org/badge/31911336.svg)](https://zenodo.org/badge/latestdoi/31911336)
 
 This is a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
 with data through programming, database management and computing more generally.
@@ -25,10 +26,21 @@ available as templates for contributions of new materials and other materials
 that are specific to the course (e.g., the syllabus) are developed in a way to
 facilitate easy customization. 
 
-- Here are some examples of customized courses:
-  - [Introduction to Ecology](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/)
-  - [Data Science for Agriculture](https://palderman.github.io/DataSciAg/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman)
+Here are some examples of courses using the infrastructure and material from this course:
 
+* [Data Science for Biologists](https://catherinehulshof.github.io/Fall2020-biology/) at Virginia Commonwealth University
+* [Data Science for Agriculture](https://palderman.github.io/DataSciAg/) at Oklahoma State University
+* [Data Visualization for Plant Pathologists](https://ufvegpathology.github.io/phyto-data-viz/) at the University of Florida
+* [Data Science for SAFS](https://sr320.github.io/course-fish497-2018/) at the University of Washington
+* [Data Carpentry for Pharmacists](https://ory-data-science.github.io/semester-pharmacy/) at the University of Health Sciences and Pharmacy in St. Louis
+* [R Programming for Biologists](https://www.stonehill.edu/summer-courses-2021/undergraduate-courses/bio316a/) at Stonehill College
+* [Data Carpentry for Ecologists](https://mvevans89.github.io/ECOL-8030/) at the University of Georgia
+* [Introduction to Data Analysis for Aquatic Sciences](https://sr320.github.io/course-fish274-2019/) at the University of Washington
+* [Data Science in Omics Introduction](https://hoytpr.github.io/bioinformatics-semester/) at Oklahoma State University
+* [Ecoinformatics](https://globalecologybiogeography.github.io/Ecoinformatics/) at Kenyon College
+* [Data Management for Biologists](https://ericlind.github.io/data-mgmt-4-biologists/syllabus/) at the University of Minnesota
+* [Introducing Agroecology: The Basics of Agroecology for Practitioners](https://trec-agroecology.github.io/introducing-agroecology/) at the University of Florida
+* [Data Science with R](https://datasciencer.tychen.us/)
 
 ## Where is everything
 
@@ -62,6 +74,11 @@ same content. In particularly we actively use
 [Software Carpentry](http://software-carpentry.org/lessons.html) workshop
 materials. However, in cases where the necessary material doesn't exist
 elsewhere it can certainly be added here.
+
+## Accessibility
+
+New pull requests to this site are scanned using [pa11y](https://github.com/pa11y/pa11y) and [pa11y-ci](https://github.com/pa11y/pa11y-ci) to ensure that additions to the site follow best practices for accessibility.
+If you discover any accessibility issues with the site please open an issue and we'll get them fixed.
 
 
 ## Using Jekyll to build your own course website
@@ -133,6 +150,28 @@ Locally: `http://localhost:4000/exercises/my_awesome_exercise`
 After pushing to GitHub:
 `https://yourusername.github.io/semester-biology/exercises/my_awesome_exercise`
 
+
+## Dependencies
+
+Building the site locally requires a local Ruby installation with 3 packages (gems):
+
+* jekyll
+* github-pages
+* jekyll-sitemap
+
+For help with installation see:
+
+* [Installing Ruby Documentation](https://www.ruby-lang.org/en/documentation/installation/)
+* [Installing Jekyll Documention](https://jekyllrb.com/docs/installation/)
+* [Using GitHub Pages with Jekyll Documenation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
+
+One you have installed Ruby and the jekyll gem go to the root of the site repository and run:
+
+```bash
+bundle install
+```
+
+to install the rest of the dependencies.
 
 ## Acknowledgements
 

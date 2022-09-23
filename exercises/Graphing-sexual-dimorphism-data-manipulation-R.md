@@ -9,7 +9,7 @@ This is a follow up to [Sexual Dimorophism Exploration]({{ site.baseurl }}/exerc
 
 Having done some basic visualization of the
 [Lislevand et al. 2007](https://doi.org/10.1890/06-2054)
-[dataset of bird size measures](http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt)
+[dataset of bird size measures](https://esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt)
 you realize that you'll need to do some data manipulation to really get at the
 questions you want to answer.
 

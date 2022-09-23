@@ -5,9 +5,9 @@ title: Choices with Functions
 language: R
 ---
 
-The [UHURU experiment](http://www.esapubs.org/archive/ecol/E095/064/metadata.php)
+The [UHURU experiment](https://esapubs.org/archive/ecol/E095/064/metadata.php)
 in Kenya has conducted a survey of *Acacia drepanolobium* among each of their
-ungulate exclosure treatments. Data for the survey is available [here](http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt)
+ungulate exclosure treatments. Data for the survey is available [here](https://esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt)
 in a tab delimited (`"\t"`) format. Each of the individuals surveyed were
 measured for branch circumference (`CIRC`) and canopy width (`AXIS1`) and was
 identified for the associated ant-symbiont species present (`ANT`). 
@@ -26,7 +26,7 @@ report_rsquared <- function(data, species, formula){
 }
 ```
 
-1. Execute the function using the [UHURU data](http://www.esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt)
+1. Execute the function using the [UHURU data](https://esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLOBIUM_SURVEY.txt)
    and specifying `species = "CM"` and `formula = "AXIS1~CIRC"`.
 2. Modify the function so that it also determines `if()` the `rsquared` is
    significant based on a given `threshold`. The modified function should 

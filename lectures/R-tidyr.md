@@ -1,7 +1,7 @@
 ---
 layout: page
 element: lecture
-title: tidyr
+title: Cleaning Messy Data
 language: R
 ---
 

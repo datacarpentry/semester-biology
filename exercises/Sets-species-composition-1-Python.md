@@ -31,9 +31,9 @@ union of the two species lists.
 
 Determine the Jaccard similarity for all pairs of sites in a tallgrass
 prairie from Oklahoma published by [McGlinn et al.
-2010](http://www.esapubs.org/archive/ecol/E091/124/default.htm). The
+2010](https://esapubs.org/archive/ecol/E091/124/default.htm). The
 data you will need is in the [species presence
-table](http://www.esapubs.org/archive/ecol/E091/124/TGPP_pres.csv).This
+table](https://esapubs.org/archive/ecol/E091/124/TGPP_pres.csv).This
 dataset includes information on the scales at which species were present
 and their location within each plot (the Corner and Scale columns), but
 for the purposes of this analysis we are only interested in whether or
@@ -45,7 +45,7 @@ first column is the year, the second column is the plot id for one of
 the two plots, the third column is the plot id for the other of the two
 plots, and the fourth column is the Jaccard similarity.
 
-#### Using sets
+## Using sets
 
 There is only one requirement for how you go about answering this
 problem and that is that you use sets to do so. Specifically your
@@ -54,7 +54,7 @@ between a pair of sites when passed two sets as arguments. Each set is a
 species list for one site. This is one of the easiest to implement, most
 readable, and most computationally efficient ways to solve this problem.
 
-#### Problem decomposition
+## Problem decomposition
 
 When tackling a broad problem like this it is always important to
 think about how you are going to [decompose the

@@ -6,9 +6,10 @@ title: Portal Data Aggregation
 language: R
 ---
 
-Download a copy of the
-[Portal Teaching Database surveys table](https://ndownloader.figshare.com/files/2292172)
-and load it into R using `read.csv()`.
+If the file [surveys.csv](https://ndownloader.figshare.com/files/2292172) is not
+already in your working directory download it.
+
+Load `surveys.csv` into R using `read.csv()`.
 
 1. Use the `group_by()` and `summarize()` functions to get a count of the number
    of individuals in each species ID.

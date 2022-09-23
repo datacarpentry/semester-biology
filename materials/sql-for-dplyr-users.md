@@ -7,12 +7,8 @@ language: SQL
 
 > Remember to
 >
-> * Install DB Browser
-> * Set font sizes to larger values under:
-> * Preferences -> Data Browers -> Font size
-> * Preferences -> SQL -> SQL editor font size & SQL log font size
+> * Install `DBI`, `RSQLite`, and `dbplyr`
 > * Download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/11188550).
-> * Open `portal_mammals.sqlite` in DB Browser.
 
 ### Why Databases
 
@@ -23,17 +19,55 @@ language: SQL
 
 ### Database Queries
 
-* Data is separate from manipulations of the data
-* Tables - store the data
-* Queries - store questions about the data
-  * If we update the data, the query asks the same question of the new data.
+* Data is stored in tables - equivalent of data frames
+* Queries store questions about the data - equivalent of dplyr pipelines
+* These queries are written in "Structured Query Language" or SQL for short
+* Some folks also pronounce this "sequel"
 
-### Using DB Browser
+### Lots of SQL Databases
 
-* `Database Structure` - what is in this database
-* `Browse Data` - use dropbox to view data in tables + filter for data checks
-* `Execute SQL` - where we write queries
-* Run SQL using play button (or w/ `Ctrl/command` + `Enter`)
+* MySQL
+* PostgreSQL
+* MS Access
+
+* We'll use SQLite
+* Simple - each database is just a file
+* Works basically anywhere with no setup
+* Great for relatively small (million row) projects that don't require simultaneous data entry by multiple folks
+* Recommend PostgreSQL if you need something more powerful
+
+### Using RStudio with SQLite
+
+* We can RStudio to connect to SQL databases and run queries in them
+* We'll start by doing this directly to learn SQL
+* Then we'll learn how to work with databases inside our R scripts
+
+* First let's install some packages that RStudio needs
+
+```r
+install.packages(c('DBI', 'RSQLite'))
+```
+
+* Then download the SQLite database we're going to work with
+
+```r
+download.file("https://ndownloader.figshare.com/files/11188550",
+              "portal.sqlite",
+              mode = "wb")
+```
+
+* The `mode = "wb"` makes sure that this binary file downloads properly on all operating systems
+* Finally connect to the database so that we can work with it
+* `New File` -> `SQL Script`
+* The special comment on Line 1 is RStudio's way of connecting to the database
+* Add `, dbname = "portal.sqlite"` to get
+
+```r
+-- !preview conn=DBI::dbConnect(RSQLite::SQLite(), dbname = "portal.sqlite")
+```
+
+* Save file
+* You should see the number 1 as output
 
 ### Selecting columns
 
@@ -51,13 +85,6 @@ FROM surveys;
 
 ```sql
 SELECT year, month, day
-FROM surveys;
-```
-
-* For unique values use `DISTINCT`.
-
-```sql
-SELECT DISTINCT year, month, day
 FROM surveys;
 ```
 
@@ -112,12 +139,6 @@ a query like this.
   * Capitalize SQL commands
   * Lowercase variable names
   * One clause/line
-
-### Saving queries for future use
-
-* Views save queries to run again.
-* Create them by clicking button next to log and selecting `Save as view`
-* If you need to replace a view first do `Database Structure` -> Right click on view -> `Delete View`
 
 > Do the [Simple WHERE]({{ site.baseurl }}/exercises/Basic-queries-simple-where-SQL) exercise.
 
@@ -200,31 +221,27 @@ Order by - On time
 
 ### Basic join
 
-* Find the unique dates that each plot type was sampled on
+* Add genus and species data to surveys table
 * `inner_join` is `JOIN` or `INNER JOIN`
 * `USING` specifies the columns to join on if the tables share column names (like `by` in `dplyr`)
 
 ```sql
-SELECT DISTINCT year, month, day, plot_type 
+SELECT * 
 FROM surveys
-JOIN plots USING (plot_id);
+JOIN species USING (species_id)
 ```
+
+* If the column names don't match you can use `ON` instead of `USING`
 
 * Unlike in `dplyr` you must specify the columns to join on (or things go badly)
 
 ```sql
-SELECT year, month, day, plot_type
+SELECT * 
 FROM surveys
-JOIN plots
+JOIN species
 ```
 
-* If the column names don't match between tables use `ON`
-
-```sql
-SELECT DISTINCT year, month, day, plot_type
-FROM surveys
-JOIN species on surveys.species_id = species.species_id;
-```
+* This just combines every row in `surveys` with every row in `species`, which isn't what we want
 
 ### Multi-table join
 

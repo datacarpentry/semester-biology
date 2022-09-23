@@ -3,11 +3,11 @@ layout: page
 element: assignment
 title: Repeating Things 1
 language: R
-exercises: ['Vectorized Genus Extraction', 'Species Name Capitalization with Apply', 'Size Estimates Vectorized', 'Size Estimates By Name Apply', 'Tree Biomass Challenge', 'Crown Volume Calculation', 'Climate Space Iteration']
-points: [15, 15, 20, 20, 30, optional, optional]
+exercises: ['Size Estimates Vectorized', 'Size Estimates With Maximum', 'Size Estimates By Name Apply', 'Tree Biomass Challenge', 'Crown Volume Calculation']
+points: [30, 30, 40, optional, optional]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >
@@ -16,5 +16,13 @@ points: [15, 15, 20, 20, 30, optional, optional]
 > - integrate custom functions with dplyr for iteration
 
 {% include reading.html %}
+
+
+Place this code at the start of the assignment to load all the required packages.
+
+```r
+library(dplyr)
+library(ggplot2)
+```
 
 {% include assignment.html %}

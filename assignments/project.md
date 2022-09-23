@@ -7,7 +7,7 @@ exercises: ['Climate Space', 'Megafaunal Extinction']
 points: [40, 60]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

@@ -6,7 +6,7 @@ language: R
 exercises: ['Connect and Query', 'Automate Query', 'Export to Database', 'NEON Database', 'Tree Biomass']
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

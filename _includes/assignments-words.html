@@ -1,0 +1,111 @@
+<table>
+
+  <tr>
+    <th width="50">Week</th>
+    <th width="300">Topic</th>
+    <th width="50">Reading</th>
+    <th width="50">Lesson</th>
+    <th width="50">Lecture</th>
+    <th width="50">Assignment</th>
+  </tr>
+
+  {% for assignment in page.assignments %}
+
+    {% for otherpage in site.pages %}
+      {% if otherpage.title == assignment and otherpage.element == 'assignment' %}
+        {% capture language %}{{ otherpage.language }}{% endcapture %}
+        {% capture assignment_link %}{{ otherpage.url | prepend: site.baseurl }}{% endcapture %}
+        {% break %}
+      {% endif %}
+      {% assign language = nil %}
+      {% assign assignment_link = nil %}
+    {% endfor %}
+
+    {% for lecturepage in site.pages %}
+      {% if language %}
+        {% if lecturepage.title == assignment and lecturepage.element == 'lecture' and lecturepage.language == language %}
+          {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% else %}
+        {% if lecturepage.title == assignment and lecturepage.element == 'lecture' %}
+          {% capture language %}{{ lecturepage.language }}{% endcapture %}
+          {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+      {% assign lecture_link = nil %}
+    {% endfor %}
+
+    {% for readingpage in site.pages %}
+      {% if language %}
+        {% if readingpage.title == assignment and readingpage.element == 'reading' and readingpage.language == language %}
+          {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% else %}
+        {% if readingpage.title == assignment and readingpage.element == 'reading' %}
+          {% capture language %}{{ readingpage.language }}{% endcapture %}
+          {% capture reading_link %}{{ readingpage.url | prepend: site.baseurl }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+      {% assign reading_link = nil %}
+    {% endfor %}
+
+    {% for lessonpage in site.pages %}
+    {% if language %}
+      {% if lessonpage.title == assignment and lessonpage.element == 'lesson' and lessonpage.language == language %}
+        {% capture lesson_link %}{{ lessonpage.url | prepend: site.baseurl }}{% endcapture %}
+        {% break %}
+      {% endif %}
+    {% else %}
+      {% if lessonpage.title == assignment and lessonpage.element == 'lesson' %}
+        {% capture language %}{{ lessonpage.language }}{% endcapture %}
+        {% capture lesson_link %}{{ lessonpage.url | prepend: site.baseurl }}{% endcapture %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+    {% assign lesson_link = nil %}
+  {% endfor %}
+
+    <tr>
+      <td align="right">{{ forloop.index }}</td>
+      <td>{{ assignment }}</td>
+
+      {% if reading_link %}
+        <td align="center"><a href="{{ reading_link }}">
+          Week {{ forloop.index }} Readings</a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      {% endif %}
+
+      {% if lesson_link %}
+        <td align="center"><a href="{{ lesson_link }}">
+            Week {{ forloop.index }} Videos</a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-play-circle fa-lg"></i></font></td>
+      {% endif %}      
+
+      {% if lecture_link %}
+        <td align="center"><a href="{{ lecture_link }}">
+            Week {{ forloop.index }} Notes</a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-comment fa-lg"></i></font></td>
+      {% endif %}
+
+      {% if assignment_link %}
+        <td align="center"><a href="{{ assignment_link }}">
+            Week {{ forloop.index }} Assignment</a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-keyboard-o fa-lg"></i></font></td>
+      {% endif %}
+    </tr>
+
+  {% endfor %}
+
+</table>

@@ -3,12 +3,12 @@ layout: page
 title: Lectures
 ---
 
-### SQL
+## SQL
 
 * [Introduction to Databases](SQL-data)
 * [Database Structure and Joins](SQL-queries)
 
-### R
+## R
 
 * [Introduction to R and RStudio](R-intro)
 * [Working with Data](R-data)
@@ -16,12 +16,12 @@ title: Lectures
 * [Programming Fundamentals 1](R-fundamentals-1)
 * [Programming Fundamentals 2](R-fundamentals-2)
 * [`knitr`](R-knitr)
-* [Working with Spatial Data](R-spatial)
+* [Working with Spatial Data](R-spatial-1)
 * [Working with Databases](R-databases)
 * [Version Control Basics](R-git)
 * [Putting It All Together](R-capstone)
 
-### Git
+## Git
 
 * [Git with R](R-git)
 

@@ -7,7 +7,7 @@ exercises: ['Use and Modify with Apply', 'Crown Volume Calculation', 'Use and Mo
 points: [15, 15, 15, 20, 15, 20]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

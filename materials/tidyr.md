@@ -12,7 +12,7 @@ language: SQL
 3. One value in each cell
 
 * Unfortunately lots of existing data doesn't follow these rules
-* Need to convert them to to this tidy structure for analysis
+* Need to convert them to this tidy structure for analysis
 * Use a package called `tidyr`
 
 ```
@@ -28,7 +28,7 @@ library(dplyr)
 > Copy link to Western Ghats tree data from datasets page
 
 ```
-raw_data = read.csv("http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt", sep = "\t")
+raw_data = read.csv("http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt", sep = "\t")
 ```
 
 > View data
@@ -38,6 +38,15 @@ raw_data = read.csv("http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev
 * What would a better structure be?
 
 > Lead discussion to correct structure
+
+* To convert the raw data into clean data we'll use a data cleaning pipeline like the data manipulation pipelines we've developed previously
+* Let's start by adding a `treeid` column to our data frame using the `mutate` function from `dplyr`
+* We want one `treeid` for each row because there is one tree for each row
+
+```r
+clean_data <- raw_data %>%
+  mutate(treeid = 1:nrow(raw_data))
+```
 
 * To get the data in this form we can use `pivot_longer`
     * Removes redundant columns
@@ -49,16 +58,11 @@ raw_data = read.csv("http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev
 
 ```r
 clean_data <- raw_data %>%
+  mutate(treeid = 1:nrow(raw_data)) %>%
   pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth")
 ```
 
-* The colon specifies all columns staring at `TreeGirth1` and ending at `TreeGirth2`
-* Could also specify the columns to *not* pivot
-
-```r
-clean_data <- raw_data %>%
-  pivot_longer(c(-PlotID, -SpCode), names_to = "stem", values_to = "girth")
-```
+* The colon specifies all columns starting at `TreeGirth1` and ending at `TreeGirth5`
 
 > View data
 
@@ -66,7 +70,8 @@ clean_data <- raw_data %>%
 
 ```r
 clean_data <- raw_data %>%
-  pivot_longer(c(-PlotID, -SpCode), names_to = "stem", values_to = "girth") %>%
+  mutate(treeid = 1:nrow(raw_data)) %>%
+  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
   filter(girth != 0)
 ```
 
@@ -84,13 +89,30 @@ clean_data <- raw_data %>%
 
 ```r
 clean_data <- raw_data %>%
-  pivot_longer(c(-PlotID, -SpCode), names_to = "stem", values_to = "girth") %>%
+  mutate(treeid = 1:nrow(raw_data)) %>%
+  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
   filter(girth != 0) %>%
   extract(stem, 'stem', 'TreeGirth(.)')
 ```
 
 * `TreeGirth.` means the word "TreeGirth" followed by a single value
 * The `()` indicate what part of this to extract, so just the number at the end
+
+* This gives us the result we want, with just the stem number in the `stem` column
+* But you may notice that this number is on the left side of the column, not the right
+* That's because the number is still stored as a character, because it was extracted from a string
+* To convert it to it's actual type we can add the optional argument `convert = TRUE` to `extract
+
+```r
+clean_data <- raw_data %>%
+  mutate(treeid = 1:nrow(raw_data)) %>%
+  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
+  filter(girth != 0) %>%
+  extract(stem, 'stem', 'TreeGirth(.)', convert = TRUE)
+```
+
+* This attempts to convert the values from characters to their actual type
+* This is a good addition when extracting numbers because then you can work with the column as numbers
 
 ### Separate
 
@@ -105,7 +127,7 @@ clean_data <- raw_data %>%
 
 ```r
 clean_data <- raw_data %>%
-  pivot_longer(c(-PlotID, -SpCode), names_to = "stem", values_to = "girth") %>%
+  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
   filter(girth != 0) %>%
   extract(stem, 'stem', 'TreeGirth(.)') %>%
   separate(SpCode, c('genus', 'species'), 4)

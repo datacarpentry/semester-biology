@@ -9,8 +9,8 @@ The relationship between the body size of an organism and its metabolic
 rate is one of the most well studied and still most controversial areas
 of organismal physiology. We want to graph this relationship in the
 [Artiodactyla](http://en.wikipedia.org/wiki/Even-toed_ungulate) using a
-subset of data from a large compilation of body size data (Savage et al.
-2004). You can copy and paste this data frame into your program:
+subset of data from a large compilation of body size data ([Savage et al.
+2004](https://doi.org/10.1111/j.0269-8463.2004.00856.x)). You can copy and paste this data frame into your program:
 
 ```
 size_mr_data <- data.frame(
@@ -33,7 +33,7 @@ size_mr_data <- data.frame(
 Make the following plots with appropriate axis labels:
 
 1. A plot of body mass vs. metabolic rate
-2. A plot of body mass vs. metabolic rate, with logarithmically scaled axes
+2. A plot of body mass vs. metabolic rate, with log10 scaled axes
     (this stretches the axis, but keeps the numbers on the original scale), and
     the point size set to 3.
 3. The same plot as (2), but with the different families indicated using color.

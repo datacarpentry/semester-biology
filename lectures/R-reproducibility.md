@@ -1,7 +1,8 @@
 ---
+
 layout: page
 element: lecture
-title: Basics of Reproducibility
+title: Review + Reproducibility
 language: R
 ---
 

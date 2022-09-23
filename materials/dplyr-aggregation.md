@@ -14,38 +14,66 @@ time: 30
 
 * Aggregation combines rows into groups based on one of more columns.
 * Calculates combined values for each group.
-* First, group the data frame.
+* First step, group the data frame.
+* Let's group it by `year`
+* `group_by`
+* Arguments: 1) table to work on; 2) columns to group by 
 
-```
-group_by(surveys, species_id)
+```r
+group_by(surveys, year)
 ```
 
 * Different looking kind of `data.frame`
     * Source, grouping, and data type information
+* Store the data frame in a variable to use in the next step
 
 ```r
-surveys_by_species <- group_by(surveys, species_id)
+surveys_by_year <- group_by(surveys, year)
 ```
 
-* Use `summarize()` to calculate values for each group.
+* After grouping a data frame use `summarize()` to calculate values for each group.
 * Count the number of rows for each group (individuals in each species).
+* `summarize`
+* Arguments
+  * Table to work on, which needs to be a grouped table
+  * One additional argument for each calculation we want to do for each group
+    * New column name to store calculated value
+    * `=`
+    * Calculation that we want to perform for each group
+    * We'll use the function `n` which is a special function that counts the rows in the table
 
 ```r
-summarize(surveys_by_species, abundance = n())
+year_counts <- summarize(surveys_by_year, abundance = n())
 ```
 
 * Can group by multiple columns
+* Count the number of individuals in each plot in each year
 
 ```r
-surveys_by_species_plot <- group_by(surveys, species_id, plot_id)
-summarize(surveys_by_species, abundance = n())
+surveys_by_plot_year <- group_by(surveys, plot_id, year)
+plot_year_counts <- summarize(surveys_by_plot_year, abundance = n())
 ```
 
-* Use any function that returns a single value from a vector.
-* E.g., mean, max, min
+* Just like with other `dplyr` functions we could write this using pipes instead
 
 ```r
-species_weight <- summarize(surveys_by_species_plot, avg_weight = mean(weight))
+plot_year_counts <- surveys |>
+  group_by(plot_id, year) |>
+  summarize(abundance = n())
+```
+
+> Do [Portal Data Aggregation 1-2]({{ site.baseurl }}/exercises/Portal-data-aggregation-R/).
+
+
+* We can also do multiple calculations using summarize
+* Use any function that returns a single value from a vector.
+* E.g., mean, max, min
+* We'll calculate the number of individuals in each plot year combination and their average weight
+
+```r
+plot_year_count_weight <- surveys |>
+  group_by(plot_id, year) |>
+  summarize(abundance = n(), avg_weight = mean(weight))
 ```
 
 * *Open table*
@@ -53,16 +81,22 @@ species_weight <- summarize(surveys_by_species_plot, avg_weight = mean(weight))
     * `mean(weight)` returns `NA` when `weight` has missing values (`NA`)
 * Can fix using `mean(weight, na.rm = TRUE)`
 
-```
-species_weight <- summarize(surveys_by_species,
-                            avg_weight = mean(weight, na.rm = TRUE))
+```r
+plot_year_count_weight <- surveys |>
+  group_by(plot_id, year) |>
+  summarize(abundance = n(),
+            avg_weight = mean(weight, na.rm = TRUE))
 ```
 
 * Still has `NaN` for species that have never been weighed
-* Can use `na.omit()` to drop rows with `NA` or `NaN` in any column
+* Can filter using `!is.na`
 
-```
-na.omit(surveys_weight)
+```r
+plot_year_count_weight <- surveys |>
+  group_by(plot_id, year) |>
+  summarize(abundance = n(),
+            avg_weight = mean(weight, na.rm = TRUE)) |>
+  filter(!is.na(avg_weight))
 ```
 
-> Do [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
+> Do [Portal Data Aggregation 3]({{ site.baseurl }}/exercises/Portal-data-aggregation-R/).

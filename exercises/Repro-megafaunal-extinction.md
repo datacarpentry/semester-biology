@@ -10,13 +10,13 @@ There were a relatively large number of extinctions of mammalian species roughly
 are interested in understanding if there were differences in the size of the
 species that went extinct and those that did not. You are going to reproduce the
 three main figures from one of the major papers on this topic [Lyons et al.
-2004](https://naturalhistory.si.edu/ETE/_LooyVersion/_img_ete/pubpdfs/LyonsEER.pdf).
+2004](http://www.evolutionary-ecology.com/issues/v06n03/ddar1499.pdf).
 
 You will do this using a 
-[large dataset of mammalian body sizes](http://www.esapubs.org/archive/ecol/E084/094/#data)
+[large dataset of mammalian body sizes](https://esapubs.org/archive/ecol/E084/094/#data)
 that has data on the mass of recently extinct mammals as well as extant mammals
 (i.e., those that are still alive today). Take a look at the
-[metadata](http://www.esapubs.org/archive/ecol/E084/094/metadata.htm) to
+[metadata](https://esapubs.org/archive/ecol/E084/094/metadata.htm) to
 understand the structure of the data.
 
 1. Import the data into R. As with most real world data there are a number of

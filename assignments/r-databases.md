@@ -7,7 +7,7 @@ exercises: ['Simple WHERE', 'COUNT', 'Basic Join', 'Multi-table Join', 'Link to 
 points: [10, 10, 20, 20, 20, 20]
 ---
 
-#### Learning Objectives
+### Learning Objectives
 
 > Following this assignment students should be able to:
 >

@@ -5,21 +5,19 @@ title: Crown Volume Calculation
 language: R
 ---
 
-The
-[UHURU experiment](http://www.esapubs.org/archive/ecol/E095/064/metadata.php) in
+The UHURU experiment in
 Kenya has conducted a survey of *Acacia* and other tree species in ungulate
 exclosure treatments. Data for the tree data is
-available [here](http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt)
+available [here](https://ndownloader.figshare.com/files/5629536)
 in a tab delimited (`"\t"`) format. Each of the individuals surveyed were
 measured for tree height (`HEIGHT`) and canopy size in two directions (`AXIS_1`
 and `AXIS_2`). Read these data in using the following code: 
 
 ```
-tree_data <- read.csv("http://www.esapubs.org/archive/ecol/E095/064/TREE_SURVEYS.txt",
+tree_data <- read.csv("https://ndownloader.figshare.com/files/5629536",
                  sep = '\t',
                  na.strings = c("dead", "missing", "MISSING",
-                                "NA", "?", "3.3."),
-                 stringsAsFactors = FALSE)
+                                "NA", "?", "3.3."))
 ```
 
 

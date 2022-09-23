@@ -1,10 +1,10 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Manage Course Files
 ---
 
-### File Locations and Formats
+## File Locations and Formats
 
 Core teaching materials are stored in the relevant folders including
 `lectures/`, `materials/`, and `readings/`.
@@ -16,7 +16,7 @@ Most of the other folders and files support creating the course website using
 
 Many of the file names and [front matter](https://jekyllrb.com/docs/frontmatter/) content values are coordinated across course materials. File names and front matter must be revised carefully according to the [course structure]({{ site.baseurl }}/docs/site/course-structure) and [file templates]({{ site.baseurl }}/docs/).
 
-### Manage Files
+## Manage Files
 
 - Create or modify a [Markdown file](http://daringfireball.net/projects/markdown/basics) in the `assignments/` directory.
  
@@ -24,7 +24,7 @@ Many of the file names and [front matter](https://jekyllrb.com/docs/frontmatter/
 
 - [Add, commit, and push](https://help.github.com/articles/create-a-repo/#commit-your-first-change) the new or modified file to GitHub to get the content added to the website.
 
-### Preview changes locally using Jekyll
+## Preview changes locally using Jekyll
 
 If you want to view your changes locally, before pushing them to the live
 website, you'll need to setup [Jekyll](http://jekyllrb.com/) locally. GitHub 

@@ -1,25 +1,25 @@
 ---
-layout: exercise
+layout: page
 topic: Help
 title: Course Structure
 ---
 
-### Custom Information
+## Custom Information
 
 - `_config.yml`: Customize set up information for use as [`site.variables`](https://jekyllrb.com/docs/variables/)
 - `index.html`: Course description and site navigation
 - `about/`: `acknowledgements.md`, `audience.md`, and `why-.` files
 
-### Initialization Materials
+## Initialization Materials
 
-#### Self-Guided
+### Self-Guided
 - `START-for-self-guided-students.md`: Anyone should be able to start from here
 
-#### Course / Workshop
+### Course / Workshop
 - `computer-setup.md`: List preparations for prerequisite knowledge & technology 
 - `syllabus.md`: Course details and policy. 
 
-### Layout and Linkages
+## Layout and Linkages
  
 ```
      START-for-self-guided-students.md      syllabus.md 

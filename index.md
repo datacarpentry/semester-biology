@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+title: Home
 ---
 
 An introduction to working with data for biologists including: data structure, data manipulation, visualization, basic programming, and databases.

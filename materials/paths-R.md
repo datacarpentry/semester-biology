@@ -5,16 +5,53 @@ title: Paths
 language: R
 ---
 
+### (optional) If Using RStudio Cloud
+
+* So far in this course we've been using RStudio Cloud and placing data files where R knows to find them for you
+* Working with data files on your own computer is a little more complicated
+* But in this lesson we'll learn how to do this effectively
+
 ### Introduction to Paths
 
 * To use data stored on a computer we need to tell R where it is
 * This is done using paths
-* *Go to data page and download shrub dimensions data to a datacarp directory*
-* Paths can be absolute
+* This is a description of the directories where our files are stored
+* Let's go to the course website and download some data
+* https://datacarpentry.org/semester-biology/materials/datasets
+* This page contains all of the data we use in class
+* Download Shrub Dimensions data
+* If we click on this link it will download, but where did it download to
+* Click on the arrow to 'Show in Folder'
+* The details will look different depending on the operating system
+* But, generally, across the top you'll see the folder that things are stored in
 
+* Go back to RStudio
+* If we try to load this data just using it's filename it won't work
+
+```r
+data = read.csv("shrub-dimensions-labeled.csv")
 ```
-'/home/ethan/datacarp/shrub-dimensions-labeled.csv' # OSX/Linux
-'/Users/ethan/datacarp/shrub-dimensions-labeled.csv' # Windows
+
+* Returns the error "Cannot open file", "No such file or directory"
+* That's because it can't find the file where we've tried to load it from
+
+
+* Paths can be either relative or absolute
+* We'll start with absolute, which always describes exactly where something is on the computer
+* Data file is stored in the `Downloads` subdirectory of our `Home` directory
+* `Home` directory varies by operating system
+* On mac and Linux it is `/home/username`
+* Within that is the `Downloads` directory
+
+```r
+data = read.csv('/home/ethan/datacarp/shrub-dimensions-labeled.csv') # OSX/Linux
+```
+
+* This successfully loads the data because we've told it exactly where the file is
+* On Windows change `home` to `Users`
+
+```r
+data = read.csv('/Users/ethan/datacarp/shrub-dimensions-labeled.csv') # Windows
 ```
 
 * Folders/Directories are separate by `/` with the file name at the end
@@ -48,9 +85,11 @@ getwd()
 shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 ```
 
-* Download a file into working directory using `download.file()`
+* This is a relative path, because the file is in the working directory the only remaining piece is the name
 
-* For data not in the working directory - two options
+* One way to ensure that a file is in the working directory is to download it using `download.file()`
+
+* For data not in the working directory there are two options
     * tell R where it is
     * change the working directory to where it is
 * Changing the working directory is common
@@ -58,13 +97,19 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
     * Does that ever cause any issues?
         * Working on a different computer?
         * Working with someone else's files?
-* Have working directory automatically set to a common place and use relative paths
+* In general, using `setwd` means that your code will only work on a single computer
+* That's bad, so we want to have the working directory automatically and use relative paths
 
 ### Projects
 
-* Think of each project as a self-contained unit in a single folder/directory
+* The simplest way to do this is using RStudio Projects
+
+* (RStudio Cloud) In fact we've already been using them
+* (RStudio Cloud) Every time you click on an assignment or click `New Project` this creates a new project
+
+* Each project is a self-contained unit of work in a single folder/directory
 * Treat all locations as relative to that single directory
-* To do this in RStudio we use projects
+* To do this in regular RStudio we use projects
 * `File` -> `New Project` -> `New Directory` -> `New Project` -> datacarp
 * Or use `Existing Directory` to choose an existing directory
 * Creates .Rproj file
@@ -74,14 +119,8 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 * Can switch between projects using `File` -> `Recent Projects` or `Open Project`
 * Keeps track the state of RStudio when you last worked with that project
 
-> * Create a project for this assignment
-> * Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
-
-### Assignments
+### Sharing code
 
 * This idea of projects as folders is also important for how we share code
-* To turn in assignments you will submit a compressed version of the folder for that assignment
-* Demo compressing a folder
-* Version control also treats projects as folders
-
-> Assign remaining exercises. Submit as compressed main folder, see [Assignment Submission & Checklist]({{ site.baseurl }}/materials/turn-in-checklist)
+* Version control, which we'll have the opportunity to learn about later, works with the projects as folder structure
+* We can also zip a the project folder and send it to someone else and they can work with it

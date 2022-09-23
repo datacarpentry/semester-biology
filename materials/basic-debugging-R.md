@@ -27,25 +27,20 @@ time: 20 minutes
 
 ### Example
 
-> * Creat a file with the following code in it
+> * Create a file with the following code in it
 > * Run it
 > * Work through debugging the code
 
 ```r
 library(dplyr)
-library(ggplot)
 
-surveys <- read.csv('https://ndownloader.figshare.com/files/2292172')
+surveys <- read.csv('surveys.csv')
+species <- read.csv('species.csv')
 
-do_counts_by_year <- surveys %>%
+do_counts_by_year <- survey %>%
   filter(species == "DO") %>%
   group_by(year)
   summarize(count = n())
-
-ggplot(do_counts_by_year, aes(x = year, y = count)) +
-  geom_point() +
-  geom_line() +
-  labels(x = "Year", y = "Count")
 ```
 
 ### Debugged version of example
@@ -54,15 +49,10 @@ ggplot(do_counts_by_year, aes(x = year, y = count)) +
 library(dplyr)
 library(ggplot2)
 
-surveys <- read.csv('https://ndownloader.figshare.com/files/2292172')
+surveys <- read.csv('surveys.csv')
 
 do_counts_by_year <- surveys %>%
   filter(species_id == "DO") %>%
   group_by(year) %>%
   summarize(count = n())
-
-ggplot(do_counts_by_year, aes(x = year, y = count)) +
-  geom_point() +
-  geom_line() +
-  labs(x = "Year", y = "Count")
 ```
