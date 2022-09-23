@@ -170,7 +170,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 > Do Tasks 3-4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
-### Layers
+### Statistical transformations
 
 * We've seen that ggplot makes graphs by combining information on
   * Data
@@ -184,44 +184,11 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 * Many kinds of geometric object (type `geom_` and show completions)
 
-* Usage
-    * `ggplot()` sets defaults for layers
-    * Can combine multiple layers using `+`
-        * Order matters
-
-* Combine different kinds of layers
-* Add a linear model
-
-```r
-ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
-  geom_point() +
-  geom_smooth(method = "lm")
-```
-
-* Both the `geom_point` layer and the `geom_smooth` layer use the defaults form
-  `ggplot`
-* Both use `acacia` for data and `x = CIRC, y = HEIGHT` for the aesthetic
-
-* Do this by treatment
-
-```
-ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
-  geom_point() +
-  geom_smooth(method = "lm")
-```
-
-* One set of points and one model for each treatment
-
-> Do Task 5 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
-
-### Statistical transformations
-
-* Geoms include statistical transformations
-* So far we've seen
+* Each geom includes a statistical transformations
+* So far we've only seen
     * `identity`: the raw form of the data or no transformation
-    * `smooth`: model line (e.g., `loess`, `lm`)
-* Transformations also exist to make things like histograms, bar plots, etc.
-* Occur as defaults in associated Geoms
+* Transformations exist to make things like histograms, bar plots, etc.
+* Occur as defaults in associated geoms
 
 * To look at the number of acacia in each treatment use a bar plot
     * [`geom_bar()`](https://ggplot2.tidyverse.org/reference/geom_bar.html)
@@ -260,6 +227,38 @@ ggplot(acacia, aes(x = CIRC)) +
 
 > Do Tasks 1-2 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
+### Layers
+
+* So far we've only plotted one layer or geom at a time, but we can combine multiple layers in a single plot
+    * `ggplot()` sets defaults for all layers
+    * Can combine multiple layers using `+`
+    * The first geom is plotted first and then additional geoms are layered on top 
+
+* Combine different kinds of layers
+* Add a linear model
+
+```r
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+* Both the `geom_point` layer and the `geom_smooth` layer use the defaults form
+  `ggplot`
+* Both use `acacia` for data and `x = CIRC, y = HEIGHT` for the aesthetic
+* `geom_smooth` uses the statistical transformation `stat_smooth()` to produce a smoothed representation of the data
+
+* Do this by treatment
+
+```r
+ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+* Because the color aesthetic is the default it is inherited by geom_smooth
+* One set of points and one model for each treatment
+
 ### Changing values across layers
 
 * We can also plot data from different columns or even data frames on the same graph
@@ -268,31 +267,25 @@ ggplot(acacia, aes(x = CIRC)) +
 
 ```r
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point()
+  geom_point() +
+  geom_smooth(method = "lm")
 ```
 
 * This sets the default data frame and aesthetic, which is then used by
-  `geom_point()`
+  `geom_point()` and `geom_smooth()`
 * Alternatively instead of setting the default we could just give these values
-  directly to `geom_point()`
-
-```r
-ggplot() +
-  geom_point(data = acacia,
-             mapping = aes(x = CIRC, y = HEIGHT,
-                           color = TREATMENT))
-```
-
-* We can see that this information is no longer shared with other geoms since it
-  is no longer the default
+  directly to `geom_point()` and `geom_smo
 
 ```r
 ggplot() +
   geom_point(data = acacia,
              mapping = aes(x = CIRC, y = HEIGHT,
                            color = TREATMENT)) +
-  geom_smooth()
+  geom_smooth(method = "lm")
 ```
+
+* We can see that this information is no longer shared with other geoms since it
+  is no longer the default, so we've asked for a smooth of nothing and so no smoother is shown
 
 * Can use this combine different aesthetics
 * Make a single model across all treatments while still coloring points
@@ -313,11 +306,23 @@ ggplot() +
 
 * This same sort of change can be used to plot different columns on the same
   plot by changing the values of x or y
+* If we wanted to plot two different columns as Y we could change the value of y in the aesthetic
+* If we wanted to use data from two different data frames we could change the value of data
+
+* We can also keep all of the values that are shared as defaults if we want to
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(mapping = aes(color = TREATMENT)) +
+  geom_smooth(method = "lm")
+```
 
 > Do Task 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
 ### Grammar of graphics
 
+* Uniquely describe any plot based on a defined set of information
+* Leland Wilkinson
 * Geometric object(s)
   * Data
   * Mapping
@@ -325,21 +330,22 @@ ggplot() +
   * Position (allows you to shift objects, e.g., spread out overlapping data points)
 * Facets
 * Coordinates (coordinate systems other than cartesian, also allows zooming)
-* In combination uniquely describes any plot
 
 ### Saving plots as new files
 
 ```r
 ggsave("acacia_by_treatment.jpg")
 ```
-
-* Lots of optional arguments
-    * Location
-    * Type
-    * Size
+* The type of the file is determined by the file extension
 
 ```r
-ggsave("figures/acacia_by_treatment.pdf", height = 5, width = 5)
+ggsave("acacia_by_treatment.pdf")
+```
+
+* Lots of optional arguments including size
+
+```r
+ggsave("acacia_by_treatment.pdf", height = 5, width = 5)
 ```
 
 > Assign the rest of the exercises.
