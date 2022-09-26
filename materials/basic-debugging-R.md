@@ -41,6 +41,11 @@ do_counts_by_year <- survey %>%
   filter(species == "DO") %>%
   group_by(year)
   summarize(count = n())
+
+ggplot(do_count_by_year, aes(x = year, y = count)) +
+  geom_point() +
+  geom_line() +
+  labs(x = "Year", y = "Count")
 ```
 
 ### Debugged version of example
@@ -55,4 +60,9 @@ do_counts_by_year <- surveys %>%
   filter(species_id == "DO") %>%
   group_by(year) %>%
   summarize(count = n())
+
+ggplot(do_counts_by_year, aes(x = year, y = count)) +
+  geom_point() +
+  geom_line() +
+  labs(x = "Year", y = "Count") 
 ```
