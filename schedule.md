@@ -4,9 +4,8 @@ title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
 'Review + Reproducibility', 'Review + Reproducibility', 'Functions',
-'Spatial Data 1', 'Spatial Data 2', 
-'Making Choices', 'Cleaning Messy Data', 'Repeating Things 1',
-'TBD', 'Repeating Things 2', 'TBD']
+'Making Choices', 'Repeating Things 1', 'Repeating Things 2', 'Cleaning Messy Data', 
+'Spatial Data 1', 'TBD', 'Spatial Data 2','TBD']
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
