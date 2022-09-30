@@ -5,7 +5,7 @@ element: assignment
 title: Review + Reproducibility
 language: R
 exercises: ["Bird Banding Multiple Vectors", "Portal Data Review"]
-points: [optional, optional]
+points: [50, 50]
 ---
 
 ### Learning Objectives
