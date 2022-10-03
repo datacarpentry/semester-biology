@@ -27,34 +27,34 @@
 ...
 [] reached 'max' / getOption("max.print") -- omitted 2827 rows ]
 
-    year species_id hindfoot_length
-1   1977         PP              22
-2   1977         PP              17
-3   1977         PP              20
-4   1977         PP              21
-5   1977         PP              21
-6   1977         PP              19
-7   1978         PP              21
-8   1978         PP              20
-9   1978         PP              21
-10  1978         PP              23
-11  1978         PP              22
-12  1978         PP              21
-13  1978         PP              23
-14  1978         PP              23
-15  1978         PP              22
-16  1978         PP              22
-17  1978         PP              19
-18  1978         PP              21
-19  1978         PP              23
-20  1978         PP              22
-21  1978         PP              22
-22  1978         PP              22
-23  1978         PP              21
-24  1978         PP              20
-25  1978         PP              21
+   year species_id hindfoot_length
+1  1995         PP              23
+2  1995         PP              22
+3  1995         PP              22
+4  1995         PP              21
+5  1995         PP              21
+6  1995         PP              20
+7  1995         PP              22
+8  1995         PP              24
+9  1995         PP              22
+10 1995         PP              22
+11 1995         PP              23
+12 1995         PP              22
+13 1995         PP              21
+14 1995         PP              21
+15 1995         PP              20
+16 1995         PP              22
+17 1995         PP              23
+18 1995         PP              22
+19 1995         PP              22
+20 1995         PP              21
+21 1995         PP              23
+22 1995         PP              22
+23 1995         PP              22
+24 1995         PP              23
+25 1995         PP              23
 ...
- [ reached 'max' / getOption("max.print") -- omitted 5558 rows ]
+ [ reached 'max' / getOption("max.print") -- omitted 5125 rows ]
 
 # A tibble: 340 x 3
 # Groups:   species_id [25]
