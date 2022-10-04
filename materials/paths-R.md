@@ -44,14 +44,16 @@ data = read.csv("shrub-dimensions-labeled.csv")
 * Within that is the `Downloads` directory
 
 ```r
-data = read.csv('/home/ethan/datacarp/shrub-dimensions-labeled.csv') # OSX/Linux
+# OSX/Linux
+data = read.csv('/home/ethan/Downloads/shrub-dimensions-labeled.csv')
 ```
 
 * This successfully loads the data because we've told it exactly where the file is
 * On Windows change `home` to `Users`
 
 ```r
-data = read.csv('/Users/ethan/datacarp/shrub-dimensions-labeled.csv') # Windows
+# Windows
+data = read.csv('/Users/ethan/Downloads/shrub-dimensions-labeled.csv')
 ```
 
 * Folders/Directories are separate by `/` with the file name at the end
@@ -59,18 +61,18 @@ data = read.csv('/Users/ethan/datacarp/shrub-dimensions-labeled.csv') # Windows
 
 * Paths can also be relative
 
-```
-'datacarp/shrub-dimensions-labeled.csv'
+```r
+'Downloads/shrub-dimensions-labeled.csv'
 ```
 
-* "From where I am the shrub-dimensions file is in the Desktop subdirectory"
-* Absolute & relative paths are the same if R thinks it's in `/home/ethan/`
+* "From where I am the shrub-dimensions file is in the Downloads subdirectory"
+* The absolute & relative paths here are the same if R thinks it's in `/home/ethan/`
 
 ### Find out where you are
 
 * To find out where R is use `getwd()`
 
-```
+```r
 getwd()
 ```
 
@@ -116,6 +118,23 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
     * Isn’t project itself
     * Contains project info
     * Don’t change manually
+* Then place your data files in the project directory (or a subdirectory)
+* *copy shrub-dimensions-labeled.csv to a /home/user/datacarp/*
+
+```r
+# OSX/Linux
+data = read.csv('shrub-dimensions-labeled.csv')
+```
+
+* It is common to store data in a subdirectory
+* `New Folder` -> data -> `OK`
+* `File checkbox` -> `More` -> `Move` -> data
+
+```r
+# OSX/Linux
+data = read.csv('data/shrub-dimensions-labeled.csv')
+```
+
 * Can switch between projects using `File` -> `Recent Projects` or `Open Project`
 * Keeps track the state of RStudio when you last worked with that project
 
