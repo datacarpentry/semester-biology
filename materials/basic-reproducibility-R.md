@@ -24,6 +24,8 @@ language: R
 * Looks like it still works
 * Only works because of something you did earlier in the same session
 
+#### Example (optional)
+
 > * Start new project
 > * Create data subdirectory
 > * Use `Right Click` -> `Save Link As` to download Portal surveys & species data
@@ -46,6 +48,8 @@ data_species <- read.csv('data/species.csv')
 * But will it work after I restart R?
   * No, because the code doesn't create `data_mammals` anymore
   * Read through code
+
+### Clearing environments and restarting R
 
 * Clear R environment using the broom icon on the `Environment` tab.
   * Doesn't unload packages
