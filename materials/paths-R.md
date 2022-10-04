@@ -57,6 +57,7 @@ data = read.csv('/Users/ethan/Downloads/shrub-dimensions-labeled.csv')
 ```
 
 * Folders/Directories are separate by `/` with the file name at the end
+* Windows shows `\` or `\\` as the separator, but `/` works on all operating systems so use it
 * Include the file extension (the part after the `.`)
 
 * Paths can also be relative
