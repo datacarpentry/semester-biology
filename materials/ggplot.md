@@ -227,6 +227,35 @@ ggplot(acacia, aes(x = CIRC)) +
 
 > Do Tasks 1-2 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
+### Position
+
+* geom's also come with a default position
+* In many cases the position is `"identity"`, which just means the object is plotted in the position determined by the data, but not always
+* Let's remake our histogram, but color the bars by the treatment
+
+```r
+ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
+  geom_histogram(binwidth = 5)
+```
+
+* You can see that the total height of the bars stayed the same
+* That's because ggplot has just colored the pieces of each bar that correspond to each treatment
+* It does this because the default `position` for `geom_histogram` is `"stacked"`, which stacks the bars on top of one another and therefore makes a stacked histogram.
+* If we want separate overlapping histograms then we need to change the position
+
+```r
+ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
+  geom_histogram(binwidth = 5, position = "identity")
+```
+
+* And then add some transparency so we can see all of the histograms
+
+```r
+ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
+  geom_histogram(binwidth = 5, position = "identity", alpha = 0.5)
+```
+
+
 ### Layers
 
 * So far we've only plotted one layer or geom at a time, but we can combine multiple layers in a single plot
