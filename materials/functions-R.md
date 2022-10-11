@@ -12,12 +12,9 @@ language: R
 
 ### Understandable chunks
 
-* Human brain can only hold ~7 things in memory.
-    * Write programs that don't require remembering more than ~7 things at once.
-* What do you know about how `sum(1:5)` works internally?
-    * Nothing.
-    * Ignore the details and reduce `sum()` to a single conceptual chunk.
-* All functions should work as a single conceptual chunk.
+* Human brain can only hold limited number of things in memory
+* Write programs that don't require remembering all of the details at once
+* Treat functions as a single conceptual chunk.
 
 ### Reuse
 
@@ -199,6 +196,32 @@ est_shrub_mass_dim(0.8, 1.6, 2.0)
 
 * We ***don't*** need to pass the function name into the function
 * That's the one violation of the black box rule
+
+### Code design with functions
+
+* Functions let us break code up into logical chunks that can be understood in isolation
+* Write functions at the top of your code then call them at the bottom
+* The functions hold the details
+* The function calls show you the outline of the code execution
+
+```r
+function <- clean_data(data){
+  do_stuff(data)
+}
+
+function <- process_data(cleaned_data){
+  do_dplyr_stuff(cleaned_data)
+}
+
+function < make_graph(processed_data){
+  do_ggplot_stuff(processed_data)
+}
+
+raw_data <- read.csv('mydata.csv')
+cleaned_data <- clean_data(raw_data)
+processed_data <- process_data(cleaned_data)
+make_graph(processed_data)
+```
 
 ### Documentation & Comments
 
