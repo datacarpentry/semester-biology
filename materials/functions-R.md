@@ -197,6 +197,43 @@ est_shrub_mass_dim(0.8, 1.6, 2.0)
 * We ***don't*** need to pass the function name into the function
 * That's the one violation of the black box rule
 
+### Using dplyr & ggplot in functions
+
+* There is an extra step we need to take when working with functions from dplyr and ggplot that work with "data variables", i.e., names of columns that are not in quotes
+* These functions use tidy evaluation, a special type of non-standard evaluation
+* This basically means they do fancy things under the surface to make them easier to work with
+* But it means they don't work if we just pass things to functions in the most natural way
+
+```r
+library(ggplot2)
+
+make_plot <- function(data, histvar, label) {
+  ggplot(data = data, mapping = aes(x = histvar)) +
+    geom_histogram() +
+    xlab(label)
+}
+
+surveys <- read.csv("surveys.csv")
+make_plot(surveys, hindfoot_length)
+```
+
+* To fix this we have to tell our code which inputs/arguments are this special type of data variable
+* We do this by "embracing" them in `{{ }}`
+
+```r
+library(ggplot2)
+
+make_plot <- function(data, histvar, label) {
+  ggplot(data = data, mapping = aes(x = {{ histvar }})) +
+    geom_histogram() +
+    xlab(label)
+}
+
+surveys <- read.csv("surveys.csv")
+make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
+make_plot(surveys, weight, "Weight [g]")
+```
+
 ### Code design with functions
 
 * Functions let us break code up into logical chunks that can be understood in isolation
