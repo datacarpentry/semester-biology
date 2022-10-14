@@ -207,24 +207,24 @@ est_shrub_mass_dim(0.8, 1.6, 2.0)
 ```r
 library(ggplot2)
 
-make_plot <- function(data, histvar, label) {
-  ggplot(data = data, mapping = aes(x = histvar)) +
+make_plot <- function(df, column, label) {
+  ggplot(data = df, mapping = aes(x = column)) +
     geom_histogram() +
     xlab(label)
 }
 
 surveys <- read.csv("surveys.csv")
-make_plot(surveys, hindfoot_length)
+make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 ```
 
 * To fix this we have to tell our code which inputs/arguments are this special type of data variable
-* We do this by "embracing" them in `{{ }}`
+* We do this by "embracing" them in double braces
 
 ```r
 library(ggplot2)
 
-make_plot <- function(data, histvar, label) {
-  ggplot(data = data, mapping = aes(x = {{ histvar }})) +
+make_plot <- function(df, column, label) {
+  ggplot(data = df, mapping = aes(x = {{ column }})) +
     geom_histogram() +
     xlab(label)
 }
@@ -242,15 +242,15 @@ make_plot(surveys, weight, "Weight [g]")
 * The function calls show you the outline of the code execution
 
 ```r
-function <- clean_data(data){
+clean_data <- function(data){
   do_stuff(data)
 }
 
-function <- process_data(cleaned_data){
+process_data <- function(cleaned_data){
   do_dplyr_stuff(cleaned_data)
 }
 
-function < make_graph(processed_data){
+make_graph <- function(processed_data){
   do_ggplot_stuff(processed_data)
 }
 
