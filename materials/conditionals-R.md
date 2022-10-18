@@ -5,6 +5,10 @@ title: Conditionals
 language: R
 ---
 
+> Environment Setup:
+> Just Base R
+
+
 > INSTRUCTOR NOTE: Code examples should generally build up by modifying the
 > existing code example rather than by retyping the full example.
 
@@ -138,9 +142,9 @@ x
 * Different mass calculations for different vegetation types
 
 ```r
-veg_type <- "tree"
+veg_type <- "shrub"
 volume <- 16.08
-if (veg_type == "tree") {
+if (veg_type == "shrub") {
   mass <- 2.65 * volume^0.9
   }
 mass
@@ -154,7 +158,7 @@ mass
 ```r
 veg_type <- "grass"
 volume <- 16.08
-if (veg_type == "tree") {
+if (veg_type == "shrub") {
   mass <- 2.65 * volume^0.9
 } else if (veg_type == "grass") {
   mass <- 0.65 * volume^1.2
@@ -169,9 +173,9 @@ mass
 * Can specify what to do if none of the conditions is `TRUE` using `else` on its own
 
 ```r
-veg_type <- "shrub"
+veg_type <- "tree"
 volume <- 16.08
-if (veg_type == "tree") {
+if (veg_type == "shrub") {
   mass <- 2.65 * volume^0.9
 } else if (veg_type == "grass") {
   mass <- 0.65 * volume^1.2
@@ -219,7 +223,7 @@ if (x > 2){
 
 ```r
 est_mass <- function(volume, veg_type){
-  if (veg_type == "tree") {
+  if (veg_type == "shrub") {
     mass <- 2.65 * volume^0.9
   } else if (veg_type == "grass") {
     mass <- 0.65 * volume^1.2
@@ -233,16 +237,16 @@ est_mass <- function(volume, veg_type){
 * We can then run this function with different vegetation types and get different estimates for mass
 
 ```r
-est_mass(1.6, "tree")
-est_mass(1.6, "grass")
 est_mass(1.6, "shrub")
+est_mass(1.6, "grass")
+est_mass(1.6, "tree")
 ```
 
 * Let's walk through how this code executes using the debugger
-* When we call the function the first thing that happens is that 1.6 gets assigned to `volume` and `"shrub"` gets assigned to `veg_type`
-* The code then checks to see if `veg_type` is equal to `"tree"`
+* When we call the function the first thing that happens is that 1.6 gets assigned to `volume` and `"tree"` gets assigned to `veg_type`
+* The code then checks to see if `veg_type` is equal to `"shrub"`
 * It isn't so the code then checks to see if `veg_type` is equal to `"grass"`
-* It is so the code then hits the `else` statement and executes the code in the `else` block
+* It isn't so the code then hits the `else` statement and executes the code in the `else` block
 * It assigns `NA` to mass
 * It then finishes the if/else if/else statement and returns the value for `mass`, which is `NA` to the global environment
 
