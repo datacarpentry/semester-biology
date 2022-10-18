@@ -31,19 +31,17 @@ species == "DM"
 * Conditional statements are made with a range of operators
 * We've seen
   * `==` for equals
-  * `!=` for no equals
+  * `!=` for not equals
   * `<`, `>` for less than and greater than
   * `<=`, `>=` for less than or equal to and greater than or equal to
   * `is.na()` for is this value null
 * There are others, including `%in%`, which checks to see if a value is present in a vector of possible values
 
 ```r
-"aang" == "aang"
-"aang" != "kora"
-10 < 5
 10 >= 5
-is.na("toph")
-"zuko" %in% c("aang", "toph", "katara")
+is.na(5)
+"DM" %in% c("DM", "DO", "DS")
+"PP" %in% c("DM", "DO", "DS")
 ```
 
 * We can combine conditions using "and" and "or"
