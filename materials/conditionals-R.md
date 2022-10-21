@@ -267,13 +267,13 @@ est_mass(1.6, "tree")
 
 ```r
 est_mass <- function(volume, veg_type, age){
-  if (veg_type == "tree") {
+  if (veg_type == "shrub") {
     if (age < 5) {
       mass <- 1.6 * volume^0.8
     } else {
       mass <- 2.65 * volume^0.9
   }
-  } else if (veg_type == "grass" | veg_type == "shrub") {
+  } else if (veg_type == "grass" | veg_type == "sedge") {
     mass <- 0.65 * volume^1.2
   } else {
     mass <- NA
@@ -281,11 +281,11 @@ est_mass <- function(volume, veg_type, age){
   return(mass)
 }
 
-est_mass(1.6, "tree", age = 2)
-est_mass(1.6, "shrub", age = 5)
+est_mass(1.6, "shrub", age = 2)
+est_mass(1.6, "shrub", age = 6)
 ```
 
-* First checks if the vegetation type is "tree"
+* First checks if the vegetation type is "shrub"
 * If it is checks to see if it is < 5 years old
 * If so does one calculation, if not does another
 * But nesting can be difficult to follow so try to minimize it
