@@ -198,6 +198,7 @@ if (x > 2){
 if (x > 4){
   x * 4
 }
+x
 ```
 
 * `else if` checks each condition sequentially
@@ -210,6 +211,7 @@ if (x > 2){
 } else if (x > 4){
   x * 4
 }
+x
 ```
 
 ### Using Conditionals Inside Functions
