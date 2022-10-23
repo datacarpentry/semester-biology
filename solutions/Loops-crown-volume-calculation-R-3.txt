@@ -1,0 +1,53 @@
+   SURVEY YEAR  SITE TREATMENT BLOCK    PLOT        SPECIES ORIGINAL_TAG
+1       1 2009 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            1
+2       2 2010 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            1
+3       3 2011 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            1
+4       4 2012 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            1
+5       5 2013 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            1
+6       1 2009 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            2
+7       2 2010 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            2
+8       3 2011 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            2
+9       4 2012 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            2
+10      5 2013 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            2
+11      1 2009 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            3
+12      2 2010 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            3
+13      3 2011 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            3
+14      4 2012 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            3
+15      5 2013 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            3
+16      1 2009 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            4
+17      2 2010 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            4
+18      3 2011 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            4
+19      4 2012 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            4
+20      5 2013 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            4
+21      1 2009 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            5
+22      2 2010 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            5
+23      3 2011 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            5
+24      4 2012 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            5
+25      5 2013 SOUTH     TOTAL     2 S2TOTAL Acacia_etbaica            5
+   NEW_TAG DEAD HEIGHT AXIS_1 AXIS_2 CIRC MEASUREMENT STEMS     volume
+1       NA    N   3.40   6.10   5.00 37.8           D     1  40.808706
+2       NA    N   3.32   8.25   8.45 18.8           D     1  91.514725
+3       NA    N   3.65   8.85   9.00 57.0           C     1 112.795020
+4       NA    N   3.74   5.50   7.10 60.0           C     1  56.388193
+5       NA    N   3.59   5.00   8.15 55.0           C     1  56.947285
+6       NA    N   2.30   2.20   2.80 14.2           D     1   6.028827
+7       NA    N   2.32   2.75   2.65 18.4           D     1   7.181891
+8       NA    N   2.75   3.30   3.80 25.0           C     1  14.159031
+9       NA    Y     NA     NA     NA   NA        <NA>  <NA>         NA
+10      NA    N   2.86   3.70   2.60 31.0           D     1  11.208249
+11      NA    N   1.80   5.50   3.70 30.6           D     2  16.370135
+12      NA    N   2.95   3.40   5.40 23.5           D     3  21.928057
+13      NA    N   3.00   4.00   5.60 45.0           C     3  27.115329
+14      NA <NA>     NA     NA     NA   NA        <NA>  <NA>         NA
+15      NA    N   3.43   6.70   6.30 40.0           D     1  56.874881
+16      NA    N   2.10   1.40   1.60 16.5           D     1   2.038418
+17      NA    N   2.25   2.80   2.75 15.9           D     1   7.404685
+18      NA    N   2.60   3.65   4.00 20.0           C     1  15.761639
+19      NA    N   2.70   4.20   4.10 32.0           C     1  19.159934
+20      NA    N   2.89   5.15   4.55 87.0           D     1  27.530034
+21      NA    N   3.35   4.20   4.50 22.6           D     2  24.990072
+22      NA    N   3.10   3.60   5.10 23.0           D     2  22.815600
+23      NA    N   3.25   6.00   5.90 32.0           C     2  45.685650
+24      NA    N   3.75   8.50   6.50 35.0           C     1  79.951599
+25      NA    N   3.42   5.60   6.20 28.0           D     2  46.673509
+ [ reached 'max' / getOption("max.print") -- omitted 7483 rows ]
