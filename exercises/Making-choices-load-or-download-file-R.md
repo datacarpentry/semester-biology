@@ -16,7 +16,7 @@ the file at a `url` to a specific `filename`.
    working directory, if it doesn't then downloads it from
    <https://ndownloader.figshare.com/files/2292172> using `download.file()`, and finally
    loads the file into a data frame and displays the first few rows using the `head()`
-   function.
+   function. The url needs to be in quotes since it is character data.
 
 2. Make a version of this conditional statement that is a function, where the
    name of the file is the first argument and the link for downloading the file
