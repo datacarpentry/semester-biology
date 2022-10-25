@@ -86,7 +86,7 @@ est_mass(data[['volumes']])
 
 ```r
 est_mass_max <- function(volume){
-  if (volume > 5) {
+  if (volume > 3) {
     mass <- 2.56 * volume ^ 0.9
   } else {
     mass <- NA
