@@ -57,7 +57,6 @@ est_mass(volumes)
 ```
 
 * Many functions in R are vectorized which means that we can often repeated things using only this vectorization
-* Any function that we write that only uses vectorized functions is also vectorized
 * Let's modify our function to take the coefficient (the value that is currently set as 2.65) as an argument
 * But our coefficient was calculated with log-transformed data so we need to convert it in our function
 
@@ -78,7 +77,6 @@ exp(c(1, 2, 3))
 * So our whole function should still be vectorized
 
 ```r
-volumes = c(1.6, 5.6, 3.1)
 est_mass(volumes, 0.97)
 ```
 
