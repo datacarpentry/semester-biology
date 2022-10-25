@@ -183,6 +183,8 @@ coefs <- c(0.97, 0.5, 2.2)
 est_mass_coef(volumes, coefs)
 ```
 
+> Do [Size Estimates Vectorized 2-3]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
+
 #### mapply
 
 * `mapply()` for functions with multiple arguments
