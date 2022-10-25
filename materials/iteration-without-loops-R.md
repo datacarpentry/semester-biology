@@ -67,6 +67,7 @@ est_mass <- function(volume, coefficient){
   mass <- a * volume ^ 0.9
   return(mass)
 }
+```
 
 * `exp()` is vectorized
 
