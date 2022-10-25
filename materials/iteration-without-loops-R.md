@@ -80,7 +80,7 @@ exp(c(1, 2, 3))
 est_mass(volumes, 0.97)
 ```
 
-* Because we only provided a single value of `a`, that value gets used for every value of `volume` when doing the calculation
+* Because we only provided a single value of `coefficient`, that value gets used for every value of `volume` when doing the calculation
 * But multiplication is also vectorized for two vectors
 
 ```r
