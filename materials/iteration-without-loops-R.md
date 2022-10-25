@@ -82,11 +82,11 @@ est_mass(data[['volumes']])
 * Return a list of the same size
 * Doesn't require calculations to work on vectors
 
-* Let's look at this with a version of our function that only calculates mass for volumes greater than a minimum size
+* Let's look at this with a version of our function that only calculates mass for volumes less than a maximum size
 
 ```r
 est_mass_max <- function(volume){
-  if (volume > 3) {
+  if (volume < 5) {
     mass <- 2.56 * volume ^ 0.9
   } else {
     mass <- NA
