@@ -57,54 +57,16 @@ est_mass(volumes)
 ```
 
 * Many functions in R are vectorized which means that we can often repeated things using only this vectorization
-* Let's modify our function to take the coefficient (the value that is currently set as 2.65) as an argument
-* But our coefficient was calculated with log-transformed data so we need to convert it in our function
-
-```r
-est_mass <- function(volume, coefficient){
-  a <- exp(coefficient)
-  mass <- a * volume ^ 0.9
-  return(mass)
-}
-```
-
-* `exp()` is vectorized
-
-```r
-exp(c(1, 2, 3))
-```
-
-* So our whole function should still be vectorized
-
-```r
-est_mass(volumes, 0.97)
-```
-
-* Because we only provided a single value of `coefficient`, that value gets used for every value of `volume` when doing the calculation
-* But multiplication is also vectorized for two vectors
-
-```r
-c(1, 2, 3) * c(1, 2, 3)
-```
-
-* So we can also pass the function a vector of coefficients
-
-```r
-coefs <- c(0.97, 0.5, 2.2)
-est_mass(volumes, coefs)
-```
-
-* This uses a different coefficient for each volume
-
 * We can also use use vectorized functions with data frames by sending the individual columns of a data frame to the function
 
 ```r
-data <- data.frame(volumes, coefs)
+data <- data.frame(volumes, plant_id = c(1, 2, 3))
 data
-est_mass(data$volumes, data$coefs)
+est_mass(data$volumes)
+est_mass(data[['volumes']])
 ```
 
-> Do [Size Estimates Vectorized]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
+> Do [Size Estimates Vectorized 1]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
 
 ### Apply/Map functions
 
@@ -123,10 +85,9 @@ est_mass(data$volumes, data$coefs)
 * Let's look at this with a version of our function that only calculates mass for volumes greater than a minimum size
 
 ```r
-est_mass <- function(volume, coefficient){
-  a <- exp(coefficient)
-  if (a < 5) {
-    mass <- a * volume ^ 0.9
+est_mass_max <- function(volume){
+  if (volume > 5) {
+    mass <- 2.56 * volume ^ 0.9
   } else {
     mass <- NA
   }
@@ -137,7 +98,7 @@ est_mass <- function(volume, coefficient){
 * If we try to run this function on our volume it won't work because the `if` statements are designed for a single value, not a vector
 
 ```r
-est_mass(volumes, coefs)
+est_mass_max(volumes)
 ```
 
 * Instead we can use one of the `apply()` functions
@@ -152,7 +113,7 @@ est_mass(volumes, coefs)
 * `sapply()` will run the `est_mass` function on each value in `volumes`, one value at a time
 
 ```r
-sapply(volumes, est_mass)
+sapply(volumes, est_mass_max)
 ```
 
 * Under the surface this is that same as running our `est_mass()` function on the first item in `volumes`
@@ -160,28 +121,69 @@ sapply(volumes, est_mass)
 * And the storing those values together in a vector
 
 ```r
-c(est_mass(volumes[1]), est_mass(volumes[2]), est_mass(volumes[3]))
+c(est_mass_max(volumes[1]), est_mass_max(volumes[2]), est_mass_max(volumes[3]))
 ```
 
 * This lets us do the same action on many things with single line of code
 
+* Handful of similar functions in `apply()` family
+* Differ depending on type of input and output data
 * The `s` in `sapply` stands for "simplify"
 * It will try to return the simplest object possible, in this case a vector
 * `lapply` returns a "list"
 
 ```r
-lapply(volumes, est_mass)
+lapply(volumes, est_mass_max)
 ```
 
 * This is a more complicated, but also more flexible, data structure that we don't see much in this class, but it's useful to know the difference between `lapply` and `sapply`.
-* Both of these functions can also take a list as input allowing you to accomplish more complicated things
+* We can store anything in a list, so if you had a function that made a bunch of graphs or a bunch of data frames `lapply` would let you work with them
+* Likewise both of these functions can also take a list as input allowing you to accomplish more complicated things
 
 > Do [Size Estimates With Maximum]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
 
-#### Other apply functions
+### Vectorization and Apply with multiple arguments
 
-* Handful of similar functions in `apply()` family
-* Differ depending on type of input and output data
+#### Vectorization
+
+* Let's modify our function to take the coefficient (the value that is currently set as 2.65) as an argument
+* But our coefficient was calculated with log-transformed data so we need to convert it in our function
+
+```r
+est_mass_coef <- function(volume, coefficient){
+  a <- exp(coefficient)
+  mass <- a * volume ^ 0.9
+  return(mass)
+}
+```
+
+* `exp()` is vectorized
+
+```r
+exp(c(1, 2, 3))
+```
+
+* So our whole function should still be vectorized
+
+```r
+est_mass_coef(volumes, 0.97)
+```
+
+* Because we only provided a single value of `coefficient`, that value gets used for every value of `volume` when doing the calculation
+* But multiplication is also vectorized for two vectors
+
+```r
+c(1, 2, 3) * c(1, 2, 3)
+```
+
+* So we can also pass the function a vector of coefficients
+
+```r
+coefs <- c(0.97, 0.5, 2.2)
+est_mass_coef(volumes, coefs)
+```
+
+#### mapply
 
 * `mapply()` for functions with multiple arguments
 * Vegetation type specific equations
