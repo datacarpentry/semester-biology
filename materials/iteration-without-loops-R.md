@@ -57,54 +57,52 @@ est_mass(volumes)
 ```
 
 * Many functions in R are vectorized which means that we can often repeated things using only this vectorization
-* Let's take a look at an example using the `stringr` package, which makes work with strings or characters easier
+* Any function that we write that only uses vectorized functions is also vectorized
+* Let's modify our function to take the coefficient (the value that is currently set as 2.65) as an argument
+* But our coefficient was calculated with log-transformed data so we need to convert it in our function
 
 ```r
-library(stringr)
-```
-
-* `stringr` has a `str_to_sentence()` function that will capitalize the first letter of the first word in a sentence
-* We could use this to capitalize the first letter of a genus like we typically want to do
-
-```r
-str_to_sentence("dipodomys")
-```
-
-* This function is vectorized so it automatically works on vectors of strings
-
-```r
-str_to_sentence(c("dipodomys", "chaetodipus"))
-```
-
-* Let's say we had data on genus and species stored separately
-
-```r
-genus <- c("dipodomys", "chaetodipus", "dipodomys")
-species <- c("ordii", "baileyi", "spectabilis")
-```
-
-* And we want to combine these into a single set of values that combine separate `genus` and `species` vectors and capitalize the first letter of each genus
-* We'll do this by writing a function that combines `str_to_sentence()` with another vectorized function `paste()` 
-
-```r
-combine_genus_species <- function(genus, species) {
-  genus_cap <- str_to_sentence(genus)
-  genus_species <- paste(genus_cap, species)
-  return(genus_species)
+est_mass <- function(volume, coefficient){
+  a <- exp(coefficient)
+  mass <- a * volume ^ 0.9
+  return(mass)
 }
-```
 
-* Since all of the functions used inside of `combine_genus_species` are vectorized, we can run this function on our vectors
-
-```r
-combine_genus_species(genus, species)
-```
-
-* We can also use it with data frames by sending the columns of a data frame to the function
+* `exp()` is vectorized
 
 ```r
-data <- data.frame(genus, species)
-combine_genus_species(data$genus, data$species)
+exp(c(1, 2, 3))
+```
+
+* So our whole function should still be vectorized
+
+```r
+volumes = c(1.6, 5.6, 3.1)
+est_mass(volumes, 0.97)
+```
+
+* Because we only provided a single value of `a`, that value gets used for every value of `volume` when doing the calculation
+* But multiplication is also vectorized for two vectors
+
+```r
+c(1, 2, 3) * c(1, 2, 3)
+```
+
+* So we can also pass the function a vector of coefficients
+
+```r
+coefs <- c(0.97, 0.5, 2.2)
+est_mass(volumes, coefs)
+```
+
+* This uses a different coefficient for each volume
+
+* We can also use use vectorized functions with data frames by sending the individual columns of a data frame to the function
+
+```r
+data <- data.frame(volumes, coefs)
+data
+est_mass(data$volumes, data$coefs)
 ```
 
 > Do [Size Estimates Vectorized]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
@@ -126,9 +124,10 @@ combine_genus_species(data$genus, data$species)
 * Let's look at this with a version of our function that only calculates mass for volumes greater than a minimum size
 
 ```r
-est_mass <- function(volume){
-  if (volume > 5) {
-    mass <- 2.65 * volume ^ 0.9
+est_mass <- function(volume, coefficient){
+  a <- exp(coefficient)
+  if (a < 5) {
+    mass <- a * volume ^ 0.9
   } else {
     mass <- NA
   }
@@ -139,7 +138,7 @@ est_mass <- function(volume){
 * If we try to run this function on our volume it won't work because the `if` statements are designed for a single value, not a vector
 
 ```r
-est_mass(volumes)
+est_mass(volumes, coefs)
 ```
 
 * Instead we can use one of the `apply()` functions
