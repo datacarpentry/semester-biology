@@ -181,7 +181,7 @@ est_mass_coef(volumes, a)
 
 ```r
 est_mass_type <- function(volume, veg_type){
-  if (veg_type == "tree"){
+  if (veg_type == "shrub"){
     mass <- 2.65 * volume^0.9
   } else {
     mass <- NA
@@ -189,8 +189,8 @@ est_mass_type <- function(volume, veg_type){
   return(mass)
 }
 
-est_mass_type(1.6, "tree")
-plant_types = c("shrub", "tree", "tree")
+est_mass_type(1.6, "shrub")
+plant_types = c("shrub", "tree", "shrub")
 est_mass_type(volumes, plant_types) # Warning & wrong result
 ```
 
