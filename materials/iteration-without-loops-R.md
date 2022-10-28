@@ -147,40 +147,29 @@ lapply(volumes, est_mass_max)
 #### Vectorization
 
 * Let's modify our function to take the coefficient (the value that is currently set as 2.65) as an argument
-* But our coefficient was calculated with log-transformed data so we need to convert it in our function
+* We'll call it `a`
 
 ```r
-est_mass_coef <- function(volume, coefficient){
-  a <- exp(coefficient)
+est_mass_coef <- function(volume, a){
   mass <- a * volume ^ 0.9
   return(mass)
 }
+
+est_mass_coef(volumes, 2.56)
 ```
 
-* `exp()` is vectorized
-
-```r
-exp(c(1, 2, 3))
-```
-
-* So our whole function should still be vectorized
-
-```r
-est_mass_coef(volumes, 0.97)
-```
-
-* Because we only provided a single value of `coefficient`, that value gets used for every value of `volume` when doing the calculation
+* Because we only provided a single value of `a`, that value gets used for every value of `volume` when doing the calculation
 * But multiplication is also vectorized for two vectors
 
 ```r
 c(1, 2, 3) * c(1, 2, 3)
 ```
 
-* So we can also pass the function a vector of coefficients
+* So we can also pass the function a vector of values for `a`
 
 ```r
-coefs <- c(0.97, 0.5, 2.2)
-est_mass_coef(volumes, coefs)
+a <- c(2.56, 1, 3.2)
+est_mass_coef(volumes, a)
 ```
 
 > Do [Size Estimates Vectorized 2-3]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
