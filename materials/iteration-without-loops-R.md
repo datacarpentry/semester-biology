@@ -209,7 +209,11 @@ mapply(FUN = est_mass_type, volume = volumes, veg_type = plant_types)
 
 * `map` functions from `purrr` package are similar to apply
 
-#### apply (**optional**)
+#### Other apply functions (**optional**)
+
+* There are a few other apply functions
+* `vapply()` works like `sapply()`, but you have to tell it what type the returned vector will be
+* `tapply()` works like `sapply()`, but lets you provide a single grouping field (kind of like `group_by()` in dplyr)
 
 * `apply()` works on multi-dimensional data
 * Set `MARGIN` to tell it which dimension to calculate along
