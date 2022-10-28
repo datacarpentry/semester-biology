@@ -242,14 +242,15 @@ plant_data = data.frame(volumes, plant_types)
 * To apply vectorized functions to each row in a table we can use `mutate`
 
 ```r
-mutate(plant_data, masses = est_mass(volumes))
+plant_data |>
+  mutate(masses = est_mass_coef(volumes, a))
 ```
 
 * This is just like we've seen using other R functions, but it works with the vectorized functions we write as well
 * This won't work with non-vectorized functions
 
 ```r
-plant_data %>%
+plant_data |>
   mutate(masses = est_mass_type(volumes, plant_types))
 ```
 
@@ -259,8 +260,8 @@ plant_data %>%
 * This tells `dplyr` to work with the data one row at a time, like an `apply` function
 
 ```r
-plant_data %>%
-  rowwise() %>%
+plant_data |>
+  rowwise() |>
   mutate(masses = est_mass_type(volumes, plant_types))
 ```
 
@@ -285,7 +286,7 @@ get_biomass <- function(volumes){
 * And summarize by our function to calculate the biomass for each group
 
 ```r
-plant_data %>%
-  group_by(plant_types) %>%
+plant_data |>
+  group_by(plant_types) |>
   summarize(biomass = get_biomass(volumes))
 ```
