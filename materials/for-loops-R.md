@@ -75,7 +75,7 @@ for (i in 1:3)
 ```r
 volumes = c(1.6, 3, 8)
 for (i in 1:length(volumes)){
-  
+
 }
 ```
 
@@ -93,8 +93,9 @@ for (i in 1:length(volumes)){
 * This gives us the same result, but it's more complicated to understand
 * So why would we loop by index?
 * The advantage to looping by index is that it lets us do more complicated things
+
 * One of the most common things we use this for are storing the results we calculated in the loop
-* To do this we start by creating an empty object the same length as the results will be
+* To do this we start by creating an empty object the same length as the results will be before the loop starts
 * To store results in a vector we use the function `vector` to create an empty vector of the right length
 * `mode` is the type of data we are going to store
 * `length` is the length of the vector
