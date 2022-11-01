@@ -50,14 +50,35 @@ print(mass)
 
 ### Looping with an index & storing results
 
-* In the last video we saw that in R loops iterate over a series of values in a vector or other list like object
+* R loops iterate over a series of values in a vector or other list like object
 * When we use that value directly this is called looping by value
 * But there is another way to loop, which is called looping by index
 * Looping by index loops over a list of integer index values, typically starting at 1
 * These integers are then used to access values in one or more vectors at the position inicated by the index
 * If we modified our previous loop to use an index it would look like this
 * We often use `i` to stand for "index" as the variable we update with each step through the loop
+
+```r
+volumes = c(1.6, 3, 8)
+for (i ...)
+```
+
 * We then create a vector of position values starting at 1 (for the first value) and ending with the length of the object we are looping over
+
+```r
+volumes = c(1.6, 3, 8)
+for (i in 1:3)
+```
+
+* We don't want to have to know the length of the vector and it might change in the future, so we'll look it up using the `length()` function
+
+```r
+volumes = c(1.6, 3, 8)
+for (i in 1:length(volumes)){
+  
+}
+```
+
 * Then inside the loop instead of doing the calculation on the index (which is just a number between 1 and 3 in our case)
 * We use square brackets and the index to get the appropriate value out of our vector
 
