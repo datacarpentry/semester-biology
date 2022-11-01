@@ -14,7 +14,7 @@ for (number in numbers){
 }
 ```
 
-2\. Write a for loop that loops over the following vector and prints out the mass in kilograms (`mass_kg = 2.2 * mass_lbs`)
+2\. Write a for loop that loops over the following vector and prints out the mass in kilograms (`mass_kg = 2.2 * mass_lb`)
 
 ```r
 mass_lbs <- c(2.2, 3.5, 9.6, 1.2)
