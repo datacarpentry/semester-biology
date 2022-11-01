@@ -7,7 +7,7 @@ language: R
 
 This is a followup to [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
 
-Download and import [data on dinosaur lengths with species names]({{ site.baseurl }}/data/dinosaur_lengths.csv).
+If `dinosaur_lengths.csv` is not already in your working directory download a copy of the [data on dinosaur lengths with species names]({{ site.baseurl }}/data/dinosaur_lengths.csv). Load it into R.
 
 Write a function `mass_from_length()` that uses the equation `mass <- a * length^b` to estimate the size of a dinosaur from its length.
 This function should take two arguments, `length` and `species`. For each of the following inputs for `species`, use the given values of `a` and `b` for the calculation:

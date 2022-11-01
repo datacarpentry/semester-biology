@@ -9,9 +9,9 @@ You have a satellite collars on a number of different individuals and want to be
 The data is posted daily to a [url as a zip file]({{ site.baseurl }}/data/individual_collar_data.zip) that contains one csv file for each individual: [{{ site.url }}/data/individual_collar_data.zip]({{ site.baseurl }}/data/individual_collar_data.zip)
 Start your solution by:
 
-* Downloading the zip file using `download.file()`
-* Unziping it using `unzip()`
-* Obtaining a list of all of the files with file names matching the pattern `"collar-data-.*.txt"`
+* If `individual_collar_data.zip` is not already in your working directory download [the zip file]({{ site.baseurl }}/data/individual_collar_data.zip) using `download.file()`
+* Unzip it using `unzip()`
+* Obtain a list of all of the files with file names matching the pattern `"collar-data-.*.txt"` (using `list.files()`)
 
 1. Use a loop to load each of these files into R and make a line plot (using `geom_path()`) for each file with `long` on the `x` axis and `lat` on the `y` axis.
 Graphs, like other types of output, won't display inside a loop unless you explicitly display them, so you need put your `ggplot()` command inside a `print()` statement.
