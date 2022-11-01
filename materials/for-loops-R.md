@@ -22,10 +22,13 @@ for (item in list_of_items) {
 ```r
 volumes = c(1.6, 3, 8)
 for (volume in volumes){
-  print(2.65 * volume^0.9)
+  mass <- 2.65 * volume ^ 0.9
+  print(mass)
 }
 ```
 
+* Code in the loop will run once for each value in volumes
+* Everything between the curly brackets is executed each time through the loop
 * Code takes the first value from `volumes` and assigns it to `volume` and does the calculation and prints it
 * Then it takes the second value from `volumes` and assigns it to `volume` and does the calculation and prints it
 * And so on
@@ -33,23 +36,14 @@ for (volume in volumes){
 
 ```r
 volume <- volumes[1]
-print(2.65 * volume ^ 0.9)
+mass <- 2.65 * volume ^ 0.9
+print(mass)
 volume <- volumes[2]
-print(2.65 * volume ^ 0.9)
+mass <- 2.65 * volume ^ 0.9
+print(mass)
 volume <- volumes[3]
-print(2.65 * volume ^ 0.9)
-```
-
-* Like with functions and conditionals loops can have many rows of code
-* Everything between the curly brackets is executed each time through the loop
-* Let's expand our look so that it first estimates the mass, then converts it from kilograms to pounds, and then prints out the value
-
-```r
-for (volume in volumes){
-   mass <- 2.65 * volume ^ 0.9
-   mass_lb <- mass * 2.2
-   print(mass_lb)
-}
+mass <- 2.65 * volume ^ 0.9
+print(mass)
 ```
 
 > Do Tasks 1 & 2 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
