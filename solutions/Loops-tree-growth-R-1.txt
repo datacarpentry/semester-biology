@@ -1,18 +1,18 @@
 [1] 2.9
 
-# A tibble: 1,478 × 3
-# Groups:   TREATMENT, ORIGINAL_TAG [1,478]
+# A tibble: 1,529 × 3
+# Groups:   TREATMENT, ORIGINAL_TAG [1,528]
    TREATMENT ORIGINAL_TAG growth
    <chr>            <int>  <dbl>
- 1 MEGA                64   -9.1
- 2 MEGA                65   NA  
- 3 MEGA                88   -2  
- 4 MEGA                89    4.3
- 5 MEGA                90    8.3
- 6 MEGA                91    8.8
- 7 MEGA                92    3.3
- 8 MEGA                93    4.9
- 9 MEGA               123    1.5
-10 MEGA               124    4.7
-# … with 1,468 more rows
+ 1 MEGA                64 -2.28 
+ 2 MEGA                65 NA    
+ 3 MEGA                87  1.43 
+ 4 MEGA                88 -0.5  
+ 5 MEGA                89  1.08 
+ 6 MEGA                90  2.08 
+ 7 MEGA                91  2.2  
+ 8 MEGA                92  0.825
+ 9 MEGA                93  1.23 
+10 MEGA               123  0.375
+# … with 1,519 more rows
 # ℹ Use `print(n = ...)` to see more rows
