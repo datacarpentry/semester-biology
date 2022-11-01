@@ -8,16 +8,18 @@ language: R
 1\. The code below prints the numbers 1 through 5 one line at a time. Modify it to print the numbers 2 through 16.
 
 ```r
-for (i in 1:5){
-  print(i)
+numbers <- 1:5
+for (number in numbers){
+  print(number)
 }
 ```
 
 2\. The code below prints the numbers 1 through 5 one line at a time. Modify it to print each of these numbers multiplied by 3.
 
 ```r
-for (i in 1:5){
-  print(i)
+numbers <- c(1, 2, 3, 4, 5)
+for (number in numbers){
+  print(number)
 }
 ```
 
