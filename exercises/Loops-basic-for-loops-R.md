@@ -5,22 +5,19 @@ title: Basic For Loops
 language: R
 ---
 
-1\. The code below prints the numbers 1 through 5 one line at a time. Modify it to print the numbers 2 through 16.
-
-```r
-numbers <- 1:5
-for (number in numbers){
-  print(number)
-}
-```
-
-2\. The code below prints the numbers 1 through 5 one line at a time. Modify it to print each of these numbers multiplied by 3.
+1\. The code below prints the numbers 1 through 5 one line at a time. Modify it to print each of these numbers multiplied by 3.
 
 ```r
 numbers <- c(1, 2, 3, 4, 5)
 for (number in numbers){
   print(number)
 }
+```
+
+2\. Write a for loop that loops over the following vector and prints out the mass in kilograms (`mass_kg = 2.2 * mass_lbs`)
+
+```r
+mass_lbs <- c(2.2, 3.5, 9.6, 1.2)
 ```
 
 3\. Complete the code below so that it prints out the name of each bird one line at a time.
