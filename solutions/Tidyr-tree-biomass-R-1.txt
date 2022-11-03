@@ -1,0 +1,53 @@
+# A tibble: 65,889 × 4
+   PlotID SpCode   stem       girth
+   <chr>  <chr>    <chr>      <int>
+ 1 BSP70  Acaccaes TreeGirth1    25
+ 2 BSP70  Acaccaes TreeGirth1    25
+ 3 BSP70  Acaccaes TreeGirth1    28
+ 4 BSP70  Acaccaes TreeGirth1    38
+ 5 BSP70  Acaccaes TreeGirth1    54
+ 6 BSP100 Acaccate TreeGirth1    12
+ 7 BSP100 Acaccate TreeGirth1    13
+ 8 BSP100 Acaccate TreeGirth1    14
+ 9 BSP100 Acaccate TreeGirth1    15
+10 BSP100 Acaccate TreeGirth1    16
+# … with 65,879 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+[1] 308.8525
+
+[1] 8.276057
+
+# A tibble: 65,889 × 6
+   PlotID SpCode   stem       girth diameter   mass
+   <chr>  <chr>    <chr>      <int>    <dbl>  <dbl>
+ 1 BSP70  Acaccaes TreeGirth1    25     7.96  23.6 
+ 2 BSP70  Acaccaes TreeGirth1    25     7.96  23.6 
+ 3 BSP70  Acaccaes TreeGirth1    28     8.91  31.4 
+ 4 BSP70  Acaccaes TreeGirth1    38    12.1   68.0 
+ 5 BSP70  Acaccaes TreeGirth1    54    17.2  165.  
+ 6 BSP100 Acaccate TreeGirth1    12     3.82   3.68
+ 7 BSP100 Acaccate TreeGirth1    13     4.14   4.51
+ 8 BSP100 Acaccate TreeGirth1    14     4.46   5.44
+ 9 BSP100 Acaccate TreeGirth1    15     4.77   6.47
+10 BSP100 Acaccate TreeGirth1    16     5.09   7.62
+# … with 65,879 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+[1] 26710042
+
+# A tibble: 242 × 2
+   GenusCode   biomass
+   <chr>         <dbl>
+ 1 Acac       12849.  
+ 2 Acro       17899.  
+ 3 Acti       64199.  
+ 4 Aegl           6.47
+ 5 Agla      448027.  
+ 6 Agro          23.6 
+ 7 Aila        1589.  
+ 8 Alan        6740.  
+ 9 Albi       37902.  
+10 Allo        1654.  
+# … with 232 more rows
+# ℹ Use `print(n = ...)` to see more rows
