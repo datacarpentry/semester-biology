@@ -5,7 +5,7 @@ assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
 'Review + Reproducibility', 'Review + Reproducibility', 'Functions',
 'Making Choices', 'Repeating Things 1', 'Repeating Things 2', 'Cleaning Messy Data', 
-'Spatial Data 1', 'TBD', 'Spatial Data 2','TBD']
+'Spatial Data 1', 'Fall Break', 'Spatial Data 2', 'Working with Databases']
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
