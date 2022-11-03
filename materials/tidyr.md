@@ -15,7 +15,7 @@ language: SQL
 * Need to convert them to this tidy structure for analysis
 * Use a package called `tidyr`
 
-```
+```r
 install.packages("tidyr")
 library(tidyr)
 library(dplyr)
@@ -27,7 +27,7 @@ library(dplyr)
 
 > Copy link to Western Ghats tree data from datasets page
 
-```
+```r
 raw_data = read.csv("http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt", sep = "\t")
 ```
 
