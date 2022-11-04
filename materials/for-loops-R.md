@@ -120,6 +120,7 @@ masses
 
 > Do Tasks 3-4 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
 
+> End of 1 hour class
 
 ### Looping over multiple values
 
@@ -127,12 +128,12 @@ masses
 
 
 ```r
-b0 <- c(2.65, 1.28, 3.29)
-b1 <- c(0.9, 1.1, 1.2)
+as <- c(2.65, 1.28, 3.29)
+bs <- c(0.9, 1.1, 1.2)
 volumes = c(1.6, 3, 8)
 masses <- vector(mode="numeric", length=length(volumes))
-for (i in seq_along(volumes)){
-   mass <- b0[i] * volumes[i] ^ b1[i]
+for (i in 1:length(volumes)){
+   mass <- as[i] * volumes[i] ^ bs[i]
    masses[i] <- mass
 }
 ```
@@ -145,16 +146,14 @@ for (i in seq_along(volumes)){
 * For example, let's take the non-vectorized version of our `est_mass` function that returns an estimated mass if the `volume > 5` and `NA` if it's not.
 
 ```r
-est_mass <- function(volume){
+est_mass <- function(volume, a, b){
   if (volume > 5) {
-    mass <- 2.65 * volume ^ 0.9
+    mass <- a * volume ^ b
   } else {
     mass <- NA
   }
   return(mass)
 }
-
-volumes = c(1.6, 3, 8)
 ```
 
 * We can't pass the vector to the function and get back a vector of results because of the `if` statements
@@ -165,25 +164,16 @@ volumes = c(1.6, 3, 8)
 ```r
 masses <- vector(mode="numeric", length=length(volumes))
 for (i in length(volumes)){
-   mass <- est_mass(volumes[i])
+   mass <- est_mass(volumes[i], as[i], bs[i])
    masses[i] <- mass
 }
 ```
 
-* This is the for loop equivalent of an `sapply` statement we used in a previous lesson
+* This is the for loop equivalent of an `mapply` statement
 
 ```r
-masses_apply <- sapply(volumes, est_mass)
+masses_apply <- mapply(est_mass, volumes, a, b)
 ```
-
-* How to choose when there are many ways to do the same thing?
-  * Speed
-    * Matters in few cases
-    * Hard to identify bottlenecks
-  * Readability
-    * Easy to understand
-  * Personal preference
-* There is single best choice
 
 > Do [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
 
