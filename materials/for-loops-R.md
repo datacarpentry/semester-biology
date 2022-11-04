@@ -197,12 +197,10 @@ list.files()
 ```
 
 * But we just want the data files so we'll add the optional `pattern` argument to only get the files that start with `"locations-"`
-* The `*` is a wild card, so this means "starts with locations- and includes anything afterwards"
 
 
 ```r
-data_files = list.files(pattern = "locations-*", 
-                        full.names = TRUE)
+data_files = list.files(pattern = "locations-")
 ```
 
 * Once we have this list we can loop over it count the number of observations in each file
