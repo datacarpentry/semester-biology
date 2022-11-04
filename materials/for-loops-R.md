@@ -207,14 +207,16 @@ data_files = list.files(pattern = "locations-")
 * First create an empty vector to store those counts
 
 ```r
-results <- vector(mode = "integer", length = length(data_files))
+n_files = length(data_files)
+results <- integer(n_files)
 ```
 
 * Then write our loop
 
 ```r
-for (i in 1:length(data_files){
-  data <- read.csv(data_files[i])
+for (i in 1:n_files){
+  filename <- data_files[i]
+  data <- read.csv(filename)
   count <- nrow(data)
   results[i] <- count
 }
@@ -228,14 +230,16 @@ for (i in 1:length(data_files){
 * We often want to calculate multiple pieces of information in a loop making it useful to store results in things other than vectors
 * We can store them in a data frame instead by creating an empty data frame and storing the results in the `i`th row of the appropriate column
 * Associate the file name with the count
+* Also store the minimum latitude
 * Start by creating an empty data frame
 * Use the `data.frame` function
 * Provide one argument for each column
 * "Column Name" = "an empty vector of the correct type"
 
 ```r
-results <- data.frame(file_name = vector(mode = "character", length = length(data_files)))
-                      count = vector(mode = "integer", length = length(data_files)))
+results <- data.frame(file_name = character(n_files),
+                      count = integer(n_files),
+                      min_lat = numeric(n_files))
 ```
 
 * Now let's modify our loop from last time
@@ -243,23 +247,14 @@ results <- data.frame(file_name = vector(mode = "character", length = length(dat
 * We also want to store the filename, which is `data_files[i]`
 
 ```r
-for (i in 1:length(data_files){
-  data <- read.csv(data_files[i])
-  count <- nrow(data)
-  results$file_name[i] <- data_files[i]
-  results$count[i] <- count
-}
-```
-
-* We could also rewrite this a little to make it easier to understand by getting the file name at the begging
-
-```r
-for (i in 1:length(data_files){
+for (i in 1:n_files){
   filename <- data_files[i]
   data <- read.csv(filename)
   count <- nrow(data)
+  min_lat = min(data$lat)
   results$file_name[i] <- filename
   results$count[i] <- count
+  results$min_lat[i] <- min_lat
 }
 ```
 
