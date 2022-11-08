@@ -34,6 +34,7 @@ raw_data = read.csv("http://datacarpentry.org/semester-biology/data/Macroplot_da
 > View data
 
 * Data on tree girth from the Western Ghats
+* Western Ghats is a mountainous region on the western edge of the Indian peninsula considered one of the works 8 biodiversity hotspots. 
 * When a tree had multiple stems the diameter of each stem was entered in a separate column
 * What would a better structure be?
 
@@ -45,7 +46,7 @@ raw_data = read.csv("http://datacarpentry.org/semester-biology/data/Macroplot_da
 
 ```r
 clean_data <- raw_data %>%
-  mutate(treeid = 1:nrow(raw_data))
+  mutate(treeid = 1:n())
 ```
 
 * To get the data in this form we can use `pivot_longer`
@@ -156,7 +157,7 @@ stem_counts <- clean_data %>%
 
 ```r
 stem_counts_wide <- stem_counts %>% 
-  unite(species_id, genus, species)
+  unite('species_id', genus, species)
 ```
 
 * Then make the data wide
@@ -182,7 +183,7 @@ stem_counts_wide <- stem_counts %>%
   unite(species_id, genus, species) %>%
   pivot_wider(names_from = species_id,
               values_from = count,
-              values_fill = list(count = 0))
+              values_fill = 0)
 ```
 
 ### Completing data with gaps
@@ -190,7 +191,8 @@ stem_counts_wide <- stem_counts %>%
 * Some write out a value once and then leave the following rows blank
 
 ```r
-gappy_data <- read.csv("http://www.datacarpentry.org/semester-biology/data/gappy-data.csv")
+gappy_data <- read.csv("http://www.datacarpentry.org/semester-biology/data/gappy-data.csv",
+                       na.strings = "")
 gappy_data
 ```
 
@@ -216,8 +218,7 @@ clean_data <- gappy_data %>%
 * Could also use this to add zeros to our long `stem_counts` data frame
 
 ```r
-stem_counts <- clean_data %>% 
-  group_by(PlotID, genus, species) %>% 
-  summarize(count = n()) %>%
+stem_counts |>
+  ungroup() |>
   complete(PlotID, nesting(genus, species), fill = list(count = 0))
 ```
