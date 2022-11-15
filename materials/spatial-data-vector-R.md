@@ -37,12 +37,12 @@ Polygons: Shows two polygons composed of connected sets of x,y points where the 
 * It is stored in the `plots_harv` files and we can see there are four of them with different extensions
 
 * Work with vector data using the `sf` package
-* We can read this data into R using `st_read`
+* We can read this data into R using `read_sf`
 * Let's load in the plot data we just look at 
 
 ```r
 library(sf)
-plots_harv <- st_read("data/HARV/harv_plots.shp")
+plots_harv <- read_sf("data/HARV/harv_plots.shp")
 ```
 
 * When read read the data in we see information about it including
