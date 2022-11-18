@@ -85,7 +85,7 @@ ggplot() +
 * So let's load another vector object that shows the boundary of the research site
 
 ```r
-boundary_harv <- st_read("data/HARV/harv_boundary.shp")
+boundary_harv <- read_sf("data/HARV/harv_boundary.shp")
 ```
 
 * We can plot them together by adding two `geom_sf` layers in `ggplot`
@@ -115,3 +115,13 @@ ggplot() +
   geom_sf(data = plots_harv) +
   geom_sf(data = boundary_harv, alpha = 0.5)
 ```
+
+* If we just wanted the outline, which makes sense for site boundaries, we can use
+
+
+```r
+ggplot() +
+  geom_sf(data = plots_harv) +
+  geom_sf(data = boundary_harv, fill = "transparent")
+```
+
