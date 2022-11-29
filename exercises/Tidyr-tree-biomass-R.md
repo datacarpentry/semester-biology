@@ -23,7 +23,7 @@ where `Mass` is measured in kg of dry above-ground biomass and
 We're going to estimate the total tree biomass for trees in a 96
 hectare area of the Western Ghats in India.
 The data needs to be tidied before all of the tree stems can be used for analysis.
-
+f
 If the [`Macroplot_data_Rev.txt`](http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt) is not already in your working directory download a copy.
 
 1. Use `pivot_longer()` to create a longer data frame with one row for each measured stem. Use dplyr's `filter` function to remove all of the girths that are zero. Store this longer data frame in a variable and also display it.
