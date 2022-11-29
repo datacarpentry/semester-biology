@@ -145,3 +145,5 @@ ggplot() +
   scale_fill_viridis_c(na.value = "transparent") +
   geom_sf(data = harv_soils_small, alpha = 0)
 ```
+
+> Do Tasks 3 and 4 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).

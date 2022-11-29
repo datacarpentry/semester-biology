@@ -57,3 +57,5 @@ ggplot() +
   geom_sf(data = harv_soils, mapping = aes(fill = elevation)) +
   scale_fill_viridis_c()
 ```
+
+> Do Tasks 3-5 of [Harvard Forest Soils Analysis]({{ site.baseurl }}/exercises/Neon-harvard-forest-soils-analysis-R).

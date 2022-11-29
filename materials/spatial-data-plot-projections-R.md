@@ -58,3 +58,5 @@ ggplot() +
 ```
 
 * We could also use the numeric code for the CRS instead if we want to
+
+> Do Task 6 of [Harvard Forest Soils Analysis]({{ site.baseurl }}/exercises/Neon-harvard-forest-soils-analysis-R).

@@ -51,3 +51,5 @@ ggplot() +
   geom_sf(data = harv_soils) +
   facet_wrap(~TYPE_)
 ```
+
+> Do Tasks 1 & 2 of [Harvard Forest Soils Analysis]({{ site.baseurl }}/exercises/Neon-harvard-forest-soils-analysis-R).

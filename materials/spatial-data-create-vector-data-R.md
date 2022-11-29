@@ -51,3 +51,5 @@ harv_plots <- st_read("data/HARV/harv_plots.csv",
 * If we look at `harv_plots` we can see that it looks like all of our other vector data
 * We can plot, reproject, and `extract` values from rasters using this data just like we can from shape files
 * We can even save it as a shape file if we want, which we'll see how to do in the lesson on save spatial data
+
+> Do Tasks 1 and 2 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).

@@ -54,4 +54,5 @@ st_write(harv_soils_small, "harv_soils_small.shp")
 ```
 
 * If we look in the `Files` tab we can see this created a full set of the files that make up a single shape file
- 
+
+> Do Tasks 5 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
