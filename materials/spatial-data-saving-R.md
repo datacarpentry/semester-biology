@@ -45,12 +45,12 @@ read_stars("harv_dtm_cropped.tif")
 
 ### Writing sf vector data
 
-* To save data `sf` vector data we use `st_write`
+* To save data `sf` vector data we use `write_sf`
 * Again the arguments are the object to be written and the name of the file to write to
 * With the extension indicating the file type
 
 ```r
-st_write(harv_soils_small, "harv_soils_small.shp")
+write_sf(harv_soils_small, "harv_soils_small.shp")
 ```
 
 * If we look in the `Files` tab we can see this created a full set of the files that make up a single shape file
