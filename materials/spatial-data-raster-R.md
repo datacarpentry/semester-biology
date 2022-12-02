@@ -38,7 +38,7 @@ The matrix is then shown as green pixels again to represent plotting the raster.
 
 ### Importing and exploring
 
-* We import raster data using the `st_read()` function from the `stars` package
+* We import raster data using the `read_sf()` function from the `stars` package
 * We'll start by importing some elevation data collected from an airplane using an instrument called LIDAR
 * One of the values that LIDAR can generate is a Digital Terrain Model or DTM, which is the elevation of the ground
 

@@ -20,11 +20,11 @@ library(sf)
 * For example, what if our plot data for Harvard Forest as originally provided as a table with latitude and longitude columns instead of a shape file?
 * We have a version of the plots data that is stored like this in `harv_plots.csv`
 
-* To read in data like this as a spatial object we use the `st_read` function
+* To read in data like this as a spatial object we use the `read_sf` function
 * The first argument is still the name of the file we are going to read
 
 ```r
-harv_plots <- st_read("data/HARV/harv_plots.csv")
+harv_plots <- read_sf("data/HARV/harv_plots.csv")
 ```
 
 * But now we also need to tell it which columns the spatial data is located in
@@ -33,7 +33,7 @@ harv_plots <- st_read("data/HARV/harv_plots.csv")
 * In our case those column names are `longitude` and `latitude`
 
 ```r
-harv_plots <- st_read("data/HARV/harv_plots.csv",
+harv_plots <- read_sf("data/HARV/harv_plots.csv",
                       options = c("X_POSSIBLE_NAMES=longitude", "Y_POSSIBLE_NAMES=latitude"))
 ```
 
@@ -41,7 +41,7 @@ harv_plots <- st_read("data/HARV/harv_plots.csv",
 * If it's lat/long data this is `4326`
 
 ```r
-harv_plots <- st_read("data/HARV/harv_plots.csv",
+harv_plots <- read_sf("data/HARV/harv_plots.csv",
                       options = c("X_POSSIBLE_NAMES=longitude", "Y_POSSIBLE_NAMES=latitude"),
                       crs = 4326)
 ```

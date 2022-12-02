@@ -12,7 +12,7 @@ language: R
 > library(sf)
 > library(stars)
 > dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
-> plots_harv <- st_read("data/HARV/harv_plots.shp")
+> plots_harv <- read_sf("data/HARV/harv_plots.shp")
 > ```
 
 ### Extract raster data at points

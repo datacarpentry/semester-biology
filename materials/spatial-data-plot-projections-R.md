@@ -15,7 +15,7 @@ library(sf)
 library(stars)
 library(ggplot2)
 
-harv_soils <- st_read("data/HARV/harv_soils.shp")
+harv_soils <- read_sf("data/HARV/harv_soils.shp")
 harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
 ```
 

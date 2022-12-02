@@ -17,8 +17,8 @@ library(sf)
 library(ggplot2)
 
 harv_dtm <- read_stars("data/HARV/HARV_dtmCrop.tif")
-harv_boundary <- st_read("data/HARV/harv_boundary.shp")
-harv_soils <- st_read("data/HARV/harv_soils.shp")
+harv_boundary <- read_sf("data/HARV/harv_boundary.shp")
+harv_soils <- read_sf("data/HARV/harv_soils.shp")
 
 ggplot() +
   geom_stars(data = harv_dtm) +

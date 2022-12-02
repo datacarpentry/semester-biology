@@ -32,10 +32,10 @@ ggplot() +
   geom_stars(data = dtm_harv)
 ```
 
-* For vector data we've loaded it using `st_read` and plotted it with `geom_sf`
+* For vector data we've loaded it using `read_sf` and plotted it with `geom_sf`
 
 ```r
-plots_harv <- st_read("data/HARV/harv_plots.shp")
+plots_harv <- read_sf("data/HARV/harv_plots.shp")
 ggplot() +
   geom_sf(data = plots_harv)
 ```
