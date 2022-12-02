@@ -27,7 +27,7 @@ harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
 ggplot() +
   geom_stars(data = harv_dtm) +
   scale_fill_viridis_c() +
-  geom_sf(data = harv_boundary, alpha = 0)
+  geom_sf(data = harv_boundary, fill = "transparent")
 ```
 
 ### Cropping a raster using to a vector polygon
@@ -58,7 +58,7 @@ harv_dtm_cropped
 ggplot() +
   geom_stars(data = harv_dtm_cropped) +
   scale_fill_viridis_c() +
-  geom_sf(data = harv_boundary, alpha = 0)
+  geom_sf(data = harv_boundary, fill = "transparent")
 ```
 
 * We now see colored values only for the part of the part of the raster inside the boundary
@@ -72,7 +72,7 @@ ggplot() +
 ggplot() +
   geom_stars(data = harv_dtm_cropped) +
   scale_fill_viridis_c(na.value = "transparent") +
-  geom_sf(data = harv_boundary, alpha = 0)
+  geom_sf(data = harv_boundary, fill = "transparent")
 ```
 
 * Cropping removes the portion of the raster that is outside the x/y extent of the vector
@@ -91,7 +91,7 @@ harv_dtm_masked
 ggplot() +
   geom_stars(data = harv_dtm_masked) +
   scale_fill_viridis_c(na.value = "transparent") +
-  geom_sf(data = harv_boundary, alpha = 0)
+  geom_sf(data = harv_boundary, fill = "transparent")
 ```
 
 ## Cropping to a bounding box
@@ -106,7 +106,7 @@ ggplot() +
 ggplot() +
   geom_stars(data = harv_dtm_cropped) +
   scale_fill_viridis_c(na.value = "transparent") +
-  geom_sf(data = harv_boundary, alpha = 0) +
+  geom_sf(data = harv_boundary, fill = "transparent") +
   coord_sf(datum = st_crs(harv_dtm))
 ```
 
@@ -142,5 +142,5 @@ harv_soils_small <- st_crop(harv_soils, bbox)
 ggplot() +
   geom_stars(data = harv_dtm_small) +
   scale_fill_viridis_c(na.value = "transparent") +
-  geom_sf(data = harv_soils_small, alpha = 0)
+  geom_sf(data = harv_soils_small, fill = "transparent")
 ```
