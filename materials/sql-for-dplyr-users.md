@@ -238,6 +238,15 @@ FROM surveys
 GROUP BY species_id, plot_id;
 </pre>
 
+* If we want to filter on these calculated values use `HAVING`
+
+```sql
+SELECT species_id, plot_id, AVG(weight) as avg_weight, COUNT(weight) as num_indiv
+FROM surveys
+GROUP BY species_id, plot_id
+HAVING count > 10;
+```
+
 > Do the [COUNT]({{ site.baseurl }}/exercises/Aggregation-count-SQL) exercise.
 
 ### Order matters
