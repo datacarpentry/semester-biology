@@ -144,6 +144,8 @@ a query like this.
 
 ### Sorting
 
+#### Option 1 (introduce new table)
+
 * Use `ORDER BY` to sort data.
 * Equivalent of `arrange` in `dplyr` is `ORDER BY`.
 
@@ -167,6 +169,36 @@ ORDER BY genus DESC;
 SELECT genus, species
 FROM species
 ORDER BY taxa, genus, species;
+```
+
+#### Option 2 (modify previous query)
+
+* Use `ORDER BY` to sort data.
+* Equivalent of `arrange` in `dplyr` is `ORDER BY`.
+
+```sql
+SELECT year, month, day, species_id, ROUND(hindfoot_length/10)
+FROM surveys
+WHERE species_id = 'DS' AND year > 1990 AND hindfoot_length IS NOT NULL
+ORDER BY species_id;
+```
+
+* Use `DESC` to sort in descending order.
+
+```sql
+SELECT year, month, day, species_id, ROUND(hindfoot_length/10)
+FROM surveys
+WHERE species_id = 'DS' AND year > 1990 AND hindfoot_length IS NOT NULL
+ORDER BY species_id DESC;
+```
+
+* Use a list to sort by multiple columns.
+
+```sql
+SELECT year, month, day, species_id, ROUND(hindfoot_length/10)
+FROM surveys
+WHERE species_id = 'DS' AND year > 1990 AND hindfoot_length IS NOT NULL
+ORDER BY species_id DESC, year DESC;
 ```
 
 ### Aggregation
