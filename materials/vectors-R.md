@@ -101,6 +101,27 @@ density <- count / area
 * This works because when we divide vectors, R divides the first value in the first vector by the first value in the second vector, then divides the second values in each vector, and so on
 * Element-wise: operating on one element at a time
 
+* To perform the same operation on each value in a vector you can use constants
+* So if we wanted to double all of the values in the `area` vector
+
+```r
+area * 2
+```
+
+* Remember - this isn't saved unless we store it
+* So `area` hasn't changed
+
+```r
+area
+```
+
+* If we want to keep the results of the calculation them in a new variable
+
+```r
+doubled_area <- area * 2
+doubled_area
+```
+
 #### Filtering
 
 * Subsetting or "filtering" is done using `[]`
