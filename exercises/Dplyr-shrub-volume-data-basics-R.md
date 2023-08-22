@@ -14,8 +14,8 @@ If the file [`shrub-volume-data.csv`]({{ site.baseurl }}/data/shrub-volume-data.
 
 Get familiar with the data by importing it using `read.csv()` and use `dplyr` to complete the following tasks.
 
-1. Select the data from the length column and print it out (using `select`).
-2. Select the data from the site and experiment columns and print it out (using `select`).
+1. Select the data from the length column (using `select`).
+2. Select the data from the site and experiment columns (using `select`).
 3. Add a new column named `area` containing the area of the shrub, which is the length times the width (using `mutate`).
 4. Sort the data by length (using `arrange`).
 5. Filter the data to include only plants with heights greater than 5 (using `filter`).
