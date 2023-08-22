@@ -7,7 +7,7 @@ language: R
 
 This is a follow-up to [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
 
-In addition to the main data table on shrub dimensions, Dr. Granger has two additional data tables.
+In addition to the main data table on shrub dimensions, Dr. Morales has two additional data tables.
 The first describes the manipulation for each experiment.
 The second provides information about the different sites.
 Check if the files `shrub-volume-experiments.csv` and `shrub-volume-sites.csv` are in your work space (your instructor may have already added them).

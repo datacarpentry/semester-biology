@@ -8,7 +8,7 @@ language: Python
 *This problem is related to [Shrub Volume]({{ site.baseurl }}/exercises/Combining-basics-shrub-volume-Python),
 but using the Pandas library.*
 
-Dr. Granger is interested in studying the factors controlling the size and
+Dr. Morales is interested in studying the factors controlling the size and
 carbon storage of shrubs. This research is part of a larger area of research
 trying to understand carbon storage by plants. She has conducted a small
 preliminary experiment looking at the effect of three different treatments on

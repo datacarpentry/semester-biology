@@ -5,7 +5,7 @@ title: Shrub Volume Data Basics
 language: R
 ---
 
-Dr. Granger is interested in studying the factors controlling the size and
+Dr. Morales is interested in studying the factors controlling the size and
 carbon storage of shrubs. She has conducted an experiment looking at the effect
 of three different treatments on shrub volume at four different locations. She
 has placed the data file on the web for you to download:

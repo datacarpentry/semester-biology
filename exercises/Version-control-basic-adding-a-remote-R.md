@@ -8,7 +8,7 @@ language: R
 This is a follow up to
 [Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R).
 
-Dr. Granger contacts you and lets you know that she'd like to be able to see
+Dr. Morales contacts you and lets you know that she'd like to be able to see
 what you've been doing and to share some more files with you. She's been
 learning version control herself while on sabbatical and so she suggests that
 you use a shared `git` repository on the hosting site [Github](https://github.com).

@@ -7,9 +7,9 @@ language: R
 
 This is a follow-up to [Shrub Volume Data Basics]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
-Now that you're familiar with the data, Dr. Granger wants you to conduct a preliminary analysis of these data to include in a grant proposal (*she might be a world renowned expert in carbon storage in plants, but she sure doesn't know much about computers*). If you missed it, the [data file]({{ site.baseurl }}/data/shrub-volume-data.csv) is still on the web.
+Now that you're familiar with the data, Dr. Morales wants you to conduct a preliminary analysis of these data to include in a grant proposal (*she might be a world renowned expert in carbon storage in plants, but she sure doesn't know much about computers*). If you missed it, the [data file]({{ site.baseurl }}/data/shrub-volume-data.csv) is still on the web.
 
-You might be able to do this analysis by hand in Excel, but Dr. Granger seems to
+You might be able to do this analysis by hand in Excel, but Dr. Morales seems to
 always get funded meaning that you'll be doing this again soon with a much
 larger dataset. So, you decide to write a script so that it will be easy to do
 the analysis again.

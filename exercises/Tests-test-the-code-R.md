@@ -18,7 +18,7 @@ so that all of your tests pass.
 3.  on a sequence represented by mixed case string.
 4.  on a sequence represented by multiline string.
 
-In an email accompanying your "updated" code, Dr. Granger indicated that
+In an email accompanying your "updated" code, Dr. Morales indicated that
 the specifications for the earlength size classes were:
 
 1.  extralarge: earlength >= 15

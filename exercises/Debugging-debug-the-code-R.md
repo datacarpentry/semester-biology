@@ -7,7 +7,7 @@ language: R
 
 This is a follow up to [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R).
 
-While you were out of town doing field work over the summer Dr. Granger hired
+While you were out of town doing field work over the summer Dr. Morales hired
 another student, Gregory Goyle, to help her modify your code so that it did
 something a bit different than the original code. The new code was intended to
 include more size classes and to output the average GC content for each size

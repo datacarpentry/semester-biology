@@ -7,7 +7,7 @@ language: Python
 
 This is a follow up to [Shrub Volume 2]({{ site.baseurl }}/exercises/Scientific-shrub-volume-2-Python).
 
-Dr. Granger is interested in studying the factors controlling the size and
+Dr. Morales is interested in studying the factors controlling the size and
 carbon storage of shrubs. This research is part of a larger area of research
 trying to understand carbon storage by plants. She has conducted a small
 preliminary experiment looking at the effect of three different treatments on

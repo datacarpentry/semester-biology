@@ -7,7 +7,7 @@ language: R
 
 This is a follow up to [Shrub Volume Carbon]({{ site.baseurl }}/exercises/Combining-basics-shrub-volume-carbon-R).
 
-Dr. Granger wants you to run an ANOVA to determine if the different experimental 
+Dr. Morales wants you to run an ANOVA to determine if the different experimental 
 treatments lead to differences in shrub carbon.
 
 1. Import the data and your results table that you exported in 'Combining 

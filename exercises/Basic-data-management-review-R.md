@@ -5,7 +5,7 @@ title: Data Management Review
 language: R
 ---
 
-Dr. Granger is interested in studying the relationship between the
+Dr. Morales is interested in studying the relationship between the
 length of house-elves' ears and aspects of their DNA. This research is
 part of a larger project attempting to understand why house-elves
 possess such powerful magic. She has obtained DNA samples and ear

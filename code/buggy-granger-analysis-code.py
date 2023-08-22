@@ -1,11 +1,11 @@
-"""Analysis code for Dr. Granger's project"""
+"""Analysis code for Dr. Morales's project"""
 
 def get_gc_content(seq):
     """Determine the GC content of a sequence"""
     gc_content = 100 * seq.count('G') + seq.count('C') / len(seq)
 
 def get_size_class(earlength):
-    """Determine the size class of earlength based on Dr. Grangers specification"""
+    """Determine the size class of earlength based on Dr. Moraless specification"""
     if earlength > 15:
         size_class = 'extralarge'
     elif earlength > 10:
