@@ -3,12 +3,12 @@ layout: page
 title: Syllabus
 catalog: ALS 6501
 credits: 3
-semester: Fall 2022
+semester: Fall 2023
 professor: Dr. Ethan White (he/him)
 office: Room 1 Building 150
 email: ethanwhite@ufl.edu
 phone: 352-294-2081
-schedule: ['Tuesdays, 12:50-1:40 pm ET', 'Fridays, 11:45-1:40 pm ET']
+schedule: ['Tuesdays, 9:35-10:25 am ET', 'Fridays, 11:45-1:40 pm ET']
 location: Newins-Ziegler Hall (NZH) 222
 office_hours: "TBD"
 office_hours_location: "TBD"
@@ -148,16 +148,13 @@ knowing more take a look at this great
 
 ### Instructional Methods
 
-As a flipped classroom, students are provided with either reading or video
-material that they are expected to view/read prior to class. Classes will
-involve brief refreshers on new concepts followed by working on exercises in
+Classes will involve brief introductions to new concepts followed by working on exercises in
 class that cover that concept. While students are working on exercises the
 instructor will actively engage with students to help them understand material
 they find confusing, explain misunderstandings and help identify mistakes that
 are preventing students from completing the exercises, and discuss novel
 applications and alternative approaches to the data analysis challenges students
-are attempting to solve. For more challenging topics class may start with 20-30
-minute demonstrations on the concepts followed by time to work on exercises.
+are attempting to solve.
 
 
 ## Course Policies
@@ -221,7 +218,7 @@ the Instructor when requesting accommodation0001 Reid Hall, 352-392-8565,
 www.dso.ufl.edu/drc/
 
 My policy: If you are in my class I want to help you learn and will happily work
-with you to make the learning environment equitable for you and others.
+with you to make the learning environment work effectively for you.
 
 
 ### Online Course Evaluation Process
@@ -284,14 +281,14 @@ http://registrar.ufl.edu/catalog0910/policies/regulationferpa.html
 
 ## Grading Policies
 
-Grading for this course is based on 12 equally weighted assignments.
+Grading for this course is based on ~12 equally weighted assignments.
 
 Exercises in assignments will be graded as follows:
 
 * Produces the correct answer using the requested approach: 100%
 * Generally uses the right approach, but a minor mistake results in an incorrect
     answer: 90%
-* Attempts to solve the problem and makes some progress using the core concept:
+* Attempts to solve the problem and makes some progress using the core concept, but returns the wrong answer and does not demonstrate comfort with the core concept:
     50%
 * Answer demonstrates a lack of understanding of the core concept: 0%
 
