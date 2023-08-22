@@ -138,7 +138,4 @@ states[density <= 3]
 density[density > 3]
 ```
 
-* Multiple vectors can be used together to perform element-wise math, where we do the same calculation for each position in the vectors
-* We can also filter the values in vector based on the values in another vector or itself
-
 > Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
