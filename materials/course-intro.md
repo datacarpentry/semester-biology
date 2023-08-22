@@ -102,6 +102,9 @@ Each step of the course builds on the last step and students who get behind ofte
 * Learning computing in a classroom that doesn't provide a supportive environment is awful
 * It's really important to me that this course provide a positive, inclusive, accessible, learning environment for everyone
 * If that is not the experience you are having for any reason, just let me know and I'll actively work to correct it.
+* There are two gender-inclusive restrooms available in the building where the course is taught:
+  * 1st floor in Room 124
+  * 3rd floor in Room 304 
 
 
 ### First day demo
