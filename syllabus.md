@@ -156,6 +156,15 @@ are preventing students from completing the exercises, and discuss novel
 applications and alternative approaches to the data analysis challenges students
 are attempting to solve.
 
+### Gender-Inclusive Restrooms
+
+There are two gender-inclusive restrooms available in the building where the course is taught:
+* 1st floor in Room 124
+* 3rd floor in Room 304 
+
+There are also two gender-inclusive restrooms available in the building where the instructor's office is located.
+
+For more information on gender-inclusive restrooms at UF see the [Gender-Inclusive restrooms page](https://titleix.ufl.edu/gender-inclusion/gender-inclusive-restrooms/) maintained by the Office for Accessibility and Gender Equity.
 
 ## Course Policies
 
