@@ -6,6 +6,8 @@ jobs:
   build:
     name: Building site and running pa11y-ci tests
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
 
     steps:
       - name: Checkout source.
