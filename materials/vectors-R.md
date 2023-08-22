@@ -11,13 +11,13 @@ language: R
 * A vector is a sequence of values that all have the same type
 * Create using the `c()` function, which stands for "combine"
 
-```
+```r
 states <- c("FL", "FL", "GA", "SC")
 ```
 
 * Using the `str` function we learned last time shows that this is a vector of 4 character strings 
 
-```
+```r
 str(states)
 ```
 
@@ -33,14 +33,14 @@ str(states)
 * Many functions in R take a vector as input and return a value
 * This includes the function `length` which determines how many items are in a vector
 
-```
+```r
 length(states)
 ```
 
 * We can also calculate common summary statistics
 * For example, if we have a vector of population counts
 
-```
+```r
 count <- c(9, 16, 3, 10)
 mean(count)
 max(count)
@@ -58,13 +58,13 @@ sum(count)
 * Missing values, known as "null" values, are written in R as `NA` with no quotes, which is short for "not available"
 * So a vector of 4 population counts with the third value missing would look like
 
-```
+```r
 count_na <- c(9, 16, NA, 10)
 ```
 
 * If we try to take the mean of this vector we get `NA`?
 
-```
+```r
 mean(count_na)
 ```
 
@@ -74,7 +74,7 @@ mean(count_na)
 * Do this using an optional argument, which is an argument that we don't have to include unless we want to modify the default behavior of the function
 * Add optional arguments by providing their name (`na.rm`), `=`, and the value that we want those arguments to take (`TRUE`)
 
-```
+```r
 mean(count_na, na.rm = TRUE)
 ```
 
@@ -84,7 +84,7 @@ mean(count_na, na.rm = TRUE)
 
 * Build on example where we have information on states and population counts by adding areas
 
-```
+```r
 states <- c("FL", "FL", "GA", "SC")
 count <- c(9, 16, 3, 10)
 area <- c(3, 5, 1.9, 2.7)
@@ -94,12 +94,33 @@ area <- c(3, 5, 1.9, 2.7)
 
 * We can divide the count vector by the area vector to get a vector of the density of individuals in that area
 
-```
+```r
 density <- count / area
 ```
 
 * This works because when we divide vectors, R divides the first value in the first vector by the first value in the second vector, then divides the second values in each vector, and so on
 * Element-wise: operating on one element at a time
+
+* To perform the same operation on each value in a vector you can use constants
+* So if we wanted to double all of the values in the `area` vector
+
+```r
+area * 2
+```
+
+* Remember - this isn't saved unless we store it
+* So `area` hasn't changed
+
+```r
+area
+```
+
+* If we want to keep the results of the calculation them in a new variable
+
+```r
+doubled_area <- area * 2
+doubled_area
+```
 
 #### Filtering
 
@@ -137,8 +158,5 @@ states[density <= 3]
 ```r
 density[density > 3]
 ```
-
-* Multiple vectors can be used together to perform element-wise math, where we do the same calculation for each position in the vectors
-* We can also filter the values in vector based on the values in another vector or itself
 
 > Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).

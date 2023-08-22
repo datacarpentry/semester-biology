@@ -63,7 +63,7 @@ language: R
 * _Write code directly in the text editor_
 * Kangaroo rat weight (g -> lb)
 
-```R
+```r
 50 / 1000 * 2.2
 ```
 
@@ -84,7 +84,7 @@ language: R
 * A variable is a name that has a value associated with it
     * Assign using `<-` or `=`
 
-```
+```r
 weight_g <- 50
 weight_g = 50
 ```
@@ -93,7 +93,7 @@ weight_g = 50
 
 * It works just like the value itself
 
-```
+```r
 weight_g / 1000
 weight_g / 1000 * 2.2
 weight_lb <- weight_g / 1000 * 2.2
@@ -101,7 +101,7 @@ weight_lb <- weight_g / 1000 * 2.2
 
 * It won't change unless you assign a new value to it directly
 
-```
+```r
 weight_g
 weight_g * 2
 weight_g
@@ -123,7 +123,7 @@ weight_g
 * For humans, not computers
 * Use the `#`
 
-```
+```r
 # Calculate weight of Kangaroo Rat in pounds
 ```
 
@@ -132,7 +132,7 @@ weight_g
 * Comment before each problem and each sub-problem
 * Make sure result prints out on `Source with echo`
 
-```
+```r
 # Problem 1
 
 # 1.1
@@ -164,7 +164,7 @@ volume
 * A function is a complicated expression.
 * Command that returns a value
 
-```
+```r
 sqrt(49)
 ```
 
@@ -188,7 +188,7 @@ str(weight_lb)
 ```
 
 * Another data type is for text data
-* We right text inside of quotation makes
+* We write text inside of quotation makes
 
 ```r
 "hello world"
