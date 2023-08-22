@@ -5,9 +5,9 @@ title: Paths
 language: R
 ---
 
-### (optional) If Using RStudio Cloud
+### (optional) If Using Posit Cloud
 
-* So far in this course we've been using RStudio Cloud and placing data files where R knows to find them for you
+* So far in this course we've been using Posit Cloud and placing data files where R knows to find them for you
 * Working with data files on your own computer is a little more complicated
 * But in this lesson we'll learn how to do this effectively
 
@@ -107,8 +107,8 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 
 * The simplest way to do this is using RStudio Projects
 
-* (RStudio Cloud) In fact we've already been using them
-* (RStudio Cloud) Every time you click on an assignment or click `New Project` this creates a new project
+* (Posit Cloud) In fact we've already been using them
+* (Posit Cloud) Every time you click on an assignment or click `New Project` this creates a new project
 
 * Each project is a self-contained unit of work in a single folder/directory
 * Treat all locations as relative to that single directory

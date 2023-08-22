@@ -194,7 +194,7 @@ be graded with a 20% penalty.
 
 Assignments are due Monday night by 11:59 pm Eastern Time.
 This timing allows you to be finished with one week's material before starting the next week's material.
-Assignments should be submitted via either RStudio Cloud (for R assignments) or Canvas (for other assignments).
+Assignments should be submitted via either Posit Cloud (for R assignments) or Canvas (for other assignments).
 
 ### Course Technology
 
