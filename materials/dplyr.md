@@ -8,7 +8,7 @@ time: 1
 
 > Remember to:
 >
-> * If teaching with RStudio Cloud or RStudio Server pre-load `surveys.csv`, `species.csv`, and `plots.csv` into the student's working directory
+> * If teaching with Posit Cloud or RStudio Server pre-load `surveys.csv`, `species.csv`, and `plots.csv` into the student's working directory
 > * Consider removing the `dplyr` package so you can demonstrate installing it.
 >     * Linux users: you may not want to do this because the source install is slow
 
@@ -23,9 +23,9 @@ time: 1
 * Need to know where the data is: Right click -> `Save link as`.
 * Start/open a project (modeling good practice)
 
-#### Setup RStudio Cloud
+#### Setup Posit Cloud
 
-* Go to the class space on RStudio Cloud
+* Go to the class space on Posit Cloud
 * Click on this weeks assignment
 
 #### Dataset

@@ -65,7 +65,7 @@ data_species <- read.csv('data/species.csv')
 * When you close RStudio it will often ask if you want to save your workspace
 * *Start to close RStudio*
 * *Show Save dialog*
-* Or on RStudio Cloud it will just do this automatically
+* Or on Posit Cloud it will just do this automatically
 * If you do this is will get reloaded when you start R, even when you restart it
   as described above
 * Stop this by `Tools` -> `Global Options` -> `General` ->
