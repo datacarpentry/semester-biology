@@ -188,7 +188,7 @@ str(weight_lb)
 ```
 
 * Another data type is for text data
-* We right text inside of quotation makes
+* We write text inside of quotation makes
 
 ```r
 "hello world"
