@@ -13,7 +13,6 @@ points: [50, 50, optional]
 >
 > - understand the basic rules of tidy data
 > - implement quality control for data entry in spreadsheets
-> - create an SQL database by importing data
 
 {% include reading.html %}
 
