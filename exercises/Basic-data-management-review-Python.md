@@ -5,7 +5,7 @@ title: Data Management Review
 language: Python
 ---
 
-Dr. Granger is interested in studying the relationship between the
+Dr. Morales is interested in studying the relationship between the
 length of house-elves' ears and aspects of their DNA. This research is
 part of a larger project attempting to understand why house-elves
 possess such powerful magic. She has obtained DNA samples and ear
@@ -17,7 +17,7 @@ much about computers). She has placed the file on the web for you to
 [download]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv).
 
 You might be able to do this analysis by hand in Excel, but counting all
-of those bases would be a lot of work, and besides, Dr. Granger seems to
+of those bases would be a lot of work, and besides, Dr. Morales seems to
 always get funded, which means that you'll be doing this again soon with a
 much larger dataset. So, you decide to write a script so that it will be
 easy to do the analysis again.

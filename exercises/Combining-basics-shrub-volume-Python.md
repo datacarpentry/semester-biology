@@ -5,7 +5,7 @@ title: Shrub Volume
 language: Python
 ---
 
-Dr. Granger is interested in studying the factors controlling the size and
+Dr. Morales is interested in studying the factors controlling the size and
 carbon storage of shrubs. This research is part of a larger area of research
 trying to understand carbon storage by plants. She has conducted a small
 preliminary experiment looking at the effect of three different treatments on
@@ -16,7 +16,7 @@ storage in plants, but she sure doesn't know much about computers). She has
 placed a data file on the web for you to
 [download]({{ site.baseurl }}/data/shrub-volume-data.csv).
 
-You might be able to do this analysis by hand in Excel, but Dr. Granger seems to
+You might be able to do this analysis by hand in Excel, but Dr. Morales seems to
 always get funded meaning that you'll be doing this again soon with a much
 larger dataset. So, you decide to write a script so that it will be easy to do
 the analysis again.

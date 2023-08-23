@@ -22,7 +22,7 @@ your tests pass.
 
 **get_size_class()**
 
-In an email accompanying your "updated" code, Dr. Granger indicated that
+In an email accompanying your "updated" code, Dr. Morales indicated that
 the specifications for the earlength size classes were:
 
 1.  extralarge: earlength >= 15

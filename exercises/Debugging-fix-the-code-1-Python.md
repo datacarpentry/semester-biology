@@ -7,7 +7,7 @@ language: Python
 
 This is a follow up to the [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-Python).
 
-While you were out of town doing field work over the summer Dr. Granger hired
+While you were out of town doing field work over the summer Dr. Morales hired
 another student, Gregory Goyle, to help her modify your code so that it did
 something a bit different than the original code. The new code was intended to
 include more size classes and to output the average GC content for each size

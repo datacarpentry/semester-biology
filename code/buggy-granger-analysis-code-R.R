@@ -1,4 +1,4 @@
-### Analysis code for Dr. Granger's project
+### Analysis code for Dr. Morales's project
 
 get_gc_content <- function(seq){
     # Determine the GC content of a sequence
@@ -7,7 +7,7 @@ get_gc_content <- function(seq){
 }
 
 get_size_class <- function(earlength){
-    # Determine the size class of earlength based on Dr. Grangers specification
+    # Determine the size class of earlength based on Dr. Moraless specification
   if (earlength > 15){
       size_class = 'extralarge'
   } else if (earlength > 10){

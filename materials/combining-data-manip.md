@@ -86,7 +86,14 @@ ds_weight_by_year <- surveys |>
 * You can change this to give the base R pipe
     * Tools -> Global Options -> Code -> Use native pipe operator
 
-### What if I want to pipe to an argument other than the first argument
+### Pipe to other arguments
+
+* To pipe the result of a line to something other than the first argument use the placehold `_`
+* This only works for named arguments
+* Let's fit a linear model at the end of our dplyr pipeline
+* lm takes a formula as the first argument tells it what columns to use for the response and driver variables
+* The second argument tells it where the data is
+* It needs to be named for the place holder to work
 
 ```
 surveys |>
