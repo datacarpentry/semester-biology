@@ -8,7 +8,7 @@ language: SQL
 A lot of real data isn't very tidy, mostly because most scientists aren't taught
 about how to structure their data in a way that is easy to analyze.
 
-[Download an untidy version](https://ndownloader.figshare.com/files/24469424)
+[Download an untidy version]({{ site.baseurl }}/data/untidy-portal-data.xlsx)
 of some of the Portal Project data, which includes information on the site, date,
 species identification, weight and sampling plot (within the site) for some small mammals. 
 
