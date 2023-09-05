@@ -8,10 +8,10 @@ professor: Dr. Ethan White (he/him)
 office: Room 1 Building 150
 email: ethanwhite@ufl.edu
 phone: 352-294-2081
-schedule: ['Tuesdays, 9:35-10:25 am ET', 'Fridays, 11:45-1:40 pm ET']
-location: Newins-Ziegler Hall (NZH) 222
-office_hours: "TBD"
-office_hours_location: "TBD"
+schedule: ['Tuesdays, 12:50-1:40 pm ET', 'Fridays, 11:45-1:40 pm ET']
+location: "Newins-Ziegler Hall (NZH) 222"
+office_hours: "Fridays 9:30-10:30 am ET"
+office_hours_location: "Building 150"
 TA: Virnaliz Cruz
 TA_email: virnaliz.cruzher@ufl.edu
 ---
