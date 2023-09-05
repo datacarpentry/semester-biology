@@ -131,7 +131,7 @@ density <- count / area
 * Subsetting or "filtering" is done using `[]`
 * Like with slicing, the `[]` say "give me a piece of something"
 * Selects parts of vectors based on "conditions" not position
-* Get the density values in site a
+* Get the density values for sites in Florida
 
 ```r
 density[states == 'FL']
