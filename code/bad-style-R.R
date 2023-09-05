@@ -19,7 +19,7 @@ percent_mass<-func1( spp$col_3, target_year$col_3 )
 species_rank<-rbind( species_rank, data.frame(year, sp_code, percent_ind, percent_mass) )
 }
 }
-species_rank <- left_join(species_rank, species, by = c("sp_code" = "SPCODE"))
+species_rank <- left_join(species_rank, species, join_by(sp_code == SPCODE))
 library(ggplot2)
 ggplot(species_rank, aes(x = percent_ind, y = percent_mass)) +
 geom_point(aes(color = factor(SPECIES))) +
