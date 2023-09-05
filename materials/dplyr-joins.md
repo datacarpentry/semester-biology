@@ -49,7 +49,7 @@ plots <- read.csv("plots.csv")
   * And the column, or columns, that provide the linkage between the two tables
 
 ```r
-combined <- inner_join(surveys, species, by = "species_id")
+combined <- inner_join(surveys, species, join_by(species_id))
 ```
 
 * Looking at the `combined` table, we can see that on every row with a particular value for `species_id` the join has added the matching values on `genus`, `species`, and `taxa`
@@ -72,7 +72,7 @@ Combined table has 1 and 2 in column 1, x1 and x2 in column 2, and y1 and y2 in 
 * So if we want to keep rows with missing species IDs we could use `left_join`
 
 ```r
-combined <- left_join(surveys, species, by = "species_id")
+combined <- left_join(surveys, species, join_by(species_id))
 ```
 
 * There are also right joins, which keep all rows in the second, or right, table
@@ -89,8 +89,8 @@ combined <- left_join(surveys, species, by = "species_id")
 
 ```r
 combined <- surveys |>
-  inner_join(species, by = "species_id") |>
-  inner_join(plots, by = "plot_id")
+  inner_join(species, join_by(species_id)) |>
+  inner_join(plots, join_by(plot_id))
 ```
 
 > Do [Shrub Volume Join 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R). 
