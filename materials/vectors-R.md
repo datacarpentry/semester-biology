@@ -92,21 +92,15 @@ area <- c(3, 5, 1.9, 2.7)
 
 #### Vector math
 
-* We can divide the count vector by the area vector to get a vector of the density of individuals in that area
-
-```r
-density <- count / area
-```
-
-* This works because when we divide vectors, R divides the first value in the first vector by the first value in the second vector, then divides the second values in each vector, and so on
-* Element-wise: operating on one element at a time
-
-* To perform the same operation on each value in a vector you can use constants
+* Perform the same mathematical operation on each value in a vector by treating it like we would a single value
 * So if we wanted to double all of the values in the `area` vector
 
 ```r
 area * 2
 ```
+
+* This works because when do this multiplication, R multiplies the first value in the vector by 2, then multiplies the second values in the vector by 2, and so on
+* Element-wise: operating on one element at a time
 
 * Remember - this isn't saved unless we store it
 * So `area` hasn't changed
@@ -121,6 +115,16 @@ area
 doubled_area <- area * 2
 doubled_area
 ```
+
+* We can also do element-wise math with multiple vectors of the same length
+* Let's divide the count vector by the area vector to get a vector of the density of individuals in that area
+
+```r
+density <- count / area
+```
+
+* When we divide the two vectors, R divides the first value in the first vector by the first value in the second vector, then divides the second values in each vector, and so on
+* Element-wise: operating on one element at a time
 
 #### Filtering
 
