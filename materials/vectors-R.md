@@ -131,7 +131,7 @@ density <- count / area
 * Subsetting or "filtering" is done using `[]`
 * Like with slicing, the `[]` say "give me a piece of something"
 * Selects parts of vectors based on "conditions" not position
-* Get the density values in site a
+* Get the density values for sites in Florida
 
 ```r
 density[states == 'FL']
@@ -164,3 +164,15 @@ density[density > 3]
 ```
 
 > Do [Shrub Volume Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
+
+* What's actually happening when we subset vectors this way?
+* Let's look at the piece of the code inside the `[]`
+
+```r
+density > 3
+```
+
+* This does an element-wise check to see if each value is > 3
+* If it is the result is `TRUE`, if not it is `FALSE`
+* The `density[]` part of the code then keeps those values in the `density` vector where this inner vector is `TRUE`
+* You don't need to remember this last piece now, we'll come back to it
