@@ -12,6 +12,16 @@ time: 1
 > * Consider removing the `dplyr` package so you can demonstrate installing it.
 >     * Linux users: you may not want to do this because the source install is slow
 
+### Setup
+
+```r
+install.packages('dplyr')
+download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
+download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
+download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
+download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-data.csv", "shrub-volume-data.csv")
+```
+
 ### Introduction to tabular data
 
 * We will be working with data from the Portal Project.
@@ -102,6 +112,10 @@ select(surveys, month, day, year)
 ```
 
 > Do [Shrub Volume Data Basics 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> * Start your assignment file
+> * Load the dplyr package
+> * Load the shrub-volume-data.csv file
+> * Do Parts 1 & 2
 
 #### Mutate
 
@@ -128,8 +142,6 @@ surveys <- mutate(surveys,
                   hindfoot_length_cm = hindfoot_length / 10)
 ```
 
-> Do [Shrub Volume Data Basics 3]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
-
 #### Arrange
 
 * We can sort the data in the table using `arrange`
@@ -151,7 +163,7 @@ arrange(surveys, desc(weight))
 arrange(surveys, plot_id, year, month, day)
 ```
 
-> Do [Shrub Volume Data Basics 4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Shrub Volume Data Basics 3-4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 #### Filter 
 

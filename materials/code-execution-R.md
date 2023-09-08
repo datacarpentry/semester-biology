@@ -5,7 +5,7 @@ title: Code Execution
 language: R
 ---
 
-### Basic code execution
+### Code executes top to bottom
 
 * When we run a chunk of code it runs from top to bottom in order
 * It runs the first line, then the second line, and so on
@@ -38,3 +38,38 @@ density <- number / area
 * The third line first looks up the variable `density` and replaces it with its value
 * It then looks up the the variable area and replaces it with its value
 * It then multiplies those two vectors and assigns them to the variable `total_number` 
+
+### Code executes left to right
+
+> Instructors note: This is a slight fudge since it actually demonstrates that the code is read not executed left to right
+
+* R looks up values and executes code from left to right on a line
+* If we accidentally added an `s` to each vector name when calculating density we'll get an error
+
+```r
+numbers / areas
+```
+
+* The code tries to look up `numbers` and then errors telling use that the variable `numbers` doesn't existing the Environment
+* If we switch the order of the line
+
+```r
+areas / numbers
+```
+
+* The error message tells us that `areas` isn't found and that's because it is the first thing R tries to work with because it is on the left
+
+### Code executes inside to outside
+
+* Code that is enclosed by brackets or parentheses executes before the surrounding code
+
+```r
+density[density > 3]
+```
+
+* So this line is the same as
+
+```r
+density_filter <- density > 3
+density[density_filter]
+```
