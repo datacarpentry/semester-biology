@@ -12,6 +12,16 @@ time: 1
 > * Consider removing the `dplyr` package so you can demonstrate installing it.
 >     * Linux users: you may not want to do this because the source install is slow
 
+### Setup
+
+```r
+install.packages('dplyr')
+download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
+download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
+download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
+download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-data.csv", "shrub-volume-data.csv")
+```
+
 ### Introduction to tabular data
 
 * We will be working with data from the Portal Project.
