@@ -112,6 +112,10 @@ select(surveys, month, day, year)
 ```
 
 > Do [Shrub Volume Data Basics 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> * Start your assignment file
+> * Load the dplyr package
+> * Load the shrub-volume-data.csv file
+> * Do Parts 1 & 2
 
 #### Mutate
 
@@ -138,8 +142,6 @@ surveys <- mutate(surveys,
                   hindfoot_length_cm = hindfoot_length / 10)
 ```
 
-> Do [Shrub Volume Data Basics 3]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
-
 #### Arrange
 
 * We can sort the data in the table using `arrange`
@@ -161,7 +163,7 @@ arrange(surveys, desc(weight))
 arrange(surveys, plot_id, year, month, day)
 ```
 
-> Do [Shrub Volume Data Basics 4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Shrub Volume Data Basics 3-4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 #### Filter 
 
