@@ -5,6 +5,18 @@ title: Converting Between Data Frames and Vectors
 language: R
 ---
 
+### Setup
+
+```r
+install.packages('dplyr')
+download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
+download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
+download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
+download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-data.csv", "shrub-volume-data.csv")
+```
+
+### Introduction
+
 * We've learned about two general ways to store data, vectors and data frames
 * Vectors store a single set of values with the same type
 * Data frames store multiple sets of values, one in each column, that can have different types
