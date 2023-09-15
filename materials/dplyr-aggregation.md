@@ -34,7 +34,9 @@ group_by(surveys, year)
 ```
 
 * Different looking kind of `data.frame`
-    * Source, grouping, and data type information
+* Called a tibble
+* Sometimes produced by `dplyr` functions
+* Source, grouping, and data type information
 * Store the data frame in a variable to use in the next step
 
 ```r
@@ -53,7 +55,7 @@ surveys_by_year <- group_by(surveys, year)
     * We'll use the function `n` which is a special function that counts the rows in the table
 
 ```r
-year_counts <- summarize(surveys_by_year, abundance = n())
+counts_by_year <- summarize(surveys_by_year, abundance = n())
 ```
 
 * Can group by multiple columns
@@ -61,7 +63,7 @@ year_counts <- summarize(surveys_by_year, abundance = n())
 
 ```r
 surveys_by_plot_year <- group_by(surveys, plot_id, year)
-plot_year_counts <- summarize(surveys_by_plot_year, abundance = n())
+counts_by_plot_year <- summarize(surveys_by_plot_year, abundance = n())
 ```
 
 * Just like with other `dplyr` functions we could write this using pipes instead
@@ -81,7 +83,7 @@ plot_year_counts <- surveys |>
 * We'll calculate the number of individuals in each plot year combination and their average weight
 
 ```r
-plot_year_count_weight <- surveys |>
+size_abundance_data <- surveys |>
   group_by(plot_id, year) |>
   summarize(abundance = n(), avg_weight = mean(weight))
 ```
@@ -92,17 +94,17 @@ plot_year_count_weight <- surveys |>
 * Can fix using `mean(weight, na.rm = TRUE)`
 
 ```r
-plot_year_count_weight <- surveys |>
+size_abundance_data <- surveys |>
   group_by(plot_id, year) |>
   summarize(abundance = n(),
             avg_weight = mean(weight, na.rm = TRUE))
 ```
 
-* Still has `NaN` for species that have never been weighed
+* Still has `NaN` for cases where no individuals have a weight
 * Can filter using `!is.na`
 
 ```r
-plot_year_count_weight <- surveys |>
+size_abundance_data <- surveys |>
   group_by(plot_id, year) |>
   summarize(abundance = n(),
             avg_weight = mean(weight, na.rm = TRUE)) |>
