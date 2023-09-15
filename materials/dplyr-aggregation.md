@@ -109,4 +109,29 @@ plot_year_count_weight <- surveys |>
   filter(!is.na(avg_weight))
 ```
 
+* Also note the message about "grouped output"
+* It says that the resulting data frame is grouped by `year`
+* When we group by more than one column the resulting data frame is grouped by all but the last group
+* Can be useful in some more complicated circumstances
+* Can also make things not work if functions don't support grouped data frames
+* We can remove these groups by add `ungroup()` to the end of our pipeline
+
+```r
+size_abundance_data <- surveys |>
+  group_by(plot_id, year) |>
+  summarize(abundance = n(),
+            avg_weight = mean(weight, na.rm = TRUE)) |>
+  filter(!is.na(avg_weight)) |>
+  ungroup()
+```
+
+* The message still prints because it happens as part of the `summarize` step
+* But looking at the resulting data frame
+
+```r
+size_abundance_data
+```
+
+* Shows us that the final data frame is ungrouped
+
 > Do [Portal Data Aggregation 3]({{ site.baseurl }}/exercises/Portal-data-aggregation-R/).
