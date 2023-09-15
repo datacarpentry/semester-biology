@@ -77,6 +77,9 @@ Combined table has 1 and 2 in column 1, x1 and x2 in column 2, and y1 and y2 in 
 
 * Any rows in either table that don't have a matching value in the other table are dropped
 * So when we did our join all of the rows with missing `species_id` values were dropped
+* Scroll to Line 324 in the `surveys` table
+* `record_id`'s 324-326 are missing species IDs
+* If we look in `combined` we'll see that those rows are not present
 * There are other joins that behave differently
 * Left joins keep all rows in the first, or left, table
 * So if we want to keep rows with missing species IDs we could use `left_join`
@@ -86,21 +89,20 @@ combined <- left_join(surveys, species, join_by(species_id))
 ```
 
 * There are also right joins, which keep all rows in the second, or right, table
-* And outer joins, which keep all rows from both tables
+* And full joins, which keep all rows from both tables
 * For our exercises we'll focus on using inner joins
 
 #### Multi-table join
 
-* In our last video we learned about how to join two tables together
 * But we often need to combine more than two tables
 * To join more than two tables we start by joining two tables
 * And then join the resulting table to a third table, and so on
 * So, for Portal, we could start by joining the `surveys` and the `species` tables and then combine the resulting table with the `plots` table
 
 ```r
-combined <- surveys |>
+full_data <- surveys |>
   inner_join(species, join_by(species_id)) |>
   inner_join(plots, join_by(plot_id))
 ```
 
-> Do [Shrub Volume Join 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-join-R). 
+> Do [Portal Data Joins]({{ site.baseurl }}/exercises/Portal-data-joins-R/). 
