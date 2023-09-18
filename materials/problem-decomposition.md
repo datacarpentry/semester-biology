@@ -32,7 +32,7 @@ time: 30 minutes
 * Show end result of first exercise
 * Take time now in class to understand and break down the problem
 * Spend 15 minutes working these first two steps
-* Only start coding if you've full understood and broken down the problem
+* Only start coding if you've fully understood and broken down the problem
 
 ## Make a simpler version first (5 minutes)
 

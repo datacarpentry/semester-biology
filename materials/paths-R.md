@@ -84,7 +84,7 @@ getwd()
 
 * For data in the working directory just use the file name
 
-```
+```r
 shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 ```
 

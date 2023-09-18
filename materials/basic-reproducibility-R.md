@@ -5,6 +5,8 @@ title: Basic Reproducibility
 language: R
 ---
 
+### Setup
+
 > Make sure that `Tools` -> `Global Options` -> `General` ->
 > `Save workspace to ~/.RData on exit` is set to the default `Ask`
 
@@ -23,31 +25,6 @@ language: R
 * Change something
 * Looks like it still works
 * Only works because of something you did earlier in the same session
-
-#### Example (optional)
-
-> * Start new project
-> * Create data subdirectory
-> * Use `Right Click` -> `Save Link As` to download Portal surveys & species data
-
-```r
-data_mammals <- read.csv('data/surveys.csv')
-avg_mass <- mean(data_mammals$weight, rm.na = TRUE)
-```
-
-* You then go to add the species data and realize that `data_mammals` probably isn't
-  descriptive enough
-
-```r
-data_surveys <- read.csv('data/surveys.csv')
-avg_mass <- mean(data_mammals$weight, rm.na = TRUE)
-data_species <- read.csv('data/species.csv')
-```
-
-* And you rerun all of your code and everything works
-* But will it work after I restart R?
-  * No, because the code doesn't create `data_mammals` anymore
-  * Read through code
 
 ### Clearing environments and restarting R
 
