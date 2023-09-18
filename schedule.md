@@ -3,7 +3,7 @@ layout: page
 title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
 'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
-'Review + Reproducibility', 'Functions',
+'Solving Bigger Problems', 'Functions',
 'Making Choices', 'Repeating Things 1', 'Repeating Things 2', 'TBD', 
 'TBD', 'Fall Break', 'TBD', 'TBD']
 ---
