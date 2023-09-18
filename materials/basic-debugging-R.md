@@ -24,6 +24,7 @@ time: 20 minutes
         * Talk through the code.
         * [Rubber duck programming](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
     * Run the code line by line checking each step.
+    * Have a LLM look for problems
 
 ### Example
 
@@ -37,8 +38,8 @@ library(dplyr)
 surveys <- read.csv('surveys.csv')
 species <- read.csv('species.csv')
 
-do_counts_by_year <- survey %>%
-  filter(species = "DO") %>%
+do_counts_by_year <- survey |>
+  filter(species = "DO") |>
   group_by(year)
   summarize(count = n())
 
@@ -56,9 +57,9 @@ library(ggplot2)
 
 surveys <- read.csv('surveys.csv')
 
-do_counts_by_year <- surveys %>%
-  filter(species_id == "DO") %>%
-  group_by(year) %>%
+do_counts_by_year <- surveys |>
+  filter(species_id == "DO") |>
+  group_by(year) |>
   summarize(count = n())
 
 ggplot(do_counts_by_year, aes(x = year, y = count)) +
@@ -66,3 +67,5 @@ ggplot(do_counts_by_year, aes(x = year, y = count)) +
   geom_line() +
   labs(x = "Year", y = "Count") 
 ```
+
+* Now copy the code into a LLM and see what it finds and what it gets wrong
