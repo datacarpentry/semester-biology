@@ -29,10 +29,10 @@ download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-d
 
 * There are several ways to extract a vector from a data frame
 * Let's look at these using the Portal data
-* We'll start by loading the `surveys` table into R
+* We'll start by loading the `species` table into R
 
 ```r
-surveys <- read.csv("surveys.csv")
+surveys <- read.csv("species.csv")
 ```
 
 * One common approach to extracting a column into a vector is to use `$`
@@ -42,7 +42,7 @@ surveys <- read.csv("surveys.csv")
 * and then the name of the `species_id` column (without quotes, just to be confusing)
 
 ```r
-surveys$species_id
+species$species_id
 ```
 
 * We can also do this using `[]`
@@ -51,7 +51,7 @@ surveys$species_id
 * `"species_id"` has to be in quotes because we we aren't using `dplyr`
 
 ```r
-surveys["species_id"]
+species["species_id"]
 ```
 
 * This actually returns a one column data frame, not a vector
@@ -59,7 +59,7 @@ surveys["species_id"]
 * Think of the second set of `[]` as getting the single vector from inside the one column data frame
 
 ```r
-surveys[["species_id"]]
+species[["species_id"]]
 ```
 
 ### Combining vectors to make a data frame
