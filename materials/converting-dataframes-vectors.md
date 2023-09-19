@@ -35,7 +35,17 @@ download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-d
 surveys <- read.csv("surveys.csv")
 ```
 
-* One common approach to extracting a column into a vector is to use the `[]`
+* One common approach to extracting a column into a vector is to use `$`
+* The `$` in R is short hand for `[[]]` in cases where the piece we want to get has a name
+* So, we start with the object we want a part of, our `surveys` data frame
+* Then the `$` with no spaces around it
+* and then the name of the `species_id` column (without quotes, just to be confusing)
+
+```r
+surveys$species_id
+```
+
+* We can also do this using `[]`
 * Remember that `[]` also mean "give me a piece of something"
 * Let's get the `species_id` column
 * `"species_id"` has to be in quotes because we we aren't using `dplyr`
@@ -52,16 +62,6 @@ surveys["species_id"]
 surveys[["species_id"]]
 ```
 
-* We can also do this using `$`
-* The `$` in R is short hand for `[[]]` in cases where the piece we want to get has a name
-* So, we start with the object we want a part of, our `surveys` data frame
-* Then the `$` with no spaces around it
-* and then the name of the `species_id` column (without quotes, just to be confusing)
-
-```r
-surveys$species_id
-```
-
 > Do [Extracting vectors from data frames]({{ site.baseurl }}/exercises/extracting-vectors-from-data-frames-R/).
 
 ### Combining vectors to make a data frame
@@ -71,20 +71,12 @@ surveys$species_id
 * It takes one argument for each column in the data frame
 * The argument includes the name of the column we want in the data frame, `=`, and the name of the vector whose values we want in that column
 * Just like `mutate` and `summarize`
-* So we give it the arguments `sites`, and `density`
-
- ```r
-density_data <- data.frame(sites = c("a", "a", "b", "c"), density = c(2.8, 3.2, 1.5, 3.8))
-```
-
-* If we look in the `Global Environment` we can see that there is a new data frame called `density_data` and it has our two vectors as columns
-
-* We could also make this directory using the vectors that are already stored in variables
 
 ```r
-sites <- c("a", "a", "b", "c")
-density <- c(2.8, 3.2, 1.5, 3.8)
-density_data <- data.frame(sites = sites, density = density)
+states <- c("FL", "FL", "GA", "SC")
+count <- c(9, 16, 3, 10)
+area <- c(3, 5, 1.9, 2.7)
+count_data <- data.frame(states = states, counts = count, regional_area = area)
 ```
 
 * We can also add columns to the data from that only include a single value without first creating a vector
@@ -92,12 +84,20 @@ density_data <- data.frame(sites = sites, density = density)
 * For example, if all of this data was collected in the same year and we wanted to add that year as a column in our data frame we could do it like this
 
 ```r
-density_data_year <- data.frame(year = 2000, sites = sites, density = density)
+count_data_year <- data.frame(year = 2022, states = states, counts = count, regional_area = area)
 ```
 
 * `year =` sets the name of the column in the data frame
-* And 2000 is that value that will occur on every row of that column
-* If we run this and look at the `density_data_year` data frame we'll see that it includes the year column with `2000` in every row
+* And `2000` is that value that will occur on every row of that column
+* If we run this and look at the `count_data_year` data frame we'll see that it includes the year column with `2000` in every row
+
+* We can add a vector as a new column to an existing data frame using `mutate()`
+
+```r
+library(dplyr)
+elevation <- c(100, 65, 226, 152)
+count_data_year_elev <- mutate(count_data_year, elevations = elevation)
+```
 
 > Do [Building data frames from vectors]({{ site.baseurl }}/exercises/building-data-frames-from-vectors-R/).
 
