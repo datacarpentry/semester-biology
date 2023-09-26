@@ -4,7 +4,7 @@ element: assignment
 title: Data Visualization
 language: R
 exercises: ['Acacia and Ants', 'Mass vs Metabolism', 'Acacia and Ants Histograms', 'Acacia and Ants Data Manipulation', 'Graphing Data From Multiple Tables', 'Adult vs Newborn Size']
-points: [20, 20, 20, 20, 20, optional]
+points: [20, 20, 20, 20, optional, 20]
 ---
 
 ### Learning Objectives

@@ -348,6 +348,51 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 
 > Do Task 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
+
+### Understanding defaults (optional if students struggling after exercise)
+
+* Let's move some things around to help understand where to put different information data and mapping
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = AXIS1)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+* What happens if we move `data` and `mapping` to one layer
+
+```r
+ggplot() +
+  geom_point(data = acacia, mapping = aes(x = CIRC, y = AXIS1)) +
+  geom_smooth(method = "lm")
+```
+
+* What about the other layer
+
+```r
+ggplot() +
+  geom_point() +
+  geom_smooth(data = acacia, mapping = aes(x = CIRC, y = AXIS1), method = "lm")
+```
+
+* What if we move one to each layer (error)
+
+```r
+ggplot() +
+  geom_point(data = acacia) +
+  geom_smooth(mapping = aes(x = CIRC, y = AXIS1), method = "lm")
+```
+
+* So, each geom needs access to `data` and `mapping`
+* If they are not in the geom then the geom uses the defaults `ggplot()`
+* If we want different `data` or `mapping` for different layers then provide different values to different geoms
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC)) +
+  geom_point(mapping = aes(y = AXIS1), color = "black") +
+  geom_point(mapping = aes(y = AXIS2), color = "grey")
+```
+
 ### Grammar of graphics
 
 * Uniquely describe any plot based on a defined set of information
