@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
-url = "http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
+url = "https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
 web_data = urllib2.urlopen(url)
 data = np.genfromtxt(web_data, delimiter='\t', names=True, dtype=None, skip_footer=4)
 #plt.loglog(data['massg'], data['litter_size'], 'bo')

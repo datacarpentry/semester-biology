@@ -3,7 +3,7 @@
 library(ggplot2)
 library(dplyr)
 
-url = "http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
+url = "https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
 data = read.csv(url, sep = "\t")
 qplot(x = mass.g., y = litter.size, data = data, log = "xy")
 
