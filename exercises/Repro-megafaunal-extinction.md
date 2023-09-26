@@ -13,7 +13,7 @@ three main figures from one of the major papers on this topic [Lyons et al.
 2004](http://www.evolutionary-ecology.com/issues/v06n03/ddar1499.pdf).
 
 You will do this using a 
-[large dataset of mammalian body sizes](https://datacarpentry.org/semester/data/mammal-size-data-clean.tsv)
+[large dataset of mammalian body sizes](https://datacarpentry.org/semester/materials/data/mammal-size-data-clean.tsv)
 that has data on the mass of recently extinct mammals as well as extant mammals
 (i.e., those that are still alive today).
 
