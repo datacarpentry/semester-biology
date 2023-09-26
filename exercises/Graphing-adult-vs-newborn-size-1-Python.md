@@ -10,7 +10,7 @@ mathematical form of this relationship should be is unclear. Let's
 look at the problem empirically for mammals.
 
 Download some
-[mammal life history data](http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
+[mammal life history data](https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
 from the web. You can do this either directly in the program using `urllib` or
 download the file to your computer using your browser and import it from there.
 

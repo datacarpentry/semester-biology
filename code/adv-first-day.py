@@ -6,7 +6,7 @@ import statsmodels.api as sm
 import seaborn as sns
 import numpy as np
 
-url = "http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
+url = "https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
 data = pd.read_csv(url, sep='\t', na_values=-999.0)
 
 plt.plot(data['mass(g)'], data['gestation(mo)'])

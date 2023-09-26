@@ -9,7 +9,7 @@ Larger organisms have larger offspring. We want to explore the form of this
 relationship in mammals.
 
 Check to see if `Mammal_lifehistories_v2.txt` is in your working directory.
-If not [download it](http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
+If not [download it](https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
 from the web.
 This is tab delimited data,  so you'll want to
 use `sep = "\t"` as an optional argument when calling `read.csv()`. The `\t` is

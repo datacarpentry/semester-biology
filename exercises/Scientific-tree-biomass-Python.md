@@ -35,7 +35,7 @@ in a 96 hectare area of the Western Ghats in India.
 =======
     stored in `ramesh2010-macroplots.csv`) and import it into Python.
 3.  If you look at the file or [the
-    metadata](http://esapubs.org/archive/ecol/E091/216/metadata.htm)
+    metadata](https://esapubs.org/archive/ecol/E091/216/metadata.htm)
 >>>>>>> lowercase-file-names
     carefully you'll notice that the data is actually in girth (i.e.,
     circumference, which is equal to pi * diameter) rather than

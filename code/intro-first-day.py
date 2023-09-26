@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-url = "http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
+url = "https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
 data = pd.read_csv(url, delimiter="\t")
 plt.loglog(data['mass(g)'], data['litter size'], 'bo')
 

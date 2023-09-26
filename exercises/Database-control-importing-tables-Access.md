@@ -13,10 +13,10 @@ into Access.
 
 ​a. Download the main table for the full Portal LTREB mammal survey
 database from [Ecological
-Archives](http://esapubs.org/archive/ecol/E090/118/Portal_rodents_19772002.csv)
+Archives](https://esapubs.org/archive/ecol/E090/118/Portal_rodents_19772002.csv)
 (it's kind of large so it might take a few seconds). This database is
 published as a Data Paper on Ecological Archives
-([http://esapubs.org/archive/default.htm](http://esapubs.org/archive/default.htm)),
+([https://esapubs.org/archive/default.htm](https://esapubs.org/archive/default.htm)),
 which is generally a great place to look for ecology data.
 
 b.Create a new database by selecting a file name and location and

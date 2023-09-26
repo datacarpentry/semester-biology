@@ -13,7 +13,7 @@ questions. For example, you may need to know what species is associated with the
 two character species ID or you may need to know the units for the individual's
 weight. This type of information associated with data is called metadata and the
 metadata for this dataset is available online at
-[Ecological Archives](http://esapubs.org/archive/ecol/E090/118/metadata.htm).
+[Ecological Archives](https://esapubs.org/archive/ecol/E090/118/metadata.htm).
 
 1.  Open the table with the Portal Survey Data that you created in the
     [Importing Tables problem]({{ site.baseurl }}/exercises/Database-control-importing-tables-Access). Click the button at the bottom

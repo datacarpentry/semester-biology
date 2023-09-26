@@ -27,7 +27,7 @@ names`.
 7. Name the table that you are importing into `surveys`.
 8. Identify the type for each field, using the `Data Type` drop-down menus. If
 it is not obvious if the data type is an `INTEGER` or `VARCHAR` for each
-variable, check the [metadata](http://esapubs.org/archive/ecol/E090/118/metadata.htm). **Important: if you specify the wrong data type it
+variable, check the [metadata](https://esapubs.org/archive/ecol/E090/118/metadata.htm). **Important: if you specify the wrong data type it
 can cause some data to not be imported and/or prevent you from doing some kinds
 of data manipulations.** ​
 9. Select `recordID` as the `Primary Key` and click `OK`.
