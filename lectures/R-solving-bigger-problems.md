@@ -5,6 +5,22 @@ title: Solving Bigger Problems
 language: R
 ---
 
+### Setup
+
+```r
+install.packages(c('dplyr', 'ggplot2', 'readr'))
+download.file("https://ndownloader.figshare.com/files/2292172",
+  "surveys.csv")
+download.file("https://ndownloader.figshare.com/files/3299474",
+  "plots.csv")
+download.file("https://ndownloader.figshare.com/files/3299483",
+  "species.csv")
+download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-data.csv",
+  "shrub-volume-data.csv")
+download.file("https://datacarpentry.org/semester-biology/data/mammal-size-data-clean.tsv",
+  "mammal-size-data-clean.tsv")
+```
+
 1. [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
 2. [Basic Debugging]({{ site.baseurl }}/materials/basic-debugging-R)
 3. [Searching For Help]({{ site.baseurl }}/materials/googling-for-help)
