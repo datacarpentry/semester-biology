@@ -15,7 +15,6 @@ time: 30 minutes
 > * <https://www.smarterandharder.com/wp-content/uploads/2021/02/breaking-down-problems-1024x683.jpg.webp>
 > * <https://thirdsectorlab.co.uk/wp-content/uploads/2021/06/How-do-you-eat-an-elephant.png>
 
-
 1. Understand the problem
     1. Restate the problem in your own words
     2. Determine the inputs and outputs
@@ -35,8 +34,6 @@ time: 30 minutes
 * Then we'll try to break it down into pieces as a class
 
 ## Start simple
-
-
 
 1. Experiment
 2. Write a simpler version
