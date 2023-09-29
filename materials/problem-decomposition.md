@@ -11,7 +11,7 @@ time: 30 minutes
 ## Problem decomposition steps (10 minutes)
 
 > Open the following images one per tab and cycle through:
-> * <https://cdn.dribbble.com/users/920/screenshots/3428730/attachments/750880/think_big.png>
+> * <https://i.imgflip.com/80ul6w.jpg>
 > * <https://www.smarterandharder.com/wp-content/uploads/2021/02/breaking-down-problems-1024x683.jpg.webp>
 > * <https://thirdsectorlab.co.uk/wp-content/uploads/2021/06/How-do-you-eat-an-elephant.png>
 
