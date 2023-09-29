@@ -10,21 +10,19 @@ time: 30 minutes
 
 ## Problem decomposition steps (10 minutes)
 
-> Put this up on screen
+> Open the following images one per tab and cycle through:
+> * <https://i.imgflip.com/80ul6w.jpg>
+> * <https://www.smarterandharder.com/wp-content/uploads/2021/02/breaking-down-problems-1024x683.jpg.webp>
+> * <https://thirdsectorlab.co.uk/wp-content/uploads/2021/06/How-do-you-eat-an-elephant.png>
 
-1. 🤔️
-2. 🕺️
-3. 🧱️
-
-
-1.  🤔️ Understand the problem
+1. Understand the problem
     1. Restate the problem in your own words
     2. Determine the inputs and outputs
     3. Ask for clarification
-2.  🕺️ Break the problem down
+2. Break the problem down
     1.  Write down the pieces, on paper or as comments in a file
     2.  Break complicated pieces down until all pieces are small and manageable
-3.  🧱️ Code one small piece at a time
+3. Code one small piece at a time
     1.  Test it on it's own
     2.  Fix any problems before proceeding
 
@@ -36,8 +34,6 @@ time: 30 minutes
 * Then we'll try to break it down into pieces as a class
 
 ## Start simple
-
-
 
 1. Experiment
 2. Write a simpler version
