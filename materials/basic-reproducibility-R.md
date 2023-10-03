@@ -31,7 +31,8 @@ language: R
 * Clear R environment using the broom icon on the `Environment` tab.
   * Doesn't unload packages
   * Useful when developing code
-* Restart R to get a clean environment: `Session` -> `Restart R`
+* Restart R to get a clean environment
+  * Works locally (not in Posit Cloud; `Session` -> `Restart R` always reloads environment)
   * Does unload packages
   * Useful for making sure everything works
   * As long is it doesn't secretly reload things
@@ -55,12 +56,13 @@ language: R
     * Use projects and relative paths
     * `data/mydata.csv` not `C:\Users\Batman\DataCarp\data\mydata.csv`
 * Write code that works on all operating systems
-	  * Filenames in code should match actual names exactly, including capitalization
-	  * Use `/` instead of `\` or `\\` in paths
+    * Filenames in code should match actual names exactly, including capitalization
+    * Use `/` instead of `\` or `\\` in paths
 
 ### Clean up extra code
 
 * Remove experiments from your code
+* Or at least comment them out
 * Remove `install.packages()` lines from your code
 * Avoid reinstalling packages repeatedly
 

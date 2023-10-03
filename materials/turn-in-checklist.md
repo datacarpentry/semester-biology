@@ -7,8 +7,8 @@ title: Assignment Submission & Checklist
 
 - What files to submit: 
     - **Week 1** - one text form, one .xlsx file
-    - **Weeks 2-13** - a link to your Posit Cloud project
-    - **Week 14** - a link to a GitHub repository
+    - **Weeks 2-6** - a link to your Posit Cloud project
+    - **Weeks 7+** - either a link to your Posit Cloud project or a zip of you local RStudio project directory
 
 
 ## Code Checklist
@@ -41,8 +41,8 @@ Code should be easy to read and understand.
 
 Code should run from the start of the file to the end of the file without problems. To make sure this is true:
 
-- Restart the R environment by clicking on the `Session` menu item and then `Restart R`.
-- Run the entire file by either clicking the `Source` button or using the `Ctrl-Shift-S` keyboard shortcut.
+- Clear the R environment by clicking on the the broom icon.
+- Run the entire file by either clicking the `Source` button or using the `Ctrl-Shift-S` keyboard shortcut (`Cmd-Shift-S` on macOS).
 
 ### Work with data files appropriately
 
