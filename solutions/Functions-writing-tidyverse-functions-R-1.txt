@@ -1,0 +1,13 @@
+   state site count area
+1     FL    A     9  3.0
+2     FL    B    16  5.0
+3     FL    C     3  1.9
+4     FL    D    10  2.7
+5     GA    A     2  2.0
+6     GA    B    26  2.6
+7     GA    C     5  6.2
+8     GA    D     8  4.5
+9     SC    A    17  8.0
+10    SC    B     8  4.0
+11    SC    C     2  1.0
+12    SC    D     6  3.0
