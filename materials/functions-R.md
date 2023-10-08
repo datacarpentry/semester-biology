@@ -9,19 +9,10 @@ language: R
 
 * Write code in understandable chunks.
 * Write reusable code.
-
-### Understandable chunks
-
-* Human brain can only hold limited number of things in memory
-* Write programs that don't require remembering all of the details at once
-* Treat functions as a single conceptual chunk.
-
-### Reuse
-
-* Want to do the same thing repeatedly?
-    * Inefficient & error prone to copy code
-    * If it occurs in more than one place, it will eventually be wrong somewhere.
-* Functions are written to be reusable.
+* Who has copy-pasted code a bunch of times to do different versions of the same thing?
+* Who forgot to change something in one of them?
+* Who had to make the same change to all of the copies?
+* Functions are a chunk of code written to be reusable while changing the details
 
 ### Function basics
 
@@ -45,7 +36,7 @@ a + b}
 * Using the arguments provided
 * And then returns the output
 
-```
+```r
 calc_shrub_vol <- function(length, width, height) {
   area <- length * width
   volume <- area * height
@@ -166,20 +157,11 @@ shrub_mass <- est_shrub_mass(shrub_volume)
 
 ```r
 library(dplyr)
-shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) %>%
+shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) |>
   est_shrub_mass()
 ```
 
 > Do [Combining Functions]({{ site.baseurl }}/exercises/Functions-combining-functions-R).
-
-* We can nest functions
-
-```r
-shrub_mass <- est_shrub_mass(calc_shrub_vol(0.8, 1.6, 2.0))
-```
-
-* But we careful with this because it can make code difficult to read
-* Don't nest more than two functions
 
 * Can also call functions from inside other functions
 * Allows organizing function calls into logical groups
@@ -224,7 +206,7 @@ make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 library(ggplot2)
 
 make_plot <- function(df, column, label) {
-  ggplot(data = df, mapping = aes(x = {{ column }})) +
+{% raw %}ggplot(data = df, mapping = aes(x = {{ column }})) +{% endraw %}
     geom_histogram() +
     xlab(label)
 }
