@@ -26,7 +26,7 @@ species == "DM"
 * The value is `TRUE` if the condition is satisfied 
 * The value is `FALSE` if the condition is not satisfied
 * These aren't the strings "TRUE" and "FALSE"
-* They are a special type of value
+* They are a special type of value known as "boolean"
   
 * Conditional statements are made with a range of operators
 * We've seen
@@ -34,15 +34,48 @@ species == "DM"
   * `!=` for not equals
   * `<`, `>` for less than and greater than
   * `<=`, `>=` for less than or equal to and greater than or equal to
-  * `is.na()` for is this value null
-* There are others, including `%in%`, which checks to see if a value is present in a vector of possible values
 
 ```r
 10 >= 5
-is.na(5)
+```
+* There are others, including `%in%`, which checks to see if a value is present in a vector of possible values
+
+```r
 "DM" %in% c("DM", "DO", "DS")
 "PP" %in% c("DM", "DO", "DS")
 ```
+
+* There are also functions that return these boolean
+* `is.na()` for is this value null
+
+```r
+is.na(5)
+is.na(c(2, 4, NA))
+```
+
+### Reversing conditions
+
+* Sometimes we want to the opposite of a condition
+* We do this using `!` which stands for "not"
+* For normal conditional statements we also need `()`
+
+```r
+!(10 >= 5)
+```
+
+* This reverses the returned boolean value
+* So it changes `TRUE` to `FALSE` and `FALSE` to `TRUE`
+* If we want to ask if "PP" is not in a given species list
+
+```r
+!("PP") %in% c("DM", "DO", "DS")
+```
+
+* So it is true that "PP" is not in the list
+* Because if it is not in the list then the part inside `()` returns `FALSE`
+* And the `!` reverses this to `TRUE`
+
+### Combining conditional statements
 
 * We can combine conditions using "and" and "or"
 * We use the `&` for "and"
@@ -60,6 +93,8 @@ is.na(5)
 5 > 2 | 6 >=10
 ```
 
+### Conditional statements work on vectors
+
 * Vectors of values compared to a single value return one logical per value
 
 ```r
@@ -72,8 +107,8 @@ c(1, 1, 2, 3, 1) == 1
 * Let's look at an example where we have a vector of sites and a vector the the states they occur in
 
 ```r
-site = c('a', 'b', 'c', 'd')
-state = c('FL', 'FL', 'GA', 'AL')
+states <- c('FL', 'FL', 'GA', 'SC')
+count <- c(9, 16, NA, 10)
 ```
 
 * A conditional statement checking if the state is `'FL'` returns a vector of `TRUE`'s and `FALSE`s
@@ -97,7 +132,15 @@ site[c(TRUE, TRUE, FALSE, FALSE)]
 * This keeps the first and second values in `site` because the values in the vector are `TRUE`
 * This is how `dplyr::filter()` and other methods for subsetting data work
 
-> Do Tasks 1-4 in [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+* This is why we can use `!is.na()` to filter out null values
+
+```r
+is.na(count)
+!is.na(count)
+count[!is.na(count)]
+```
+
+> Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 ### `if` statements
 
