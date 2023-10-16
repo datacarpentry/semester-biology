@@ -185,35 +185,6 @@ mass
 
 > Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
-### Multiple ifs vs else if
-
-* Multiple ifs check each conditional separately
-* Executes code of all conditions that are `TRUE`
-
-```r
-x <- 5
-if (x > 2){
-  x * 2
-}
-if (x > 4){
-  x * 4
-}
-x
-```
-
-* `else if` checks each condition sequentially
-* Executes code for the first condition that is `TRUE`
-
-```r
-x <- 5
-if (x > 2){
-  x * 2
-} else if (x > 4){
-  x * 4
-}
-x
-```
-
 ### Using Conditionals Inside Functions
 
 * We've used a conditional to estimate mass differently for different types of vegetation
@@ -251,6 +222,35 @@ est_mass(1.6, "tree")
 * It then finishes the if/else if/else statement and returns the value for `mass`, which is `NA` to the global environment
 
 > Do [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
+
+### Multiple ifs vs else if
+
+* Multiple ifs check each conditional separately
+* Executes code of all conditions that are `TRUE`
+
+```r
+x <- 5
+if (x > 2){
+  x * 2
+}
+if (x > 4){
+  x * 4
+}
+x
+```
+
+* `else if` checks each condition sequentially
+* Executes code for the first condition that is `TRUE`
+
+```r
+x <- 5
+if (x > 2){
+  x * 2
+} else if (x > 4){
+  x * 4
+}
+x
+```
 
 ### Automatically extracting functions
 
