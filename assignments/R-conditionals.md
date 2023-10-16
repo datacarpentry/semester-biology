@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Making Choices
 language: R
-exercises: ['Choice Operators', 'Basic If Statements', 'Size Estimates by Name', 'Load or Download File', 'DNA or RNA', 'Unit Conversion Challenge']
+exercises: ['Choice Operators', 'Basic If Statements', 'If Statements In Functions', 'Size Estimates by Name', 'Load or Download File', 'DNA or RNA', 'Unit Conversion Challenge']
 points: [25, 25, 25, 25, optional, optional]
 ---
 
