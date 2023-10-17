@@ -33,7 +33,7 @@ trees <- read_tsv("TREE_SURVEYS.txt",
    Use `group_by`, `summarize`, and `n` to make a data frame with `YEAR`,
    `SPECIES`, and an `abundance` column that has the number of individuals in
    each species in each year. Print out this data frame.
-5. Using the data the data frame generated in (4),
+5. Using the data frame generated in (4),
    make a line plot with points (by using `geom_line` in addition to
    `geom_point`) with `YEAR` on the x axis and `abundance` on the y axis with
    one subplot per species. To let you seen each trend clearly let the scale for
