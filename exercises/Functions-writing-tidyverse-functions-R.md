@@ -5,7 +5,7 @@ title: Writing Tidyverse Functions
 language: R
 ---
 
-1\. Copy the following vectors into R and combine them into a data frame named `count_data` with columns named `state`, `count`, and `area`.
+1\. Copy the following vectors into R and combine them into a data frame named `count_data` with columns named `state`, `count`, `area`, and `site`.
 
 ```r
 state_vector <- c("FL", "FL", "FL", "FL", "GA", "GA", "GA", "GA", "SC", "SC", "SC", "SC")
