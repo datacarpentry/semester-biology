@@ -49,8 +49,8 @@ species == "DM"
 * `is.na()` for is this value null
 
 ```r
+is.na(NA)
 is.na(5)
-is.na(c(2, 4, NA))
 ```
 
 ### Reversing conditions
@@ -68,7 +68,7 @@ is.na(c(2, 4, NA))
 * If we want to ask if "PP" is not in a given species list
 
 ```r
-!("PP") %in% c("DM", "DO", "DS")
+!("PP" %in% c("DM", "DO", "DS")
 ```
 
 * So it is true that "PP" is not in the list
@@ -79,8 +79,8 @@ is.na(c(2, 4, NA))
 
 * We can combine conditions using "and" and "or"
 * We use the `&` for "and"
-* Which means if both conditions are `TRUE` return `TRUE` 
-* If one of the contions is `FALSE` then return `FALSE`
+* Which means if both conditions are `TRUE` return `TRUE`
+* If either or both of the conditions is `FALSE` then return `FALSE`
 
 ```r
 5 > 2 & 6 >=10
@@ -104,32 +104,32 @@ c(1, 1, 2, 3, 1) == 1
 * Checks each value to see if equal to 1
 * This is what subsetting approaches use to subset
 * They keep the values where the value in this condition vector is equal to `TRUE`
-* Let's look at an example where we have a vector of sites and a vector the the states they occur in
+* Let's look at an example where we have a vector of counts and a vector the the states they occur in
 
 ```r
 states <- c('FL', 'FL', 'GA', 'SC')
-count <- c(9, 16, NA, 10)
+counts <- c(9, 16, NA, 10)
 ```
 
 * A conditional statement checking if the state is `'FL'` returns a vector of `TRUE`'s and `FALSE`s
 
 ```r
-state == 'FL'
+states == 'FL'
 ```
 
-* So when we filter the `site` vector to only return values where the `state` is equal to `'FL'`
+* So when we filter the `counts` vector to only return values where the `states` is equal to `'FL'`
 
 ```r
-site[state == 'FL']
+counts[states == 'FL']
 ```
 
 * It is the same as pass a vector of `TRUE` and `FALSE` values inside the square brackets
 
 ```r
-site[c(TRUE, TRUE, FALSE, FALSE)]
+counts[c(TRUE, TRUE, FALSE, FALSE)]
 ```
 
-* This keeps the first and second values in `site` because the values in the vector are `TRUE`
+* This keeps the first and second values in `counts` because the values in the vector are `TRUE`
 * This is how `dplyr::filter()` and other methods for subsetting data work
 
 * This is why we can use `!is.na()` to filter out null values
@@ -144,8 +144,8 @@ count[!is.na(count)]
 
 ### `if` statements
 
-* Conditional statements generate logical values to filter inputs.
-* `if` statements use conditional statements to control flow of the program.
+* Conditional statements generate logical values
+* `if` statements use conditional statements to control flow of the program
 
 ```r
 if (the conditional statement is TRUE ) {
@@ -158,19 +158,19 @@ if (the conditional statement is TRUE ) {
 ```r
 x = 6
 if (x > 5){
-  x = x^2
+  x = x * 2
 }
 x
 ```
 
 * `x > 5` is `TRUE`, so the code in the `if` runs
-* `x` is now 6^2 or 36
+* `x` is now 6 * 2 or 12
 * Change `x` to 4
 
 ```r
 x = 4
 if (x > 5){
-  x = x^2
+  x = x * 2
 }
 x
 ```
@@ -253,7 +253,7 @@ est_mass <- function(volume, veg_type){
 ```r
 est_mass(1.6, "shrub")
 est_mass(1.6, "grass")
-est_mass(1.6, "tree")
+est_mass(24, "tree")
 ```
 
 * Let's walk through how this code executes using the debugger
@@ -264,7 +264,7 @@ est_mass(1.6, "tree")
 * It assigns `NA` to mass
 * It then finishes the if/else if/else statement and returns the value for `mass`, which is `NA` to the global environment
 
-> Do [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
+> Do Tasks 4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
 ### Multiple ifs vs else if
 
