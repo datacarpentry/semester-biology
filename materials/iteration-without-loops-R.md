@@ -231,10 +231,10 @@ apply(X = counts, MARGIN = 2, FUN = sum)
 
 * We can also integrate both our vectorized and non-vectorized functions with `dplyr`
 * This lets us use them to repeat calculations either for each row in a data from or each group using `group_by`
-* Let's convert our `volume` and `plant_types` vectors into a data frame
+* Let's convert our `volume`, `a`, and `plant_types` vectors into a data frame
 
 ```r
-plant_data = data.frame(volumes, plant_types)
+plant_data = data.frame(volumes, a, plant_types)
 ```
 
 #### One result per row
