@@ -315,6 +315,7 @@ est_mass <- function(volume, veg_type, age){
       mass <- 1.6 * volume^0.8
     } else {
       mass <- 2.65 * volume^0.9
+    }
   }
   } else if (veg_type == "grass" | veg_type == "sedge") {
     mass <- 0.65 * volume^1.2
