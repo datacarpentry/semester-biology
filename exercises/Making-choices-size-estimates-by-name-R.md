@@ -12,14 +12,19 @@ decide to create a function that lets you specify which dinosaur group you need
 to estimate the size of by name and then have the function automatically choose
 the right parameters.
 
+Remember the general form of the equation is:
+
+> mass <- a * length ^ b
+
 Create a new function `get_mass_from_length_by_name()` that takes two arguments,
 the `length` and the name of the dinosaur group. Inside this function use
 `if`/`else if`/`else` statements to check to see if the name is one of the
-following values and if so use the associated `a` and `b` values to estimate the species mass.
+following values and if so use the associated `a` and `b` values to estimate the
+species mass using these equations:
 
-* *Stegosauria*:  `a` = `10.95` and `b` = `2.64` ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
-* *Theropoda*:  `a` = `0.73` and `b` = `3.63` ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
-* *Sauropoda*:  `a` = `214.44` and `b` = `1.46` ([Seebacher 2001](http://www.jstor.org/stable/4524171)).
+* *Stegosauria*:  `mass = 10.95 * length ^ 2.64` ([Seebacher 2001](http://www.jstor.org/stable/4524171))
+* *Theropoda*:  `mass = 0.73 * length ^ 3.63` ([Seebacher 2001](http://www.jstor.org/stable/4524171))
+* *Sauropoda*:  `mass = 214.44 * length ^ 1.46` ([Seebacher 2001](http://www.jstor.org/stable/4524171))
 
 If the name is not any of these values the function should return `NA`.
 
