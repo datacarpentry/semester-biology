@@ -68,6 +68,56 @@ est_mass(data[['volumes']])
 
 > Do [Size Estimates Vectorized 1]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
 
+#### Multiple Arguments
+
+* Let's modify our function to take the coefficient (the value that is currently set as 2.65) as an argument
+* We'll call it `a`
+
+```r
+est_mass_coef <- function(volume, a){
+  mass <- a * volume ^ 0.9
+  return(mass)
+}
+
+est_mass_coef(volumes, 2.56)
+```
+
+* Because we only provided a single value of `a`, that value gets used for every value of `volume` when doing the calculation
+* But multiplication is also vectorized for two vectors
+
+```r
+c(1, 2, 3) * c(1, 2, 3)
+```
+
+* So we can also pass the function a vector of values for `a`
+
+```r
+as <- c(2.56, 1, 3.2)
+est_mass_coef(volumes, as)
+```
+
+#### Integrating with `dplyr`
+
+* We can also integrate our vectorized functions with `dplyr`
+* This lets us use them to repeat calculations for each row in a data frame
+* Let's convert our `volume` and `as` vectors into a data frame
+
+```r
+plant_data = data.frame(volume = volumes, a = as)
+```
+
+* To apply vectorized functions to each row in a table we can use `mutate`
+
+```r
+plant_data |>
+  mutate(masses = est_mass_coef(volume, a))
+```
+
+* This is just like we've seen using other R functions, but it works with the vectorized functions we write as well
+
+> Do [Size Estimates Vectorized 2-3]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
+
+
 ### Apply/Map functions
 
 * Not all functions in R are vectorized
@@ -142,39 +192,7 @@ lapply(volumes, est_mass_max)
 
 > Do [Size Estimates With Maximum]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
 
-### Vectorization and Apply with multiple arguments
-
-#### Vectorization
-
-* Let's modify our function to take the coefficient (the value that is currently set as 2.65) as an argument
-* We'll call it `a`
-
-```r
-est_mass_coef <- function(volume, a){
-  mass <- a * volume ^ 0.9
-  return(mass)
-}
-
-est_mass_coef(volumes, 2.56)
-```
-
-* Because we only provided a single value of `a`, that value gets used for every value of `volume` when doing the calculation
-* But multiplication is also vectorized for two vectors
-
-```r
-c(1, 2, 3) * c(1, 2, 3)
-```
-
-* So we can also pass the function a vector of values for `a`
-
-```r
-a <- c(2.56, 1, 3.2)
-est_mass_coef(volumes, a)
-```
-
-> Do [Size Estimates Vectorized 2-3]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
-
-#### mapply
+#### Apply with multiple arguments
 
 * `mapply()` for functions with multiple arguments
 * Vegetation type specific equations
@@ -191,7 +209,7 @@ est_mass_type <- function(volume, veg_type){
 
 est_mass_type(1.6, "shrub")
 plant_types = c("shrub", "tree", "shrub")
-est_mass_type(volumes, plant_types) # Warning & wrong result
+est_mass_type(volumes, plant_types) # Error
 ```
 
 * Doesn't vectorize, due to conditionals
@@ -199,63 +217,35 @@ est_mass_type(volumes, plant_types) # Warning & wrong result
 * `mapply()` because "multiple" inputs
 
 ```r
-mapply(FUN = est_mass_type, volume = volumes, veg_type = plant_types)
+mapply(est_mass_type, volumes, plant_types)
 ```
 
 * First argument is function
-* All other arguments are named arguments for the function
+* All other arguments are arguments for the function
 
 > Do Task 1 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
 
 * `map` functions from `purrr` package are similar to apply
 
-#### Other apply functions (**optional**)
+#### Integrating with dplyr
 
-* There are a few other apply functions
-* `vapply()` works like `sapply()`, but you have to tell it what type the returned vector will be
-* `tapply()` works like `sapply()`, but lets you provide a single grouping field (kind of like `group_by()` in dplyr)
-
-* `apply()` works on multi-dimensional data
-* Set `MARGIN` to tell it which dimension to calculate along
-* `1` for rows
-* `2` for columns
+* Let's update our `plant_data` data frame to include our plant types
 
 ```r
-counts = data.frame(sp1 = c(5, 4, 7, 6), sp2 = c(6, 2, 6, 9), sp3 = c(8, 16, 1, 0))
-counts
-apply(X = counts, MARGIN = 1, FUN = sum)
-apply(X = counts, MARGIN = 2, FUN = sum)
+plant_type_data = data.frame(volume = volumes,
+                        plant_type = plant_types)
 ```
 
-### Integrating with `dplyr`
-
-* We can also integrate both our vectorized and non-vectorized functions with `dplyr`
-* This lets us use them to repeat calculations either for each row in a data from or each group using `group_by`
-* Let's convert our `volume`, `a`, and `plant_types` vectors into a data frame
+* The basic integration with dplyr we used for vectorized functions won't work with non-vectorized functions
 
 ```r
-plant_data = data.frame(volumes, a, plant_types)
+plant_type_data |>
+  mutate(masses = est_mass_type(volume, plant_type))
 ```
 
-#### One result per row
-
-* To apply vectorized functions to each row in a table we can use `mutate`
-
-```r
-plant_data |>
-  mutate(masses = est_mass_coef(volumes, a))
-```
-
-* This is just like we've seen using other R functions, but it works with the vectorized functions we write as well
-* This won't work with non-vectorized functions
-
-```r
-plant_data |>
-  mutate(masses = est_mass_type(volumes, plant_types))
-```
-
-* In our case this is because the conditional attempts to evaluate if the entire column is equal to "tree"
-* That doesn't really make sense the `if` statement just checks the first value and returns `NA`
+* Error because `est_mass_type` isn't vectorized
+* By default `dplyr` runs this function by converting the individual columns to vectors and running the function on those vectors
+* Just like when we tried to run the function on the vectors
 * To get around this we add the function `rowwise` to our `dplyr` pipeline
 * This tells `dplyr` to work with the data one row at a time, like an `apply` function
 
@@ -289,4 +279,22 @@ get_biomass <- function(volumes){
 plant_data |>
   group_by(plant_types) |>
   summarize(biomass = get_biomass(volumes))
+```
+
+#### Other apply functions (**optional**)
+
+* There are a few other apply functions
+* `vapply()` works like `sapply()`, but you have to tell it what type the returned vector will be
+* `tapply()` works like `sapply()`, but lets you provide a single grouping field (kind of like `group_by()` in dplyr)
+
+* `apply()` works on multi-dimensional data
+* Set `MARGIN` to tell it which dimension to calculate along
+* `1` for rows
+* `2` for columns
+
+```r
+counts = data.frame(sp1 = c(5, 4, 7, 6), sp2 = c(6, 2, 6, 9), sp3 = c(8, 16, 1, 0))
+counts
+apply(X = counts, MARGIN = 1, FUN = sum)
+apply(X = counts, MARGIN = 2, FUN = sum)
 ```
