@@ -159,7 +159,7 @@ est_mass <- function(volume, a, b){
 * We can't pass the vector to the function and get back a vector of results because of the `if` statements
 * So let's loop over the values
 * First we'll create an empty vector to store the results
-* And them loop by index, callling the function for each value of `volumes`
+* And them loop by index, calling the function for each value of `volumes`
 
 ```r
 masses <- vector(mode="numeric", length=length(volumes))
@@ -172,7 +172,36 @@ for (i in length(volumes)){
 * This is the for loop equivalent of an `mapply` statement
 
 ```r
-masses_apply <- mapply(est_mass, volumes, a, b)
+masses_apply <- mapply(est_mass, volumes, as, bs)
+```
+
+### Looping over data frames
+
+* By default when R loops over a data frame it loops over the columns
+
+```r
+data <- data.frame(a = as, b = bs, volume = volumes)
+for (i in data) {
+  print(i)
+}
+```
+
+* To loop over rows, loop by index and subset
+
+```r
+for (i in 1:nrow(data)) {
+  print(data[i, ])
+}
+```
+
+* If we want to use a specific column
+
+```r
+masses <- vector(mode="numeric", length=length(volumes))
+for (i in 1:nrow(data)) {
+  mass <- est_mass(data[i, "volume"], data[i, "a"], data[i, "b"])
+  masses[i] <- mass
+}
 ```
 
 > Do [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
