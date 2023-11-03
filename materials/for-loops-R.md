@@ -142,12 +142,12 @@ for (i in 1:length(volumes)){
 
 ### Looping with functions
 
-* It is common to combine loops with with functions by calling one or more functions as a step in our loop
+* It is common to combine loops with functions by calling one or more functions as a step in our loop
 * For example, let's take the non-vectorized version of our `est_mass` function that returns an estimated mass if the `volume > 5` and `NA` if it's not.
 
 ```r
-est_mass <- function(volume, a, b){
-  if (volume > 5) {
+est_mass_max <- function(volume, a, b){
+  if (volume < 5) {
     mass <- a * volume ^ b
   } else {
     mass <- NA
@@ -163,8 +163,8 @@ est_mass <- function(volume, a, b){
 
 ```r
 masses <- vector(mode="numeric", length=length(volumes))
-for (i in length(volumes)){
-   mass <- est_mass(volumes[i], as[i], bs[i])
+for (i in 1:length(volumes)){
+   mass <- est_mass_max(volumes[i], as[i], bs[i])
    masses[i] <- mass
 }
 ```
@@ -172,7 +172,7 @@ for (i in length(volumes)){
 * This is the for loop equivalent of an `mapply` statement
 
 ```r
-masses_apply <- mapply(est_mass, volumes, as, bs)
+masses_apply <- mapply(est_mass_max, volumes, as, bs)
 ```
 
 ### Looping over data frames
@@ -199,7 +199,7 @@ for (i in 1:nrow(data)) {
 ```r
 masses <- vector(mode="numeric", length=length(volumes))
 for (i in 1:nrow(data)) {
-  mass <- est_mass(data[i, "volume"], data[i, "a"], data[i, "b"])
+  mass <- est_mass_max(data[i, "volume"], data[i, "a"], data[i, "b"])
   masses[i] <- mass
 }
 ```
