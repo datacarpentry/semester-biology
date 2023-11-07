@@ -236,14 +236,14 @@ data_files = list.files(pattern = "locations-")
 * First create an empty vector to store those counts
 
 ```r
-n_files = length(data_files)
-results <- integer(n_files)
+num_files = length(data_files)
+results <- vector(mode = "integer", length = num_files)
 ```
 
 * Then write our loop
 
 ```r
-for (i in 1:n_files){
+for (i in 1:num_files){
   filename <- data_files[i]
   data <- read.csv(filename)
   count <- nrow(data)
@@ -266,9 +266,9 @@ for (i in 1:n_files){
 * "Column Name" = "an empty vector of the correct type"
 
 ```r
-results <- data.frame(file_name = character(n_files),
-                      count = integer(n_files),
-                      min_lat = numeric(n_files))
+results <- data.frame(file_name = vector(mode = "character", length = num_files),
+                      count = vector(mode = "integer", length = num_files),
+                      min_lat = vector(mode = "numeric", length = num_files))
 ```
 
 * Now let's modify our loop from last time
@@ -281,9 +281,9 @@ for (i in 1:n_files){
   data <- read.csv(filename)
   count <- nrow(data)
   min_lat = min(data$lat)
-  results$file_name[i] <- filename
-  results$count[i] <- count
-  results$min_lat[i] <- min_lat
+  results[i, "file_name"] <- filename
+  results[i, "count"] <- count
+  results[i, "min_lat"] <- min_lat
 }
 ```
 
