@@ -27,7 +27,7 @@ library(stars)
 * For raster data we've loaded it using `read_stars` and plotted it with `geom_stars`
 
 ```r
-dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
+dtm_harv <- read_stars("data/harv/harv_dtmCrop.tif")
 ggplot() +
   geom_stars(data = dtm_harv)
 ```
@@ -35,7 +35,7 @@ ggplot() +
 * For vector data we've loaded it using `read_sf` and plotted it with `geom_sf`
 
 ```r
-plots_harv <- read_sf("data/HARV/harv_plots.shp")
+plots_harv <- read_sf("data/harv/harv_plots.shp")
 ggplot() +
   geom_sf(data = plots_harv)
 ```
@@ -45,7 +45,7 @@ ggplot() +
 ```r
 ggplot() +
   geom_stars(data = dtm_harv) +
-    geom_sf(data = plots_harv)
+  geom_sf(data = plots_harv)
 ```
 
 * That wasn't what we expected
@@ -81,7 +81,7 @@ st_crs(dtm_harv)
 st_crs(plots_harv)
 ```
 
-* The projection for the plots data is "longlat", so using latitude and longitude
+* The projection for the plots data is basically no projection, we're using latitude and longitude
 
 ### Transforming data into new projections
 
@@ -113,7 +113,7 @@ plots_harv_utm <- st_transform(plots_harv, st_crs(dtm_harv))
 ```r
 ggplot() +
   geom_stars(data = dtm_harv) +
-  geom_sf(data = plots_harv)
+  geom_sf(data = plots_harv_utm)
 ```
 
 ### What Projections to Use
@@ -139,4 +139,4 @@ ggplot() +
 * Thought in some cases geospatial tools will quietly handle reprojection for us
 * UTM with an appropriate local zone is the most common CRS used in ecological research
 
-> Do Task 3 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Task 4 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).

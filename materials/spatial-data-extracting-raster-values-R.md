@@ -11,8 +11,8 @@ language: R
 > library(ggplot2)
 > library(sf)
 > library(stars)
-> dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
-> plots_harv <- read_sf("data/HARV/harv_plots.shp")
+> dtm_harv <- read_stars("data/harv/harv_dtmcrop.tif")
+> plots_harv <- read_sf("data/harv/harv_plots.shp")
 > ```
 
 ### Extract raster data at points
@@ -51,7 +51,7 @@ st_join(plots_harv_utm, plot_elevations)
 * Or we can access the values can be accessed directly using the `$`
 
 ```r
-plot_elevations$HARV_dtmCrop.tif
+plot_elevations$harv_dtmcrop.tif
 ```
 
 * The name of the vector comes from the raster file name
@@ -60,13 +60,13 @@ plot_elevations$HARV_dtmCrop.tif
 * We can do this using the `dplyr` `mutate` function that we've used before
 
 ```r
-mutate(plots_harv_utm, elevations = plot_elevations$HARV_dtmCrop.tif)
+mutate(plots_harv_utm, elevations = plot_elevations$harv_dtmcrop.tif)
 ```
 
 * Or by assigning it to a new column in our existing data frame
 
 ```r
-plots_harv_utm$elevations <- plot_elevations$HARV_dtmCrop.tif
+plots_harv_utm$elevations <- plot_elevations$harv_dtmcrop.tif
 ```
 
-> Do Tasks 4-5 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Tasks 5-6 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).

@@ -5,7 +5,7 @@ title: Spatial Data Raster Math
 language: R
 --- 
 
-> Show > * [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
+> Show [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
 
 * We've been working with the DTM data, which is the Digital Terrain Model, or the elevation of the ground
 * LIDAR also collects data on the highest point in each location 
@@ -23,8 +23,8 @@ Panel 4: Equation: DSM (Digital Surface Model) - DTM (Digital Terrain Model) = C
 ```r
 library(stars)
 
-dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
-dsm_harv <- read_stars("data/HARV/HARV_dsmCrop.tif")
+dtm_harv <- read_stars("data/harv/harv_dtmcrop.tif")
+dsm_harv <- read_stars("data/harv/harv_dsmcrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
