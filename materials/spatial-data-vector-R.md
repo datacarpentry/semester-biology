@@ -32,7 +32,7 @@ Polygons: Shows two polygons composed of connected sets of x,y points where the 
 * Vector data comes in a variety of formats
 * shapefiles are are one of the most common
 * They set of multiple files with the same name, but with different extensions
-* We can see this by looking at the data in `data/HARV`
+* We can see this by looking at the data in `data/harv`
 * This data includes data on some field plots at that Harvard Forest NEON site we've been working with
 * It is stored in the `plots_harv` files and we can see there are four of them with different extensions
 
@@ -42,7 +42,7 @@ Polygons: Shows two polygons composed of connected sets of x,y points where the 
 
 ```r
 library(sf)
-plots_harv <- read_sf("data/HARV/harv_plots.shp")
+plots_harv <- read_sf("data/harv/harv_plots.shp")
 ```
 
 * When read read the data in we see information about it including
@@ -85,7 +85,7 @@ ggplot() +
 * So let's load another vector object that shows the boundary of the research site
 
 ```r
-boundary_harv <- read_sf("data/HARV/harv_boundary.shp")
+boundary_harv <- read_sf("data/harv/harv_boundary.shp")
 ```
 
 * We can plot them together by adding two `geom_sf` layers in `ggplot`

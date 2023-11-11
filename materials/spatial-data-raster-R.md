@@ -47,7 +47,7 @@ A brown line along the top of the terrain indicates the Digital Terrain Model]({
 
 ```r
 library(stars)
-dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
+dtm_harv <- read_stars("data/harv/harv_dtmcrop.tif")
 ```
 
 * Looking at this object provides information on the data it contains
@@ -74,7 +74,7 @@ dtm_harv
 
 ```r
 ggplot() +
-  geom_stars(data = dtm_harm)
+  geom_stars(data = dtm_harv)
 ```
 
 * For spatial data we're going to put the data in the geom calls instead of `ggplot()` because we are often trying to combine data of different types from different objects into a single map
@@ -88,7 +88,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = dtm_harm) +
+  geom_stars(data = dtm_harv) +
   scale_fill_viridis_c()
 ```
 
