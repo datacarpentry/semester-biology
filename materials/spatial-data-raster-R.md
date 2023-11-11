@@ -14,12 +14,6 @@ language: R
 > * [Raster description](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
 > * [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
 
-> Set-up R Console:
-
-```
-library(ggplot2)
-```
-
 ### Introduction to raster data
 
 * There are two common types of spatial data, raster and vector
@@ -38,7 +32,7 @@ The matrix is then shown as green pixels again to represent plotting the raster.
 
 ### Importing and exploring
 
-* We import raster data using the `read_sf()` function from the `stars` package
+* We import raster data using the `read_stars()` function from the `stars` package
 * We'll start by importing some elevation data collected from an airplane using an instrument called LIDAR
 * One of the values that LIDAR can generate is a Digital Terrain Model or DTM, which is the elevation of the ground
 
@@ -73,6 +67,8 @@ dtm_harv
 * Since it is raster data it doesn't require an aesthetic
 
 ```r
+library(ggplot2)
+
 ggplot() +
   geom_stars(data = dtm_harv)
 ```

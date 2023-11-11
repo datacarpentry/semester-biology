@@ -46,18 +46,19 @@ plots_harv <- read_sf("data/harv/harv_plots.shp")
 ```
 
 * When read read the data in we see information about it including
-* The data has 5 features
+* The data has 7 features
 * Each feature is one object, either a point, a line, or a polygon
 * The geometry type is "POINT", which means that the features are points
-* The data has 2 fields
+* The data has 3 fields
 * Each field is a piece of information that is associated with each feature
 * And there is information on the minimum and maximum spatial values in the dataset
 * If we view this object we'll see that it is a data frame with one row per vector object
 * There are three columns
-* The first two are the fields: id and plot_id, which in this case are both numerical plot IDs
-* The last field is where the spatial information is stored and which is called `geometry`
+* The first fields is `plot_id` a numerical plot ID
+* The second field is `plot_type`
+* The third field is where the spatial information is stored and which is called `geometry`
 * Since this is point data each object is stored as a pair of x and y coordinates
-* This makes it a special kind of data frame that can be used by spatial tools
+* This is a "simple feature collection", which is like a special kind of data frame that can be used by spatial tools
 
 * We can plot this data using a special geom, `geom_sf`
 
@@ -81,7 +82,7 @@ ggplot() +
 
 ### Combining multiple spatial layers
 
-* We have the start This shows us the position of the plots, but it's hard to learn much from this without some context
+* Hard to learn much from just the position of the plots without context
 * So let's load another vector object that shows the boundary of the research site
 
 ```r

@@ -5,7 +5,7 @@ title: Spatial Data Raster Math
 language: R
 --- 
 
-> Show > * [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
+> Show [Canopy Height Model picture](https://datacarpentry.org/r-raster-vector-geospatial/images/dc-spatial-raster/lidarTree-height.png)
 
 * We've been working with the DTM data, which is the Digital Terrain Model, or the elevation of the ground
 * LIDAR also collects data on the highest point in each location 

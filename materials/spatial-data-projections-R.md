@@ -113,7 +113,7 @@ plots_harv_utm <- st_transform(plots_harv, st_crs(dtm_harv))
 ```r
 ggplot() +
   geom_stars(data = dtm_harv) +
-  geom_sf(data = plots_harv)
+  geom_sf(data = plots_harv_utm)
 ```
 
 ### What Projections to Use
