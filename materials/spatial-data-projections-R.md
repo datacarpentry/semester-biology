@@ -81,7 +81,7 @@ st_crs(dtm_harv)
 st_crs(plots_harv)
 ```
 
-* The projection for the plots data is "longlat", so using latitude and longitude
+* The projection for the plots data is basically no projection, we're using latitude and longitude
 
 ### Transforming data into new projections
 
