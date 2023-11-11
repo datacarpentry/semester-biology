@@ -125,3 +125,4 @@ ggplot() +
   geom_sf(data = boundary_harv, fill = "transparent")
 ```
 
+> Do Task 3 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).

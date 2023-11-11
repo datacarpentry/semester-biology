@@ -139,4 +139,4 @@ ggplot() +
 * Thought in some cases geospatial tools will quietly handle reprojection for us
 * UTM with an appropriate local zone is the most common CRS used in ecological research
 
-> Do Task 3 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Task 4 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).

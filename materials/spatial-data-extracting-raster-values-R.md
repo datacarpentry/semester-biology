@@ -69,4 +69,4 @@ mutate(plots_harv_utm, elevations = plot_elevations$harv_dtmcrop.tif)
 plots_harv_utm$elevations <- plot_elevations$harv_dtmcrop.tif
 ```
 
-> Do Tasks 4-5 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Tasks 5-6 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
