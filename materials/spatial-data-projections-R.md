@@ -92,12 +92,13 @@ st_crs(plots_harv)
 * The CRS to transform it to
 * There are a variety of ways to indicate a CRS
 * Including numeric codes and "well known text" of WKT representations for different coordinate reference systems
-* E.g., the code 4326 indicates the standard longitude latitude CRS, so we could transform our raster data to lat longs
+* Look at the CRS for `dtm_harv` 
+* See WKT
+* Copy numeric EPSG code
 
 ```r
-dtm_lat_long <- st_transform(dtm_harv, 4326)
-ggplot() +
-  geom_stars(data = dtm_harv)
+plots_harv_utm <- st_transform(plots_harv, 32618)
+st_crs(plots_harv_utm)
 ```
 
 * Often the easiest thing to do when combining geospatial data is to match all objects to one of the existing CRS's
