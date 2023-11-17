@@ -11,8 +11,8 @@ language: R
 > library(ggplot2)
 > library(sf)
 > library(stars)
-> dtm_harv <- read_stars("data/harv/harv_dtmcrop.tif")
-> plots_harv <- read_sf("data/harv/harv_plots.shp")
+> dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
+> plots_harv <- read_sf("data/HARV/harv_plots.shp")
 > ```
 
 ### Extract raster data at points
@@ -40,15 +40,8 @@ plots_harv_utm <- st_transform(plots_harv, st_crs(dtm_harv))
 plot_elevations = st_extract(dtm_harv, plots_harv_utm)
 ```
 
-* If we look at `plot_elevations` we can see that it is a data frame with an elevation for each point
-
-* We can add these data to the information in our original `plots_harv_utm` object using a spatial join, which will combine things from the same locations
-
-```r
-st_join(plots_harv_utm, plot_elevations)
-```
-
-* Or we can access the values can be accessed directly using the `$`
+* If we look at `plot_elevations` we can see that it is a simple features collection with an elevation for each point
+* We can access the values directly using the `$`
 
 ```r
 plot_elevations$harv_dtmcrop.tif
@@ -56,17 +49,64 @@ plot_elevations$harv_dtmcrop.tif
 
 * The name of the vector comes from the raster file name
 * These extracted values are in the same order as the features in the vector object
-* So we can add them to our existing spatial data frame
-* We can do this using the `dplyr` `mutate` function that we've used before
+* So we can add them to our existing spatial data frame using standard approaches
 
 ```r
-mutate(plots_harv_utm, elevations = plot_elevations$harv_dtmcrop.tif)
+library(dplyr)
+plot_harv_elevations <- mutate(plots_harv_utm, elevations = plot_elevations$harv_dtmcrop.tif)
 ```
 
-* Or by assigning it to a new column in our existing data frame
+* We can add these data to the information in our original `plots_harv_utm` object using a spatial join, which will combine things from the same locations
+* Works like `inner_join()`
 
 ```r
-plots_harv_utm$elevations <- plot_elevations$harv_dtmcrop.tif
+plot_harv_elevations <- st_join(plots_harv_utm, plot_elevations)
 ```
 
-> Do Tasks 5-6 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+> Do Tasks 4-5 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
+
+### Extract raster data at points with buffers
+
+* So far we've extracted raster data at points
+* So we just get the value in the single pixel that the point falls inside
+* We often want data in larger areas around points
+* We can do this by buffering those points
+* Let's get the average canopy height within 25 m of the center of each plot
+* First, we buffer the plots
+* The second argument is the distance from the point to include in the buffer
+* The radius of the circle
+
+```r
+plots_harv_buffered <- st_buffer(plots_harv_utm, dist = 25)
+plots_harv_buffered
+```
+
+* This changes the geometry to polygon
+* The units for `dist` are in the units of the vector object
+* UTM is in units of meters so here we're saying within 25 m
+
+```r
+st_crs(plots_harv_utm)$units
+```
+
+* Plot our buffered objects
+
+```r
+ggplot() +
+  geom_stars(data = dtm_harv) +
+  geom_sf(data = plots_harv_buffered, fill = "transparent", color = "white")
+```
+
+* Now we can run `st_extract()` on that buffered data
+
+```r
+plot_elevations_buffered <- st_extract(dtm_harv, plots_harv_buffered)
+plot_elevations_buffered
+```
+
+* This initially creates a stars object, but we can convert it back to a simple features object
+
+```r
+plot_elevations_buffered <- st_as_sf(plot_elevations_buffered)
+plot_elevations_buffered
+```
