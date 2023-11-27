@@ -38,7 +38,7 @@ table.
 ```
 SELECT DISTINCT year, month, day, plot_type 
 FROM surveys
-JOIN species ON surveys.plot_id = plots.plot_id
+JOIN plots ON surveys.plot_id = plots.plot_id;
 ```
 
 * This query selects `year`, `month`, and `day` from `surveys` and 
