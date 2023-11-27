@@ -13,8 +13,8 @@ library(stars)
 library(sf)
 library(ggplot2)
 
-harv_boundary <- read_sf("data/HARV/harv_boundary.shp")
-harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
+harv_boundary <- read_sf("data/harv/harv_boundary.shp")
+harv_dtm <- read_stars("data/harv/harv_dtmfull.tif")
 
 harv_dtm_cropped <- st_crop(harv_dtm, harv_boundary)
 
