@@ -37,6 +37,7 @@ harv_plots <- read_sf("data/HARV/harv_plots.csv",
                       options = c("X_POSSIBLE_NAMES=longitude", "Y_POSSIBLE_NAMES=latitude"))
 ```
 
+* NO spaces in `options` arguments
 * Finally we need to indicate what the CRS is for the data using the `crs` argument
 * If it's lat/long data this is `4326`
 
