@@ -16,8 +16,8 @@ library(stars)
 library(ggplot2)
 library(dplyr)
 
-harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
-harv_soils <- read_sf("data/HARV/harv_soils.shp")
+harv_dtm <- read_stars("data/harv/harv_dtmfull.tif")
+harv_soils <- read_sf("data/harv/harv_soils.shp")
 
 ggplot() +
   geom_stars(data = harv_dtm) +
@@ -39,14 +39,14 @@ elevs_by_soil <- aggregate(harv_dtm, harv_soils, mean)
 * These values are stored in
 
 ```r
-elevs_by_soil$HARV_dtmFull.tif
+elevs_by_soil$harv_dtmfull.tif
 ```
 
 * You can add them to our simple features object using your favorite approach
 * I'll use `mutate` from `dplyr`
 
 ```r
-harv_soils <- mutate(harv_soils, elevation = elevs_by_soil$HARV_dtmFull.tif)
+harv_soils <- mutate(harv_soils, elevation = elevs_by_soil$harv_dtmfull.tif)
 ```
 
 * Once we done this then we can make maps using this information

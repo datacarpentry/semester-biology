@@ -15,8 +15,8 @@ library(sf)
 library(stars)
 library(ggplot2)
 
-harv_soils <- read_sf("data/HARV/harv_soils.shp")
-harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
+harv_soils <- read_sf("data/harv/harv_soils.shp")
+harv_dtm <- read_stars("data/harv/harv_dtmfull.tif")
 ```
 
 * Let's look at the coordinate reference systems for these two data sets

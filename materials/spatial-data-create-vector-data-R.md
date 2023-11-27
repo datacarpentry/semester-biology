@@ -24,7 +24,7 @@ library(sf)
 * The first argument is still the name of the file we are going to read
 
 ```r
-harv_plots <- read_sf("data/HARV/harv_plots.csv")
+harv_plots <- read_sf("data/harv/harv_plots.csv")
 ```
 
 * But now we also need to tell it which columns the spatial data is located in
@@ -33,15 +33,16 @@ harv_plots <- read_sf("data/HARV/harv_plots.csv")
 * In our case those column names are `longitude` and `latitude`
 
 ```r
-harv_plots <- read_sf("data/HARV/harv_plots.csv",
+harv_plots <- read_sf("data/harv/harv_plots.csv",
                       options = c("X_POSSIBLE_NAMES=longitude", "Y_POSSIBLE_NAMES=latitude"))
 ```
 
+* NO spaces in `options` arguments
 * Finally we need to indicate what the CRS is for the data using the `crs` argument
 * If it's lat/long data this is `4326`
 
 ```r
-harv_plots <- read_sf("data/HARV/harv_plots.csv",
+harv_plots <- read_sf("data/harv/harv_plots.csv",
                       options = c("X_POSSIBLE_NAMES=longitude", "Y_POSSIBLE_NAMES=latitude"),
                       crs = 4326)
 ```

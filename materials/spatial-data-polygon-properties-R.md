@@ -12,7 +12,7 @@ language: R
 ```r
 library(sf)
 
-harv_soils <- read_sf("data/HARV/harv_soils.shp")
+harv_soils <- read_sf("data/harv/harv_soils.shp")
 
 ggplot() +
   geom_sf(data = harv_soils)
@@ -55,9 +55,9 @@ ggplot() +
 * This might be more useful in the context of the boundary so we could add the boundary as another layer
 
 ```r
-harv_boundary <- read_sf("data/HARV/harv_boundary.shp")
+harv_boundary <- read_sf("data/harv/harv_boundary.shp")
 ggplot() +
-  geom_sf(data = harv_boundary)
+  geom_sf(data = harv_boundary) +
   geom_sf(data = harv_soils, color = "blue") +
   facet_wrap(~TYPE_)
 ```
