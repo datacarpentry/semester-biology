@@ -21,7 +21,7 @@ harv_soils <- read_sf("data/harv/harv_soils.shp")
 
 ggplot() +
   geom_stars(data = harv_dtm) +
-  geom_sf(data = harv_soils, alpha = 0)
+  geom_sf(data = harv_soils, fill = "transparent", color = "white")
 ```
 
 * If we want to understand whether the polygon fields are related to the raster we need to extract data about the raster within each polygon
