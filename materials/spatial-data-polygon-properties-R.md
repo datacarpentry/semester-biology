@@ -58,7 +58,7 @@ ggplot() +
 harv_boundary <- read_sf("data/harv/harv_boundary.shp")
 ggplot() +
   geom_sf(data = harv_boundary) +
-  geom_sf(data = harv_soils, color = "blue") +
+  geom_sf(data = harv_soils, fill = "blue") +
   facet_wrap(~TYPE_)
 ```
 
