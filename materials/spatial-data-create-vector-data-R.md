@@ -38,8 +38,10 @@ harv_plots <- read_sf("data/harv/harv_plots.csv",
 ```
 
 * NO spaces in `options` arguments
-* Finally we need to indicate what the CRS is for the data using the `crs` argument
-* If it's lat/long data this is `4326`
+
+* The data is assumed to be in latitude and longitude
+* If the data is stored in a different CRS that can be specified using the `crs` argument
+* Since our data is lat/long data use `4326`
 
 ```r
 harv_plots <- read_sf("data/harv/harv_plots.csv",
