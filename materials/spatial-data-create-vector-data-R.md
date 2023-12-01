@@ -55,7 +55,7 @@ harv_plots <- read_sf("data/harv/harv_plots.csv",
 * We can plot, reproject, and `extract` values from rasters using this data just like we can from shape files
 
 ```r
-harv_plots_utm <- st_transform(harv_plots, st_crs(harm_dtm))
+harv_plots_utm <- st_transform(harv_plots, st_crs(harv_dtm))
 harv_plots_utm
 ```
 
