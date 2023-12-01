@@ -38,8 +38,10 @@ harv_plots <- read_sf("data/harv/harv_plots.csv",
 ```
 
 * NO spaces in `options` arguments
-* Finally we need to indicate what the CRS is for the data using the `crs` argument
-* If it's lat/long data this is `4326`
+
+* The data is assumed to be in latitude and longitude
+* If the data is stored in a different CRS that can be specified using the `crs` argument
+* Since our data is lat/long data use `4326`
 
 ```r
 harv_plots <- read_sf("data/harv/harv_plots.csv",
@@ -51,6 +53,12 @@ harv_plots <- read_sf("data/harv/harv_plots.csv",
 
 * If we look at `harv_plots` we can see that it looks like all of our other vector data
 * We can plot, reproject, and `extract` values from rasters using this data just like we can from shape files
+
+```r
+harv_plots_utm <- st_transform(harv_plots, st_crs(harv_dtm))
+harv_plots_utm
+```
+
 * We can even save it as a shape file if we want, which we'll see how to do in the lesson on save spatial data
 
 > Do Tasks 1 and 2 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
