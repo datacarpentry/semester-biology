@@ -3,7 +3,9 @@ layout: page
 element: notes
 title: Changing the Plot Projection in ggplot
 language: R
---- 
+---
+
+## Plotting with expected units
 
 * We've talked about how different spatial data have different projections which have different units
 * But you may have noticed that something a little funny happens with these units when we plot data using ggplot
@@ -58,5 +60,48 @@ ggplot() +
 ```
 
 * We could also use the numeric code for the CRS instead if we want to
+
+## Rotating axis labels
+
+* Our x-axis labels are overlapping, which makes the map difficult to read
+* Can fix this by rotating the axis labels
+* Do this using the `theme()` function, which lets us control many details of how our plots display
+* We want to set an element of the x-axis text so we set `axis.text.x`
+* We can set the element we want using the `element_text()` function
+* And then the name of the element and it's value
+* In this case the element is `angle` and we'll set it to 45 degrees
+
+```r
+ggplot() +
+  geom_stars(data = harv_dtm) +
+  geom_sf(data = harv_soils, alpha = 0) +
+  coord_sf(datum = st_crs(harv_dtm)) +
+  theme(axis.text.x = element_text(angle = 45))
+```
+
+* This is better, but now our label is starting to overlap our plot
+* We can adjust the position using two functions that control the "justificiation"
+* `vjust` to control vertical and `hjust` to control horizontal
+* Possible values are 0 (left justified), 1 (right justified), and 0.5 (center justified)
+
+```r
+ggplot() +
+  geom_stars(data = harv_dtm) +
+  geom_sf(data = harv_soils, alpha = 0) +
+  coord_sf(datum = st_crs(harv_dtm)) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))
+```
+
+* Setting both to 1, for right justified, will align the right edge with the tick
+
+* If to rotate vertically we can use 90 for the angle
+
+```r
+ggplot() +
+  geom_stars(data = harv_dtm) +
+  geom_sf(data = harv_soils, alpha = 0) +
+  coord_sf(datum = st_crs(harv_dtm)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
 
 > Do Task 6 of [Harvard Forest Soils Analysis]({{ site.baseurl }}/exercises/Neon-harvard-forest-soils-analysis-R).

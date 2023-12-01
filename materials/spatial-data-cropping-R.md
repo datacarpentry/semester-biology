@@ -94,6 +94,8 @@ ggplot() +
   geom_sf(data = harv_boundary, fill = "transparent")
 ```
 
+> Do Task 3 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
+
 ## Cropping to a bounding box
 
 * The other common approach to cropping is to crop spatial objects to only include those within a bounding box
@@ -144,3 +146,5 @@ ggplot() +
   scale_fill_viridis_c(na.value = "transparent") +
   geom_sf(data = harv_soils_small, fill = "transparent")
 ```
+
+> Do Task 4 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).

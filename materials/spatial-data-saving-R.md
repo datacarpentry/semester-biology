@@ -32,13 +32,13 @@ harv_soils_small <- st_crop(harv_soils, bbox)
 * To save as geotiff, which we've been working with, we'll use `.tif
 
 ```r
-write_stars(harv_dtm_cropped, "harv_dtm_cropped.tif")
+write_stars(harv_dtm_cropped, "harv_dtm_small.tif")
 ```
 
 * We can see that this worked by reading it back in
 
 ```r
-read_stars("harv_dtm_cropped.tif")
+read_stars("harv_dtm_small.tif")
 ```
 
 * We can see this is the cropped data because it's dimensions are < 150 x 150
