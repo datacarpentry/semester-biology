@@ -3,8 +3,7 @@
 [![JOSE DOI](https://jose.theoj.org/papers/10.21105/jose.00139/status.svg)](https://doi.org/10.21105/jose.00139)
 [![Zenodo DOI](https://zenodo.org/badge/31911336.svg)](https://zenodo.org/badge/latestdoi/31911336)
 
-This is a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
-with data through programming, database management and computing more generally.
+Forkable teaching materials for course on working with data in R.
 
 This repository contains the complete teaching materials (excluding exams and
 answers to assignments) and [website](http://datacarpentry.org/semester-biology) for a university style and self-guided 
