@@ -79,9 +79,11 @@ data files and code in a more manageable way.
 
 ### Introduce yourself to Git
 
-1. Git tab -> `More` -> `Shell`
-2. `git config --global user.name "[name]"`
-3. `git config --global user.email "[email]"` (same as GitHub account email).
+```r
+library(usethis)
+
+use_git_config(user.name = "[name]", user.email = "[email]")
+```
 
 > That was [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 > Have students confirm that this all worked and fix any issues.
