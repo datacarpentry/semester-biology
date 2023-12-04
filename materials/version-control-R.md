@@ -16,7 +16,7 @@ language: R
 
 > For class
 > 
-> * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv).
+> * Download [Gaeta_etal_CLC_data.csv]({{ site.baseurl }}/data/Gaeta_etal_CLC_data.csv).
 > * Either arrange to have a teaching partner to attend class or be logged into GitHub as another user in the browser for collaboration demos.
 >
 > * Open the following links in a browser and zoom in to make the images fill
