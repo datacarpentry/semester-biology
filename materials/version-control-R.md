@@ -111,7 +111,9 @@ use_git_config(user.name = "[name]", user.email = "[email]")
 
 * Read in data to new R script.
 
-```
+```r
+library(dplyr)
+
 fish_data = read.csv("Gaeta_etal_CLC_data.csv")
 ```
 
@@ -132,9 +134,8 @@ fish_data = read.csv("Gaeta_etal_CLC_data.csv")
 * Add some more code to `fish-analysis.R`
     * Create new categorical size column
 
-```
-library(dplyr)
-fish_data_cat = fish_data %>% 
+```r
+fish_data_cat = fish_data |>
   mutate(length_cat = ifelse(length > 200, "big", "small"))
 ```
 
