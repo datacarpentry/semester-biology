@@ -241,6 +241,30 @@ fish_data_cat = fish_data %>%
 
 ### Push to a remote
 
+#### Connect to GitHub
+
+* To push to your remote we first have to connect to GitHub, which is a little tricky
+* First, log in to GitHub in your browser
+* Then create a GitHub token, this is like a special password just for one computer
+
+```r
+usethis::create_github_token()
+```
+
+* Select defaults
+* Create token
+* Copy token
+
+* Now add this token our local git setup so that it can use it to connect to GitHub
+
+```r
+gitcreds::gitcreds_set()
+```
+
+* Paste your password
+
+#### Push
+
 * `Push` sends your recent commits to the `origin` remote.
 
 > Draw push arrow on diagram on board from local to `origin`.
