@@ -16,7 +16,7 @@ language: R
 
 > For class
 > 
-> * Download [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv).
+> * Download [Gaeta_etal_CLC_data.csv]({{ site.baseurl }}/data/Gaeta_etal_CLC_data.csv).
 > * Either arrange to have a teaching partner to attend class or be logged into GitHub as another user in the browser for collaboration demos.
 >
 > * Open the following links in a browser and zoom in to make the images fill
@@ -77,11 +77,19 @@ data files and code in a more manageable way.
 6. Click `Create Project`.
 7. Check to make sure you have a `Git` tab in the upper right window.
 
+### Install
+
+```r
+install.packages(c('dplyr', 'usethis', 'gitcreds'))
+```
+
 ### Introduce yourself to Git
 
-1. Git tab -> `More` -> `Shell`
-2. `git config --global user.name "[name]"`
-3. `git config --global user.email "[email]"` (same as GitHub account email).
+```r
+library(usethis)
+
+use_git_config(user.name = "[name]", user.email = "[email]")
+```
 
 > That was [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 > Have students confirm that this all worked and fix any issues.
@@ -109,7 +117,9 @@ data files and code in a more manageable way.
 
 * Read in data to new R script.
 
-```
+```r
+library(dplyr)
+
 fish_data = read.csv("Gaeta_etal_CLC_data.csv")
 ```
 
@@ -130,9 +140,8 @@ fish_data = read.csv("Gaeta_etal_CLC_data.csv")
 * Add some more code to `fish-analysis.R`
     * Create new categorical size column
 
-```
-library(dplyr)
-fish_data_cat = fish_data %>% 
+```r
+fish_data_cat = fish_data |>
   mutate(length_cat = ifelse(length > 200, "big", "small"))
 ```
 
@@ -151,7 +160,7 @@ fish_data_cat = fish_data %>%
 * Modify this code in `fish-analysis.R` 
     * Change category cut-off size
 
-```
+```r
 fish_data_cat = fish_data %>% 
   mutate(length_cat = ifelse(length > 300, "big", "small"))
 ```
@@ -237,6 +246,30 @@ fish_data_cat = fish_data %>%
           the beginning.
 
 ### Push to a remote
+
+#### Connect to GitHub
+
+* To push to your remote we first have to connect to GitHub, which is a little tricky
+* First, log in to GitHub in your browser
+* Then create a GitHub token, this is like a special password just for one computer
+
+```r
+usethis::create_github_token()
+```
+
+* Select defaults
+* Create token
+* Copy token
+
+* Now add this token our local git setup so that it can use it to connect to GitHub
+
+```r
+gitcreds::gitcreds_set()
+```
+
+* Paste your password
+
+#### Push
 
 * `Push` sends your recent commits to the `origin` remote.
 
