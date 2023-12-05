@@ -77,6 +77,12 @@ data files and code in a more manageable way.
 6. Click `Create Project`.
 7. Check to make sure you have a `Git` tab in the upper right window.
 
+### Install
+
+```r
+install.packages(c('dplyr', 'usethis', 'gitcreds'))
+```
+
 ### Introduce yourself to Git
 
 ```r
