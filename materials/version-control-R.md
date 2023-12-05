@@ -99,7 +99,7 @@ use_git_config(user.name = "[name]", user.email = "[email]")
 
 #### Commit data
 
-* Download the data file [Gaeta_etal_CLC_data.csv](https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv) to your project directory.
+* Download the data file [Gaeta_etal_CLC_data.csv]({{ site.baseurl }}/data/Gaeta_etal_CLC_data.csv) to your project directory.
 * Add the data file to version control
 * Two step process:
 
