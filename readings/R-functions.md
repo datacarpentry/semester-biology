@@ -11,5 +11,5 @@ language: R
 
 * Readings
 
-  * [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R/)
+  * [Creating functions](http://swcarpentry.github.io/r-novice-inflammation/02-func-R)
 

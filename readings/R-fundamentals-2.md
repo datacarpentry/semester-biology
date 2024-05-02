@@ -12,4 +12,4 @@ language: R
 
 * Readings
 
-  * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R/)
+  * [Software Carpentry loops lesson](http://swcarpentry.github.io/r-novice-inflammation/03-loops-R)
