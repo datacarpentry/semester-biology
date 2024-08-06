@@ -24,7 +24,8 @@ language: R
 
 #### Introduction to R
 
-* [Introduction to R](http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
+* [An Introduction to R - Getting Started](https://intro2r.com/getting-started.html)
+* [An Introduction to R - Objects in R](https://intro2r.com/objects-in-r.html)
 
 #### Starting with Data
 
