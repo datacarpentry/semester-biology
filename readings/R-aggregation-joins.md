@@ -12,5 +12,5 @@ language: R
 
 ### Optional Resources:
  
-* [Analyzing data with dplyr](http://www.datacarpentry.org/R-ecology-lesson/03-dplyr.html)
+* [Data Analysis and Visualization in R for Ecologists - Working with data](http://www.datacarpentry.org/R-ecology-lesson/working-with-data.html)
 * [dplyr vignette](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html)

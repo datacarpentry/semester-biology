@@ -19,13 +19,14 @@ language: R
 
 #### Introduction to RStudio (choose one)
 
-* Reading: [Before We Start (Data Carpentry Lesson)](http://www.datacarpentry.org/R-ecology-lesson/00-before-we-start.html)
+* Reading: [Introduction to R and RStudio (Data Carpentry Lesson)](https://datacarpentry.org/R-ecology-lesson/introduction-r-rstudio.html)
 * Video (15 min): [An opinionated tour of RStudio (R-Ladies Sydney)](https://www.youtube.com/watch?v=kfcX5DEMAp4)
 
 #### Introduction to R
 
-* [Introduction to R](http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)
+* [An Introduction to R - Getting Started](https://intro2r.com/getting-started.html)
+* [An Introduction to R - Objects in R](https://intro2r.com/objects-in-r.html)
 
 #### Starting with Data
 
-* [Starting with data (**only through "Inspecting data.frame Objects"**)](http://www.datacarpentry.org/R-ecology-lesson/02-starting-with-data.html)
+* [Exploring and understanding data (**only through "The data.frame"**)](https://datacarpentry.org/R-ecology-lesson/how-r-thinks-about-data.html)
