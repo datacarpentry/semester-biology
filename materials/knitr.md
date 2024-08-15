@@ -76,6 +76,7 @@ In this document I will:
 ```{r}
 library(dplyr)
 library(ggplot2)
+library(readr)
 ```
 </code></pre>
 
@@ -86,7 +87,7 @@ library(ggplot2)
 ## Data
 
 ```{r}
-data <- read.csv("https://ndownloader.figshare.com/files/2292172")
+data <- read_csv("https://ndownloader.figshare.com/files/2292172")
 head(data)
 ```
 </code></pre>
@@ -103,6 +104,7 @@ head(data)
 ```{r, message=FALSE}
 library(dplyr)
 library(ggplot2)
+library(readr)
 ```
 </code></pre>
 
@@ -111,7 +113,7 @@ re-calculating or re-downloading it each time.
 
 <pre><code>
 ```{r, cache=TRUE}
-data <- read.csv("https://ndownloader.figshare.com/files/2292172")
+data <- read_csv("https://ndownloader.figshare.com/files/2292172")
 head(data)
 ```
 </code></pre>
@@ -209,7 +211,7 @@ Slide With Code
 ========================================================
 
 ```{r}
-data <- read.csv("https://ndownloader.figshare.com/files/2292172")
+data <- read_csv("https://ndownloader.figshare.com/files/2292172")
 ```
 
 Histogram of Masses

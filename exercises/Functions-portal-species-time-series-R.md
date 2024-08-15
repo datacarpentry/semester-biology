@@ -7,7 +7,7 @@ language: R
 
 If [surveys.csv](https://ndownloader.figshare.com/files/2292172), [species.csv](https://ndownloader.figshare.com/files/3299483), and [plots.csv](https://ndownloader.figshare.com/files/3299474) are not available in your workspace download them:
 
-Load them into R using `read.csv()`.
+Load them into R using `read_csv()`.
 
 First, combine the `surveys` and `species` tables into a single data frame.
 

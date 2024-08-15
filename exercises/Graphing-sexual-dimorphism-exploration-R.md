@@ -12,9 +12,7 @@ Download and import a
 [large publicly available dataset of bird size measures](https://esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt)
 created by [Lislevand et al. 2007](https://doi.org/10.1890/06-2054).
 
-Import the data into R. It is tab delimited so you'll want to use `sep = "\t"`
-as an optional argument when calling `read.csv()`. The `\t` is how we indicate a
-tab character to R (and most other programming languages).
+Import the data into R. It is tab delimited so you'll want to use `read_tsv()`
 
 Using `ggplot`:
 
@@ -34,6 +32,6 @@ Using `ggplot`:
 5. Make the same graph as in the last task, but for wing size instead of
    mass. Do you notice anything strange? If so, you may have gotten caught by
    the use of non-standard null values. If you already noticed and fixed this,
-   Nice Work! If not, you can use the optional `na.strings = c(“-999”, “-999.0”)`
-   argument in `read.csv()` to tell R what value(s) indicated nulls in a
+   Nice Work! If not, you can use the optional `na = c(“-999”, “-999.0”)`
+   argument in `read_tsv()` to tell R what value(s) indicated nulls in a
    dataset.

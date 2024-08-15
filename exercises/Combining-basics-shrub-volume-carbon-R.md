@@ -16,7 +16,7 @@ the analysis again.
 
 Write an R script that:
 
-- Imports the data using `read.csv()`.
+- Imports the data using `read_csv()`.
 - Uses a `for` loop to check each row in the dataset and groups by height: 
   `"tall"` `if (height > 5)`, `"medium"` `if (2 <= height < 5)`, 
   or `"short"` `if (height < 2)`, and builds a list of the results.

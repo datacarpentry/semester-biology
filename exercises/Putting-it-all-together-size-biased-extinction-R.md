@@ -22,20 +22,15 @@ than once in this dataset. Also let's ignore species that went extinct in the
 very recent past (*designated by the word `"historical"` in the `status`
 column*).
 
+If the file `MOMv3.3.txt` isn't in your working directory [download it](https://esapubs.org/archive/ecol/E084/094/MOMv3.3.txt).
 Import the data into R. If you've looked at a lot of data you'll realize that
-this dataset is tab delimited. Use the argument `sep = "\t"` in `read.csv()` to
-properly format the data. There is no header row, so use `head = FALSE`. The
+this dataset is tab delimited. Use `read_tsv()` to
+load the data. There is no header row, so use the optional argument
+`col_names = c("continent", "status", "order", "family", "genus", "species", "log_mass", "combined_mass", "reference")`
+to set the column names. The
 unknown value used in the dataset is `-999`. R assumes your unknown value is
 `NA`, but `"NA"` in the data is the code for North America.  Use the additional
-argument `na.strings = "-999"` in `read.csv()` to get R to transform `-999` to `NA`.
-
-It's probably a good idea to add column names to help identify columns:
- 
-```
-colnames(mammal_sizes) <- c("continent", "status", "order", 
-"family", "genus", "species", "log_mass", "combined_mass", 
-"reference")
-```
+argument `na = "-999"` in `read_csv()` to get R to transform `-999` to `NA`.
 
 1. Create a new RStudio project and a new version control repository for this
    exercise and commit your changes in small logical chunks. Make sure to commit    

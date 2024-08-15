@@ -9,7 +9,7 @@ language: R
 If the file [surveys.csv](https://ndownloader.figshare.com/files/2292172) is not
 already in your working directory download it.
 
-Load `surveys.csv` into R using `read.csv()`.
+Load `surveys.csv` into R using `read_csv()`.
 
 1. Use the `group_by()` and `summarize()` functions to get a count of the number
    of individuals in each species ID.

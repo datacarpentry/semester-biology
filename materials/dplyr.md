@@ -15,7 +15,7 @@ time: 1
 ### Setup
 
 ```r
-install.packages('dplyr')
+install.packages(c('dplyr', 'readr'))
 download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
@@ -53,12 +53,14 @@ download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-d
 
 #### Loading and viewing the dataset
 
-* Load these into `R` using `read.csv()`.
+* Load these into `R` using `read_csv()`.
 
 ```r
-surveys <- read.csv("surveys.csv")
-species <- read.csv("species.csv")
-plots <- read.csv("plots.csv")
+library(readr)
+
+surveys <- read_csv("surveys.csv")
+species <- read_csv("species.csv")
+plots <- read_csv("plots.csv")
 ```
 
 * Display data by clicking on it in `Environment`
@@ -92,10 +94,6 @@ plots <- read.csv("plots.csv")
 ### Basic `dplyr`
 
 * Modern data manipulation library for R
-
-```r
-surveys <- read.csv("surveys.csv")
-```
 
 #### Select
 

@@ -245,7 +245,7 @@ results <- vector(mode = "integer", length = num_files)
 ```r
 for (i in 1:num_files){
   filename <- data_files[i]
-  data <- read.csv(filename)
+  data <- read_csv(filename)
   count <- nrow(data)
   results[i] <- count
 }
@@ -278,7 +278,7 @@ results <- data.frame(file_name = vector(mode = "character", length = num_files)
 ```r
 for (i in 1:n_files){
   filename <- data_files[i]
-  data <- read.csv(filename)
+  data <- read_csv(filename)
   count <- nrow(data)
   min_lat = min(data$lat)
   results[i, "file_name"] <- filename
@@ -298,8 +298,9 @@ for (i in 1:n_files){
 ```r
 library(ggplot2)
 library(dplyr)
+library(readr)
 
-neon_trees <- read.csv('data/HARV_034subplt.csv')
+neon_trees <- read_csv('data/HARV_034subplt.csv')
 ggplot(neon_trees, aes(x = easting, y = northing)) +
   geom_point()
 ```

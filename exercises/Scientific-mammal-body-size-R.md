@@ -23,24 +23,18 @@ very recent past (designated by the word `"historical"` in the `status`
 column).
 
 Import the data into R. If you've looked at a lot of data you'll realize
-that this dataset is tab delimited. Use the argument `sep = "\t"` in 
-`read.csv()` to properly format the data. There is no header row, so use `head = FALSE`.
-
-Add column names to help identify columns.
- 
-```
-colnames(mammal_sizes) <- c("continent", "status", "order", 
-"family", "genus", "species", "log_mass", "combined_mass", 
-"reference")
-```
+that this dataset is tab delimited. Use `read_tsv()` to properly format the data.
+There is no header row, so use the optional argument
+`col_names = c("continent", "status", "order", "family", "genus", "species", "log_mass", "combined_mass", "reference")`
+to set the column names.
 
 To start let's explore the data a little and then start looking at the major question.
 
 1. The following `dplyr` code will determine how many genera (*plural of genus*) are
    in the dataset:
-   ```
-   nrow(distinct(select(mammal_sizes, genus)))
 
+   ```r
+   nrow(distinct(select(mammal_sizes, genus)))
    ```
    Modify this code into a function to determine the number of species. 
    Remember that a species is uniquely defined by the combination of its 

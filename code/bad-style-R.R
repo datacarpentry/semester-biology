@@ -4,8 +4,8 @@ fraction<-sum(sub_list)/sum(total_list)
 percent<-round(fraction,3)*100
 return(percent)
 }
-trees<-read.csv("https://esapubs.org/archive/ecol/E090/251/datafiles/swamp_all_modern.txt", sep = '\t')
-species<-read.csv("https://esapubs.org/archive/ecol/E090/251/datafiles/species_codes.txt", sep = '\t')
+trees<-read_csv("https://esapubs.org/archive/ecol/E090/251/datafiles/swamp_all_modern.txt", sep = '\t')
+species<-read_csv("https://esapubs.org/archive/ecol/E090/251/datafiles/species_codes.txt", sep = '\t')
 library(dplyr)
 trees<-mutate(trees, Mass = 0.124*DBH**2.53)
 trees_grouped<-group_by(trees, Year, Plot, Species)
@@ -21,6 +21,7 @@ species_rank<-rbind( species_rank, data.frame(year, sp_code, percent_ind, percen
 }
 species_rank <- left_join(species_rank, species, join_by(sp_code == SPCODE))
 library(ggplot2)
+library(readr)
 ggplot(species_rank, aes(x = percent_ind, y = percent_mass)) +
 geom_point(aes(color = factor(SPECIES))) +
 facet_grid(. ~ year) +

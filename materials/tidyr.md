@@ -28,7 +28,7 @@ library(dplyr)
 > Copy link to Western Ghats tree data from datasets page
 
 ```r
-raw_data = read.csv("http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt", sep = "\t")
+raw_data = read_tsv("http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt")
 ```
 
 > View data
@@ -191,8 +191,8 @@ stem_counts_wide <- stem_counts %>%
 * Some write out a value once and then leave the following rows blank
 
 ```r
-gappy_data <- read.csv("http://www.datacarpentry.org/semester-biology/data/gappy-data.csv",
-                       na.strings = "")
+gappy_data <- read_csv("http://www.datacarpentry.org/semester-biology/data/gappy-data.csv",
+                       na = "")
 gappy_data
 ```
 

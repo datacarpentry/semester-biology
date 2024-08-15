@@ -32,10 +32,11 @@ download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-d
 
 ```r
 library(dplyr)
+library(readr)
 
-surveys <- read.csv("surveys.csv")
-species <- read.csv("species.csv")
-plots <- read.csv("plots.csv")
+surveys <- read_csv("surveys.csv")
+species <- read_csv("species.csv")
+plots <- read_csv("plots.csv")
 ```
 
 * In the Portal dataset

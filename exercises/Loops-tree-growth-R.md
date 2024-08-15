@@ -13,10 +13,9 @@ If the file `TREE_SURVEYS.txt` isn't already in your working directory,
 Read the data in using the following code: 
 
 ```r
-tree_data <- read.csv("https://ndownloader.figshare.com/files/5629536",
-                 sep = '\t',
-                 na.strings = c("dead", "missing", "MISSING",
-                                "NA", "?", "3.3."))
+tree_data <- read_tsv("https://ndownloader.figshare.com/files/5629536",
+                 na = c("dead", "missing", "MISSING",
+                        "NA", "?", "3.3."))
 ```
 
 1. Write a function named `get_growth()` that takes two inputs, a vector of `sizes` and a vector of `years`, and calculates the average annual growth rate. Pseudo-code for calculating this rate is `(size_in_last_year - size_in_first_year) / (last_year - first_year)`. Test this function by running `get_growth(c(40.2, 42.6, 46.0), c(2020, 2021, 2022))`.

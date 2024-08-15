@@ -34,9 +34,10 @@ time: 20 minutes
 
 ```r
 library(dplyr)
+library(readr)
 
-surveys <- read.csv('surveys.csv')
-species <- read.csv('species.csv')
+surveys <- read_csv('surveys.csv')
+species <- read_csv('species.csv')
 
 do_counts_by_year <- survey |>
   filter(species = "DO") |>
@@ -54,8 +55,9 @@ ggplot(do_count_by_year, aes(x = year, y = count)) +
 ```r
 library(dplyr)
 library(ggplot2)
+library(readr)
 
-surveys <- read.csv('surveys.csv')
+surveys <- read_csv('surveys.csv')
 
 do_counts_by_year <- surveys |>
   filter(species_id == "DO") |>

@@ -9,7 +9,7 @@ time: 30
 ### Setup
 
 ```r
-install.packages('dplyr')
+install.packages(c('dplyr', 'readr'))
 download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
@@ -19,7 +19,7 @@ download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-d
 ### Basic aggregation
 
 ```r
-surveys <- read.csv("surveys.csv")
+surveys <- read_csv("surveys.csv")
 ```
 
 * Aggregation combines rows into groups based on one of more columns.

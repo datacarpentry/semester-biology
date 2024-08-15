@@ -127,12 +127,12 @@ surveys <- data.frame(sites, density_ha, area_ha)
 
 ### Reading in external data
 
-* `read.csv()`
+* `read_csv()` from the `readr` package
     * Main argument is the location of the data - url or path on computer
     * Go to `Datasets` page on site and copy `Shrub dimensions` url
   
 ```
-shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
+shrub_data <- read_csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
 ```
 
 ### Factors
@@ -147,7 +147,7 @@ str(shrub_data)
 * Can eliminate during imports with `stringsAsFactors`
 
 ```
-shrub_data <- read.csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv', stringsAsFactors = FALSE)
+shrub_data <- read_csv('https://datacarpentry.org/semester-biology/data/shrub-dimensions-labeled.csv')
 str(shrub_data)
 ```
 

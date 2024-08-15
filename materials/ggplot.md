@@ -28,27 +28,24 @@ language: R
 * But if we look at this new dataset it looks different
 * * *Click on Acacia Dataset to Open in Text Editor*
 * This data is tab separated, so we'll need to treat it differently when we import it
-* To do this we manually set the character separating each column using the optional `sep` argument
-* So we'll call our data frame `acacia` and assign it the output from `read.csv`
+* We'll call our data frame `acacia` and assign it the output from `read_tsv()`, where the `t` is for "tab"
 * We still give it the name of the file in quotes as the first argument
-* Then we add a comma and `sep = "\t"`
-* `\t` is who we indicate a Tab character in programming
 
 ```r
-acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t")
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt")
 ```
 
 * We can also see that it includes information on whether or not the plant is dead in the HEIGHT column
 * Is that good data structure?
 * If you said "No", you're right, information on if the tree is dead should be stored in a separate column
 * For now, we'll just treat the "dead" entries as null values
-* We can do this by using another optional argument `na.strings`
-* So let's modify our `read.csv` statement by adding `na.strings = c("dead")`.
+* We can do this by using another optional argument `na`
+* So let's modify our `read_tsv` statement by adding `na = c("dead")`.
 * This will replace the string `"dead"` with `NA`
 * It gets passed as a vector because this allows multiple different values to be set as nulls
 
 ```r
-acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 ```
 
 * If we open the resulting table we can see that it includes information on:
@@ -78,7 +75,7 @@ library(ggplot2)
 * We'll also load the UHURU like we discussed in the video on the dataset
 
 ```r
-acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na.strings = c("dead"))
 ```
 
 * To build a plot using `ggplot` we start with the `ggplot()` function
