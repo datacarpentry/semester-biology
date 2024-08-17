@@ -311,7 +311,7 @@ str(do_data_spat)
 ```
 
 * `do_data` was a regular data frame, so do the same thing with your down data
-  after loading it using `read.csv`
+  after loading it using `read_csv`
 * Now you can do things like reproject and `extract` values from rasters 
 
 > Do [Species Occurrences Elevation Histogram]({{ site.baseurl }}/exercises/Spatial-data-elevation-histogram-R)

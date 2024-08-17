@@ -29,7 +29,7 @@ language: R
 * If we try to load this data just using it's filename it won't work
 
 ```r
-data = read.csv("shrub-dimensions-labeled.csv")
+data = read_csv("shrub-dimensions-labeled.csv")
 ```
 
 * Returns the error "Cannot open file", "No such file or directory"
@@ -45,7 +45,7 @@ data = read.csv("shrub-dimensions-labeled.csv")
 
 ```r
 # OSX/Linux
-data = read.csv('/home/ethan/Downloads/shrub-dimensions-labeled.csv')
+data = read_csv('/home/ethan/Downloads/shrub-dimensions-labeled.csv')
 ```
 
 * This successfully loads the data because we've told it exactly where the file is
@@ -53,7 +53,7 @@ data = read.csv('/home/ethan/Downloads/shrub-dimensions-labeled.csv')
 
 ```r
 # Windows
-data = read.csv('/Users/ethan/Downloads/shrub-dimensions-labeled.csv')
+data = read_csv('/Users/ethan/Downloads/shrub-dimensions-labeled.csv')
 ```
 
 * Folders/Directories are separate by `/` with the file name at the end
@@ -85,7 +85,7 @@ getwd()
 * For data in the working directory just use the file name
 
 ```r
-shrub_data <- read.csv('shrub-dimensions-labeled.csv')
+shrub_data <- read_csv('shrub-dimensions-labeled.csv')
 ```
 
 * This is a relative path, because the file is in the working directory the only remaining piece is the name
@@ -124,7 +124,7 @@ shrub_data <- read.csv('shrub-dimensions-labeled.csv')
 
 ```r
 # OSX/Linux
-data = read.csv('shrub-dimensions-labeled.csv')
+data = read_csv('shrub-dimensions-labeled.csv')
 ```
 
 * It is common to store data in a subdirectory
@@ -133,7 +133,7 @@ data = read.csv('shrub-dimensions-labeled.csv')
 
 ```r
 # OSX/Linux
-data = read.csv('data/shrub-dimensions-labeled.csv')
+data = read_csv('data/shrub-dimensions-labeled.csv')
 ```
 
 * Can switch between projects using `File` -> `Recent Projects` or `Open Project`

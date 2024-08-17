@@ -11,7 +11,7 @@ If `surveys.csv`, `species.csv`, and `plots.csv` are not available in your works
 * [`species.csv`](https://ndownloader.figshare.com/files/3299483)
 * [`plots.csv`](https://ndownloader.figshare.com/files/3299474)
 
-Load them into R using `read.csv()`.
+Load them into R using `read_csv()`.
 
 1. Create a data frame with only data for the `species_id` `DO`, with the columns `year`, `month`, `day`, `species_id`, and `weight`.
 2. Create a data frame with only data for species IDs `PP` and `PB` and for years starting in 1995, with the columns `year`, `species_id`, and `hindfoot_length`, with no null values for `hindfoot_length`.

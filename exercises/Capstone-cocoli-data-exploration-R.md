@@ -10,7 +10,7 @@ study of natural systems. A group of scientists has collected a dataset on the
 size, location, and species identify of all of the trees in a 4 ha site in
 Panama call "Cocoli".
 
-Download the [Cocoli Data](http://ctfs.si.edu/webatlas/datasets/cocoli/cocoli.zip)
+Download the [Cocoli Data](https://datacarpentry.org/semester-biology/data/cocoli.zip)
 and explore the following spatial properties.
 
 1. Make a single plot showing the location of each tree for all species with

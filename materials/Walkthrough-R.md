@@ -117,9 +117,9 @@ round(vector, decimal_places)
 
 ## Scientific Commands
 
-- Import data using `read.csv(file, header = TRUE, sep = ",", …)`
+- Import data using `read_csv(file, …)`
 - Check out what you imported with `names()`, `head()`, and `str()`
-- Export results using `write.csv(x, file, …)` 
+- Export results using `write_csv(x, file, …)` 
 - Many statistical functions are available (`t.test()`, `lm(y~x)`)
 
 ## Finding Help

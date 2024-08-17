@@ -1,5 +1,7 @@
 ### Analysis code for Dr. Morales's project
 
+library(readr)
+
 get_gc_content <- function(seq){
     # Determine the GC content of a sequence
     gc_content = 100 * str_count(seq, 'G') + str_count(seq, 'C') / 
@@ -21,7 +23,7 @@ get_size_class <- function(earlength){
   return(earlength)
 }
 
-elves_data <- read.csv('houseelf-earlength-dna-data.csv')
+elves_data <- read_csv('houseelf-earlength-dna-data.csv')
 
 # Determine individual level earth length category and gc content values
 gc_content <- get_gc_content(elves_data[["dnaseq"]])

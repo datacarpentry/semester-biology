@@ -7,7 +7,7 @@ language: R
 
 If the file [`surveys.csv`](https://ndownloader.figshare.com/files/2292172) is not already in your working directory then download a copy.
 
-Load the file into R using `read.csv()`.
+Load the file into R using `read_csv()`.
 
 Use pipes (either `|>` or `%>%`) to combine the following operations to manipulate the data.
 

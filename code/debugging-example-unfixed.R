@@ -11,10 +11,11 @@
 
 library(dplyr)
 library(ggplot2)
+library(readr)
 
 get_data <- function() {
   # Import data from surveys.csv
-  data <- read.csv('surveys.csv')
+  data <- read_csv('surveys.csv')
   return(data)
 }
 

@@ -13,7 +13,7 @@ Install the `readr` package and use `read_tsv` to read in the data using the fol
 
 ```r
 library(readr)
-acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 trees <- read_tsv("TREE_SURVEYS.txt",
                   col_types = list(HEIGHT = col_double(),
                                    AXIS_2 = col_double()))

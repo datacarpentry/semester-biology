@@ -69,11 +69,13 @@ gapminder
     * Terminal: `pip install retriever`
     * Console: `install.packages('rdataretriever')`
 
-```
+```r
 library(rdataretriever)
+library(readr)
+
 get_updates()
 install('breed-bird-survey', 'csv')
-counts <- read.csv("breed_bird_survey_counts")
+counts <- read_csv("breed_bird_survey_counts")
 mammal_masses <- fetch("mammal-masses")
 mammal_masses$
 ```

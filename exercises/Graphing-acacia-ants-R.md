@@ -12,7 +12,7 @@ If not, [download it](https://esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLO
 Read it into R using the following command:
 
 ```r
-acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 ```
 
 1. Make a scatter plot with `CIRC` on the x axis and `AXIS1` (the maximum canopy
@@ -20,5 +20,5 @@ acacia <- read.csv("ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("
    Diameter".
 2. The same plot as (1), but with both axes scaled logarithmically (using `scale_x_log10` and `scale_y_log10`).
 3. The same plot as (1), but with points colored based on the `ANT` column (the species of ant symbiont living with the acacia)
-4. The same plot as (3)), but instead of different colors show different species of ant (values of `ANT`) each in a separate subplot.
+4. The same plot as (3), but instead of different colors show different species of ant (values of `ANT`) each in a separate subplot.
 5. The same plot as (4) but add a simple model of the data by adding `geom_smooth`.

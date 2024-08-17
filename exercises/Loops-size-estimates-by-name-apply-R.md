@@ -7,7 +7,7 @@ language: R
 
 This is a followup to [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
 
-If the [data on dinosaur lengths with species names]({{ site.baseurl }}/data/dinosaur_lengths.csv) is not in your working directory then download it. Import it using `read.csv()`.
+If the [data on dinosaur lengths with species names]({{ site.baseurl }}/data/dinosaur_lengths.csv) is not in your working directory then download it. Import it using `read_csv()`.
 
 Remember the general form of the equation is:
 

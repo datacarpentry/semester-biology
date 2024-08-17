@@ -2,9 +2,10 @@
 
 library(ggplot2)
 library(dplyr)
+library(readr)
 
 url = "https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"
-data = read.csv(url, sep = "\t")
+data = read_csv(url, sep = "\t")
 qplot(x = mass.g., y = litter.size, data = data, log = "xy")
 
 data_by_family <- group_by(data, family)

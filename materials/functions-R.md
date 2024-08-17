@@ -188,6 +188,7 @@ est_shrub_mass_dim(0.8, 1.6, 2.0)
 
 ```r
 library(ggplot2)
+library(readr)
 
 make_plot <- function(df, column, label) {
   ggplot(data = df, mapping = aes(x = column)) +
@@ -195,7 +196,7 @@ make_plot <- function(df, column, label) {
     xlab(label)
 }
 
-surveys <- read.csv("surveys.csv")
+surveys <- read_csv("surveys.csv")
 make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 ```
 
@@ -204,6 +205,7 @@ make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 
 ```r
 library(ggplot2)
+library(readr)
 
 make_plot <- function(df, column, label) {
 {% raw %}ggplot(data = df, mapping = aes(x = {{ column }})) +{% endraw %}
@@ -211,7 +213,7 @@ make_plot <- function(df, column, label) {
     xlab(label)
 }
 
-surveys <- read.csv("surveys.csv")
+surveys <- read_csv("surveys.csv")
 make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 make_plot(surveys, weight, "Weight [g]")
 ```
@@ -236,7 +238,7 @@ make_graph <- function(processed_data){
   do_ggplot_stuff(processed_data)
 }
 
-raw_data <- read.csv('mydata.csv')
+raw_data <- read_csv('mydata.csv')
 cleaned_data <- clean_data(raw_data)
 processed_data <- process_data(cleaned_data)
 make_graph(processed_data)

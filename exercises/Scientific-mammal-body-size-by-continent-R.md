@@ -33,8 +33,8 @@ require some cleaning.
 
 The unknown value used in the dataset is `-999`. R assumes your unknown value is 
 `NA`, but `"NA"` in the data is the code for North America. 
-Use the additional arguments `na.strings = "-999"` in 
-`read.csv()` to get R to transform `-999` to `NA`. You will still need to remove the `NA` from the data before doing any averaging. 
+Use the additional arguments `na = "-999"` in 
+`read_csv()` to get R to transform `-999` to `NA`. You will still need to remove the `NA` from the data before doing any averaging. 
 
 You might also notice Africa is represented by both `"Af"` and `"AF"`. Be sure 
 to chose one and use `str_replace_all()` to make the change.

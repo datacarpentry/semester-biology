@@ -19,6 +19,8 @@ download.file("https://datacarpentry.org/semester-biology/data/mammal-size-data-
   "mammal-size-data-clean.tsv")
 ```
 
+### Lecture Notes
+
 1. [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
 2. [Basic Debugging]({{ site.baseurl }}/materials/basic-debugging-R)
 3. [Searching For Help]({{ site.baseurl }}/materials/googling-for-help)

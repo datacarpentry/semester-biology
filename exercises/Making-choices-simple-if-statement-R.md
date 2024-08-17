@@ -14,7 +14,7 @@ list.files()
 
 1. Use the `%in%` operator to write a conditional statement that checks to see
    if `thesis_data.csv` is in this list.
-2. Write an `if` statement that loads the file using `read.csv()` only if the
+2. Write an `if` statement that loads the file using `read_csv()` only if the
    file exists.
 3. Add an `else` clause that prints "OMG MY THESIS DATA IS MISSING. NOOOO!!!!"
    if the file doesn't exist.

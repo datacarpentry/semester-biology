@@ -13,7 +13,7 @@ If not, [download it](https://esapubs.org/archive/ecol/E095/064/ACACIA_DREPANOLO
 Read it into R using the following command:
 
 ```r
-acacia <- read.csv("data/ACACIA_DREPANOLOBIUM_SURVEY.txt", sep="\t", na.strings = c("dead"))
+acacia <- read_tsv("data/ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 ```
 
 1. Make a bar plot of the number of acacia with each mutualist ant species (using the `ANT` column).

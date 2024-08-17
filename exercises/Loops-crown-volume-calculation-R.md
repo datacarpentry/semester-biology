@@ -9,15 +9,14 @@ The UHURU experiment in
 Kenya has conducted a survey of *Acacia* and other tree species in ungulate
 exclosure treatments. Data for the tree data is
 available [here](https://ndownloader.figshare.com/files/5629536)
-in a tab delimited (`"\t"`) format. Each of the individuals surveyed were
+in a tab delimited. Each of the individuals surveyed were
 measured for tree height (`HEIGHT`) and canopy size in two directions (`AXIS_1`
 and `AXIS_2`). Read these data in using the following code: 
 
-```
-tree_data <- read.csv("https://ndownloader.figshare.com/files/5629536",
-                 sep = '\t',
-                 na.strings = c("dead", "missing", "MISSING",
-                                "NA", "?", "3.3."))
+```r
+tree_data <- read_tsv("https://ndownloader.figshare.com/files/5629536",
+                 na = c("dead", "missing", "MISSING",
+                        "NA", "?", "3.3."))
 ```
 
 

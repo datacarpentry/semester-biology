@@ -32,7 +32,7 @@ download.file("http://www.datacarpentry.org/semester-biology/data/shrub-volume-d
 * We'll start by loading the `species` table into R
 
 ```r
-surveys <- read.csv("species.csv")
+surveys <- read_csv("species.csv")
 ```
 
 * One common approach to extracting a column into a vector is to use `$`

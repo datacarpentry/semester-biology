@@ -13,7 +13,7 @@ If the file [shrub-volume-data.csv]({{ site.baseurl }}/data/shrub-volume-data.cs
 This code calculates the average height of a plant at each site:
 
 ```r
-shrub_dims <- read.csv('shrub-volume-data.csv')
+shrub_dims <- read_csv('shrub-volume-data.csv')
 by_site <- group_by(shrub_dims, site)
 avg_height <- summarize(by_site, avg_height = mean(height))
 ```

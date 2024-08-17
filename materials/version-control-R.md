@@ -119,8 +119,9 @@ use_git_config(user.name = "[name]", user.email = "[email]")
 
 ```r
 library(dplyr)
+library(readr)
 
-fish_data = read.csv("Gaeta_etal_CLC_data.csv")
+fish_data = read_csv("Gaeta_etal_CLC_data.csv")
 ```
 
 * Save as `fish-analysis.R`. 
@@ -188,7 +189,7 @@ fish_data_cat = fish_data %>%
 * Change code to read from new subdirectory
 
 ```r
-fish_data = read.csv("data/Gaeta_etal_CLC_data.csv")
+fish_data = read_csv("data/Gaeta_etal_CLC_data.csv")
 ```
 
 * Changes to R script indicated by M

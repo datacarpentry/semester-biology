@@ -15,7 +15,7 @@ height) and they need you to determine their volumes
 project that you are working on is going to be generating lots of these files so
 you decide to write a program to automate the process.
 
-Download the data, use `read.csv()` to import it into R, and use it to produce the following information:
+Download the data, use `read_csv()` to import it into R, and use it to produce the following information:
 
 1. A vector of shrub lengths
 2. A vector of the volume of each of the shrubs
