@@ -16,9 +16,9 @@ detail in her queries. She's curious if desert rodents are [dimorphic](https://e
    Portal database. 
 2. Connect to `portal_mammals.sqlite` as object `portaldb` using `dplyr`.
 3. Start by reminding yourself about which tables are in the database using
-   `src_tbls()`
+   `DBI::dbListTables()`
 4. Then remind yourself of the fields in the `surveys` and `plots` tables using
-   the list subset operator `$ops$vars`.
+   `DBI::dbListFields()`.
 5. Select and print out the average hind foot length and average weight of:
     - all *Dipodomys spectabilis* individuals on the *control* plots
     - male *D. spectabilis* on the *control* plots
