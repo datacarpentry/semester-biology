@@ -5,16 +5,6 @@ layout: default
 <div class="page">
   <h1>{{ page.title }} ({{ page.topic }})</h1>
   {{ content }}
-  {% capture output_file %}{{ page.url | remove: 'exercises' | remove: 'docs/templates' | remove: '/' | prepend: '/solutions/' }}{% endcapture %}
-  <em>Expected outputs for {{ page.title }}: </em>
-  {% assign loop_count = 0 %}
-  {% for solution in site.static_files %}
-    {% assign solution_path = solution.path | split: '.' | first %}
-    {% assign size = solution_path | size | minus: 2 %}
-    {% assign trunced_path = solution_path | slice: 0, size %}
-    {% if solution_path == output_file or trunced_path == output_file %}
-      {% assign loop_count = loop_count | plus:1 %}
-      <em><a href="{{ solution.path | prepend: site.baseurl }}" aria-label="Expected output {{ loop_count }} for {{page.title}}">{{ loop_count }}</a></em>
-    {% endif %}
-  {% endfor %}
+  {% capture output_url %}{{ page.url | remove: 'exercises' | remove: 'docs/templates' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/solutions/' }}{% endcapture %}
+  <em><a href="{{ output_url }}" aria-label="Expected output for {{page.title}}">Expected outputs for {{ page.title }}</a></em>
 </div>
