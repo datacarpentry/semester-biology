@@ -1,4 +1,5 @@
 <h3> Exercises </h3>
+
 <ol>
 {% for exercise in page.exercises %}
   {% assign exercise_loop = forloop %}
@@ -14,7 +15,9 @@
         {% endif %}
         {{ otherpage.content }}
         {% capture output_url %}{{ otherpage.url | remove: 'exercises' | remove: 'docs/templates' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/solutions/' }}{% endcapture %}
-        <em><a href="{{ output_url }}" aria-label="Expected output for {{otherpage.title}}">Expected outputs for {{ otherpage.title }}</a></em>
+        {% unless site.no_solution contains output_url %}
+          <em><a href="{{ output_url }}" aria-label="Expected output for {{otherpage.title}}">Expected outputs for {{ otherpage.title }}</a></em>
+        {% endunless %}
         {% capture output_file %}{{ otherpage.url | remove: 'exercises' | remove: 'docs/templates'| remove: '/' | prepend: '/solutions/' }}{% endcapture %}
         {% assign loop_count = 0 %}
       </li>

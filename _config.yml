@@ -8,6 +8,12 @@ kramdown:
 # Permalinks
 permalink:        pretty
 
+# Exercises with no solutions
+no_solution:
+  - "https://dcsem-solutions.weecology.org/solutions/Tidy-data-improving-messy-data-SQL"
+  - "https://dcsem-solutions.weecology.org/solutions/Qaqc-data-entry-validation-in-excel-SQL"
+  - "https://dcsem-solutions.weecology.org/solutions/Tidy-data-clean-up-SQL"
+
 # Setup
 title:            Data Carpentry for Biologists
 description:      'Teaching the tools to get computers to do cool science'
