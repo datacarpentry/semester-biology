@@ -13,20 +13,10 @@
         <font color="000000">{{ otherpage.title }}</font></a></h4>
         {% endif %}
         {{ otherpage.content }}
+        {% capture output_url %}{{ otherpage.url | remove: 'exercises' | remove: 'docs/templates' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/solutions/' }}{% endcapture %}
+        <em><a href="{{ output_url }}" aria-label="Expected output for {{otherpage.title}}">Expected outputs for {{ otherpage.title }}</a></em>
         {% capture output_file %}{{ otherpage.url | remove: 'exercises' | remove: 'docs/templates'| remove: '/' | prepend: '/solutions/' }}{% endcapture %}
         {% assign loop_count = 0 %}
-        <em><font size="-0.5">Expected outputs for {{ otherpage.title }}: </font></em>
-        {% for solution in site.static_files %}
-          {% assign solution_path = solution.path | split: '.' | first %}
-          {% assign size = solution_path | size | minus: 2 %}
-          {% assign longer_size = solution_path | size | minus: 3 %}
-          {% assign trunced_path = solution_path | slice: 0, size %}
-          {% assign longer_trunced_path = solution_path | slice: 0, longer_size %}
-          {% if solution_path == output_file or trunced_path == output_file or longer_trunced_path == output_file %}
-            {% assign loop_count = loop_count | plus:1 %}
-            <font size="-0.5"><em><a href="{{ solution.path | prepend: site.baseurl }}" aria-label="Expected output {{ loop_count }} for {{otherpage.title}}">{{ loop_count }}</a></em></font>
-          {% endif %}
-        {% endfor %}
       </li>
     {% endif %}
   {% endfor %}
