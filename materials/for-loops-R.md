@@ -212,7 +212,7 @@ for (i in 1:nrow(data)) {
 * Let's download some simulated satellite collar data
 
 ```r
-download.file("http://www.datacarpentry.org/semester-biology/data/locations.zip",
+download.file("https://www.datacarpentry.org/semester-biology/data/locations.zip",
               "locations.zip")
 unzip("locations.zip")
 ```
