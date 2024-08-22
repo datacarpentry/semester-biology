@@ -14,4 +14,4 @@ high_n_families <- filter(n_by_family, n_species > 25)
 plot_data <- semi_join(data_by_family, high_n_families)
 
 qplot(x = mass.g., y = litter.size, data = plot_data, log = "xy",
-      geom = c("point", "smooth"), method = "lm") + facet_wrap(~ family, ncol = 3)
+      geom = c("point", "smooth"), method = "lm") + facet_wrap(vars(family), ncol = 3)

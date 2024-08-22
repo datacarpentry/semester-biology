@@ -75,7 +75,7 @@ library(ggplot2)
 * We'll also load the UHURU like we discussed in the video on the dataset
 
 ```r
-acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na.strings = c("dead"))
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 ```
 
 * To build a plot using `ggplot` we start with the `ggplot()` function
@@ -160,7 +160,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 ```r
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point(size = 3, alpha = 0.5) +
-  facet_wrap(~TREATMENT)
+  facet_wrap(vars(TREATMENT))
 ```
 
 * Where are all the acacia in the open plots? (eaten?)

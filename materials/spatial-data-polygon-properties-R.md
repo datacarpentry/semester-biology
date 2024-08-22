@@ -49,7 +49,7 @@ ggplot() +
 ```r
 ggplot() +
   geom_sf(data = harv_soils) +
-  facet_wrap(~TYPE_)
+  facet_wrap(vars(TYPE_))
 ```
 
 * This might be more useful in the context of the boundary so we could add the boundary as another layer
@@ -59,7 +59,7 @@ harv_boundary <- read_sf("data/harv/harv_boundary.shp")
 ggplot() +
   geom_sf(data = harv_boundary) +
   geom_sf(data = harv_soils, fill = "blue") +
-  facet_wrap(~TYPE_)
+  facet_wrap(vars(TYPE_))
 ```
 
 > Do Tasks 1 & 2 of [Harvard Forest Soils Analysis]({{ site.baseurl }}/exercises/Neon-harvard-forest-soils-analysis-R).

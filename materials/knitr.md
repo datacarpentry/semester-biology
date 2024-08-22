@@ -148,7 +148,7 @@ head(time_series)
 ```{r, message=FALSE, echo=FALSE, cache=TRUE}
 ggplot(time_series, aes(x = year, y = count)) +
   geom_line() +
-  facet_wrap(~species_id)
+  facet_wrap(vars(species_id))
 ```
 </code></pre>
 
