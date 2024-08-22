@@ -131,5 +131,5 @@ ggplot(richness_w_env, aes(x = bio12, y = richness)) +
 ggplot(richness_w_env, aes(x = bio12, y = richness)) +
   geom_point() +
   geom_smooth() +
-  facet_wrap(~statenum, scales = 'free')
+  facet_wrap(vars(statenum), scales = 'free')
 ```
