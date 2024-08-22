@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Solving Bigger Problems
 language: R
-exercises: ["Bird Banding Multiple Vectors", "Portal Data Review", 'Megafaunal Extinction']
-points: [20, 20, 60]
+exercises: ["Bird Banding Multiple Vectors", "Portal Data Review", 'Megafaunal Extinction', 'Check That Your Code Runs']
+points: [20, 20, 50, 10]
 ---
 
 ### Learning Objectives

@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Spatial Data 1
 language: R
-exercises: ['Canopy Height from Space']
-points: [100]
+exercises: ['Canopy Height from Space', 'Check That Your Code Runs']
+points: [90, 10]
 ---
 
 ### Learning Objectives
