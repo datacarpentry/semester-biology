@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Spatial Data 2
 language: R
-exercises: ['Harvard Forest Soils Analysis', 'Cropping NEON Data']
-points: [50, 50]
+exercises: ['Harvard Forest Soils Analysis', 'Cropping NEON Data', 'Check That Your Code Runs']
+points: [45, 45, 10]
 ---
 
 ### Learning Objectives

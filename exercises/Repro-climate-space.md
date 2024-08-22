@@ -43,6 +43,6 @@ Here are some tips that will be helpful along the way:
    the data for a single bioclim variable using the `$`, e.g., `climate$bio1`,
    and run extract on this single raster.
 
-*Challenge (optional)*: If you want to challenge yourself trying making a single
+*Challenge - optional*: If you want to challenge yourself trying making a single
 plot with all three species, either all on the same plot of split over three
 faceted subplots.
