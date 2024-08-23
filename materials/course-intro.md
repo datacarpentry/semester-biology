@@ -86,7 +86,7 @@ Each step of the course builds on the last step and students who get behind ofte
 
 ### Office Hours
 
-* Wednesday: 10-11 am
+* Friday, 10-11 am, in-person in Building 150, or on Zoom
 
 
 ### Canvas
