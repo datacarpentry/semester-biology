@@ -161,4 +161,4 @@ messy and what we could do to improve it.
 ### Export data into easy to read formats
 
 * Save data in plain text files.
-* Files -> Save As -> Select .csv
+* Files -> Export -> Select 'Download this sheet as CSV (.csv)
