@@ -78,10 +78,10 @@ Each step of the course builds on the last step and students who get behind ofte
 ### Syllabus
 
 * Grading
-    * Produces the correct answer using the requested approach: 100%
-    * Generally uses the right approach, but a minor mistake results in an incorrect answer: 90%
-    * Attempts to solve the problem and makes some progress using the core concept: 50%
-    * No answer or answer lacking basic understanding of core concept: 0%
+  * Code runs, uses the requested approach, and produces approximately the correct answer: 100%
+  * Attempts to solve the problem and makes some progress using the core concept, but does not produce approximately the correct answer or demonstrate basic comfort with the core concept: 50%
+  * Not submitted or no meaningful effort demonstrated: 0%
+* Challenge exercises
 * Give it a read and let me know if you have any questions
 
 ### Office Hours
