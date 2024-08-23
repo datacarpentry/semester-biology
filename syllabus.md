@@ -290,17 +290,21 @@ http://registrar.ufl.edu/catalog0910/policies/regulationferpa.html
 
 ## Grading Policies
 
-Grading for this course is based on ~12 equally weighted assignments.
+The goal of grading in this class is to encourage practice, which is crucial to learning computing skills.
+Given that goal grading is based on weekly (equally weighted) assignments, with the focus of each assignment on practicing new material learned each week and reinforcing information learned earlier in the semester.
 
-Exercises in assignments will be graded as follows:
+Because the goal is practice, exercises in assignments will be graded as follows:
 
-* Produces the correct answer using the requested approach: 100%
-* Generally uses the right approach, but a minor mistake results in an incorrect
-    answer: 90%
-* Attempts to solve the problem and makes some progress using the core concept, but returns the wrong answer and does not demonstrate comfort with the core concept:
-    50%
-* Answer demonstrates a lack of understanding of the core concept: 0%
+* Code runs, uses the requested approach, and produces approximately the correct answer: 100%
+* Attempts to solve the problem and makes some progress using the core concept, but does not produce approximately the correct answer or demonstrate basic comfort with the core concept: 50%
+* Not submitted or no meaningful effort demonstrated: 0%
 
+Students also enter the class with different levels of experience.
+The goal of assignments to is help students grow as computational scientists whether they are complete novices or have some limited background in coding.
+Therefore, on many assignments there are optional *Challenge* exercises that are both more difficult and require integrating all of the weeks material.
+Students who are already familiar with the basics may choose to submit *Challenge* exercises in place of regular exercises.
+One *Challenge* exercise counts for two regular exercises.
+Please indicate at the top of your assignment if you are substituting *Challenge* exercises.
 
 ### Grading scale
 
