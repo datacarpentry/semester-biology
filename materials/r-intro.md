@@ -129,6 +129,7 @@ weight_g
 
 ### Assignments format
 
+* **SEPARATE FILES FOR CLASS CODE ALONG AND HOMEWORK**
 * Comment before each problem and each sub-problem
 * Make sure result prints out on `Source with echo`
 
