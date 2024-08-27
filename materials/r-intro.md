@@ -226,5 +226,29 @@ weight_rounded <- round(weight_lb, 1)
 weight_rounded
 ```
 
+#### Optional arguments
+
+* When we looked at the tip for the `round()` function it showed `x` and `digits = 0` as the arguments.
+* When you see the argument name followed by `=` and a value that means that argument is optional
+* If you don't include that argument it will use the default value shown after the `=`
+
+```r
+round(weight_lb)
+```
+
+* Since the default was 0 the weight is rounded to 0 decimal places
+* So, this is the same as
+
+```r
+round(weight_lb, 0)
+```
+
+* Optional arguments are often written using the name of the argument
+
+```r
+round(weight_lb, digits = 1)
+```
+
+* When there are multiple optional arguments this lets us change only the ones where we don't want the defaults
 
 > Do [Exercise 4.1-4.3 - Built-in Functions]({{ site.baseurl }}/exercises/Functions-built-in-functions-R/)
