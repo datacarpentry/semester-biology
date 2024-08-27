@@ -6,6 +6,7 @@
     <th width="50">Reading</th>
     <th width="50">Lesson</th>
     <th width="50">Lecture</th>
+    <th width="50">Ref</th>
     <th width="50">Assignment</th>
   </tr>
 
@@ -25,12 +26,14 @@
       {% if language %}
         {% if lecturepage.title == assignment and lecturepage.element == 'lecture' and lecturepage.language == language %}
           {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
+          {% capture ref_card_url %}{{ lecturepage.url | remove: 'lectures' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/reference-cards/' }}{% endcapture %}
           {% break %}
         {% endif %}
       {% else %}
         {% if lecturepage.title == assignment and lecturepage.element == 'lecture' %}
           {% capture language %}{{ lecturepage.language }}{% endcapture %}
           {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
+          {% capture ref_card_url %}{{ lecturepage.url | remove: 'lectures' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/reference-cards/' }}{% endcapture %}
           {% break %}
         {% endif %}
       {% endif %}
@@ -97,6 +100,14 @@
           <i class="fa fa-comment fa-lg"></i></font></td>
       {% endif %}
 
+      {% if ref_card_url %}
+      <td align="center"><a href="{{ ref_card_url }}" aria-label="Week {{ forloop.index }} Reference Card">
+        <i aria-hidden="true" class="fa fa-file fa-lg"></i></a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file fa-lg"></i></font></td>
+      {% endif %}
+
       {% if assignment_link %}
         <td align="center"><a href="{{ assignment_link }}" aria-label="Week {{ forloop.index }} Assignment">
           <i aria-hidden="true" class="fa fa-keyboard-o fa-lg"></i></a></td>
@@ -104,6 +115,7 @@
         <td align="center"><font color="f1f1f1">
           <i class="fa fa-keyboard-o fa-lg"></i></font></td>
       {% endif %}
+
     </tr>
 
   {% endfor %}
