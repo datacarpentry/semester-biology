@@ -4,9 +4,9 @@ title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
   'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
   'Solving Bigger Problems', 'Functions',
-  'Making Choices', 'Class Choice (Tues only)', 'Repeating Things 1', 'Repeating Things 2', 
+  'Making Choices', 'Class Choice', 'Repeating Things 1', 'Repeating Things 2', 
   'Class Choice', 'Class Choice', 'Class Choice',
-  'Fall Break', 'Class Choice (Tuesday only)']
+  'Fall Break', 'Class Choice']
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
