@@ -21,5 +21,5 @@ Get familiar with the data by importing it using `read_csv()` and use `dplyr` to
 5. Filter the data to include only plants with heights greater than 5 (using `filter`).
 6. Filter the data to include only plants with heights greater than 4 and widths greater than 2 (using `,` or `&` to include two conditions).
 7. Filter the data to include only plants from Experiment 1 or Experiment 3 (using `|` for "or").
-8. Filter the data to remove rows with null values in the `height` column (using `!is.na`)
+8. Remove rows with null values in the `height` column (using `drop_na`)
 9. Create a new data frame called `shrub_volumes` that includes all of the original data and a new column containing the volumes (length * width * height), and display it.

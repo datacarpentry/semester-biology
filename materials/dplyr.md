@@ -231,27 +231,27 @@ filter(surveys, weight != NA)
 * We don't want to accidentally say that two "missing" things are the same
     * We don't know if they are
 * So use special commands
-* `is.na()` checks if the value is `NA`
-* So if we wanted all of the data where the weigh is `NA`
+* Need a new package called `tidyr`, which is used for tidying up data
 
 ```r
-filter(surveys, is.na(weight))
+library(tidyr)
 ```
 
-* We'll learn more about why this works in the same way as the other conditional statements when we study conditionals in detail later in the course
-
-* To remove null values we combine this with `!` for "not"
+* `tidyr`'s `drop_na()` function removes rows with null values
+* To drop all rows that have `NA` in any column
 
 ```r
-filter(surveys, !is.na(weight))
+drop_na(surveys)
 ```
 
-* So `!is.na(weight)` is conceptually the same as "weight != NA"
-* It is common to combine a null filter with other conditions using "and"
-* For example we might want all of the data on a species that contains weights
+* To drop only rows with `NA` in specific columns also provide the names of those columns
 
 ```r
-filter(surveys, species_id == "DS", !is.na(weight))
+drop_na(surveys, hindfoot_length)
+```
+
+```r
+drop_na(surveys, hindfoot_length, weight)
 ```
 
 > Do [Shrub Volume Data Basics 8]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).

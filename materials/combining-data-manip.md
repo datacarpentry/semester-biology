@@ -9,7 +9,7 @@ time: 30
 ### Setup
 
 ```r
-install.packages('dplyr')
+install.packages(c('dplyr', 'readr', 'tidyr'))
 download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
@@ -29,9 +29,10 @@ download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
 
 * Obtain the data for only DS, sorted by year, with only the year and and weight columns
 
-```
-ds_data <- filter(surveys, species_id == "DS", !is.na(weight))
-ds_data_by_year <- arrange(ds_data, year)
+```r
+ds_data <- filter(surveys, species_id == "DS")
+ds_data_no_null_weight <- drop_na(ds_data, weight)
+ds_data_by_year <- arrange(ds_data_no_null_weight, year)
 ds_weight_by_year <- select(ds_data_by_year, year, weight)
 ```
 
@@ -45,21 +46,21 @@ ds_weight_by_year <- select(ds_data_by_year, year, weight)
 * Want to take the mean of a vector
 * Normally we would run the `mean` function with the vector as the input:
 
-```
+```r
 x = c(1, 2, 3)
 mean(x)
 ```
 
 * Instead we could pipe the vector into the function
 
-```
+```r
 x |> mean()
 ```
 
 * So `x` becomes the first argument in `mean`
 * If we want to add other arguments they get added to the function call
 
-```
+```r
 x = c(1, 2, 3, NA)
 mean(x, na.rm = TRUE)
 x |> mean(na.rm = TRUE)
@@ -67,14 +68,21 @@ x |> mean(na.rm = TRUE)
 
 * *Questions?*
 
-```
+```r
 surveys |>
-  filter(species_id == "DS", !is.na(weight))
+  filter(species_id == "DS")
 ```
 
-```
+```r
 ds_weight_by_year <- surveys |>
-  filter(species_id == "DS", !is.na(weight)) |>
+  filter(species_id == "DS") |>
+  drop_na(weight)
+```
+
+```r
+ds_weight_by_year <- surveys |>
+  filter(species_id == "DS") |>
+  drop_na(weight) |>
   arrange(year) |>
   select(year, weight)
 ```
@@ -104,9 +112,10 @@ ds_weight_by_year <- surveys |>
 * The second argument tells it where the data is
 * It needs to be named for the place holder to work
 
-```
+```r
 surveys |>
-  filter(species_id == "DS", !is.na(weight)) |>
+  filter(species_id == "DS") |>
+  drop_na(weight) |>
   arrange(year) |>
   select(year, weight) |>
   lm(weight ~ year, data = _)
