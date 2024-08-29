@@ -91,24 +91,13 @@ size_abundance_data <- surveys |>
 * *Open table*
 * Why did we get `NA`?
     * `mean(weight)` returns `NA` when `weight` has missing values (`NA`)
-* Can fix using `mean(weight, na.rm = TRUE)`
+* Can fix using `drop_na(weight)`
 
 ```r
 size_abundance_data <- surveys |>
+  drop_na(weight) |>
   group_by(plot_id, year) |>
-  summarize(abundance = n(),
-            avg_weight = mean(weight, na.rm = TRUE))
-```
-
-* Still has `NaN` for cases where no individuals have a weight
-* Can filter using `!is.na`
-
-```r
-size_abundance_data <- surveys |>
-  group_by(plot_id, year) |>
-  summarize(abundance = n(),
-            avg_weight = mean(weight, na.rm = TRUE)) |>
-  filter(!is.na(avg_weight))
+  summarize(abundance = n(), avg_weight = mean(weight))
 ```
 
 * Also note the message about "grouped output"
@@ -116,14 +105,13 @@ size_abundance_data <- surveys |>
 * When we group by more than one column the resulting data frame is grouped by all but the last group
 * Can be useful in some more complicated circumstances
 * Can also make things not work if functions don't support grouped data frames
-* We can remove these groups by add `ungroup()` to the end of our pipeline
+* To remove these groups add `ungroup()` to the end of the pipeline
 
 ```r
 size_abundance_data <- surveys |>
+  drop_na(weight) |>
   group_by(plot_id, year) |>
-  summarize(abundance = n(),
-            avg_weight = mean(weight, na.rm = TRUE)) |>
-  filter(!is.na(avg_weight)) |>
+  summarize(abundance = n(), avg_weight = mean(weight)) |>
   ungroup()
 ```
 
