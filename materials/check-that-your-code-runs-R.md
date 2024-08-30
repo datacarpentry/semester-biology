@@ -1,7 +1,7 @@
 ---
 layout: page
 element: notes
-title: Basic Reproducibility
+title: Check That Your Code Runs
 language: R
 ---
 
@@ -33,41 +33,14 @@ language: R
   * Useful when developing code
 * Restart R to get a clean environment
   * Unloads packages
-  * But won't clear environment by default (at least not on Posit Cloud)
+  * But won't clear environment by default (at least on Posit Cloud)
 * Safest thing is to both clear the environment and restart R
 * Then run the entire file using `Source with Echo` button or `Ctrl-Shift-S`
 * Ensures that the code runs fully and produces desired result
 * Last required exercise of every assignment will walk you through this process
 
-### Stop R from storing the state of the environment
+### Force R to clear environment when restarting
 
-* When you close RStudio it will often ask if you want to save your workspace
-* *Start to close RStudio*
-* *Show Save dialog*
-* Or on Posit Cloud it will just do this automatically
-* If you do this is will get reloaded when you start R, even when you restart it
-  as described above
-* Stop this by `Tools` -> `Global Options` -> `General` ->
+* `Tools` -> `Global Options` -> `General` ->
   `Save workspace to ~/.RData on exit` -> `Never`
 * Unclick `Restore .RData into workspace at startup` 
-
-### Make sure code works on other computers
-
-* Don't use `setwd()`
-    * Use projects and relative paths
-    * `data/mydata.csv` not `C:\Users\Batman\DataCarp\data\mydata.csv`
-* Write code that works on all operating systems
-    * Filenames in code should match actual names exactly, including capitalization
-    * Use `/` instead of `\` or `\\` in paths
-
-### Clean up extra code
-
-* Remove experiments from your code
-* Or at least comment them out
-* Remove `install.packages()` lines from your code
-* Avoid reinstalling packages repeatedly
-
-### Checklist
-
-* There is an Assignment Turn In Checklist to help
-* Show link on main page
