@@ -26,8 +26,8 @@ str(states)
 * In general `[]` in R means, "give me a piece of something"
 * `states[1]` gives us the first value in the vector
 * `states[1:3]` gives us the first through the third values
-* `1:3` works by makeing a vector of the whole numbers 1 through 3.
-* So, this is the same as `states[1:3]` is the same as `states[c(1, 2, 3)]` 
+* `1:3` works by making a vector of the whole numbers 1 through 3.
+* So, this is the same as `states[c(1, 2, 3)]` 
 * You can use a vector to get any subset or order you want `states[c(4, 1, 3)]`
 
 * Many functions in R take a vector as input and return a value
@@ -48,7 +48,7 @@ min(count)
 sum(count)
 ```
 
-> Do [Basic Vectors]({{ site.baseurl }}/exercises/Vectors-basic-vectors-R/).
+> Do Exercise 6 - [Basic Vectors]({{ site.baseurl }}/exercises/Vectors-basic-vectors-R/).
 
 ### Null values
 
@@ -82,7 +82,7 @@ mean(count_na, na.rm = TRUE)
 
 ### Working with multiple vectors
 
-* Build on example where we have information on states and population counts by adding areas
+* Add information on area to our information on states and population counts
 
 ```r
 states <- c("FL", "FL", "GA", "SC")
@@ -99,7 +99,7 @@ area <- c(3, 5, 1.9, 2.7)
 area * 2
 ```
 
-* This works because when do this multiplication, R multiplies the first value in the vector by 2, then multiplies the second values in the vector by 2, and so on
+* When we run this, R multiplies the first value in the vector by 2, then multiplies the second value in the vector by 2, and so on
 * Element-wise: operating on one element at a time
 
 * Remember - this isn't saved unless we store it
@@ -109,7 +109,7 @@ area * 2
 area
 ```
 
-* If we want to keep the results of the calculation them in a new variable
+* To keep the results of the calculation store them in a new variable
 
 ```r
 doubled_area <- area * 2
@@ -147,7 +147,7 @@ density[states != 'FL']
 ```
 
 * Numerical comparisons like greater or less than
-* Select states that meet with some restrictions on density
+* Select states that meet conditions related to density
 
 ```r
 states[density > 3]
@@ -168,8 +168,7 @@ density[density > 3]
 * What's actually happening when we subset vectors this way?
 * Let's look at the piece of the code inside the `[]`
 
-```r
-density > 3
+```r`states[1:3]` 
 ```
 
 * This does an element-wise check to see if each value is > 3
