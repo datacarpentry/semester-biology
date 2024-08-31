@@ -29,5 +29,5 @@ variables are defined and when they are used.
 plot(monthly_mean_ppt, type = "l", xlab = "Month", ylab = "Mean Precipitation")
 monthly_mean_ppt <- colMeans(ppt_data)
 library(readr)
-ppt_data <- read_csv("https://datacarpentry.org/semester-biology/data/gainesville-precip.csv", header = FALSE)
+ppt_data <- read_csv("https://datacarpentry.org/semester-biology/data/gainesville-precip.csv", col_names = FALSE)
 ```
