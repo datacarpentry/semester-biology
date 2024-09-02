@@ -1,0 +1,9 @@
+"id","code","name","comment"
+1,"MSP","Standing (natural death)",
+2,"CHA1","Fallen due to logging damage","Since 2003: primary windthrow (naturally fallen)."
+3,"CHA2","Secondary windthrow","New information introduced in 2003."
+4,"EXP","Logged",
+6,"EXPV","Felled by people",
+7,"MSPV","Burned",
+12,"EMPOI","Poisoned for thinning",
+13,"ANNE","Girdled by villager",
