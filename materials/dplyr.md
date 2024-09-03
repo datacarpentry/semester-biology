@@ -51,9 +51,23 @@ download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-
     * All of the other rows are the data, again with different columns separated by commas
     * And so each of the values is separated by commas, hence "comma separated values"
 
+### Packages
+
+* Main way that reusable code is shared in R
+* Combination of code, data, and documentation
+* R has a rich ecosystem of packages for data manipulation & analysis
+* We are going to load data using the `readr` package, so let's install it
+* Download and install packages with the R console:
+    * `install.packages("readr")`
+* Even if we've installed a package it is not automatically available to do work with
+* This because different packages may have functions with the same names
+* So don't want to have to worry about all of the packages we've installed every time we right a piece of code
+* Using a package:
+    * Load all of the functions in the package: `library(readr)`
+
 #### Loading and viewing the dataset
 
-* Load these into `R` using `read_csv()`.
+* Let's load our data into `R` using `read_csv()` from `readr`
 
 ```r
 library(readr)
@@ -78,22 +92,25 @@ plots <- read_csv("plots.csv")
     * Each column or field contains a single attribute.
         * A single type of information
 
-### Packages
-
-* Main way that reusable code is shared in R
-* Combination of code, data, and documentation
-* R has a rich ecosystem of packages for data manipulation & analysis
-* Download and install packages with the R console:
-    * `install.packages("dplyr")`
-* Even if we've installed a package it is automatically available to do analysis with
-* This because different packages may have functions with the same names
-* So don't want to have to worry about all of the packages we've installed every time we right a piece of code
-* Using a package:
-    * Load all of the functions in the package: `library("dplyr")`
-
 ### Basic `dplyr`
 
 * Modern data manipulation library for R
+* Let's install it from the console
+
+```r
+install.packages("dplyr")
+```
+
+* We typically install from the console because we only need to install a package once
+* We don't want to install it every time we run our code
+* Now let's load it for use in this script
+
+```r
+library(dplyr)
+```
+
+* We want all of our package loading to occur at the top of the file
+* This makes it clear which packages are being used and where the functions come from
 
 #### Select
 
@@ -111,8 +128,8 @@ select(surveys, month, day, year)
 
 > Do [Shrub Volume Data Basics 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 > * Start your assignment file
-> * Load the dplyr package
-> * Load the shrub-volume-data.csv file
+> * Load the readr and dplyr packages
+> * Load the shrub-volume-data.csv file using `read_csv`
 > * Do Parts 1 & 2
 
 #### Mutate
@@ -149,7 +166,7 @@ surveys <- mutate(surveys,
 arrange(surveys, weight)
 ```
 
-* We can reverse the order of the sort by "wrapping" `weight` in another function, `desc` for "descending
+* We can reverse the order of the sort by "wrapping" `weight` in another function, `desc` for "descending"
 
 ```r
 arrange(surveys, desc(weight))
@@ -172,7 +189,7 @@ arrange(surveys, plot_id, year, month, day)
     * Type the name of the function, `filter`
     * Parentheses
     * The name of the data frame we want to filter, `surveys`
-    * The column the want to filter on, `species_id`
+    * The column to filter on, `species_id`
     * The condition, which is `==` for "is equal to"
     * And then the value, `"DS"`
     * `DS` here is a string, not a variable or a column name, so we enclose it in quotation marks
@@ -204,6 +221,8 @@ filter(surveys, species_id == "DS", year > 1995)
 filter(surveys, species_id == "DS" & year > 1995)
 ```
 
+* Note that there is no comma in this case
+* The entire clause is a single combined condition
 * This approach is mostly useful for building more complex conditions
 
 * "or" means that one or more of the conditions must be true
@@ -216,11 +235,17 @@ filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 
 > Do [Shrub Volume Data Basics 5-7]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
+* There is also a shorter way to write these kinds of `or` conditions for a single column
 
-### Filtering null values
+```r
+filter(surveys, species_id %in% c("DS", species_id == "DM", species_id == "DO"))
+```
 
-* One of the common tasks we use `filter` for is removing null values from data
-* Based on what we learned before it's natural to think that we do this by using the condition `weight != NA`
+
+### Dropping null values
+
+* One of the common tasks in data processing is removing null values from data
+* Based on what we learned before it's natural to think that we do by filtering using the condition `weight != NA`
 
 ```r
 filter(surveys, weight != NA)
@@ -232,6 +257,12 @@ filter(surveys, weight != NA)
     * We don't know if they are
 * So use special commands
 * Need a new package called `tidyr`, which is used for tidying up data
+
+```r
+install.packages('tidyr')
+```
+
+* Remember, we want all of our package loading to occur at the top of the file
 
 ```r
 library(tidyr)
