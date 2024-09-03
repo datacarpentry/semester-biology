@@ -62,6 +62,20 @@ species["species_id"]
 species[["species_id"]]
 ```
 
+* Finally, `dplyr` has a function called `pull()`
+
+```r
+pull(species, species_id)
+```
+
+* This is typically used at the end a dplyr pipeline
+
+```r
+species |>
+  filter(taxa == "Rodent") |>
+  pull(species_id)
+```
+
 ### Combining vectors to make a data frame
 
 * We can also combine vectors to make a data frame
