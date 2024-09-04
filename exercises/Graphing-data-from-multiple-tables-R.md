@@ -13,10 +13,11 @@ Install the `readr` package and use `read_tsv` to read in the data using the fol
 
 ```r
 library(readr)
-acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt",
+                   na = c("dead"))
 trees <- read_tsv("TREE_SURVEYS.txt",
                   col_types = list(HEIGHT = col_double(),
                                    AXIS_2 = col_double()))
 ```
 
-We want to compare the circumference to height relationship in acacia and to the same relationship for trees in the region. These data are stored in two different tables. Make a graph with the relationship between `CIRC` and `HEIGHT` for the trees as gray circles in the background and the same relationship for acacia as red circles plotted on top of the grah circles. Scale the both axes logarithmically. Inlude linear models for both sets of data. Provide clear labels for the axes.
+We want to compare the circumference to height relationship in acacia on different treatments in the context of the same relationship for trees in the region. These data are stored in the two tables above. Make a graph with the relationship between `CIRC` and `HEIGHT` for the trees as gray points in the background and the same relationship for acacia as red points plotted on top of the tree points. There should be one subplot for each treatment. Scale the both axes logarithmically. Include linear models for both sets of data. Provide clear labels for the axes.
