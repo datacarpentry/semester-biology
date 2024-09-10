@@ -33,10 +33,7 @@ surveys <- read_csv("surveys.csv")
 group_by(surveys, year)
 ```
 
-* Different looking kind of `data.frame`
-* Called a tibble
-* Sometimes produced by `dplyr` functions
-* Source, grouping, and data type information
+* The tibble produced by this function has grouping information
 * Store the data frame in a variable to use in the next step
 
 ```r
@@ -45,14 +42,12 @@ surveys_by_year <- group_by(surveys, year)
 
 * After grouping a data frame use `summarize()` to calculate values for each group.
 * Count the number of rows for each group (individuals in each species).
-* `summarize`
-* Arguments
-  * Table to work on, which needs to be a grouped table
-  * One additional argument for each calculation we want to do for each group
-    * New column name to store calculated value
-    * `=`
-    * Calculation that we want to perform for each group
-    * We'll use the function `n` which is a special function that counts the rows in the table
+
+* First argument is the table to work on
+* Needs to be a grouped table
+* One additional argument for each calculation we want to do for each group
+* Column name to store calculated value, `=`, calculation to perform for each group
+* We'll use the function `n` which is a special function that counts the rows in the table
 
 ```r
 counts_by_year <- summarize(surveys_by_year, abundance = n())
@@ -78,7 +73,7 @@ plot_year_counts <- surveys |>
 
 
 * We can also do multiple calculations using summarize
-* Use any function that returns a single value from a vector.
+* Use any function that returns a single value from one or more vectors
 * E.g., mean, max, min
 * We'll calculate the number of individuals in each plot year combination and their average weight
 
@@ -90,7 +85,7 @@ size_abundance_data <- surveys |>
 
 * *Open table*
 * Why did we get `NA`?
-    * `mean(weight)` returns `NA` when `weight` has missing values (`NA`)
+* `mean(weight)` returns `NA` when `weight` has missing values (`NA`)
 * Can fix using `drop_na(weight)`
 
 ```r

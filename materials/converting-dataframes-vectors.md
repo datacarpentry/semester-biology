@@ -23,7 +23,8 @@ download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-
 
 * These two ways of storing data are related to one another
 * A data frame is a bunch of equal length vectors that are grouped together
-* So, we can extract vectors from data frames and we can also make data frames from vectors
+* This is why when using `mutate()` and `summarize()` we can use any function that works on a vector
+* As a result we can extract vectors from data frames and make data frames from vectors
 
 ### Extracting vectors from data frames
 
@@ -35,20 +36,10 @@ download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-
 surveys <- read_csv("species.csv")
 ```
 
-* One common approach to extracting a column into a vector is to use `$`
-* The `$` in R is short hand for `[[]]` in cases where the piece we want to get has a name
-* So, we start with the object we want a part of, our `surveys` data frame
-* Then the `$` with no spaces around it
-* and then the name of the `species_id` column (without quotes, just to be confusing)
-
-```r
-species$species_id
-```
-
-* We can also do this using `[]`
-* Remember that `[]` also mean "give me a piece of something"
+* We do this using `[]`
+* Remember that `[]` also mean "give me a piece of something" in R
 * Let's get the `species_id` column
-* `"species_id"` has to be in quotes because we we aren't using `dplyr`
+* `"species_id"` has to be in quotes because we we aren't using the tidyverse
 
 ```r
 species["species_id"]
@@ -60,6 +51,16 @@ species["species_id"]
 
 ```r
 species[["species_id"]]
+```
+
+* We can also use the `$`
+* Shorthand for `[[]]` in cases where the piece of something we want to get has a name
+* So, we start with the object we want a part of, our `surveys` data frame
+* Then the `$` with no spaces around it
+* and then the name of the `species_id` column (without quotes, just to be confusing)
+
+```r
+species$species_id
 ```
 
 * Finally, `dplyr` has a function called `pull()`
@@ -76,6 +77,8 @@ species |>
   pull(species_id)
 ```
 
+> Do [Extracting vectors from data frames]({{ site.baseurl }}/exercises/extracting-vectors-from-data-frames-R/).
+
 ### Combining vectors to make a data frame
 
 * We can also combine vectors to make a data frame
@@ -91,12 +94,23 @@ area <- c(3, 5, 1.9, 2.7)
 count_data <- data.frame(states = states, counts = count, regional_area = area)
 ```
 
-* We can also add columns to the data from that only include a single value without first creating a vector
+* To make a tibble instead of a data.frame use `tibble()`
+
+```r
+library(dplyr)
+
+count_data <- tibble(states = states, counts = count, regional_area = area)
+```
+
+* `tibble()` is part of the `tibble` package, which gets loaded by `dplyr`
+* If you want to use it without loading `dplyr` you can load `tibble` directly
+
+* We can also add columns to the data that only include a single value without first creating a vector
 * We do this by providing a name for the new column, an equals sign, and the value that we want to occur in every row
 * For example, if all of this data was collected in the same year and we wanted to add that year as a column in our data frame we could do it like this
 
 ```r
-count_data_year <- data.frame(year = 2022, states = states, counts = count, regional_area = area)
+count_data_year <- tibble(year = 2022, states = states, counts = count, regional_area = area)
 ```
 
 * `year =` sets the name of the column in the data frame
@@ -119,5 +133,4 @@ count_data_year_elev <- mutate(count_data_year, elevations = elevation)
 * We can combine vectors into data frames using the `data.frame` function, which takes a series of arguments, one vector for each column we want to create in the data frame.
 
 
-> Do [Extracting vectors from data frames]({{ site.baseurl }}/exercises/extracting-vectors-from-data-frames-R/).
 > Do [Building data frames from vectors]({{ site.baseurl }}/exercises/building-data-frames-from-vectors-R/).
