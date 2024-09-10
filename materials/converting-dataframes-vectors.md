@@ -94,12 +94,23 @@ area <- c(3, 5, 1.9, 2.7)
 count_data <- data.frame(states = states, counts = count, regional_area = area)
 ```
 
-* We can also add columns to the data from that only include a single value without first creating a vector
+* To make a tibble instead of a data.frame use `tibble()`
+
+```r
+library(dplyr)
+
+count_data <- tibble(states = states, counts = count, regional_area = area)
+```
+
+* `tibble()` is part of the `tibble` package, which gets loaded by `dplyr`
+* If you want to use it without loading `dplyr` you can load `tibble` directly
+
+* We can also add columns to the data that only include a single value without first creating a vector
 * We do this by providing a name for the new column, an equals sign, and the value that we want to occur in every row
 * For example, if all of this data was collected in the same year and we wanted to add that year as a column in our data frame we could do it like this
 
 ```r
-count_data_year <- data.frame(year = 2022, states = states, counts = count, regional_area = area)
+count_data_year <- tibble(year = 2022, states = states, counts = count, regional_area = area)
 ```
 
 * `year =` sets the name of the column in the data frame
