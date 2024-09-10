@@ -23,7 +23,8 @@ download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-
 
 * These two ways of storing data are related to one another
 * A data frame is a bunch of equal length vectors that are grouped together
-* So, we can extract vectors from data frames and we can also make data frames from vectors
+* This is why when using `mutate()` and `summarize()` we can use any function that works on a vector
+* As a result we can extract vectors from data frames and make data frames from vectors
 
 ### Extracting vectors from data frames
 
