@@ -77,6 +77,8 @@ species |>
   pull(species_id)
 ```
 
+> Do [Extracting vectors from data frames]({{ site.baseurl }}/exercises/extracting-vectors-from-data-frames-R/).
+
 ### Combining vectors to make a data frame
 
 * We can also combine vectors to make a data frame
@@ -120,5 +122,4 @@ count_data_year_elev <- mutate(count_data_year, elevations = elevation)
 * We can combine vectors into data frames using the `data.frame` function, which takes a series of arguments, one vector for each column we want to create in the data frame.
 
 
-> Do [Extracting vectors from data frames]({{ site.baseurl }}/exercises/extracting-vectors-from-data-frames-R/).
 > Do [Building data frames from vectors]({{ site.baseurl }}/exercises/building-data-frames-from-vectors-R/).
