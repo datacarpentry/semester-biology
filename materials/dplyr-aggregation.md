@@ -33,10 +33,7 @@ surveys <- read_csv("surveys.csv")
 group_by(surveys, year)
 ```
 
-* Different looking kind of `data.frame`
-* Called a tibble
-* Sometimes produced by `dplyr` functions
-* Source, grouping, and data type information
+* The tibble produced by this function has grouping information
 * Store the data frame in a variable to use in the next step
 
 ```r
