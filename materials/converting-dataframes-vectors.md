@@ -36,20 +36,10 @@ download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-
 surveys <- read_csv("species.csv")
 ```
 
-* One common approach to extracting a column into a vector is to use `$`
-* The `$` in R is short hand for `[[]]` in cases where the piece we want to get has a name
-* So, we start with the object we want a part of, our `surveys` data frame
-* Then the `$` with no spaces around it
-* and then the name of the `species_id` column (without quotes, just to be confusing)
-
-```r
-species$species_id
-```
-
-* We can also do this using `[]`
-* Remember that `[]` also mean "give me a piece of something"
+* We do this using `[]`
+* Remember that `[]` also mean "give me a piece of something" in R
 * Let's get the `species_id` column
-* `"species_id"` has to be in quotes because we we aren't using `dplyr`
+* `"species_id"` has to be in quotes because we we aren't using the tidyverse
 
 ```r
 species["species_id"]
@@ -61,6 +51,16 @@ species["species_id"]
 
 ```r
 species[["species_id"]]
+```
+
+* We can also use the `$`
+* Shorthand for `[[]]` in cases where the piece of something we want to get has a name
+* So, we start with the object we want a part of, our `surveys` data frame
+* Then the `$` with no spaces around it
+* and then the name of the `species_id` column (without quotes, just to be confusing)
+
+```r
+species$species_id
 ```
 
 * Finally, `dplyr` has a function called `pull()`
