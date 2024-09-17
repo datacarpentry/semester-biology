@@ -33,9 +33,7 @@ size_mr_data <- data.frame(
 Make the following plots with appropriate axis labels:
 
 1. A plot of body mass vs. metabolic rate
-2. A plot of body mass vs. metabolic rate, with log10 scaled axes
-    (this stretches the axis, but keeps the numbers on the original scale), and
-    the point size set to 3.
+2. A plot of body mass vs. metabolic rate, with log10 scaled axes, and the point size set to 3.
 3. The same plot as (2), but with the different families indicated using color.
 4. The same plot as (2), but with the different families each in their own
    subplot.
