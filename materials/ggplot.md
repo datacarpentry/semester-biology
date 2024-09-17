@@ -132,7 +132,21 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
        title = "Acacia Survey at UHURU")
 ```
 
-### Rescaling axes
+> Do Task 1 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+
+### Scaling
+
+* There are a series of `scale_*()` functions that let you change the scales for how data is presented
+* For example, if you want to change the which numbers are shown the x axis
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, color = "blue", alpha = 0.5) +
+  scale_x_continuous(breaks = c(5, 10, 15, 20, 25, 30, 35))
+```
+
+* Scale can also be used to change the position of points relative to one another by stretching the axes
+* One common instance of this in scatter plots is to log scale the axes
 
 ```r
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
@@ -141,11 +155,15 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   scale_x_log10()
 ```
 
+* This can help highlight data with lower values when the distribution is skewed
 * Not changing the data itself, just the presentation of it
+* Another common use of `scale_*` functions we'll see later in the semester is changing color ramps
 
-> Do Tasks 1-2 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do Task 2 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Grouping
+
+#### Color 
 
 * Group on a single graph
 * Look at influence of experimental treatment
@@ -155,7 +173,9 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
   geom_point(size = 3, alpha = 0.5)
 ```
 
-* Facet specification
+#### Facets
+
+* We can also split data into subplots
 
 ```r
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
@@ -166,6 +186,29 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 * Where are all the acacia in the open plots? (eaten?)
 
 > Do Tasks 3-4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+
+* Did you have any subplots with only one or two points?
+* Why?
+* Can be useful to facet by more than one thing
+* To wrap using combinations of variables add variables to `vars()`
+
+```r
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_wrap(vars(TREATMENT, ANTS))
+```
+
+* This is one reason we have the `vars()` function
+* We can also layout the grid in two dimensions using `facet_grid()`
+* The first argument is the variables to put the on rows and the second argument is the variable to put on the columns
+
+```r
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_grid(vars(TREATMENT), vars(ANTS))
+```
+
+* Using this approach we can see that ant species associated with just a couple of Acacia can occur on a variety of different treatments
 
 ### Statistical transformations
 
