@@ -163,6 +163,8 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 
 ### Grouping
 
+#### Color 
+
 * Group on a single graph
 * Look at influence of experimental treatment
 
@@ -171,7 +173,9 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
   geom_point(size = 3, alpha = 0.5)
 ```
 
-* Facet specification
+#### Facets
+
+* We can also split data into subplots
 
 ```r
 ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
@@ -182,6 +186,29 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 * Where are all the acacia in the open plots? (eaten?)
 
 > Do Tasks 3-4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+
+* Did you have any subplots with only one or two points?
+* Why?
+* Can be useful to facet by more than one thing
+* To wrap using combinations of variables add variables to `vars()`
+
+```r
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_wrap(vars(TREATMENT, ANTS))
+```
+
+* This is one reason we have the `vars()` function
+* We can also layout the grid in two dimensions using `facet_grid()`
+* The first argument is the variables to put the on rows and the second argument is the variable to put on the columns
+
+```r
+ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_grid(vars(TREATMENT), vars(ANTS))
+```
+
+* Using this approach we can see that ant species associated with just a couple of Acacia can occur on a variety of different treatments
 
 ### Statistical transformations
 
