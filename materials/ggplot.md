@@ -132,6 +132,8 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
        title = "Acacia Survey at UHURU")
 ```
 
+> Do Task 1 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+
 ### Scaling
 
 * There are a series of `scale_*()` functions that let you change the scales for how data is presented
@@ -157,7 +159,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 * Not changing the data itself, just the presentation of it
 * Another common use of `scale_*` functions we'll see later in the semester is changing color ramps
 
-> Do Tasks 1-2 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do Task 2 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Grouping
 
