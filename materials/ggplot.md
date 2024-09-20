@@ -280,7 +280,7 @@ ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
 
 * You can see that the total height of the bars stayed the same
 * That's because ggplot has just colored the pieces of each bar that correspond to each treatment
-* It does this because the default `position` for `geom_histogram` is `"stacked"`, which stacks the bars on top of one another and therefore makes a stacked histogram.
+* It does this because the default `position` for `geom_histogram` is `"stack"`, which stacks the bars on top of one another and therefore makes a stacked histogram.
 * If we want separate overlapping histograms then we need to change the position
 
 ```r
@@ -327,6 +327,9 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 
 * Because the color aesthetic is the default it is inherited by geom_smooth
 * One set of points and one model for each treatment
+
+> Do Exercise 1.5 [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+
 
 ### Changing values across layers
 
@@ -385,6 +388,9 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
   geom_point(mapping = aes(color = TREATMENT)) +
   geom_smooth(method = "lm")
 ```
+
+* Do an exercise that uses this idea, but uses `geom_histogram()` twice to make two overlapping histograms from two different columns
+* What are we going to change between the two uses of `geom_histogram()` to do this?
 
 > Do Task 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
