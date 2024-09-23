@@ -10,27 +10,12 @@ forests is important for understanding the global carbon budget and how the
 earth will respond to increases in carbon dioxide emissions.
 
 We don't normally measure the mass of a tree, but take a measurement of the
-diameter or circumference of the trunk and then estimate mass using equations
-like M = 0.124 * D<sup>2.53</sup>.
+diameter of the trunk and then estimate mass using equations
+like mass = 0.124 * diameter<sup>2.53</sup>.
 
-1\. Estimate tree biomass for each species in a 96 hectare area of the Western Ghats
-in India using the following steps.
-
-  * If the file [`ramesh2010-macroplots.csv`]({{ site.baseurl }}/data/ramesh2010-macroplots.csv) isn't already in your workspace then download a copy.
-  * Load the data into R.
-  * Write a function that takes a vector of tree diameters as an argument and 
-    returns a vector of tree masses.
-  * Create a `dplyr` pipeline that
-    * Adds a new column (using `mutate` and your function) that contains masses
-      calculated from the diameters
-    * Groups the data frame into species using the `SpCode` column
-    * And then calculates biomass (i.e., the `sum` of the masses) for each species
-      (using `summarize`)
-    * Stores the result as a data frame
-  * Display the resulting data frame
-
-2\. Plot a histogram of the species biomass values you just calculated.
-
-  * Use 10 bins in the histogram (using the `bins` argument)
-  * Use a log10 scale for the x axis (using `scale_x_log10`)
-  * Change the x axis label to `Biomass` and the y axis label to `Number of Species` (using `labs`)
+Make a histogram of the estimated tree biomass (using the above equation) for each
+species in a 96 hectare area of the Western Ghats in India using the data in
+[`ramesh2010-macroplots.csv`]({{ site.baseurl }}/data/ramesh2010-macroplots.csv)
+(if isn't already in your workspace then download a copy). Only include species
+with at least 100 individuals in your histogram, scale the x axis logarithmically,
+and provide good descriptive axis labels.
