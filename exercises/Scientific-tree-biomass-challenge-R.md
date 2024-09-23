@@ -18,4 +18,4 @@ species in a 96 hectare area of the Western Ghats in India using the data in
 [`ramesh2010-macroplots.csv`]({{ site.baseurl }}/data/ramesh2010-macroplots.csv)
 (if isn't already in your workspace then download a copy). Only include species
 with at least 100 individuals in your histogram, scale the x axis logarithmically,
-and provide good descriptive axis labels.
+make the bars purple with a black outline, and provide good descriptive axis labels.
