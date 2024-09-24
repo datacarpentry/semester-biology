@@ -11,9 +11,8 @@ time: 30 minutes
 ## Problem decomposition steps (10 minutes)
 
 > Open the following images one per tab and cycle through:
-> * <https://i.imgflip.com/80ul6w.jpg>
-> * <https://www.smarterandharder.com/wp-content/uploads/2021/02/breaking-down-problems-1024x683.jpg.webp>
-> * <https://thirdsectorlab.co.uk/wp-content/uploads/2021/06/How-do-you-eat-an-elephant.png>
+
+![Your problem: Image of an angry hippopotamus. Your problem broken down into pieces: 4 cute pictures of Moo Deng an adorable baby pygmy hippo. Angry hippo image from: https://www.fotocommunity.de/photo/angry-hippo-again-huber-tom/43184827](../moo-deng-problem-decomposition.png)
 
 1. Understand the problem
     1. Restate the problem in your own words
