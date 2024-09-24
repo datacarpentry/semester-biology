@@ -17,6 +17,10 @@ download.file("https://ndownloader.figshare.com/files/3299483",
   "species.csv")
 download.file("https://datacarpentry.org/semester-biology/data/mammal-size-data-clean.tsv",
   "mammal-size-data-clean.tsv")
+download.file("https://datacarpentry.org/semester-biology/data/ramesh2010-macroplots.csv",
+  "ramesh2010-macroplots.csv")
+download.file("https://datacarpentry.org/semester-biology/data/ramesh2010-species-list.tsv",
+  "ramesh2010-species-list.tsv")
 ```
 
 ### Lecture Notes
