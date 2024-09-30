@@ -9,7 +9,7 @@ The length of an organism is typically strongly correlated with its body
 mass. This is useful because it allows us to estimate the mass of an organism
 even if we only know its length. This relationship generally takes the form:
 
-> mass = a * length^b
+> mass = a * length<sup>b</sup>
 
 Where the parameters `a` and `b` vary among groups. This allometric approach is
 regularly used to estimate the mass of dinosaurs since we cannot weigh something
