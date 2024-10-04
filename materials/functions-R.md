@@ -37,8 +37,8 @@ a + b}
 * And then returns the output
 
 ```r
-calc_shrub_vol <- function(length, width, height) {
-  area <- length * width
+calc_shrub_vol <- function(radius, height) {
+  area <- pi * radius ^ 2
   volume <- area * height
   return(volume)
 }
@@ -48,41 +48,43 @@ calc_shrub_vol <- function(length, width, height) {
 * Call the function with some arguments.
 
 ```r
-calc_shrub_vol(0.8, 1.6, 2.0)
+calc_shrub_vol(0.8, 2.0)
 ```
 
 * Store the output to use it later in the program
 
 ```r
-shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
+shrub_vol <- calc_shrub_vol(0.8, 2.0)
 ```
 
 > Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R)
 
-* Treat functions like a black box
+* Treat functions like they are isolated from the rest of the program
   * *Draw a box on board showing inputs->function->outputs*
   * The only things the function knows about are the inputs we pass it
   * The only thing the program knows about the function is the output it
     produces
+  * If we have lots of functions we don't have to know what the other functions are doing to understand the one we are working on
 
 * Walk through function execution (using debugger)
     * Call function
-	* Assign 0.8 to length, 1.6 to width, and 2.0 to height inside function
+	* Assign 0.8 to `radius` and 2.0 to `height` inside function
 	* Calculate the area and assign it to `area`
 	* Calculate volume and assign it to `volume`
 	* Send `volume` back as output
 	* Store it in `shrub_vol`
 
-* Treat functions like a black box.
+* Treat functions like they are isolated
     * Can't access a variable that was created in a function
         * `> volume`
-        * `Error: object 'width' not found`
+        * `Error: object 'volume' not found`
     * Or an argument by name
         * `> width`
-        * `Error: object 'width' not found`
+        * `Error: object 'radius' not found`
     * 'Global' variables can influence function, but should not.
         * Very confusing and error prone to use a variable that isn't passed in
           as an argument
+        * So inside a function only use variables that are arguments or created from the arguments
 
 > Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
 > End of 1 hour class
@@ -90,19 +92,30 @@ shrub_vol <- calc_shrub_vol(0.8, 1.6, 2.0)
 ### Default arguments
 
 * Defaults can be set for common inputs.
-* For example, many of our shrubs are the same height so for those shrubs we only measure the `length` and `width`.
+* For example, many of our shrubs are the same height so for those shrubs we only measure the `radius`.
 * So we want a default value for the `height` for cases where we don't measure it
 
 ```r
-calc_shrub_vol <- function(length, width, height = 1) {
-  area <- length * width
+calc_shrub_vol <- function(radius, height = 1) {
+  area <- pi * radius ^ 2
   volume <- area * height
   return(volume)
 }
 
-calc_shrub_vol(0.8, 1.6)
-calc_shrub_vol(0.8, 1.6, 2.0)
-calc_shrub_vol(length = 0.8, width = 1.6, height = 2.0)
+calc_shrub_vol(0.8)
+```
+
+* Since we can choose whether to include the `height` argument or not arguments with defaults are called "optional arguments"
+* If we do include them we can either include them positionally
+
+```r
+calc_shrub_vol(0.8, 2.0)
+```
+
+* Or we can provide them by name
+
+```r
+calc_shrub_vol(0.8, height = 2.0)
 ```
 
 > Do [Default Arguments]({{ site.baseurl }}/exercises/Functions-default-arguments-R).
@@ -114,26 +127,36 @@ calc_shrub_vol(length = 0.8, width = 1.6, height = 2.0)
 * When to use or not use argument names
 
 ```r
-calc_shrub_vol(length = 0.8, width = 1.6, height = 2.0)
+calc_shrub_vol(radius = 0.8, height = 2.0)
 ```
 
 Or
 
 ```r
-calc_shrub_vol(0.8, 1.6, 2.0)
+calc_shrub_vol(0.8, 2.0)
 ```
 
 * You can always use names
     * Value gets assigned to variable of that name
+
+```r
+calc_shrub_vol(height = 2.0, radius = 0.8)
+```
+
 * If not using names then order determines naming
-    * First value is `length`, second value is `width`, third value is `height`
-    * If order is hard to remember use names
+    * First value is `radius`, second value is `height`
+
+```r
+calc_shrub_vol(2.0, 0.8)
+```
+
+* If order is hard to remember use names
 * In many cases there are *a lot* of optional arguments
     * Convention to always name optional argument
 * So, in our case, the most common approach would be
 
 ```r
-calc_shrub_vol(0.8, 1.6, height = 2.0)
+calc_shrub_vol(0.8, height = 2.0)
 ```
 
 ### Combining Functions
@@ -142,13 +165,14 @@ calc_shrub_vol(0.8, 1.6, height = 2.0)
 * Functions can be combined to do larger tasks in two ways
 
 * Calling multiple functions in a row
+* Using intermediate variables
 
 ```r
 est_shrub_mass <- function(volume){
-  mass <- 2.65 * volume^0.9
+  mass <- 2.65 * volume ^ 0.9
 }
 
-shrub_volume <- calc_shrub_vol(0.8, 1.6, 2.0)
+shrub_volume <- calc_shrub_vol(0.8, height = 2.0)
 shrub_mass <- est_shrub_mass(shrub_volume)
 ```
 
@@ -156,8 +180,7 @@ shrub_mass <- est_shrub_mass(shrub_volume)
 * The output from the first function becomes the first argument for the second function
 
 ```r
-library(dplyr)
-shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) |>
+shrub_mass <- calc_shrub_vol(0.8, 2.0) |>
   est_shrub_mass()
 ```
 
@@ -167,17 +190,17 @@ shrub_mass <- calc_shrub_vol(0.8, 1.6, 2.0) |>
 * Allows organizing function calls into logical groups
 
 ```r
-est_shrub_mass_dim <- function(length, width, height){
-  volume = calc_shrub_vol(length, width, height)
+est_shrub_mass_dim <- function(radius, height){
+  volume = calc_shrub_vol(radius, height)
   mass <- est_shrub_mass(volume)
   return(mass)
 }
 
-est_shrub_mass_dim(0.8, 1.6, 2.0)
+est_shrub_mass_dim(0.8, 2.0)
 ```
 
 * We ***don't*** need to pass the function name into the function
-* That's the one violation of the black box rule
+* That's the one violation of the isolation rule
 
 ### Using dplyr & ggplot in functions
 
@@ -217,6 +240,8 @@ surveys <- read_csv("surveys.csv")
 make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 make_plot(surveys, weight, "Weight [g]")
 ```
+
+> Do [Writing Tidyverse Functions]({{ site.baseurl }}/exercises/Functions-writing-tidyverse-functions-R).
 
 ### Code design with functions
 
