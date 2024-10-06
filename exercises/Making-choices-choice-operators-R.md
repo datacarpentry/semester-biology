@@ -7,7 +7,7 @@ language: R
 
 Create the following variables.
 
-```
+```r
 w <- 10.2
 x <- 1.3
 y <- 2.8

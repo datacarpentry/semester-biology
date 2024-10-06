@@ -41,7 +41,7 @@ if (){
 y
 ```
 
-4\. Convert your conditional statement from (3) into a function that takes
+4\. Convert your `if`/`else if`/ `else` statement from (3) into a function that takes
    `age_class` as an argument and returns `y`. Call this function 5 times, once
    with each of the following values for `age_class`: "sapling", "seedling",
    "adult", "mature", "established".
