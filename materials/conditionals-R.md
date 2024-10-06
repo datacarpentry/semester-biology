@@ -72,7 +72,7 @@ is.na(5)
 ```
 
 * So it is true that "PP" is not in the list
-* Because if it is not in the list then the part inside `()` returns `FALSE`
+* Because it is not in the list then the part inside `()` returns `FALSE`
 * And the `!` reverses this to `TRUE`
 
 ### Combining conditional statements
@@ -131,14 +131,6 @@ counts[c(TRUE, TRUE, FALSE, FALSE)]
 
 * This keeps the first and second values in `counts` because the values in the vector are `TRUE`
 * This is how `dplyr::filter()` and other methods for subsetting data work
-
-* This is why we can use `!is.na()` to filter out null values
-
-```r
-is.na(count)
-!is.na(count)
-count[!is.na(count)]
-```
 
 > Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
@@ -266,7 +258,54 @@ est_mass(24, "tree")
 
 > Do Tasks 4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
-### Multiple ifs vs else if
+### Automatically extracting functions (optional)
+
+* Can pull code out into functions
+* Highlight the code
+* Code -> Extract Function
+* Provide a name for the function
+
+### If statements with functions that return booleans
+
+* We can also use if statements with functions that return `TRUE` or `FALSE`
+* Assume our values for `veg_type` are messier and include values like `"grass A"` and `"grass B"`
+* We want our function to work the same way but if veg_type is `"grass A"` then it doesn't match out condition
+
+```r
+est_mass(1.6, "grass A")
+"grass A" == "grass"
+```
+
+* Instead of checking if `veg_type` is equal to `"grass"` we check to see if `veg_type` contains the word "grass"
+* We do this using the `str_detect` function from `stringr`
+
+```r
+install.packages('stringr')
+```
+
+```r
+library(stringr)
+
+str_detect("grass A", "grass")
+```
+
+* Since this function produces `TRUE` or `FALSE` we can replace the conditional statements in our functions
+
+```r
+est_mass <- function(volume, veg_type){
+  if str_detect(veg_type, "shrub") {
+    mass <- 2.65 * volume^0.9
+  } else if str_detect(veg_type, "grass") {
+    mass <- 0.65 * volume^1.2
+  } else {
+    mass <- NA
+  }
+  return(mass)
+}
+```
+
+
+### Multiple ifs vs else if (optional)
 
 * Multiple ifs check each conditional separately
 * Executes code of all conditions that are `TRUE`
@@ -295,14 +334,7 @@ if (x > 2){
 x
 ```
 
-### Automatically extracting functions
-
-* Can pull code out into functions
-* Highlight the code
-* Code -> Extract Function
-* Provide a name for the function
-
-### Nested conditionals
+### Nested conditionals (optional)
 
 * Sometimes decisions are more complicated
 * For example we might have different equations for some vegetation types based on the age of the plant
@@ -316,7 +348,6 @@ est_mass <- function(volume, veg_type, age){
     } else {
       mass <- 2.65 * volume^0.9
     }
-  }
   } else if (veg_type == "grass" | veg_type == "sedge") {
     mass <- 0.65 * volume^1.2
   } else {
