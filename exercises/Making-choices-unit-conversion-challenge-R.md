@@ -16,7 +16,7 @@ contained in food*). A Kilojoule is 1000 Joules, a Calorie is 4.1868 Joules, a
 Kilocalorie is 4186.8 Joules. An example of a call to this function would look 
 like:
 
-```
+```r
 energy_in_cal <- 200
 energy_in_j <- convert_energy_units(energy_in_cal, "CAL", "J")
 ```
