@@ -5,16 +5,15 @@ title: Size Estimates by Name
 language: R
 ---
 
-This is a follow up to [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
+Youre going to write a function to estimate a dinosaur's mass based on its length.
+The general form of the equation for doing this is:
 
-To make it even easier to work with your dinosaur size estimation functions you
+> mass <- a * length ^ b
+
+The parameters `a` and `b` vary by the group of dinosaurs, so you
 decide to create a function that lets you specify which dinosaur group you need
 to estimate the size of by name and then have the function automatically choose
 the right parameters.
-
-Remember the general form of the equation is:
-
-> mass <- a * length ^ b
 
 Create a new function `get_mass_from_length_by_name()` that takes two arguments,
 the `length` and the name of the dinosaur group. Inside this function use
