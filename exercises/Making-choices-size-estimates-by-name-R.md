@@ -5,7 +5,7 @@ title: Size Estimates by Name
 language: R
 ---
 
-Youre going to write a function to estimate a dinosaur's mass based on its length.
+You're going to write a function to estimate a dinosaur's mass based on its length.
 The general form of the equation for doing this is:
 
 > mass <- a * length ^ b
