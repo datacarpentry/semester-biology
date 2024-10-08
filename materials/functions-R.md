@@ -249,8 +249,8 @@ library(tidyr)
 
 create_time_series <- function(df, column){
     time_series <- df |>
-      drop_na({{ column }}) |> # column is a variable for a column name, needs {{}}
-      group_by(year) |> # year is an actual column in the data frame, no {{}}
+      drop_na({{ column }}) |> # column is a variable for col name, needs brace
+      group_by(year) |> # year is a column name in df, no brace
       summarize(avg_size = mean({{ column }}))
     return(time_series)
 }
