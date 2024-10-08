@@ -241,6 +241,24 @@ make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 make_plot(surveys, weight, "Weight [g]")
 ```
 
+* Only need to embrace column names that we are passing as arguments
+* If we assume there is a column with some name in the data frame it doesn't need embracing
+
+```r
+library(tidyr)
+
+create_time_series <- function(df, column){
+    time_series <- df |>
+      drop_na({{ column }}) |> # column is a variable for a column name, needs {{}}
+      group_by(year) |> # year is an actual column in the data frame, no {{}}
+      summarize(avg_size = mean({{ column }}))
+    return(time_series)
+}
+
+create_time_series(surveys, weight)
+create_time_series(surveys, hindfoot_length)
+```
+
 > Do [Writing Tidyverse Functions]({{ site.baseurl }}/exercises/Functions-writing-tidyverse-functions-R).
 
 ### Code design with functions
