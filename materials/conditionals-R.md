@@ -132,6 +132,40 @@ counts[c(TRUE, TRUE, FALSE, FALSE)]
 * This keeps the first and second values in `counts` because the values in the vector are `TRUE`
 * This is how `dplyr::filter()` and other methods for subsetting data work
 
+* Can also compare element wise to see which values in two vectors are the same
+
+```r
+recounts <- c(9, 16, NA, 12)
+counts == recounts
+```
+
+* Cannot compare none equal length vectors (or at least you shouldn't)
+* Will error in cases where the lengths of the vectors aren't even multiples
+
+```r
+states == c("SC", "GA", "FL")
+```
+
+* Or will repeat the shorter vector
+
+```r
+states == c("GA", "SC")
+```
+
+* Looks like it works, but this is actually doing an element wise comparison
+
+```r
+states == c("GA", "SC", "GA", "SC")
+```
+
+* If we change the order we can a different answer
+
+```r
+states == c("SC", "GA")
+```
+
+* This is why we have `%in%`
+
 > Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 ### `if` statements
@@ -169,8 +203,10 @@ x
 
 * `x > 5` is `FALSE`, so the code in the `if` doesn't run
 * `x` is still 4
-* This is *not* a function, so everything that happens in the if statement
-  influences the global environment
+* This is *not* a function
+* Everything that happens in the if statement influences the global environment (unless the if statement is in a function)
+* No `return()`
+* Repeat after me: *return, is only, for functions*
 
 * Different mass calculations for different vegetation types
 
@@ -220,6 +256,25 @@ mass
 
 > Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
+#### `if` statements need a single logical value
+
+* While conditional statements can handle vectors, `if` statements typically can't
+* The if condition needs to return a single logical value
+* So if we try to pass a vector we'll get an error
+
+```r
+veg_type <- c("tree", "shrub")
+volume <- c(16.08, 2.26)
+if (veg_type == "shrub") {
+  mass <- 2.65 * volume^0.9
+} else if (veg_type == "grass") {
+  mass <- 0.65 * volume^1.2
+} else {
+  mass <- NA
+}
+mass
+```
+
 ### Using Conditionals Inside Functions
 
 * We've used a conditional to estimate mass differently for different types of vegetation
@@ -256,7 +311,8 @@ est_mass(24, "tree")
 * It assigns `NA` to mass
 * It then finishes the if/else if/else statement and returns the value for `mass`, which is `NA` to the global environment
 
-> Do Tasks 4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> Do Task 4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> Do Tasks 1 & 2 in [If Statements In Functions]({{ site.baseurl }}/exercises/Making-choices-if-statements-in-functions-R).
 
 ### Automatically extracting functions (optional)
 
