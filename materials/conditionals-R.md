@@ -203,8 +203,10 @@ x
 
 * `x > 5` is `FALSE`, so the code in the `if` doesn't run
 * `x` is still 4
-* This is *not* a function, so everything that happens in the if statement
-  influences the global environment
+* This is *not* a function
+* Everything that happens in the if statement influences the global environment (unless the if statement is in a function)
+* No `return()`
+* Repeat after me: *return, is only, for functions*
 
 * Different mass calculations for different vegetation types
 
