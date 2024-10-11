@@ -311,7 +311,8 @@ est_mass(24, "tree")
 * It assigns `NA` to mass
 * It then finishes the if/else if/else statement and returns the value for `mass`, which is `NA` to the global environment
 
-> Do Tasks 4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> Do Task 4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> Do Tasks 1 & 2 in [If Statements In Functions]({{ site.baseurl }}/exercises/Making-choices-if-statements-in-functions-R).
 
 ### Automatically extracting functions (optional)
 
