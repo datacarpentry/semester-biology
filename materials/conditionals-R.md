@@ -256,6 +256,25 @@ mass
 
 > Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
+#### `if` statements need a single logical value
+
+* While conditional statements can handle vectors, `if` statements typically can't
+* The if condition needs to return a single logical value
+* So if we try to pass a vector we'll get an error
+
+```r
+veg_type <- c("tree", "shrub")
+volume <- c(16.08, 2.26)
+if (veg_type == "shrub") {
+  mass <- 2.65 * volume^0.9
+} else if (veg_type == "grass") {
+  mass <- 0.65 * volume^1.2
+} else {
+  mass <- NA
+}
+mass
+```
+
 ### Using Conditionals Inside Functions
 
 * We've used a conditional to estimate mass differently for different types of vegetation
