@@ -349,9 +349,9 @@ str_detect("grass A", "grass")
 
 ```r
 est_mass <- function(volume, veg_type){
-  if str_detect(veg_type, "shrub") {
+  if (str_detect(veg_type, "shrub")) {
     mass <- 2.65 * volume^0.9
-  } else if str_detect(veg_type, "grass") {
+  } else if (str_detect(veg_type, "grass")) {
     mass <- 0.65 * volume^1.2
   } else {
     mass <- NA
