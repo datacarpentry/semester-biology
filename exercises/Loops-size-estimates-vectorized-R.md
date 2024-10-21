@@ -5,7 +5,13 @@ title: Size Estimates Vectorized
 language: R
 ---
 
-This is a followup to [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
+The length of an organism is typically strongly correlated with its body
+mass. This is useful because it allows us to estimate the mass of an organism
+even if we only know its length. This relationship generally takes the form:
+
+> mass = a * length<sup>b</sup>
+
+Parameters `a` and `b` vary among groups.
 
 1. Write a function named `mass_from_length_theropoda()` that takes `length` as an argument to get an estimate of mass values for the dinosaur *Theropoda*. Use the equation `mass <- 0.73 * length^3.63`. Copy the data below into R and pass the entire vector to your function to calculate the estimated mass for each dinosaur.
 

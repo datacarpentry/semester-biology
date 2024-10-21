@@ -5,13 +5,17 @@ title: Size Estimates By Name Apply
 language: R
 ---
 
-This is a followup to [Size Estimates by Name]({{ site.baseurl }}/exercises/Making-choices-size-estimates-by-name-R).
-
 If the [data on dinosaur lengths with species names]({{ site.baseurl }}/data/dinosaur_lengths.csv) is not in your working directory then download it. Import it using `read_csv()`.
 
-Remember the general form of the equation is:
+You're going to write a function to estimate a dinosaur's mass based on its length and name of its taxonomic group.
+The general form of the equation for doing this is:
 
 > mass <- a * length ^ b
+
+The parameters `a` and `b` vary by the group of dinosaurs, so you
+decide to create a function that lets you specify which dinosaur group you need
+to estimate the size of by name and then have the function automatically choose
+the right parameters.
 
 Create a function `get_mass_from_length_by_name()` that takes two arguments,
 the `length` and the name of the dinosaur group. Inside this function use
