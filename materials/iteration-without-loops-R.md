@@ -283,6 +283,30 @@ plant_data |>
 
 #### Using lapply with files and data frames (**optional**)
 
+* `lapply()` will always return a list
+* We can store anything we want in a list
+* Let's download some (made up) satellite collar data where the data for each collar is stored in one file
+
+```r
+download.file("https://www.datacarpentry.org/semester-biology/data/locations.zip",
+              "locations.zip")
+unzip("locations.zip")
+data_files = list.files(pattern = "locations-")
+```
+
+* Since we can store anything in a list we can store entire data frames
+* Use `lapply()` to load all of the files into data frames
+
+```r
+library(readr)
+
+data_frames = lapply(data_files, read_csv)
+```
+
+* We applied the `read_csv()` function to each data file
+* And get back a list of data frames
+* Now we can use `lapply()` again to do something to each data frame
+
 ```r
 library(readr)
 
@@ -293,11 +317,6 @@ get_unique_locations <- function(df){
   return(unique_locations)
 }
 
-download.file("https://www.datacarpentry.org/semester-biology/data/locations.zip",
-              "locations.zip")
-unzip("locations.zip")
-data_files = list.files(pattern = "locations-")
-data_frames = lapply(data_files, read_csv)
 unique_locations <- lapply(data_frames, get_unique_locations)
 ```
 
