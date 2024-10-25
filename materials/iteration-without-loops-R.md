@@ -281,6 +281,26 @@ plant_data |>
   summarize(biomass = get_biomass(volumes))
 ```
 
+#### Using lapply with files and data frames (**optional**)
+
+```r
+library(readr)
+
+get_unique_locations <- function(df){
+  unique_locations <- df |>
+    select(lat, long) |>
+    distinct()
+  return(unique_locations)
+}
+
+download.file("https://www.datacarpentry.org/semester-biology/data/locations.zip",
+              "locations.zip")
+unzip("locations.zip")
+data_files = list.files(pattern = "locations-")
+data_frames = lapply(data_files, read_csv)
+unique_locations <- lapply(data_frames, get_unique_locations)
+```
+
 #### Other apply functions (**optional**)
 
 * There are a few other apply functions
