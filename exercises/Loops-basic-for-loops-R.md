@@ -40,7 +40,13 @@ for (__ in 1:length(________)){
 areas
 ```
 
-5\. Complete the code below to calculate an area for each pair of `lengths` and `widths`, store the areas in a vector, and after they are all calculated print them out: 
+5\. Write a for loop that loops over the following vector and stores the height in meters (height_m = height_ft / 3.28) in a new vector. After the for loop make sure to display the vector to the console by running the vectors name on its own line.
+
+```r
+height_ft <- c(5.1, 6.3, 5.7, 5.4)
+```
+
+6\. Complete the code below to calculate an area for each pair of `lengths` and `widths`, store the areas in a vector, and after they are all calculated print them out: 
 
 ```r
 lengths = c(1.1, 2.2, 1.6)
