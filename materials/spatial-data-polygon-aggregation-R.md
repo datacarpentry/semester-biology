@@ -46,15 +46,31 @@ elevs_by_soil$harv_dtmfull.tif
 * I'll use `mutate` from `dplyr`
 
 ```r
-harv_soils <- mutate(harv_soils, elevation = elevs_by_soil$harv_dtmfull.tif)
+harv_soils_elevs <- mutate(harv_soils, elevation = elevs_by_soil$harv_dtmfull.tif)
 ```
+
+* Or we can use `st_join`
+* To do this we have to first convert `elevs_by_soil` into an `sf` object
+
+```r
+elevs_by_soil <- st_as_sf(elevs_by_soil)
+```
+
+* And then join
+
+```r
+harv_soils_elevs <- st_join(harv_soils, elevs_by_soil, join = st_equals)
+```
+
+* The `join = st_equals` indicates that we only want to match polygons that are the same
+* `st_join` defaults to using `st_intersects`, which means that any polygons that touch each other will be match
 
 * Once we done this then we can make maps using this information
 * So let's plot the our soils map but colored by average elevation within the region
 
 ```r
 ggplot() +
-  geom_sf(data = harv_soils, mapping = aes(fill = elevation)) +
+  geom_sf(data = harv_soils_elevs, mapping = aes(fill = elevation)) +
   scale_fill_viridis_c()
 ```
 
