@@ -5,7 +5,7 @@ assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
   'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
   'Solving Bigger Problems', 'Functions',
   'Making Choices', 'Hurricane Catchup', 'Repeating Things 1', 'Repeating Things 2', 
-  'Spatial Data 1', 'Spatial Data 2', 'Class Choice',
+  'Spatial Data 1', 'Spatial Data 2', 'Version Control',
   'Fall Break', 'Class Choice']
 ---
 

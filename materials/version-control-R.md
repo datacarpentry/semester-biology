@@ -27,6 +27,8 @@ language: R
 
 > 
 > **Live coding demo and assignment are intertwined and designed to work in order.**
+> **Instructions for both Posit Cloud & RStudio are included so just use the setup pieces that fit your class.**
+> **Sign into GitHub**
 
 ## Introduction
 
@@ -55,6 +57,14 @@ data files and code in a more manageable way.
 
 ## Version control using Git & RStudio
 
+### Connecting Posit Cloud to GitHub (only if teaching in Posit Cloud)
+
+1. Go to https://login.posit.cloud/ (login in necessary)
+2. Click `Posit User Settings`
+3. Go to GitHub section and click `Private repo access also enabled`
+4. Will be redirected to GitHub to authorize Posit Cloud
+5. Click `Authorize posit-hosted`
+
 ### Create a Git repo
 
 1. Navigate to Github in a web browser and login.
@@ -65,22 +75,31 @@ data files and code in a more manageable way.
 5. Select `Private`.
 6. Select `Initialize this repository with a README`.
 7. Click `Create Repository`.
+8. From new GitHub repository, click green `Code` button ->
+   Click the `Copy url to clipboard` button.
 
-### Connect to the Git repo in RStudio
+### Connect to the Git repo
 
-1. From new GitHub repository, click green `Clone or download` button ->
-   Click the `Copy to clipboard` button.
-2. In RStudio, File -> New Project -> Version Control -> Git
-3. Paste copied URL in `Repository URL:`. 
-4. Leave `Project directory name:` blank; automatically given repo name. 
-5. Choose where to `Create project as subdirectory of:`.
-6. Click `Create Project`.
-7. Check to make sure you have a `Git` tab in the upper right window.
+#### Posit Cloud
+
+1. Posit Cloud (in class org): New Project -> New Project from Git Repo
+2. Paste copied URL in `URL of your Git Repository:`. 
+3.  Click `OK`.
+4. Check to make sure you have a `Git` tab in the upper right window.
+
+#### RStudio
+
+1. RStudio, File -> New Project -> Version Control -> Git
+2. Paste copied URL in `Repository URL:`. 
+3. Leave `Project directory name:` blank; automatically given repo name. 
+4. Choose where to `Create project as subdirectory of:`.
+5. Click `Create Project`.
+6. Check to make sure you have a `Git` tab in the upper right window.
 
 ### Install
 
 ```r
-install.packages(c('dplyr', 'usethis', 'gitcreds'))
+install.packages(c('dplyr', 'readr', 'usethis', 'gitcreds'))
 ```
 
 ### Introduce yourself to Git
@@ -111,7 +130,7 @@ use_git_config(user.name = "[name]", user.email = "[email]")
     * `Add fish size and growth rate data`
 * History: 
     * One commit
-    * Changes too large to see
+    * Shows that the file has been added to version control
 
 #### Commit R script
 
@@ -122,7 +141,10 @@ library(dplyr)
 library(readr)
 
 fish_data = read_csv("Gaeta_etal_CLC_data.csv")
+
 ```
+
+**Make sure to have a new line at the end for a clean diff**
 
 * Save as `fish-analysis.R`. 
 * Git -> Select `fish-analysis.R`. 
@@ -242,7 +264,7 @@ fish_data_cat = fish_data %>%
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
-	* https://education.github.com/
+	  * https://education.github.com/
         * For the assignment, we're using private repositories that we made at
           the beginning.
 
@@ -257,6 +279,8 @@ fish_data_cat = fish_data %>%
 ```r
 usethis::create_github_token()
 ```
+
+* You may need to allow popups and try again
 
 * Select defaults
 * Create token
@@ -400,5 +424,3 @@ mutate(length_cat = ifelse(length > 250, "large", "small"))
 
 > Show an [example of a working repository]({{ site.github.repo }}) with
 > branches and forks. Navigate to pull requests.
-
-

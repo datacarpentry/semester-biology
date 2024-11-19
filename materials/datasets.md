@@ -20,7 +20,7 @@ title: List of datasets
 | Mammal life history | tsv | <https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt> |
 | Bird size | tsv | <https://esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt> |
 | Example project | zip | <https://www.datacarpentry.org/semester-biology/data/example_project.zip> |
-| Fish scale length | csv | <https://lter.limnology.wisc.edu/sites/default/files/Gaeta_etal_CLC_data.csv> |
+| Fish scale length | csv | <https://datacarpentry.org/semester-biology/data/Gaeta_etal_CLC_data.csv> |
 | LiDAR rasters and plot locations | multiple | <https://www.datacarpentry.org/semester-biology/data/neon-airborne.zip> |
 | Harvard Forest NDVI | tif | <https://www.datacarpentry.org/semester-biology/data/harv-ndvi.zip> |
 | San Joaquin Experimental Range NDVI | tif | <https://www.datacarpentry.org/semester-biology/data/sjer-ndvi.zip> |
