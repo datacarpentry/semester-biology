@@ -83,6 +83,7 @@ In this document I will:
 
 * Quarto allows you to include code to run in the document
 * Click on `+C` button, which stands for "add code"
+* Or in the visual editor type `/` and select `R Code Chunk`
 
 <pre><code>
 ## Required Packages
@@ -90,6 +91,7 @@ In this document I will:
 ```{r}
 library(dplyr)
 library(ggplot2)
+library(gt)
 library(readr)
 ```
 </code></pre>
@@ -148,8 +150,9 @@ ggplot(time_series, aes(x = year, y = count)) +
 
 ### Chunk options
 
+* Each block of code is called a "chunk"
 * Chunks have lots of useful options
-* Can add them at the start of the chunk using `#| `, the option name, and then the option value
+* Can add them at the start of the chunk using `#| `, the option name, `:`, the option value
 * `#| echo: false` let's you show the results of the code chunk without showing the code.
 * ADD: `#| echo: false` to plot chunk
 * `#| message: false` will remove messages returned by R
@@ -191,7 +194,12 @@ time_series |>
 
 * You can then reference the table in the text using `@tbl-total-count`
 
+```r
+The population dynamics at the site varies by species (@tbl-total-count).
+```
+
 ### Citations
+
 
 * `Insert` -> `Citation` -> `From DOI` -> `10.1101/332783` -> `+` -> `Insert`
 * Creates a `bibliography.bib` file with the citations
