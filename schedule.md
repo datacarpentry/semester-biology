@@ -6,7 +6,7 @@ assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
   'Solving Bigger Problems', 'Functions',
   'Making Choices', 'Hurricane Catchup', 'Repeating Things 1', 'Repeating Things 2', 
   'Spatial Data 1', 'Spatial Data 2', 'Version Control',
-  'Fall Break', 'Class Choice']
+  'Fall Break', 'Quarto']
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
