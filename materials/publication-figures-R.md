@@ -30,7 +30,7 @@ language: R
 library(ggplot2)
 library(readr)
 
-trees <- trees <- read_tsv("TREE_SURVEYS.txt",
+trees <- read_tsv("TREE_SURVEYS.txt",
                   col_types = list(HEIGHT = col_double(),
                                    AXIS_2 = col_double()))
 
