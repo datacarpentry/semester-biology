@@ -6,8 +6,8 @@ language: R
 ---
 
 > * Have students install `ggplot2`, `readr`, `patchwork`
-> * Download the data file from https://ndownloader.figshare.com/files/5629536 and save it as `TREE_SURVEYS.txt`
-> * `download.file("https://ndownloader.figshare.com/files/5629536", "TREE_SURVEYS.txt")`
+> * Download the data file from <https://datacarpentry.org/semester-biology/data/TREE_SURVEYS.txt>
+> * `download.file("https://datacarpentry.org/semester-biology/data/TREE_SURVEYS.txt", "TREE_SURVEYS.txt")`
 > * Open https://ggplot2.tidyverse.org/reference/ggtheme.html in browser
 
 ### File formats
@@ -18,6 +18,21 @@ language: R
   * Made of pixels, so gets grainy
   * JPEG, GIF, PNG, TIFF
   * PNG is a good compromise format
+
+```r
+library(ggplot2)
+library(readr)
+
+trees <- read_tsv("TREE_SURVEYS.txt")
+
+ggplot(trees, aes(x = HEIGHT, y = CIRC)) +
+  geom_point()
+
+ggsave("acacia_size_scaling.png")
+```
+
+* Show pixelation zoom
+
 * Vector
   * Right choice for plots, line drawings
   * Describes the objects that make up the image, including their shapes, colors, and positions
@@ -27,22 +42,10 @@ language: R
 * Save in different file formats using different extensions
 
 ```r
-library(ggplot2)
-library(readr)
-
-trees <- read_tsv("TREE_SURVEYS.txt",
-                  col_types = list(HEIGHT = col_double(),
-                                   AXIS_2 = col_double()))
-
-ggplot(trees, aes(x = HEIGHT, y = CIRC)) +
-  geom_point()
-
-ggsave("acacia_size_scaling.png")
+ggsave("acacia_size_scaling.eps")
 ggsave("acacia_size_scaling.svg")
-ggsave("acacia_size_scaling.pdf")
 ```
 
-* Show differences in zoom
 * Some journals will require you to submit vector plots in a raster format
 * You now know enough to cry a little inside when they do
 
@@ -87,12 +90,6 @@ ggplot(trees, aes(x = HEIGHT, y = CIRC, color = SPECIES)) +
   scale_color_viridis_d(option = "magma")
 ```
 
-```r
-ggplot(trees, aes(x = HEIGHT, y = CIRC, color = HEIGHT)) +
-  geom_point() +
-  scale_color_viridis_c(option = "magma")
-```
-
 ### Themes
 
 * Can customize every aspect of plots in `ggplot`
@@ -102,11 +99,32 @@ ggplot(trees, aes(x = HEIGHT, y = CIRC, color = HEIGHT)) +
 ```r
 ggplot(trees, aes(x = HEIGHT, y = CIRC, color = SPECIES)) +
   geom_point() +
-  scale_color_viridis_c() +
+  scale_color_viridis_d() +
   theme_classic()
 ```
 
 * Show theme examples at https://ggplot2.tidyverse.org/reference/ggtheme.html
+
+* Themes have a small number of options for jointly controlling the size of things in the plot
+
+```r
+ggplot(trees, aes(x = HEIGHT, y = CIRC, color = SPECIES)) +
+  geom_point() +
+  scale_color_viridis_d() +
+  theme_classic(base_size = 16)
+```
+
+* If you want to make additional changes use `theme()`
+
+```r
+ggplot(trees, aes(x = HEIGHT, y = CIRC, color = SPECIES)) +
+  geom_point() +
+  scale_color_viridis_c() +
+  theme_classic(base_size = 16) +
+  theme(legend.position = "top")
+```
+
+* Show large number of autocomplete options for `theme()`
 
 ### Saving and exporting multiple plots
 
@@ -144,18 +162,23 @@ species_scaling + height_dist +
   plot_layout(ncol = 1)
 ```
 
+```r
+height_dist + species_scaling +
+  plot_layout(ncol = 1)
+```
+
 * The relative sizes of subplots
 
 ```r
-species_scaling + height_dist +
-  plot_layout(ncol = 1, heights = c(3, 1))
+height_dist + species_scaling +
+  plot_layout(ncol = 1, heights = c(1, 3))
 ```
 
 * And labeling
 
 ```r
-species_scaling + height_dist +
-  plot_layout(ncol = 1, heights = c(3, 1)) +
+height_dist + species_scaling +
+  plot_layout(ncol = 1, heights = c(1, 3)) +
   plot_annotation(tag_levels = "A")
 ```
 
@@ -167,7 +190,8 @@ height_dist <- height_dist +
   theme_void() +
   theme(legend.position='none')
 
-height_dist + species_scaling + plot_layout(ncol = 1, heights = c(1, 5))
+height_dist + species_scaling +
+  plot_layout(ncol = 1, heights = c(1, 5))
 ```
 
 ### Reusing custom plots
