@@ -6,6 +6,8 @@ language: R
 ---
 
 > * Have students install `ggplot2`, `readr`, `patchwork`
+> * Download the data file from https://ndownloader.figshare.com/files/5629536 and save it as `TREE_SURVEYS.txt`
+> * `download.file("https://ndownloader.figshare.com/files/5629536", "TREE_SURVEYS.txt")`
 > * Open https://ggplot2.tidyverse.org/reference/ggtheme.html in browser
 
 ### File formats
@@ -28,7 +30,9 @@ language: R
 library(ggplot2)
 library(readr)
 
-trees <- read_tsv("https://ndownloader.figshare.com/files/5629536", na = c("", "NA", "missing", "MISSING", "?", "3.3."))
+trees <- trees <- read_tsv("TREE_SURVEYS.txt",
+                  col_types = list(HEIGHT = col_double(),
+                                   AXIS_2 = col_double()))
 
 ggplot(trees, aes(x = HEIGHT, y = CIRC)) +
   geom_point()
