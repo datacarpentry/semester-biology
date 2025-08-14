@@ -3,8 +3,17 @@ layout: page
 element: assignment
 title: Data Visualization
 language: R
-exercises: ['Acacia and Ants', 'Mass vs Metabolism', 'Acacia and Ants Histograms', 'Acacia and Ants Data Manipulation', 'Adult vs Newborn Size', 'Check That Your Code Runs', 'Graphing Data From Multiple Tables']
-points: [10, 20, 20, 20, 20, 10, 'Challenge - optional']
+exercises:
+  [
+    "Acacia and Ants",
+    "Mass vs Metabolism",
+    "Acacia and Ants Histograms",
+    "Acacia and Ants Data Manipulation",
+    "Lifespan vs Gestation Time",
+    "Check That Your Code Runs",
+    "Graphing Data From Multiple Tables",
+  ]
+points: [10, 20, 20, 20, 20, 10, "Challenge - optional"]
 ---
 
 ### Learning Objectives

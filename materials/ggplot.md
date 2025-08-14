@@ -134,33 +134,6 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 
 > Do Task 1 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
-### Scaling
-
-* There are a series of `scale_*()` functions that let you change the scales for how data is presented
-* For example, if you want to change the which numbers are shown the x axis
-
-```r
-ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point(size = 3, color = "blue", alpha = 0.5) +
-  scale_x_continuous(breaks = c(5, 10, 15, 20, 25, 30, 35))
-```
-
-* Scale can also be used to change the position of points relative to one another by stretching the axes
-* One common instance of this in scatter plots is to log scale the axes
-
-```r
-ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
-  geom_point(size = 3, color = "blue", alpha = 0.5) +
-  scale_y_log10() +
-  scale_x_log10()
-```
-
-* This can help highlight data with lower values when the distribution is skewed
-* Not changing the data itself, just the presentation of it
-* Another common use of `scale_*` functions we'll see later in the semester is changing color ramps
-
-> Do Task 2 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
-
 ### Grouping
 
 #### Color 
@@ -185,7 +158,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 * Where are all the acacia in the open plots? (eaten?)
 
-> Do Tasks 3-4 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do Tasks 2-3 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 * Did you have any subplots with only one or two points?
 * Why?
