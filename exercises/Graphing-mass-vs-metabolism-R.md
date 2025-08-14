@@ -18,8 +18,8 @@ size_mr_data <- data.frame(
     4290, 32000, 65000, 69125, 9600, 133300, 150000, 407000,
     115000, 67000,325000, 21500, 58588, 65320, 85000, 135000,
     20500, 1613, 1618),
-  metabolic_rate = c(49.984, 51.981, 306.770, 10.075, 230.073, 
-    148.949, 11.966, 46.414, 123.287, 106.663, 20.619, 180.150, 
+  metabolic_rate = c(49.984, 51.981, 306.770, 10.075, 230.073,
+    148.949, 11.966, 46.414, 123.287, 106.663, 20.619, 180.150,
     200.830, 224.779, 148.940, 112.430, 286.847, 46.347,
     142.863, 106.670, 119.660, 104.150, 33.165, 4.900, 4.865),
   family = c("Antilocapridae", "Antilocapridae", "Bovidae",
@@ -33,7 +33,7 @@ size_mr_data <- data.frame(
 Make the following plots with appropriate axis labels:
 
 1. A plot of body mass vs. metabolic rate
-2. A plot of body mass vs. metabolic rate, with log10 scaled axes, and the point size set to 3.
+2. The same plot as (1) but with the point size set to 3.
 3. The same plot as (2), but with the different families indicated using color.
 4. The same plot as (2), but with the different families each in their own
    subplot.
