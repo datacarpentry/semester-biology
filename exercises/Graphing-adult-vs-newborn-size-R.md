@@ -11,12 +11,18 @@ relationship in mammals.
 Check to see if `Mammal_lifehistories_v2.txt` is in your working directory.
 If not [download it](https://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt)
 from the web.
-This is tab delimited data,  so you'll want to
+This is tab delimited data, so you'll want to
 use `read_tsv()`.
 
 Missing data in this file is specified by `-999` and `-999.00`. Tell R that
 these are null values using the optional `read_tsv()` argument,
 `na = c("-999", "-999.00")`. This will stop them from being plotted.
+
+Some of the column names have parentheses in them.
+E.g., `mass(g)`.
+To work with column names like this we enclose them in back ticks.
+E.g., `` `mass(g)` ``
+Back ticks are typically on the same key as the ~ and look like a slanted single quotation mark.
 
 1. Graph adult mass vs. newborn mass. Label the axes with clearer labels than
    the column names.

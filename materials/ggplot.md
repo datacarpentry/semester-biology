@@ -451,6 +451,28 @@ ggplot(data = acacia, mapping = aes(x = CIRC)) +
 * Facets
 * Coordinates (coordinate systems other than cartesian, also allows zooming)
 
+### Column names with special characters
+
+* Some data includes special characters in column names
+* Load data from one of our upcoming exercises
+
+```r
+life_history_data <- read_tsv("Mammal_lifehistories_v2.txt")
+life_history_data
+```
+
+* If we type this R will thinks we mean "run the mass function with an input of g"
+
+```r
+filter(life_history_data, mass(g) > 100000)
+```
+
+* So, we enclose these column names in back ticks
+
+```r
+filter(life_history_data, `mass(g)` > 100000)
+```
+
 ### Saving plots as new files
 
 ```r
