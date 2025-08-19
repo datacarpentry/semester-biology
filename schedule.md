@@ -1,12 +1,23 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['Data Entry and Storage', 'Introduction to R and RStudio',
-  'Data in Tables', 'Grouping & Joining Data', 'Data Visualization',
-  'Solving Bigger Problems', 'Functions',
-  'Making Choices', 'Hurricane Catchup', 'Repeating Things 1', 'Repeating Things 2', 
-  'Spatial Data 1', 'Spatial Data 2', 'Version Control',
-  'Fall Break', 'Quarto']
+assignments:
+  [
+    "Introduction to R and RStudio",
+    "Data in Tables",
+    "Grouping & Joining Data",
+    "Data Visualization",
+    "Solving Bigger Problems",
+    "Functions",
+    "Making Choices",
+    "Repeating Things 1",
+    "Repeating Things 2",
+    "Class Choice",
+    "Class Choice",
+    "Class Choice",
+    "Fall Break",
+    "Class Choice",
+  ]
 ---
 
 [Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
@@ -19,7 +30,7 @@ assignments are available as well. You can see the full list of
 outside of an organized course.
 
 <!-- Schedule Management
-- Update the `assignments:` list with `title:` from `assignments/` files. 
-- Add 'Template' to `assignments:` to view the course template from `docs/`. 
+- Update the `assignments:` list with `title:` from `assignments/` files.
+- Add 'Template' to `assignments:` to view the course template from `docs/`.
 - The remaining content should be left AS IS.
 -->

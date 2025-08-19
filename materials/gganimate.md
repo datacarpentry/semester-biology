@@ -9,7 +9,7 @@ language: R
 
 ```r
 # gifski required for default gif output
-install.packages(c("gganimate", "gifski", "rnoaa"))
+install.packages(c("gganimate", "gifski", "lubridate", "rnoaa"))
 ```
 
 ### Example
