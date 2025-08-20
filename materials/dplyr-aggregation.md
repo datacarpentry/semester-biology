@@ -9,7 +9,7 @@ time: 30
 ### Setup
 
 ```r
-install.packages(c('dplyr', 'readr'))
+install.packages(c('dplyr', 'readr', 'tidyr'))
 download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")

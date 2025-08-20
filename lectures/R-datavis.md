@@ -8,7 +8,7 @@ language: R
 ### Setup
 
 ```r
-install.packages(c('dplyr', 'ggplot2', 'readr'))
+install.packages(c('dplyr', 'ggplot2', 'readr', 'tidyr'))
 download.file("https://ndownloader.figshare.com/files/5629542",
               "ACACIA_DREPANOLOBIUM_SURVEY.txt")
 download.file("https://ndownloader.figshare.com/files/5629536",

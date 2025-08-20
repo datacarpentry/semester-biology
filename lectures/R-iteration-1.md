@@ -8,7 +8,7 @@ language: R
 ### Setup
 
 ```r
-install.packages(c('dplyr', 'ggplot2', 'readr'))
+install.packages(c('dplyr', 'ggplot2', 'readr', 'tidyr'))
 download.file("https://datacarpentry.org/semester-biology/data/dinosaur_lengths.csv",
   "surveys.csv")
 download.file("https://datacarpentry.org/semester-biology/data/ramesh2010-macroplots.csv",
