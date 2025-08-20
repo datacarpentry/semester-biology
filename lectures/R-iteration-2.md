@@ -10,7 +10,7 @@ language: R
 ```r
 install.packages(c('dplyr', 'ggplot2', 'readr', 'tidyr'))
 download.file("https://datacarpentry.org/semester-biology/data/dinosaur_lengths.csv",
-  "surveys.csv")
+  "dinosaur_lengths.csv")
 download.file("https://datacarpentry.org/semester-biology/data/individual_collar_data.zip",
   "individual_collar_data.zip")
 ```
