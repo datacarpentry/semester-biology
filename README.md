@@ -6,24 +6,24 @@
 Forkable teaching materials for course on working with data in R.
 
 This repository contains the complete teaching materials (excluding exams and
-answers to assignments) and [website](http://datacarpentry.org/semester-biology) for a university style and self-guided 
+answers to assignments) and [website](http://datacarpentry.org/semester-biology) for a university style and self-guided
 course teaching computational data skills to biologists. The course is designed
 to work primarily as a flipped classroom, with students reading and viewing
 videos before coming to class and then spending the bulk of class time working
 on exercises with the teacher answering questions and demoing the concepts.
 
-[Helpful information](http://www.datacarpentry.org/semester-biology/docs/) 
+[Helpful information](http://www.datacarpentry.org/semester-biology/docs/)
 is available regarding the structure and function of the course and website
 materials for customized development and delivery of the course.
 
-We encourage collaborative development. This repository was used by 
+We encourage collaborative development. This repository was used by
 @ethanwhite to teach a version of this course (Fall 2016) at the University of
 Florida. The course remains under active development. We welcome contributions
 to all aspects of the course/site and are especially seeking exercises and
 assignments for a range of disciplines. Key site and course materials are
 available as templates for contributions of new materials and other materials
 that are specific to the course (e.g., the syllabus) are developed in a way to
-facilitate easy customization. 
+facilitate easy customization.
 
 Here are some examples of courses using the infrastructure and material from this course:
 
@@ -43,7 +43,7 @@ Here are some examples of courses using the infrastructure and material from thi
 
 ## Where is everything
 
-Core teaching materials are stored in `exercises/`, `lectures/`, and 
+Core teaching materials are stored in `exercises/`, `lectures/`, and
 `materials/`.
 
 Class specific materials are stored in the `syllabus`, `schedule` and `assignments/`.
@@ -87,11 +87,11 @@ If you discover any accessibility issues with the site please open an issue and 
 The website is setup to be easy to run automatically through GitHub:
 
 1. [Fork](https://github.com/datacarpentry/semester-biology#fork-destination-box)
-   or [import](https://import.github.com/) the repository to 
+   or [import](https://import.github.com/) the repository to
    `https://github.com/yourusername/semester-biology`.
 2. Update `# Setup` information in `_config.yml` in the main directory for
    proper site rendering.
-   * You must `push` this change to your repository to build and browse your 
+   * You must `push` this change to your repository to build and browse your
      forked version.
    * In a few minutes you should be able to see the site at:
      `https://yourusername.github.io/semester-biology/`
@@ -179,4 +179,4 @@ Foundation's Data-Driven Discovery
 Initiative](http://www.moore.org/programs/science/data-driven-discovery) through
 [Grant GBMF4563](http://www.moore.org/grants/list/GBMF4563) to Ethan White and
 the [National Science Foundation](http://nsf.gov/) as part of a [CAREER award to
-Ethan White](http://nsf.gov/awardsearch/showAward.do?AwardNumber=0953694)
+Ethan White](http://nsf.gov/awardsearch/showAward.do?AwardNumber=0953694).
