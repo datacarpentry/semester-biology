@@ -3,7 +3,7 @@ layout: page
 element: notes
 title: Vectors
 language: R
---- 
+---
 
 ### Vectors Basics
 
@@ -15,7 +15,7 @@ language: R
 states <- c("FL", "FL", "GA", "SC")
 ```
 
-* Using the `str` function we learned last time shows that this is a vector of 4 character strings 
+* Using the `str` function we learned last time shows that this is a vector of 4 character strings
 
 ```r
 str(states)
@@ -27,7 +27,7 @@ str(states)
 * `states[1]` gives us the first value in the vector
 * `states[1:3]` gives us the first through the third values
 * `1:3` works by making a vector of the whole numbers 1 through 3.
-* So, this is the same as `states[c(1, 2, 3)]` 
+* So, this is the same as `states[c(1, 2, 3)]`
 * You can use a vector to get any subset or order you want `states[c(4, 1, 3)]`
 
 * Many functions in R take a vector as input and return a value
@@ -169,7 +169,7 @@ density[density > 3]
 * Let's look at the piece of the code inside the `[]`
 
 ```r
-states[1:3]
+density > 3
 ```
 
 * This does an element-wise check to see if each value is > 3
