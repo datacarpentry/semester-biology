@@ -168,7 +168,8 @@ density[density > 3]
 * What's actually happening when we subset vectors this way?
 * Let's look at the piece of the code inside the `[]`
 
-```r`states[1:3]` 
+```r
+states[1:3]
 ```
 
 * This does an element-wise check to see if each value is > 3
