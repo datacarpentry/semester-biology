@@ -78,6 +78,12 @@ mean(count_na)
 mean(count_na, na.rm = TRUE)
 ```
 
+* We need the name because `na.rm` isn't the second argument, so if we just put `TRUE` we get an error
+
+```r
+mean(count_na, TRUE)
+```
+
 > Do [Nulls in Vectors]({{ site.baseurl }}/exercises/Vectors-nulls-in-vectors-R/).
 
 ### Working with multiple vectors
