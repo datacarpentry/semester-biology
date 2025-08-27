@@ -43,4 +43,12 @@ language: R
 
 * `Tools` -> `Global Options` -> `General` ->
   `Save workspace to ~/.RData on exit` -> `Never`
-* Unclick `Restore .RData into workspace at startup` 
+* Unclick `Restore .RData into workspace at startup`
+
+### Check every assignment
+
+* To reinforce this important step in coding the last required exercise each week is the check that your code runs
+* *Show last exercise of first assignment*
+* This will remind you to check that everything is running and fix any issues
+* It will also make grading much easier because when we run your code it will run
+* At the start of the semester if the code doesn't run when we go grade we'll send message you on Canvas and give you a chance to fix it before grading
