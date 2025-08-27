@@ -9,7 +9,7 @@ Sometimes you think you're code runs, but it only actually works because of some
 
 Follow these steps in RStudio to make sure your code really runs:
 
-1\. Restart R (see above) by clicking `Session` in the menu bar and selecting `Restart R`: 
+1\. Restart R (see above) by clicking `Session` in the menu bar and selecting `Restart R`:
 
 ![Screenshot showing clicking session from the menu bar and selecting Restart R]({{ site.baseurl}}/exercises/restart-r-screenshot.png)
 
@@ -24,3 +24,9 @@ The `Environment` tab should now say "Environment Is Empty":
 3\. Rerun your entire homework assignment using "Source with Echo" to make sure it runs from start to finish and produces the expected results.
 
 ![Screenshot showing the RStudio Source with Echo item hovered in the Source dropdown]({{ site.baseurl}}/exercises/rstudio-source-with-echo-screenshot.png)
+
+4\. Make sure that you saved your code with the name `assignment` somewhere in the file name. You should see the file in the `Files` tab and the name of the file should be black (not red with an `*` in the tab at the top of the text editor):
+
+![Screenshot showing the Files tab with the cursor hovering over the assignment file]({{ site.baseurl}}/exercises/saved-assignment-in-files.png)
+
+![Screenshot showing the file name in the editor tab and it is black and there is no *]({{ site.baseurl}}/exercises/saved-assignment-tab.png)
