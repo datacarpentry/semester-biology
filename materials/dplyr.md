@@ -79,7 +79,7 @@ plots <- read_csv("plots.csv")
 
 * Display data by clicking on it in `Environment`
 * Three tables
-    * `surveys` - main table, one row for each rodent captured, date on date,
+    * `surveys` - main table, one row for each rodent captured, data on date,
       location, species ID, sex, and size
     * `species` - latin species names for each species ID + general taxon
     * `plots` - information on the experimental manipulations at the site
@@ -126,7 +126,7 @@ select(surveys, year, month, day)
 select(surveys, month, day, year)
 ```
 
-> Do [Shrub Volume Data Basics 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 1, Shrub Volume Data Basics 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 > * Start your assignment file
 > * Load the readr and dplyr packages
 > * Load the shrub-volume-data.csv file using `read_csv`
@@ -138,6 +138,13 @@ select(surveys, month, day, year)
 
 ```r
 mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)
+```
+
+* We can't see the new column because it is the last column and R has run out of space
+* We can place columns at locations other than the end by using `.before` or `.after`
+
+```r
+mutate(surveys, hindfoot_length_cm = hindfoot_length / 10, .before = "hindfoot_length")
 ```
 
 * If we look at `surveys` now will it contain the new column?
@@ -172,15 +179,15 @@ arrange(surveys, weight)
 arrange(surveys, desc(weight))
 ```
 
-* We can also sort by multiple columns, so if we wanted to sort first by `plot_id` and then by date
+* We can also sort by multiple columns, so if we wanted to sort first by `plot_id` (descending) and then by date
 
 ```r
-arrange(surveys, plot_id, year, month, day)
+arrange(surveys, desc(plot_id), year, month, day)
 ```
 
-> Do [Shrub Volume Data Basics 3-4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 1, Shrub Volume Data Basics 3-4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
-#### Filter 
+#### Filter
 
 * Use `filter()` to get only the rows that meet certain criteria.
 * Combine the data frame to be filtered with a series of conditional statements.
@@ -193,7 +200,7 @@ arrange(surveys, plot_id, year, month, day)
     * The condition, which is `==` for "is equal to"
     * And then the value, `"DS"`
     * `DS` here is a string, not a variable or a column name, so we enclose it in quotation marks
-  
+
 ```r
 filter(surveys, species_id == "DS")
 ```
@@ -209,7 +216,7 @@ filter(surveys, species_id != "DS")
 * In computing we combine conditions in two ways "and" & "or"
 * "and" means that all of the conditions must be true
 * Do this in `dplyr` using additional comma separate arguments
-* So, to get the data on species "DS" for the year 1995:
+* So, to get the data on species "DS" starting after 1995:
 
 ```r
 filter(surveys, species_id == "DS", year > 1995)
@@ -285,4 +292,4 @@ drop_na(surveys, hindfoot_length)
 drop_na(surveys, hindfoot_length, weight)
 ```
 
-> Do [Shrub Volume Data Basics 8]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 1, Shrub Volume Data Basics 8]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
