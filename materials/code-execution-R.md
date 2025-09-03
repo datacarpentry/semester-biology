@@ -20,7 +20,7 @@ area <- c(3, 5, 1.9, 2.7)
 
 * Returns an error because neither `number` or `area` exists yet
 
-* Within a line code executes everything before assignment the output to a variable
+* Within a line code executes everything before assigning the output to a variable
 * So it starts to the right of the assignment operator
 * Looks up the value for `number `
 * Can't find the variable and so errors
@@ -39,7 +39,7 @@ density <- number / area
 * The second line then runs creating a vector and assigning it to the variable `area`
 * The third line first looks up the variable `number` and replaces it with its value
 * It then looks up the the variable `area` and replaces it with its value
-* It then divides those two vectors and assigns the resulting vector to the variable `density` 
+* It then divides those two vectors and assigns the resulting vector to the variable `density`
 
 ### Code executes inside to outside
 
