@@ -10,9 +10,12 @@ time: 30
 
 ```r
 install.packages(c('dplyr', 'readr', 'tidyr'))
-download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
-download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
-download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
+download.file("https://ndownloader.figshare.com/files/2292172",
+  "surveys.csv")
+download.file("https://ndownloader.figshare.com/files/3299474",
+  "plots.csv")
+download.file("https://ndownloader.figshare.com/files/3299483",
+  "species.csv")
 ```
 
 ### Introduction
@@ -27,7 +30,7 @@ download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
 * Use that variable later in the code
 * Repeat
 
-* Obtain the data for only DS, sorted by year, with only the year and and weight columns
+* Obtain the data for only DS, with no null weights, sorted by year, with only the year and and weight columns
 
 ```r
 ds_data <- filter(surveys, species_id == "DS")
@@ -36,7 +39,7 @@ ds_data_by_year <- arrange(ds_data_no_null_weight, year)
 ds_weight_by_year <- select(ds_data_by_year, year, weight)
 ```
 
-> Do [Portal Data Manipulation Exercise 1-2]({{ site.baseurl }}/exercises/Portal-data-manip-R)
+> Do [Exercise 4, Portal Data Manipulation Exercise 1-2]({{ site.baseurl }}/exercises/Portal-data-manip-R)
 
 ### Pipes
 
@@ -87,7 +90,7 @@ ds_weight_by_year <- surveys |>
   select(year, weight)
 ```
 
-> Do [Portal Data Manipulation Pipes 1]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
+> Do [Exercise 4, Portal Data Manipulation Pipes 1]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
 
 ### The magrittr pipe
 
