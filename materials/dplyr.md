@@ -245,7 +245,7 @@ filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 * There is also a shorter way to write these kinds of `or` conditions for a single column
 
 ```r
-filter(surveys, species_id %in% c("DS", species_id == "DM", species_id == "DO"))
+filter(surveys, species_id %in% c("DS", "DM", "DO"))
 ```
 
 
