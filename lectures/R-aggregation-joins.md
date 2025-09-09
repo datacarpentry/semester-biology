@@ -17,6 +17,10 @@ download.file("https://ndownloader.figshare.com/files/3299483",
               "species.csv")
 download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-data.csv",
               "shrub-volume-data.csv")
+download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-experiments.csv",
+              "shrub-volume-experiments.csv")
+download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-sites.csv",
+              "shrub-volume-sites.csv")
 download.file("https://datacarpentry.org/semester-biology/data/mbaiki_measures.csv",
               "mbaiki_measures.csv")
 download.file("https://datacarpentry.org/semester-biology/data/mbaiki_trees.csv",
