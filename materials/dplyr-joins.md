@@ -20,7 +20,7 @@ download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-
 
 > Remember to:
 >
-> * display a fully joined version of the Portal data using:  
+> * display a fully joined version of the Portal data using:
 > `portal_bigtable <- inner_join(inner_join(surveys, species), plots)`
 
 #### Why use multiple tables
@@ -57,7 +57,7 @@ plots <- read_csv("plots.csv")
 * It takes three arguments:
   * The first of the two tables we want to join
   * The second of the two tables we want to join
-  * And the column, or columns, that provide the linkage between the two tables
+  * The column(s) that provide the linkage between the two tables wrapped in the `join_by` function
 
 ```r
 combined <- inner_join(surveys, species, join_by(species_id))
@@ -106,4 +106,4 @@ full_data <- surveys |>
   inner_join(plots, join_by(plot_id))
 ```
 
-> Do [Portal Data Joins]({{ site.baseurl }}/exercises/Portal-data-joins-R/). 
+> Do [Portal Data Joins]({{ site.baseurl }}/exercises/Portal-data-joins-R/).

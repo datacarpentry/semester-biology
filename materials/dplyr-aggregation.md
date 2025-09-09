@@ -27,7 +27,7 @@ surveys <- read_csv("surveys.csv")
 * First step, group the data frame.
 * Let's group it by `year`
 * `group_by`
-* Arguments: 1) table to work on; 2) columns to group by 
+* Arguments: 1) table to work on; 2) columns to group by
 
 ```r
 group_by(surveys, year)
@@ -100,18 +100,19 @@ size_abundance_data <- surveys |>
 * When we group by more than one column the resulting data frame is grouped by all but the last group
 * Can be useful in some more complicated circumstances
 * Can also make things not work if functions don't support grouped data frames
-* To remove these groups add `ungroup()` to the end of the pipeline
+* To remove these groups add `.groups = "drop"` as an optional arugment
 
 ```r
 size_abundance_data <- surveys |>
   drop_na(weight) |>
   group_by(plot_id, year) |>
-  summarize(abundance = n(), avg_weight = mean(weight)) |>
-  ungroup()
+  summarize(abundance = n(), avg_weight = mean(weight), .groups = "drop")
 ```
 
-* The message still prints because it happens as part of the `summarize` step
-* But looking at the resulting data frame
+* Or you can add `ungroup()` to the end of the pipeline
+* But then the message still prints because it happens as part of the `summarize` step
+
+* Looking at the resulting data frame
 
 ```r
 size_abundance_data
