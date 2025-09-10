@@ -5,13 +5,14 @@ title: Shrub Volume Join
 language: R
 ---
 
-This is a follow-up to [Shrub Volume Aggregation]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R).
+Dr. Morales has data in three tables in the files:
 
-In addition to the main data table on shrub dimensions, Dr. Morales has two additional data tables.
-The first describes the manipulation for each experiment.
-The second provides information about the different sites.
-Check if the files `shrub-volume-experiments.csv` and `shrub-volume-sites.csv` are in your work space (your instructor may have already added them).
-If not download the [experiments data]({{ site.baseurl }}/data/shrub-volume-experiments.csv) and the [sites data]({{ site.baseurl }}/data/shrub-volume-sites.csv).
+a. [`shrub-volume-data.csv`]({{ site.baseurl }}/data/shrub-volume-data.csv) with data on shrub dimensions
+b. [`shrub-volume-experiments.csv`]({{ site.baseurl }}/data/shrub-volume-experiments.csv) with data on experimental manipulations
+c. [`shrub-volume-sites.csv`]({{ site.baseurl }}/data/shrub-volume-sites.csv) with data on different sites
 
-1. Import the experiments data and then use `inner_join` to combine it with the shrub dimensions data to add a `manipulation` column to the shrub data.
-2. Import the sites data and then combine it with both the data on shrub dimensions and the data on experiments to produce a single data frame that contains all of the data.
+If the files aren't available in your work space use the links above to download them.
+Load the data using `read_csv`.
+
+1. Use `inner_join` to combine the experiments data with the shrub volume data.
+2. Combine the sites data with both the data on shrub volume and the data on experiments to produce a single data frame that contains all of the data.
