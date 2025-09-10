@@ -8,7 +8,7 @@ language: R
 ### Setup
 
 ```r
-install.packages('dplyr')
+install.packages(c('dplyr', 'readr', 'tidyr'))
 download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
@@ -39,13 +39,13 @@ surveys <- read_csv("species.csv")
 * We do this using `[]`
 * Remember that `[]` also mean "give me a piece of something" in R
 * Let's get the `species_id` column
-* `"species_id"` has to be in quotes because we we aren't using the tidyverse
+* `"species_id"` has to be in quotes because we aren't using the tidyverse
 
 ```r
 species["species_id"]
 ```
 
-* This actually returns a one column data frame, not a vector
+* This actually returns a one column data frame, not a vector, it works like `select`
 * To extract a single column as a vector we use two sets of `[]`
 * Think of the second set of `[]` as getting the single vector from inside the one column data frame
 
@@ -57,7 +57,7 @@ species[["species_id"]]
 * Shorthand for `[[]]` in cases where the piece of something we want to get has a name
 * So, we start with the object we want a part of, our `surveys` data frame
 * Then the `$` with no spaces around it
-* and then the name of the `species_id` column (without quotes, just to be confusing)
+* Then the name of the `species_id` column (without quotes, just to be confusing)
 
 ```r
 species$species_id
@@ -88,10 +88,10 @@ species |>
 * Just like `mutate` and `summarize`
 
 ```r
-states <- c("FL", "FL", "GA", "SC")
+state <- c("FL", "FL", "GA", "SC")
 count <- c(9, 16, 3, 10)
 area <- c(3, 5, 1.9, 2.7)
-count_data <- data.frame(states = states, counts = count, regional_area = area)
+count_data <- data.frame(states = state, counts = count, areas = area)
 ```
 
 * To make a tibble instead of a data.frame use `tibble()`
@@ -99,7 +99,7 @@ count_data <- data.frame(states = states, counts = count, regional_area = area)
 ```r
 library(dplyr)
 
-count_data <- tibble(states = states, counts = count, regional_area = area)
+count_data <- tibble(states = state, counts = count, areas = area)
 ```
 
 * `tibble()` is part of the `tibble` package, which gets loaded by `dplyr`
@@ -110,12 +110,17 @@ count_data <- tibble(states = states, counts = count, regional_area = area)
 * For example, if all of this data was collected in the same year and we wanted to add that year as a column in our data frame we could do it like this
 
 ```r
-count_data_year <- tibble(year = 2022, states = states, counts = count, regional_area = area)
+count_data_year <- tibble(year = 2022, states = state, counts = count, areas = area)
 ```
 
 * `year =` sets the name of the column in the data frame
-* And `2000` is that value that will occur on every row of that column
-* If we run this and look at the `count_data_year` data frame we'll see that it includes the year column with `2000` in every row
+* And `2022` is the value that will occur on every row of that column
+* _Show `count_data_year` data frame with the year column with `2022` in every row_
+
+> Do [Building data frames from vectors]({{ site.baseurl }}/exercises/building-data-frames-from-vectors-R/).
+
+
+## Adding columns to existing data frames
 
 * We can add a vector as a new column to an existing data frame using `mutate()`
 
@@ -125,12 +130,19 @@ elevation <- c(100, 65, 226, 152)
 count_data_year_elev <- mutate(count_data_year, elevations = elevation)
 ```
 
+* We can also do the same thing with `$` or `[]`
+
+```r
+count_data_year$elevations <- elevation
+count_data_year["elevations"] <- elevation
+```
+
+* Note that these changes are actually "in place"
+* Unlike everything else
+
 ### Summary
 
 * So, that's the basic idea behind how vectors and data frames are related and how to convert between them.
 * A data frame is a set of equal length vectors
 * We can extract a column of a data frame into a vector using either `$` or two sets of `[]`
 * We can combine vectors into data frames using the `data.frame` function, which takes a series of arguments, one vector for each column we want to create in the data frame.
-
-
-> Do [Building data frames from vectors]({{ site.baseurl }}/exercises/building-data-frames-from-vectors-R/).
