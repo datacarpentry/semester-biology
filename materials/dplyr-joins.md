@@ -9,7 +9,7 @@ time: 30
 ### Setup
 
 ```r
-install.packages('dplyr')
+install.packages(c('dplyr', 'readr', 'tidyr')
 download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
@@ -63,8 +63,8 @@ plots <- read_csv("plots.csv")
 combined <- inner_join(surveys, species, join_by(species_id))
 ```
 
-* Looking at the `combined` table, we can see that on every row with a particular value for `species_id` the join has added the matching values on `genus`, `species`, and `taxa`
-* So one way to think about this join is that it adds the relevant information in the `species` table to the `surveys` table
+* Looking at the `combined` table, we can see that on every row with a particular value for `species_id` the join has added the matching values for `genus`, `species`, and `taxa`
+* One way to think about this join is that it adds the relevant information in the `species` table to the `surveys` table
 * Often for scientific data we can think about there being one main table, the `surveys` table in our case, and multiple supplementary tables that provide additional details
 
 * Inner joins keep information from both tables when both tables have a matching value in the join column
