@@ -7,13 +7,14 @@ exercises:
   [
     "Acacia and Ants",
     "Mass vs Metabolism",
-    "Acacia and Ants Histograms",
     "Acacia and Ants Data Manipulation",
     "Lifespan vs Gestation Time",
+    "Acacia and Ants Histograms",
+    "Acacia and Ants Layers",
     "Check That Your Code Runs",
     "Graphing Data From Multiple Tables",
   ]
-points: [10, 20, 20, 20, 20, 10, "Challenge - optional"]
+points: [10, 10, 10, 20, 20, 20, 10, "Challenge - optional"]
 ---
 
 ### Learning Objectives
