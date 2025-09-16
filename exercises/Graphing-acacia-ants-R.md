@@ -20,4 +20,3 @@ acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
    Diameter".
 2. The same plot as (1), but with points colored based on the `ANT` column (the species of ant symbiont living with the acacia)
 3. The same plot as (2), but instead of different colors show different species of ant (values of `ANT`) each in a separate subplot.
-4. The same plot as (3) but add a simple model of the data by adding `geom_smooth`.
