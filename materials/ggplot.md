@@ -4,7 +4,7 @@ element: notes
 title: Graphing using ggplot
 language: R
 ---
- 
+
 > * Get familiarized with [metadata](https://esapubs.org/archive/ecol/E095/064/metadata.php) - *Acacia drepanolobium* Surveys
 > * [UHURU Acacia Experiment Data](https://ndownloader.figshare.com/files/5629542)
 > * [UHURU Tree Survey Data](https://ndownloader.figshare.com/files/5629536)
@@ -32,6 +32,8 @@ language: R
 * We still give it the name of the file in quotes as the first argument
 
 ```r
+library(readr)
+
 acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt")
 ```
 
@@ -63,10 +65,10 @@ acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 * Declarative - describe what you want not how to build it
 * Contrasts w/Imperative - how to build it step by step
 * Install `ggplot2` using `install.packages`
-  
+
 ### Basics
 
-* We load the `ggplot2` package just like we loaded `dplyr` 
+* We load the `ggplot2` package just like we loaded `dplyr`
 
 ```r
 library(ggplot2)
@@ -86,9 +88,9 @@ ggplot()
 
 * `ggplot()` creates a base ggplot object that we can then add things to
 * Like a blank canvas
-  
+
 * We can also add optional arguments for information to be shared across different components of the plot
-* The two main arguments we typically use here are 
+* The two main arguments we typically use here are
 * `data` - which is the name of the data frame we are working with, so `acacia`
 * `mapping` - which describes which columns of the data are used for different aspects of the plot
 * We create a `mapping` by using the `aes` function, which stands for "aesthetic", and then linking columns to pieces of the plot
@@ -111,7 +113,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 ```
 
 * It is standard to hit `Enter` after the plus so that each layer shows up on its own line
-  
+
 * To change things about the layer we can pass additional arguments to the `geom`
 * We can do things like change
   * the `size` of the points, we'll set it to `3`
@@ -136,7 +138,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 
 ### Grouping
 
-#### Color 
+#### Color
 
 * Group on a single graph
 * Look at influence of experimental treatment
@@ -219,7 +221,7 @@ ggplot(acacia, aes(x = TREATMENT)) +
 
 ```r
 ggplot(acacia, aes(x = CIRC)) +
-  geom_histogram(fill = "red")
+  geom_histogram()
 ```
 
 * Uses `stat_bins()` for data transformation
@@ -228,13 +230,23 @@ ggplot(acacia, aes(x = CIRC)) +
 
 ```r
 ggplot(acacia, aes(x = CIRC)) +
-  geom_histogram(fill = "red", bins = 15)
+  geom_histogram(bins = 15)
 ```
 
 ```r
 ggplot(acacia, aes(x = CIRC)) +
-  geom_histogram(fill = "red", binwidth = 5)
+  geom_histogram(binwidth = 5)
 ```
+
+* If we want to change the color of our bars we use `fill` instead of `color`
+
+```r
+ggplot(acacia, aes(x = CIRC)) +
+  geom_histogram(binwidth = 5, fill = "red")
+```
+
+* `color` changes the outline color
+* `fill` changes the inside color
 
 * These can be combined with all of the other `ggplot2` features we've learned
 
@@ -247,7 +259,7 @@ ggplot(acacia, aes(x = CIRC)) +
 * Let's remake our histogram, but color the bars by the treatment
 
 ```r
-ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
+ggplot(acacia, aes(x = CIRC, fill = TREATMENT)) +
   geom_histogram(binwidth = 5)
 ```
 
@@ -257,14 +269,14 @@ ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
 * If we want separate overlapping histograms then we need to change the position
 
 ```r
-ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
+ggplot(acacia, aes(x = CIRC, fill = TREATMENT)) +
   geom_histogram(binwidth = 5, position = "identity")
 ```
 
 * And then add some transparency so we can see all of the histograms
 
 ```r
-ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
+ggplot(acacia, aes(x = CIRC, fill = TREATMENT)) +
   geom_histogram(binwidth = 5, position = "identity", alpha = 0.5)
 ```
 
@@ -274,7 +286,7 @@ ggplot(acacia, aes(x = CIRC, color = TREATMENT)) +
 * So far we've only plotted one layer or geom at a time, but we can combine multiple layers in a single plot
     * `ggplot()` sets defaults for all layers
     * Can combine multiple layers using `+`
-    * The first geom is plotted first and then additional geoms are layered on top 
+    * The first geom is plotted first and then additional geoms are layered on top
 
 * Combine different kinds of layers
 * Add a linear model
@@ -285,7 +297,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_smooth(method = "lm")
 ```
 
-* Both the `geom_point` layer and the `geom_smooth` layer use the defaults form
+* Both the `geom_point` layer and the `geom_smooth` layer use the defaults from
   `ggplot`
 * Both use `acacia` for data and `x = CIRC, y = HEIGHT` for the aesthetic
 * `geom_smooth` uses the statistical transformation `stat_smooth()` to produce a smoothed representation of the data
