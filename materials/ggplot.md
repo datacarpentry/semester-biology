@@ -335,7 +335,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 * This sets the default data frame and aesthetic, which is then used by
   `geom_point()` and `geom_smooth()`
 * Alternatively instead of setting the default we could just give these values
-  directly to `geom_point()` and `geom_smo
+  directly to `geom_point()` and `geom_smooth()`
 
 ```r
 ggplot() +
@@ -348,7 +348,7 @@ ggplot() +
 * We can see that this information is no longer shared with other geoms since it
   is no longer the default, so we've asked for a smooth of nothing and so no smoother is shown
 
-* Can use this combine different aesthetics
+* Can use this to combine different aesthetics
 * Make a single model across all treatments while still coloring points
 
 ```r
