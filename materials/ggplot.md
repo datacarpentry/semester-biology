@@ -283,6 +283,7 @@ ggplot(acacia, aes(x = CIRC, fill = TREATMENT)) +
   geom_histogram(binwidth = 5, position = "identity", alpha = 0.5)
 ```
 
+> Do Tasks 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
 ### Layers
 
@@ -316,7 +317,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 * Because the color aesthetic is the default it is inherited by geom_smooth
 * One set of points and one model for each treatment
 
-> Do Exercise 1.5 [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do Task 1 of [Acacia and Ants Layers]({{ site.baseurl }}/exercises/Graphing-acacia-ants-layers-R).
 
 
 ### Changing values across layers
@@ -380,7 +381,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 * Do an exercise that uses this idea, but uses `geom_histogram()` twice to make two overlapping histograms from two different columns
 * What are we going to change between the two uses of `geom_histogram()` to do this?
 
-> Do Task 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
+> Do Task 3 in [Acacia and Ants Layers]({{ site.baseurl }}/exercises/Graphing-acacia-ants-layers-R).
 
 
 ### Understanding defaults (optional if students struggling after exercise)
