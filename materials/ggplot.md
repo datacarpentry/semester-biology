@@ -161,6 +161,9 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 * Where are all the acacia in the open plots? (eaten?)
 
 > Do Tasks 2-3 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> This seems short, but for a 50 min class you do have time to stop,
+> have them work for 5 min on the basic version,
+> and then come back and provide the extra information in the last 5 min of class
 
 * Did you have any subplots with only one or two points?
 * Why?
