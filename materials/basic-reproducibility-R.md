@@ -49,7 +49,10 @@ language: R
   as described above
 * Stop this by `Tools` -> `Global Options` -> `General` ->
   `Save workspace to ~/.RData on exit` -> `Never`
-* Unclick `Restore .RData into workspace at startup` 
+* Unclick `Restore .RData into workspace at startup`
+
+* Only reason not to do this is to if you are performing long running calculations as one step in a process
+* Better solution is to save the results of those calculations and then reload them when needed
 
 ### Make sure code works on other computers
 
