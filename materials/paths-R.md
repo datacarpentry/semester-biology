@@ -40,6 +40,7 @@ data = read_csv("shrub-dimensions-labeled.csv")
 * We'll start with absolute, which always describes exactly where something is on the computer
 * Data file is stored in the `Downloads` subdirectory of our `Home` directory
 * `Home` directory varies by operating system
+* On Windows it is `/Users/username`
 * On mac and Linux it is `/home/username`
 * Within that is the `Downloads` directory
 
@@ -48,7 +49,6 @@ data = read_csv("shrub-dimensions-labeled.csv")
 data = read_csv('/home/ethan/Downloads/shrub-dimensions-labeled.csv')
 ```
 
-* This successfully loads the data because we've told it exactly where the file is
 * On Windows change `home` to `Users`
 
 ```r
@@ -56,11 +56,14 @@ data = read_csv('/home/ethan/Downloads/shrub-dimensions-labeled.csv')
 data = read_csv('/Users/ethan/Downloads/shrub-dimensions-labeled.csv')
 ```
 
+* This successfully loads the data because we've told it exactly where the file is
+
 * Folders/Directories are separate by `/` with the file name at the end
 * Windows shows `\` or `\\` as the separator, but `/` works on all operating systems so use it
 * Include the file extension (the part after the `.`)
 
 * Paths can also be relative
+* Do this by not including a starting `/`
 
 ```r
 'Downloads/shrub-dimensions-labeled.csv'
@@ -101,7 +104,7 @@ shrub_data <- read_csv('shrub-dimensions-labeled.csv')
         * Working on a different computer?
         * Working with someone else's files?
 * In general, using `setwd` means that your code will only work on a single computer
-* That's bad, so we want to have the working directory automatically and use relative paths
+* That's bad, so we want to have the working directory set automatically and use relative paths
 
 ### Projects
 
@@ -110,8 +113,8 @@ shrub_data <- read_csv('shrub-dimensions-labeled.csv')
 * (Posit Cloud) In fact we've already been using them
 * (Posit Cloud) Every time you click on an assignment or click `New Project` this creates a new project
 
-* Each project is a self-contained unit of work in a single folder/directory
-* Treat all locations as relative to that single directory
+* Each project is a self-contained unit of work in a folder/directory
+* Treat all locations as relative to that directory
 * To do this in regular RStudio we use projects
 * `File` -> `New Project` -> `New Directory` -> `New Project` -> datacarp
 * Or use `Existing Directory` to choose an existing directory
@@ -123,7 +126,6 @@ shrub_data <- read_csv('shrub-dimensions-labeled.csv')
 * *copy shrub-dimensions-labeled.csv to a /home/user/datacarp/*
 
 ```r
-# OSX/Linux
 data = read_csv('shrub-dimensions-labeled.csv')
 ```
 
@@ -132,15 +134,14 @@ data = read_csv('shrub-dimensions-labeled.csv')
 * `File checkbox` -> `More` -> `Move` -> data
 
 ```r
-# OSX/Linux
 data = read_csv('data/shrub-dimensions-labeled.csv')
 ```
 
 * Can switch between projects using `File` -> `Recent Projects` or `Open Project`
-* Keeps track the state of RStudio when you last worked with that project
+* Keeps track of the state of RStudio when you last worked with that project
 
 ### Sharing code
 
 * This idea of projects as folders is also important for how we share code
-* Version control, which we'll have the opportunity to learn about later, works with the projects as folder structure
+* Version control, which we'll have the opportunity to learn about later, works with the projects as folders structure
 * We can also zip a the project folder and send it to someone else and they can work with it
