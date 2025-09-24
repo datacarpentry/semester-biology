@@ -30,3 +30,7 @@ The `Environment` tab should now say "Environment Is Empty":
 ![Screenshot showing the Files tab with the cursor hovering over the assignment file]({{ site.baseurl}}/exercises/saved-assignment-in-files.png)
 
 ![Screenshot showing the file name in the editor tab and it is black and there is no *]({{ site.baseurl}}/exercises/saved-assignment-tab.png)
+
+5\. Make sure that your code will run on other computers
+  - No `setwd()` (use RStudio Projects instead)
+  - Use `/` not `\` for paths
