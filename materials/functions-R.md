@@ -31,7 +31,7 @@ b = 3
 a + b}
 ```
 
-* Pressing run anywhere in this group runs all the lines in that group
+* Pressing run anywhere on the first line of this group runs all the lines in that group
 * A function runs all of the lines of code in the braces
 * Using the arguments provided
 * And then returns the output
