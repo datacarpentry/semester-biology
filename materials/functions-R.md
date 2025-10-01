@@ -250,9 +250,9 @@ library(tidyr)
 
 create_time_series <- function(df, column){
     time_series <- df |>
-      drop_na({{ column }}) |> # column is a variable for col name, needs brace
+      {% raw %}drop_na({{ column }}) |>{% endraw %} # column is variable, needs brace
       group_by(year) |> # year is a column name in df, no brace
-      summarize(avg_size = mean({{ column }}))
+      {% raw %}summarize(avg_size = mean({{ column }})){% endraw %}
     return(time_series)
 }
 
