@@ -214,14 +214,14 @@ est_shrub_mass_dim(0.8, 2.0)
 library(ggplot2)
 library(readr)
 
-make_plot <- function(df, column, label) {
+make_histogram <- function(df, column, label) {
   ggplot(data = df, mapping = aes(x = column)) +
     geom_histogram() +
     xlab(label)
 }
 
 surveys <- read_csv("surveys.csv")
-make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
+make_histogram(surveys, hindfoot_length, "Hindfoot Length [mm]")
 ```
 
 * To fix this we have to tell our code which inputs/arguments are this special type of data variable
@@ -231,15 +231,15 @@ make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
 library(ggplot2)
 library(readr)
 
-make_plot <- function(df, column, label) {
+make_histogram <- function(df, column, label) {
 {% raw %}ggplot(data = df, mapping = aes(x = {{ column }})) +{% endraw %}
     geom_histogram() +
     xlab(label)
 }
 
 surveys <- read_csv("surveys.csv")
-make_plot(surveys, hindfoot_length, "Hindfoot Length [mm]")
-make_plot(surveys, weight, "Weight [g]")
+make_histogram(surveys, hindfoot_length, "Hindfoot Length [mm]")
+make_histogram(surveys, weight, "Weight [g]")
 ```
 
 * Only need to embrace column names that we are passing as arguments
