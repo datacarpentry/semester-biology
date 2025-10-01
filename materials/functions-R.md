@@ -92,30 +92,31 @@ shrub_vol <- calc_shrub_vol(0.8, 2.0)
 ### Default arguments
 
 * Defaults can be set for common inputs.
-* For example, many of our shrubs are the same height so for those shrubs we only measure the `radius`.
-* So we want a default value for the `height` for cases where we don't measure it
+* Let's modify our function to round the output with a default number of digits of 2
+* To do this add `=` and the default value after the variable name
 
 ```r
-calc_shrub_vol <- function(radius, height = 1) {
+calc_shrub_vol <- function(radius, height, digits = 2) {
   area <- pi * radius ^ 2
   volume <- area * height
-  return(volume)
+  volume_rounded <- round(volume, digits)
+  return(volume_rounded)
 }
 
-calc_shrub_vol(0.8)
+calc_shrub_vol(0.8, 2.0)
 ```
 
-* Since we can choose whether to include the `height` argument or not arguments with defaults are called "optional arguments"
+* Since we can choose whether to include the `digits` argument, arguments with defaults are called "optional arguments"
 * If we do include them we can either include them positionally
 
 ```r
-calc_shrub_vol(0.8, 2.0)
+calc_shrub_vol(0.8, 2.0, 4)
 ```
 
 * Or we can provide them by name
 
 ```r
-calc_shrub_vol(0.8, height = 2.0)
+calc_shrub_vol(0.8, 2.0, digits = 4)
 ```
 
 > Do [Default Arguments]({{ site.baseurl }}/exercises/Functions-default-arguments-R).
@@ -127,27 +128,27 @@ calc_shrub_vol(0.8, height = 2.0)
 * When to use or not use argument names
 
 ```r
-calc_shrub_vol(radius = 0.8, height = 2.0)
+calc_shrub_vol(radius = 0.8, height = 2.0, digits = 4)
 ```
 
 Or
 
 ```r
-calc_shrub_vol(0.8, 2.0)
+calc_shrub_vol(0.8, 2.0, 4)
 ```
 
 * You can always use names
     * Value gets assigned to variable of that name
 
 ```r
-calc_shrub_vol(height = 2.0, radius = 0.8)
+calc_shrub_vol(height = 2.0, digits = 4, radius = 0.8)
 ```
 
 * If not using names then order determines naming
-    * First value is `radius`, second value is `height`
+    * First value is `radius`, second value is `height`, third is `digits`
 
 ```r
-calc_shrub_vol(2.0, 0.8)
+calc_shrub_vol(2.0, 0.8, 4)
 ```
 
 * If order is hard to remember use names
@@ -156,7 +157,7 @@ calc_shrub_vol(2.0, 0.8)
 * So, in our case, the most common approach would be
 
 ```r
-calc_shrub_vol(0.8, height = 2.0)
+calc_shrub_vol(0.8, 2.0, digits = 4)
 ```
 
 ### Combining Functions
