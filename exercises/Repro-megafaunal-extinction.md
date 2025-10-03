@@ -10,7 +10,7 @@ There were a relatively large number of extinctions of mammalian species roughly
 are interested in understanding if there were differences in the size of the
 species that went extinct and those that did not. You are going to reproduce the
 three main figures from one of the major papers on this topic [Lyons et al.
-2004](http://www.evolutionary-ecology.com/issues/v06n03/ddar1499.pdf).
+2004](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1461-0248.2004.00643.x).
 
 You will do this using a 
 [large dataset of mammalian body sizes]({{ site.baseurl }}/data/mammal-size-data-clean.tsv)
