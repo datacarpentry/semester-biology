@@ -18,8 +18,8 @@ the right parameters.
 Create a new function `get_mass_from_length_by_name()` that takes two arguments,
 the `length` and the name of the dinosaur group. Inside this function use
 `if`/`else if`/`else` statements to check to see if the name is one of the
-following values and if so use the associated `a` and `b` values to estimate the
-species mass using these equations:
+following values and if so use the associated equation to estimate the
+species mass:
 
 * *Stegosauria*:  `mass = 10.95 * length ^ 2.64` ([Seebacher 2001](http://www.jstor.org/stable/4524171))
 * *Theropoda*:  `mass = 0.73 * length ^ 3.63` ([Seebacher 2001](http://www.jstor.org/stable/4524171))
@@ -39,7 +39,7 @@ the function `paste()` to combine text with a value from a variable `paste("My n
 Doing this successfully will modify your answer to (4), which is fine.
 
 *Challenge (**optional**)*: Change your function so that it uses two different
-values of `a` and `b` for *Stegosauria*. When *Stegosauria* is greater than 8
-meters long use the equation above. When it is less than 8 meters long use `a` =
-`8.5` and `b` = `2.8`. Run the function for a *Stegosauria* that is 6 meters
-long.
+equations for *Stegosauria*. When *Stegosauria* is greater than 8
+meters long use the equation above. When it is less than 8 meters long use
+`mass = 8.5 * length ^ 2.8``.
+Run the function for a *Stegosauria* that is 6 meters long.

@@ -22,12 +22,12 @@ weight > 50
 species == "DM"
 ```
 
-* These statements generate a value is of type `"logical"`
-* The value is `TRUE` if the condition is satisfied 
+* These statements generate a value of type `"logical"`
+* The value is `TRUE` if the condition is satisfied
 * The value is `FALSE` if the condition is not satisfied
 * These aren't the strings "TRUE" and "FALSE"
 * They are a special type of value known as "boolean"
-  
+
 * Conditional statements are made with a range of operators
 * We've seen
   * `==` for equals
@@ -45,8 +45,8 @@ species == "DM"
 "PP" %in% c("DM", "DO", "DS")
 ```
 
-* There are also functions that return these boolean
-* `is.na()` for is this value null
+* There are also functions that return these boolean values
+* `is.na()` checks to see if a value is an `NA` (in which case it returns `TRUE` or not (in which case it returns `FALSE`)
 
 ```r
 is.na(NA)
@@ -68,12 +68,12 @@ is.na(5)
 * If we want to ask if "PP" is not in a given species list
 
 ```r
-!("PP" %in% c("DM", "DO", "DS")
+!("PP" %in% c("DM", "DO", "DS"))
 ```
 
 * So it is true that "PP" is not in the list
-* Because it is not in the list then the part inside `()` returns `FALSE`
-* And the `!` reverses this to `TRUE`
+* Because it is not in the list, the part inside `()` returns `FALSE`
+* And the `!` reverses that `FALSE` to `TRUE`
 
 ### Combining conditional statements
 
@@ -86,12 +86,16 @@ is.na(5)
 5 > 2 & 6 >=10
 ```
 
+* We always need to use `&` unless we are using `dplyr::filter()` where we have used separate arguments
+
 * We use the `|` for "or"
 * Which means if either or both of the conditions are `TRUE` return `TRUE`
 
 ```r
 5 > 2 | 6 >=10
 ```
+
+> *QUICK* (2 mins): Do Tasks 1 & 2 in [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 ### Conditional statements work on vectors
 
@@ -102,7 +106,8 @@ c(1, 1, 2, 3, 1) == 1
 ```
 
 * Checks each value to see if equal to 1
-* This is what subsetting approaches use to subset
+* Returns a vector of the results
+* This is what `[]` and filtering approaches use to subset
 * They keep the values where the value in this condition vector is equal to `TRUE`
 * Let's look at an example where we have a vector of counts and a vector the the states they occur in
 
@@ -123,14 +128,14 @@ states == 'FL'
 counts[states == 'FL']
 ```
 
-* It is the same as pass a vector of `TRUE` and `FALSE` values inside the square brackets
+* It is the same as passing a vector of `TRUE` and `FALSE` values inside the square brackets
 
 ```r
 counts[c(TRUE, TRUE, FALSE, FALSE)]
 ```
 
 * This keeps the first and second values in `counts` because the values in the vector are `TRUE`
-* This is how `dplyr::filter()` and other methods for subsetting data work
+* This is also how `dplyr::filter()` works
 
 * Can also compare element wise to see which values in two vectors are the same
 
@@ -166,7 +171,7 @@ states == c("SC", "GA")
 
 * This is why we have `%in%`
 
-> Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+> Do Tasks 3-10 [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 ### `if` statements
 
@@ -223,7 +228,7 @@ mass
 
 * Often want to chose one of several options
 * Can add more conditions and associated actions with `else if`
- 
+
 ```r
 veg_type <- "grass"
 volume <- 16.08
