@@ -330,7 +330,7 @@ est_mass(24, "tree")
 
 * We can also use if statements with functions that return `TRUE` or `FALSE`
 * Assume our values for `veg_type` are messier and include values like `"grass A"` and `"grass B"`
-* We want our function to work the same way but if veg_type is `"grass A"` then it doesn't match out condition
+* We want our function to work the same way but if veg_type is `"grass A"` then it doesn't match our condition
 
 ```r
 est_mass(1.6, "grass A")
