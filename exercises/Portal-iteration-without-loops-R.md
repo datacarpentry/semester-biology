@@ -37,8 +37,8 @@ Use `sapply` to apply `classify_by_weight` to the `weights` vector from (1).
    - All other species: `energy = 0.073 * avg_weight ^ 0.75 * 24`
 
 Run the function with `mapply()` and the following inputs:
-   - `genus`: `c("Dipodomys", "Peromyscus", "Neotoma")`
-   - `species`: `c("merriami", "maniculatus", "albigula")`
+   - `genus`: `c("Dipodomys", "Chaetodipus", "Neotoma")`
+   - `species`: `c("merriami", "penicillatus", "albigula")`
    - `weight`: `c(45, 22, 156)`
 
 7\. Use `mutate` and `rowwise` to calculate energy budget for each individual in `surveys`. Drop rows with `NA` for the new `energy_budget` column. Group and summarize the data to get an total energy budget for each combination of `year`, `month`, and `day` by summing all of the values of `energy_budget` in each group.
