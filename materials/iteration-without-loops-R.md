@@ -198,7 +198,7 @@ lapply(volumes, est_mass_max)
 * Vegetation type specific equations
 
 ```r
-est_mass_type <- function(volume, veg_type){
+est_mass_type <- function(veg_type, volume){
   if (veg_type == "shrub"){
     mass <- 2.65 * volume^0.9
   } else {
@@ -209,7 +209,7 @@ est_mass_type <- function(volume, veg_type){
 
 est_mass_type(1.6, "shrub")
 plant_types = c("shrub", "tree", "shrub")
-est_mass_type(volumes, plant_types) # Error
+est_mass_type(plant_types, volumes) # Error
 ```
 
 * Doesn't vectorize, due to conditionals
@@ -217,11 +217,17 @@ est_mass_type(volumes, plant_types) # Error
 * `mapply()` because "multiple" inputs
 
 ```r
-mapply(est_mass_type, volumes, plant_types)
+mapply(est_mass_type, plant_types, volumes)
 ```
 
 * First argument is function
 * All other arguments are arguments for the function
+* Names in the output, come from the first vector if it has names or is a char vector
+* Can remove them using `USE.NAMES = FALSE`
+
+```r
+mapply(est_mass_type, plant_types, volumes, USE.NAMES = FALSE)
+```
 
 > Do Task 1 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
 
