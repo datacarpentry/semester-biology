@@ -121,7 +121,7 @@ plant_data |>
 ### Apply/Map functions
 
 * Not all functions in R are vectorized
-* So we need a way to repeatedly run these non-vectorized functions 
+* So we need a way to repeatedly run these non-vectorized functions
 * Use `apply()` and `map()` functions
 * We'll learn the `apply` family of functions since they are very common, but `map` is a very similiar tidyverse option
 
@@ -159,8 +159,8 @@ est_mass_max(volumes)
 * This function take two arguments
 * The first is a single vector
 * The second is the function that we want to "apply" to each element of that vector (or list)
-* So if we use our `volumes` vector and our new `est_mass()` function
-* `sapply()` will run the `est_mass` function on each value in `volumes`, one value at a time
+* So if we use our `volumes` vector and our new `est_mass_max()` function
+* `sapply()` will run the `est_mass_max` function on each value in `volumes`, one value at a time
 
 ```r
 sapply(volumes, est_mass_max)
@@ -259,7 +259,7 @@ plant_data |>
 
 #### One result per group
 
-* We can also combine functions with `group_by` and `summarize` to repeat a calculation for each group 
+* We can also combine functions with `group_by` and `summarize` to repeat a calculation for each group
 * These functions need to take a vector as input and return a single value as output
 * So, let's write a function that calculates the biomass (the sum of the individual masses) for each plant type
 
