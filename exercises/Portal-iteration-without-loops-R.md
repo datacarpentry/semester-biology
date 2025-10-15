@@ -28,7 +28,7 @@ Use `sapply` to apply `classify_by_weight` to the `weights` vector from (1).
 
 4\. Use `mutate`, `classify_by_weight`, and the `surveys` table to produce a data frame that has data on the `year`, `plot_id`, `species_id`, and `weight_class` (where `weight_class` is the output of `classify_by_weight`). Join this data with the `plots` table to add information on `plot_type`. Filter the data to only include data where `plot_type` is "Control".
 
-5\. Group the results of (4) based on `plot_id` and `weight_class` and count the number of individuals in each group.
+5\. Group the results of (4) based on `plot_id` and `weight_class` (using `group_by`) and count the number of individuals in each group (using `summarize`).
 
 6\. Create a function called `energy_budget()` that takes `genus`, `species`, and `weight` as inputs (you'll need to join the `surveys` and `species` tables to get this data together). It should return daily energy needs for each individual in surveys based on the values of `genus` and `species` using the following equations:
    - If `genus` is "Dipodomys" : `energy = 0.065 * avg_weight ^ 0.75 * 24`
