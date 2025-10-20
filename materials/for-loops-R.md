@@ -138,7 +138,7 @@ for (i in 1:length(volumes)){
 }
 ```
 
-> Do Task 5 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
+> Do Tasks 5-6 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
 
 ### Looping with functions
 
