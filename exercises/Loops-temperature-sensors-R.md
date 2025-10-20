@@ -16,11 +16,11 @@ Each file contains two columns:
 - `hour`: Hour of the day (0-23)
 - `temperature`: Temperature reading in Celsius
 
-1. Use a loop to load each sensor data file and calculate the mean temperature for the sensor. Store the results in a vector called `mean_temps`. After the loop display the completed vector.
+1\. Use a loop to load each sensor data file and calculate the mean temperature for the sensor. Store the results in a vector called `mean_temps`. After the loop display the completed vector.
 
-2. Create a copy of your code from (1) and modify it to also find the maximum temperature recorded by each sensor and the temperature range (difference between maximum and minimum temperature) for each sensor. Store these values in vectors called `max_temps`, and `temp_ranges`. After the loop display the completed vectors.
+2\. Create a copy of your code from (1) and modify it to also find the maximum temperature recorded by each sensor and the temperature range (difference between maximum and minimum temperature) for each sensor. Store these values in vectors called `max_temps`, and `temp_ranges`. After the loop display the completed vectors.
 
-3. Create an empty data frame to store all your results and then write a loop to determine the following values for each file and store them in the data frame:
+3\. Create an empty data frame to store all your results and then write a loop to determine the following values for each file and store them in the data frame:
 
 - `sensor_file`: The filename of the sensor data
 - `mean_temp`: Mean temperature for that sensor
@@ -28,4 +28,4 @@ Each file contains two columns:
 - `min_temp`: Minimum temperature recorded
 - `temp_range`: Temperature range (max - min)
 
-4. **Challenge (optional)** Extend your analysis to find the hour when each sensor recorded its highest temperature. Add a column called `peak_hour` to your results data frame and display the data frame.
+4\. **Challenge (optional)** Extend your analysis to find the hour when each sensor recorded its highest temperature. Add a column called `peak_hour` to your results data frame and display the data frame.
