@@ -7,7 +7,7 @@ exercises:
   [
     "Basic For Loops",
     "Size Estimates By Name Loop",
-    "Temperature Sensory Analyais",
+    "Temperature Sensors",
     "DNA or RNA Iteration",
     "Check That Your Code Runs",
     "Multi-file Analysis",
