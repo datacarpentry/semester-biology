@@ -138,7 +138,7 @@ for (i in 1:length(volumes)){
 }
 ```
 
-> Do Task 5 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
+> Do Tasks 5-6 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
 
 ### Looping with functions
 
@@ -251,8 +251,7 @@ for (i in 1:num_files){
 }
 ```
 
-> Do Task 1 of [Multiple-file Analysis]({{ site.baseurl }}/exercises/Loops-multi-file-analysis-R/).
-> **Exercise uses different collar data**
+> Do Task 1 of [Temperature Sensors]({{ site.baseurl }}/exercises/Loops-temperature-sensors-R/).
 
 ### Storing loop results in a data frame
 
@@ -287,8 +286,7 @@ for (i in 1:n_files){
 }
 ```
 
-> Do Task 2 [Multiple-file Analysis]({{ site.baseurl }}/exercises/Loops-multi-file-analysis-R/).
-> **Exercise uses different collar data**
+> Do Tasks 2-3 of [Temperature Sensors]({{ site.baseurl }}/exercises/Loops-temperature-sensors-R/).
 
 ### Subsetting Data (optional)
 
