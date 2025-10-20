@@ -251,6 +251,8 @@ for (i in 1:num_files){
 }
 ```
 
+- Add `show_col_types = FALSE` to `read_csv` to avoid noisy output
+
 > Do Task 1 of [Temperature Sensors]({{ site.baseurl }}/exercises/Loops-temperature-sensors-R/).
 
 ### Storing loop results in a data frame
