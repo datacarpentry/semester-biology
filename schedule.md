@@ -12,9 +12,10 @@ assignments:
     "Making Choices",
     "Repeating Things 1",
     "Repeating Things 2",
-    "Class Choice",
-    "Class Choice",
-    "Class Choice",
+    "Spatial Data 1",
+    "Spatial Data 2",
+    "AI Coding Assistance/Assistants",
+    "Tidy Data",
     "Fall Break",
     "Class Choice",
   ]
