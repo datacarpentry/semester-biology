@@ -13,6 +13,8 @@ download.file("https://datacarpentry.org/semester-biology/data/dinosaur_lengths.
   "dinosaur_lengths.csv")
 download.file("https://datacarpentry.org/semester-biology/data/individual_collar_data.zip",
   "individual_collar_data.zip")
+download.file("https://datacarpentry.github.io/semester-biology/data/temperature_sensor_data.zip",
+  "temperature_sensor_data.zip")
 ```
 
 ### Lecture Notes
