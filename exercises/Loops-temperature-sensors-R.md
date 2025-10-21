@@ -9,7 +9,7 @@ You have deployed multiple temperature sensors at different locations to monitor
 
 - If `temperature_sensor_data.zip` is not already in your working directory download [the zip file]({{ site.baseurl }}/data/temperature_sensor_data.zip) using `download.file()`
 - Unzip it using `unzip()`
-- Obtain a list of all of the files with file names matching the pattern `"sensor-*-temp.csv"` (using `list.files()`)
+- Obtain a list of all of the files with file names matching the pattern `"sensor-"` (using `list.files()`)
 
 Each file contains two columns:
 
