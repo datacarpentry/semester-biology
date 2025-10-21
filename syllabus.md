@@ -11,8 +11,8 @@ phone: 352-294-2081
 schedule: ['Tuesdays, 12:50-1:40 pm ET', 'Wednesdays, 10:40-12:35 pm ET']
 location: "Newins-Ziegler Hall (NZH) 222"
 office_hours: "Fridays, 10-11 am"
-office_hours_location: "Building 150 (and Zoom)"
-TA: Alex Blochel
+office_hours_location: "Building 150 (and [Zoom](https://ufl.zoom.us/j/95159104000?pwd=MDjrM5MYJNbehlc6lEHkWPkPjwS6UC.1))" 
+TA: Alex Blochel 
 TA_email: alexanderblochel@ufl.edu
 ---
 
