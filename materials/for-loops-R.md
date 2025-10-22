@@ -238,9 +238,11 @@ for (i in 1:num_files){
 * "Column Name" = "an empty vector of the correct type"
 
 ```r
-results <- data.frame(file_name = vector(mode = "character", length = num_files),
-                      count = vector(mode = "integer", length = num_files),
-                      min_lat = vector(mode = "numeric", length = num_files))
+results <- data.frame(
+  file_name = vector(mode = "character", length = num_files),
+  count = vector(mode = "integer", length = num_files),
+  min_lat = vector(mode = "numeric", length = num_files)
+)
 ```
 
 * Now let's modify our loop from last time
