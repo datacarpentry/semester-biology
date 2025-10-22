@@ -175,35 +175,6 @@ for (i in 1:length(volumes)){
 masses_apply <- mapply(est_mass_max, volumes, as, bs)
 ```
 
-### Looping over data frames
-
-* By default when R loops over a data frame it loops over the columns
-
-```r
-data <- data.frame(a = as, b = bs, volume = volumes)
-for (i in data) {
-  print(i)
-}
-```
-
-* To loop over rows, loop by index and subset
-
-```r
-for (i in 1:nrow(data)) {
-  print(data[i, ])
-}
-```
-
-* If we want to use a specific column
-
-```r
-masses <- vector(mode="numeric", length=length(volumes))
-for (i in 1:nrow(data)) {
-  mass <- est_mass_max(data[i, "volume"], data[i, "a"], data[i, "b"])
-  masses[i] <- mass
-}
-```
-
 > Do [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
 
 ### Looping over files
@@ -385,6 +356,35 @@ for (i in 1:length(south_edges)) {
   }
 }
 output
+```
+
+### Looping over data frames
+
+* By default when R loops over a data frame it loops over the columns
+
+```r
+data <- data.frame(a = as, b = bs, volume = volumes)
+for (i in data) {
+  print(i)
+}
+```
+
+* To loop over rows, loop by index and subset
+
+```r
+for (i in 1:nrow(data)) {
+  print(data[i, ])
+}
+```
+
+* If we want to use a specific column
+
+```r
+masses <- vector(mode="numeric", length=length(volumes))
+for (i in 1:nrow(data)) {
+  mass <- est_mass_max(data[i, "volume"], data[i, "a"], data[i, "b"])
+  masses[i] <- mass
+}
 ```
 
 ### Sequence along (optional)
