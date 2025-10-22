@@ -253,9 +253,9 @@ for (i in 1:n_files){
   data <- read_csv(filename)
   count <- nrow(data)
   min_lat = min(data$lat)
-  results[i, "file_name"] <- filename
-  results[i, "count"] <- count
-  results[i, "min_lat"] <- min_lat
+  results$file_name[i] <- filename
+  results$count[i] <- count
+  results$min_lat[i] <- min_lat
 }
 ```
 
