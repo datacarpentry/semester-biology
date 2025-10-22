@@ -122,6 +122,40 @@ masses
 
 > End of 1 hour class
 
+
+### Sequence along
+
+```r
+for (i in 1:length(volumes)){
+   mass <- 2.65 * volumes[i] ^ 0.9
+   masses[i] <- mass
+}
+masses
+```
+
+* `1:length(volumes)` makes sense, but can lead to weird results because `a:b` can go backwards
+
+```r
+4:-2
+```
+
+* This means that if we end up trying to loop over an empty vector our loop will actually run twice
+
+```r
+1:length(c())
+1:0
+```
+
+* Use `seq_along()`, which generates a vector of numbers from 1 to `length(volumes)`, or nothing if the vector is empty
+
+```r
+for (i in seq_along(volumes)){
+   mass <- 2.65 * volumes[i] ^ 0.9
+   masses[i] <- mass
+}
+masses
+```
+
 ### Looping over multiple values
 
 * Looping with an index also allows us to access values from multiple vectors
@@ -132,7 +166,7 @@ as <- c(2.65, 1.28, 3.29)
 bs <- c(0.9, 1.1, 1.2)
 volumes = c(1.6, 3, 8)
 masses <- vector(mode="numeric", length=length(volumes))
-for (i in 1:length(volumes)){
+for (i in seq_along(volumes)){
    mass <- as[i] * volumes[i] ^ bs[i]
    masses[i] <- mass
 }
@@ -163,7 +197,7 @@ est_mass_max <- function(volume, a, b){
 
 ```r
 masses <- vector(mode="numeric", length=length(volumes))
-for (i in 1:length(volumes)){
+for (i in seq_along(volumes)){
    mass <- est_mass_max(volumes[i], as[i], bs[i])
    masses[i] <- mass
 }
@@ -207,14 +241,13 @@ data_files = list.files(pattern = "locations-")
 * First create an empty vector to store those counts
 
 ```r
-num_files = length(data_files)
-results <- vector(mode = "integer", length = num_files)
+results <- vector(mode = "integer", length = length(data_files))
 ```
 
 * Then write our loop
 
 ```r
-for (i in 1:num_files){
+for (i in seq_along(data_files)){
   filename <- data_files[i]
   data <- read_csv(filename)
   count <- nrow(data)
@@ -239,9 +272,9 @@ for (i in 1:num_files){
 
 ```r
 results <- data.frame(
-  file_name = vector(mode = "character", length = num_files),
-  count = vector(mode = "integer", length = num_files),
-  min_lat = vector(mode = "numeric", length = num_files)
+  file_name = vector(mode = "character", length = length(data_files)),
+  count = vector(mode = "integer", length = length(data_files)),
+  min_lat = vector(mode = "numeric", length = length(data_files))
 )
 ```
 
@@ -250,7 +283,7 @@ results <- data.frame(
 * We also want to store the filename, which is `data_files[i]`
 
 ```r
-for (i in 1:n_files){
+for (i in seq_along(data_files)){
   filename <- data_files[i]
   data <- read_csv(filename)
   count <- nrow(data)
@@ -310,7 +343,7 @@ counts <- vector(mode = "numeric", length = length(left_edges))
 * Look over the left edges and subset the data occuring within each window
 
 ```r
-for (i in 1:length(south_edges)) {
+for (i in seq_along(south_edges)) {
   data_in_window <- filter(neon_trees, northing >= south_edges[i], northing < north_edges[i])
   counts[i] <- nrow(data_in_window)
 }
@@ -349,8 +382,8 @@ output <- matrix(nrow = length(south_edges), ncol = length(east_edges))
 ```
 
 ```r
-for (i in 1:length(south_edges)) {
-  for (j in 1:length(east_edges)) {
+for (i in seq_along(south_edges)) {
+  for (j in seq_along(east_edges)) {
     data_in_window <- filter(neon_trees,
                             northing >= south_edges[i], northing < north_edges[i],
                             easting >= left_edges[j], easting < right_edges[j],)
@@ -360,7 +393,7 @@ for (i in 1:length(south_edges)) {
 output
 ```
 
-### Looping over data frames
+### Looping over data frames (optional)
 
 * By default when R loops over a data frame it loops over the columns
 
@@ -388,7 +421,3 @@ for (i in 1:nrow(data)) {
   masses[i] <- mass
 }
 ```
-
-### Sequence along (optional)
-
-* `seq_along()` generates a vector of numbers from 1 to `length(volumes)`
