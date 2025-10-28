@@ -14,11 +14,12 @@ language: R
 
 ```r
 library(sf)
-library(stars)
+library(terra)
+library(tidyterra)
 library(ggplot2)
 
 harv_soils <- read_sf("data/harv/harv_soils.shp")
-harv_dtm <- read_stars("data/harv/harv_dtmfull.tif")
+harv_dtm <- rast("data/harv/harv_dtmfull.tif")
 ```
 
 * Let's look at the coordinate reference systems for these two data sets
@@ -34,7 +35,7 @@ st_crs(harv_dtm)
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm)
+  geom_spatraster(data = harv_dtm)
 ```
 
 * It has the large numbers we've seen before on the axes
@@ -42,7 +43,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   geom_sf(data = harv_soils, alpha = 0)
 ```
 
@@ -54,7 +55,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   geom_sf(data = harv_soils, alpha = 0) +
   coord_sf(datum = st_crs(harv_dtm))
 ```
@@ -73,7 +74,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   geom_sf(data = harv_soils, alpha = 0) +
   coord_sf(datum = st_crs(harv_dtm)) +
   theme(axis.text.x = element_text(angle = 45))
@@ -86,7 +87,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   geom_sf(data = harv_soils, alpha = 0) +
   coord_sf(datum = st_crs(harv_dtm)) +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))
@@ -98,7 +99,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   geom_sf(data = harv_soils, alpha = 0) +
   coord_sf(datum = st_crs(harv_dtm)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))

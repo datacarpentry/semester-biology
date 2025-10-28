@@ -7,30 +7,31 @@ language: R
 
 * In a previous lesson we learned how to extract the raster values at points in the landscape
 * We can also extract the values inside of polygons
-* We'll start by loading the `sf` and `stars` packages and the Harvard Forest soils the elevation data
+* We'll start by loading the `sf` and `terra` packages and the Harvard Forest soils the elevation data
 * But this time we'll load a DTM file that covers the entire site
 
 ```r
 library(sf)
-library(stars)
+library(terra)
+library(tidyterra)
 library(ggplot2)
 library(dplyr)
 
-harv_dtm <- read_stars("data/harv/harv_dtmfull.tif")
+harv_dtm <- rast("data/harv/harv_dtmfull.tif")
 harv_soils <- read_sf("data/harv/harv_soils.shp")
 
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   geom_sf(data = harv_soils, fill = "transparent", color = "white")
 ```
 
 * If we want to understand whether the polygon fields are related to the raster we need to extract data about the raster within each polygon
-* We do this using the `aggregate` function just like for points
+* We do this using the `extract` function from terra just like for points
 * The arguments are: the raster, the vector we want to aggregate the values to, and the function we want to use to combine the different pixels
 * Let's calculate the average elevation in each soil polygon
 
 ```r
-elevs_by_soil <- aggregate(harv_dtm, harv_soils, mean)
+elevs_by_soil <- extract(harv_dtm, vect(harv_soils), fun = mean)
 ```
 
 * You can think of this as similar to `group_by` and `summarize` in `dplyr`, but spatial
@@ -39,30 +40,23 @@ elevs_by_soil <- aggregate(harv_dtm, harv_soils, mean)
 * These values are stored in
 
 ```r
-elevs_by_soil$harv_dtmfull.tif
+elevs_by_soil$harv_dtmfull
 ```
 
 * You can add them to our simple features object using your favorite approach
 * I'll use `mutate` from `dplyr`
 
 ```r
-harv_soils_elevs <- mutate(harv_soils, elevation = elevs_by_soil$harv_dtmfull.tif)
+harv_soils_elevs <- mutate(harv_soils, elevation = elevs_by_soil$harv_dtmfull)
 ```
 
-* Or we can use `st_join`
-* To do this we have to first convert `elevs_by_soil` into an `sf` object
+* Or we can bind the columns directly
 
 ```r
-elevs_by_soil <- st_as_sf(elevs_by_soil)
+harv_soils_elevs <- cbind(harv_soils, elevs_by_soil)
 ```
 
-* And then join
-
-```r
-harv_soils_elevs <- st_join(harv_soils, elevs_by_soil, join = st_equals)
-```
-
-* The `join = st_equals` indicates that we only want to match polygons that are the same
+* Since the extract function returns values in the same order as the input polygons, we can directly combine them
 * `st_join` defaults to using `st_intersects`, which means that any polygons that touch each other will be match
 
 * Once we done this then we can make maps using this information

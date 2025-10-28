@@ -14,22 +14,23 @@ language: R
 > * [Projections picture](https://media.opennews.org/cache/06/37/0637aa2541b31f526ad44f7cb2db7b6c.jpg)
 
 * So far we've worked with raster and vector data separately
-* We're using the `stars` package for raster data and the `sf` package for vector
+* We're using the `terra` package for raster data and the `sf` package for vector
 
 ```r
 library(ggplot2)
 library(sf)
-library(stars)
+library(terra)
+library(tidyterra)
 ```
 
 * We'll also load `ggplot2` again for plotting
 
-* For raster data we've loaded it using `read_stars` and plotted it with `geom_stars`
+* For raster data we've loaded it using `rast` and plotted it with `geom_spatraster`
 
 ```r
-dtm_harv <- read_stars("data/harv/harv_dtmCrop.tif")
+dtm_harv <- rast("data/harv/harv_dtmCrop.tif")
 ggplot() +
-  geom_stars(data = dtm_harv)
+  geom_spatraster(data = dtm_harv)
 ```
 
 * For vector data we've loaded it using `read_sf` and plotted it with `geom_sf`
@@ -44,7 +45,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = dtm_harv) +
+  geom_spatraster(data = dtm_harv) +
   geom_sf(data = plots_harv)
 ```
 
@@ -113,7 +114,7 @@ plots_harv_utm <- st_transform(plots_harv, st_crs(dtm_harv))
  
 ```r
 ggplot() +
-  geom_stars(data = dtm_harv) +
+  geom_spatraster(data = dtm_harv) +
   geom_sf(data = plots_harv_utm)
 ```
 

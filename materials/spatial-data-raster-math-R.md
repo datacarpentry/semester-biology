@@ -21,19 +21,22 @@ Panel 4: Equation: DSM (Digital Surface Model) - DTM (Digital Terrain Model) = C
 * Do this by subtracting the DTM from the DSM
 
 ```r
-library(stars)
+library(terra)
 
-dtm_harv <- read_stars("data/harv/harv_dtmcrop.tif")
-dsm_harv <- read_stars("data/harv/harv_dsmcrop.tif")
+dtm_harv <- rast("data/harv/harv_dtmcrop.tif")
+dsm_harv <- rast("data/harv/harv_dsmcrop.tif")
 chm_harv <- dsm_harv - dtm_harv
 ```
 
 * Math happens on a cell by cell (elementwise) basis
 * Can then graph this new raster
 
-```
+```r
+library(ggplot2)
+library(tidyterra)
+
 ggplot() +
-  geom_stars(data = chm_harv)
+  geom_spatraster(data = chm_harv)
 ```
 
 * This lets us see where there are the tallest trees on the landscape and where there are none

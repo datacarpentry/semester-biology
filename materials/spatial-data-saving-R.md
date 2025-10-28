@@ -9,36 +9,38 @@ language: R
 * Let's start where we left off when cropping data
 
 ```r
-library(stars)
+library(terra)
+library(tidyterra)
 library(sf)
 library(ggplot2)
 
 harv_boundary <- read_sf("data/harv/harv_boundary.shp")
-harv_dtm <- read_stars("data/harv/harv_dtmfull.tif")
+harv_dtm <- rast("data/harv/harv_dtmfull.tif")
 
-harv_dtm_cropped <- st_crop(harv_dtm, harv_boundary)
+harv_dtm_cropped <- crop(harv_dtm, vect(harv_boundary))
 
-bbox <- st_bbox(c(xmin = 731000, ymin = 4713000, xmax = 732000, ymax = 4714000), crs = st_crs(dtm_harv))
-harv_dtm_small <- st_crop(harv_dtm, bbox)
-harv_soils_small <- st_crop(harv_soils, bbox)
+bbox <- ext(731000, 732000, 4713000, 4714000)
+harv_dtm_small <- crop(harv_dtm, bbox)
+harv_soils <- read_sf("data/harv/harv_soils.shp")
+harv_soils_small <- st_crop(harv_soils, st_bbox(c(xmin = 731000, ymin = 4713000, xmax = 732000, ymax = 4714000), crs = st_crs(harv_dtm)))
 ```
 
-### Writing stars raster data
+### Writing terra raster data
 
 * To save data we use the `write` versions of the `read` functions
-* So to save the DTM that was cropped to Harvard Forest boundary we use `write_stars`
+* So to save the DTM that was cropped to Harvard Forest boundary we use `writeRaster`
 * The first argument is the object we want to write and the second is the file name
 * The format of the raster will be determined by the file extension
 * To save as geotiff, which we've been working with, we'll use `.tif
 
 ```r
-write_stars(harv_dtm_cropped, "harv_dtm_small.tif")
+writeRaster(harv_dtm_cropped, "harv_dtm_small.tif")
 ```
 
 * We can see that this worked by reading it back in
 
 ```r
-read_stars("harv_dtm_small.tif")
+rast("harv_dtm_small.tif")
 ```
 
 * We can see this is the cropped data because it's dimensions are < 150 x 150

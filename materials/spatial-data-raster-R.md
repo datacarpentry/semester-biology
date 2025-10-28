@@ -32,7 +32,7 @@ The matrix is then shown as green pixels again to represent plotting the raster.
 
 ### Importing and exploring
 
-* We import raster data using the `read_stars()` function from the `stars` package
+* We import raster data using the `rast()` function from the `terra` package
 * We'll start by importing some elevation data collected from an airplane using an instrument called LIDAR
 * One of the values that LIDAR can generate is a Digital Terrain Model or DTM, which is the elevation of the ground
 
@@ -40,8 +40,9 @@ The matrix is then shown as green pixels again to represent plotting the raster.
 A brown line along the top of the terrain indicates the Digital Terrain Model]({{ site.baseurl }}/materials/digital-terrain-model.png)
 
 ```r
-library(stars)
-dtm_harv <- read_stars("data/harv/harv_dtmcrop.tif")
+library(terra)
+library(tidyterra)
+dtm_harv <- rast("data/harv/harv_dtmcrop.tif")
 ```
 
 * Looking at this object provides information on the data it contains
@@ -63,14 +64,14 @@ dtm_harv
 * We'll use `ggplot` since that's the data visualization tool we're using for this course
 * Useful for making nice maps combined with other figures
 
-* There is a special geom for plotting `stars` raster data `geom_stars`
+* There is a plot terra raster data with ggplot2, we'll use the `tidyterra` package which provides `geom_spatraster`
 * Since it is raster data it doesn't require an aesthetic
 
 ```r
 library(ggplot2)
 
 ggplot() +
-  geom_stars(data = dtm_harv)
+  geom_spatraster(data = dtm_harv)
 ```
 
 * For spatial data we're going to put the data in the geom calls instead of `ggplot()` because we are often trying to combine data of different types from different objects into a single map
@@ -84,7 +85,7 @@ ggplot() +
 
 ```r
 ggplot() +
-  geom_stars(data = dtm_harv) +
+  geom_spatraster(data = dtm_harv) +
   scale_fill_viridis_c()
 ```
 

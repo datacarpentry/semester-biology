@@ -10,8 +10,9 @@ language: R
 > ```r
 > library(ggplot2)
 > library(sf)
-> library(stars)
-> dtm_harv <- read_stars("data/HARV/HARV_dtmCrop.tif")
+> library(terra)
+> library(tidyterra)
+> dtm_harv <- rast("data/HARV/HARV_dtmCrop.tif")
 > plots_harv <- read_sf("data/HARV/harv_plots.shp")
 > ```
 
@@ -30,21 +31,21 @@ language: R
 plots_harv_utm <- st_transform(plots_harv, st_crs(dtm_harv))
 ```
 
-* To get the raster values associated with vector data we use the `st_extract` function
-* `st_extract` takes two main arguments
+* To get the raster values associated with vector data we use the `extract` function from terra
+* `extract` takes two main arguments
 * The raster object that we want to extract information from
 * The vector object indicating where we want the to get the information from the raster
 * To extract the average elevation of each of our plots
 
 ```r
-plot_elevations = st_extract(dtm_harv, plots_harv_utm)
+plot_elevations = extract(dtm_harv, vect(plots_harv_utm))
 ```
 
 * If we look at `plot_elevations` we can see that it is a simple features collection with an elevation for each point
 * We can access the values directly using the `$`
 
 ```r
-plot_elevations$harv_dtmcrop.tif
+plot_elevations$HARV_dtmCrop
 ```
 
 * The name of the vector comes from the raster file name
@@ -53,14 +54,14 @@ plot_elevations$harv_dtmcrop.tif
 
 ```r
 library(dplyr)
-plot_harv_elevations <- mutate(plots_harv_utm, elevations = plot_elevations$harv_dtmcrop.tif)
+plot_harv_elevations <- mutate(plots_harv_utm, elevations = plot_elevations$HARV_dtmCrop)
 ```
 
 * We can add these data to the information in our original `plots_harv_utm` object using a spatial join, which will combine things from the same locations
 * Works like `inner_join()`
 
 ```r
-plot_harv_elevations <- st_join(plots_harv_utm, plot_elevations)
+plot_harv_elevations <- cbind(plots_harv_utm, plot_elevations)
 ```
 
 > Do Tasks 4-5 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
@@ -93,20 +94,20 @@ st_crs(plots_harv_utm)$units
 
 ```r
 ggplot() +
-  geom_stars(data = dtm_harv) +
+  geom_spatraster(data = dtm_harv) +
   geom_sf(data = plots_harv_buffered, fill = "transparent", color = "white")
 ```
 
-* Now we can run `st_extract()` on that buffered data
+* Now we can run `extract()` on that buffered data
 
 ```r
-plot_elevations_buffered <- st_extract(dtm_harv, plots_harv_buffered)
+plot_elevations_buffered <- extract(dtm_harv, vect(plots_harv_buffered), fun = mean)
 plot_elevations_buffered
 ```
 
 * This initially creates a stars object, but we can convert it back to a simple features object
 
 ```r
-plot_elevations_buffered <- st_as_sf(plot_elevations_buffered)
-plot_elevations_buffered
+plot_harv_elevations_buffered <- cbind(plots_harv_buffered, plot_elevations_buffered)
+plot_harv_elevations_buffered
 ```
