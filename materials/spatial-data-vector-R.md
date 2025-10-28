@@ -3,7 +3,7 @@ layout: page
 element: notes
 title: Spatial Data Vector
 language: R
---- 
+---
 
 > Remember to download and put into data subdirectory:
 >
@@ -38,25 +38,26 @@ Polygons: Shows two polygons composed of connected sets of x,y points where the 
 
 * Work with vector data using the `sf` package
 * We can read this data into R using `read_sf`
-* Let's load in the plot data we just look at 
+* Let's load in the plot data we just look at
 
 ```r
 library(sf)
+
 plots_harv <- read_sf("data/harv/harv_plots.shp")
+plots_harv
 ```
 
-* When read read the data in we see information about it including
+* If we view this object we'll see that it is a data frame like object with one row per vector object
 * The data has 7 features
 * Each feature is one object, either a point, a line, or a polygon
 * The geometry type is "POINT", which means that the features are points
-* The data has 3 fields
+* The data has 2 fields
 * Each field is a piece of information that is associated with each feature
 * And there is information on the minimum and maximum spatial values in the dataset
-* If we view this object we'll see that it is a data frame with one row per vector object
 * There are three columns
-* The first fields is `plot_id` a numerical plot ID
-* The second field is `plot_type`
-* The third field is where the spatial information is stored and which is called `geometry`
+* The first column/field is `plot_id` a numerical plot ID
+* The second column/field is `plot_type`
+* The third column is where the spatial information is stored and which is called `geometry`
 * Since this is point data each object is stored as a pair of x and y coordinates
 * This is a "simple feature collection", which is like a special kind of data frame that can be used by spatial tools
 
@@ -77,7 +78,7 @@ ggplot() +
   geom_sf(data = plots_harv, mapping = aes(color = plot_type))
 ```
 
-* Just like in scatter plots this mapping tells ggplot to "color the points based on `plot_type"
+* Just like in scatter plots this mapping tells ggplot to "color the points based on `plot_type`"
 
 
 ### Combining multiple spatial layers
