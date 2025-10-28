@@ -3,7 +3,7 @@ layout: page
 element: notes
 title: Cropping and Masking Spatial Data
 language: R
---- 
+---
 
 * Spatial data is often larger than we need it to be
 * E.g., Raster data is typically a large rectangular block of data
@@ -13,12 +13,14 @@ language: R
 * Including the DTM file that covers the entire site
 
 ```r
-library(stars)
-library(sf)
+library(dplyr)
 library(ggplot2)
+library(sf)
+library(terra)
+library(tidyterra)
 
 harv_boundary <- read_sf("data/HARV/harv_boundary.shp")
-harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
+harv_dtm <- rast("data/HARV/HARV_dtmFull.tif")
 
 ```
 
@@ -26,7 +28,7 @@ harv_dtm <- read_stars("data/HARV/HARV_dtmFull.tif")
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   scale_fill_viridis_c() +
   geom_sf(data = harv_boundary, alpha = 0)
 ```
@@ -36,13 +38,13 @@ ggplot() +
 * There are two general approaches to cropping data
 * The first is to crop a raster to only keep the portion that falls inside some vector data
 * For example, we often only want the portion of a raster dataset that falls inside the boundar of our study site
-* We can do this using the `st_crop` function
+* We can do this using the `crop` function
 * The first argument is the raster we want to crop
 * The second argument is the vector data we want to crop it to
 * Let's crop our raster to only include points inside the site boundary
 
 ```r
-harv_dtm_cropped <- st_crop(harv_dtm, harv_boundary)
+harv_dtm_cropped <- crop(harv_dtm, harv_boundary)
 ```
 
 * We can see that the data has been cropped by looking at the extents
@@ -53,7 +55,7 @@ harv_dtm_cropped
 ```
 
 * `harv_dtm_cropped` has smaller values for `from` and `to` in both the `x` and `y` dimensions
-* Let's plot the cropped raster to see what it looks like 
+* Let's plot the cropped raster to see what it looks like
 
 ```r
 ggplot() +
