@@ -3,7 +3,7 @@ layout: page
 element: notes
 title: Spatial Data Vector
 language: R
---- 
+---
 
 > Remember to download and put into data subdirectory:
 >
@@ -14,48 +14,40 @@ language: R
 > * [Projections picture](https://media.opennews.org/cache/06/37/0637aa2541b31f526ad44f7cb2db7b6c.jpg)
 
 * So far we've worked with raster and vector data separately
-* We're using the `stars` package for raster data and the `sf` package for vector
+* We're using the `terra` package for raster data and the `sf` package for vector
 
 ```r
 library(ggplot2)
 library(sf)
-library(stars)
+library(terra)
 ```
 
 * We'll also load `ggplot2` again for plotting
 
-* For raster data we've loaded it using `read_stars` and plotted it with `geom_stars`
-
 ```r
-dtm_harv <- read_stars("data/harv/harv_dtmCrop.tif")
-ggplot() +
-  geom_stars(data = dtm_harv)
-```
-
-* For vector data we've loaded it using `read_sf` and plotted it with `geom_sf`
-
-```r
+dtm_harv <- rast("data/harv/harv_dtmcrop.tif")
 plots_harv <- read_sf("data/harv/harv_plots.shp")
+
 ggplot() +
+  geom_spatraster(data = dtm_harv) +
   geom_sf(data = plots_harv)
 ```
 
-* Now let's plot them together
+* The data looks like it's all in the same location, but let's look at the actual positions
 
 ```r
-ggplot() +
-  geom_stars(data = dtm_harv) +
-  geom_sf(data = plots_harv)
+dtm_harv
+plots_harv
 ```
 
-* That wasn't what we expected
-* We don't see the raster data and there appears to just be one point and an empty map
+* `plots_harv` has numbers that line up with the graph
+* `dtm_harv` has very different numbers
 * Why?
 
 
 ### Projections
 
-* The reason this graph doesn't work is that the two datasets have different projections
+* The reason the positions are so different is that the two datasets have different projections
 * We can see this by going back to the individual plots
 * The axes on the vector plot latitude and longitude values in degrees, with numbers in the low 40s and low 70s
 * The axes on the raster plot are much different, with values in the hundreds of thousands
@@ -67,9 +59,8 @@ ggplot() +
 ![Map of the United States in four projections. Mercator, U.S. National Atlas Equal Area, UTM Zone 11N, and WGS 84. The maps all appear different.]({{ site.baseurl }}/materials/projections.jpg)
 
 * The "coordinate reference system" or "CRS" indicates how this is done
-* Coordinate Reference System (*`crs` or `projection`*) is different from `raster`.
 
-* We can use `st_crs` to look up the CRS for this spatial data
+* We can use `st_crs` from `sf` (or `crs` from `terra`) to look up the CRS for this spatial data
 
 ```r
 st_crs(dtm_harv)
@@ -92,13 +83,14 @@ st_crs(plots_harv)
 * The CRS to transform it to
 * There are a variety of ways to indicate a CRS
 * Including numeric codes and "well known text" of WKT representations for different coordinate reference systems
-* Look at the CRS for `dtm_harv` 
+* Look at the CRS for `dtm_harv`
 * See WKT
 * Copy numeric EPSG code
 
 ```r
 plots_harv_utm <- st_transform(plots_harv, 32618)
 st_crs(plots_harv_utm)
+plots_harv_utm
 ```
 
 * Often the easiest thing to do when combining geospatial data is to match all objects to one of the existing CRS's
@@ -110,10 +102,10 @@ plots_harv_utm <- st_transform(plots_harv, st_crs(dtm_harv))
 ```
 
 * Because these two objects now have the same CRS the plot will look like we'd hoped it would
- 
+
 ```r
 ggplot() +
-  geom_stars(data = dtm_harv) +
+  geom_spatraster(data = dtm_harv) +
   geom_sf(data = plots_harv_utm)
 ```
 
@@ -124,14 +116,14 @@ ggplot() +
 * When choosing a CRS you want to think about what aspects of the world you want to preserve, like distance or area
 * UTM, which stands for Universal Transverse Mercator, is one of the most commonly used projections in ecological research
 * It accuractely represents local geospatial information and preserves distance
-* It is primarily designed to work within different zones and so isn't generally used at scales larger than a state 
+* It is primarily designed to work within different zones and so isn't generally used at scales larger than a state
 * Lat-longs are a common way of collecting data, but don't preserve any key aspects of the data
 * The Azimuthal Equal Area projection maintains area, so if the amount of area being worked with is important it's a good projection
 * So, for most of you UTM within your research zone will be the right way to go
 * If you work at larger scales think about what it is most important to preserve and look for a transformation that does that
 
 
-### Summary 
+### Summary
 
 * To represent geospatial information from the surface of the sphere-like earth we have to stretch it to make it flat
 * We do this using projections and that are represented as "coordinate reference systems" or "CRS"
