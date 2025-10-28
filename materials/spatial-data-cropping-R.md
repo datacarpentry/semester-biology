@@ -3,7 +3,7 @@ layout: page
 element: notes
 title: Cropping and Masking Spatial Data
 language: R
---- 
+---
 
 * Spatial data is often larger than we need it to be
 * E.g., Raster data is typically a large rectangular block of data
@@ -13,19 +13,20 @@ language: R
 * Including the DTM file that covers the entire site
 
 ```r
-library(stars)
-library(sf)
 library(ggplot2)
+library(sf)
+library(terra)
+library(tidyterra)
 
 harv_boundary <- read_sf("data/harv/harv_boundary.shp")
-harv_dtm <- read_stars("data/harv/harv_dtmfull.tif")
+harv_dtm <- rast("data/harv/harv_dtmfull.tif")
 ```
 
 * If we plot this data we see that we have elevation data for a large square surrounding the site
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm) +
+  geom_spatraster(data = harv_dtm) +
   scale_fill_viridis_c() +
   geom_sf(data = harv_boundary, fill = "transparent")
 ```
@@ -35,13 +36,13 @@ ggplot() +
 * There are two general approaches to cropping data
 * The first is to crop a raster to only keep the portion that falls inside some vector data
 * For example, we often only want the portion of a raster dataset that falls inside the boundar of our study site
-* We can do this using the `st_crop` function
+* We can do this using the `crop` function from `terra`
 * The first argument is the raster we want to crop
 * The second argument is the vector data we want to crop it to
 * Let's crop our raster to only include points inside the site boundary
 
 ```r
-harv_dtm_cropped <- st_crop(harv_dtm, harv_boundary)
+harv_dtm_cropped <- crop(harv_dtm, harv_boundary)
 ```
 
 * We can see that the data has been cropped by looking at the extents
@@ -51,26 +52,31 @@ harv_dtm
 harv_dtm_cropped
 ```
 
-* `harv_dtm_cropped` has smaller values for `from` and `to` in both the `x` and `y` dimensions
-* Let's plot the cropped raster to see what it looks like 
+* `harv_dtm_cropped` has smaller values for `nrow` and `ncol
+* Let's plot the cropped raster to see what it looks like
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm_cropped) +
+  geom_spatraster(data = harv_dtm_cropped) +
   scale_fill_viridis_c() +
   geom_sf(data = harv_boundary, fill = "transparent")
 ```
 
+* The extent of the raster has been reduced
+* But only to a box based on the maximum and minimum values of x and y in the polygon
+* The raster has been "cropped" to the limits of the vector object but rasters are always rectangular
+* We can gray out the values of outside the polygone by adding `mask = TRUE`
+* _Add `mask = TRUE`_
+
 * We now see colored values only for the part of the part of the raster inside the boundary
 * But we still see gray boxes outside of it
 * These boxes indicate that the values have been replaced with null values
-* The raster has been "cropped" to the limits of the vector object but rasters are always rectangular
 * So these null values fill the space outside of the vector object but within it's x and y extent
 * We can choose to not show these null values by setting their color to be transparent
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm_cropped) +
+  geom_spatraster(data = harv_dtm_cropped) +
   scale_fill_viridis_c(na.value = "transparent") +
   geom_sf(data = harv_boundary, fill = "transparent")
 ```
@@ -80,7 +86,7 @@ ggplot() +
 * Do this with an optional argument `crop = FALSE`
 
 ```r
-harv_dtm_masked <- st_crop(harv_dtm, harv_boundary, crop = FALSE)
+harv_dtm_masked <- mask(harv_dtm, harv_boundary)
 harv_dtm_masked
 ```
 
@@ -89,7 +95,7 @@ harv_dtm_masked
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm_masked) +
+  geom_spatraster(data = harv_dtm_masked) +
   scale_fill_viridis_c(na.value = "transparent") +
   geom_sf(data = harv_boundary, fill = "transparent")
 ```
@@ -100,13 +106,13 @@ ggplot() +
 
 * The other common approach to cropping is to crop spatial objects to only include those within a bounding box
 * E.g., we might only want to explore a specific area within Harvard Forest
-* We still use `st_crop` to do this but we pass it a square region instead of a polygon
+* We still use `crop` to do this but we pass it a square region instead of a polygon
 * To do this we need to know the values for the region we want to crop
 * To figure out these values let's modify our plot to plot in the CRS of our data
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm_cropped) +
+  geom_spatraster(data = harv_dtm_cropped) +
   scale_fill_viridis_c(na.value = "transparent") +
   geom_sf(data = harv_boundary, fill = "transparent") +
   coord_sf(datum = st_crs(harv_dtm))
@@ -126,7 +132,7 @@ bbox <- st_bbox(c(xmin = 731000, ymin = 4713000, xmax = 732000, ymax = 4714000),
 * So let's crop a square in this region here
 
 ```r
-harv_dtm_small <- st_crop(harv_dtm, bbox)
+harv_dtm_small <- crop(harv_dtm, bbox)
 ```
 
 * We can also perform bounding box cropping on vector data
@@ -142,7 +148,7 @@ harv_soils_small <- st_crop(harv_soils, bbox)
 
 ```r
 ggplot() +
-  geom_stars(data = harv_dtm_small) +
+  geom_spatraster(data = harv_dtm_small) +
   scale_fill_viridis_c(na.value = "transparent") +
   geom_sf(data = harv_soils_small, fill = "transparent")
 ```

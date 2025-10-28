@@ -22,10 +22,11 @@ points: [45, 45, 10]
 Place this code at the start of the assignment to load all the required packages.
 
 ```r
-library(stars)
-library(sf)
-library(ggplot2)
 library(dplyr)
+library(ggplot2)
+library(sf)
+library(terra)
+library(tidyterra)
 ```
 
 {% include assignment.html %}
