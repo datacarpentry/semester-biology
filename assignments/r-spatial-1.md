@@ -11,7 +11,7 @@ points: [90, 10]
 
 > Following this assignment students should be able to:
 >
-> - import, view properties, and plot a `raster` 
+> - import, view properties, and plot a `raster`
 > - perform simple `raster` math
 > - import, view properties, and plot vector data
 > - extract points from a `raster` using a shapefile
@@ -21,7 +21,8 @@ points: [90, 10]
 Place this code at the start of the assignment to load all the required packages.
 
 ```r
-library(stars)
+library(terra)
+library(tidyterra)
 library(sf)
 library(ggplot2)
 library(dplyr)
