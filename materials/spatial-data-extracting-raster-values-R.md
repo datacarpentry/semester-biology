@@ -65,6 +65,16 @@ plot_harv_elevations <- extract(dtm_harv, plots_harv_utm, bind = TRUE) |>
   st_as_sf()
 ```
 
+* This produces a version where the extracted values are named based on the raster, so it's often a good idea to rename that column
+* _Add to above_
+
+```r
+plot_harv_elevations <- extract(dtm_harv, plots_harv_utm, bind = TRUE) |>
+  st_as_sf() |>
+  rename(elevations = harv_dtmcrop)
+```
+
+
 > Do Tasks 4-5 of [Canopy Height from Space]({{ site.baseurl }}/exercises/Neon-canopy-height-from-space-R).
 
 ### Extract raster data at points with buffers
