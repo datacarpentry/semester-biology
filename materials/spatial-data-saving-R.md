@@ -5,7 +5,7 @@ title: Saving Spatial Data From R
 language: R
 ---
 
-* Once we've new spatial objects in R we often want to save them so they can be used later or shared with others
+* Once we've created new spatial objects in R we often want to save them so they can be used later or shared with others
 * Let's start where we left off when cropping data
 
 ```r
@@ -26,7 +26,7 @@ harv_soils_small <- crop(harv_soils, bbox)
 * So to save the DTM that was cropped to Harvard Forest boundary we use `writeRaster`
 * The first argument is the object we want to write and the second is the file name
 * The format of the raster will be determined by the file extension
-* To save as geotiff, which we've been working with, we'll use `.tif
+* To save as geotiff we use `.tif`
 
 ```r
 writeRaster(harv_dtm_small, "harv_dtm_small.tif")
@@ -52,4 +52,12 @@ write_sf(harv_soils_small, "harv_soils_small.shp")
 
 * If we look in the `Files` tab we can see this created a full set of the files that make up a single shape file
 
-> Do Tasks 5 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
+### Saving maps
+
+- We can save ggplot maps in the same way we save other ggplots
+
+```r
+ggsave("harv_map.png")
+```
+
+> Do Tasks 5-6 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
