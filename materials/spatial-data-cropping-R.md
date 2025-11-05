@@ -35,7 +35,7 @@ ggplot() +
 
 * There are two general approaches to cropping data
 * The first is to crop a raster to only keep the portion that falls inside some vector data
-* For example, we often only want the portion of a raster dataset that falls inside the boundar of our study site
+* For example, we often only want the portion of a raster dataset that falls inside the boundary of our study site
 * We can do this using the `crop` function from `terra`
 * The first argument is the raster we want to crop
 * The second argument is the vector data we want to crop it to
@@ -52,7 +52,7 @@ harv_dtm
 harv_dtm_cropped
 ```
 
-* `harv_dtm_cropped` has smaller values for `nrow` and `ncol
+* `harv_dtm_cropped` has smaller values for `nrow` and `ncol`
 * Let's plot the cropped raster to see what it looks like
 
 ```r
@@ -65,12 +65,11 @@ ggplot() +
 * The extent of the raster has been reduced
 * But only to a box based on the maximum and minimum values of x and y in the polygon
 * The raster has been "cropped" to the limits of the vector object but rasters are always rectangular
-* We can gray out the values of outside the polygone by adding `mask = TRUE`
+* We can set the values outside the polygone to `NA` by adding `mask = TRUE`
 * _Add `mask = TRUE`_
 
-* We now see colored values only for the part of the part of the raster inside the boundary
-* But we still see gray boxes outside of it
-* These boxes indicate that the values have been replaced with null values
+* We now see colored values only for the part of the raster inside the boundary
+* But we still see gray boxes indicating null values outside of it
 * So these null values fill the space outside of the vector object but within it's x and y extent
 * We can choose to not show these null values by setting their color to be transparent
 
@@ -83,7 +82,6 @@ ggplot() +
 
 * Cropping removes the portion of the raster that is outside the x/y extent of the vector
 * If we want to keep the full dimensions of the raster but convert all values outside the vector to NA we "mask" the data instead of cropping it
-* Do this with an optional argument `crop = FALSE`
 
 ```r
 harv_dtm_masked <- mask(harv_dtm, harv_boundary)
@@ -150,7 +148,7 @@ harv_soils_small <- st_crop(harv_soils, bbox)
 ggplot() +
   geom_spatraster(data = harv_dtm_small) +
   scale_fill_viridis_c(na.value = "transparent") +
-  geom_sf(data = harv_soils_small, fill = "transparent")
+  geom_sf(data = harv_soils_small, fill = "transparent", color = "white")
 ```
 
 > Do Task 4 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
