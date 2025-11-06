@@ -14,7 +14,7 @@ The `harv` directory contains spatial data for Harvard Forest including raster d
 
 1. Make a map of the `harv_soils` data with the polygons colored based on `DRAINAGE_C` column. Use the viridis color ramp.
 2. Make a map of the `harv_soils` data with one facet (i.e., subplot) for each category in the `DRAINAGE_C` column.
-3. Using the `harv_dtmfull.tif` and `have_dsmfull.tif` rasters create a canopy height model (DSM - DTM) and extract the maximum canopy height (i.e., the CHM value) within each soils polygon. To get the maximum canopy height instead of the mean value use the `max` function instead of `mean`. Display a vector of the resulting canopy height.
+3. Using the `harv_dtmfull.tif` and `harv_dsmfull.tif` rasters create a canopy height model (DSM - DTM) and extract the maximum canopy height (i.e., the CHM value) within each soils polygon. To get the maximum canopy height instead of the mean value use the `max` function instead of `mean`. Display a vector of the resulting canopy height.
 4. Add the vector of canopy heights from (3) to the original `sf` object and display the resulting data frame.
 5. Make a map of the soil polygons colored based on their maximum canopy height. Use the viridis color ramp.
 6. Make a map that is the same as (5), but preserves the UTM coordinates on the axes.
