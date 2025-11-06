@@ -6,3 +6,5 @@ Gemfile.lock
 *.Rhistory
 .jekyll-metadata
 node_modules/
+.Rproj.user
+*.Rproj
