@@ -70,20 +70,25 @@ protection against bad data being entered
 
 ### Entering Dates
 
-* E.g., if we enter the date 2020-02-26 and hit Enter it will get converted to 2/26/2020
+* We want to store dates using the ISO standard
+* But if we enter the date 2020-02-26 and hit Enter it will get converted to 2/26/2020
 * One solution to this is to tell Excel that the dates are text
 * Select the Date column
 * `Home` -> `Number` -> Dropdown -> Text
 * This will ensure that dates will remain in the form you entered them and will export properly for analysis in R or other languages
+* But do this before you enter the dates or you'll end up with integers
 
-> Demo a data entry form in Excel or Google Forms
+* The other solution is to set the specific date format for the column
+* `Right Click` -> `Format Cells` -> set the type of YEAR-MO-DAY
+* Then export to CSV and it will preserve the formatting
 
 > Do [Exercise 2 - Data Entry Validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/).
 
-### Quality Control
+### Demo a data entry form in Excel or Google Forms (optional)
+
+### Quality Control (optional)
 
 * Looking for bad data that has already been entered
 * Sort
 * Graph
 * Check for realistic ranges of values
-
