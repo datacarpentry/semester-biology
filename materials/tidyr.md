@@ -28,13 +28,13 @@ library(dplyr)
 > Copy link to Western Ghats tree data from datasets page
 
 ```r
-raw_data = read_tsv("http://datacarpentry.org/semester-biology/data/Macroplot_data_Rev.txt")
+raw_data = read_tsv("Macroplot_data_Rev.txt")
 ```
 
 > View data
 
 * Data on tree girth from the Western Ghats
-* Western Ghats is a mountainous region on the western edge of the Indian peninsula considered one of the works 8 biodiversity hotspots. 
+* Western Ghats is a mountainous region on the western edge of the Indian peninsula considered one of the worlds 8 biodiversity hotspots. 
 * When a tree had multiple stems the diameter of each stem was entered in a separate column
 * What would a better structure be?
 
@@ -45,7 +45,7 @@ raw_data = read_tsv("http://datacarpentry.org/semester-biology/data/Macroplot_da
 * We want one `treeid` for each row because there is one tree for each row
 
 ```r
-clean_data <- raw_data %>%
+clean_data <- raw_data |>
   mutate(treeid = 1:n())
 ```
 
@@ -53,26 +53,35 @@ clean_data <- raw_data %>%
     * Removes redundant columns
     * Arguments:
         * `data.frame`
-        * Columns to include (or not include)
+        * Columns to pivot
         * `names_to`: the name of the new column to put the column names in
         * `values_to`: the name of the new column to put the column values in
 
 ```r
-clean_data <- raw_data %>%
-  mutate(treeid = 1:nrow(raw_data)) %>%
-  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth")
+clean_data <- raw_data |>
+  mutate(treeid = 1:nrow(raw_data)) |>
+  pivot_longer(
+    TreeGirth1:TreeGirth5,
+    names_to = "stem",
+    values_to = "girth"
+  )
 ```
 
 * The colon specifies all columns starting at `TreeGirth1` and ending at `TreeGirth5`
+* Alternatively we could specify all columns starting with `TreeGirth`
+
+```r
+starts_with("TreeGirth")
+```
 
 > View data
 
 * Still has zeros for where there were no stems, so filter these out
 
 ```r
-clean_data <- raw_data %>%
-  mutate(treeid = 1:nrow(raw_data)) %>%
-  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
+clean_data <- raw_data |>
+  mutate(treeid = 1:nrow(raw_data)) |>
+  pivot_longer(starts_with("TreeGirth"), names_to = "stem", values_to = "girth") |>
   filter(girth != 0)
 ```
 
@@ -89,10 +98,10 @@ clean_data <- raw_data %>%
         * Regular expression
 
 ```r
-clean_data <- raw_data %>%
-  mutate(treeid = 1:nrow(raw_data)) %>%
-  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
-  filter(girth != 0) %>%
+clean_data <- raw_data |>
+  mutate(treeid = 1:nrow(raw_data)) |>
+  pivot_longer(starts_with("TreeGirth"), names_to = "stem", values_to = "girth") |>
+  filter(girth != 0) |>
   extract(stem, 'stem', 'TreeGirth(.)')
 ```
 
@@ -102,13 +111,13 @@ clean_data <- raw_data %>%
 * This gives us the result we want, with just the stem number in the `stem` column
 * But you may notice that this number is on the left side of the column, not the right
 * That's because the number is still stored as a character, because it was extracted from a string
-* To convert it to it's actual type we can add the optional argument `convert = TRUE` to `extract
+* To convert it to it's actual type we can add the optional argument `convert = TRUE` to `extract`
 
 ```r
-clean_data <- raw_data %>%
-  mutate(treeid = 1:nrow(raw_data)) %>%
-  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
-  filter(girth != 0) %>%
+clean_data <- raw_data |>
+  mutate(treeid = 1:nrow(raw_data)) |>
+  pivot_longer(starts_with("TreeGirth"), names_to = "stem", values_to = "girth") |>
+  filter(girth != 0) |>
   extract(stem, 'stem', 'TreeGirth(.)', convert = TRUE)
 ```
 
@@ -127,10 +136,10 @@ clean_data <- raw_data %>%
         * Separator value, character, or position
 
 ```r
-clean_data <- raw_data %>%
-  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") %>%
-  filter(girth != 0) %>%
-  extract(stem, 'stem', 'TreeGirth(.)') %>%
+clean_data <- raw_data |>
+  pivot_longer(TreeGirth1:TreeGirth5, names_to = "stem", values_to = "girth") |>
+  filter(girth != 0) |>
+  extract(stem, 'stem', 'TreeGirth(.)') |>
   separate(SpCode, c('genus', 'species'), 4)
 ```
 
@@ -140,13 +149,13 @@ clean_data <- raw_data %>%
 * Count the number of stems of each species on each plot
 
 ```r
-stem_counts <- clean_data %>% 
-  group_by(PlotID, genus, species) %>% 
-  summarize(count = n())
+stem_counts <- clean_data |> 
+  group_by(PlotID, genus, species) |> 
+  summarize(count = n(), .groups = 'drop')
 ```
 
 * Software for running analysis requires cross-tab (or wide) data
-* Site in rows, species in columns, counts in cells
+* PlotID in rows, species in columns, counts in cells
 * First need a single species ID
 * `unite`
     * Combine values from multiple columns into one
@@ -156,7 +165,7 @@ stem_counts <- clean_data %>%
         * Columns to combine
 
 ```r
-stem_counts_wide <- stem_counts %>% 
+stem_counts_wide <- stem_counts |> 
   unite('species_id', genus, species)
 ```
 
@@ -167,11 +176,10 @@ stem_counts_wide <- stem_counts %>%
         * `data.frame`
         * Name of column to use for wide columns
         * Name of column containing the values for the cells
-        * Optional `fill` argument for what to put in empty cells
 
 ```r
-stem_counts_wide <- stem_counts %>% 
-  unite(species_id, genus, species) %>%
+stem_counts_wide <- stem_counts |> 
+  unite(species_id, genus, species) |>
   pivot_wider(names_from = species_id, values_from = count)
 ```
 
@@ -179,8 +187,8 @@ stem_counts_wide <- stem_counts %>%
 * But we can replace this with something else using `values_fill`
 
 ```r
-stem_counts_wide <- stem_counts %>% 
-  unite(species_id, genus, species) %>%
+stem_counts_wide <- stem_counts |> 
+  unite(species_id, genus, species) |>
   pivot_wider(names_from = species_id,
               values_from = count,
               values_fill = 0)
@@ -191,34 +199,39 @@ stem_counts_wide <- stem_counts %>%
 * Some write out a value once and then leave the following rows blank
 
 ```r
-gappy_data <- read_csv("http://www.datacarpentry.org/semester-biology/data/gappy-data.csv",
-                       na = "")
-gappy_data
+gappy_data <- read_csv("http://www.datacarpentry.org/semester-biology/data/gappy-data.csv")
+gappy_data |>
+  print(n = 28)
 ```
 
 * This works well for humans, but not for computers
 * Can fill in these gaps using `fill`
 
 ```r
-clean_data <- gappy_data %>%
+clean_data <- gappy_data |>
   fill(Species)
+clean_data |>
+  print(n = 28)
 ```
 
 * Fills down by default, but other directions are possible
 
 * Often data only includes observed values, but we need to list other values
 * Missing zeros or `NA`'s
+* In our data we have 3 species and up to 10 individuals/species
+* But only 28 values because some species have data for <10 individuals
+* Use `complete` to provide one row for each unique combination of the values in the columns provided
   
 ```r
-clean_data <- gappy_data %>%
-  fill(Species) %>%
+clean_data <- gappy_data |>
+  fill(Species) |>
   complete(Species, Individual)
 ```
 
-* Could also use this to add zeros to our long `stem_counts` data frame
+* This fills in `NA`'s for any combination of the species ID and the individual number (numbers 1-10) not already in the data
+* Can also use this to add zeros to our long `stem_counts` data frame
 
 ```r
 stem_counts |>
-  ungroup() |>
   complete(PlotID, nesting(genus, species), fill = list(count = 0))
 ```
