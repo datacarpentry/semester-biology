@@ -35,7 +35,9 @@ time: 1
 - UF Navigator
 - Navigate to: https://chat.ai.it.ufl.edu/
 - Sign in
-- Ask it to do something without specifying language
+
+- So, many of you have already used chat interfaces
+- "How do you drop NA's from a table in R"
 - Copy and paste exercise from https://datacarpentry.github.io/semester-biology/exercises/Capstone-length-of-floods-R/
 - Copy the resulting code into RStudio
 - Give it a quick read for anything bad
@@ -51,10 +53,6 @@ time: 1
   - Including relevant urls
 - If the resulting code doesn't run, tell model what happened and ask for fixes
 - This set of practices is so common they are now integrated into many IDEs
-
-#### Improving learning with LLMs
-
-- Learning mode
 
 ### Assistants
 
@@ -83,7 +81,6 @@ time: 1
   - Move code to the editor either in the current file or a new one
   - Copy it
 - Can then keep or undo changes
-- Changing to `Agent` model
 
 #### Inline assistant
 
@@ -97,15 +94,38 @@ time: 1
 - Look at the autocomplete
 - Interpret output
 
-
 #### Debugging
 
--
+- *Let autocomplete do as much of this as possible*
 
-#### Vide coding (agentic code development)
+```R
+install.packages("ratdat")
 
-- Instead of writing code yourself with assitance from an LLM just have the LLM do all of the work
-- Provide feedback to the LLM to make changes to the code
+library(ratdat)
+
+data("surveys")
+surveys
+
+
+# Write a dplyr pipeline that returns only species starting with the letter "D" and where weights are greater than 45
+# then calculate the average weight of each species
+```
+
+- Run the pipeline and debug. If the model doesn't error introduce an error
+- There will soon be Fix and Explain options that pop up in the error message itself to simplify this process
+
+#### Vibe coding & Agent-based approaches
+
+- Who's heard of vibe coding before?
+- Instead of writing code yourself with assitance from an LLM just have the LLM write a full first draft
+- Provide feedback to the LLM to make improvements to the code
 - Anyone have experience with this yet?
 
+- Change to `Agent` model
+- This will allow the model to actually run code for you
+- By default it will write the code, show it to you, and ask you if you want to run it
+- Be careful, I relatively recently asked a model to perform a git operation I didn't remember how to do and the resulting code would have deleted by work from the last hour
+
 - "Using R create species distribution models for Great Egrets, White Ibis, and Roseatte Spoonbills. Use these models to make predictions for the distribution of those species in 26 years. Create a website displaying the current model predictions and the future predictions."
+- Explore the code, emphasize need to read it
+- "Download the relevant data from gbif, update the code to use that data, and check that it works"
