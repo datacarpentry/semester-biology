@@ -14,10 +14,10 @@ assignments:
     "Repeating Things 2",
     "Spatial Data 1",
     "Spatial Data 2",
-    "AI Coding Assistance/Assistants",
+    "AI Assistance and Assistants for Coding",
     "Tidy Data",
     "Fall Break",
-    "Class Choice",
+    "Version Control",
   ]
 ---
 
