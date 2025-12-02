@@ -38,10 +38,9 @@ time: 1
 
 - So, many of you have already used chat interfaces
 - "How do you drop NA's from a table in R"
-- Copy and paste exercise from https://datacarpentry.github.io/semester-biology/exercises/Capstone-length-of-floods-R/
 - Copy the resulting code into RStudio
 - Give it a quick read for anything bad
-- Run it and walk through what happens
+- Run it
 
 #### Improving output from LLMs
 
@@ -81,11 +80,27 @@ time: 1
   - Move code to the editor either in the current file or a new one
   - Copy it
 - Can then keep or undo changes
+- More useful if we give it context
+
+```R
+library(dplyr)
+library(readr)
+
+surveys <- read_csv("https://ndownloader.figshare.com/files/2292172")
+```
+
+- Save file
+- *Show that file is in the context in chat*
+- "Add a dplyr pipeline that removes rows with NA in the weight column from the surveys table"
+- We could copy this code over, or we can change the settings for the assistant to let it edit our files
+- Switch from "Ask" to "Edit"
+- Rerun query
+- Read and accept the edits
 
 #### Inline assistant
 
 - In the text editor `Ctrl-i`
- - "Write a dplyr pipeline that takes data in a table named surveys, filters it to only keep rows with no NAs, only keep the year, month, day, and weight columns"
+ - "Only keep the year, month, day, and weight columns"
  - Accept changes
 
 #### Autocomplete
@@ -93,26 +108,25 @@ time: 1
 - Hit enter after the last line
 - Look at the autocomplete
 - Interpret output
+- We typically don't want an LLM guessing at what analysis we want
+- Start it with a comment
+
+```R
+# calculate the average weight and number of individuals in each year in each month
+```
 
 #### Debugging
 
 - *Let autocomplete do as much of this as possible*
 
 ```R
-install.packages("ratdat")
-
-library(ratdat)
-
-data("surveys")
-surveys
-
-
-# Write a dplyr pipeline that returns only species starting with the letter "D" and where weights are greater than 45
-# then calculate the average weight of each species
+# Write a dplyr pipeline that returns only species starting with the letter "D" and
+# where weights are greater than 46 then calculate the average weight of each species
 ```
 
 - Run the pipeline and debug. If the model doesn't error introduce an error
-- There will soon be Fix and Explain options that pop up in the error message itself to simplify this process
+- Highlight code and select `Review`
+- There will soon be Fix and Explain options that pop up in the error message itself to further simplify this process
 
 #### Vibe coding & Agent-based approaches
 
