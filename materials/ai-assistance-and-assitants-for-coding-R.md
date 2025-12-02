@@ -16,7 +16,7 @@ time: 1
 - Writing code with them when lacking the background to evaluate that code can also be dangerous
   - They are good at giving you an answer, even if it's the wrong one & code that is wrong but runs is the scariest kind of code in science
   - Bad code can accidentally destroy your work
-  - Black hat hackers are finding ways to get models to generate code that lead to compromised computers
+  - Malicious hackers are finding ways to get models to generate code that lead to compromised computers
 - Cost
   - Start out with generous free plans
   - Most companies already increasing prices (and still losing money)
