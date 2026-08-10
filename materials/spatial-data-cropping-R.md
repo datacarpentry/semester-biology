@@ -1,7 +1,7 @@
 ---
 layout: page
 element: notes
-title: Cropping and Masking Spatial Data
+title: Cropping Spatial Data
 language: R
 ---
 
@@ -81,22 +81,6 @@ ggplot() +
 ```
 
 * Cropping removes the portion of the raster that is outside the x/y extent of the vector
-* If we want to keep the full dimensions of the raster but convert all values outside the vector to NA we "mask" the data instead of cropping it
-
-```r
-harv_dtm_masked <- mask(harv_dtm, harv_boundary)
-harv_dtm_masked
-```
-
-* We can see that it still has the same dimensions as the original raster, 150 x 150
-* But if we plot it in the same way as the cropped data we will only see the values inside the vector
-
-```r
-ggplot() +
-  geom_spatraster(data = harv_dtm_masked) +
-  scale_fill_viridis_c(na.value = "transparent") +
-  geom_sf(data = harv_boundary, fill = "transparent")
-```
 
 > Do Task 3 of [Cropping NEON Data]({{ site.baseurl }}/exercises/Neon-cropping-neon-data-R).
 
