@@ -1,7 +1,7 @@
 ---
 layout: page
 element: notes
-title: Cropping/Masking Spatial Data
+title: Cropping Spatial Data
 language: R
 --- 
 
@@ -52,7 +52,6 @@ ggplot() +
 * We now see colored values only for the part of the part of the raster inside the boundary
 * But we still see gray boxes outside of it
 * These boxes indicate that the values have been replaced with null values
-* Since it's the full extent of the original raster this is technically "masking" instead of "cropping"
 * We can not show these null values by setting their color to be transparent
 
 ```r

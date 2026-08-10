@@ -13,7 +13,7 @@ points: [45, 45, 10]
 >
 > - Map polygon data based on properties
 > - Aggregating raster data inside of polygons
-> - Crop and mask spatial data
+> - Crop spatial data
 > - Save spatial data
 > - Create vector data based on locations data in csv files
 
