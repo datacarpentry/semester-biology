@@ -16,3 +16,4 @@ language: R
 * Additional information
 
   * [ggplot2 documentation](https://ggplot2.tidyverse.org/reference/)
+  * [R Graph Gallery](https://r-graph-gallery.com/)
