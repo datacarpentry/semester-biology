@@ -14,3 +14,4 @@ language: R
  
 * [Data Analysis and Visualization in R for Ecologists - Working with data](http://www.datacarpentry.org/R-ecology-lesson/working-with-data.html)
 * [dplyr vignette](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html)
+* [Mapping between dplyr and base R](https://dplyr.tidyverse.org/articles/base.html)
