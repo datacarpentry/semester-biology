@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Tidy Data
 language: R
-exercises: ['Improving Messy Data', 'Data entry validation in Excel', 'Clean Up Untidy Data', 'Tree Biomass', 'Check That Your Code Runs']
-points: [20, 20, 20, 30, 10]
+exercises: ['Improving Messy Data', 'Data entry validation in Excel', 'Clean Up Untidy Data']
+points: [30, 30, 20]
 ---
 
 ### Learning Objectives
