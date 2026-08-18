@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout source.
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install jekyll site dependencies.
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
+          ruby-version: '3.3'
           bundler-cache: true
 
       - name: Install pa11y-ci dependencies.
