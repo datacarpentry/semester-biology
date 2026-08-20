@@ -3,6 +3,7 @@ layout: page
 title: Assignment Schedule
 assignments:
   [
+    "Tidy Data",
     "Introduction to R and RStudio",
     "Data in Tables",
     "Grouping & Joining Data",
@@ -12,12 +13,11 @@ assignments:
     "Making Choices",
     "Repeating Things 1",
     "Repeating Things 2",
-    "Spatial Data 1",
-    "Spatial Data 2",
-    "AI Assistance and Assistants for Coding",
-    "Tidy Data",
+    "Class's Choice",
+    "Class's Choice",
+    "Class's Choice",
     "Fall Break",
-    "Version Control",
+    "Class's Choice",
   ]
 ---
 
