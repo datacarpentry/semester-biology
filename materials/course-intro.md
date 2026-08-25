@@ -77,6 +77,9 @@ Each step of the course builds on the last step and students who get behind ofte
 
 ### Syllabus
 
+#### Assignments
+
+* 90% of the grade
 * Grading
   * Code runs, uses the requested approach, and produces approximately the correct answer: 100%
   * Attempts to solve the problem and makes some progress using the core concept, but does not produce approximately the correct answer or demonstrate basic comfort with the core concept: 50%
@@ -84,10 +87,16 @@ Each step of the course builds on the last step and students who get behind ofte
 * Challenge exercises
 * Give it a read and let me know if you have any questions
 
+#### Quizzes
+
+* To help students develop rapid recall for core concepts there will be short (5-10 minute) quizzes each week.
+* Quizzes will be equally weighted and count for 10% of the final grade.
+* Quizzes are closed book via Canvas
+* If you review ref sheets and/or flash cards briefly each week you should do great
+
 ### Office Hours
 
-* Friday, 10-11 am, in-person in Building 150, or on Zoom
-
+* Friday, 1-2 pm, in-person in Building 150, or on Zoom
 
 ### Canvas
 
