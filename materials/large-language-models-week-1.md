@@ -11,15 +11,17 @@ language: R
 * Claude?
 * Gemini?
 * Who uses one of these at least once a week?
-* What about AI Coding Assistants - like Claude Code or Codex?
-* Who has used one of these?
+* What about AI Coding Assistants - like Claude Code, Codex, GitHub Copilot?
+* Who uses one of these regularly?
 * What do you think about them?
 
 ### Introduction
 
 * These are all large language models
+* Predict the new token (or word) based on preceeding words
+* They work by being trained on the entire internet
 * Since there is lots of code written by software developers on the internet they are good at generating code
-* And since there are lots of lessons on how to learn to code on the internet they can also be good generating text that explains code
+* And since there are lots of lessons on how to learn to code on the internet they can also be good at generating text that explains code
 
 * There are a variety of meaningful ethical concerns about using LLMs
 * Environmental, Intellectual Property, and Labor are the big 3
@@ -43,7 +45,6 @@ language: R
 * Using LLMs to solve exercises has been compared to [taking a forklift to the gym to lift weights](https://havn.blog/2025/03/01/on-the-need-for-friction.html)
 * The goal of lifting weights is to get stronger, so having the forklift move the weights for you doesn't help
 * In this class practicing the concepts and the specific implementation goes hand in hand
-* Even if you plan to have a model write all of your code in the long run the learning you'll do through the exercises is still important for working effectively with coding assistants
 * To put that somewhat more enjoyably here's quick short from Hero of Coding with Strangers
 
 <iframe width="674" height="1198" src="https://www.youtube.com/embed/OhaGNTiMXmU" title="Sora AI is Like Batman&#39;s Utility Belt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -61,11 +62,13 @@ language: R
 
 * Due to security and privacy risks and Florida and federal law the only approved way to use LLMs at UF is through NaviGator
 * It also has the nice benefit of being free
+* The chat-based interface is available at:
 * *Go to* https://chat.ai.it.ufl.edu
 * *Sign in*
 * Through this system you have access to a bunch of different models
 * Hover over them to see what they are approved for
-* For this class you can use any of these models, but depending on your research you might be restricted to a subset of them for your own work
+* For this class any of these models is fine
+* For research, it depending on your work you might be restricted to a subset of them
 * I tend to use Claude, but any of the newer Claude, Gemini, or OpenAI/GPT models will be sufficient for anything we're doing
 
 ### Demo
@@ -101,22 +104,26 @@ language: R
 
 ### Learning to leverage LLMs
 
-* LLMs can be powerful tools for writing code
-* So for those of you interested in learning how to use them we'll be spending some time learning how to use them more effectively
-* But doing so will be optional
-* Last year the models still weren't that great, so we focused on fundamentals and didn't explore AI until briefly at the end of the semester
-* But since then there was a step change in these models for writing code
-* So, this year we're going try to engage with this a little bit each week
-* I'm still figuring out what this looks like
-* In fact everyone who teaches coding is figuring how to do this
+* Last year the models still weren't that great
+* So we have a shorter version of this discussion at the start of class
+* And then didn't explore AI until briefly at the end of the semester
+* But since then there has been a step change in these models for writing code
 
-* Generally we're going to focus on concepts first
+* Do you want to spend a short amount of time each week talking about how to effectively use AI for supporting your coding? 
+* *Respond contingent on answer, notes below focused on if the answer is Yes*
+
+* So, this year we're going try to engage with this a little bit each week
+* Doing so will be optional
+* I'm still figuring out what this looks like
+* In fact everyone who teaches coding is figuring what this looks like
+
+* Generally we're going to stick to focusing on concepts first
 * Understanding the basic idea of how computational approaches work remains central to coding and working as a scientist
 * We're going to learn how to implement things ourselves in R
 * This helps us learn how to think computationally
 * And LLM output for science is typically code and you'll be responsible for the output of that code
 * Which means you need to understand it
-* What I'm going to try to add at the end of each week is some introduction to how to engage with LLMs for coding effectively
+* What I'm going to try to add (briefly) at the end of each week is some introduction to how to engage with LLMs for coding effectively
 
 * This is going to very much be an experiment
 * So feedback on what is working or not working for you will be very helpful
