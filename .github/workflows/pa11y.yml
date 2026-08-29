@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout source.
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install jekyll site dependencies.
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
+          ruby-version: '3.3'
           bundler-cache: true
 
       - name: Install pa11y-ci dependencies.
@@ -27,6 +27,8 @@ jobs:
 
       - name: Run pa11y-ci.
         run: npm run pa11y-ci:sitemap 2>&1 | tee pa11y_output.txt
+        env:
+        PUPPETEER_ARGS: --no-sandbox --disable-setuid-sandbox
         
       - name: Read pa11y_output file.
         id: pa11y_output
