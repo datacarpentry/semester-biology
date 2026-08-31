@@ -7,6 +7,7 @@
     <th width="50">Lesson</th>
     <th width="50">Lecture</th>
     <th width="50">Ref</th>
+    <th width="50">Cards</th>
     <th width="50">Assignment</th>
   </tr>
 
@@ -27,6 +28,7 @@
         {% if lecturepage.title == assignment and lecturepage.element == 'lecture' and lecturepage.language == language %}
           {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
           {% capture ref_card_url %}{{ lecturepage.url | remove: 'lectures' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/reference-cards/' }}{% endcapture %}
+          {% capture flash_card_url %}{{ lecturepage.url | remove: 'lectures' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/flash-cards/' }}{% endcapture %}
           {% break %}
         {% endif %}
       {% else %}
@@ -34,10 +36,13 @@
           {% capture language %}{{ lecturepage.language }}{% endcapture %}
           {% capture lecture_link %}{{ lecturepage.url | prepend: site.baseurl }}{% endcapture %}
           {% capture ref_card_url %}{{ lecturepage.url | remove: 'lectures' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/reference-cards/' }}{% endcapture %}
+          {% capture flash_card_url %}{{ lecturepage.url | remove: 'lectures' | remove: '/' | prepend: 'https://dcsem-solutions.weecology.org/flash-cards/' }}{% endcapture %}
           {% break %}
         {% endif %}
       {% endif %}
       {% assign lecture_link = nil %}
+      {% assign ref_card_url = nil %}
+      {% assign flash_card_url = nil %}
     {% endfor %}
 
     {% for readingpage in site.pages %}
@@ -106,6 +111,14 @@
       {% else %}
         <td align="center"><font color="f1f1f1">
           <i class="fa fa-file fa-lg"></i></font></td>
+      {% endif %}
+
+      {% if flash_card_url %}
+      <td align="center"><a href="{{ flash_card_url }}" aria-label="Week {{ forloop.index }} Flash Cards">
+        <i aria-hidden="true" class="fa fa-files-o fa-lg"></i></a></td>
+      {% else %}
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-files-o fa-lg"></i></font></td>
       {% endif %}
 
       {% if assignment_link %}
