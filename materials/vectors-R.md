@@ -84,7 +84,7 @@ mean(count_na, na.rm = TRUE)
 mean(count_na, TRUE)
 ```
 
-> Do [Nulls in Vectors]({{ site.baseurl }}/exercises/Vectors-nulls-in-vectors-R/).
+> Do [Nulls in Vectors 1-3]({{ site.baseurl }}/exercises/Vectors-nulls-in-vectors-R/).
 
 ### Working with multiple vectors
 
