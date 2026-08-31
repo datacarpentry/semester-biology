@@ -7,6 +7,7 @@
     <th width="50">Lesson</th>
     <th width="50">Lecture</th>
     <th width="50">Ref</th>
+    <th width="50">Flash</th>
     <th width="50">Assignment</th>
   </tr>
 
@@ -90,7 +91,7 @@
       {% else %}
         <td align="center"><font color="f1f1f1">
           <i class="fa fa-play-circle fa-lg"></i></font></td>
-      {% endif %}      
+      {% endif %}
 
       {% if lecture_link %}
         <td align="center"><a href="{{ lecture_link }}" aria-label="Week {{ forloop.index }} Lecture Notes">
