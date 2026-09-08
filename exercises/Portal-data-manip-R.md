@@ -12,7 +12,7 @@ Load the file into R using `read_csv()`.
 ***Do not use pipes for this exercise.***
 
 1. Use `select()` and `arrange()` to create a new data frame with just the `year`, `month`,
-   `day`, and `species_id` columns with the rows sorted by `plot_id`.
+   `day`, and `plot_id` columns with the rows sorted by `plot_id`.
 2. Use `mutate()`, `select()`, and `drop_na()` to create a new
    data frame with
    the `year`, `species_id`, and weight **in kilograms** of each individual,
