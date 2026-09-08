@@ -26,3 +26,4 @@ download.file("https://www.datacarpentry.org/semester-biology/data/penguins.csv"
 * [Working with Tabular Data (in dplyr)]({{ site.baseurl }}/materials/dplyr)
 * [Basic Code Execution Order]({{ site.baseurl }}/materials/code-execution-R)
 * [Combining Data Manipulations]({{ site.baseurl }}/materials/combining-data-manip)
+* [AI - Introduction and Basic Prompting]({{ site.baseurl }}/materials/ai-intro-basic-prompting)
