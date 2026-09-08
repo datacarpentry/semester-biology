@@ -127,7 +127,7 @@ select(surveys, year, month, day)
 select(surveys, month, day, year)
 ```
 
-> Do [Exercise 1.1-1.2, Shrub Volume Data Basics Select 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 1.1-1.2, Shrub Volume Data Basics Select 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-select-R).
 > * Start your assignment file
 > * Load the readr and dplyr packages
 > * Load the shrub-volume-data.csv file using `read_csv`
@@ -186,7 +186,7 @@ arrange(surveys, desc(weight))
 arrange(surveys, desc(plot_id), year, month, day)
 ```
 
-> Do [Exercise 3.1-3.2, Shrub Volume Mutate 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 3.1-3.2, Shrub Volume Data Basics Mutate 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-mutate-R).
 
 #### Filter
 
@@ -241,7 +241,7 @@ filter(surveys, species_id == "DS" & year > 1995)
 filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 ```
 
-> Do [5 Shrub Volume Data Basics Filter]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [5 Shrub Volume Data Basics Filter]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-filter-R).
 
 * There is also a shorter way to write these kinds of `or` conditions for a single column
 
@@ -293,4 +293,4 @@ drop_na(surveys, hindfoot_length)
 drop_na(surveys, hindfoot_length, weight)
 ```
 
-> Do [Exercise 7, Shrub Volume Data Basics Filter NA]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 7, Shrub Volume Data Basics Filter NA]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-filter-na-R).
