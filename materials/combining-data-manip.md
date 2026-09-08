@@ -39,7 +39,7 @@ ds_data_by_year <- arrange(ds_data_no_null_weight, year)
 ds_weight_by_year <- select(ds_data_by_year, year, weight)
 ```
 
-> Do [Exercise 4, Portal Data Manipulation Exercise 1-2]({{ site.baseurl }}/exercises/Portal-data-manip-R)
+> Do [Exercise 11.1, Portal Data Manipulation]({{ site.baseurl }}/exercises/Portal-data-manip-R)
 
 ### Pipes
 
@@ -90,7 +90,7 @@ ds_weight_by_year <- surveys |>
   select(year, weight)
 ```
 
-> Do [Exercise 4, Portal Data Manipulation Pipes 1]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
+> Do [Exercise 12.1, Portal Data Manipulation Pipes]({{ site.baseurl }}/exercises/Portal-data-manip-pipes-R).
 
 ### The magrittr pipe
 
