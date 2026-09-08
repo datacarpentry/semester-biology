@@ -20,6 +20,7 @@ download.file("https://ndownloader.figshare.com/files/2292172", "surveys.csv")
 download.file("https://ndownloader.figshare.com/files/3299474", "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483", "species.csv")
 download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-data.csv", "shrub-volume-data.csv")
+download.file("https://www.datacarpentry.org/semester-biology/data/penguins.csv", "penguins.csv")
 ```
 
 ### Introduction to tabular data
@@ -126,7 +127,7 @@ select(surveys, year, month, day)
 select(surveys, month, day, year)
 ```
 
-> Do [Exercise 1, Shrub Volume Data Basics 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 1.1-1.2, Shrub Volume Data Basics Select 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 > * Start your assignment file
 > * Load the readr and dplyr packages
 > * Load the shrub-volume-data.csv file using `read_csv`
@@ -185,7 +186,7 @@ arrange(surveys, desc(weight))
 arrange(surveys, desc(plot_id), year, month, day)
 ```
 
-> Do [Exercise 1, Shrub Volume Data Basics 3-4]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 3.1-3.2, Shrub Volume Mutate 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 #### Filter
 
@@ -240,7 +241,7 @@ filter(surveys, species_id == "DS" & year > 1995)
 filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
 ```
 
-> Do [Shrub Volume Data Basics 5-7]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [5 Shrub Volume Data Basics Filter]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
 
 * There is also a shorter way to write these kinds of `or` conditions for a single column
 
@@ -292,4 +293,4 @@ drop_na(surveys, hindfoot_length)
 drop_na(surveys, hindfoot_length, weight)
 ```
 
-> Do [Exercise 1, Shrub Volume Data Basics 8]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).
+> Do [Exercise 7, Shrub Volume Data Basics Filter NA]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-R).

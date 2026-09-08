@@ -17,6 +17,8 @@ download.file("https://ndownloader.figshare.com/files/3299483",
               "species.csv")
 download.file("https://www.datacarpentry.org/semester-biology/data/shrub-volume-data.csv",
               "shrub-volume-data.csv")
+download.file("https://www.datacarpentry.org/semester-biology/data/penguins.csv",
+              "penguins.csv")
 ```
 
 ### Lecture Notes
