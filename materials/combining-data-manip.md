@@ -30,7 +30,7 @@ download.file("https://ndownloader.figshare.com/files/3299483",
 * Use that variable later in the code
 * Repeat
 
-* Obtain the data for only DS, with no null weights, sorted by year, with only the year and and weight columns
+* Obtain the data for only DS, with no null weights, sorted by year, with only the year and weight columns
 
 ```r
 ds_data <- filter(surveys, species_id == "DS")
@@ -43,7 +43,7 @@ ds_weight_by_year <- select(ds_data_by_year, year, weight)
 
 ### Pipes
 
-* Intermediate variables can get cumbersome if their are lots of steps.
+* Intermediate variables can get cumbersome if there are lots of steps
 * `|>` ("pipe") takes the output of one command and passes it as input to the
   next command
 * Want to take the mean of a vector
@@ -96,30 +96,8 @@ ds_weight_by_year <- surveys |>
 
 * You will also see another type of pipe character `%>%`
 * This is the original pipe in R and you had to load the magrittr package to use it (this gets loaded automatically by dplyr)
-* Either pipe is fine for this class
-    * `|>` will work everywhere as long as you have a new enough version of R
-    * magrittr has some fancier functionality that may be useful in some cases
+* `|>` is now considered the standard unless you know you need special magrittr functionality
 
 ### Keyboard Shortcut
 
 * Shortcut: Ctrl-Shift-m
-* You can change this to give the base R pipe
-    * Tools -> Global Options -> Code -> Use native pipe operator
-
-### Pipe to other arguments
-
-* To pipe the result of a line to something other than the first argument use the placehold `_`
-* This only works for named arguments
-* Let's fit a linear model at the end of our dplyr pipeline
-* lm takes a formula as the first argument tells it what columns to use for the response and driver variables
-* The second argument tells it where the data is
-* It needs to be named for the place holder to work
-
-```r
-surveys |>
-  filter(species_id == "DS") |>
-  drop_na(weight) |>
-  arrange(year) |>
-  select(year, weight) |>
-  lm(weight ~ year, data = _)
-```

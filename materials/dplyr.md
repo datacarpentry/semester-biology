@@ -223,31 +223,17 @@ filter(surveys, species_id != "DS")
 filter(surveys, species_id == "DS", year > 1995)
 ```
 
-* Alternatively we can use the `&` symbol, which stands for "and"
-
-```r
-filter(surveys, species_id == "DS" & year > 1995)
-```
-
-* Note that there is no comma in this case
-* The entire clause is a single combined condition
-* This approach is mostly useful for building more complex conditions
-
-* "or" means that one or more of the conditions must be true
-* Do this using `|`
+* Sometimes we also want to check a single column to see if it matches any of a set of values
+* Do this using `%in%`
 * To get data on all of the *Dipodomys* species
-
-```r
-filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
-```
-
-> Do [5 Shrub Volume Data Basics Filter]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-filter-R).
-
-* There is also a shorter way to write these kinds of `or` conditions for a single column
 
 ```r
 filter(surveys, species_id %in% c("DS", "DM", "DO"))
 ```
+
+* `%in%` checks whether the value in `species_id` matches any of the values in the vector `c("DS", "DM", "DO")`
+
+> Do [5 Shrub Volume Data Basics Filter]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-data-basics-filter-R).
 
 
 ### Dropping null values

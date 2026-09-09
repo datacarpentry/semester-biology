@@ -16,4 +16,4 @@ Get familiar with the data by importing it using `read_csv()` and use `dplyr` to
 
 1. Filter the data to include only plants with heights greater than 5 (using `filter`).
 2. Filter the data to include only plants with heights greater than 4 and widths greater than 2 (using `,` or `&` to include two conditions).
-3. Filter the data to include only plants from Experiment 1 or Experiment 3 (using `|` for "or").
+3. Filter the data to include only plants from Experiment 1 or Experiment 3 (using `%in%`).
