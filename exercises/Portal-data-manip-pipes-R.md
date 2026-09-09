@@ -9,7 +9,7 @@ If the file [`surveys.csv`](https://ndownloader.figshare.com/files/2292172) is n
 
 Load the file into R using `read_csv()`.
 
-Use pipes (either `|>` or `%>%`) to combine the following operations to manipulate the data.
+Use pipes (`|>`) to combine the following operations to manipulate the data.
 
 1. Use `select()` and `arrange()` to create a new data frame with just the `year`, `month`,
    `day`, `species_id`, and `plot_id` columns with the rows sorted by `species_id`.

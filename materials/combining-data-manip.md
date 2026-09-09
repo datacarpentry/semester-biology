@@ -96,15 +96,11 @@ ds_weight_by_year <- surveys |>
 
 * You will also see another type of pipe character `%>%`
 * This is the original pipe in R and you had to load the magrittr package to use it (this gets loaded automatically by dplyr)
-* Either pipe is fine for this class
-    * `|>` will work everywhere as long as you have a new enough version of R
-    * magrittr has some fancier functionality that may be useful in some cases
+* `|>` is now considered the standard unless you know you need special magrittr functionality
 
 ### Keyboard Shortcut
 
 * Shortcut: Ctrl-Shift-m
-* You can change this to give the base R pipe
-    * Tools -> Global Options -> Code -> Use native pipe operator
 
 ### Pipe to other arguments
 
