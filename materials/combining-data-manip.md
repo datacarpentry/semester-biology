@@ -30,7 +30,7 @@ download.file("https://ndownloader.figshare.com/files/3299483",
 * Use that variable later in the code
 * Repeat
 
-* Obtain the data for only DS, with no null weights, sorted by year, with only the year and and weight columns
+* Obtain the data for only DS, with no null weights, sorted by year, with only the year and weight columns
 
 ```r
 ds_data <- filter(surveys, species_id == "DS")
@@ -43,7 +43,7 @@ ds_weight_by_year <- select(ds_data_by_year, year, weight)
 
 ### Pipes
 
-* Intermediate variables can get cumbersome if their are lots of steps.
+* Intermediate variables can get cumbersome if there are lots of steps
 * `|>` ("pipe") takes the output of one command and passes it as input to the
   next command
 * Want to take the mean of a vector
