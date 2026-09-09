@@ -24,11 +24,11 @@ filter(surveys, species_id == "DS" & year > 1995)
 ```
 
 * "or" means that one or more of the conditions must be true
-* Do this using `|`
+* When checking a single column against a set of possible values, do this using `%in%`
 * Say we wanted data on all of the *Dipodomys* species.
 
 ```
-filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
+filter(surveys, species_id %in% c("DS", "DM", "DO"))
 ```
 
 ### Filtering by aggregated properties

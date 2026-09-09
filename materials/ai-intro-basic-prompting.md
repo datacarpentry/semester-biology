@@ -10,8 +10,8 @@ time: 1
 
 - Working effectively with AI requires that you understanding the concepts
 - But it reduces the need for remembering specific syntax
-- E.g., It's crucial to understand the idea of filtering the data, what it does, and how `and` and `or` work
-- But it matters less if you quickly remember that you create an `or` condition using the `|`
+- E.g., It's crucial to understand the idea of filtering the data, what it does, and how combining multiple conditions works
+- But it matters less if you quickly remember the how to write `%in%`
 
 ## Be able to read the code
 
