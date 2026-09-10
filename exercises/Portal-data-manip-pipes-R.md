@@ -20,6 +20,6 @@ Use pipes (`|>`) to combine the following operations to manipulate the data.
    need to create a new column for hindfoot length in cm by dividing the `hindfoot_length` column by 10.
 3. Use `filter()` and `select()` to get the `year`, `month`, `day`, and `species_id`
    columns for all of the rows in the data frame where species_id is `"OT"`.
-4. Use `select()`, `filter()`, and `arrange()` to produce a data frame with `plot_id`,
+4. Use `select()` and `filter()` to produce a data frame with `plot_id`,
    `species_id`, `weight`, and `hindfoot_length`, where the species is `"DM"` or `"DS"`
    and `hindfoot_length` is greater than 35. Exclude NA values for both `weight` and `hindfoot_length`.
