@@ -16,7 +16,7 @@ Use pipes (`|>`) to combine the following operations to manipulate the data.
 2. Use `mutate()`, `select()`, and `drop_na()` to create a new
    data frame with
    the `year`, `species_id`, and `hindfoot_length` **in cm** of each individual,
-   with no null weights. The hindfoot length in the table is given in mm so you will
+   with no null hindfoot lengths. The hindfoot length in the table is given in mm so you will
    need to create a new column for hindfoot length in cm by dividing the `hindfoot_length` column by 10.
 3. Use `filter()` and `select()` to get the `year`, `month`, `day`, and `species_id`
    columns for all of the rows in the data frame where species_id is `"OT"`.
