@@ -27,6 +27,8 @@ download.file("https://datacarpentry.org/semester-biology/data/mbaiki_trees.csv"
               "mbaiki_trees.csv")
 download.file("https://datacarpentry.org/semester-biology/data/mbaiki_species.csv",
               "mbaiki_species.csv")
+download.file("https://datacarpentry.org/semester-biology/data/penguins_no_na.csv",
+              "penguins_no_na.csv")
 ```
 
 ### Lecture Notes

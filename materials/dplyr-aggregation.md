@@ -69,7 +69,7 @@ plot_year_counts <- surveys |>
   summarize(abundance = n())
 ```
 
-> Do [Portal Data Aggregation 1-2]({{ site.baseurl }}/exercises/Portal-data-aggregation-R/).
+> Do [Penguins Data Aggregation 1-3]({{ site.baseurl }}/exercises/Penguins-data-aggregation-R/).
 
 
 * We can also do multiple calculations using summarize
@@ -120,4 +120,4 @@ size_abundance_data
 
 * Shows us that the final data frame is ungrouped
 
-> Do [Portal Data Aggregation 3]({{ site.baseurl }}/exercises/Portal-data-aggregation-R/).
+> Do [Shrub Volume Aggregation 1-2]({{ site.baseurl }}/exercises/Shrub-volume-aggregation-R/).
