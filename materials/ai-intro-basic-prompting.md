@@ -23,12 +23,12 @@ time: 1
 ## Should I use AI for this?
 
 - Ask the meta question - given my goals how useful is using AI for this task?
-- Do I want to learn this or not?
-- Is the process of implementing part of my thinking (e.g. writing)?
-- Is it critical that this is right/that I understand the details or not?
-- Would I enjoy doing this more myself?
-- Does my brain need a break from executive function?
-- Is it quicker, easier, cheaper to do it directly?
+  - Do I want to learn this or not?
+  - Is the process of implementing part of my thinking (e.g. writing)?
+  - Is it critical that this is right/that I understand the details or not?
+  - Would I enjoy doing this more myself?
+  - Does my brain need a break from executive function?
+  - Is it quicker, easier, cheaper to do it directly?
 
 ## Providing context
 
@@ -54,12 +54,11 @@ time: 1
 
 > Use base R pipes
 
+- *Try, unsucessfully, to run the resulting code*
 - The model also needs information about the data you are working with
 - Data format as context
-- Can attach files
-- But often data files are very large and can fill up the context window
 - Often more useful to provide the top few rows of the data file
-- Either as an attached file or by pasting into the prompt
+- One way to do this is by pasting the first few  rows into the prompt
 - *Copy the prompt, add tidyr & base R pipes if needed*
 - *Open surveys.csv in RStudio and copy-past the first few lines*
 
@@ -74,3 +73,7 @@ time: 1
 > 2,7,16,1977,3,NL,M,33,
 > 3,7,16,1977,2,DM,F,37,
 > 4,7,16,1977,7,DM,M,36,
+
+- *Try to run the code*
+- Now the model has all of the context it needs to produce runable code, that we can also understand
+- Let's read through the code
