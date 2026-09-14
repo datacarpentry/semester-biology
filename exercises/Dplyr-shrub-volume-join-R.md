@@ -7,9 +7,9 @@ language: R
 
 Dr. Morales has data in three tables in the files:
 
-a. [`shrub-volume-data.csv`]({{ site.baseurl }}/data/shrub-volume-data.csv) with data on shrub dimensions
-b. [`shrub-volume-experiments.csv`]({{ site.baseurl }}/data/shrub-volume-experiments.csv) with data on experimental manipulations
-c. [`shrub-volume-sites.csv`]({{ site.baseurl }}/data/shrub-volume-sites.csv) with data on different sites
+- [`shrub-volume-data.csv`]({{ site.baseurl }}/data/shrub-volume-data.csv) with data on shrub dimensions
+- [`shrub-volume-experiments.csv`]({{ site.baseurl }}/data/shrub-volume-experiments.csv) with data on experimental manipulations
+- [`shrub-volume-sites.csv`]({{ site.baseurl }}/data/shrub-volume-sites.csv) with data on different sites
 
 If the files aren't available in your work space use the links above to download them.
 Load the data using `read_csv`.
