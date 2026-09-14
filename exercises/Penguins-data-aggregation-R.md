@@ -1,5 +1,4 @@
 ---
-
 layout: exercise
 topic: dplyr
 title: Penguins Data Aggregation
@@ -16,4 +15,4 @@ Load `penguins_no_na.csv` into R using `read_csv()`.
 3. Use the `group_by()` and `summarize()` functions to calculate the maximum `flipper_length_mm` for each species on each island.
 4. Use the `filter()`, `group_by()` and `summarize()` functions to get the mean
    body mass of Chinstrap penguins on each island.
-5. Find the mean bill ratio (bill length / bill depth) for for each species on each island.
+5. Find the mean bill ratio (bill length / bill depth) for each species on each island.
