@@ -1,5 +1,4 @@
 ---
-
 layout: exercise
 topic: dplyr
 title: Penguins Vectors and Data Frames
@@ -15,7 +14,7 @@ Copy the following vectors into R:
 ```r
 region = c("Anvers", "Anvers", "Anvers")
 island = c("Biscoe", "Dream", "Torgersen")
-area = c(26.2, 42.0, 6.7) 
+area = c(26.2, 42.0, 6.7)
 ```
 
 1. Use $ to extract the flipper length column into a vector
