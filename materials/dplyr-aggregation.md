@@ -120,4 +120,4 @@ size_abundance_data
 
 * Shows us that the final data frame is ungrouped
 
-> Do [Shrub Volume Aggregation 1-2]({{ site.baseurl }}/exercises/Shrub-volume-aggregation-R/).
+> Do [Shrub Volume Aggregation 1-2]({{ site.baseurl }}/exercises/Dplyr-shrub-volume-aggregation-R/).
