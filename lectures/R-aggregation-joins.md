@@ -36,3 +36,4 @@ download.file("https://datacarpentry.org/semester-biology/data/penguins_no_na.cs
 * [dplyr Aggregation]({{ site.baseurl }}/materials/dplyr-aggregation)
 * [dplyr Joins]({{ site.baseurl }}/materials/dplyr-joins)
 * [Converting between data frames and vectors]({{ site.baseurl }}/materials/converting-dataframes-vectors)
+* [AI - Introduction and Basic Prompting]({{ site.baseurl }}/materials/ai-intro-basic-prompting)
