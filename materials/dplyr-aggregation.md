@@ -56,34 +56,15 @@ surveys_by_year <- group_by(surveys, year)
 counts_by_year <- summarize(surveys_by_year, abundance = n())
 ```
 
-* Can group by multiple columns
-* Count the number of individuals in each plot in each year
-
-```r
-surveys_by_plot_year <- group_by(surveys, plot_id, year)
-counts_by_plot_year <- summarize(surveys_by_plot_year, abundance = n())
-```
-
-* Just like with other `dplyr` functions we could write this using pipes instead
-
-```r
-plot_year_counts <- surveys |>
-  group_by(plot_id, year) |>
-  summarize(abundance = n())
-```
-
-> Do [Penguins Data Aggregation 1-3]({{ site.baseurl }}/exercises/Penguins-data-aggregation-R/).
-
-
-* We can also do multiple calculations using summarize
 * Use any function that returns a single value from one or more vectors
 * E.g., mean, max, min
-* We'll calculate the number of individuals in each plot year combination and their average weight
+* We'll calculate the the average weight of individuals in each year
+* Use pipes this time
 
 ```r
 size_abundance_data <- surveys |>
-  group_by(plot_id, year) |>
-  summarize(abundance = n(), avg_weight = mean(weight))
+  group_by(year) |>
+  summarize(avg_weight = mean(weight))
 ```
 
 * *Open table*
@@ -94,11 +75,33 @@ size_abundance_data <- surveys |>
 ```r
 size_abundance_data <- surveys |>
   drop_na(weight) |>
-  group_by(plot_id, year) |>
+  group_by(year) |>
+  summarize(avg_weight = mean(weight))
+```
+
+> Do [Penguins Data Aggregation 1-3]({{ site.baseurl }}/exercises/Penguins-data-aggregation-R/).
+
+* We can also do multiple calculations at once using summarize
+* Count the number of individuals and determine their average weight in each year
+
+```r
+surveys_by_plot_year <- surveys |>
+  drop_na(weight) |>
+  group_by(year) |>
   summarize(abundance = n(), avg_weight = mean(weight))
 ```
 
-* Also note the message about "grouped output"
+* Can also group by multiple columns
+* Count the number of individuals and determine their average weight in each plot in each year
+
+```r
+surveys_by_plot_year <- surveys |>
+  drop_na(weight) |>
+  group_by(year, plot_id) |>
+  summarize(abundance = n(), avg_weight = mean(weight))
+```
+
+* Note the message about "grouped output"
 * It says that the resulting data frame is grouped by `year`
 * When we group by more than one column the resulting data frame is grouped by all but the last group
 * Can be useful in some more complicated circumstances
@@ -108,7 +111,7 @@ size_abundance_data <- surveys |>
 ```r
 size_abundance_data <- surveys |>
   drop_na(weight) |>
-  group_by(plot_id, year) |>
+  group_by(year, plot_id) |>
   summarize(abundance = n(), avg_weight = mean(weight), .groups = "drop")
 ```
 
