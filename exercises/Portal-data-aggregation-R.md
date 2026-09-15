@@ -16,4 +16,4 @@ Load `surveys.csv` into R using `read_csv()`.
 2. Use the `group_by()` and `summarize()` functions to get a count of the number
    of individuals in each species ID in each year.
 3. Use the `filter()`, `drop_na()`, `group_by()`, and `summarize()` functions to get the mean
-   mass of species `DO` in each year.
+   weight of species `DO` in each year.
