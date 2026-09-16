@@ -49,6 +49,9 @@ plots <- read_csv("plots.csv")
 
 * Connect tables using joins
 * To enable us to make these connections the tables need one or more columns that link them together
+
+![Whiteboard image illustrating inner and right joins](joins-whiteboard.png)
+
 * In the case of the Portal data there is one column that links the `surveys` and `species` tables, `species_id`
 * There is also one column that links the `surveys` and `plots` tables, `plot_id`
 
