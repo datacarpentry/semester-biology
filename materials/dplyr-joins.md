@@ -50,7 +50,7 @@ plots <- read_csv("plots.csv")
 * Connect tables using joins
 * To enable us to make these connections the tables need one or more columns that link them together
 
-![Whiteboard image illustrating inner and right joins](joins-whiteboard.png)
+![Whiteboard image illustrating inner join](inner-join-whiteboard.png)
 
 * In the case of the Portal data there is one column that links the `surveys` and `species` tables, `species_id`
 * There is also one column that links the `surveys` and `plots` tables, `plot_id`
@@ -84,8 +84,12 @@ Combined table has 1 and 2 in column 1, x1 and x2 in column 2, and y1 and y2 in 
 * Scroll to Line 324 in the `surveys` table
 * `record_id`'s 324-326 are missing species IDs
 * If we look in `combined` we'll see that those rows are not present
+
 * There are other joins that behave differently
 * Left joins keep all rows in the first, or left, table
+
+![Whiteboard image illustrating left join](left-join-whiteboard.png)
+
 * So if we want to keep rows with missing species IDs we could use `left_join`
 
 ```r
