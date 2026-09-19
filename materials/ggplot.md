@@ -134,7 +134,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
        title = "Acacia Survey at UHURU")
 ```
 
-> Do Task 1 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do exercise 1.1 [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
 
 ### Grouping
 
@@ -160,7 +160,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
 
 * Where are all the acacia in the open plots? (eaten?)
 
-> Do Tasks 2-3 in [Acacia and ants]({{ site.baseurl }}/exercises/Graphing-acacia-ants-R).
+> Do the Exercise 2 [Acacia and Ants Color and Facets]({{ site.baseurl }}/exercises/Graphing-acacia-ants-color-facets-R).
 > This seems short, but for a 50 min class you do have time to stop,
 > have them work for 5 min on the basic version,
 > and then come back and provide the extra information in the last 5 min of class
@@ -253,7 +253,7 @@ ggplot(acacia, aes(x = CIRC)) +
 
 * These can be combined with all of the other `ggplot2` features we've learned
 
-> Do Tasks 1-2 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
+> Do the Exercise 5.1-5.2 [Acacia and Ants Histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
 
 ### Position
 
@@ -283,7 +283,7 @@ ggplot(acacia, aes(x = CIRC, fill = TREATMENT)) +
   geom_histogram(binwidth = 5, position = "identity", alpha = 0.5)
 ```
 
-> Do Tasks 3 in [Acacia and ants histograms]({{ site.baseurl }}/exercises/Graphing-acacia-ants-histograms-R).
+> Do the Exercise 6.1 in [Acacia and Ants Stacked Plots]({{ site.baseurl }}/exercises/Graphing-acacia-ants-stacked-plots-R).
 
 ### Layers
 
@@ -317,7 +317,7 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT, color = TREATMENT)) +
 * Because the color aesthetic is the default it is inherited by geom_smooth
 * One set of points and one model for each treatment
 
-> Do Task 1 of [Acacia and Ants Layers]({{ site.baseurl }}/exercises/Graphing-acacia-ants-layers-R).
+> Do Exercise 7.1 [Acacia and Ants Layers]({{ site.baseurl }}/exercises/Graphing-acacia-ants-layers-R).
 
 
 ### Changing values across layers
@@ -381,7 +381,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
 * Do an exercise that uses this idea, but uses `geom_histogram()` twice to make two overlapping histograms from two different columns
 * What are we going to change between the two uses of `geom_histogram()` to do this?
 
-> Do Task 3 in [Acacia and Ants Layers]({{ site.baseurl }}/exercises/Graphing-acacia-ants-layers-R).
+> Do Exercise 7.3 [Acacia and Ants Layers]({{ site.baseurl }}/exercises/Graphing-acacia-ants-layers-R).
 
 
 ### Understanding defaults (optional if students struggling after exercise)

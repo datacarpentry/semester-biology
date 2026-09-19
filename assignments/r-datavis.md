@@ -6,15 +6,17 @@ language: R
 exercises:
   [
     "Acacia and Ants",
+    "Acacia and Ants Color and Facets",
     "Mass vs Metabolism",
     "Acacia and Ants Data Manipulation",
-    "Lifespan vs Gestation Time",
     "Acacia and Ants Histograms",
+    "Acacia and Ants Stacked Plots",
     "Acacia and Ants Layers",
+    "Lifespan vs Gestation Time",
     "Check That Your Code Runs",
     "Graphing Data From Multiple Tables",
   ]
-points: [10, 10, 10, 20, 20, 20, 10, "Challenge - optional"]
+points: [10, 10, 10, 10, 10, 10, 15, 15, 10, "Challenge - optional"]
 ---
 
 ### Learning Objectives

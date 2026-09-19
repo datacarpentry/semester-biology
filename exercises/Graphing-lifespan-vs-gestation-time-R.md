@@ -38,8 +38,16 @@ Back ticks are typically on the same key as the ~ and look like a slanted single
    linear model. Create a new graph like your faceted plot, but using
    `geom_smooth` to fit a linear model to each order. You can do this using the
    optional argument `method = "lm"` in `geom_smooth`.
-6. _Challenge (**optional**)_: Some of the orders don't have enough data points to fit a meaningful linear model.
-   Use `group_by` and `summarize` and your data frame to create a new data frame with counts of the number of species (i.e., rows) in each order.
+6. Make a bar plot showing the number of species (rows) in each `order`.
+   Label the x axis "Order" and the y axis "Number of Species".
+7. Use `filter()` to keep only the orders `"Carnivora"`, `"Primates"`, and
+   `"Rodentia"` (these have enough data points to compare). Then make a
+   **non-stacked** histogram of lifespan (`` `max. life(mo)` ``) colored by
+   `order`. Set `alpha` to 0.5 so that you can see all three histograms.
+   Label the x axis "Max Lifespan (months)" and the y axis "Number of Species".
+8. _Challenge (**optional**)_: Some of the orders don't have enough data points to fit a meaningful linear model.
+   Instead of manually picking the orders to plot,
+   use `group_by` and `summarize` and your data frame to create a new data frame with counts of the number of species (i.e., rows) in each order.
    Join this data frame (using `inner_join`) to your main data frame and use the new species counts to `filter` the data frame to only keep orders with at least 20 species.
    Then remake the graph from (5) with this filtered data.
    Note that there won't be 20 points for all orders because some orders are missing values for some columns.
