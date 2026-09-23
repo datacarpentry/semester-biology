@@ -37,6 +37,13 @@ library(readr)
 acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt")
 ```
 
+* If we open the resulting table we can see that it includes information on:
+* the time and location of the sampling
+* the experimental treatment
+* the size of each Acacia including a height, the canopy diameter measured in the direction (or axis) or the largest diameter and the diameter of the axis perpendicular to that, and the circumference of the shrub
+* information on the number of flowers, buds, and fruits
+* And finally information on the species of ant associated with the shrub because there is a very interesting ant-acacia mutualism where the Acacia special structures that serve as houses for the ants and the ants swarm herbivores that try to eat the acacia
+
 * We can also see that it includes information on whether or not the plant is dead in the HEIGHT column
 * Is that good data structure?
 * If you said "No", you're right, information on if the tree is dead should be stored in a separate column
@@ -49,13 +56,6 @@ acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt")
 ```r
 acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 ```
-
-* If we open the resulting table we can see that it includes information on:
-  * the time and location of the sampling
-  * the experimental treatment
-  * the size of each Acacia including a height, the canopy diameter measured in the direction (or axis) or the largest diameter and the diameter of the axis perpendicular to that, and the circumference of the shrub
-  * information on the number of flowers, buds, and fruits
-  * And finally information on the species of ant associated with the shrub because there is a very interesting ant-acacia mutualism where the Acacia special structures that serve as houses for the ants and the ants swarm herbivores that try to eat the acacia
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mfjPYWkSaOE?si=h-nTRl0W_D7WbbKG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -75,12 +75,6 @@ acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 library(ggplot2)
 ```
 
-* We'll also load the UHURU like we discussed in the video on the dataset
-
-```r
-acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
-```
-
 * To build a plot using `ggplot` we start with the `ggplot()` function
 
 ```r
@@ -96,7 +90,7 @@ ggplot()
 * `mapping` - which describes which columns of the data are used for different aspects of the plot
 * We create a `mapping` by using the `aes` function, which stands for "aesthetic", and then linking columns to pieces of the plot
 * We'll start with telling ggplot what value should be on the x and y axes
-* Let's plot the relationship betwen the circumference of an acacia and its height
+* Let's plot the relationship between the circumference of an acacia and its height
 
 ```r
 ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT))
@@ -301,6 +295,8 @@ ggplot(acacia, aes(x = CIRC, y = HEIGHT)) +
   geom_point() +
   geom_smooth(method = "lm")
 ```
+
+* *Show visulation: https://emilhvitfeldt.github.io/tidy-animations/examples/ggplot2-deconstructed.html#/section*
 
 * Both the `geom_point` layer and the `geom_smooth` layer use the defaults from
   `ggplot`
