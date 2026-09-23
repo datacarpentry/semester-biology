@@ -11,7 +11,7 @@ If [`ACACIA_DREPANOLOBIUM_SURVEY.txt`](https://esapubs.org/archive/ecol/E095/064
 Read it into R using the following command:
 
 ```r
-acacia <- read_tsv("data/ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
+acacia <- read_tsv("ACACIA_DREPANOLOBIUM_SURVEY.txt", na = c("dead"))
 ```
 
 1. Make a **non-stacked** histogram of the height of acacia (using the `HEIGHT` column) colored by the `TREATMENT`.
