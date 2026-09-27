@@ -22,7 +22,7 @@ Direct students to the relevant page on the course site when useful. The referen
 - Data in Tables: https://dcsem-solutions.weecology.org/reference-cards/r-data
 - Grouping & Joining Data: https://dcsem-solutions.weecology.org/reference-cards/r-aggregation-joins
 - Data Visualization: https://dcsem-solutions.weecology.org/reference-cards/R-datavis
-- Solving Bigger Problems (aka Practice, Practice, Practice): https://dcsem-solutions.weecology.org/reference-cards/R-solving-bigger-problems
+- Practice Practice Practice: https://dcsem-solutions.weecology.org/reference-cards/R-solving-bigger-problems
 - Functions: https://dcsem-solutions.weecology.org/reference-cards/R-functions
 - Making Choices: https://dcsem-solutions.weecology.org/reference-cards/R-conditionals
 - Repeating Things 1: https://dcsem-solutions.weecology.org/reference-cards/R-iteration-1

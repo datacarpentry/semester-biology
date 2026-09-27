@@ -1,7 +1,7 @@
 ---
 layout: page
 element: lesson
-title: Solving Bigger Problems
+title: Practice Practice Practice
 language: R
 ---
 

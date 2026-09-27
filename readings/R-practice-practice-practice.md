@@ -1,6 +1,6 @@
 ---
 layout: page
 element: reading
-title: Solving Bigger Problems
+title: Practice Practice Practice
 language: R
 ---
