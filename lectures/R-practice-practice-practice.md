@@ -1,7 +1,7 @@
 ---
 layout: page
 element: lecture
-title: Solving Bigger Problems
+title: Practice Practice Practice
 language: R
 ---
 
@@ -25,8 +25,8 @@ download.file("https://datacarpentry.org/semester-biology/data/ramesh2010-specie
 
 ### Lecture Notes
 
-1. [Problem Decomposition]({{ site.baseurl }}/materials/problem-decomposition)
+1. [How We're Going to Practice]({{ site.baseurl }}/materials/how-were-going-to-practice-R)
 2. [Basic Debugging]({{ site.baseurl }}/materials/basic-debugging-R)
-3. [Searching For Help]({{ site.baseurl }}/materials/googling-for-help)
-4. [Paths]({{ site.baseurl }}/materials/paths-R)
-5. [Basic Reproducibility]({{ site.baseurl }}/materials/basic-reproducibility-R)
+3. [Paths]({{ site.baseurl }}/materials/paths-R)
+4. [Basic Reproducibility]({{ site.baseurl }}/materials/basic-reproducibility-R)
+5. [Getting Help]({{ site.baseurl }}/materials/getting-help)

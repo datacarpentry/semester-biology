@@ -8,7 +8,7 @@ assignments:
     "Data in Tables",
     "Grouping & Joining Data",
     "Data Visualization",
-    "Solving Bigger Problems",
+    "Practice Practice Practice",
     "Functions",
     "Making Choices",
     "Repeating Things 1",

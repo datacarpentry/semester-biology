@@ -1,7 +1,7 @@
 ---
 layout: page
 element: assignment
-title: Solving Bigger Problems
+title: Practice Practice Practice
 language: R
 exercises: ["Bird Banding Multiple Vectors", "Portal Data Review", 'Megafaunal Extinction', 'Check That Your Code Runs', 'Tree Biomass Challenge']
 points: [20, 20, 50, 10, 'Challenge - optional']
