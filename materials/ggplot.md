@@ -428,6 +428,33 @@ ggplot(data = acacia, mapping = aes(x = CIRC)) +
   geom_point(mapping = aes(y = AXIS2), color = "grey")
 ```
 
+### Scale
+
+* Map from data values to visual range
+* E.g., color ramps
+* One good color ramp is "viridis"
+* To use this color ramp we add `scale_color_viridis_d()` to our ggplot object
+* The `_d` at the end indicates that it is a "continuous" scale
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(mapping = aes(color = TREATMENT)) +
+  geom_smooth(method = "lm") +
+  scale_color_viridis_c()
+```
+
+* We can also change the scale of the axes
+* Defaults to a linear scale
+* For questions related to plant size relationships are often linear on log scales
+
+```r
+ggplot(data = acacia, mapping = aes(x = CIRC, y = HEIGHT)) +
+  geom_point(mapping = aes(color = TREATMENT)) +
+  geom_smooth(method = "lm") +
+  scale_x_log10() +
+  scale_y_log10()
+```
+
 ### Grammar of graphics
 
 * Uniquely describe any plot based on a defined set of information
@@ -438,6 +465,7 @@ ggplot(data = acacia, mapping = aes(x = CIRC)) +
   * Statistical transformation
   * Position (allows you to shift objects, e.g., spread out overlapping data points)
 * Facets
+* Scale
 * Coordinates (coordinate systems other than cartesian, also allows zooming)
 
 ### Column names with special characters
