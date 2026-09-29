@@ -13,7 +13,7 @@ If `surveys.csv`, `species.csv`, and `plots.csv` are not available in your works
 
 Load them into R using `read_csv()`.
 
-1. Create a data frame with only data for the `species_id` `DO`, with the columns `year`, `month`, `day`, `species_id`, and `weight`.
+1. Create a data frame with only data where the `species_id` is `DO`, with the columns `year`, `month`, `day`, `species_id`, and `weight`.
 2. Create a data frame with only data for species IDs `PP` and `PB` and for years starting in 1995, with the columns `year`, `species_id`, and `hindfoot_length`, with no null values for `hindfoot_length`.
 3. Create a data frame with the average `hindfoot_length` for each `species_id` in each `year` with no null values.
 4. Create a data frame with the `year`, `genus`, `species`, `weight` and `plot_type` for all cases where the `genus` is `"Dipodomys"`.
