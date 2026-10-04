@@ -15,6 +15,8 @@ download.file("https://ndownloader.figshare.com/files/3299474",
   "plots.csv")
 download.file("https://ndownloader.figshare.com/files/3299483",
   "species.csv")
+download.file("https://www.datacarpentry.org/semester-biology/data/penguins.csv",
+  "penguins.csv")
 ```
 
 ### Lecture Notes
