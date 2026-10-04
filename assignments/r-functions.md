@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Functions
 language: R
-exercises: ['Writing Functions', 'Use and Modify', 'Writing Functions 2', 'Default Arguments', 'Combining Functions', 'Writing Tidyverse Functions', 'Check That Your Code Runs', 'Portal Species Time-Series Challenge']
+exercises: ['Writing Functions', 'Use and Modify', 'Default Arguments', 'Writing Functions 2', 'Combining Functions', 'Writing Tidyverse Functions', 'Check That Your Code Runs', 'Portal Species Time-Series Challenge']
 points: [15, 15, 15, 15, 15, 15, 10, 'Challenge - optional']
 ---
 
