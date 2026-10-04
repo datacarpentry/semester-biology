@@ -187,22 +187,6 @@ shrub_mass <- calc_shrub_vol(0.8, 2.0) |>
 
 > Do [Combining Functions]({{ site.baseurl }}/exercises/Functions-combining-functions-R).
 
-* Can also call functions from inside other functions
-* Allows organizing function calls into logical groups
-
-```r
-est_shrub_mass_dim <- function(radius, height){
-  volume = calc_shrub_vol(radius, height)
-  mass <- est_shrub_mass(volume)
-  return(mass)
-}
-
-est_shrub_mass_dim(0.8, 2.0)
-```
-
-* We ***don't*** need to pass the function name into the function
-* That's the one violation of the isolation rule
-
 ### Using dplyr & ggplot in functions
 
 * There is an extra step we need to take when working with functions from dplyr and ggplot that work with "data variables", i.e., names of columns that are not in quotes
@@ -259,6 +243,9 @@ create_time_series <- function(df, column){
 create_time_series(surveys, weight)
 create_time_series(surveys, hindfoot_length)
 ```
+
+* We ***don't*** need to pass the dplyr/ggplot/tidyr function names into the function
+* That's the one violation of the isolation rule
 
 > Do [Writing Tidyverse Functions]({{ site.baseurl }}/exercises/Functions-writing-tidyverse-functions-R).
 
