@@ -60,11 +60,13 @@ shrub_vol <- calc_shrub_vol(0.8, 2.0)
 > Do Exercise 1.1-1.3 [Writing Functions 1-3]({{ site.baseurl }}/exercises/Functions-writing-functions-R)
 
 * Treat functions like they are isolated from the rest of the program
-  * *Draw a box on board showing inputs->function->outputs*
-  * The only things the function knows about are the inputs we pass it
-  * The only thing the program knows about the function is the output it
-    produces
-  * If we have lots of functions we don't have to know what the other functions are doing to understand the one we are working on
+
+![Outer square indicating the program. Inner square indicating the function. Arrows showing inputs entering the function and output leaving the function.](functions-inputs-outputs.png)
+
+* The only things the function knows about are the inputs we pass it
+* The only thing the program knows about the function is the output it
+  produces
+* If we have lots of functions we don't have to know what the other functions are doing to understand the one we are working on
 
 * Walk through function execution (using debugger)
     * Call function
