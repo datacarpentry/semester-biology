@@ -57,7 +57,7 @@ calc_shrub_vol(0.8, 2.0)
 shrub_vol <- calc_shrub_vol(0.8, 2.0)
 ```
 
-> Do [Writing Functions]({{ site.baseurl }}/exercises/Functions-writing-functions-R)
+> Do Exercise 1.1-1.3 [Writing Functions 1-3]({{ site.baseurl }}/exercises/Functions-writing-functions-R)
 
 * Treat functions like they are isolated from the rest of the program
   * *Draw a box on board showing inputs->function->outputs*
@@ -86,7 +86,7 @@ shrub_vol <- calc_shrub_vol(0.8, 2.0)
           as an argument
         * So inside a function only use variables that are arguments or created from the arguments
 
-> Do [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
+> Do Exercise 2 [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R).
 > End of 1 hour class
 
 ### Default arguments
