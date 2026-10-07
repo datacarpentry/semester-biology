@@ -248,6 +248,7 @@ create_time_series(surveys, hindfoot_length)
 
 * We ***don't*** need to pass the dplyr/ggplot/tidyr function names into the function
 * That's the one violation of the isolation rule
+* Values need to be passed to functions, functions don't
 
 > Do [Writing Tidyverse Functions]({{ site.baseurl }}/exercises/Functions-writing-tidyverse-functions-R).
 
