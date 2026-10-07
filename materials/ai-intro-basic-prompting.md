@@ -20,16 +20,6 @@ time: 1
 - We should be able to look at the code to determine if this is true
 - We'll talk about other ways of checking that it is true later in the semester
 
-## Should I use AI for this?
-
-- Ask the meta question - given my goals how useful is using AI for this task?
-  - Do I want to learn this or not?
-  - Is the process of implementing part of my thinking (e.g. writing)?
-  - Is it critical that this is right/that I understand the details or not?
-  - Would I enjoy doing this more myself?
-  - Does my brain need a break from executive function?
-  - Is it quicker, easier, cheaper to do it directly?
-
 ## Providing context
 
 - Models need "context"

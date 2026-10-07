@@ -22,5 +22,5 @@ download.file("https://www.datacarpentry.org/semester-biology/data/penguins.csv"
 ### Lecture Notes
 
 1. [Functions]({{ site.baseurl }}/materials/functions-R)
-2. [Googling for Help]({{ site.baseurl }}/materials/googling-for-help)
+2. [AI for plotting]({{ site.baseurl }}/materials/ai-for-plotting)
 3. [Coding style]({{ site.baseurl }}/materials/r-style)
