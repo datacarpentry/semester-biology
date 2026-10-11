@@ -34,15 +34,10 @@ species == "DM"
   * `!=` for not equals
   * `<`, `>` for less than and greater than
   * `<=`, `>=` for less than or equal to and greater than or equal to
+  * `%in%` to check if a value is present in a vector of possible values
 
 ```r
 10 >= 5
-```
-* There are others, including `%in%`, which checks to see if a value is present in a vector of possible values
-
-```r
-"DM" %in% c("DM", "DO", "DS")
-"PP" %in% c("DM", "DO", "DS")
 ```
 
 * There are also functions that return these boolean values
