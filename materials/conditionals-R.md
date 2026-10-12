@@ -230,7 +230,7 @@ if (veg_type == "shrub") {
 mass
 ```
 
-> Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> Do Tasks 3-4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
 #### `if` statements need a single logical value
 
