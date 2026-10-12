@@ -5,7 +5,7 @@ title: Basic If Statements
 language: R
 ---
 
-1\. Complete (i.e., copy into your code and them modify) the following `if`
+1\. Complete (i.e., copy into your code and then modify) the following `if`
    statement so that if `age_class` is equal to "sapling" it sets `y <- 10`.
 
 ```r
@@ -16,8 +16,7 @@ if (){
 y
 ```
 
-2\. Complete the following `if` statement so that if `age_class` is equal to
-   "sapling" it sets `y <- 10` and if `age_class` is equal to "seedling" it
+2\. Complete the following `if` statement so that if `age_class` is equal to "seedling" it
    sets `y <- 5`.
 
 ```r
@@ -30,6 +29,18 @@ y
 
 3\. Complete the following `if` statement so that if `age_class` is equal to
    "sapling" it sets `y <- 10` and if `age_class` is equal to "seedling" it
+   sets `y <- 5`.
+
+```r
+age_class = "seedling"
+if (){
+  
+}
+y
+```
+
+4\. Complete the following `if` statement so that if `age_class` is equal to
+   "sapling" it sets `y <- 10` and if `age_class` is equal to "seedling" it
    sets `y <- 5` and if `age_class` is something else then it sets the value of
    `y <- 0`.
 
@@ -41,7 +52,12 @@ if (){
 y
 ```
 
-4\. Convert your `if`/`else if`/ `else` statement from (3) into a function that takes
-   `age_class` as an argument and returns `y`. Call this function 5 times, once
-   with each of the following values for `age_class`: "sapling", "seedling",
-   "adult", "mature", "established".
+5\. Complete the following `if` statement so that if `size` is greater than 100 it sets `species <- "DS"`, if `size` is between 40 and 60 it sets `species <- "DM"`, and if `size` is between 10 and 30 it sets `species <- "PP"`. If `size` doesn't match any of these conditions set `species <- "Unknown"`.
+
+```r
+size = 19
+if (){
+  
+}
+species
+```
