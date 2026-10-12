@@ -140,33 +140,9 @@ counts == recounts
 ```
 
 * Cannot compare none equal length vectors (or at least you shouldn't)
-* Will error in cases where the lengths of the vectors aren't even multiples
-
-```r
-states == c("SC", "GA", "FL")
-```
-
-* Or will repeat the shorter vector
-
-```r
-states == c("GA", "SC")
-```
-
-* Looks like it works, but this is actually doing an element wise comparison
-
-```r
-states == c("GA", "SC", "GA", "SC")
-```
-
-* If we change the order we can a different answer
-
-```r
-states == c("SC", "GA")
-```
-
 * This is why we have `%in%`
 
-> Do Tasks 3-10 [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+> Do [Choice Operators with Vectors]({{ site.baseurl }}/exercises/Making-choices-choice-operators-vectors-R).
 
 ### `if` statements
 
