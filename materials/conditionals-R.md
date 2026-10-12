@@ -34,15 +34,10 @@ species == "DM"
   * `!=` for not equals
   * `<`, `>` for less than and greater than
   * `<=`, `>=` for less than or equal to and greater than or equal to
+  * `%in%` to check if a value is present in a vector of possible values
 
 ```r
 10 >= 5
-```
-* There are others, including `%in%`, which checks to see if a value is present in a vector of possible values
-
-```r
-"DM" %in% c("DM", "DO", "DS")
-"PP" %in% c("DM", "DO", "DS")
 ```
 
 * There are also functions that return these boolean values
@@ -95,7 +90,7 @@ is.na(5)
 5 > 2 | 6 >=10
 ```
 
-> *QUICK* (2 mins): Do Tasks 1 & 2 in [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+> Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 ### Conditional statements work on vectors
 
@@ -145,33 +140,9 @@ counts == recounts
 ```
 
 * Cannot compare none equal length vectors (or at least you shouldn't)
-* Will error in cases where the lengths of the vectors aren't even multiples
-
-```r
-states == c("SC", "GA", "FL")
-```
-
-* Or will repeat the shorter vector
-
-```r
-states == c("GA", "SC")
-```
-
-* Looks like it works, but this is actually doing an element wise comparison
-
-```r
-states == c("GA", "SC", "GA", "SC")
-```
-
-* If we change the order we can a different answer
-
-```r
-states == c("SC", "GA")
-```
-
 * This is why we have `%in%`
 
-> Do Tasks 3-10 [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+> Do [Choice Operators with Vectors]({{ site.baseurl }}/exercises/Making-choices-choice-operators-vectors-R).
 
 ### `if` statements
 
@@ -259,7 +230,7 @@ if (veg_type == "shrub") {
 mass
 ```
 
-> Do Tasks 2-3 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> Do Tasks 3-4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
 #### `if` statements need a single logical value
 
@@ -316,7 +287,6 @@ est_mass(24, "tree")
 * It assigns `NA` to mass
 * It then finishes the if/else if/else statement and returns the value for `mass`, which is `NA` to the global environment
 
-> Do Task 4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 > Do Tasks 1 & 2 in [If Statements In Functions]({{ site.baseurl }}/exercises/Making-choices-if-statements-in-functions-R).
 
 ### Automatically extracting functions (optional)

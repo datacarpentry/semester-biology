@@ -9,7 +9,7 @@ language: R
 
 <iframe title="Introduction to Conditional Statements in R video" width="560" height="315" src="https://www.youtube.com/embed/muEku7Svqvo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-2\. Do the  [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R) exercise.
+2\. Do the [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R) and [Choice Operators with Vectors]({{ site.baseurl }}/exercises/Making-choices-choice-operators-vectors-R) exercises.
 
 3\. Watch the Introduction To `if` Statements In R video:
 
