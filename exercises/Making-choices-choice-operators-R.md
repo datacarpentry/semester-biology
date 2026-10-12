@@ -13,7 +13,6 @@ x <- 1.3
 y <- 2.8
 z <- 17.5
 colors <- c("red", "blue", "green")
-masses <- c(45.2, 36.1, 27.8, 81.6, 42.4)
 dna1 <- "attattaggaccaca"
 dna2 <- "attattaggaacaca"
 ```
@@ -23,9 +22,7 @@ Use them to print whether or not the following statements are `TRUE` or `FALSE`.
 1. `w` is greater than 10
 2. `"green"` is in `colors`
 3. `x` is greater than `y`
-4. Each value in `masses` is greater than 40.
-5. `dna1` is the same as `dna2`
-6. `dna1` is not the same as `dna2`
-7. `w` is greater than `x`, or `y` is greater than `z`
-8. `x` times `w` is between 13.2 and 13.5 (there is no way to indicated "between" in R so to do this we have to separately check if the number is greater than the minimum value and less than the maximum value, combining these two conditions with `&`)
-9. Each mass in `masses` is between 30 and 50.
+4. `dna1` is the same as `dna2`
+5. `dna1` is not the same as `dna2`
+6. `w` is greater than `x`, or `y` is greater than `z`
+7. `x` times `w` is between 13.2 and 13.5 (there is no way to indicated "between" in R so to do this we have to separately check if the number is greater than the minimum value and less than the maximum value, combining these two conditions with `&`)

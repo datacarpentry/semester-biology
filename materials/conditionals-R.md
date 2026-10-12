@@ -90,7 +90,7 @@ is.na(5)
 5 > 2 | 6 >=10
 ```
 
-> *QUICK* (2 mins): Do Tasks 1 & 2 in [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
+> Do [Choice Operators]({{ site.baseurl }}/exercises/Making-choices-choice-operators-R).
 
 ### Conditional statements work on vectors
 
