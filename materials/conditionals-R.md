@@ -137,6 +137,12 @@ counts[c(TRUE, TRUE, FALSE, FALSE)]
 * This keeps the first and second values in `counts` because the values in the vector are `TRUE`
 * This is also how `dplyr::filter()` works
 
+* Some functions that return booleans also work on vectors
+
+```r
+is.na(counts)
+```
+
 * Can also compare element wise to see which values in two vectors are the same
 
 ```r
