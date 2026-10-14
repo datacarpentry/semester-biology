@@ -185,18 +185,35 @@ x
 
 * `x > 5` is `FALSE`, so the code in the `if` doesn't run
 * `x` is still 4
+
+#### `if` statements are not functions
+
 * This is *not* a function
 * Everything that happens in the if statement influences the global environment (unless the if statement is in a function)
 * No `return()`
 * Repeat after me: *return, is only, for functions*
 
-* Different mass calculations for different vegetation types
+#### `if` statements need a single logical value
+
+* While conditional statements can handle vectors, `if` statements typically can't
+* The if condition needs to return a single logical value
+* So if we try to pass a vector we'll get an error
+
+```r
+x = c(4, 6)
+if (x > 5){
+  x = x * 2
+}
+x
+```
+
+* Application: Different mass calculations for different vegetation types
 
 ```r
 veg_type <- "shrub"
 volume <- 16.08
 if (veg_type == "shrub") {
-  mass <- 2.65 * volume^0.9
+  mass <- 2.65 * volume ^ 0.9
   }
 mass
 ```
@@ -237,25 +254,6 @@ mass
 ```
 
 > Do Tasks 3-4 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
-
-#### `if` statements need a single logical value
-
-* While conditional statements can handle vectors, `if` statements typically can't
-* The if condition needs to return a single logical value
-* So if we try to pass a vector we'll get an error
-
-```r
-veg_type <- c("tree", "shrub")
-volume <- c(16.08, 2.26)
-if (veg_type == "shrub") {
-  mass <- 2.65 * volume^0.9
-} else if (veg_type == "grass") {
-  mass <- 0.65 * volume^1.2
-} else {
-  mass <- NA
-}
-mass
-```
 
 ### Using Conditionals Inside Functions
 
