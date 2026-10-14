@@ -218,7 +218,7 @@ if (veg_type == "shrub") {
 mass
 ```
 
-> Do Task 1 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
+> **Quick (2 min)**: Do Task 1 in [Basic If Statements]({{ site.baseurl }}/exercises/Making-choices-basic-if-statements-R).
 
 * Often want to chose one of several options
 * Can add more conditions and associated actions with `else if`
