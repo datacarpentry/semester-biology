@@ -48,6 +48,6 @@ Another is to loop over the rows in the data.frame using
 
 `for (row in 1:nrow(data)){...}`
 
-A third is to break the `data.frame` into vectors and use `sapply()`.
+A third is to break the `data.frame` into vectors and use `map_dbl()` and `map_chr()`.
 
 Ask your instructor if you have questions about the best choices.

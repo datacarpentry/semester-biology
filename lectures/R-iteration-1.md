@@ -8,7 +8,7 @@ language: R
 ### Setup
 
 ```r
-install.packages(c('dplyr', 'ggplot2', 'readr', 'tidyr'))
+install.packages(c('dplyr', 'ggplot2', 'purrr', 'readr', 'tidyr'))
 download.file("https://datacarpentry.org/semester-biology/data/dinosaur_lengths.csv",
   "dinosaur_lengths.csv")
 download.file("https://datacarpentry.org/semester-biology/data/ramesh2010-macroplots.csv",
@@ -25,6 +25,6 @@ download.file("https://ndownloader.figshare.com/files/3299483",
 
 ### Lecture Notes
 
-* [Iteration using vectorization and apply]({{ site.baseurl }}/materials/iteration-without-loops-R)
+* [Iteration using vectorization and map]({{ site.baseurl }}/materials/iteration-without-loops-R)
 * [Detecting substrings with stringr]({{ site.baseurl }}/materials/stringr-detecting-substrings)
 * [Style]({{ site.baseurl }}/materials/r-style)

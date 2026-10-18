@@ -30,7 +30,7 @@ est_mass(3.1)
 * There are multiple ways to do something repeatedly in R and we'll talk about all of them over the next several lessons
 * These include
   * Vectorize - where we right functions that take a vector of values, do elementwise calculations, and return a vector of results
-  * Using Apply/Map - which takes a function and applies it to each item in a list of items
+  * Using Map - which takes a function and runs it on each item in a list of items
   * Combining our own functions with dplyr - which we can do using both vectorized and non-vectorized functions
   * Loops - which provide us with complete control to perform of any kind of repetition we want
 
@@ -118,18 +118,20 @@ plant_data |>
 > Do [Size Estimates Vectorized 2-3]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
 
 
-### Apply/Map functions
+### Map functions
 
 * Not all functions in R are vectorized
 * So we need a way to repeatedly run these non-vectorized functions
-* Use `apply()` and `map()` functions
-* We'll learn the `apply` family of functions since they are very common, but `map` is a very similiar tidyverse option
+* The tidyverse way to do this is with the `map` family of functions from the `purrr` package
+
+```r
+library(purrr)
+```
 
 * These functions take two arguments
 * The first is a vector of values that we want to run a function on
 * The second is the function that we want to run on each value in the vector
-* The `apply` functions then "apply" the function each item in the vector
-* Return a list of the same size
+* `map` functions run the function on each item in the vector
 * Doesn't require calculations to work on vectors
 
 * Let's look at this with a version of our function that only calculates mass for volumes less than a maximum size
@@ -151,22 +153,22 @@ est_mass_max <- function(volume){
 est_mass_max(volumes)
 ```
 
-* Instead we can use one of the `apply()` functions
+* Instead we can use one of the `map()` functions
 
-#### sapply & lapply
+#### map_dbl & map
 
-* We'll start with `sapply()`
+* We'll start with `map_dbl()`
 * This function take two arguments
 * The first is a single vector
-* The second is the function that we want to "apply" to each element of that vector (or list)
+* The second is the function that we want to run on each element of that vector (or list)
 * So if we use our `volumes` vector and our new `est_mass_max()` function
-* `sapply()` will run the `est_mass_max` function on each value in `volumes`, one value at a time
+* `map_dbl()` will run the `est_mass_max` function on each value in `volumes`, one value at a time
 
 ```r
-sapply(volumes, est_mass_max)
+map_dbl(volumes, est_mass_max)
 ```
 
-* Under the surface this is that same as running our `est_mass()` function on the first item in `volumes`
+* Under the surface this is that same as running our `est_mass_max()` function on the first item in `volumes`
 * Then running it on the second value in `volumes` and then the third value in `volumes`
 * And the storing those values together in a vector
 
@@ -176,25 +178,26 @@ c(est_mass_max(volumes[1]), est_mass_max(volumes[2]), est_mass_max(volumes[3]))
 
 * This lets us do the same action on many things with single line of code
 
-* Handful of similar functions in `apply()` family
-* Differ depending on type of input and output data
-* The `s` in `sapply` stands for "simplify"
-* It will try to return the simplest object possible, in this case a vector
-* `lapply` returns a "list"
+* Handful of similar functions in the `map()` family
+* Differ depending on the type of output
+* The `dbl` in `map_dbl` stands for "double", which is how R stores decimal numbers
+* So `map_dbl` returns a numeric vector
+* If our function returned character strings we would use `map_chr` and if it returned `TRUE` or `FALSE` we would use `map_lgl`
+* `map` without a type specification returns a "list"
 
 ```r
-lapply(volumes, est_mass_max)
+map(volumes, est_mass_max)
 ```
 
-* This is a more complicated, but also more flexible, data structure that we don't see much in this class, but it's useful to know the difference between `lapply` and `sapply`.
-* We can store anything in a list, so if you had a function that made a bunch of graphs or a bunch of data frames `lapply` would let you work with them
-* Likewise both of these functions can also take a list as input allowing you to accomplish more complicated things
+* This is a more complicated, but also more flexible, data structure that we don't see much in this class, but it's useful to know the difference between `map` and `map_dbl`.
+* We can store anything in a list, so if you had a function that made a bunch of graphs or a bunch of data frames `map` would let you work with them
+* Likewise all of these functions can also take a list as input allowing you to accomplish more complicated things
 
 > Do [Size Estimates With Maximum]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
 
-#### Apply with multiple arguments
+#### Map with multiple arguments
 
-* `mapply()` for functions with multiple arguments
+* `map2()` for functions with two arguments
 * Vegetation type specific equations
 
 ```r
@@ -207,31 +210,32 @@ est_mass_type <- function(veg_type, volume){
   return(mass)
 }
 
-est_mass_type(1.6, "shrub")
+est_mass_type("shrub", 1.6)
 plant_types = c("shrub", "tree", "shrub")
 est_mass_type(plant_types, volumes) # Error
 ```
 
 * Doesn't vectorize, due to conditionals
-* Use an `apply` function instead
-* `mapply()` because "multiple" inputs
+* Use a `map` function instead
+* `map2_dbl()` because there are 2 inputs and a numeric output
 
 ```r
-mapply(est_mass_type, plant_types, volumes)
+map2_dbl(plant_types, volumes, est_mass_type)
 ```
 
-* First argument is function
-* All other arguments are arguments for the function
-* Names in the output, come from the first vector if it has names or is a char vector
-* Can remove them using `USE.NAMES = FALSE`
+* First argument is the vector of values for the first argument of the function
+* Second argument is the vector of values for the second argument of the function
+* Third argument is the function
+
+* For functions with more than two arguments use `pmap()`
+* Put the vectors in a `list()` in the same order as the function's arguments
+* This works for any number of arguments, so we can also use it for our two argument function
 
 ```r
-mapply(est_mass_type, plant_types, volumes, USE.NAMES = FALSE)
+pmap_dbl(list(plant_types, volumes), est_mass_type)
 ```
 
 > Do Task 1 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
-
-* `map` functions from `purrr` package are similar to apply
 
 #### Integrating with dplyr
 
@@ -246,19 +250,19 @@ plant_type_data = data.frame(volume = volumes,
 
 ```r
 plant_type_data |>
-  mutate(masses = est_mass_type(volume, plant_type))
+  mutate(masses = est_mass_type(plant_type, volume))
 ```
 
 * Error because `est_mass_type` isn't vectorized
 * By default `dplyr` runs this function by converting the individual columns to vectors and running the function on those vectors
 * Just like when we tried to run the function on the vectors
 * To get around this we add the function `rowwise` to our `dplyr` pipeline
-* This tells `dplyr` to work with the data one row at a time, like an `apply` function
+* This tells `dplyr` to work with the data one row at a time, like a `map` function
 
 ```r
-plant_data |>
+plant_type_data |>
   rowwise() |>
-  mutate(masses = est_mass_type(volumes, plant_types))
+  mutate(masses = est_mass_type(plant_type, volume))
 ```
 
 > Do Task 2 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
@@ -278,18 +282,18 @@ get_biomass <- function(volumes){
 ```
 
 * This function takes a vector of volumes as input and returns a single value, the biomass
-* We can then group our data by `plant_types`
+* We can then group our data by `plant_type`
 * And summarize by our function to calculate the biomass for each group
 
 ```r
-plant_data |>
-  group_by(plant_types) |>
-  summarize(biomass = get_biomass(volumes))
+plant_type_data |>
+  group_by(plant_type) |>
+  summarize(biomass = get_biomass(volume))
 ```
 
-#### Using lapply with files and data frames (**optional**)
+#### Using map with files and data frames (**optional**)
 
-* `lapply()` will always return a list
+* `map()` will always return a list
 * We can store anything we want in a list
 * Let's download some (made up) satellite collar data where the data for each collar is stored in one file
 
@@ -301,20 +305,20 @@ data_files = list.files(pattern = "locations-")
 ```
 
 * Since we can store anything in a list we can store entire data frames
-* Use `lapply()` to load all of the files into data frames
+* Use `map()` to load all of the files into data frames
 
 ```r
 library(readr)
 
-data_frames = lapply(data_files, read_csv)
+data_frames = map(data_files, read_csv)
 ```
 
-* We applied the `read_csv()` function to each data file
+* We ran the `read_csv()` function on each data file
 * And get back a list of data frames
-* Now we can use `lapply()` again to do something to each data frame
+* Now we can use `map()` again to do something to each data frame
 
 ```r
-library(readr)
+library(dplyr)
 
 get_unique_locations <- function(df){
   unique_locations <- df |>
@@ -323,23 +327,22 @@ get_unique_locations <- function(df){
   return(unique_locations)
 }
 
-unique_locations <- lapply(data_frames, get_unique_locations)
+unique_locations <- map(data_frames, get_unique_locations)
 ```
 
-#### Other apply functions (**optional**)
+* If we want to combine a list of data frames into a single data frame we can use `list_rbind()`
 
-* There are a few other apply functions
-* `vapply()` works like `sapply()`, but you have to tell it what type the returned vector will be
-* `tapply()` works like `sapply()`, but lets you provide a single grouping field (kind of like `group_by()` in dplyr)
+```r
+list_rbind(unique_locations)
+```
 
-* `apply()` works on multi-dimensional data
-* Set `MARGIN` to tell it which dimension to calculate along
-* `1` for rows
-* `2` for columns
+#### Mapping over columns (**optional**)
+
+* A data frame is a list of columns
+* So if we give a data frame to a `map` function it will run the function on each column
 
 ```r
 counts = data.frame(sp1 = c(5, 4, 7, 6), sp2 = c(6, 2, 6, 9), sp3 = c(8, 16, 1, 0))
 counts
-apply(X = counts, MARGIN = 1, FUN = sum)
-apply(X = counts, MARGIN = 2, FUN = sum)
+map_dbl(counts, sum)
 ```
