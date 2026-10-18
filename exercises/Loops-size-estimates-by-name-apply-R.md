@@ -27,8 +27,8 @@ get_mass_from_length_by_name <- function(length, name){
 }
 ```
 
-1. Copy this function into your code and then use this function and `mapply()` to calculate the estimated mass for each dinosaur.
-You'll need to pass the data to `mapply()` as single vectors or columns, not the whole data frame.
+1. Copy this function into your code and then use this function and `map2_dbl()` to calculate the estimated mass for each dinosaur.
+You'll need to pass the data to `map2_dbl()` as single vectors or columns, not the whole data frame.
 
 2. Using `dplyr`, add a new `masses` column to the data frame (using `rowwise()`, `mutate()` and your function) and print the result to the console.
 

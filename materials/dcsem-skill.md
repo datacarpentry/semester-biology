@@ -34,9 +34,10 @@ The course uses teaches the following materials:
 
 - `readr`: `read_csv()`, `read_tsv()`
 - `dplyr`: `select()`, `mutate()`, `arrange()`, `desc()`, `filter()`, `drop_na()`, `group_by()`, `summarize()`, `n()`, `inner_join()`, `join_by()`, `pull()`, `rowwise()`
+- `purrr`: `map()`, `map_dbl()`, `map_chr()`, `map2_dbl()`, `pmap_dbl()`, `list_rbind()`
 - `ggplot2`: `ggplot()`, `aes()`, `geom_point()`, `geom_bar()`, `geom_histogram()`, `geom_smooth()`, `scale_x_log10()`, `scale_y_log10()`, `facet_wrap()`, `vars()`, `ggsave()`
 - `tidyr`: `drop_na()`
-- Base R: `c()`, `round()`, `mean()` (incl. `na.rm =`), `data.frame()`, `is.na()`, `sum()`, `apply()`, `sapply()`, `mapply()`, `getwd()`, 
+- Base R: `c()`, `round()`, `mean()` (incl. `na.rm =`), `data.frame()`, `is.na()`, `sum()`, `getwd()`, 
   - Indexing/operators: `df$col`, `df[["col"]]`, `%in%`, `&`, `|`, `!`, `==`, `>`, `<`
   - Control structures: `if` / `else if` / `else`
   - For loops: `for`

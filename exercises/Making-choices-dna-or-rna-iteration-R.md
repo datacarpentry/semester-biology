@@ -22,7 +22,7 @@ sequences = c("ttgaatgccttacaactgatcattacacaggcggcatgaagcaaaaatatactgtgaaccaatgc
 
 1. Use the function you wrote and a `for` loop to create a vector of sequence types for the values in `sequences`
 2. Use the function and a `for` loop to create a data frame that includes a column of sequences and a column of their types
-3. Use the function and `sapply` to create a vector of sequence types for the values in `sequences`
+3. Use the function and `map_chr` to create a vector of sequence types for the values in `sequences`
 4. Use the function, and `dplyr` to create a data frame that inclues a column of sequences and a column of their types
 
 *Optional: For a little extra challenge make your function work with both upper

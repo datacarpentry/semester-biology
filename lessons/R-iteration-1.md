@@ -15,6 +15,8 @@ language: R
 
 3\. Do [Size Estimates Vectorized]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
 
+*Note: The next two videos use the base R `apply` functions. We now use the equivalent `map` functions from the `purrr` package: `map_dbl()` instead of `sapply()` and `map2_dbl()` instead of `mapply()`. The ideas are the same, but the `map` functions take the vector(s) first and the function last. See the [lecture notes]({{ site.baseurl }}/materials/iteration-without-loops-R) for examples.*
+
 4\. Watch the Apply Functions video:
 
 <iframe title="Apply Functions video" width="560" height="315" src="https://www.youtube.com/embed/uZCPLBQ6pb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

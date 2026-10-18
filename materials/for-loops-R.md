@@ -203,10 +203,10 @@ for (i in seq_along(volumes)){
 }
 ```
 
-* This is the for loop equivalent of an `mapply` statement
+* This is the for loop equivalent of a `pmap` statement
 
 ```r
-masses_apply <- mapply(est_mass_max, volumes, as, bs)
+masses_map <- pmap_dbl(list(volumes, as, bs), est_mass_max)
 ```
 
 > Do [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).

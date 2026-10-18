@@ -12,5 +12,5 @@ language: R
 
 * Readings
 
-  * [Introduction to apply, lapply, sapply, and tapply](https://www.guru99.com/r-apply-sapply-tapply.html)
+  * [R for Data Science: The map functions](https://r4ds.had.co.nz/iteration.html#the-map-functions)
   * [Hadley Wickham's Style Guide](http://adv-r.had.co.nz/Style.html)

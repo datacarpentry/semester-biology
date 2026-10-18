@@ -16,14 +16,14 @@ species <- "CYGNUS OLOR"
 species_clean <- str_to_sentence(species)
 ```
 
-1\. Use `sapply` and `str_to_sentence` to produce a vector of properly capitalized species names from the following vector of species names:
+1\. Use `map_chr` and `str_to_sentence` to produce a vector of properly capitalized species names from the following vector of species names:
 
 ```r
 species <- c("CYGNUS OLOR", "AIX SPONSA", "ANAS ACUTA")
 ```
 
-2\. Replace `sapply` with `lapply` to get the answer as a list instead of a vector.
+2\. Replace `map_chr` with `map` to get the answer as a list instead of a vector.
 
-3\. Use `lapply` to get the properly capitalized species and the use `unlist` to convert the result to a vector.
+3\. Use `map` to get the properly capitalized species and the use `list_c` to convert the result to a vector.
 
-*Note: this exercise doesn't technically require the use of an apply function, but we're going to use one to keep our first use of apply simple.*
+*Note: this exercise doesn't technically require the use of a map function, but we're going to use one to keep our first use of map simple.*

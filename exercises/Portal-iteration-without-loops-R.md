@@ -5,7 +5,7 @@ title: Portal Data Iteration Without Loops
 language: R
 ---
 
-This exercise covers iteration without loops in R using Portal data. You'll practice vectorization, apply functions, and integration with dplyr using real ecological data from the Portal Project.
+This exercise covers iteration without loops in R using Portal data. You'll practice vectorization, map functions, and integration with dplyr using real ecological data from the Portal Project.
 
 If [surveys.csv](https://ndownloader.figshare.com/files/2292172), [species.csv](https://ndownloader.figshare.com/files/3299483), and [plots.csv](https://ndownloader.figshare.com/files/3299474) are not in your working directory then download them.
 
@@ -24,7 +24,7 @@ Run it on the following vector:
    - "large" if weight > 50g
    - "unknown" if weight is missing (`NA`)
 
-Use `sapply` to apply `classify_by_weight` to the `weights` vector from (1).
+Use `map_chr` to apply `classify_by_weight` to the `weights` vector from (1).
 
 4\. Use `mutate`, `classify_by_weight`, and the `surveys` table to produce a data frame that has data on the `year`, `plot_id`, `species_id`, and `weight_class` (where `weight_class` is the output of `classify_by_weight`). Join this data with the `plots` table to add information on `plot_type`. Filter the data to only include data where `plot_type` is "Control".
 
@@ -36,7 +36,7 @@ Use `sapply` to apply `classify_by_weight` to the `weights` vector from (1).
    - If `genus` is "Chaetodipus" and `species` is "baileyi": `energy = 0.26 * avg_weight ^ 0.75 * 24`
    - All other species: `energy = 0.073 * avg_weight ^ 0.75 * 24`
 
-Run the function with `mapply()` and the following inputs:
+Run the function with `pmap_dbl()` and the following inputs:
    - `genus`: `c("Dipodomys", "Chaetodipus", "Neotoma")`
    - `species`: `c("merriami", "penicillatus", "albigula")`
    - `weight`: `c(45, 22, 156)`
