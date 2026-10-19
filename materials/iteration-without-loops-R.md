@@ -37,6 +37,9 @@ est_mass(3.1)
 ### Vectorize
 
 * Write functions that take a vector of values, do elementwise calculations, and return a vector of the results
+
+![Whiteboard diagram showing a vector connected by one arrow to a function and that function connected by one arrow to an output vector](vectorize1-whiteboard.png)
+
 * Any function that only uses calculations that are vectorized
 * E.g., vector math
 
@@ -57,7 +60,7 @@ est_mass(volumes)
 ```
 
 * Many functions in R are vectorized which means that we can often repeated things using only this vectorization
-* We can also use use vectorized functions with data frames by sending the individual columns of a data frame to the function
+* We can also use vectorized functions with data frames by sending the individual columns of a data frame to the function
 
 ```r
 data <- data.frame(volumes, plant_id = c(1, 2, 3))
@@ -154,6 +157,9 @@ est_mass_max(volumes)
 ```
 
 * Instead we can use one of the `map()` functions
+* Map functions take the values from the vector one at a time and run then through a function
+
+![Whiteboard diagram showing a vector with 5 positions connected by one arrow per position to a function and that function connected by one arrow per position to an output vector](map1-whiteboard.png)
 
 #### map_dbl & map
 
@@ -218,6 +224,8 @@ est_mass_type(plant_types, volumes) # Error
 * Doesn't vectorize, due to conditionals
 * Use a `map` function instead
 * `map2_dbl()` because there are 2 inputs and a numeric output
+
+![Whiteboard diagram showing 2 input vectors with 5 positions each connected by one arrow per position to a function and that function connected by one arrow per position to an output vector](map1-whiteboard.png)
 
 ```r
 map2_dbl(plant_types, volumes, est_mass_type)
