@@ -25,7 +25,7 @@ surveys <- read_csv("surveys.csv")
 * Aggregation combines rows into groups based on one of more columns.
 * Calculates combined values for each group.
 
-![White Board Illustration of Aggregating Data](dplyr-aggregation-whiteboard.png)
+![White Board Illustration of Aggregating Data]({{ site.baseurl }}/materials/dplyr-aggregation-whiteboard.png)
 
 * First step, group the data frame.
 * Let's group it by `year`
