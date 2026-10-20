@@ -191,7 +191,7 @@ map(volumes, est_mass_max)
 * We can store anything in a list, so if you had a function that made a bunch of graphs or a bunch of data frames `map` would let you work with them
 * Likewise all of these functions can also take a list as input allowing you to accomplish more complicated things
 
-> Do [Size Estimates With Maximum]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
+> Do [Size Estimates With Maximum 1-2]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
 
 #### Map with multiple arguments
 
@@ -235,8 +235,6 @@ map2_dbl(plant_types, volumes, est_mass_type)
 pmap_dbl(list(plant_types, volumes), est_mass_type)
 ```
 
-> Do Task 1 in [Size Estimates By Name Map]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-map-R/).
-
 #### Integrating with dplyr
 
 * Let's update our `plant_data` data frame to include our plant types
@@ -265,7 +263,7 @@ plant_type_data |>
   mutate(masses = est_mass_type(plant_type, plant_volumes))
 ```
 
-> Do Task 2 in [Size Estimates By Name Map]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-map-R/).
+> Do [Size Estimates By Name Map]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-map-R/).
 
 #### One result per group
 
@@ -334,15 +332,4 @@ unique_locations <- map(data_frames, get_unique_locations)
 
 ```r
 list_rbind(unique_locations)
-```
-
-#### Mapping over columns (**optional**)
-
-* A data frame is a list of columns
-* So if we give a data frame to a `map` function it will run the function on each column
-
-```r
-counts = data.frame(sp1 = c(5, 4, 7, 6), sp2 = c(6, 2, 6, 9), sp3 = c(8, 16, 1, 0))
-counts
-map_dbl(counts, sum)
 ```
