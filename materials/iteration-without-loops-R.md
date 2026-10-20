@@ -123,12 +123,6 @@ plant_data |>
 library(purrr)
 ```
 
-* These functions take two arguments
-* The first is a vector of values that we want to run a function on
-* The second is the function that we want to run on each value in the vector
-* `map` functions run the function on each item in the vector
-* Doesn't require calculations to work on vectors
-
 * Let's look at this with a version of our function that only calculates mass for volumes less than a maximum size
 
 ```r
@@ -155,10 +149,12 @@ est_mass_max(volumes)
 
 #### map_dbl & map
 
+* `map` functions run the function on each item in the vector
+* Doesn't require calculations to work on vectors
 * We'll start with `map_dbl()`
 * This function take two arguments
-* The first is a single vector
-* The second is the function that we want to run on each element of that vector (or list)
+* The first is a vector of values that we want to run a function on
+* The second is the function that we want to run on each value in the vector
 * So if we use our `volumes` vector and our new `est_mass_max()` function
 * `map_dbl()` will run the `est_mass_max` function on each value in `volumes`, one value at a time
 
