@@ -28,11 +28,7 @@ est_mass(3.1)
 
 * But, this is tedious, error-prone, and impossible for large numbers of volumes
 * There are multiple ways to do something repeatedly in R and we'll talk about all of them over the next several lessons
-* These include
-  * Vectorize - where we right functions that take a vector of values, do elementwise calculations, and return a vector of results
-  * Using Map - which takes a function and runs it on each item in a list of items
-  * Combining our own functions with dplyr - which we can do using both vectorized and non-vectorized functions
-  * Loops - which provide us with complete control to perform of any kind of repetition we want
+* Start with vectorizing
 
 ### Vectorize
 
@@ -59,17 +55,7 @@ volumes = c(1.6, 5.6, 3.1)
 est_mass(volumes)
 ```
 
-* Many functions in R are vectorized which means that we can often repeated things using only this vectorization
-* We can also use vectorized functions with data frames by sending the individual columns of a data frame to the function
-
-```r
-data <- data.frame(volumes, plant_id = c(1, 2, 3))
-data
-est_mass(data$volumes)
-est_mass(data[['volumes']])
-```
-
-> Do [Size Estimates Vectorized 1]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
+* Many functions in R are vectorized which means that we can often repeat things using only this vectorization
 
 #### Multiple Arguments
 
@@ -103,22 +89,28 @@ est_mass_coef(volumes, as)
 
 * We can also integrate our vectorized functions with `dplyr`
 * This lets us use them to repeat calculations for each row in a data frame
-* Let's convert our `volume` and `as` vectors into a data frame
+* Load `dplyr`
 
 ```r
-plant_data = data.frame(volume = volumes, a = as)
+library(dplyr)
+```
+
+* Let's convert our `volumes` and `as` vectors into a data frame
+
+```r
+plant_data = data.frame(plant_volumes = volumes, a_values = as)
 ```
 
 * To apply vectorized functions to each row in a table we can use `mutate`
 
 ```r
 plant_data |>
-  mutate(masses = est_mass_coef(volume, a))
+  mutate(masses = est_mass_coef(plant_volumes, a_values))
 ```
 
-* This is just like we've seen using other R functions, but it works with the vectorized functions we write as well
+* This is just like we've seen using other R functions, but it works with any vectorized function we write as well
 
-> Do [Size Estimates Vectorized 2-3]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
+> Do [Size Estimates Vectorized 1-2]({{ site.baseurl }}/exercises/Loops-size-estimates-vectorized-R).
 
 
 ### Map functions
@@ -199,7 +191,7 @@ map(volumes, est_mass_max)
 * We can store anything in a list, so if you had a function that made a bunch of graphs or a bunch of data frames `map` would let you work with them
 * Likewise all of these functions can also take a list as input allowing you to accomplish more complicated things
 
-> Do [Size Estimates With Maximum]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
+> Do [Size Estimates With Maximum 1-2]({{ site.baseurl }}/exercises/Loops-size-estimates-with-maximum-R).
 
 #### Map with multiple arguments
 
@@ -243,22 +235,20 @@ map2_dbl(plant_types, volumes, est_mass_type)
 pmap_dbl(list(plant_types, volumes), est_mass_type)
 ```
 
-> Do Task 1 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
-
 #### Integrating with dplyr
 
 * Let's update our `plant_data` data frame to include our plant types
 
 ```r
-plant_type_data = data.frame(volume = volumes,
-                        plant_type = plant_types)
+plant_type_data = data.frame(plant_volumes = volumes,
+                             plant_type = plant_types)
 ```
 
 * The basic integration with dplyr we used for vectorized functions won't work with non-vectorized functions
 
 ```r
 plant_type_data |>
-  mutate(masses = est_mass_type(plant_type, volume))
+  mutate(masses = est_mass_type(plant_type, plant_volumes))
 ```
 
 * Error because `est_mass_type` isn't vectorized
@@ -270,10 +260,10 @@ plant_type_data |>
 ```r
 plant_type_data |>
   rowwise() |>
-  mutate(masses = est_mass_type(plant_type, volume))
+  mutate(masses = est_mass_type(plant_type, plant_volumes))
 ```
 
-> Do Task 2 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
+> Do [Size Estimates By Name Map]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-map-R/).
 
 #### One result per group
 
@@ -296,7 +286,7 @@ get_biomass <- function(volumes){
 ```r
 plant_type_data |>
   group_by(plant_type) |>
-  summarize(biomass = get_biomass(volume))
+  summarize(biomass = get_biomass(plant_volumes))
 ```
 
 #### Using map with files and data frames (**optional**)
@@ -342,15 +332,4 @@ unique_locations <- map(data_frames, get_unique_locations)
 
 ```r
 list_rbind(unique_locations)
-```
-
-#### Mapping over columns (**optional**)
-
-* A data frame is a list of columns
-* So if we give a data frame to a `map` function it will run the function on each column
-
-```r
-counts = data.frame(sp1 = c(5, 4, 7, 6), sp2 = c(6, 2, 6, 9), sp3 = c(8, 16, 1, 0))
-counts
-map_dbl(counts, sum)
 ```

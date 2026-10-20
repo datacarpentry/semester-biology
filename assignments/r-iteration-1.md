@@ -3,8 +3,8 @@ layout: page
 element: assignment
 title: Repeating Things 1
 language: R
-exercises: ['Size Estimates Vectorized', 'Size Estimates With Maximum', 'Size Estimates By Name Apply', 'Crown Volume Calculation', 'Portal Data Iteration Without Loops', 'Check That Your Code Runs', 'Tree Growth']
-points: [10, 10, 20, 25, 25, 10, 'Challenge - optional']
+exercises: ['Size Estimates Vectorized', 'Penguin Body Condition', 'Size Estimates With Maximum', 'Size Estimates By Name Map', 'Crown Volume Calculation', 'Portal Data Iteration Without Loops', 'Check That Your Code Runs', 'Tree Growth']
+points: [10, 10, 10, 20, 20, 20, 10, 'Challenge - optional']
 ---
 
 ### Learning Objectives
@@ -24,6 +24,7 @@ Place this code at the start of the assignment to load all the required packages
 library(dplyr)
 library(ggplot2)
 library(purrr)
+library(readr)
 ```
 
 {% include assignment.html %}

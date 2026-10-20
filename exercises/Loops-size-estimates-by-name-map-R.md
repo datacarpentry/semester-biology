@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Loops
-title: Size Estimates By Name Apply
+title: Size Estimates By Name Map
 language: R
 ---
 
