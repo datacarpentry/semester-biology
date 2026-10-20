@@ -98,7 +98,7 @@ library(dplyr)
 * Let's convert our `volumes` and `as` vectors into a data frame
 
 ```r
-plant_data = data.frame(plant_volumes = volumes, a_values = as)
+plant_data = tibble(plant_volumes = volumes, a_values = as)
 ```
 
 * To apply vectorized functions to each row in a table we can use `mutate`
@@ -240,7 +240,7 @@ pmap_dbl(list(plant_types, volumes), est_mass_type)
 * Let's update our `plant_data` data frame to include our plant types
 
 ```r
-plant_type_data = data.frame(plant_volumes = volumes,
+plant_type_data = tibble(plant_volumes = volumes,
                              plant_type = plant_types)
 ```
 
