@@ -235,7 +235,7 @@ map2_dbl(plant_types, volumes, est_mass_type)
 pmap_dbl(list(plant_types, volumes), est_mass_type)
 ```
 
-> Do Task 1 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
+> Do Task 1 in [Size Estimates By Name Map]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-map-R/).
 
 #### Integrating with dplyr
 
@@ -265,7 +265,7 @@ plant_type_data |>
   mutate(masses = est_mass_type(plant_type, plant_volumes))
 ```
 
-> Do Task 2 in [Size Estimates By Name Apply]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-apply-R/).
+> Do Task 2 in [Size Estimates By Name Map]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-map-R/).
 
 #### One result per group
 

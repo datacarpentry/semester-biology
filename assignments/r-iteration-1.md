@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Repeating Things 1
 language: R
-exercises: ['Size Estimates Vectorized', 'Penguin Body Condition', 'Size Estimates With Maximum', 'Size Estimates By Name Apply', 'Crown Volume Calculation', 'Portal Data Iteration Without Loops', 'Check That Your Code Runs', 'Tree Growth']
+exercises: ['Size Estimates Vectorized', 'Penguin Body Condition', 'Size Estimates With Maximum', 'Size Estimates By Name Map', 'Crown Volume Calculation', 'Portal Data Iteration Without Loops', 'Check That Your Code Runs', 'Tree Growth']
 points: [10, 10, 10, 20, 20, 20, 10, 'Challenge - optional']
 ---
 

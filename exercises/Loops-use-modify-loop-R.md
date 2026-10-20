@@ -5,7 +5,7 @@ title: Use and Modify with Loops
 language: R
 ---
 
-This is a followup to [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R). It is a partner exercise to [Use and Modify with Apply]({{ site.baseurl }}/exercises/Loops-use-modify-apply-R).
+This is a followup to [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R). It is a partner exercise to [Use and Modify with Map]({{ site.baseurl }}/exercises/Loops-use-modify-map-R).
 
 1. Write a function that takes length as an argument to get an estimate of mass values for the dinosaur *Theropoda* (or copy the one you wrote as part of [Use and Modify]({{ site.baseurl }}/exercises/Functions-use-and-modify-R)). Use the equation `mass <- 0.73 * length ** 3.63`, where 0.73 is `a` and 3.63 is `b`. Then use a `for` loop over the values of the following vector of lengths to print out the estimated masses for each length. 
 

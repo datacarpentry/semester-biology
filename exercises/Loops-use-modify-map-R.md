@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Loops
-title: Use and Modify with Apply
+title: Use and Modify with Map
 language: R
 ---
 

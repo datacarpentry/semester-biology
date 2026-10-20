@@ -1,7 +1,7 @@
 ---
 layout: exercise
 topic: Loops
-title: Species Name Capitalization with Apply
+title: Species Name Capitalization with Map
 language: R
 ---
 
