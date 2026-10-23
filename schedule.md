@@ -13,11 +13,11 @@ assignments:
     "Making Choices",
     "Repeating Things 1",
     "Repeating Things 2",
-    "Class's Choice",
-    "Class's Choice",
-    "Class's Choice",
+    "Spatial Data 1",
+    "Quarto",
+    "Spatial Data 2",
     "Fall Break",
-    "Class's Choice",
+    "Version Control",
   ]
 ---
 
