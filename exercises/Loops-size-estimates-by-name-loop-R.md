@@ -30,5 +30,6 @@ get_mass_from_length_by_name <- function(length, name){
 Update this function so that instead of returning `NA` when none of the species names matches it returns `mass = 25.37 * length ^ 2.49` instead.
 
 1. Use this function and a for loop to calculate the estimated mass for each dinosaur in `dinosaur_lengths`, store the masses in a vector, and after all of the calculations are complete show the first few items in the vector using `head()`.
-2. Add the results in the vector back to the original data frame and display first few rows of the new data frame using `head()`.
+2. Add the results in the vector back to the original data frame and display  the new data frame.
 3. Calculate the mean mass for each `species` using `dplyr`, using the data from you created in (2).
+4. Use `ggplot2` to make a histogram of the masses from (2) with a separate subplot for each `species` (using `facet_wrap()`).

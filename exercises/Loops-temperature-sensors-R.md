@@ -20,7 +20,9 @@ Each file contains two columns:
 
 2\. Create a copy of your code from (1) and modify it to also find the maximum temperature recorded by each sensor and the temperature range (difference between maximum and minimum temperature) for each sensor. Store these values in vectors called `max_temps`, and `temp_ranges`. After the loop display the completed vectors.
 
-3\. Create an empty data frame to store all your results and then write a loop to determine the following values for each file and store them in the data frame:
+3\. **Challenge (optional)** Write a loop to count the number of hours in which each sensor recorded a temperature above 25 degrees Celsius (using `filter()` and then `nrow()` to count the remain rows in the table). Store the results in a vector called `hot_hours`. After the loop display the completed vector.
+
+4\. Create an empty data frame to store all your results and then write a loop to determine the following values for each file and store them in the data frame:
 
 - `sensor_file`: The filename of the sensor data
 - `mean_temp`: Mean temperature for that sensor
@@ -28,4 +30,4 @@ Each file contains two columns:
 - `min_temp`: Minimum temperature recorded
 - `temp_range`: Temperature range (max - min)
 
-4\. **Challenge (optional)** Extend your analysis to find the hour when each sensor recorded its highest temperature. Add a column called `peak_hour` to your results data frame and display the data frame.
+5\. **Challenge (optional)** Extend your analysis to find the hour when each sensor recorded its highest temperature. Add a column called `peak_hour` to your results data frame and display the data frame.
