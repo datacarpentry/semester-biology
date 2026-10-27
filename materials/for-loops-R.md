@@ -118,7 +118,23 @@ masses
 
 * Walk through iteration in debugger
 
-> Do Tasks 3-4 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
+> Do Tasks 4-5 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
+
+### Looping over multiple values
+
+* Looping with an index also allows us to access values from multiple vectors
+
+```r
+bs <- c(0.9, 1.1, 1.2)
+volumes = c(1.6, 3, 8)
+masses <- vector(mode="numeric", length=length(volumes))
+for (i in 1:length(volumes)){
+   mass <- 2.65 * volumes[i] ^ bs[i]
+   masses[i] <- mass
+}
+```
+
+> Do Task 8 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
 
 > End of 1 hour class
 
@@ -155,24 +171,6 @@ for (i in seq_along(volumes)){
 }
 masses
 ```
-
-### Looping over multiple values
-
-* Looping with an index also allows us to access values from multiple vectors
-
-
-```r
-as <- c(2.65, 1.28, 3.29)
-bs <- c(0.9, 1.1, 1.2)
-volumes = c(1.6, 3, 8)
-masses <- vector(mode="numeric", length=length(volumes))
-for (i in seq_along(volumes)){
-   mass <- as[i] * volumes[i] ^ bs[i]
-   masses[i] <- mass
-}
-```
-
-> Do Tasks 5-6 in [Basic For Loops]({{ site.baseurl }}/exercises/Loops-basic-for-loops-R/).
 
 ### Looping with functions
 
@@ -257,7 +255,7 @@ for (i in seq_along(data_files)){
 
 - Add `show_col_types = FALSE` to `read_csv` to avoid noisy output
 
-> Do Task 1 of [Temperature Sensors]({{ site.baseurl }}/exercises/Loops-temperature-sensors-R/).
+> Do Tasks 1-2 of [Temperature Sensors]({{ site.baseurl }}/exercises/Loops-temperature-sensors-R/).
 
 ### Storing loop results in a data frame
 
@@ -294,7 +292,7 @@ for (i in seq_along(data_files)){
 }
 ```
 
-> Do Tasks 2-3 of [Temperature Sensors]({{ site.baseurl }}/exercises/Loops-temperature-sensors-R/).
+> Do Task 4 of [Temperature Sensors]({{ site.baseurl }}/exercises/Loops-temperature-sensors-R/).
 
 ### Subsetting Data (optional)
 

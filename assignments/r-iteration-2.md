@@ -43,6 +43,7 @@ Place this code at the start of the assignment to load all the required packages
 library(dplyr)
 library(ggplot2)
 library(purrr)
+library(readr)
 ```
 
 {% include assignment.html %}
