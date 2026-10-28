@@ -207,7 +207,7 @@ for (i in seq_along(volumes)){
 masses_map <- pmap_dbl(list(volumes, as, bs), est_mass_max)
 ```
 
-> Do [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
+> Do Tasks 1-2 of [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
 
 ### Looping over files
 
@@ -264,12 +264,12 @@ for (i in seq_along(data_files)){
 * Associate the file name with the count
 * Also store the minimum latitude
 * Start by creating an empty data frame
-* Use the `data.frame` function
+* Use the `tibble` function
 * Provide one argument for each column
 * "Column Name" = "an empty vector of the correct type"
 
 ```r
-results <- data.frame(
+results <- tibble(
   file_name = vector(mode = "character", length = length(data_files)),
   count = vector(mode = "integer", length = length(data_files)),
   min_lat = vector(mode = "numeric", length = length(data_files))
