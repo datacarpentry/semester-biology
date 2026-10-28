@@ -207,7 +207,7 @@ for (i in seq_along(volumes)){
 masses_map <- pmap_dbl(list(volumes, as, bs), est_mass_max)
 ```
 
-> Do [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
+> Do Tasks 1-2 of [Size Estimates By Name Loop]({{ site.baseurl }}/exercises/Loops-size-estimates-by-name-loop-R/).
 
 ### Looping over files
 
