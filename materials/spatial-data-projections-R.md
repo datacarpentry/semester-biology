@@ -53,6 +53,10 @@ plots_harv
 * The axes on the raster plot are much different, with values in the hundreds of thousands
 * These differences are because the two sets of data have different "coordinate reference systems" or "projections"
 * Since the earth is round we have to stretch geospatial data to present it on flat maps
+* Here's a demonstration of how this works for the Mercator Projection
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CPQZ7NcQ6YQ?si=iDa-Yhg3RFImoElh" title="Illustration of the Mercator Projection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 * There is no one best way to do this so there are different projects, which result in different representations of the world, and different units for locations
 * Here are examples of a few common ones including two we'll be working with WGS 84, which is latitude & longitude, and UTM
 
