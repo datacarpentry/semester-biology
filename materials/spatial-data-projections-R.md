@@ -1,7 +1,7 @@
 ---
 layout: page
 element: notes
-title: Spatial Data Vector
+title: Spatial Data Projections
 language: R
 ---
 
@@ -15,25 +15,7 @@ language: R
 
 * So far we've worked with raster and vector data separately
 * We're using the `terra` package for raster data and the `sf` package for vector
-
-```r
-library(ggplot2)
-library(sf)
-library(terra)
-```
-
-* We'll also load `ggplot2` again for plotting
-
-```r
-dtm_harv <- rast("data/harv/harv_dtmcrop.tif")
-plots_harv <- read_sf("data/harv/harv_plots.shp")
-
-ggplot() +
-  geom_spatraster(data = dtm_harv) +
-  geom_sf(data = plots_harv)
-```
-
-* The data looks like it's all in the same location, but let's look at the actual positions
+* Let's look at the two types of data together
 
 ```r
 dtm_harv
@@ -44,13 +26,21 @@ plots_harv
 * `dtm_harv` has very different numbers
 * Why?
 
-
 ### Projections
 
 * The reason the positions are so different is that the two datasets have different projections
-* We can see this by going back to the individual plots
+* We can see this making a plot of the raster data using Base R's `plot()` function
+
+```r
+plot(dtm_harv)
+```
+
+* The axes on the raster plot are have values in the hundreds of thousands
+* *Go back to vector plot*
 * The axes on the vector plot latitude and longitude values in degrees, with numbers in the low 40s and low 70s
-* The axes on the raster plot are much different, with values in the hundreds of thousands
+* *Go back to original raster plot*
+* `geom_spatraster()` and `geom_sf()` hide these differences by plotting everything as lat/longs, but they matter for other spatial work
+
 * These differences are because the two sets of data have different "coordinate reference systems" or "projections"
 * Since the earth is round we have to stretch geospatial data to present it on flat maps
 * Here's a demonstration of how this works for the Mercator Projection
