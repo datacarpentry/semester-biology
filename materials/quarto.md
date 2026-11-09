@@ -60,6 +60,7 @@ In this document I will:
 * Press `Render` to create `HTML` from the document
 * Can also create `pdf` & Word versions of our files
 * Change output to `pdf` or `docx`
+* `pdf` may require some additional installation, can use `typst` instead
 
 * Switch back to html
 * Click the gear icon and select `Preview in Viewer Pane`
@@ -103,7 +104,7 @@ library(readr)
 ## Data
 
 ```{r}
-data <- read_csv("https://ndownloader.figshare.com/files/2292172")
+data <- read_csv("surveys.csv")
 data
 ```
 </code></pre>
@@ -169,8 +170,8 @@ ggplot(time_series, aes(x = year, y = count)) +
 
 ### Tables
 
-* We can also make nicely formated tables using the `gt()` function
-* Let's say we need to know who many total individuals of each species were included in the analysis
+* We can also make nicely formatted tables using the `gt()` function
+* We want to know how many total individuals of each species were included in the analysis
 
 <pre><code>
 ```{r}
@@ -195,19 +196,28 @@ time_series |>
 * You can then reference the table in the text using `@tbl-total-count`
 
 ```r
-The population dynamics at the site varies by species (@tbl-total-count).
+The population dynamics at the site vary by species (@tbl-total-count).
 ```
 
 ### Citations
 
-
+* In `Visual` mode
 * `Insert` -> `Citation` -> `From DOI` -> `10.1101/332783` -> `+` -> `Insert`
-* Creates a `bibliography.bib` file with the citations
+* Creates a `references.bib` file with the citations
 * This is called a bibtex file
 * Can now cite papers using [@ernest2018]
 * It will appear as an in-text citation and in a References section at the bottom of the document
+* Instead of clicking `Insert` you can also type a `/`
+* You can insert lots of things including nicely format equations
+
+```
+$$
+y = ax^\lambda
+$$
+```
 
 ### Other Output Formats
 
 * Slides
 * Websites
+* Flashcards - like the ones on our course website
