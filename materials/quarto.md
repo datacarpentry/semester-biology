@@ -198,6 +198,10 @@ time_series |>
 The population dynamics at the site varies by species (@tbl-total-count).
 ```
 
+* gt lets use make very complicated tables
+
+![Figure showing all of the different potential parts of a gt table](({{ site.baseurl}}/materials/gt_parts_of_a_table.svg)
+
 ### Citations
 
 
