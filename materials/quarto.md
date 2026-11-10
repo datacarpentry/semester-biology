@@ -164,7 +164,7 @@ ggplot(time_series, aes(x = year, y = count)) +
 
 ```
 #| fig-cap: "Figure 1. Time-series of rodent population dynamics at Portal."
-#| fig-alt: "Time-seris of 12 rodent species showing a range of dynamics from increases to decreases to variable, but not directionally changing, response"
+#| fig-alt: "Time-series of 12 rodent species showing a range of dynamics from increases to decreases to variable, but not directionally changing, response"
 ```
 
 ### Tables
