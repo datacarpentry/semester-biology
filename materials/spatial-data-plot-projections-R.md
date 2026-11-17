@@ -22,6 +22,9 @@ harv_soils <- read_sf("data/harv/harv_soils.shp")
 harv_dtm <- rast("data/harv/harv_dtmfull.tif")
 ```
 
+## Plotting with expected units
+
+* We've talked about how different spatial data have different projections which have different units
 * Let's look at the coordinate reference systems for these two data sets
 
 ```r
@@ -30,25 +33,16 @@ st_crs(harv_dtm)
 ```
 
 * So both data sets in are UTM Zone 18 North
-
-* If we plot the raster data on it's own it is in UTM units
-
-```r
-ggplot() +
-  geom_spatraster(data = harv_dtm)
-```
-
-* It has the large numbers we've seen before on the axes
-* Now let's add the soils data
+* But when we plot them they show up as lat/longs
 
 ```r
 ggplot() +
   geom_spatraster(data = harv_dtm) +
-  geom_sf(data = harv_soils, alpha = 0)
+  geom_sf(data = harv_soils, fill = "transparent", color = "white")
 ```
 
-* Now all of a sudden we have latitudes and longitudes instead of our UTM coordinates
-* This happens because by default `geom_sf` changes the units to latitude and longitude values
+* *Show plot from previous lesson*
+* This happens because by default `tidyterra` changes the units to latitude and longitude values
 * To change the units to another projection, like the projection of the data, we use `coord_sf`
 * Which takes a CRS and shows the axes in those units
 * So if we want this graph in the units of the projection of our data we can look up the CRS and use that
