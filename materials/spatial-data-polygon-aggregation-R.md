@@ -31,16 +31,16 @@ ggplot() +
 * Let's calculate the average elevation in each soil polygon
 
 ```r
-elevs_by_soil <- extract(harv_dtm, harv_soils, fun = mean, bind = TRUE)
+elevs_by_soil <- extract(harv_dtm, harv_soils, fun = mean)
 ```
 
 * You can think of this as similar to `group_by` and `summarize` in `dplyr`, but spatial
 * The function groups the digital terrain model into groups of pixels that fall inside each soil polygon
 * It then calculates the mean value inside each polygon
-* These values are stored as a terra object, which we can then convert back to a simple features object
+* These values are in a vector so add them back to our `harv_soils` object
 
 ```r
-harv_soils_elevs <- st_as_sf(elevs_by_soil)
+harv_soils_elevs <-mutate(harv_soils, elevations = elevs_by_soil)
 ```
 
 * Once we done this then we can make maps using this information
@@ -48,7 +48,7 @@ harv_soils_elevs <- st_as_sf(elevs_by_soil)
 
 ```r
 ggplot() +
-  geom_sf(data = harv_soils_elevs, mapping = aes(fill = harv_dtmfull)) +
+  geom_sf(data = harv_soils_elevs, mapping = aes(fill = elevations)) +
   scale_fill_viridis_c()
 ```
 
