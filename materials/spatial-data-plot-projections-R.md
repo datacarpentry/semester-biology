@@ -5,12 +5,7 @@ title: Changing the Plot Projection in ggplot
 language: R
 ---
 
-## Plotting with expected units
-
-* We've talked about how different spatial data have different projections which have different units
-* But you may have noticed that something a little funny happens with these units when we plot data using ggplot
-* Let's start where we did at the beginning of the last lesson
-* Having already loaded the packages we need and imported the Harvard Forest soils data and digital terrain model
+## Setup from last lesson
 
 ```r
 library(ggplot2)
@@ -88,15 +83,5 @@ ggplot() +
 ```
 
 * Setting both to 1, for right justified, will align the right edge with the tick
-
-* If to rotate vertically we can use 90 for the angle
-
-```r
-ggplot() +
-  geom_spatraster(data = harv_dtm) +
-  geom_sf(data = harv_soils, alpha = 0) +
-  coord_sf(datum = st_crs(harv_dtm)) +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
-```
 
 > Do Task 6 of [Harvard Forest Soils Analysis]({{ site.baseurl }}/exercises/Neon-harvard-forest-soils-analysis-R).
