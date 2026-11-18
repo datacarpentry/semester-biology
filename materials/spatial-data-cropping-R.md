@@ -5,12 +5,7 @@ title: Cropping Spatial Data
 language: R
 ---
 
-* Spatial data is often larger than we need it to be
-* E.g., Raster data is typically a large rectangular block of data
-* And we are often only interested in the portion of that data that is located inside our study region
-* To get the piece of spatial data that we want for our maps or analysis we can "crop" the data
-* We'll look at this using the data from Harvard forest we've been working with so far
-* Including the DTM file that covers the entire site
+### Setup From Previous Lesson
 
 ```r
 library(ggplot2)
@@ -20,16 +15,20 @@ library(tidyterra)
 
 harv_boundary <- read_sf("data/harv/harv_boundary.shp")
 harv_dtm <- rast("data/harv/harv_dtmfull.tif")
-```
 
-* If we plot this data we see that we have elevation data for a large square surrounding the site
-
-```r
 ggplot() +
   geom_spatraster(data = harv_dtm) +
   scale_fill_viridis_c() +
   geom_sf(data = harv_boundary, fill = "transparent")
 ```
+
+### Intro
+
+* Spatial data is often larger than we need it to be
+* E.g., Raster data is typically a large rectangular block of data
+* And we are often only interested in the portion of that data that is located inside our study region
+* To get the piece of spatial data that we want for our maps or analysis we can "crop" the data
+* We'll look at this using the data from Harvard forest we've been working with so far
 
 ### Cropping a raster using to a vector polygon
 
