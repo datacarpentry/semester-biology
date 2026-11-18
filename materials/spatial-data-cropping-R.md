@@ -15,11 +15,6 @@ library(tidyterra)
 
 harv_boundary <- read_sf("data/harv/harv_boundary.shp")
 harv_dtm <- rast("data/harv/harv_dtmfull.tif")
-
-ggplot() +
-  geom_spatraster(data = harv_dtm) +
-  scale_fill_viridis_c() +
-  geom_sf(data = harv_boundary, fill = "transparent")
 ```
 
 ### Intro
@@ -35,6 +30,15 @@ ggplot() +
 * There are two general approaches to cropping data
 * The first is to crop a raster to only keep the portion that falls inside some vector data
 * For example, we often only want the portion of a raster dataset that falls inside the boundary of our study site
+* *We'll do this using our boundary (can copy this code from previous material)*
+
+```r
+ggplot() +
+  geom_spatraster(data = harv_dtm) +
+  scale_fill_viridis_c() +
+  geom_sf(data = harv_boundary, fill = "transparent")
+```
+
 * We can do this using the `crop` function from `terra`
 * The first argument is the raster we want to crop
 * The second argument is the vector data we want to crop it to
